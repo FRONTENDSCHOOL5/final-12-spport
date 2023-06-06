@@ -1,8 +1,6 @@
+import React from 'react';
+
 function App() {
-  return (
-    <div>
-      hello world
-    </div>
-  );
+  return <div>hello</div>;
 }
 export default App;
