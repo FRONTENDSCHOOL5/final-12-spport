@@ -56,7 +56,7 @@ const SelectFilterStyle = styled.div`
 
 export default function SelectFilter({ type, items }) {
   const [filterClick, setFilterClick] = useState(false);
-  const [selectItem, setSelectItem] = useState('전체'); // 나중에 props로 받아야 한다
+  const [selectItem, setSelectItem] = useState('전체'); // 나중에 props로 받아야 함
   const handleFilterClick = () => {
     setFilterClick((prev) => !prev);
   };
