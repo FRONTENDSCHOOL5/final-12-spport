@@ -3,8 +3,10 @@ import styled from 'styled-components';
 import iconBack from '../../../assets/image/icon-back.svg';
 import iconMore from '../../../assets/image/icon-more.svg';
 import iconSearch from '../../../assets/image/icon-search.svg';
+import logoText from '../../../assets/logo/text-logo.svg';
 import SearchBox from './SearchBox';
 import FeedFilter from '../Filter/FeedFilter';
+import { useNavigate } from 'react-router-dom';
 
 const HeaderStyle = styled.header`
   height: 50px;
@@ -33,16 +35,26 @@ export default function Header({
   search,
   upload,
   main,
-  onBackClick,
   onUploadClick,
   onMoreClick,
-  onSearchClick,
 }) {
+  const navigate = useNavigate();
+
+  const handleBackClick = () => {
+    navigate(-1);
+  };
+
+  const handleSearchClick = () => {
+    navigate('/search');
+  };
+
   return (
     <HeaderStyle>
-      <button className='btn-back' type='button' onClick={onBackClick}>
-        <img src={iconBack} alt='뒤로 가기' />
-      </button>
+      {main || (
+        <button className='btn-back' type='button' onClick={handleBackClick}>
+          <img src={iconBack} alt='뒤로 가기' />
+        </button>
+      )}
       {text?.length > 0 && <span className='header-title'>{text}</span>}
       {search && <SearchBox />}
       {text && (
@@ -52,9 +64,15 @@ export default function Header({
       )}
       {main && (
         <>
-          <span className='header-title'>SPPORT FEED</span>
+          <span className='header-title'>
+            <img src={logoText} />
+          </span>
           <FeedFilter />
-          <button className='btn-search' type='button' onClick={onSearchClick}>
+          <button
+            className='btn-search'
+            type='button'
+            onClick={handleSearchClick}
+          >
             <img src={iconSearch} alt='검색하기' />
           </button>
         </>
