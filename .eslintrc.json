@@ -17,7 +17,8 @@
       "quotes": ["error", "single"],
       "semi": ["error", "always"],
       "no-extra-semi": "error",
-      "no-tabs": ["error", { "allowIndentationTabs": true }]
+      "no-tabs": ["error", { "allowIndentationTabs": true }],
+      "react/prop-types": "off" 
     }
   }
   
