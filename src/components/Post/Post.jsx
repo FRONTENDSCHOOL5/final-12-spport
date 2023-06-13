@@ -24,12 +24,12 @@ const PostStyle = styled.article`
   }
 `;
 
-// post = {
-//   id: String,
-//   content: String,
-//   image: String,
-//   createdAt: String,
-//   updatedAt: String,
+// const post = {
+//   id: 'String',
+//   content: 'String',
+//   image: 'String',
+//   createdAt: 'String',
+//   updatedAt: 'String',
 //   hearted: false,
 //   heartCount: 0,
 //   commentCount: 0,
@@ -59,9 +59,7 @@ const PostStyle = styled.article`
 export default function Post({ post, game }) {
   return (
     <PostStyle>
-      <Link to={`/profile/${post.author.accountname}`}>
-        <PostProfile author={post.author} />
-      </Link>
+      <PostProfile author={post.author} />
       <div className='post-wrapper'>
         <Link to={`/post/${post.id}`}>
           {game ? (
