@@ -6,6 +6,7 @@ import iconSearch from '../../../assets/image/icon-search.svg';
 import logoText from '../../../assets/logo/text-logo.svg';
 import SearchBox from './SearchBox';
 import FeedFilter from '../Filter/FeedFilter';
+import MsButton from '../Button/MsButton';
 import { useNavigate } from 'react-router-dom';
 
 const HeaderStyle = styled.header`
@@ -15,21 +16,22 @@ const HeaderStyle = styled.header`
   padding: 8px 16px;
   gap: 10px;
   background: var(--color-navy);
+  position: fixed;
+  width: 100%;
   .header-title {
     color: var(--color-lime);
     font-size: 14px;
   }
-  .btn-more,
-  .btn-search {
+  button:not(.btn-back) {
     margin-left: auto;
   }
 `;
 
-// basic-header = <Header onBackClick={handleBackClick} onMoreClick={handleMoreClick} text/>
-// search-header = <Header onBackClick={handleBackClick} search/>
+// basic-header = <Header onMoreClick={handleMoreClick} text/>
+// search-header = <Header search/>
 // main-header = <Header onSearchClick={handleSearchClick} main/>
 // upload-header = <Header onUploadClick={handleUploadClick} upload/>
-// text-header = <Header text="text" onBackClick={handleBackClick} onMoreClick={handleMoreClick}/>
+// text-header = <Header text="text" onMoreClick={handleMoreClick}/>
 export default function Header({
   text,
   search,
@@ -77,7 +79,7 @@ export default function Header({
           </button>
         </>
       )}
-      {upload && <button onClick={onUploadClick} />}
+      {upload && <MsButton text='업로드' onClick={onUploadClick} />}
     </HeaderStyle>
   );
 }
