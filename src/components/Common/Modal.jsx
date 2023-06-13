@@ -3,48 +3,43 @@ import styled from 'styled-components';
 
 const ModalStyle = styled.div`
   width: 252px;
-  height: 110px;
   background-color: var(--color-navy);
   color: #fff;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
   font-size: 16px;
-  padding-top: 24px;
-  gap: 23px;
   text-align: center;
-
+  p {
+    padding: 24px 0;
+  }
   & .btn-group {
     border-top: 1px solid var(--color-lightgrey);
     display: flex;
   }
-
   button {
     color: inherit;
-    height: 46px;
+    padding: 14px 0;
     width: 100%;
     font-size: 14px;
-
-    &:active {
+    &:active,
+    &:hover {
       color: var(--color-lime);
     }
-
     &:nth-child(2) {
       border-left: 1px solid var(--color-lightgrey);
     }
   }
 `;
 
-export default function Modal({ title, btnRight }) {
+export default function Modal({ title, btnText, onYesClick }) {
   return (
     <ModalStyle>
-      <div>{title}</div>
+      <p>{title}</p>
       <div className='btn-group'>
-        <button className='btn-left' type='button'>
+        <button className='btn-cancel' type='button'>
           취소
         </button>
-        <button className='btn-right' type='button'>
-          {btnRight}
+        <button className='btn-yes' type='button' onClick={onYesClick}>
+          {btnText}
         </button>
       </div>
     </ModalStyle>

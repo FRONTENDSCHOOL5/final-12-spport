@@ -3,12 +3,12 @@ import BasicImage from '../../assets/image/default-profile.png';
 import styled, { css } from 'styled-components';
 
 const Common = css`
-  border: 1px solid #586c9d;
+  border: 1px solid var(--color-steelblue);
   border-radius: 100%;
   overflow: hidden;
   img {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1/1;
     object-fit: cover;
   }
 `;

@@ -10,22 +10,22 @@ import iconUserFill from '../../assets/image/icon-user-fill.svg';
 
 // nav 스타일 컴포넌트
 const NavContainer = styled.nav`
-  width: 390px;
+  width: 100%;
   height: 60px;
   background-color: var(--color-navy);
+  position: fixed;
+  bottom: 0;
 `;
 // ul과 ul 안의 li, button, img 스타일 컴포넌트
 const NavUnorderedList = styled.ul`
   width: 100%;
   height: 100%;
   display: flex;
-
   li {
     display: inline-block;
     list-style: none;
     flex-basis: 0;
     flex-grow: 1;
-
     button {
       width: 100%;
       height: 100%;
@@ -33,7 +33,6 @@ const NavUnorderedList = styled.ul`
       background-color: inherit;
       color: #fff;
       font-size: 10px;
-
       img {
         display: block;
         margin: 0 auto;
@@ -73,6 +72,7 @@ export default function NavBar(props) {
     ['프로필', iconUser, iconUserFill],
   ];
 
+  // const [currentPage, setCurrentPage] = useState('홈');
   return (
     <NavContainer>
       <NavUnorderedList>
