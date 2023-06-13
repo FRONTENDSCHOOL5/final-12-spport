@@ -1,8 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const LabelStyle = styled.label`
+  font-size: 12px;
+  color: var(--color-darkgrey);
+  margin-bottom: 8px;
+  display: inline-block;
+`;
+
 export const InputStyle = styled.input`
   width: 322px;
+  font-size: 14px;
   border-bottom: 1px solid var(--color-lightgrey);
   padding: 8px 0;
   outline: none;
@@ -11,7 +19,6 @@ export const InputStyle = styled.input`
   display: flex;
 
   &::placeholder {
-    font-size: 14px;
     color: var(--color-lightgrey);
   }
 
@@ -31,7 +38,7 @@ export const InputStyle = styled.input`
 export default function Input({ title, type, inputId, placeholder }) {
   return (
     <>
-      <label htmlFor={inputId}>{title}</label>
+      <LabelStyle htmlFor={inputId}>{title}</LabelStyle>
       <InputStyle type={type} id={inputId} placeholder={placeholder} required />
     </>
   );
