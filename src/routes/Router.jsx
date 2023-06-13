@@ -13,6 +13,7 @@ import Error from '../pages/Error';
 import Follow from '../pages/Follow';
 import Post from '../pages/Post';
 import Search from '../pages/Search';
+import Profile from '../pages/Profile';
 
 export default function Router() {
   return (
@@ -28,6 +29,7 @@ export default function Router() {
       <Route path='/follower' element={<Follow />} />
       <Route path='/following' element={<Follow />} />
       <Route path='/chat' element={<Chat />} />
+      <Route path='/profile/:id' element={<Profile />} />
       <Route path='/chat/:id' element={<ChatRoom />} />
       <Route path='/search' element={<Search />} />
       <Route path='/search/:id' element={<Search />} />
