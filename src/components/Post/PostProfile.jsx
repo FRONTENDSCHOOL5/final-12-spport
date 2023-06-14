@@ -1,11 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 import imgProfile from '../../assets/image/default-profile.png';
+import iconMore from '../../assets/image/icon-more-small.svg';
+import { Link } from 'react-router-dom';
+import { ProfileImage36 } from '../Common/ProfileImage';
 
 const PostProfileStyle = styled.div`
   display: flex;
   align-items: center;
   gap: 12px;
+  a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
   .img-profile {
     width: 42px;
     border-radius: 50px;
@@ -18,6 +26,9 @@ const PostProfileStyle = styled.div`
   .accountid {
     color: var(--color-steelblue);
     font-size: 12px;
+  }
+  .btn-more {
+    margin-left: auto;
   }
 `;
 
@@ -32,14 +43,23 @@ const PostProfileStyle = styled.div`
 //   },
 
 export default function PostProfile({ author }) {
+  const isTeam = author.accountname.startsWith('SPORT_');
   return (
     <PostProfileStyle className='profile-wrapper'>
-      <img className='img-profile' src={imgProfile} />
-      <h2>
-        <span className='username'>{author.username}</span>
-        <br />
-        <span className='accountid'>@ {author.accountname}</span>
-      </h2>
+      <Link to={`/profile/${author.accountname}`}>
+        {/* TODO author의 프로필을 검색 후 이미지 추가 */}
+        <ProfileImage36 />
+        <div>
+          <span className='username'>{author.username}</span>
+          <br />
+          <span className='accountid'>@ {author.accountname}</span>
+        </div>
+      </Link>
+      {isTeam || (
+        <button className='btn-more' type='button'>
+          <img src={iconMore} />
+        </button>
+      )}
     </PostProfileStyle>
   );
 }
