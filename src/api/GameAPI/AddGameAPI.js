@@ -42,7 +42,25 @@ const arrToGame = (gameArr) => {
 };
 
 // date / time 오름차순 정렬
-const sortGameByDate = (gameArr) => {};
+const sortGameByDate = (gameArr) => {
+  return gameArr.sort((a, b) => {
+    const infoA = a[0].split(',');
+    const infoB = b[0].split(',');
+    const dateA = new Date(infoA[0]);
+    const dateB = new Date(infoB[0]);
+    if (dateA > dateB) {
+      return 1;
+    } else if (dateA < dateB) {
+      return -2;
+    } else {
+      if (infoA[2] > infoB[2]) {
+        return 1;
+      } else {
+        return -2;
+      }
+    }
+  });
+};
 
 // get Game info with API
 // sort them in increasing order of date and time
