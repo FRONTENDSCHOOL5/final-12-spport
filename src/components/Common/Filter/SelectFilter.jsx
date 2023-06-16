@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import iconToggle from '../../../assets/image/icon-toggle.svg';
+import classnames from 'classnames';
 
 const SelectFilterStyle = styled.div`
   position: relative;
   width: 105px;
+  text-align: center;
   * {
     color: var(--color-steelblue);
   }
@@ -40,6 +42,7 @@ const SelectFilterStyle = styled.div`
     border: 1px solid var(--color-steelblue);
     border-radius: 15px;
     padding: 8px 8px 0 8px;
+    display: none;
     li button {
       width: 86px;
       height: 18px;
@@ -52,48 +55,41 @@ const SelectFilterStyle = styled.div`
       }
     }
   }
+  .list-select.on {
+    display: block;
+  }
 `;
 
-export default function SelectFilter({ type, items }) {
+export default function SelectFilter({
+  type,
+  items,
+  selectItem,
+  setSelectItem,
+}) {
   const [filterClick, setFilterClick] = useState(false);
-  const [selectItem, setSelectItem] = useState('전체'); // 나중에 props로 받아야 함
-  const handleFilterClick = () => {
+  const handleFilterClick = (e) => {
     setFilterClick((prev) => !prev);
   };
 
-  const handleSelectClick = (item) => () => {
-    setSelectItem(item);
+  const handleSelectClick = (e) => {
+    setSelectItem(e.target.textContent);
     setFilterClick(false);
   };
 
   useEffect(() => {
-    const listSelect = document.querySelector('.list-select');
-    const btnSelect = document.querySelector('.btn-select');
-    if (filterClick) {
-      listSelect.style.display = 'block';
-      btnSelect.classList.add('on');
-    } else {
-      listSelect.scrollTo(0, 0);
-      listSelect.style.display = 'none';
-      btnSelect.classList.remove('on');
-    }
-  }, [filterClick]);
-
-  useEffect(() => {
-    const btnSelect = document.querySelector('.btn-select');
-    btnSelect.textContent = selectItem;
-  }, [selectItem]);
+    items.unshift('전체');
+  }, []);
 
   return (
     <SelectFilterStyle className='select-filter'>
       <button className='btn-select' type='button' onClick={handleFilterClick}>
-        {type} 선택
+        {selectItem === '선택' ? `${type} 선택` : selectItem}
       </button>
-      <ul className='list-select'>
-        {items.map((item) => {
+      <ul className={classnames('list-select', filterClick && 'on')}>
+        {items.map((item, index) => {
           return (
-            <li>
-              <button type='button' onClick={handleSelectClick(item)}>
+            <li key={index}>
+              <button type='button' onClick={handleSelectClick}>
                 {item}
               </button>
             </li>

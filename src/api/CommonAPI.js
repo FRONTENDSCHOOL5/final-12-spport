@@ -42,6 +42,10 @@ const POST_API = async (token, reqUrl, bodyData) => {
   return await API_BODY('POST', token, reqUrl, bodyData);
 };
 
+const POST_API_NO_BODY = async (token, reqUrl) => {
+  return await API_NO_BODY('POST', token, reqUrl);
+};
+
 const POST_API_NO_TOKEN = async (reqUrl, bodyData) => {
   const res = await fetch(url + reqUrl, {
     method: 'POST',
@@ -82,6 +86,7 @@ const DELETE_API = async (token, reqUrl) => {
 export {
   GET_API,
   POST_API,
+  POST_API_NO_BODY,
   POST_API_NO_TOKEN,
   POST_IMAGE_API,
   PUT_API,

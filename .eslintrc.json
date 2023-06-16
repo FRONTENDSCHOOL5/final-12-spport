@@ -10,15 +10,16 @@
     },
     "plugins": ["react", "prettier"],
     "rules": {
-      "prettier/prettier": "error",
+      "prettier/prettier": "warn",
       "react/react-in-jsx-scope": "off",
-      "indent": ["error", 2],
       "linebreak-style": ["error", "unix"],
       "quotes": ["error", "single"],
       "semi": ["error", "always"],
       "no-extra-semi": "error",
       "no-tabs": ["error", { "allowIndentationTabs": true }],
-      "react/prop-types": "off" 
+      "react/prop-types": "off",
+      "no-unused-vars": "off",
+      "indent": "off"
     }
   }
   
