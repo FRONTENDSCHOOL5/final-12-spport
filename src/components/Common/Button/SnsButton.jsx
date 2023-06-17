@@ -5,6 +5,7 @@ import kakao from '../../../assets/image/icon-kakao.svg';
 import google from '../../../assets/image/icon-google.svg';
 
 const SnsButtonStyle = styled.button`
+  position: relative;
   border-radius: 50px;
   background-color: var(--color-navy);
   width: 80%;
