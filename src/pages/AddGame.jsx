@@ -60,7 +60,6 @@ export default function AddGame() {
     setFilterGame(filteredGame);
   }, [selectTeam]);
 
-  console.log(filterGame);
   return (
     <>
       <h1 className='a11y-hidden'>일정 추가</h1>
