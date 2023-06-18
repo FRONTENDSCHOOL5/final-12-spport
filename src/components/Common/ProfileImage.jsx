@@ -37,28 +37,28 @@ const ProfileImg110 = styled.div`
 function ProfileImage36(props) {
   return (
     <ProfileImg36>
-      <img src={props.img || BasicImage} alt='프로필 이미지' />
+      <img src={props.image || BasicImage} alt='프로필 이미지' />
     </ProfileImg36>
   );
 }
 function ProfileImage42(props) {
   return (
     <ProfileImg42>
-      <img src={props.img || BasicImage} alt='프로필 이미지' />
+      <img src={props.image || BasicImage} alt='프로필 이미지' />
     </ProfileImg42>
   );
 }
 function ProfileImage50(props) {
   return (
     <ProfileImg50>
-      <img src={props.img || BasicImage} alt='프로필 이미지' />
+      <img src={props.image || BasicImage} alt='프로필 이미지' />
     </ProfileImg50>
   );
 }
 function ProfileImage110(props) {
   return (
     <ProfileImg110>
-      <img src={props.img || BasicImage} alt='프로필 이미지' />
+      <img src={props.image || BasicImage} alt='프로필 이미지' />
     </ProfileImg110>
   );
 }
