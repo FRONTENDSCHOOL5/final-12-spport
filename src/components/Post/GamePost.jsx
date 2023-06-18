@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import WeatherCard from './WeatherCard';
 import styled from 'styled-components';
+import { getWeather } from '../../api/WeatherAPI';
 
 const GamePostStyle = styled.div`
   p {
@@ -42,6 +43,15 @@ const weather = {
 
 export default function GamePost({ post, game }) {
   const isHome = post.author.username.startsWith(game.home);
+  const [weather, setWeather] = useState({});
+
+  useEffect(() => {
+    const getData = async () => {
+      const data = await getWeather(game.en_city);
+      setWeather(data);
+    };
+    getData();
+  }, []);
   return (
     <>
       <GamePostStyle className='content-wrapper'>
@@ -58,7 +68,7 @@ export default function GamePost({ post, game }) {
           in {game.full_stadium}
         </p>
       </GamePostStyle>
-      <WeatherCard weather={weather} />
+      <WeatherCard city={game.stadium} weather={weather} />
     </>
   );
 }

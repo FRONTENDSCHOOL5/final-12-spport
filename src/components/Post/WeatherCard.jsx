@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import weatherIcon from './testweather.png';
 import iconTemp from '../../assets/image/icon-temp.svg';
 import iconWater from '../../assets/image/icon-water.svg';
 const WeatherCardStyle = styled.div`
@@ -68,19 +67,19 @@ const WeatherCardStyle = styled.div`
   }
 `;
 
-export default function WeatherCard({ weather }) {
+export default function WeatherCard({ city, weather }) {
   return (
     <WeatherCardStyle className='weather-wrapper'>
-      <h3 className='weather-title'>오늘 {weather.city} 날씨</h3>
+      <h3 className='weather-title'>오늘 {city} 날씨</h3>
       <div className='weather-info'>
         <div className='weather-desc'>
-          <img src={weatherIcon} alt='날씨 이미지' />
+          <img src={weather.image} alt='날씨 이미지' />
           <span>{weather.description}</span>
         </div>
         <div className='weather-measurement'>
           <span className='avg-temp'>{weather.avg_temp}°C</span>
           <span className='min-max'>
-            최저 {weather.min_temp}°C 최고 {weather.max_temp}°C
+            최저 {weather.min_temp}°C <br /> 최고 {weather.max_temp}°C
           </span>
           <span className='humidity'>{weather.humidity}%</span>
         </div>
