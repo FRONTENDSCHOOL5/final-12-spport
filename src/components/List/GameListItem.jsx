@@ -53,17 +53,14 @@ export default function GameListItem({ game }) {
     };
     setLike();
   }, []);
-
-  const onLikeClick = () => {
+  const onLikeClick = async () => {
     console.log(game_id);
     if (isLike) {
-      unlikeGameAPI(test_token, game_id);
-      setIsLike(false);
+      const unlike = await unlikeGameAPI(test_token, game_id);
+      setIsLike(unlike[0].post.hearted);
     } else {
-      likeGameAPI(test_token, game_id);
-      setIsLike(true);
-    }
-  };
+      const like = await likeGameAPI(test_token, game_id);
+      setIsLike(like[0].post.hearted);
 
   return (
     <ListItemStyle className='list-item' key={game_id[0]}>

@@ -48,11 +48,11 @@ export default function PostProfile({ author }) {
     <PostProfileStyle className='profile-wrapper'>
       <Link to={`/profile/${author.accountname}`}>
         {/* TODO author의 프로필을 검색 후 이미지 추가 */}
-        <ProfileImage36 />
+        <ProfileImage36 img={author.image}/>
         <div>
           <span className='username'>{author.username}</span>
           <br />
-          <span className='accountid'>@ {author.accountname}</span>
+          <span className='accountid'>@ {isTeam?author.accountname.slice(9):author.accountname}</span>
         </div>
       </Link>
       {isTeam || (

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { ProfileImage36 } from '../Common/ProfileImage';
 import more from '../../assets/image/icon-more-small.svg';
 import Modal from '../Common/Modal';
+import { Link } from 'react-router-dom';
 
 const VComment = styled.article`
   padding: 12px 16px;
@@ -11,13 +12,11 @@ const VComment = styled.article`
   justify-content: space-between;
   ////
   div {
-    box-shadow: inset 0 0 10px red;
-    background-color: red;
+    background-color: var(--color-steelblue);
     flex-shrink: 0;
   }
   .comment-content {
     display: flex;
-    /* justify-content: space-between; */
     gap: 10px;
     width: 100%;
   }
@@ -27,13 +26,17 @@ const VComment = styled.article`
     align-items: center;
     gap: 20px;
   }
+  .w-name {
+    font-size: 14px;
+  }
   .w-time {
-    font-size: 12px;
+    font-size: 10px;
     color: var(--color-darkgrey);
   }
   .w-content {
     padding-left: 60px;
     padding: 10px 20px 10px 50px;
+    font-size: 14px;
   }
   .btn-more {
     margin-left: 0;
@@ -43,14 +46,15 @@ const VComment = styled.article`
   }
 `;
 
-// props.name 댓글 작성자
-// props.time 댓글 작성 시간
-// props.content 댓글 내용
+// comment.name 댓글 작성자
+// comment.time 댓글 작성 시간
+// comment.content 댓글 내용
 
-export default function ViewComment(props) {
+export default function ViewComment({ comment }) {
   // 일단 버튼을 누르면 modal이 나오도록 해둠
   // modal이 false면 안나오고 버튼을 누르면 setModal로 true로 바뀌며 모달 생성
   // 기본값은 false
+  const profileLink = `/profile/${comment.author.accountname}`;
   const [modal, setModal] = useState(false);
 
   const commentBtn = () => {
@@ -64,16 +68,18 @@ export default function ViewComment(props) {
   return (
     <VComment>
       <section className='comment-content'>
-        <ProfileImage36 />
+        <Link to={profileLink}>
+          <ProfileImage36 img={comment.author.image} />
+        </Link>
         <section className='w-info'>
-          {/* props가 없으면 댓글이 없습니다 */}
+          {/* comment가 없으면 댓글이 없습니다 */}
           {/* 나중에 조건부 렌더링으로 아예 다른 페이지가 나오도록 수정 */}
-          <p className='w-name'>{props.name || '댓글이 없습니다'}</p>
-          <p className='w-time'>{props.time}</p>
+          <p className='w-name'>{comment.author.username}</p>
+          <p className='w-time'>{comment.createdAt}</p>
         </section>
         <button className='btn-more' onClick={commentBtn}></button>
       </section>
-      <p className='w-content'>{props.content}</p>
+      <p className='w-content'>{comment.content}</p>
       {modal === true ? <Modal /> : null}
     </VComment>
   );

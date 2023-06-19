@@ -56,7 +56,18 @@ const PostStyle = styled.article`
 
 // Regular Post = <Post post={post} />
 // Game Post = <Post game={game} />
+
+// const convertDate = (date) => {
+//   return `${date.slice(0, 4)}년 ${parseInt(date.slice(5, 7))}월 ${parseInt(
+//     date.slice(8),
+//   )}일`;
+// };
+
 export default function Post({ post, game }) {
+  const date = game ? post.image : post.createAt.slice(0, 10);
+  const displayDate = `${date.slice(0, 4)}년 ${parseInt(
+    date.slice(5, 7),
+  )}월 ${parseInt(date.slice(8))}일`;
   return (
     <PostStyle>
       <PostProfile author={post.author} />
@@ -74,7 +85,9 @@ export default function Post({ post, game }) {
           heartCount={post.heartCount}
           commentCount={post.commentCount}
         />
-        <time className='post-time'>2023년 6월 1일</time>
+        <time className='post-time' dateTime={date}>
+          {displayDate}
+        </time>
       </div>
     </PostStyle>
   );
