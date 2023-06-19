@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { ProfileImage50 } from '../Common/ProfileImage';
 import SButton from '../Common/Button/SButton';
+import {
+  checkLikeAPI,
+  likeGameAPI,
+  unlikeGameAPI,
+} from '../../api/GameAPI/LikeGameAPI';
 
 const ListItemStyle = styled.li`
   width: 100%;
@@ -36,6 +41,27 @@ const ListItemStyle = styled.li`
 export default function GameListItem({ game }) {
   const game_info = game[0];
   const game_id = game[1];
+  const [isLike, setIsLike] = useState(false);
+
+  const test_token =
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODkyNWZmYjJjYjIwNTY2MzMzY2Y4MyIsImV4cCI6MTY5MTg5NDU0MCwiaWF0IjoxNjg2NzEwNTQwfQ.CMVKaojlNSWLjmtbZ_AY6shkkStQgp1DHP3z87oIPe8';
+
+  useEffect(() => {
+    const setLike = async () => {
+      const like = await checkLikeAPI(test_token, game_id[0]);
+      setIsLike(like);
+    };
+    setLike();
+  }, []);
+  const onLikeClick = async () => {
+    console.log(game_id);
+    if (isLike) {
+      const unlike = await unlikeGameAPI(test_token, game_id);
+      setIsLike(unlike[0].post.hearted);
+    } else {
+      const like = await likeGameAPI(test_token, game_id);
+      setIsLike(like[0].post.hearted);
+
   return (
     <ListItemStyle className='list-item' key={game_id[0]}>
       <ProfileImage50 img={game_info.image} />
@@ -49,7 +75,11 @@ export default function GameListItem({ game }) {
           {game_info.stadium}
         </span>
       </div>
-      <SButton text='추가' />
+      {isLike ? (
+        <SButton text='취소' func={onLikeClick} active />
+      ) : (
+        <SButton text='추가' func={onLikeClick} />
+      )}
     </ListItemStyle>
   );
 }
