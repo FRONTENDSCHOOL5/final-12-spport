@@ -53,7 +53,6 @@ export default function GameListItem({ game }) {
     };
     setLike();
   }, []);
-
   const onLikeClick = async () => {
     console.log(game_id);
     if (isLike) {
@@ -62,8 +61,6 @@ export default function GameListItem({ game }) {
     } else {
       const like = await likeGameAPI(test_token, game_id);
       setIsLike(like[0].post.hearted);
-    }
-  };
 
   return (
     <ListItemStyle className='list-item' key={game_id[0]}>
