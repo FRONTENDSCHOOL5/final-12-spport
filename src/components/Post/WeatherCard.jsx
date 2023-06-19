@@ -6,7 +6,7 @@ const WeatherCardStyle = styled.div`
   border: 1px solid var(--color-navy);
   border-radius: 10px;
   padding: 7px 30px 17px;
-  width: 304px;
+  width: calc(100% - 10px);
   text-align: start;
   .weather-title {
     width: 178px;
