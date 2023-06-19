@@ -1,4 +1,3 @@
-Login;
 import React, { useState, useEffect, useCallback } from 'react';
 import Input from '../components/Common/Input';
 import styled from 'styled-components';
@@ -13,8 +12,6 @@ export default function LoginPage() {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [username, setUsername] = useState('');
-  const [accountname, setAccountname] = useState('');
   const [isCorrect, setIsCorrect] = useState(true);
   const [buttonDisabled, setButtonDisabled] = useState(true);
   const [loginError, setLoginError] = useState('');
