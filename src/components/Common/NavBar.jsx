@@ -7,6 +7,7 @@ import iconMessage from '../../assets/image/icon-message.svg';
 import iconMessageFill from '../../assets/image/icon-message-fill.svg';
 import iconUser from '../../assets/image/icon-user.svg';
 import iconUserFill from '../../assets/image/icon-user-fill.svg';
+import { useNavigate } from 'react-router-dom';
 
 // nav 스타일 컴포넌트
 const NavContainer = styled.nav`
@@ -45,7 +46,16 @@ const NavUnorderedList = styled.ul`
 // li 컴포넌트
 function NavList(props) {
   // nav 버튼 클릭시 호출되는 함수
-  const handlePage = () => props.setCurrentPage(props.text);
+  // const handlePage = () => props.setCurrentPage(props.text);
+  const navigate = useNavigate();
+  const pageMap = new Map();
+  pageMap.set('홈', '/home');
+  pageMap.set('게시물 작성', '/upload');
+  pageMap.set('채팅', '/chat');
+  pageMap.set('프로필', '/myprofile');
+  const handlePage = (e) => {
+    navigate(pageMap.get(e.target.parentNode.textContent));
+  };
   // 현재 클릭된 메뉴 버튼의 텍스트 컬러 변경 함수
   const textColor = () => {
     if (props.isSelected) {
