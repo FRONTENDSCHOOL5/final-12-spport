@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { ProfileImage50 } from '../Common/ProfileImage';
 import SButton from '../Common/Button/SButton';
 
-const ListItemStyle = styled.div`
+const ListItemStyle = styled.li`
   width: 100%;
   display: flex;
   align-items: center;
@@ -33,43 +33,20 @@ const ListItemStyle = styled.div`
   }
 `;
 
-//   author: {
-//     _id: '작성자 id',
-//     username: '2',
-//     accountname: '2',
-//     following: [],
-//     follower: ['follower id'],
-//     followerCount: 1,
-//     followingCount: 0,
-//   },
-
-// user-search <ListItem user={user} />
-// team-search <ListItem user={user} />
-// user-follow <ListItem user={user} onFollowClick={} follow/>
-// team-follow <ListItem user={user} onFollowClick={} follow/>
-
-// const game = {
-//     date: '06.01',
-//     day: '목',
-//     time: '18:30',
-//     home: 'LG',
-//     away: '롯데',
-//     stadium: '잠실',
-//     full_stadium: '서울종합운동장 야구장',
-//   };
-
 export default function GameListItem({ game }) {
+  const game_info = game[0];
+  const game_id = game[1];
   return (
-    <ListItemStyle className='ListItem-wrapper'>
-      {/* TODO author의 프로필을 검색 후 이미지 추가 */}
-      <ProfileImage50 />
+    <ListItemStyle className='list-item' key={game_id[0]}>
+      <ProfileImage50 img={game_info.image} />
       <div>
         <span className='teams'>
-          {game.home} vs. {game.away}
+          {game_info.home} vs. {game_info.away}
         </span>
         <br />
         <span className='game-info'>
-          {game.date}({game.day}) {game.time} in {game.stadium}
+          {game_info.date} ({game_info.day}) {game_info.time} in{' '}
+          {game_info.stadium}
         </span>
       </div>
       <SButton text='추가' />

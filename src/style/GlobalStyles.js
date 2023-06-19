@@ -13,8 +13,13 @@ const GlobalStyles = createGlobalStyle`
         padding: 0;
         position: absolute;
     }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
     * {
         box-sizing: border-box;
+        color: var(--color-navy);
     }
     button {
         border: 0;
