@@ -94,4 +94,11 @@ const filterGameInfo = (game, type, team) => {
   return game.filter((item) => item[0].home === team || item[0].away === team);
 };
 
-export { getGameInfo, getHomeImage, getTeamName, filterGameInfo, arrToGame };
+export {
+  getGameInfo,
+  getHomeImage,
+  getTeamName,
+  filterGameInfo,
+  sortGameByDate,
+  arrToGame,
+};
