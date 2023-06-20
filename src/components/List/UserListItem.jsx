@@ -17,6 +17,7 @@ const ListItemStyle = styled.div`
   }
   a {
     display: flex;
+    width: 100%;
     align-items: center;
     gap: 12px;
   }
@@ -36,16 +37,6 @@ const ListItemStyle = styled.div`
   }
 `;
 
-//   author: {
-//     _id: '작성자 id',
-//     username: '2',
-//     accountname: '2',
-//     following: [],
-//     follower: ['follower id'],
-//     followerCount: 1,
-//     followingCount: 0,
-//   },
-
 // user-search <ListItem user={user} />
 // team-search <ListItem user={user} />
 // user-follow <ListItem user={user} onFollowClick={} follow/>
@@ -53,22 +44,21 @@ const ListItemStyle = styled.div`
 
 export default function UserListItem({ user, follow, onFollowClick }) {
   const isTeam = user.accountname.startsWith('SPORT_');
+  console.log(user);
   return (
     <ListItemStyle className='ListItem-wrapper'>
-      <Link to={`/ListItem/${user.accountname}`}>
+      <Link to={`/profile/${user.accountname}`}>
         {/* TODO author의 프로필을 검색 후 이미지 추가 */}
-        <ProfileImage50 />
+        <ProfileImage50 img={user.image} />
         <div>
           <span className='username'>{user.username}</span>
           <br />
           <span className='accountid'>
-            @{' '}
-            {isTeam ? user.accountname.replace('SPORT_', '') : user.accountname}
+            @ {isTeam ? user.accountname.slice(9) : user.accountname}
           </span>
         </div>
+        {isTeam && <img src={iconBaseball} alt='스포츠팀 아이콘' />}
       </Link>
-
-      {isTeam && <img src={iconBaseball} alt='스포츠팀 아이콘' />}
       {follow && <SButton text='팔로우' func={onFollowClick} />}
     </ListItemStyle>
   );
