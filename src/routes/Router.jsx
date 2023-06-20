@@ -32,7 +32,7 @@ export default function Router() {
       <Route path='/profile/:id' element={<Profile />} />
       <Route path='/chat/:id' element={<ChatRoom />} />
       <Route path='/search' element={<Search />} />
-      <Route path='/search/:id' element={<Search />} />
+      <Route path='/search/:keyword' element={<Search />} />
       <Route path='/post/:id' element={<Post />} />
     </Routes>
   );

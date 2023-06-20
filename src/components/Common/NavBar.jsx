@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import iconHome from '../../assets/image/icon-home.svg';
 import iconHomeFill from '../../assets/image/icon-home-fill.svg';
@@ -7,7 +7,9 @@ import iconMessage from '../../assets/image/icon-message.svg';
 import iconMessageFill from '../../assets/image/icon-message-fill.svg';
 import iconUser from '../../assets/image/icon-user.svg';
 import iconUserFill from '../../assets/image/icon-user-fill.svg';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, LInk, useLocation } from 'react-router-dom';
+import { useRecoilState } from 'recoil';
+import { accountname } from '../../atom/atom';
 
 // nav 스타일 컴포넌트
 const NavContainer = styled.nav`
@@ -43,58 +45,51 @@ const NavUnorderedList = styled.ul`
   }
 `;
 
-// li 컴포넌트
-function NavList(props) {
-  // nav 버튼 클릭시 호출되는 함수
-  // const handlePage = () => props.setCurrentPage(props.text);
+// nav bar 컴포넌트
+export default function NavBar(props) {
+  const [username, setUsername] = useRecoilState(accountname);
   const navigate = useNavigate();
-  const pageMap = new Map();
-  pageMap.set('홈', '/home');
-  pageMap.set('게시물 작성', '/upload');
-  pageMap.set('채팅', '/chat');
-  pageMap.set('프로필', '/myprofile');
-  const handlePage = (e) => {
-    navigate(pageMap.get(e.target.parentNode.textContent));
+
+  const menu = [
+    ['홈', 'home', iconHome, iconHomeFill],
+    ['게시물 작성', 'upload', iconEdit, iconEdit],
+    ['채팅', 'chat', iconMessage, iconMessageFill],
+    ['프로필', `profile/${username}`, iconUser, iconUserFill],
+  ];
+
+  const location = useLocation();
+  const [currentPage, setCurrentPage] = useState('home');
+  const currentLocation = location.pathname.slice(1);
+
+  const handlePage = (item) => () => {
+    setCurrentPage(item[1]);
+    navigate(`/${item[1]}`);
   };
-  // 현재 클릭된 메뉴 버튼의 텍스트 컬러 변경 함수
-  const textColor = () => {
-    if (props.isSelected) {
+
+  const textColor = (isSelected) => {
+    if (isSelected) {
       return 'var(--color-lime)';
     }
   };
 
   return (
-    <li>
-      <button type='button' onClick={handlePage} style={{ color: textColor() }}>
-        <img src={props.source} />
-        {props.text}
-      </button>
-    </li>
-  );
-}
-
-// nav bar 컴포넌트
-export default function NavBar(props) {
-  const menu = [
-    ['홈', iconHome, iconHomeFill],
-    ['게시물 작성', iconEdit, iconEdit],
-    ['채팅', iconMessage, iconMessageFill],
-    ['프로필', iconUser, iconUserFill],
-  ];
-
-  // const [currentPage, setCurrentPage] = useState('홈');
-  return (
     <NavContainer>
       <NavUnorderedList>
         {menu.map((item, index) => {
           return (
-            <NavList
-              key={index}
-              source={props.currentPage === item[0] ? item[2] : item[1]}
-              isSelected={props.currentPage === item[0]}
-              text={item[0]}
-              setCurrentPage={props.setCurrentPage}
-            />
+            <li key={index}>
+              <button
+                type='button'
+                onClick={handlePage(item)}
+                style={{ color: textColor(item[1] === currentLocation) }}
+              >
+                <img
+                  src={item[1] === currentLocation ? item[3] : item[2]}
+                  alt=''
+                />
+                {item[0]}
+              </button>
+            </li>
           );
         })}
       </NavUnorderedList>
