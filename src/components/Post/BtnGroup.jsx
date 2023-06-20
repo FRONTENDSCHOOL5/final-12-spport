@@ -4,12 +4,9 @@ import iconFillHeart from '../../assets/image/icon-heart-fill.svg';
 import iconMessage from '../../assets/image/icon-message-small.svg';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import {
-  checkLikeAPI,
-  getLikeCountAPI,
-  likeGameAPI,
-  unlikeGameAPI,
-} from '../../api/GameAPI/LikeGameAPI';
+import { likeGameAPI, unlikeGameAPI } from '../../api/GameAPI/LikeGameAPI';
+import { useRecoilState } from 'recoil';
+import { userToken } from '../../atom/atom';
 
 const BtnWrapperStyle = styled.div`
   text-align: start;
@@ -37,18 +34,17 @@ export default function BtnGroup({ id, hearted, heartCount, commentCount }) {
   const [isLike, setIsLike] = useState(hearted);
   const [likeCount, setLikeCount] = useState(heartCount);
   const [cmtCount, setCmtCounter] = useState(commentCount);
-  const test_token =
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODkyNWZmYjJjYjIwNTY2MzMzY2Y4MyIsImV4cCI6MTY5MTg5NDU0MCwiaWF0IjoxNjg2NzEwNTQwfQ.CMVKaojlNSWLjmtbZ_AY6shkkStQgp1DHP3z87oIPe8';
+  const [token, setToken] = useRecoilState(userToken);
 
   const handleLikeClick = async () => {
     if (isLike) {
       console.log('unlike');
-      const unlike = await unlikeGameAPI(test_token, [id]);
+      const unlike = await unlikeGameAPI(token, [id]);
       setIsLike(unlike[0].post.hearted);
       setLikeCount(unlike[0].post.heartCount);
     } else {
       console.log('like');
-      const like = await likeGameAPI(test_token, [id]);
+      const like = await likeGameAPI(token, [id]);
       setIsLike(like[0].post.hearted);
       setLikeCount(like[0].post.heartCount);
     }

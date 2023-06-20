@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { ProfileImage36 } from '../Common/ProfileImage';
 import { writeCommentAPI } from '../../api/CommentAPI';
 import { useParams } from 'react-router-dom';
+import { useRecoilState } from 'recoil';
+import { userToken, userimage } from '../../atom/atom';
 
 const InputCommentStyle = styled.form`
   position: fixed;
@@ -35,20 +37,19 @@ const InputCommentStyle = styled.form`
 export default function InputComment({ image }) {
   const { id } = useParams();
   const [inputVal, setInputVal] = useState('');
-  const test_token =
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODkyNWZmYjJjYjIwNTY2MzMzY2Y4MyIsImV4cCI6MTY5MTg5NDU0MCwiaWF0IjoxNjg2NzEwNTQwfQ.CMVKaojlNSWLjmtbZ_AY6shkkStQgp1DHP3z87oIPe8';
+  const [token, setToken] = useRecoilState(userToken);
+  const [userImage, setUserImage] = useRecoilState(userimage);
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const postCmt = await writeCommentAPI(test_token, id, inputVal);
+    const postCmt = await writeCommentAPI(token, id, inputVal);
     setInputVal('');
-    console.log(postCmt);
   };
   const handleInputChange = (e) => {
     setInputVal(e.target.value);
   };
   return (
     <InputCommentStyle onSubmit={handleSubmit}>
-      <ProfileImage36 />
+      <ProfileImage36 img={userImage} />
       <label htmlFor='inpComment' className='a11y-hidden'>
         댓글을 입력해주세요
       </label>

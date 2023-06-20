@@ -1,10 +1,6 @@
 import { GET_API } from '../CommonAPI';
 import tokenData from '../../data/sport_bs_users.json';
 
-const url = 'https://api.mandarin.weniv.co.kr';
-const test_token =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODkyNWZmYjJjYjIwNTY2MzMzY2Y4MyIsImV4cCI6MTY5MTg5NDU0MCwiaWF0IjoxNjg2NzEwNTQwfQ.CMVKaojlNSWLjmtbZ_AY6shkkStQgp1DHP3z87oIPe8';
-
 // get TEAM IMAGE from team tokenData
 const getHomeImage = (team_name) => {
   const team = tokenData.filter(
