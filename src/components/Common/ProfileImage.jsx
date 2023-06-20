@@ -33,32 +33,52 @@ const ProfileImg110 = styled.div`
   height: 110px;
 `;
 
+const handleImgError = (e) => {
+  e.target.src = BasicImage;
+};
+
 // 이미지 없을 시 디폴트 이미지, 있을시 props 받아오기
 function ProfileImage36(props) {
   return (
     <ProfileImg36>
-      <img src={props.img || BasicImage} alt='프로필 이미지' />
+      <img
+        onError={handleImgError}
+        src={props.img || BasicImage}
+        alt='프로필 이미지'
+      />
     </ProfileImg36>
   );
 }
 function ProfileImage42(props) {
   return (
     <ProfileImg42>
-      <img src={props.img || BasicImage} alt='프로필 이미지' />
+      <img
+        onError={handleImgError}
+        src={props.img || BasicImage}
+        alt='프로필 이미지'
+      />
     </ProfileImg42>
   );
 }
 function ProfileImage50(props) {
   return (
     <ProfileImg50>
-      <img src={props.img || BasicImage} alt='프로필 이미지' />
+      <img
+        onError={handleImgError}
+        src={props.img || BasicImage}
+        alt='프로필 이미지'
+      />
     </ProfileImg50>
   );
 }
 function ProfileImage110(props) {
   return (
     <ProfileImg110>
-      <img src={props.img || BasicImage} alt='프로필 이미지' />
+      <img
+        onError={handleImgError}
+        src={props.img || BasicImage}
+        alt='프로필 이미지'
+      />
     </ProfileImg110>
   );
 }
