@@ -9,6 +9,8 @@ import {
   getTeamName,
   filterGameInfo,
 } from '../api/GameAPI/AddGameAPI';
+import { useRecoilState } from 'recoil';
+import { userToken } from '../atom/atom';
 
 const MainStyle = styled.main`
   padding: 50px 0 60px;
@@ -33,6 +35,7 @@ const MainStyle = styled.main`
 `;
 
 export default function AddGame() {
+  const [token, setToken] = useRecoilState(userToken);
   const [game, setGame] = useState([]); // total game 처음에 받아오고 변하지 않음
   const [filterGame, setFilterGame] = useState([]); // filtered game 필터링된 게임 저장
   const [team, setTeam] = useState([]); // 필터 내 팀 정보
@@ -40,13 +43,10 @@ export default function AddGame() {
   const [selectTeam, setSelectTeam] = useState('선택'); // 필터 내 선택된 팀 정보
   const [selectSport, setSelectSport] = useState('선택'); // 필터 내 선택된 스포츠 정보
 
-  const test_token =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODkyNWZmYjJjYjIwNTY2MzMzY2Y4MyIsImV4cCI6MTY5MTg5NDU0MCwiaWF0IjoxNjg2NzEwNTQwfQ.CMVKaojlNSWLjmtbZ_AY6shkkStQgp1DHP3z87oIPe8';
-
   // 처음에 전체 게임 정보와 팀 정보를 얻음
   useEffect(() => {
     const getData = async () => {
-      const gameData = await getGameInfo(test_token);
+      const gameData = await getGameInfo(token);
       setGame(gameData);
       setFilterGame(gameData);
     };

@@ -11,6 +11,8 @@ import CommentList from '../components/Comment/CommentList';
 import PostDetail from '../components/Post/Post';
 import Header from '../components/Common/Header/Header';
 import styled from 'styled-components';
+import { useRecoilState } from 'recoil';
+import { userToken } from '../atom/atom';
 
 const PostSectionStyle = styled.section`
   padding: 70px 20px 20px;
@@ -22,14 +24,12 @@ export default function Post() {
   const [game, setGame] = useState([]);
   const [comment, setComment] = useState([]);
   const [isTeam, setIsTeam] = useState(false);
-
-  const test_token =
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODkyNWZmYjJjYjIwNTY2MzMzY2Y4MyIsImV4cCI6MTY5MTg5NDU0MCwiaWF0IjoxNjg2NzEwNTQwfQ.CMVKaojlNSWLjmtbZ_AY6shkkStQgp1DHP3z87oIPe8';
+  const [token, setToken] = useRecoilState(userToken);
 
   useEffect(() => {
     const getData = async () => {
-      const data = await getPostDetailAPI(test_token, id);
-      const cmtData = await getCommentAPI(test_token, id);
+      const data = await getPostDetailAPI(token, id);
+      const cmtData = await getCommentAPI(token, id);
       setPost(data.post);
       setGame(arrToGame(data.post.content.split(',')));
       setIsTeam(data.post.author.accountname.startsWith('SPORT_'));

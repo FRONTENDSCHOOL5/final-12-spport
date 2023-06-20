@@ -7,6 +7,8 @@ import {
   likeGameAPI,
   unlikeGameAPI,
 } from '../../api/GameAPI/LikeGameAPI';
+import { userToken } from '../../atom/atom';
+import { useRecoilState } from 'recoil';
 
 const ListItemStyle = styled.li`
   width: 100%;
@@ -42,13 +44,11 @@ export default function GameListItem({ game }) {
   const game_info = game[0];
   const game_id = game[1];
   const [isLike, setIsLike] = useState(false);
-
-  const test_token =
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODkyNWZmYjJjYjIwNTY2MzMzY2Y4MyIsImV4cCI6MTY5MTg5NDU0MCwiaWF0IjoxNjg2NzEwNTQwfQ.CMVKaojlNSWLjmtbZ_AY6shkkStQgp1DHP3z87oIPe8';
+  const [token, setToken] = useRecoilState(userToken);
 
   useEffect(() => {
     const setLike = async () => {
-      const like = await checkLikeAPI(test_token, game_id[0]);
+      const like = await checkLikeAPI(token, game_id[0]);
       setIsLike(like);
     };
     setLike();
@@ -56,10 +56,10 @@ export default function GameListItem({ game }) {
   const onLikeClick = async () => {
     console.log(game_id);
     if (isLike) {
-      const unlike = await unlikeGameAPI(test_token, game_id);
+      const unlike = await unlikeGameAPI(token, game_id);
       setIsLike(unlike[0].post.hearted);
     } else {
-      const like = await likeGameAPI(test_token, game_id);
+      const like = await likeGameAPI(token, game_id);
       setIsLike(like[0].post.hearted);
     }
   };
