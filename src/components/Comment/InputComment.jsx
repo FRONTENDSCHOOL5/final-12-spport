@@ -43,6 +43,7 @@ export default function InputComment({ image }) {
     e.preventDefault();
     const postCmt = await writeCommentAPI(token, id, inputVal);
     setInputVal('');
+    location.reload();
   };
   const handleInputChange = (e) => {
     setInputVal(e.target.value);
