@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { getPostDetailAPI } from '../api/GameAPI/PostGameAPI';
 import { arrToGame } from '../api/GameAPI/AddGameAPI';
 import {
@@ -25,11 +25,16 @@ export default function Post() {
   const [comment, setComment] = useState([]);
   const [isTeam, setIsTeam] = useState(false);
   const [token, setToken] = useRecoilState(userToken);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const getData = async () => {
       const data = await getPostDetailAPI(token, id);
       const cmtData = await getCommentAPI(token, id);
+      if(data.status === 404) {
+        navigate('/error');
+        return;
+      }
       setPost(data.post);
       setGame(arrToGame(data.post.content.split(',')));
       setIsTeam(data.post.author.accountname.startsWith('SPORT_'));

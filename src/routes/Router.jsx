@@ -28,12 +28,14 @@ export default function Router() {
       <Route path='/edit' element={<EditProfile />} />
       <Route path='/follower' element={<Follow />} />
       <Route path='/following' element={<Follow />} />
-      <Route path='/chat' element={<Chat />} />
       <Route path='/profile/:id' element={<Profile />} />
+      <Route path='/chat' element={<Chat />} />
       <Route path='/chat/:id' element={<ChatRoom />} />
       <Route path='/search' element={<Search />} />
       <Route path='/search/:keyword' element={<Search />} />
       <Route path='/post/:id' element={<Post />} />
+      <Route path='/*' element={<Error />} />
+      <Route path='/error' element={<Error />} />
     </Routes>
   );
 }
