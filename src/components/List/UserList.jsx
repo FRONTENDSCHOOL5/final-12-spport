@@ -15,7 +15,6 @@ const UserListStyle = styled.ul`
 // team-follow <ListItem user={user} onFollowClick={} follow/>
 
 export default function UserList({ searchUser }) {
-  console.log(searchUser);
   return (
     <UserListStyle>
       {searchUser.map((user) => {

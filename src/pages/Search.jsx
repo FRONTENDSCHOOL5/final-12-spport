@@ -23,12 +23,11 @@ export default function Search() {
       getData();
     }
   }, [keyword]);
-
   return (
     <>
       <Header search />
       <main>
-        <UserList searchUser={searchUser} />
+        {searchUser.length > 0 && <UserList searchUser={searchUser} />}
       </main>
       <NavBar />
     </>
