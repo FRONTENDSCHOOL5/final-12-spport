@@ -34,8 +34,10 @@ export default function Router() {
       </Route>
       <Route path='/chat/:id' element={<ChatRoom />} />
       <Route path='/search' element={<Search />} />
-      <Route path='/search/:id' element={<Search />} />
+      <Route path='/search/:keyword' element={<Search />} />
       <Route path='/post/:id' element={<Post />} />
+      <Route path='/*' element={<Error />} />
+      <Route path='/error' element={<Error />} />
     </Routes>
   );
 }

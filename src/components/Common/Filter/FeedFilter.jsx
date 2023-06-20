@@ -45,8 +45,7 @@ const FeedFilterStyle = styled.div`
   }
 `;
 
-export default function FeedFilter() {
-  const [filterClick, setFilterClick] = useState(false);  // 나중에 props로 받아야 함
+export default function FeedFilter({ setFilterClick }) {
   const handleFeedFilterChange = () => {
     setFilterClick((prev) => !prev);
   };

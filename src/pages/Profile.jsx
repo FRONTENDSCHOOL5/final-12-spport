@@ -15,7 +15,6 @@ const MainStyle = styled.main`
   padding: 50px 0 60px;
   background: var(--color-bg);
 `;
-
 const LikedGameStyle = styled.section`
   background: white;
   border-top: 1px solid var(--color-maingrey);

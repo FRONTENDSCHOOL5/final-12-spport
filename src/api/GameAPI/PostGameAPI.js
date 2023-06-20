@@ -1,5 +1,5 @@
-import tokenData from './sport_bs_users.json';
-import gameData from './baseball_games.json';
+import tokenData from '../../data/sport_bs_users.json';
+import gameData from '../../data/baseball_games.json';
 import {
   GET_API,
   POST_API,
@@ -32,3 +32,10 @@ const postGameInfo = () => {
     });
   });
 };
+
+const getPostDetailAPI = async (token, id) => {
+  const post = await GET_API(token, `/post/${id}`);
+  return post;
+};
+
+export { getPostDetailAPI };

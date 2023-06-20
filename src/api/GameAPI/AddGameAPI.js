@@ -1,14 +1,5 @@
-import {
-  GET_API,
-  POST_API,
-  POST_API_NO_BODY,
-  POST_API_NO_TOKEN,
-} from '../CommonAPI';
+import { GET_API } from '../CommonAPI';
 import tokenData from '../../data/sport_bs_users.json';
-
-const url = 'https://api.mandarin.weniv.co.kr';
-const test_token =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODkyNWZmYjJjYjIwNTY2MzMzY2Y4MyIsImV4cCI6MTY5MTg5NDU0MCwiaWF0IjoxNjg2NzEwNTQwfQ.CMVKaojlNSWLjmtbZ_AY6shkkStQgp1DHP3z87oIPe8';
 
 // get TEAM IMAGE from team tokenData
 const getHomeImage = (team_name) => {
@@ -99,22 +90,11 @@ const filterGameInfo = (game, type, team) => {
   return game.filter((item) => item[0].home === team || item[0].away === team);
 };
 
-// API
-// const getPostById = async (token, id) => {
-//   return await GET_API(token, `/post/${id}`);
-// };
-
-// const likeGameAPI = async (id) => {
-//   const reqUrl = url + `/post/${id}/heart`;
-//   const res = await fetch(reqUrl, {
-//     method: 'GET',
-//     headers: {
-//       'Authorization': `Bearer ${test_token}`,
-//       'Content-type': 'application/json',
-//     },
-//   });
-//   const json = await res.json();
-//   return json;
-// };
-
-export { getGameInfo, getHomeImage, getTeamName, filterGameInfo, arrToGame };
+export {
+  getGameInfo,
+  getHomeImage,
+  getTeamName,
+  filterGameInfo,
+  sortGameByDate,
+  arrToGame,
+};

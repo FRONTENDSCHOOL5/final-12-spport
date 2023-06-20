@@ -24,46 +24,22 @@ const PostStyle = styled.article`
   }
 `;
 
-// const post = {
-//   id: 'String',
-//   content: 'String',
-//   image: 'String',
-//   createdAt: 'String',
-//   updatedAt: 'String',
-//   hearted: false,
-//   heartCount: 0,
-//   commentCount: 0,
-//   author: {
-//     _id: '작성자 id',
-//     username: '2',
-//     accountname: '2',
-//     following: [],
-//     follower: ['follower id'],
-//     followerCount: 1,
-//     followingCount: 0,
-//   },
-// };
-
-// const game = {
-//   date: '06.01',
-//   day: '목',
-//   time: '18:30',
-//   home: 'LG',
-//   away: '롯데',
-//   stadium: '잠실',
-//   full_stadium: '서울종합운동장 야구장',
-// };
-
-// Regular Post = <Post post={post} />
-// Game Post = <Post game={game} />
-export default function Post({ post, game }) {
+export default function Post({ post }) {
+  const isTeam = post.author.accountname.startsWith('SPORT_');
+  const date = isTeam ? post.image : post.createdAt.slice(0, 10);
+  const displayDate = `${date.slice(0, 4)}년 ${parseInt(
+    date.slice(5, 7),
+  )}월 ${parseInt(date.slice(8))}일`;
+  // useEffect(() => {
+    
+  // }, [])
   return (
     <PostStyle>
       <PostProfile author={post.author} />
       <div className='post-wrapper'>
         <Link to={`/post/${post.id}`}>
-          {game ? (
-            <GamePost game={game} post={post} />
+          {isTeam ? (
+            <GamePost post={post} />
           ) : (
             <RegularPost post={post} />
           )}
@@ -74,7 +50,9 @@ export default function Post({ post, game }) {
           heartCount={post.heartCount}
           commentCount={post.commentCount}
         />
-        <time className='post-time'>2023년 6월 1일</time>
+        <time className='post-time' dateTime={date}>
+          {displayDate}
+        </time>
       </div>
     </PostStyle>
   );
