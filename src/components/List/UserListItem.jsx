@@ -44,7 +44,6 @@ const ListItemStyle = styled.div`
 
 export default function UserListItem({ user, follow, onFollowClick }) {
   const isTeam = user.accountname.startsWith('SPORT_');
-  console.log(user);
   return (
     <ListItemStyle className='ListItem-wrapper'>
       <Link to={`/profile/${user.accountname}`}>
