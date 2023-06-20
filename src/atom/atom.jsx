@@ -20,3 +20,9 @@ export const accountname = atom({
   default: '',
   effects_UNSTABLE: [persistAtom],
 });
+
+export const userimage = atom({
+  key: 'userimage',
+  default: '',
+  effects_UNSTABLE: [persistAtom],
+});

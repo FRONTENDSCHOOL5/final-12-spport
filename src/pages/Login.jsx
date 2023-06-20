@@ -5,7 +5,7 @@ import LButton from '../components/Common/Button/LButton';
 import { Link, useNavigate } from 'react-router-dom';
 import { LinkWrap } from './Welcome';
 import { useRecoilState } from 'recoil';
-import { userToken, loginState, accountname } from '../atom/atom';
+import { userToken, loginState, accountname, userimage } from '../atom/atom';
 
 export default function LoginPage() {
   const URL = 'https://api.mandarin.weniv.co.kr/user/login';
@@ -22,6 +22,7 @@ export default function LoginPage() {
   const [userTokenAtom, setUserTokenAtom] = useRecoilState(userToken);
   const [loginStateAtom, setLoginStateAtom] = useRecoilState(loginState);
   const [accountName, setAccountName] = useRecoilState(accountname);
+  const [userImage, setUserImage] = useRecoilState(userimage);
 
   const navigate = useNavigate();
 
@@ -84,10 +85,11 @@ export default function LoginPage() {
 
         if (!data.message) {
           const userData = data.user;
-          const { token, accountname } = userData;
+          const { token, accountname, image } = userData;
           setUserTokenAtom(token);
           setLoginStateAtom(true);
           setAccountName(accountname);
+          setUserImage(image);
 
           navigate('/home');
         } else if (
