@@ -30,11 +30,7 @@ const KakaoButtonStyle = styled(SnsButtonStyle)`
 
 function KakaoButton() {
   // return <SnsButton onClick={props.func}>페이스북으로 로그인</SnsButton>;
-  return (
-    <KakaoButtonStyle onClick={console.log('로그인')}>
-      카카오톡 계정으로 로그인
-    </KakaoButtonStyle>
-  );
+  return <KakaoButtonStyle>카카오톡 계정으로 로그인</KakaoButtonStyle>;
 }
 
 const GoogleButtonStyle = styled(SnsButtonStyle)`
@@ -48,11 +44,7 @@ const GoogleButtonStyle = styled(SnsButtonStyle)`
 
 function GoogleButton() {
   // return <SnsButton onClick={props.func}>페이스북으로 로그인</SnsButton>;
-  return (
-    <GoogleButtonStyle onClick={console.log('로그인')}>
-      구글 계정으로 로그인
-    </GoogleButtonStyle>
-  );
+  return <GoogleButtonStyle>구글 계정으로 로그인</GoogleButtonStyle>;
 }
 
 const FacebookButtonStyle = styled(SnsButtonStyle)`
@@ -66,11 +58,7 @@ const FacebookButtonStyle = styled(SnsButtonStyle)`
 
 function FacebookButton() {
   // return <SnsButton onClick={props.func}>페이스북으로 로그인</SnsButton>;
-  return (
-    <FacebookButtonStyle onClick={console.log('로그인')}>
-      페이스북 계정으로 로그인
-    </FacebookButtonStyle>
-  );
+  return <FacebookButtonStyle>페이스북 계정으로 로그인</FacebookButtonStyle>;
 }
 
 export { KakaoButton, GoogleButton, FacebookButton };
