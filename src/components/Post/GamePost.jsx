@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import WeatherCard from './WeatherCard';
 import styled from 'styled-components';
 import { getWeather } from '../../api/WeatherAPI';
+import { arrToGame } from '../../api/GameAPI/AddGameAPI';
 
-const GamePostStyle = styled.div`
+const GamePostStyle = styled.article`
   p {
     line-height: 18px;
     margin-bottom: 16px;
@@ -21,40 +22,21 @@ const GamePostStyle = styled.div`
   }
 `;
 
-const weather = {
-  city: '대구',
-  avg_temp: '30',
-  min_temp: '25',
-  max_temp: '35',
-  humidity: '44',
-  description: 'light rain',
-  icon: '10d',
-};
-
-// const game = {
-//   date: '06.01',
-//   day: '목',
-//   time: '18:30',
-//   home: 'LG',
-//   away: '롯데',
-//   stadium: '잠실',
-//   full_stadium: '서울종합운동장 야구장',
-// };
-
-export default function GamePost({ post, game }) {
+export default function GamePost({ post }) {
+  const game = arrToGame(post.content.split(','));
   const isHome = post.author.username.startsWith(game.home);
   const [weather, setWeather] = useState({});
 
   useEffect(() => {
     const getData = async () => {
-      const data = await getWeather(game.en_city);
-      setWeather(data);
+      const weatherData = await getWeather(game.en_city);
+      setWeather(weatherData);
     };
     getData();
   }, []);
   return (
     <>
-      <GamePostStyle className='content-wrapper'>
+      <GamePostStyle className='content-article'>
         <p>
           {isHome
             ? `오늘 ${game.home}의 홈 게임이 있습니다.`

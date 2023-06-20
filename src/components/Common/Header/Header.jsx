@@ -39,6 +39,7 @@ export default function Header({
   main,
   onUploadClick,
   onMoreClick,
+  setFilterClick,
 }) {
   const navigate = useNavigate();
 
@@ -69,7 +70,7 @@ export default function Header({
           <span className='header-title'>
             <img src={logoText} />
           </span>
-          <FeedFilter />
+          <FeedFilter setFilterClick={setFilterClick} />
           <button
             className='btn-search'
             type='button'

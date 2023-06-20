@@ -61,7 +61,8 @@ export default function GameListItem({ game }) {
     } else {
       const like = await likeGameAPI(test_token, game_id);
       setIsLike(like[0].post.hearted);
-
+    }
+  };
   return (
     <ListItemStyle className='list-item' key={game_id[0]}>
       <ProfileImage50 img={game_info.image} />
