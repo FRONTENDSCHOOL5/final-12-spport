@@ -103,7 +103,7 @@ const ContainerStyle = styled.section`
 export default function CommonProfile({ profile, children }) {
   const location = useLocation();
   const navigate = useNavigate();
-  const tags = profile?.intro?.split(',');
+  const tags = profile.intro.length === 0 ? [] : profile?.intro?.split(',');
   const path = location.pathname;
   const isTeamBS = profile.accountname.startsWith('SPORT_BS');
   const isTeamSC = profile.accountname.startsWith('SPORT_SC');
@@ -155,7 +155,7 @@ export default function CommonProfile({ profile, children }) {
         <strong>{profile.username}</strong>
         <p>@ {profile.accountname}</p>
         <div className='tag-container'>
-          {tags &&
+          {!!tags.length &&
             tags.map((item) => {
               return <TagButton key={item} className='tagBtn' text={item} />;
             })}
