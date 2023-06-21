@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import imgProfile from '../../assets/image/default-profile.png';
 import iconMore from '../../assets/image/icon-more-small.svg';
 import { Link } from 'react-router-dom';
 import { ProfileImage36 } from '../Common/ProfileImage';
@@ -9,6 +8,7 @@ const PostProfileStyle = styled.div`
   display: flex;
   align-items: center;
   gap: 12px;
+  width: calc(100% - 10px);
   a {
     display: flex;
     align-items: center;
@@ -42,13 +42,13 @@ const PostProfileStyle = styled.div`
 //     followingCount: 0,
 //   },
 
-export default function PostProfile({ author }) {
+export default function PostProfile({ author, onMoreClick }) {
   const isTeam = author.accountname.startsWith('SPORT_');
   return (
     <PostProfileStyle className='profile-wrapper'>
       <Link to={`/profile/${author.accountname}`}>
         {/* TODO author의 프로필을 검색 후 이미지 추가 */}
-        <ProfileImage36 img={author.image}/>
+        <ProfileImage36 image={author.image}/>
         <div>
           <span className='username'>{author.username}</span>
           <br />
@@ -56,7 +56,7 @@ export default function PostProfile({ author }) {
         </div>
       </Link>
       {isTeam || (
-        <button className='btn-more' type='button'>
+        <button className='btn-more' type='button' onClick={onMoreClick}>
           <img src={iconMore} />
         </button>
       )}

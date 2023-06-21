@@ -69,7 +69,7 @@ export default function ViewComment({ comment }) {
     <VComment>
       <section className='comment-content'>
         <Link to={profileLink}>
-          <ProfileImage36 img={comment.author.image} />
+          <ProfileImage36 image={comment.author.image} />
         </Link>
         <section className='w-info'>
           {/* comment가 없으면 댓글이 없습니다 */}

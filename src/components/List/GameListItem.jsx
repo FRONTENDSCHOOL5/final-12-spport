@@ -65,7 +65,7 @@ export default function GameListItem({ game }) {
   };
   return (
     <ListItemStyle className='list-item' key={game_id[0]}>
-      <ProfileImage50 img={game_info.image} />
+      <ProfileImage50 image={game_info.image} />
       <div>
         <span className='teams'>
           {game_info.home} vs. {game_info.away}

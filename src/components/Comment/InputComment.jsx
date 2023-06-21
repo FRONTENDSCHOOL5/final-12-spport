@@ -50,7 +50,7 @@ export default function InputComment({ image }) {
   };
   return (
     <InputCommentStyle onSubmit={handleSubmit}>
-      <ProfileImage36 img={userImage} />
+      <ProfileImage36 image={userImage} />
       <label htmlFor='inpComment' className='a11y-hidden'>
         댓글을 입력해주세요
       </label>
