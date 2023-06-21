@@ -1,7 +1,6 @@
 const getDateTime = (post) => {
   if (post.author.accountname.startsWith('SPORT_')) {
     const info = post.content.split(',');
-    console.log(info[2]);
     return [new Date(info[0]), '9:00'];
   }
   return [new Date(post.createdAt.slice(0, 10)), post.createdAt.slice(11, -8)];
