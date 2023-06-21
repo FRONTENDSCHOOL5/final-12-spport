@@ -1,4 +1,4 @@
-import { GET_API, POST_API, DELETE_API } from './CommonAPI';
+import { GET_API, POST_API, DELETE_API } from '../CommonAPI';
 
 const writeCommentAPI = async (token, post_id, content) => {
   const bodyData = {
