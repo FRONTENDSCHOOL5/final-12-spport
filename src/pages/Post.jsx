@@ -5,13 +5,13 @@ import {
   writeCommentAPI,
   getCommentAPI,
   deleteCommentAPI,
-} from '../api/CommentAPI';
+} from '../api/PostAPI.js/CommentAPI';
 import CommentList from '../components/Comment/CommentList';
 import PostDetail from '../components/Post/Post';
 import Header from '../components/Common/Header/Header';
 import styled from 'styled-components';
 import { useRecoilState } from 'recoil';
-import { userToken } from '../atom/atom';
+import { userToken } from '../atom/loginAtom';
 
 const PostSectionStyle = styled.section`
   padding: 70px 20px 20px;
@@ -44,9 +44,7 @@ export default function Post() {
         <PostSectionStyle>
           {Object.keys(post).length > 0 && <PostDetail post={post} />}
         </PostSectionStyle>
-        <section>
-          {comment && <CommentList comments={comment.reverse()} />}
-        </section>
+        <section>{comment && <CommentList comments={comment} />}</section>
       </main>
     </>
   );
