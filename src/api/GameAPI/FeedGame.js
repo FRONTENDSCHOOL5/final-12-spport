@@ -11,7 +11,7 @@ const sortFeedPost = (posts, onlyGame) => {
   const game = posts.filter((item) => {
     if (item.author.accountname.startsWith('SPORT_')) {
       const today = new Date();
-      const date = new Date(item.image);
+      const date = new Date(item.content.split(',')[0]);
       if (today >= date) {
         return true;
       }
