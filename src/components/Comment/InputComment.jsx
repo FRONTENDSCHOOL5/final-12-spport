@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { ProfileImage36 } from '../Common/ProfileImage';
-import { writeCommentAPI } from '../../api/CommentAPI';
+import { writeCommentAPI } from '../../api/PostAPI.js/CommentAPI';
 import { useParams } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
-import { userToken, userimage } from '../../atom/atom';
+import { userToken, userimage } from '../../atom/loginAtom';
 
 const InputCommentStyle = styled.form`
   position: fixed;
