@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Outlet } from 'react-router-dom';
 import Welcome from '../pages/Welcome';
 import Login from '../pages/Login';
 import Signup from '../pages/Signup';
@@ -26,10 +26,12 @@ export default function Router() {
       <Route path='/addgame' element={<AddGame />} />
       <Route path='/error' element={<Error />} />
       <Route path='/edit' element={<EditProfile />} />
-      <Route path='/follower' element={<Follow />} />
-      <Route path='/following' element={<Follow />} />
-      <Route path='/profile/:id' element={<Profile />} />
       <Route path='/chat' element={<Chat />} />
+      <Route path='/profile/:id/*' element={<Outlet />}>
+        <Route path='' element={<Profile />} />
+        <Route path='follower' element={<Follow />} />
+        <Route path='following' element={<Follow />} />
+      </Route>
       <Route path='/chat/:id' element={<ChatRoom />} />
       <Route path='/search' element={<Search />} />
       <Route path='/search/:keyword' element={<Search />} />

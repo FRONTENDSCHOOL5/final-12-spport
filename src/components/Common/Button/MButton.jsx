@@ -10,6 +10,7 @@ import {
 const MButtonStyle = styled.button`
   ${NavyButtonStyle}
   border-radius: 50px;
+  min-width: 120px;
   width: 30%;
   padding: 8px 0;
   &:disabled {
