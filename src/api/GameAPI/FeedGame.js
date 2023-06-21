@@ -1,7 +1,8 @@
 const getDateTime = (post) => {
   if (post.author.accountname.startsWith('SPORT_')) {
     const info = post.content.split(',');
-    return [new Date(info[0]), info[2]];
+    console.log(info[2]);
+    return [new Date(info[0]), '9:00'];
   }
   return [new Date(post.createdAt.slice(0, 10)), post.createdAt.slice(11, -8)];
 };
@@ -28,7 +29,7 @@ const sortFeedPost = (posts, onlyGame) => {
     } else if (dateA < dateB) {
       return 1;
     } else {
-      if (timeA > timeB) {
+      if (timeA < timeB) {
         return -2;
       } else {
         return 1;
