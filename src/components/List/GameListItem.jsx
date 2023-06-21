@@ -7,7 +7,7 @@ import {
   likeGameAPI,
   unlikeGameAPI,
 } from '../../api/GameAPI/LikeGameAPI';
-import { userToken } from '../../atom/atom';
+import { userToken } from '../../atom/loginAtom';
 import { useRecoilState } from 'recoil';
 
 const ListItemStyle = styled.li`
