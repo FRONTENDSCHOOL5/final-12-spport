@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import WeatherCard from './WeatherCard';
 import styled from 'styled-components';
-import { getWeather } from '../../api/WeatherAPI';
+import { getWeather, getWeatherPosted } from '../../api/WeatherAPI';
 import { arrToGame } from '../../api/GameAPI/AddGameAPI';
 
 const GamePostStyle = styled.article`
@@ -27,12 +27,23 @@ export default function GamePost({ post }) {
   const isHome = post.author.username.startsWith(game.home);
   const [weather, setWeather] = useState({});
 
+  // console.log(post);
   useEffect(() => {
-    const getData = async () => {
-      const weatherData = await getWeather(game.en_city);
+    const getCurrentWeather = async () => {
+      const weatherData = await getWeather(game.en_city, post);
       setWeather(weatherData);
     };
-    getData();
+    const getPastWeather = async () => {
+      const weatherData = await getWeatherPosted(post.image);
+      setWeather(weatherData);
+    };
+    const today = new Date();
+    const date = new Date(game.date);
+    if (today.getTime() === date.getTime()) {
+      getCurrentWeather();
+    } else {
+      getPastWeather();
+    }
   }, []);
   return (
     <>
@@ -50,7 +61,9 @@ export default function GamePost({ post }) {
           in {game.full_stadium}
         </p>
       </GamePostStyle>
-      <WeatherCard city={game.stadium} weather={weather} />
+      {Object.keys(weather).length > 0 && (
+        <WeatherCard city={game.stadium} weather={weather} />
+      )}
     </>
   );
 }
