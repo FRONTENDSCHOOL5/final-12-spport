@@ -43,7 +43,7 @@ function ProfileImage36(props) {
     <ProfileImg36>
       <img
         onError={handleImgError}
-        src={props.img || BasicImage}
+        src={props.image || BasicImage}
         alt='프로필 이미지'
       />
     </ProfileImg36>
@@ -54,7 +54,7 @@ function ProfileImage42(props) {
     <ProfileImg42>
       <img
         onError={handleImgError}
-        src={props.img || BasicImage}
+        src={props.image || BasicImage}
         alt='프로필 이미지'
       />
     </ProfileImg42>
@@ -65,7 +65,7 @@ function ProfileImage50(props) {
     <ProfileImg50>
       <img
         onError={handleImgError}
-        src={props.img || BasicImage}
+        src={props.image || BasicImage}
         alt='프로필 이미지'
       />
     </ProfileImg50>
@@ -76,7 +76,7 @@ function ProfileImage110(props) {
     <ProfileImg110>
       <img
         onError={handleImgError}
-        src={props.img || BasicImage}
+        src={props.image || BasicImage}
         alt='프로필 이미지'
       />
     </ProfileImg110>
