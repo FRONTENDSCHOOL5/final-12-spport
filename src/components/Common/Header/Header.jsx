@@ -76,8 +76,7 @@ export default function Header({
         // 로그아웃 로직
         console.log('로그아웃 로직 불러오가');
       };
-      const modalInfo = ['로그아웃하시겠어요?', '로그아웃', logout];
-      setModalItem(modalInfo);
+      setModalItem(['로그아웃하시겠어요?', '로그아웃', logout]);
     };
     const loginBsItems = [
       ['설정 및 개인정보', onInfoClick],
@@ -85,6 +84,7 @@ export default function Header({
     ];
     setBsItems(loginBsItems);
   }, []);
+
   return (
     <HeaderStyle>
       {main || (
