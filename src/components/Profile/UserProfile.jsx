@@ -6,9 +6,9 @@ import CardList from '../List/CardList';
 import MButton from '../Common/Button/MButton';
 import IconShareBtn from '../../assets/image/icon-share-btn.svg';
 import IconMessageBtn from '../../assets/image/icon-message-btn.svg';
-import { getLikedGameAPI } from '../../api/GameAPI/LikeGameAPI';
 import { useRecoilState } from 'recoil';
-import { userToken } from '../../atom/loginAtom';
+import { userToken, accountname } from '../../atom/loginAtom';
+import { getProductAPI } from '../../api/AddProductAPI';
 
 const LikedGameStyle = styled.section`
   background: white;
@@ -31,18 +31,17 @@ const Container = styled.div`
 function UserProfile({ profile }) {
   const { id } = useParams();
   const navigate = useNavigate();
-  const [likedGame, setLikedGame] = useState([]);
+  const [planGame, setPlanGame] = useState([]);
   const [state, setState] = useState(false);
+  const [token, setToken] = useRecoilState(userToken);
   const handleState = () => {
     setState(!state);
   };
-  const test_token =
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODkyNWZmYjJjYjIwNTY2MzMzY2Y4MyIsImV4cCI6MTY5MTg5NDU0MCwiaWF0IjoxNjg2NzEwNTQwfQ.CMVKaojlNSWLjmtbZ_AY6shkkStQgp1DHP3z87oIPe8';
 
   useEffect(() => {
     const getLikedGameData = async () => {
-      const data = await getLikedGameAPI(test_token);
-      setLikedGame(data);
+      const plan = await getProductAPI(token, id);
+      setPlanGame(plan);
     };
     getLikedGameData();
   }, []);
@@ -70,7 +69,7 @@ function UserProfile({ profile }) {
 
       <LikedGameStyle className='section-game'>
         <h2>직관 일정</h2>
-        <CardList games={likedGame} />
+        {Object.keys(planGame).length > 0 && <CardList games={planGame.product} />}
       </LikedGameStyle>
     </Container>
   );
@@ -78,13 +77,14 @@ function UserProfile({ profile }) {
 
 function MyProfile({ profile }) {
   const navigate = useNavigate();
-  const [likedGame, setLikedGame] = useState([]);
+  const [planGame, setPlanGame] = useState([]);
   const [token, setToken] = useRecoilState(userToken);
+  const [accountName, setAccountName] = useRecoilState(accountname);
 
   useEffect(() => {
     const getLikedGameData = async () => {
-      const data = await getLikedGameAPI(token);
-      setLikedGame(data);
+      const plan = await getProductAPI(token, accountName);
+      setPlanGame(plan);
     };
     getLikedGameData();
   }, []);
@@ -109,7 +109,7 @@ function MyProfile({ profile }) {
 
       <LikedGameStyle className='section-game'>
         <h2>직관 일정</h2>
-        <CardList games={likedGame} />
+        {Object.keys(planGame).length > 0 && <CardList games={planGame.product} />}
       </LikedGameStyle>
     </Container>
   );

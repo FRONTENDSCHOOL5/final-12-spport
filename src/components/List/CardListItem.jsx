@@ -35,20 +35,18 @@ const CardStyle = styled.li`
 //   };
 
 export default function CardListItem({ game }) {
-  const game_info = game[0];
-  const game_id = game[1];
-  const linkPost = `/post/${game_id[0]}`;
+  const game_info = game.itemName.split(',');
   return (
-    <CardStyle key={game_id[0]}>
-      <Link to={linkPost}>
-        <img className='img-card' src={game_info.image} alt='' />
+    <CardStyle key={game.id}>
+      {/* <Link to={linkPost}> */}
+        <img className='img-card' src={game.itemImage} alt='' />
         <p className='card-title'>
-          {game_info.home} vs. {game_info.away}
+          {game_info[3]} vs. {game_info[4]}
         </p>
         <p className='card-info'>
-          {game_info.date.slice(5)} ({game_info.day}) in {game_info.stadium}
+          {game_info[0].slice(5)} ({game_info[1]}) in {game_info[5]}
         </p>
-      </Link>
+      {/* </Link> */}
     </CardStyle>
   );
 }

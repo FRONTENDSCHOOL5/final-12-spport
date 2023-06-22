@@ -10,10 +10,11 @@ const CardListStyle = styled.ul`
 `;
 
 export default function CardList({ games }) {
+  // console.log(games);
   return (
     <CardListStyle>
       {games.map((game) => {
-        return <CardListItem key={game[1][0]} game={game} />;
+        return <CardListItem key={game.id} game={game} />;
       })}
     </CardListStyle>
   );
