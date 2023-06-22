@@ -9,7 +9,7 @@ import iconUser from '../../assets/image/icon-user.svg';
 import iconUserFill from '../../assets/image/icon-user-fill.svg';
 import { useNavigate, LInk, useLocation } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
-import { accountname } from '../../atom/atom';
+import { accountname } from '../../atom/loginAtom';
 
 // nav 스타일 컴포넌트
 const NavContainer = styled.nav`
