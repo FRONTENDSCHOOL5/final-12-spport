@@ -89,6 +89,8 @@ export default function Post({ post }) {
             hearted={post.hearted}
             heartCount={post.heartCount}
             commentCount={post.commentCount}
+            isTeam={isTeam}
+            post={post}
           />
           <time className='post-time' dateTime={date}>
             {displayDate}

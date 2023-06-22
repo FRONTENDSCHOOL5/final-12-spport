@@ -13,7 +13,7 @@ import { accountname } from '../../atom/loginAtom';
 
 // nav 스타일 컴포넌트
 const NavContainer = styled.nav`
-  width: 100%;
+  width: 390px;
   height: 60px;
   background-color: var(--color-navy);
   position: fixed;

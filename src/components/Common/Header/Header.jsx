@@ -23,7 +23,7 @@ const HeaderStyle = styled.header`
   gap: 10px;
   background: var(--color-navy);
   position: fixed;
-  width: 100%;
+  width: 390px;
   .header-title {
     color: var(--color-lime);
     font-size: 14px;

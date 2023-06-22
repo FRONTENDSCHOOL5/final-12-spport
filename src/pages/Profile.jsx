@@ -26,9 +26,8 @@ export default function Profile() {
       const data = await getProfileAPI(token, id);
       setProfile(data.profile);
     };
-
     getProfile();
-  }, []);
+  }, [id]);
   return (
     <>
       <Header text />
