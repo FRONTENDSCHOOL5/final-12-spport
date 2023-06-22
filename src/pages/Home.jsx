@@ -5,7 +5,7 @@ import Header from '../components/Common/Header/Header';
 import { GET_API } from '../api/CommonAPI';
 import PostList from '../components/Post/PostList';
 import { useRecoilState } from 'recoil';
-import { userToken } from '../atom/atom';
+import { userToken } from '../atom/loginAtom';
 import Empty from '../components/Common/Empty';
 
 const FullSection = styled.section`
@@ -30,16 +30,17 @@ export default function Home(props) {
     <>
       <Header main setFilterClick={setFilterClick} />
       <FullSection>
-        {feed.length === 0 && (
+        {feed.length === 0 ? (
           <Empty
             message='유저 또는 팀을 검색해 팔로우 해보세요!'
             btnText='검색하기'
             link='/search'
           />
+        ) : (
+          <PostList post={feed} onlyGame={filterClick} />
         )}
-        {feed.length > 0 && <PostList post={feed} onlyGame={filterClick} />}
       </FullSection>
-      <NavBar />
+      <NavBar page='홈' />
     </>
   );
 }

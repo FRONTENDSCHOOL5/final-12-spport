@@ -10,7 +10,8 @@ import {
   filterGameInfo,
 } from '../api/GameAPI/AddGameAPI';
 import { useRecoilState } from 'recoil';
-import { userToken } from '../atom/atom';
+import { userToken } from '../atom/loginAtom';
+import Empty from '../components/Common/Empty';
 
 const MainStyle = styled.main`
   padding: 50px 0 60px;
@@ -81,7 +82,15 @@ export default function AddGame() {
           />
         </section>
         <section className='section-game'>
-          <GameList games={filterGame} />
+          {filterGame.length === 0 ? (
+            <Empty
+              message='관심있는 스포츠 팀을 팔로우 해보세요!'
+              btnText='검색하기'
+              link='/search/SPORT_'
+            />
+          ) : (
+            <GameList games={filterGame} />
+          )}
         </section>
       </MainStyle>
       <NavBar />

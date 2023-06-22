@@ -44,12 +44,11 @@ const ListItemStyle = styled.div`
 
 export default function UserListItem({ user, follow, onFollowClick }) {
   const isTeam = user.accountname.startsWith('SPORT_');
-  console.log(user);
   return (
     <ListItemStyle className='ListItem-wrapper'>
       <Link to={`/profile/${user.accountname}`}>
         {/* TODO author의 프로필을 검색 후 이미지 추가 */}
-        <ProfileImage50 img={user.image} />
+        <ProfileImage50 image={user.image} />
         <div>
           <span className='username'>{user.username}</span>
           <br />

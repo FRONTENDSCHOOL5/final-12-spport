@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { likeGameAPI, unlikeGameAPI } from '../../api/GameAPI/LikeGameAPI';
 import { useRecoilState } from 'recoil';
-import { userToken } from '../../atom/atom';
+import { userToken } from '../../atom/loginAtom';
 
 const BtnWrapperStyle = styled.div`
   text-align: start;
