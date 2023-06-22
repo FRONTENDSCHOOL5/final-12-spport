@@ -60,10 +60,6 @@ export default function Header({
   };
   const handleMoreClick = () => {
     setIsBsOpen((prev) => !prev);
-  };
-
-  // BottomSheet logic
-  useEffect(() => {
     const onInfoClick = () => {
       alert('info');
       setIsBsOpen(false);
@@ -83,7 +79,7 @@ export default function Header({
       ['로그아웃', onLogout],
     ];
     setBsItems(loginBsItems);
-  }, []);
+  };
 
   return (
     <HeaderStyle>
