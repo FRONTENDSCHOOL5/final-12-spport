@@ -26,6 +26,7 @@ const MainStyle = styled.main`
     width: 100%;
     background: white;
     gap: 10px;
+    height: 100vh;
     div:nth-child(2) {
       margin-left: auto;
     }

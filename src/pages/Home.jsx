@@ -10,6 +10,7 @@ import Empty from '../components/Common/Empty';
 
 const FullSection = styled.section`
   padding: 70px 0;
+  height: 100vh;
 `;
 
 export default function Home(props) {

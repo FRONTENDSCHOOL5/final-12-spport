@@ -9,6 +9,7 @@ import { getFollowersAPI, getFollowingsAPI } from '../api/FollowAPI';
 
 const MainStyle = styled.main`
   padding: 50px 0 60px;
+  height: 100vh;
 `;
 
 export default function Follow() {

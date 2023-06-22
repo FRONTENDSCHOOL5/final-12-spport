@@ -9,9 +9,9 @@ import { isBottomSheetOpen } from './atom/bottomSheetAtom';
 import { isModalOpen } from './atom/modalAtom';
 
 const ContainerStyle = styled.div`
+  background: white;
   width: 390px;
   margin: auto;
-  height: 820px;
 `;
 
 function App() {

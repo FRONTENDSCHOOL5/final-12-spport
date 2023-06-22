@@ -13,6 +13,7 @@ const ErrorStyle = styled.article`
   width: 100%;
   height: 100%;
   gap: 20px;
+  height: 100vh;
   h1 {
     font-size: 14px;
     color: var(--color-maingrey);

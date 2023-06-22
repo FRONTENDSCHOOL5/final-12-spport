@@ -12,6 +12,7 @@ import { accountname, userToken } from '../atom/loginAtom';
 const MainStyle = styled.main`
   padding: 50px 0 60px;
   background: var(--color-bg);
+  height: 100vh;
 `;
 
 export default function Profile() {

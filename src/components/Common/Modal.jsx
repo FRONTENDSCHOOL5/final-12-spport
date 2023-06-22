@@ -9,10 +9,10 @@ const ModalStyle = styled.article`
   bottom: 0;
   left: 0;
   right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(5px);
+  width: 390px;
+  height: 100vh;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
