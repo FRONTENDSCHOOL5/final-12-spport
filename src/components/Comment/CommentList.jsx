@@ -12,14 +12,14 @@ const CommentListStyle = styled.ul`
 // props.time 댓글 작성 시간
 // props.content 댓글 내용
 
-export default function CommentList({ comments }) {
+export default function CommentList({ comments, post_id }) {
   return (
     <>
       <CommentListStyle>
         {comments.map((item) => {
           return (
             <li key={item.id}>
-              <ViewComment comment={item} />
+              <ViewComment comment={item} post_id={post_id} />
             </li>
           );
         })}

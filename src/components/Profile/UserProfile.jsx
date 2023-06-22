@@ -7,6 +7,8 @@ import MButton from '../Common/Button/MButton';
 import IconShareBtn from '../../assets/image/icon-share-btn.svg';
 import IconMessageBtn from '../../assets/image/icon-message-btn.svg';
 import { getLikedGameAPI } from '../../api/GameAPI/LikeGameAPI';
+import { useRecoilState } from 'recoil';
+import { userToken } from '../../atom/loginAtom';
 
 const LikedGameStyle = styled.section`
   background: white;
@@ -77,12 +79,11 @@ function UserProfile({ profile }) {
 function MyProfile({ profile }) {
   const navigate = useNavigate();
   const [likedGame, setLikedGame] = useState([]);
-  const test_token =
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODkyNWZmYjJjYjIwNTY2MzMzY2Y4MyIsImV4cCI6MTY5MTg5NDU0MCwiaWF0IjoxNjg2NzEwNTQwfQ.CMVKaojlNSWLjmtbZ_AY6shkkStQgp1DHP3z87oIPe8';
+  const [token, setToken] = useRecoilState(userToken);
 
   useEffect(() => {
     const getLikedGameData = async () => {
-      const data = await getLikedGameAPI(test_token);
+      const data = await getLikedGameAPI(token);
       setLikedGame(data);
     };
     getLikedGameData();
@@ -93,14 +94,14 @@ function MyProfile({ profile }) {
         <MButton
           text='프로필 수정'
           func={() => {
-            navigate(`/edit`);
+            navigate('/edit');
           }}
           active
         />
         <MButton
           text='일정 추가'
           func={() => {
-            navigate(`/addgame`);
+            navigate('/addgame');
           }}
           active
         />

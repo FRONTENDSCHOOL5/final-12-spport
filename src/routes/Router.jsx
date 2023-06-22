@@ -15,17 +15,13 @@ import Post from '../pages/Post';
 import Search from '../pages/Search';
 import Profile from '../pages/Profile';
 import { useRecoilState } from 'recoil';
-import { loginState } from '../atom/atom';
+import { loginState } from '../atom/loginAtom';
 
 export default function Router() {
   const [isLogin, setIsLogin] = useRecoilState(loginState);
   return (
     <Routes>
-      {isLogin ? (
-        <Route path='/' element={<Navigate to='/home' />} />
-      ) : (
-        <Route path='/' element={<Welcome />} />
-      )}
+      <Route path='/' element={<Welcome />} />
       <Route path='/login' element={<Login />} />
       <Route path='/signup' element={<Signup />} />
       <Route path='/home' element={<Home />} />

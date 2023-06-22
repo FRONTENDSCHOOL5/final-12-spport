@@ -60,10 +60,6 @@ export default function Header({
   };
   const handleMoreClick = () => {
     setIsBsOpen((prev) => !prev);
-  };
-
-  // BottomSheet logic
-  useEffect(() => {
     const onInfoClick = () => {
       alert('info');
       setIsBsOpen(false);
@@ -75,6 +71,7 @@ export default function Header({
       const logout = () => {
         // 로그아웃 로직
         console.log('로그아웃 로직 불러오가');
+        setIsModal(false);
       };
       setModalItem(['로그아웃하시겠어요?', '로그아웃', logout]);
     };
@@ -83,7 +80,7 @@ export default function Header({
       ['로그아웃', onLogout],
     ];
     setBsItems(loginBsItems);
-  }, []);
+  };
 
   return (
     <HeaderStyle>
