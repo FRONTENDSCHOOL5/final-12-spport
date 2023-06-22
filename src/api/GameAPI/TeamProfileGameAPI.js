@@ -16,7 +16,7 @@ const getGameInfoByTeam = async (team_name) => {
   const game = posts.post.filter((item) => {
     if (item.author.accountname.startsWith('SPORT_')) {
       const today = new Date();
-      const date = new Date(item.image);
+      const date = new Date(item.content.split(',')[0]);
       if (today < date) {
         return true;
       }
@@ -27,8 +27,8 @@ const getGameInfoByTeam = async (team_name) => {
   game.sort((a, b) => {
     const infoA = a.content.split(',');
     const infoB = b.content.split(',');
-    const dateA = new Date(a.image);
-    const dateB = new Date(b.image);
+    const dateA = new Date(infoA[0]);
+    const dateB = new Date(infoB[0]);
     if (dateA > dateB) {
       return 1;
     } else if (dateA < dateB) {
@@ -44,4 +44,4 @@ const getGameInfoByTeam = async (team_name) => {
   return game.map((item) => [arrToGame(item.content.split(',')), [item.id]]);
 };
 
-export { getGameInfoByTeam };
+export { getGameInfoByTeam, getTeamToken };

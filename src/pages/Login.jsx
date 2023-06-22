@@ -5,7 +5,7 @@ import LButton from '../components/Common/Button/LButton';
 import { Link, useNavigate } from 'react-router-dom';
 import { LinkWrap } from './Welcome';
 import { useRecoilState } from 'recoil';
-import { userToken, loginState, accountname, userimage } from '../atom/atom';
+import { userToken, loginState, accountname, userimage } from '../atom/loginAtom';
 
 export default function LoginPage() {
   const URL = 'https://api.mandarin.weniv.co.kr/user/login';

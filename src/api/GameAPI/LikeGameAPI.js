@@ -49,7 +49,7 @@ const getLikedGameAPI = async (token) => {
   const game = posts.posts.filter((item) => {
     if (item.author.accountname.startsWith('SPORT_') && item.hearted == true) {
       const today = new Date();
-      const date = new Date(item.image);
+      const date = new Date(item.content.split(',')[0]);
       if (today < date) {
         return true;
       }

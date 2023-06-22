@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import NavBar from '../components/Common/NavBar';
 import Header from '../components/Common/Header/Header';
 import { useRecoilState } from 'recoil';
-import { userToken } from '../atom/atom';
+import { userToken } from '../atom/loginAtom';
 import UserList from '../components/List/UserList';
 import { useParams } from 'react-router-dom';
 import { getSearchAPI } from '../api/SearchAPI';
@@ -23,14 +23,13 @@ export default function Search() {
       getData();
     }
   }, [keyword]);
-
   return (
     <>
       <Header search />
       <main>
-        <UserList searchUser={searchUser} />
+        {searchUser.length > 0 && <UserList searchUser={searchUser} />}
       </main>
-      <NavBar />
+      <NavBar page="홈"/>
     </>
   );
 }

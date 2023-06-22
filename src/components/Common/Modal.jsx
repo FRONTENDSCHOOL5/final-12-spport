@@ -1,46 +1,72 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useRecoilState } from 'recoil';
+import { isModalOpen, modalResponse } from '../../atom/modalAtom';
 
-const ModalStyle = styled.div`
-  width: 252px;
-  background-color: var(--color-navy);
-  color: #fff;
-  border-radius: 10px;
-  font-size: 16px;
-  text-align: center;
-  p {
-    padding: 24px 0;
-  }
-  & .btn-group {
-    border-top: 1px solid var(--color-lightgrey);
-    display: flex;
-  }
-  button {
-    color: inherit;
-    padding: 14px 0;
-    width: 100%;
-    font-size: 14px;
-    &:active,
-    &:hover {
-      color: var(--color-lime);
+const ModalStyle = styled.article`
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .modal-wrapper {
+    position: fixed;
+    width: 252px;
+    background-color: var(--color-navy);
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    overflow: hidden;
+    p {
+      padding: 24px 24px;
+      color: #fff;
     }
-    &:nth-child(2) {
-      border-left: 1px solid var(--color-lightgrey);
+    & .btn-group {
+      border-top: 1px solid var(--color-lightgrey);
+      display: flex;
+    }
+    button {
+      padding: 14px 0;
+      width: 100%;
+      font-size: 14px;
+      color: #fff;
+      &:active,
+      &:hover {
+        background: var(--color-steelblue);
+        color: var(--color-lime);
+      }
+      &:nth-child(2) {
+        border-left: 1px solid var(--color-lightgrey);
+        color: var(--color-lime);
+      }
     }
   }
 `;
-
-export default function Modal({ title, btnText, onYesClick }) {
+// title, btnText, onYesClick
+export default function Modal({ items }) {
+  const [modalOpen, setModalOpen] = useRecoilState(isModalOpen);
+  const closeModal = () => {
+    setModalOpen(false);
+  };
   return (
-    <ModalStyle>
-      <p>{title}</p>
-      <div className='btn-group'>
-        <button className='btn-cancel' type='button'>
-          취소
-        </button>
-        <button className='btn-yes' type='button' onClick={onYesClick}>
-          {btnText}
-        </button>
+    <ModalStyle onClick={closeModal}>
+      <div className='modal-wrapper'>
+        <p>{items[0]}</p>
+        <div className='btn-group'>
+          <button className='btn-cancel' type='button'>
+            취소
+          </button>
+          <button className='btn-yes' type='button' onClick={items[2]}>
+            {items[1]}
+          </button>
+        </div>
       </div>
     </ModalStyle>
   );

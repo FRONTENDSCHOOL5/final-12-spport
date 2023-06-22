@@ -60,8 +60,10 @@ const getGameInfo = async (token) => {
   const game = posts.posts.filter((item) => {
     if (item.author.accountname.startsWith('SPORT_')) {
       const today = new Date();
-      const date = new Date(item.image);
-      if (today < date) {
+      const date = new Date(item.content.split(',')[0]);
+      const time = item.content.split(',')[2].split(':');
+      date.setHours(time[0], time[1], 0, 0);
+      if (today <= date) {
         return true;
       }
     }
