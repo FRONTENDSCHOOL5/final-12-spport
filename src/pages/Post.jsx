@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { getPostDetailAPI } from '../api/GameAPI/PostGameAPI';
-import {
-  writeCommentAPI,
-  getCommentAPI,
-  deleteCommentAPI,
-} from '../api/PostAPI.js/CommentAPI';
+import { getCommentAPI } from '../api/PostAPI.js/CommentAPI';
 import CommentList from '../components/Comment/CommentList';
 import PostDetail from '../components/Post/Post';
 import Header from '../components/Common/Header/Header';
@@ -44,7 +40,7 @@ export default function Post() {
         <PostSectionStyle>
           {Object.keys(post).length > 0 && <PostDetail post={post} />}
         </PostSectionStyle>
-        <section>{comment && <CommentList comments={comment} />}</section>
+        <section>{comment && <CommentList comments={comment} post_id={post.id}/>}</section>
       </main>
     </>
   );

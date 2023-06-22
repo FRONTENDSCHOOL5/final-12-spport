@@ -1,4 +1,4 @@
-import { GET_API, POST_API, DELETE_API } from '../CommonAPI';
+import { GET_API, POST_API, DELETE_API, POST_API_NO_BODY } from '../CommonAPI';
 
 const writeCommentAPI = async (token, post_id, content) => {
   const bodyData = {
@@ -20,4 +20,12 @@ const deleteCommentAPI = async (token, post_id, comment_id) => {
   return data;
 };
 
-export { writeCommentAPI, getCommentAPI, deleteCommentAPI };
+const reportCommentAPI = async (token, post_id, comment_id) => {
+  const data = POST_API_NO_BODY(
+    token,
+    `/post/${post_id}/comments/${comment_id}/report`,
+  );
+  return data;
+};
+
+export { writeCommentAPI, getCommentAPI, deleteCommentAPI, reportCommentAPI };
