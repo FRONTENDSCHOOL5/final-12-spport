@@ -10,7 +10,15 @@ const CardListStyle = styled.ul`
 `;
 
 export default function CardList({ games }) {
-  // console.log(games);
+  games.sort((a, b) => {
+    const dateA = new Date(a.itemName.split(',')[0]);
+    const dateB = new Date(b.itemName.split(',')[0]);
+    if(dateA > dateB) {
+      return 2;
+    } else {
+      return -1;
+    }
+  });
   return (
     <CardListStyle>
       {games.map((game) => {
