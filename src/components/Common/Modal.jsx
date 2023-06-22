@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useRecoilState } from 'recoil';
-import { isModalOpen, modalResponse } from '../../atom/modalAtom';
+import { isModalOpen } from '../../atom/modalAtom';
 
 const ModalStyle = styled.article`
   position: fixed;
