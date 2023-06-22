@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { useNavigate, useParams } from 'react-router-dom';
 import CommonProfile from './CommonProfile';
@@ -6,6 +6,7 @@ import CardList from '../List/CardList';
 import MButton from '../Common/Button/MButton';
 import IconShareBtn from '../../assets/image/icon-share-btn.svg';
 import IconMessageBtn from '../../assets/image/icon-message-btn.svg';
+import { getLikedGameAPI } from '../../api/GameAPI/LikeGameAPI';
 
 const LikedGameStyle = styled.section`
   background: white;
@@ -24,22 +25,29 @@ const Container = styled.div`
   gap: 6px;
   background-color: var(--color-bg);
 `;
-export default function UserProfile({ profile }) {
+
+function UserProfile({ profile }) {
   const { id } = useParams();
   const navigate = useNavigate();
-  // const [likedGame, setLikedGame] = useState([]);
+  const [likedGame, setLikedGame] = useState([]);
   const [state, setState] = useState(false);
   const handleState = () => {
     setState(!state);
   };
+  const test_token =
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODkyNWZmYjJjYjIwNTY2MzMzY2Y4MyIsImV4cCI6MTY5MTg5NDU0MCwiaWF0IjoxNjg2NzEwNTQwfQ.CMVKaojlNSWLjmtbZ_AY6shkkStQgp1DHP3z87oIPe8';
+
+  useEffect(() => {
+    const getLikedGameData = async () => {
+      const data = await getLikedGameAPI(test_token);
+      setLikedGame(data);
+    };
+    getLikedGameData();
+  }, []);
+
   return (
     <Container>
-      {/* 내 프로필인 조건 추가해서 나/다른 사람 프로필 조건부 렌더링 하기 */}
       <CommonProfile profile={profile}>
-        {/* 내 프로필 */}
-        {/* <MButton text='프로필 수정' active />
-          <MButton text='일정 추가' active /> */}
-        {/* 다른 사람 프로필 */}
         <button type='button'>
           <img src={IconShareBtn} alt='공유' />
         </button>
@@ -60,8 +68,50 @@ export default function UserProfile({ profile }) {
 
       <LikedGameStyle className='section-game'>
         <h2>직관 일정</h2>
-        {/* <CardList games={likedGame} /> */}
+        <CardList games={likedGame} />
       </LikedGameStyle>
     </Container>
   );
 }
+
+function MyProfile({ profile }) {
+  const navigate = useNavigate();
+  const [likedGame, setLikedGame] = useState([]);
+  const test_token =
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODkyNWZmYjJjYjIwNTY2MzMzY2Y4MyIsImV4cCI6MTY5MTg5NDU0MCwiaWF0IjoxNjg2NzEwNTQwfQ.CMVKaojlNSWLjmtbZ_AY6shkkStQgp1DHP3z87oIPe8';
+
+  useEffect(() => {
+    const getLikedGameData = async () => {
+      const data = await getLikedGameAPI(test_token);
+      setLikedGame(data);
+    };
+    getLikedGameData();
+  }, []);
+  return (
+    <Container>
+      <CommonProfile profile={profile}>
+        <MButton
+          text='프로필 수정'
+          func={() => {
+            navigate(`/edit`);
+          }}
+          active
+        />
+        <MButton
+          text='일정 추가'
+          func={() => {
+            navigate(`/addgame`);
+          }}
+          active
+        />
+      </CommonProfile>
+
+      <LikedGameStyle className='section-game'>
+        <h2>직관 일정</h2>
+        <CardList games={likedGame} />
+      </LikedGameStyle>
+    </Container>
+  );
+}
+
+export { UserProfile, MyProfile };
