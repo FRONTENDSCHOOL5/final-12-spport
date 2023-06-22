@@ -27,7 +27,6 @@ export default function GamePost({ post }) {
   const isHome = post.author.username.startsWith(game.home);
   const [weather, setWeather] = useState({});
 
-  // console.log(post);
   useEffect(() => {
     const getCurrentWeather = async () => {
       const weatherData = await getWeather(game.en_city, post);
@@ -37,9 +36,9 @@ export default function GamePost({ post }) {
       const weatherData = await getWeatherPosted(post.image);
       setWeather(weatherData);
     };
-    const today = new Date();
-    const date = new Date(game.date);
-    if (today.getTime() === date.getTime()) {
+    const today = new Date().setHours(0, 0, 0, 0);
+    const date = new Date(game.date).setHours(0, 0, 0, 0);
+    if (today === date) {
       getCurrentWeather();
     } else {
       getPastWeather();
