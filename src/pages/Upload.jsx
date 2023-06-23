@@ -5,6 +5,8 @@ import { ProfileImage36 } from '../components/Common/ProfileImage';
 import { ImageButton } from '../components/Common/Button/ImageButton';
 import { POST_API } from '../api/CommonAPI';
 import { useNavigate } from 'react-router-dom';
+import { userToken } from '../atom/loginAtom';
+import { useRecoilState } from 'recoil';
 
 const USection = styled.section`
   padding: 70px 20px;
@@ -31,7 +33,7 @@ const USection = styled.section`
   .upload-images-wrapper {
     margin-top: 10px;
     display: flex;
-    gap: 40px;
+    gap: 20px;
     padding-left: 60px;
     overflow: scroll;
   }
@@ -68,12 +70,8 @@ const StyledImageButton = styled(ImageButton)`
   right: 30px;
 `;
 
-export default function Upload() {
-  // 테스트 토큰
-  // 나중에 props로 받아오도록 바꾸기
-  const test_token =
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODkyNWZmYjJjYjIwNTY2MzMzY2Y4MyIsImV4cCI6MTY5MTg5NDU0MCwiaWF0IjoxNjg2NzEwNTQwfQ.CMVKaojlNSWLjmtbZ_AY6shkkStQgp1DHP3z87oIPe8';
-
+export default function Upload(props) {
+  const [token, setToken] = useRecoilState(userToken);
   // 요청에 사용하는 url
   const url = '/post';
 
@@ -118,7 +116,31 @@ export default function Upload() {
     setImage(null);
     const deleteImage = document.querySelector('');
   };
-  // imageDelete 끝
+  // imageDelete2 끝
+
+  const imageDelete3 = (e) => {
+    console.log('이미지 삭제');
+
+    // 누른 버튼의 아이디값(키와 동일)을 가져옴
+    const deleteImage = e.currentTarget.getAttribute('id');
+
+    // 선택한 키값의 이미지가 없는 새로운 배열 만들기
+    const modify = images.filter((image) => image !== deleteImage);
+    console.log(modify);
+
+    // setImages로 새로운 이미지 넣기
+    setImages(modify);
+    // setImage([]);
+  };
+  // imageDelete3 끝
+
+  const imageDeleteAll = (e) => {
+    console.log('이미지 전체 삭제');
+    // console.log(e.getAttribute('id'));
+    console.log(e);
+    // alert(e.target);
+    // setImages([]);
+  };
 
   // 게시글 내용을 서버에 업로드 하는 함수 1
   // 이미지 하나일 때
@@ -131,10 +153,28 @@ export default function Upload() {
         'image': image,
       },
     };
-    const data = await POST_API(test_token, url, bodyData);
+    const data = await POST_API(token, url, bodyData);
     console.log(data);
+
+    navigate('/home');
   };
   // handleSubmit 끝
+
+  // 게시글 내용을 서버에 업로드 하는 함수 2
+  // 이미지 여러개일 때
+  const handleSubmit2 = async () => {
+    const bodyData = {
+      'post': {
+        'content': text,
+        'image': imageUrl,
+      },
+    };
+    const data = await POST_API(token, url, bodyData);
+    console.log(data);
+
+    navigate('/home');
+  };
+  // handleSubmit2 끝
 
   // 이미지를 서버에 업로드 하는 함수 1
   // 이미지 하나일 때
@@ -165,25 +205,7 @@ export default function Upload() {
   };
   // imageUpload 끝
 
-  //콘솔에서 이미지 확인
-  console.log(image);
-
-  // 게시글 내용을 서버에 업로드 하는 함수 2
-  // 이미지 여러개일 때
-  const handleSubmit2 = async () => {
-    const bodyData = {
-      'post': {
-        'content': text,
-        'image': imageUrl,
-      },
-    };
-    const data = await POST_API(test_token, url, bodyData);
-    console.log(data);
-
-    navigate('/home');
-  };
-  // handleSubmit2 끝
-
+  // 이미지 여러개를 한번에 선택해서 올림 (업로드 버튼 클릭 한번)
   const imageUpload2 = async (e) => {
     //input이 변경되면 변경된 요소를 가져온다
     const imageFile = e.target.files;
@@ -200,6 +222,7 @@ export default function Upload() {
     for (let i = 0; i < imageFile.length; i++) {
       formData.append('image', imageFile[i]);
     }
+    console.log(formData);
 
     //요청
     const res = await fetch(
@@ -210,7 +233,54 @@ export default function Upload() {
       },
     );
 
-    //데이터를 json으로 받아오기
+    // //데이터를 json으로 받아오기
+    const json = await res.json();
+    console.log(json);
+
+    const fileUrl = json.map((img) => {
+      return 'https://api.mandarin.weniv.co.kr/' + img.filename;
+    });
+    console.log(fileUrl);
+
+    // console.log(fileUrl);
+    setImages(fileUrl);
+  };
+  // imageUpload2 끝
+
+  // 이미지 여러개를 하나씩 선택해서 올림 (업로드 버튼 클릭 여러번)
+  const imageUpload3 = async (e) => {
+    //input이 변경되면 변경된 요소를 가져온다
+    const imageFile = e.target.files[0];
+
+    // 사진 갯수 제한
+    if (images.length > 2) {
+      alert('사진은 3장까지만 가능합니다');
+      return;
+    }
+    if (imageFile.length > 2) {
+      alert('사진은 3장까지만 가능합니다');
+      return;
+    }
+    console.log(imageFile);
+
+    //폼데이터를 만들고 내 데이터를 추가
+    const formData = new FormData();
+    // for (let i = 0; i < imageFile.length; i++) {
+    //   formData.append('image', imageFile[i]);
+    // }
+    formData.append('image', imageFile);
+    console.log(formData);
+
+    //요청
+    const res = await fetch(
+      'https://api.mandarin.weniv.co.kr/image/uploadfiles',
+      {
+        method: 'POST',
+        body: formData,
+      },
+    );
+
+    // //데이터를 json으로 받아오기
     const json = await res.json();
     console.log(json);
 
@@ -218,10 +288,17 @@ export default function Upload() {
       return 'https://api.mandarin.weniv.co.kr/' + img.filename;
     });
 
-    console.log(fileUrl);
-    setImages(fileUrl);
+    setImages([...images, ...fileUrl]);
+    // console.log(fileUrl);
+
+    console.log(images);
+    // console.log(fileUrl);
+    // setImages(fileUrl);
   };
-  // imageUpload2 끝
+  // imageUpload3 끝
+
+  //콘솔에서 이미지 확인
+  console.log(image);
 
   // 이미지 전송을 위해 이미지 주소 이어 붙이기
   const iurl = images.join(',');
@@ -232,8 +309,8 @@ export default function Upload() {
     setImageUrl(iurl);
   }, [iurl]);
 
-  console.log(images);
-  console.log(imageUrl);
+  // console.log(images);
+  // console.log(imageUrl);
 
   // textarea의 길이를 들어오는 게시글에 따라서 조정되게 하는 함수
   const autoResizeTextarea = () => {
@@ -251,7 +328,7 @@ export default function Upload() {
   //렌더링
   return (
     <>
-      <Header upload onUploadClick={handleSubmit} />
+      <Header upload onUploadClick={handleSubmit2} />
       <USection>
         <section className='form-wrapper'>
           {/* <ProfileImage36 /> */}
@@ -266,16 +343,31 @@ export default function Upload() {
               onChange={postContent}
             ></textarea>
             {/* 버튼을 누르면 포스트가 올라가고 끝인데 새로고침을 해야하는지 다른 페이지로 이동해야 하는지 */}
-            <StyledImageButton func={imageUpload} />
+            <StyledImageButton func={imageUpload3} />
           </form>
         </section>
         <section className='upload-images-wrapper'>
           {/* image가 null이면 렌더링 되지 않게 */}
+          {/* 이미지 하나일때 */}
+          {image && (
+            <article className='image-wrapper' key={image}>
+              <button className='delete-button' onClick={imageDelete3}>
+                삭제버튼
+              </button>
+              <img className='upload-image' width={'100%'} src={image} />
+            </article>
+          )}
+          {/* 이미지 여러개일때 */}
           {images &&
             images.map((image) => {
               return (
                 <article className='image-wrapper' key={image}>
-                  <button className='delete-button' onClick={imageDelete}>
+                  {/* 버튼에 키와 같은 아이디를 넣어서 버튼 선택 시 이미지를 선택할 수 있도록 하는데 맘에 안듬 ??????? */}
+                  <button
+                    className='delete-button'
+                    id={image}
+                    onClick={imageDelete3}
+                  >
                     삭제버튼
                   </button>
                   <img className='upload-image' width={'100%'} src={image} />
