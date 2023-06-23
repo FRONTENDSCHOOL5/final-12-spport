@@ -20,15 +20,17 @@ const addProductAPI = async (token, post, ids, isGame) => {
 
 const getProductAPI = async (token, accountname) => {
   const data = await GET_API(token, `/product/${accountname}`);
-  const product = data.product.filter((item) => {
-    const today = new Date();
-    const date = new Date(item.itemName.split(',')[0]);
-    const time = item.itemName.split(',')[2].split(':');
-    date.setHours(time[0], time[1], 0, 0);
-    if (today < date) {
-      return true;
-    }
-  });
+  const product =
+    data.product &&
+    data.product.filter((item) => {
+      const today = new Date();
+      const date = new Date(item.itemName.split(',')[0]);
+      const time = item.itemName.split(',')[2].split(':');
+      date.setHours(time[0], time[1], 0, 0);
+      if (today < date) {
+        return true;
+      }
+    });
   return product;
 };
 
