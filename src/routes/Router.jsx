@@ -14,6 +14,7 @@ import Follow from '../pages/Follow';
 import Post from '../pages/Post';
 import Search from '../pages/Search';
 import Profile from '../pages/Profile';
+import Splash from '../pages/Splash';
 import { useRecoilState } from 'recoil';
 import { loginState } from '../atom/loginAtom';
 
@@ -21,7 +22,8 @@ export default function Router() {
   const [isLogin, setIsLogin] = useRecoilState(loginState);
   return (
     <Routes>
-      <Route path='/' element={<Welcome />} />
+      <Route path='/' element={<Splash />} />
+      <Route path='/welcome' element={<Welcome />} />
       <Route path='/login' element={<Login />} />
       <Route path='/signup' element={<Signup />} />
       <Route path='/home' element={<Home />} />
