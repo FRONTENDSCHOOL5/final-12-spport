@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 const RegularPostStyle = styled.div`
@@ -7,6 +7,13 @@ const RegularPostStyle = styled.div`
     margin-bottom: 16px;
     width: calc(100% - 10px);
   }
+  .post-img-wrapper {
+    box-shadow: inset 0 0 10px red;
+    display: flex;
+    gap: 20px;
+    overflow: scroll;
+  }
+
   img {
     width: calc(100% - 10px);
     aspect-ratio: 304/228;
@@ -17,11 +24,32 @@ const RegularPostStyle = styled.div`
 `;
 
 export default function RegularPost({ post }) {
+  const [images, setImages] = useState([]);
+  // console.clear();
+  if (post.image) {
+    console.log(post.content);
+    console.log(post.image);
+    const imageUrl = post.image.split(',');
+    console.log(imageUrl);
+
+    useEffect(() => {
+      setImages(imageUrl);
+    }, []);
+  }
+  console.log(images);
+
   return (
     <>
       <RegularPostStyle className='content-wrapper'>
         <p>{post.content}</p>
-        {post.image && <img src={post.image} alt='' />}
+        <section className='post-img-wrapper'>
+          {images &&
+            images.map((image) => {
+              // console.log(post.image);
+              // console.log(image);
+              return <img key={image} src={image} alt='' />;
+            })}
+        </section>
       </RegularPostStyle>
     </>
   );
