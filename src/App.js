@@ -12,6 +12,8 @@ const ContainerStyle = styled.div`
   background: white;
   width: 390px;
   margin: auto;
+  min-height: 100vh;
+  height: 100%;
 `;
 
 function App() {
