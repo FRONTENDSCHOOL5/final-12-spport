@@ -16,7 +16,7 @@ const ContainerStyle = styled.section`
   place-items: center;
   background-color: #fff;
   grid-template-columns: 1fr 200px 1fr;
-
+  border-bottom: 0.5px solid var(--color-maingrey);
   // 1열
   .followers {
     grid-area: followers;

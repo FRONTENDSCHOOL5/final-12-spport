@@ -12,8 +12,8 @@ import { getProductAPI } from '../../api/AddProductAPI';
 
 const LikedGameStyle = styled.section`
   background: white;
-  border-top: 1px solid var(--color-maingrey);
-  border-bottom: 1px solid var(--color-maingrey);
+  border-top: 0.5px solid var(--color-maingrey);
+  border-bottom: 0.5px solid var(--color-maingrey);
   h2 {
     padding: 20px 20px 0;
   }

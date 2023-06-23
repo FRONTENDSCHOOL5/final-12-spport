@@ -11,7 +11,6 @@ const EmptySection = styled.section`
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-
   .emptyMessage {
     background: url(${logoblue}) no-repeat;
     color: var(--color-steelblue);

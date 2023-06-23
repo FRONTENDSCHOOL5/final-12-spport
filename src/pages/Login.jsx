@@ -5,7 +5,12 @@ import LButton from '../components/Common/Button/LButton';
 import { Link, useNavigate } from 'react-router-dom';
 import { LinkWrap } from './Welcome';
 import { useRecoilState } from 'recoil';
-import { userToken, loginState, accountname, userimage } from '../atom/loginAtom';
+import {
+  userToken,
+  loginState,
+  accountname,
+  userimage,
+} from '../atom/loginAtom';
 
 export default function LoginPage() {
   const URL = 'https://api.mandarin.weniv.co.kr/user/login';
@@ -106,7 +111,7 @@ export default function LoginPage() {
   );
 
   return (
-    <>
+    <MainStyle>
       <H1Style>로그인</H1Style>
       <FormStyle onSubmit={handleSubmit}>
         <Input
@@ -133,9 +138,13 @@ export default function LoginPage() {
       <LinkWrap>
         <Link to='/signup'>이메일로 회원가입</Link>
       </LinkWrap>
-    </>
+    </MainStyle>
   );
 }
+
+const MainStyle = styled.main`
+  height: 100vh;
+`;
 
 export const H1Style = styled.h1`
   text-align: center;
@@ -149,7 +158,6 @@ export const FormStyle = styled.form`
   max-width: 322px;
   padding-top: 30px;
   margin: 0 auto;
-
   label {
     font-size: 12px;
     color: var(--color-darkgrey);
