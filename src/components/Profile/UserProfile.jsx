@@ -69,7 +69,7 @@ function UserProfile({ profile }) {
 
       <LikedGameStyle className='section-game'>
         <h2>직관 일정</h2>
-        {Object.keys(planGame).length > 0 && <CardList games={planGame.product} />}
+        {planGame.length > 0 && <CardList games={planGame} />}
       </LikedGameStyle>
     </Container>
   );
@@ -109,7 +109,7 @@ function MyProfile({ profile }) {
 
       <LikedGameStyle className='section-game'>
         <h2>직관 일정</h2>
-        {Object.keys(planGame).length > 0 && <CardList games={planGame.product} />}
+        {planGame.length > 0 && <CardList games={planGame} />}
       </LikedGameStyle>
     </Container>
   );

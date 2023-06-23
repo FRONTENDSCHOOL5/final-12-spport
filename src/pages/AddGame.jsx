@@ -23,10 +23,9 @@ const MainStyle = styled.main`
     display: flex;
     align-items: center;
     position: fixed;
-    width: 100%;
+    width: 390px;
     background: white;
     gap: 10px;
-    height: 100vh;
     div:nth-child(2) {
       margin-left: auto;
     }

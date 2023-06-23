@@ -129,7 +129,7 @@ export default function CommonProfile({ profile, children }) {
       {/* 팀 프로필일 시 followings 대신 야구공/축구공 아이콘 조건부 렌더링(sort로 축구/야구 구분) */}
       <div className='followings'>
         {isTeamBS ? (
-          <button type='button'>
+          <button type='button' onClick={() => navigate('/search/SPORT_BS_')}>
             <img src={IconBaseball} alt='' />
           </button>
         ) : isTeamSC ? (
