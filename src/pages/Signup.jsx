@@ -31,6 +31,7 @@ export default function Signup() {
 }
 
 const LoginSection = styled.section`
+height: 100vh;
   div {
     margin: 30px auto 0 auto;
   }

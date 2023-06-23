@@ -87,7 +87,7 @@ const WelcomeWrap = styled.div`
   grid-template-rows: 3fr 2fr;
   background-color: var(--color-navy);
   height: 100vh;
-  width: 100vw;
+  width: 390px;
 `;
 
 const fadeOut = keyframes`
@@ -105,7 +105,7 @@ const FadeOutWrapper = styled.div`
   div {
     background-color: var(--color-lime);
     height: 100vh;
-    width: 100vw;
+    width: 390px;
   }
 `;
 

@@ -8,8 +8,10 @@ import { useRecoilState } from 'recoil';
 import { userToken } from '../atom/loginAtom';
 import Empty from '../components/Common/Empty';
 
-const FullSection = styled.section`
+const FullSection = styled.main`
   padding: 70px 0;
+  height: 100%;
+  background: white;
 `;
 
 export default function Home(props) {
