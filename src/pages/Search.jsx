@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import NavBar from '../components/Common/NavBar';
 import Header from '../components/Common/Header/Header';
+import styled from 'styled-components';
 import { useRecoilState } from 'recoil';
 import { userToken } from '../atom/loginAtom';
 import UserList from '../components/List/UserList';
 import { useParams } from 'react-router-dom';
 import { getSearchAPI } from '../api/SearchAPI';
+
+const MainStyle = styled.main`
+  height: 100vh;
+`;
 
 export default function Search() {
   const [searchUser, setSearchUser] = useState([]);
@@ -26,10 +31,10 @@ export default function Search() {
   return (
     <>
       <Header search />
-      <main>
+      <MainStyle>
         {searchUser.length > 0 && <UserList searchUser={searchUser} />}
-      </main>
-      <NavBar page="홈"/>
+      </MainStyle>
+      <NavBar page='홈' />
     </>
   );
 }
