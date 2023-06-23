@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Outlet } from 'react-router-dom';
+import { Routes, Route, Navigate, Outlet } from 'react-router-dom';
 import Welcome from '../pages/Welcome';
 import Login from '../pages/Login';
 import Signup from '../pages/Signup';
@@ -14,8 +14,11 @@ import Follow from '../pages/Follow';
 import Post from '../pages/Post';
 import Search from '../pages/Search';
 import Profile from '../pages/Profile';
+import { useRecoilState } from 'recoil';
+import { loginState } from '../atom/loginAtom';
 
 export default function Router() {
+  const [isLogin, setIsLogin] = useRecoilState(loginState);
   return (
     <Routes>
       <Route path='/' element={<Welcome />} />

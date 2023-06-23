@@ -5,6 +5,7 @@ const RegularPostStyle = styled.div`
   p {
     line-height: 18px;
     margin-bottom: 16px;
+    width: calc(100% - 10px);
   }
   .post-img-wrapper {
     box-shadow: inset 0 0 10px red;
@@ -14,7 +15,7 @@ const RegularPostStyle = styled.div`
   }
 
   img {
-    width: 100%;
+    width: calc(100% - 10px);
     aspect-ratio: 304/228;
     object-fit: cover;
     border: 0.5px solid var(--color-steelblue);

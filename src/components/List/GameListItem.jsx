@@ -7,7 +7,7 @@ import {
   likeGameAPI,
   unlikeGameAPI,
 } from '../../api/GameAPI/LikeGameAPI';
-import { userToken } from '../../atom/atom';
+import { accountname, userToken } from '../../atom/loginAtom';
 import { useRecoilState } from 'recoil';
 
 const ListItemStyle = styled.li`
@@ -45,6 +45,7 @@ export default function GameListItem({ game }) {
   const game_id = game[1];
   const [isLike, setIsLike] = useState(false);
   const [token, setToken] = useRecoilState(userToken);
+  const [accountName, setAccountName] = useRecoilState(accountname);
 
   useEffect(() => {
     const setLike = async () => {
@@ -54,18 +55,17 @@ export default function GameListItem({ game }) {
     setLike();
   }, []);
   const onLikeClick = async () => {
-    console.log(game_id);
     if (isLike) {
-      const unlike = await unlikeGameAPI(token, game_id);
+      const unlike = await unlikeGameAPI(token, game_id, true, accountName);
       setIsLike(unlike[0].post.hearted);
     } else {
-      const like = await likeGameAPI(token, game_id);
+      const like = await likeGameAPI(token, game_id, true, game[0], true);
       setIsLike(like[0].post.hearted);
     }
   };
   return (
     <ListItemStyle className='list-item' key={game_id[0]}>
-      <ProfileImage50 img={game_info.image} />
+      <ProfileImage50 image={game_info.image} />
       <div>
         <span className='teams'>
           {game_info.home} vs. {game_info.away}

@@ -1,7 +1,7 @@
 const getDateTime = (post) => {
   if (post.author.accountname.startsWith('SPORT_')) {
     const info = post.content.split(',');
-    return [new Date(info[0]), info[2]];
+    return [new Date(info[0]), '9:00'];
   }
   return [new Date(post.createdAt.slice(0, 10)), post.createdAt.slice(11, -8)];
 };
@@ -11,7 +11,7 @@ const sortFeedPost = (posts, onlyGame) => {
   const game = posts.filter((item) => {
     if (item.author.accountname.startsWith('SPORT_')) {
       const today = new Date();
-      const date = new Date(item.image);
+      const date = new Date(item.content.split(',')[0]);
       if (today >= date) {
         return true;
       }
@@ -28,7 +28,7 @@ const sortFeedPost = (posts, onlyGame) => {
     } else if (dateA < dateB) {
       return 1;
     } else {
-      if (timeA > timeB) {
+      if (timeA < timeB) {
         return -2;
       } else {
         return 1;

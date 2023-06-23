@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { ProfileImage36 } from '../Common/ProfileImage';
-import { writeCommentAPI } from '../../api/CommentAPI';
+import { writeCommentAPI } from '../../api/PostAPI.js/CommentAPI';
 import { useParams } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
-import { userToken, userimage } from '../../atom/atom';
+import { userToken, userimage } from '../../atom/loginAtom';
 
 const InputCommentStyle = styled.form`
   position: fixed;
@@ -50,7 +50,7 @@ export default function InputComment({ image }) {
   };
   return (
     <InputCommentStyle onSubmit={handleSubmit}>
-      <ProfileImage36 img={userImage} />
+      <ProfileImage36 image={userImage} />
       <label htmlFor='inpComment' className='a11y-hidden'>
         댓글을 입력해주세요
       </label>

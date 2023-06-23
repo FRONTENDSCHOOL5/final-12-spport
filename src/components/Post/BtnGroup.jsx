@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { likeGameAPI, unlikeGameAPI } from '../../api/GameAPI/LikeGameAPI';
 import { useRecoilState } from 'recoil';
-import { userToken } from '../../atom/atom';
+import { accountname, userToken } from '../../atom/loginAtom';
 
 const BtnWrapperStyle = styled.div`
   text-align: start;
@@ -30,21 +30,21 @@ const BtnWrapperStyle = styled.div`
   }
 `;
 
-export default function BtnGroup({ id, hearted, heartCount, commentCount }) {
+export default function BtnGroup({ id, hearted, heartCount, commentCount, isTeam, post }) {
   const [isLike, setIsLike] = useState(hearted);
   const [likeCount, setLikeCount] = useState(heartCount);
-  const [cmtCount, setCmtCounter] = useState(commentCount);
   const [token, setToken] = useRecoilState(userToken);
+  const [accountName, setAccountName] = useRecoilState(accountname);
 
   const handleLikeClick = async () => {
     if (isLike) {
       console.log('unlike');
-      const unlike = await unlikeGameAPI(token, [id]);
+      const unlike = await unlikeGameAPI(token, [id], isTeam, accountName);
       setIsLike(unlike[0].post.hearted);
       setLikeCount(unlike[0].post.heartCount);
     } else {
       console.log('like');
-      const like = await likeGameAPI(token, [id]);
+      const like = await likeGameAPI(token, [id], isTeam, post);
       setIsLike(like[0].post.hearted);
       setLikeCount(like[0].post.heartCount);
     }
@@ -60,7 +60,7 @@ export default function BtnGroup({ id, hearted, heartCount, commentCount }) {
       <Link to={`/post/${id}`}>
         <button type='button' className='btn-comment'>
           <img src={iconMessage} alt='댓글 달기 버튼' />
-          <span className='num-comment'>{cmtCount}</span>
+          <span className='num-comment'>{commentCount}</span>
         </button>
       </Link>
     </BtnWrapperStyle>
