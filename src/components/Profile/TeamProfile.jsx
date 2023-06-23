@@ -5,6 +5,9 @@ import styled from 'styled-components';
 import MButton from '../Common/Button/MButton';
 import GameList from '../List/GameList';
 import { getGameInfoByTeam } from '../../api/GameAPI/TeamProfileGameAPI';
+import { useRecoilState } from 'recoil';
+import { userToken } from '../../atom/loginAtom';
+import { followAPI, unfollowAPI } from '../../api/FollowAPI';
 
 const SectionGameStyle = styled.section`
   background: white;
@@ -38,12 +41,25 @@ const BtnPlayer = styled.button`
 export default function TeamProfile({ profile }) {
   const [state, setState] = useState(false);
   const [game, setGame] = useState([]);
+  const [token, setToken] = useRecoilState(userToken);
+  const [isFollow, setIsFollow] = useState(profile.isfollow);
+  const [numFollower, setNumFollower] = useState(profile.followerCount);
   const { id } = useParams();
 
-  const handleState = () => {
-    setState(!state);
+  const handleState = async () => {
+    if (isFollow) {
+      const data = await unfollowAPI(token, id);
+      console.log(data);
+      setIsFollow(data.profile.isfollow);
+      setNumFollower(data.profile.followerCount);
+    } else {
+      const data = await followAPI(token, id);
+      console.log(data);
+      setIsFollow(data.profile.isfollow);
+      setNumFollower(data.profile.followerCount);
+    }
   };
-
+  // 팀프로필에 url SPORT_BS 빼주기 API에 추가 `SPORT_${accountname}`
   useEffect(() => {
     const getData = async () => {
       const data = await getGameInfoByTeam(id);
@@ -56,11 +72,11 @@ export default function TeamProfile({ profile }) {
   return (
     <>
       <Container>
-        <CommonProfile profile={profile}>
+        <CommonProfile profile={profile} numFollower={numFollower}>
           <MButton
-            text={state ? '언팔로우' : '팔로우'}
+            text={isFollow ? '언팔로우' : '팔로우'}
             func={handleState}
-            active={state}
+            active={isFollow}
           />
         </CommonProfile>
         <BtnPlayer>선수보러가기</BtnPlayer>

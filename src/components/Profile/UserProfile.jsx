@@ -9,6 +9,9 @@ import IconMessageBtn from '../../assets/image/icon-message-btn.svg';
 import { getLikedGameAPI } from '../../api/GameAPI/LikeGameAPI';
 import { useRecoilState } from 'recoil';
 import { userToken } from '../../atom/loginAtom';
+import { getPost } from '../../api/PostAPI.js/GetPostAPI';
+import PostList from '../Post/PostList';
+import { followAPI, unfollowAPI } from '../../api/FollowAPI';
 
 const LikedGameStyle = styled.section`
   background: white;
@@ -30,33 +33,53 @@ const Container = styled.div`
 
 function UserProfile({ profile }) {
   const { id } = useParams();
+  const [token, setToken] = useRecoilState(userToken);
   const navigate = useNavigate();
   const [likedGame, setLikedGame] = useState([]);
+  const [postData, setPostData] = useState([]);
   const [state, setState] = useState(false);
-  const handleState = () => {
-    setState(!state);
+  const [isFollow, setIsFollow] = useState(profile.isfollow);
+  const [numFollower, setNumFollower] = useState(profile.followerCount);
+
+  const handleState = async () => {
+    console.log('눌림!');
+    if (isFollow) {
+      const data = await unfollowAPI(token, id);
+      console.log(data);
+      setIsFollow(data.profile.isfollow);
+      setNumFollower(data.profile.followerCount);
+    } else {
+      const data = await followAPI(token, id);
+      console.log(data);
+      setIsFollow(data.profile.isfollow);
+      setNumFollower(data.profile.followerCount);
+    }
   };
-  const test_token =
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODkyNWZmYjJjYjIwNTY2MzMzY2Y4MyIsImV4cCI6MTY5MTg5NDU0MCwiaWF0IjoxNjg2NzEwNTQwfQ.CMVKaojlNSWLjmtbZ_AY6shkkStQgp1DHP3z87oIPe8';
+  console.log(isFollow);
 
   useEffect(() => {
     const getLikedGameData = async () => {
-      const data = await getLikedGameAPI(test_token);
+      const data = await getLikedGameAPI(token);
       setLikedGame(data);
     };
+    const getPostData = async () => {
+      const data = await getPost(token, id);
+      setPostData(data.post);
+    };
     getLikedGameData();
+    getPostData();
   }, []);
-
+  console.log(postData);
   return (
     <Container>
-      <CommonProfile profile={profile}>
+      <CommonProfile profile={profile} numFollower={numFollower}>
         <button type='button'>
           <img src={IconShareBtn} alt='공유' />
         </button>
         <MButton
-          text={state ? '언팔로우' : '팔로우'}
+          text={isFollow ? '언팔로우' : '팔로우'}
           func={handleState}
-          active={state}
+          active={isFollow}
         />
         <button
           type='button'
@@ -67,11 +90,12 @@ function UserProfile({ profile }) {
           <img src={IconMessageBtn} alt='공유' />
         </button>
       </CommonProfile>
-
       <LikedGameStyle className='section-game'>
         <h2>직관 일정</h2>
         <CardList games={likedGame} />
       </LikedGameStyle>
+
+      <PostList post={postData} onlyGame={false} />
     </Container>
   );
 }
@@ -79,6 +103,7 @@ function UserProfile({ profile }) {
 function MyProfile({ profile }) {
   const navigate = useNavigate();
   const [likedGame, setLikedGame] = useState([]);
+  const [numFollower, setNumFollower] = useState(profile.followerCount);
   const [token, setToken] = useRecoilState(userToken);
 
   useEffect(() => {
@@ -90,7 +115,7 @@ function MyProfile({ profile }) {
   }, []);
   return (
     <Container>
-      <CommonProfile profile={profile}>
+      <CommonProfile profile={profile} numFollower={numFollower}>
         <MButton
           text='프로필 수정'
           func={() => {

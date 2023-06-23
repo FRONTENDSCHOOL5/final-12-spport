@@ -100,13 +100,14 @@ const ContainerStyle = styled.section`
   }
 `;
 
-export default function CommonProfile({ profile, children }) {
+export default function CommonProfile({ profile, children, numFollower }) {
   const location = useLocation();
   const navigate = useNavigate();
   const tags = profile.intro.length === 0 ? [] : profile?.intro?.split(',');
   const path = location.pathname;
   const isTeamBS = profile.accountname.startsWith('SPORT_BS');
   const isTeamSC = profile.accountname.startsWith('SPORT_SC');
+
   return (
     <ContainerStyle>
       {/* 1열 */}
@@ -118,7 +119,7 @@ export default function CommonProfile({ profile, children }) {
             navigate(path + '/follower');
           }}
         >
-          <strong>{profile.followerCount}</strong>
+          <strong>{numFollower}</strong>
           <p>followers</p>
         </button>
       </div>
@@ -153,7 +154,12 @@ export default function CommonProfile({ profile, children }) {
       {/* 이름, 아이디, 태그 */}
       <div className='description'>
         <strong>{profile.username}</strong>
-        <p>@ {profile.accountname}</p>
+        <p>
+          @{' '}
+          {profile.accountname.startsWith('SPORT_')
+            ? profile.accountname.slice(9)
+            : profile.accountname}
+        </p>
         <div className='tag-container'>
           {!!tags.length &&
             tags.map((item) => {
