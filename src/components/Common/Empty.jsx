@@ -19,10 +19,6 @@ const EmptySection = styled.section`
     margin-bottom: 20px;
     text-align: center;
   }
-
-  button {
-    margin: 0 auto;
-  }
 `;
 
 export default function Empty({ message, btnText, link }) {
