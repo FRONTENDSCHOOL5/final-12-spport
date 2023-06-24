@@ -15,24 +15,38 @@ const addProductAPI = async (token, post, ids, isGame) => {
     },
   };
   const data = await POST_API(token, '/product', productData);
-  console.log(data);
   return data;
 };
 
 const getProductAPI = async (token, accountname) => {
   const data = await GET_API(token, `/product/${accountname}`);
-  return data;
+  const product =
+    data.product &&
+    data.product.filter((item) => {
+      const today = new Date();
+      const date = new Date(item.itemName.split(',')[0]);
+      const time = item.itemName.split(',');
+      if (time.length >= 3) {
+        const timesplit = time[2].split(':');
+        if (timesplit.length >= 2) {
+          date.setHours(timesplit[0], timesplit[1], 0, 0);
+        }
+      }
+      if (today < date) {
+        return true;
+      }
+    });
+  return product;
 };
 
 const getProductByPostIdAPI = async (token, accountname, ids) => {
   const plist = await getProductAPI(token, accountname);
-  const data = plist.product.filter((item) => {
+  const data = plist.filter((item) => {
     const idlist = item.link.split(',');
     if (idlist.includes(ids[0])) {
       return true;
     }
   });
-  console.log(data);
   return data;
 };
 
@@ -45,7 +59,6 @@ const deleteProductAPI = async (token, accountname, ids) => {
   const plist = await getProductByPostIdAPI(token, accountname, ids);
   const product_id = plist[0].id;
   const data = await DELETE_API(token, `/product/${product_id}`);
-  console.log(data);
   return data;
 };
 

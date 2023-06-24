@@ -100,13 +100,14 @@ const ContainerStyle = styled.section`
   }
 `;
 
-export default function CommonProfile({ profile, children }) {
+export default function CommonProfile({ profile, children, numFollower }) {
   const location = useLocation();
   const navigate = useNavigate();
   const tags = profile.intro.length === 0 ? [] : profile?.intro?.split(',');
   const path = location.pathname;
   const isTeamBS = profile.accountname.startsWith('SPORT_BS');
   const isTeamSC = profile.accountname.startsWith('SPORT_SC');
+
   return (
     <ContainerStyle>
       {/* 1열 */}
@@ -118,7 +119,7 @@ export default function CommonProfile({ profile, children }) {
             navigate(path + '/follower');
           }}
         >
-          <strong>{profile.followerCount}</strong>
+          <strong>{numFollower}</strong>
           <p>followers</p>
         </button>
       </div>
@@ -129,7 +130,7 @@ export default function CommonProfile({ profile, children }) {
       {/* 팀 프로필일 시 followings 대신 야구공/축구공 아이콘 조건부 렌더링(sort로 축구/야구 구분) */}
       <div className='followings'>
         {isTeamBS ? (
-          <button type='button'>
+          <button type='button' onClick={() => navigate('/search/SPORT_BS_')}>
             <img src={IconBaseball} alt='' />
           </button>
         ) : isTeamSC ? (
@@ -153,7 +154,12 @@ export default function CommonProfile({ profile, children }) {
       {/* 이름, 아이디, 태그 */}
       <div className='description'>
         <strong>{profile.username}</strong>
-        <p>@ {profile.accountname}</p>
+        <p>
+          @{' '}
+          {profile.accountname.startsWith('SPORT_')
+            ? profile.accountname.slice(9)
+            : profile.accountname}
+        </p>
         <div className='tag-container'>
           {!!tags.length &&
             tags.map((item) => {

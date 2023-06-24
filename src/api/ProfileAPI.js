@@ -5,4 +5,9 @@ const getProfileAPI = async (token, accountname) => {
   return data;
 };
 
-export { getProfileAPI };
+const getUserPostAPI = async (token, accountname) => {
+  const data = await GET_API(token, `/post/${accountname}/userpost`);
+  return data;
+};
+
+export { getProfileAPI, getUserPostAPI };
