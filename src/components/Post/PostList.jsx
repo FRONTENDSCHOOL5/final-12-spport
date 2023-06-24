@@ -4,18 +4,21 @@ import styled from 'styled-components';
 import { sortFeedPost } from '../../api/GameAPI/FeedGame';
 
 const PostListStyle = styled.ul`
-  padding: 0 16px;
+  border-top: 0.5px solid var(--color-maingrey);
+  background: white;
+  padding: 20px 16px;
   li {
     margin-bottom: 40px;
   }
 `;
 
 export default function PostList({ post, onlyGame }) {
-  const [sortedPost, setSortedPost] = useState(sortFeedPost(post, onlyGame));
+  const [sortedPost, setSortedPost] = useState([]);
+
   useEffect(() => {
     setSortedPost(sortFeedPost(post, onlyGame));
-  }, [onlyGame]);
-  
+  }, [post, onlyGame]);
+  console.log(sortedPost);
   return (
     <PostListStyle>
       {sortedPost.map((item) => {

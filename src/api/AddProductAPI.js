@@ -25,8 +25,13 @@ const getProductAPI = async (token, accountname) => {
     data.product.filter((item) => {
       const today = new Date();
       const date = new Date(item.itemName.split(',')[0]);
-      const time = item.itemName.split(',')[2].split(':');
-      date.setHours(time[0], time[1], 0, 0);
+      const time = item.itemName.split(',');
+      if (time.length >= 3) {
+        const timesplit = time[2].split(':');
+        if (timesplit.length >= 2) {
+          date.setHours(timesplit[0], timesplit[1], 0, 0);
+        }
+      }
       if (today < date) {
         return true;
       }

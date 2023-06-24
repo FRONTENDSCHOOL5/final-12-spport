@@ -9,7 +9,7 @@ import { userToken } from '../atom/loginAtom';
 import Empty from '../components/Common/Empty';
 
 const FullSection = styled.main`
-  padding: 70px 0;
+  padding: 50px 0;
   height: 100%;
   background: white;
 `;
