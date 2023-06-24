@@ -1,3 +1,4 @@
+loginAtom;
 import { atom } from 'recoil';
 import { recoilPersist } from 'recoil-persist';
 
@@ -23,6 +24,18 @@ export const accountname = atom({
 
 export const userimage = atom({
   key: 'userimage',
+  default: '',
+  effects_UNSTABLE: [persistAtom],
+});
+
+export const username = atom({
+  key: 'username',
+  default: '',
+  effects_UNSTABLE: [persistAtom],
+});
+
+export const intro = atom({
+  key: 'intro',
   default: '',
   effects_UNSTABLE: [persistAtom],
 });
