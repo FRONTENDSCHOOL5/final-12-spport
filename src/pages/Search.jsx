@@ -9,7 +9,7 @@ import { useParams } from 'react-router-dom';
 import { getSearchAPI } from '../api/SearchAPI';
 
 const MainStyle = styled.main`
-  height: 100vh;
+  height: 100%;
 `;
 
 export default function Search() {

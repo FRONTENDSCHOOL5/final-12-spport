@@ -17,6 +17,7 @@ const LikedGameStyle = styled.section`
   background: white;
   border-top: 0.5px solid var(--color-maingrey);
   border-bottom: 0.5px solid var(--color-maingrey);
+  height: 205px;
   h2 {
     padding: 20px 20px 0;
   }
