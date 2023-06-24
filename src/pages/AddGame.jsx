@@ -23,7 +23,7 @@ const MainStyle = styled.main`
     display: flex;
     align-items: center;
     position: fixed;
-    width: 100%;
+    width: 390px;
     background: white;
     gap: 10px;
     div:nth-child(2) {

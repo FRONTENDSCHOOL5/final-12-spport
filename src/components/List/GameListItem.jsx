@@ -7,8 +7,9 @@ import {
   likeGameAPI,
   unlikeGameAPI,
 } from '../../api/GameAPI/LikeGameAPI';
-import { userToken } from '../../atom/loginAtom';
+import { accountname, userToken } from '../../atom/loginAtom';
 import { useRecoilState } from 'recoil';
+import { isModalOpen, modalItems } from '../../atom/modalAtom';
 
 const ListItemStyle = styled.li`
   width: 100%;
@@ -45,6 +46,9 @@ export default function GameListItem({ game }) {
   const game_id = game[1];
   const [isLike, setIsLike] = useState(false);
   const [token, setToken] = useRecoilState(userToken);
+  const [accountName, setAccountName] = useRecoilState(accountname);
+  const [isModal, setIsModal] = useRecoilState(isModalOpen);
+  const [modalItem, setModalItem] = useRecoilState(modalItems);
 
   useEffect(() => {
     const setLike = async () => {
@@ -53,16 +57,39 @@ export default function GameListItem({ game }) {
     };
     setLike();
   }, []);
-  const onLikeClick = async () => {
-    console.log(game_id);
-    if (isLike) {
-      const unlike = await unlikeGameAPI(token, game_id);
-      setIsLike(unlike[0].post.hearted);
-    } else {
-      const like = await likeGameAPI(token, game_id);
+
+  const likeModal = () => {
+    setIsModal(true);
+    const likeGame = async () => {
+      const like = await likeGameAPI(token, game_id, true, game[0], true);
       setIsLike(like[0].post.hearted);
+      // confirm like
+      setIsModal(true);
+      setModalItem(['해당 일정이 추가되었습니다.', '확인', function () {}]);
+    };
+    setModalItem(['해당 일정을 추가하시겠습니까?', '추가', likeGame]);
+  };
+
+  const unlikeModal = () => {
+    setIsModal(true);
+    const unlikeGame = async () => {
+      const unlike = await unlikeGameAPI(token, game_id, true, accountName);
+      setIsLike(unlike[0].post.hearted);
+      // confirm unlike
+      setIsModal(true);
+      setModalItem(['해당 일정이 삭제되었습니다.', '확인', function () {}]);
+    };
+    setModalItem(['해당 일정을 삭제하시겠습니까?', '삭제', unlikeGame]);
+  };
+
+  const onLikeClick = async () => {
+    if (isLike) {
+      unlikeModal();
+    } else {
+      likeModal();
     }
   };
+
   return (
     <ListItemStyle className='list-item' key={game_id[0]}>
       <ProfileImage50 image={game_info.image} />

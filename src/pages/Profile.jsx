@@ -12,6 +12,7 @@ import { accountname, userToken } from '../atom/loginAtom';
 const MainStyle = styled.main`
   padding: 50px 0 60px;
   background: var(--color-bg);
+  height: 100vh;
 `;
 
 export default function Profile() {
@@ -26,9 +27,8 @@ export default function Profile() {
       const data = await getProfileAPI(token, id);
       setProfile(data.profile);
     };
-
     getProfile();
-  }, []);
+  }, [id]);
   return (
     <>
       <Header text />

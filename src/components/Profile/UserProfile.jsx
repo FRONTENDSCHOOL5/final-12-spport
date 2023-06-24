@@ -6,17 +6,17 @@ import CardList from '../List/CardList';
 import MButton from '../Common/Button/MButton';
 import IconShareBtn from '../../assets/image/icon-share-btn.svg';
 import IconMessageBtn from '../../assets/image/icon-message-btn.svg';
-import { getLikedGameAPI } from '../../api/GameAPI/LikeGameAPI';
 import { useRecoilState } from 'recoil';
-import { userToken } from '../../atom/loginAtom';
+import { userToken, accountname } from '../../atom/loginAtom';
 import { getPost } from '../../api/PostAPI.js/GetPostAPI';
 import PostList from '../Post/PostList';
 import { followAPI, unfollowAPI } from '../../api/FollowAPI';
+import { getProductAPI } from '../../api/AddProductAPI';
 
 const LikedGameStyle = styled.section`
   background: white;
-  border-top: 1px solid var(--color-maingrey);
-  border-bottom: 1px solid var(--color-maingrey);
+  border-top: 0.5px solid var(--color-maingrey);
+  border-bottom: 0.5px solid var(--color-maingrey);
   h2 {
     padding: 20px 20px 0;
   }
@@ -40,6 +40,7 @@ function UserProfile({ profile }) {
   const [state, setState] = useState(false);
   const [isFollow, setIsFollow] = useState(profile.isfollow);
   const [numFollower, setNumFollower] = useState(profile.followerCount);
+  const [planGame, setPlanGame] = useState([]);
 
   const handleState = async () => {
     console.log('눌림!');
@@ -59,8 +60,8 @@ function UserProfile({ profile }) {
 
   useEffect(() => {
     const getLikedGameData = async () => {
-      const data = await getLikedGameAPI(token);
-      setLikedGame(data);
+      const plan = await getProductAPI(token, id);
+      setPlanGame(plan);
     };
     const getPostData = async () => {
       const data = await getPost(token, id);
@@ -92,7 +93,7 @@ function UserProfile({ profile }) {
       </CommonProfile>
       <LikedGameStyle className='section-game'>
         <h2>직관 일정</h2>
-        <CardList games={likedGame} />
+        {planGame.length > 0 && <CardList games={planGame} />}
       </LikedGameStyle>
 
       <PostList post={postData} onlyGame={false} />
@@ -104,12 +105,14 @@ function MyProfile({ profile }) {
   const navigate = useNavigate();
   const [likedGame, setLikedGame] = useState([]);
   const [numFollower, setNumFollower] = useState(profile.followerCount);
+  const [planGame, setPlanGame] = useState([]);
   const [token, setToken] = useRecoilState(userToken);
+  const [accountName, setAccountName] = useRecoilState(accountname);
 
   useEffect(() => {
     const getLikedGameData = async () => {
-      const data = await getLikedGameAPI(token);
-      setLikedGame(data);
+      const plan = await getProductAPI(token, accountName);
+      setPlanGame(plan);
     };
     getLikedGameData();
   }, []);
@@ -134,7 +137,7 @@ function MyProfile({ profile }) {
 
       <LikedGameStyle className='section-game'>
         <h2>직관 일정</h2>
-        <CardList games={likedGame} />
+        {planGame.length > 0 && <CardList games={planGame} />}
       </LikedGameStyle>
     </Container>
   );

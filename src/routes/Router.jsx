@@ -14,6 +14,7 @@ import Follow from '../pages/Follow';
 import Post from '../pages/Post';
 import Search from '../pages/Search';
 import Profile from '../pages/Profile';
+import Splash from '../pages/Splash';
 import { useRecoilState } from 'recoil';
 import { loginState } from '../atom/loginAtom';
 
@@ -21,14 +22,25 @@ export default function Router() {
   const [isLogin, setIsLogin] = useRecoilState(loginState);
   return (
     <Routes>
-      <Route path='/' element={<Welcome />} />
-      <Route path='/login' element={<Login />} />
-      <Route path='/signup' element={<Signup />} />
+      <Route path='/' element={<Splash />} />
+      {isLogin ? (
+        <>
+          <Route path='/welcome' element={<Navigate to='/home' />} />
+          <Route path='/login' element={<Navigate to='/home' />} />
+          <Route path='/signup' element={<Navigate to='/home' />} />
+        </>
+      ) : (
+        <>
+          <Route path='/welcome' element={<Welcome />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/signup' element={<Signup />} />
+        </>
+      )}
       <Route path='/home' element={<Home />} />
       <Route path='/upload' element={<Upload />} />
       <Route path='/addgame' element={<AddGame />} />
       <Route path='/error' element={<Error />} />
-      <Route path='/edit' element={<EditProfile />} />
+      <Route path='/editpost' element={<EditProfile />} />
       <Route path='/chat' element={<Chat />} />
       <Route path='/profile/:id/*' element={<Outlet />}>
         <Route path='' element={<Profile />} />

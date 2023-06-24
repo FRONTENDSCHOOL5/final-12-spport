@@ -9,12 +9,12 @@ const BottomSheetStyle = styled.article`
   bottom: 0;
   left: 0;
   right: 0;
-  width: 100%;
+  width: 390px;
+  margin: auto;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.2);
   .bottomsheet {
-    width: 100%;
+    width: 390px;
     background: var(--color-navy);
     box-shadow: 0px -4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 20px 20px 0 0;

@@ -9,6 +9,10 @@ import styled from 'styled-components';
 import { useRecoilState } from 'recoil';
 import { userToken } from '../atom/loginAtom';
 
+const MainStyle = styled.main`
+  height: 100vh;
+`;
+
 const PostSectionStyle = styled.section`
   padding: 70px 20px 20px;
 `;
@@ -36,12 +40,12 @@ export default function Post() {
   return (
     <>
       <Header text />
-      <main>
+      <MainStyle>
         <PostSectionStyle>
           {Object.keys(post).length > 0 && <PostDetail post={post} />}
         </PostSectionStyle>
         <section>{comment && <CommentList comments={comment} post_id={post.id}/>}</section>
-      </main>
+      </MainStyle>
     </>
   );
 }

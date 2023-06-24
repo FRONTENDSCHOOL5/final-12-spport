@@ -11,7 +11,6 @@ const EmptySection = styled.section`
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-
   .emptyMessage {
     background: url(${logoblue}) no-repeat;
     color: var(--color-steelblue);
@@ -19,10 +18,6 @@ const EmptySection = styled.section`
     padding-top: 115px;
     margin-bottom: 20px;
     text-align: center;
-  }
-
-  button {
-    margin: 0 auto;
   }
 `;
 
