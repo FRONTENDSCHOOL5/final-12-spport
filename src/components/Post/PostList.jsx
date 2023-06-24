@@ -7,6 +7,7 @@ const PostListStyle = styled.ul`
   border-top: 0.5px solid var(--color-maingrey);
   background: white;
   padding: 20px 16px 50px;
+  min-height: 350px;
   li {
     margin-bottom: 40px;
   }
