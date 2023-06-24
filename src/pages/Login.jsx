@@ -1,3 +1,4 @@
+Login;
 import React, { useState, useEffect, useCallback } from 'react';
 import Input from '../components/Common/Input';
 import styled from 'styled-components';
@@ -9,6 +10,8 @@ import {
   userToken,
   loginState,
   accountname,
+  username,
+  intro,
   userimage,
 } from '../atom/loginAtom';
 
@@ -21,12 +24,13 @@ export default function LoginPage() {
   const [buttonDisabled, setButtonDisabled] = useState(true);
   const [loginError, setLoginError] = useState('');
   const [emailError, setEmailError] = useState('');
-  const [emailValid, setEmailValid] = useState(false);
   const [pwMessage, setPwMessage] = useState('');
 
   const [userTokenAtom, setUserTokenAtom] = useRecoilState(userToken);
   const [loginStateAtom, setLoginStateAtom] = useRecoilState(loginState);
   const [accountName, setAccountName] = useRecoilState(accountname);
+  const [userName, setUserName] = useRecoilState(username);
+  const [userIntro, setUserIntro] = useRecoilState(intro);
   const [userImage, setUserImage] = useRecoilState(userimage);
 
   const navigate = useNavigate();
@@ -37,10 +41,8 @@ export default function LoginPage() {
 
     if (email === '') {
       setEmailError('*이메일을 입력해주세요.');
-      setEmailValid(false);
     } else {
       setEmailError('');
-      setEmailValid('');
     }
   };
 
@@ -90,10 +92,12 @@ export default function LoginPage() {
 
         if (!data.message) {
           const userData = data.user;
-          const { token, accountname, image } = userData;
+          const { token, accountname, username, intro, image } = userData;
           setUserTokenAtom(token);
           setLoginStateAtom(true);
           setAccountName(accountname);
+          setUserName(username);
+          setUserIntro(intro);
           setUserImage(image);
 
           navigate('/home');
@@ -111,7 +115,7 @@ export default function LoginPage() {
   );
 
   return (
-    <MainStyle>
+    <>
       <H1Style>로그인</H1Style>
       <FormStyle onSubmit={handleSubmit}>
         <Input
@@ -138,13 +142,9 @@ export default function LoginPage() {
       <LinkWrap>
         <Link to='/signup'>이메일로 회원가입</Link>
       </LinkWrap>
-    </MainStyle>
+    </>
   );
 }
-
-const MainStyle = styled.main`
-  height: 100vh;
-`;
 
 export const H1Style = styled.h1`
   text-align: center;
@@ -158,6 +158,7 @@ export const FormStyle = styled.form`
   max-width: 322px;
   padding-top: 30px;
   margin: 0 auto;
+
   label {
     font-size: 12px;
     color: var(--color-darkgrey);
