@@ -19,7 +19,7 @@ export default function PostList({ post, onlyGame }) {
   useEffect(() => {
     setSortedPost(sortFeedPost(post, onlyGame));
   }, [post, onlyGame]);
-  console.log(sortedPost);
+  
   return (
     <PostListStyle>
       {sortedPost.map((item) => {

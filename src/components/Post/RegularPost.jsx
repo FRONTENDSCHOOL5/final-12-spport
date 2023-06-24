@@ -25,18 +25,12 @@ const RegularPostStyle = styled.div`
 
 export default function RegularPost({ post }) {
   const [images, setImages] = useState([]);
-  // console.clear();
   if (post.image) {
-    console.log(post.content);
-    console.log(post.image);
     const imageUrl = post.image.split(',');
-    console.log(imageUrl);
-
     useEffect(() => {
       setImages(imageUrl);
     }, []);
   }
-  console.log(images);
 
   return (
     <>
