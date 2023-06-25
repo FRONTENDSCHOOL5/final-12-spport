@@ -1,7 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import FollowList from './FollowList';
+import { useRecoilState } from 'recoil';
+import { accountname } from '../../atom/loginAtom';
 
-export default function Followers({ follower }) {
+export default function Followers({ follower, token }) {
+  const [myAccountname, setMyAccountname] = useRecoilState(accountname);
+
+  // 팀 계정을 리스트 상단에 올리기 위해 분류
   const sortedData = [...follower].sort((a, b) => {
     if (b.accountname.startsWith('SPORT_')) {
       return 1;
@@ -9,19 +14,11 @@ export default function Followers({ follower }) {
       return -2;
     }
   });
-  const [followers, setFollowers] = useState(sortedData);
-  const handleList = (item) => {
-    setFollowers(
-      followers.filter((i) => {
-        return item !== i;
-      }),
-    );
-  };
 
   return (
     <>
       <ul>
-        {followers.map((item, index) => {
+        {sortedData.map((item, index) => {
           return (
             <FollowList
               key={index}
@@ -29,7 +26,9 @@ export default function Followers({ follower }) {
               accountname={item.accountname}
               image={item.image}
               page='followers'
-              func={() => handleList(item)}
+              isfollow={item.isfollow}
+              isMyAccount={item.accountname === myAccountname}
+              token={token}
             />
           );
         })}
