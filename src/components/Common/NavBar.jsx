@@ -18,6 +18,7 @@ const NavContainer = styled.nav`
   background-color: var(--color-navy);
   position: fixed;
   bottom: 0;
+  z-index: 10;
 `;
 // ul과 ul 안의 li, button, img 스타일 컴포넌트
 const NavUnorderedList = styled.ul`

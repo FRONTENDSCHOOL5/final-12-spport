@@ -30,7 +30,14 @@ const BtnWrapperStyle = styled.div`
   }
 `;
 
-export default function BtnGroup({ id, hearted, heartCount, commentCount, isTeam, post }) {
+export default function BtnGroup({
+  id,
+  hearted,
+  heartCount,
+  commentCount,
+  isTeam,
+  post,
+}) {
   const [isLike, setIsLike] = useState(hearted);
   const [likeCount, setLikeCount] = useState(heartCount);
   const [token, setToken] = useRecoilState(userToken);

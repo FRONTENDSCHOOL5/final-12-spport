@@ -22,10 +22,23 @@ const GamePostStyle = styled.article`
   }
 `;
 
+const NoWeatherStyle = styled.p`
+  background: var(--color-navy);
+  border-radius: 10px;
+  font-size: 14px;
+  color: var(--color-lime);
+  margin: auto;
+  border-radius: 10px;
+  padding: 20px 0;
+  width: calc(100% - 10px);
+  text-align: center;
+`;
+
 export default function GamePost({ post }) {
   const game = arrToGame(post.content.split(','));
   const isHome = post.author.username.startsWith(game.home);
   const [weather, setWeather] = useState({});
+  const [isFuture, setIsFuture] = useState(false);
 
   useEffect(() => {
     const getCurrentWeather = async () => {
@@ -40,8 +53,10 @@ export default function GamePost({ post }) {
     const date = new Date(game.date).setHours(0, 0, 0, 0);
     if (today === date) {
       getCurrentWeather();
-    } else {
+    } else if (today > date) {
       getPastWeather();
+    } else {
+      setIsFuture(true);
     }
   }, []);
   return (
@@ -60,9 +75,10 @@ export default function GamePost({ post }) {
           in {game.full_stadium}
         </p>
       </GamePostStyle>
-      {Object.keys(weather).length > 0 && (
+      {Object.keys(weather).length > 0 && !isFuture && (
         <WeatherCard city={game.stadium} weather={weather} />
       )}
+      {isFuture && <NoWeatherStyle>--- 날씨 업데이트 예정 ---</NoWeatherStyle>}
     </>
   );
 }
