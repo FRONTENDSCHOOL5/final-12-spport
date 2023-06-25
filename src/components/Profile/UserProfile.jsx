@@ -41,7 +41,7 @@ function UserProfile({ profile }) {
   const [numFollower, setNumFollower] = useState(profile.followerCount);
   const [planGame, setPlanGame] = useState([]);
 
-  const handleState = async () => {
+  const handleFollow = async () => {
     if (isFollow) {
       const data = await unfollowAPI(token, id);
       setIsFollow(data.profile.isfollow);
@@ -62,10 +62,11 @@ function UserProfile({ profile }) {
       const data = await getUserPostAPI(token, id);
       setPostData(data.post);
     };
+
     getLikedGameData();
     getPostData();
   }, []);
-  
+
   return (
     <Container>
       <CommonProfile profile={profile} numFollower={numFollower}>
@@ -74,7 +75,7 @@ function UserProfile({ profile }) {
         </button>
         <MButton
           text={isFollow ? '언팔로우' : '팔로우'}
-          func={handleState}
+          func={handleFollow}
           active={isFollow}
         />
         <button
@@ -90,7 +91,7 @@ function UserProfile({ profile }) {
         <h2>직관 일정</h2>
         {planGame.length > 0 && <CardList games={planGame} />}
       </LikedGameStyle>
-          {/* <ProfilePost post={postData} onlyGame={false} /> */}
+      {/* <ProfilePost post={postData} onlyGame={false} /> */}
       <PostList post={postData} onlyGame={false} />
     </Container>
   );
