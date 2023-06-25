@@ -37,8 +37,6 @@ const ListStyle = styled.li`
   & > button {
     display: flex;
     text-align: start;
-    /* btnBox의 left margin을 어떤걸 사용해서 채워줄지 고민 */
-    /* flex-basis: 100%; */
     width: 100%;
   }
 `;
@@ -56,7 +54,6 @@ export default function FollowList(props) {
       setIsFollow(data.profile.isfollow);
     }
   };
-  console.log('isMyAccount', props.isMyAccount);
   return (
     <ListStyle>
       <button
@@ -87,11 +84,13 @@ export default function FollowList(props) {
             </button>
           )
         )}
-        <SButton
-          text={isFollow === true ? '취소' : '팔로우'}
-          func={handleFollow}
-          active={isFollow}
-        />
+        {props.isMyAccount || (
+          <SButton
+            text={isFollow === true ? '취소' : '팔로우'}
+            func={handleFollow}
+            active={isFollow}
+          />
+        )}
       </div>
     </ListStyle>
   );

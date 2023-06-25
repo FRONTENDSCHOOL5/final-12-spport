@@ -1,14 +1,12 @@
 import React from 'react';
 import FollowList from './FollowList';
-import { useParams } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
 import { accountname } from '../../atom/loginAtom';
 
 export default function Followings({ following, token }) {
-  const { id } = useParams();
   const [myAccountname, setMyAccountname] = useRecoilState(accountname);
-  const isMyAccount = id === myAccountname;
 
+  // 팀 계정을 리스트 상단에 올리기 위해 분류
   const sortedData = [...following].sort((a, b) => {
     if (b.accountname.startsWith('SPORT_')) {
       return 1;
@@ -29,7 +27,7 @@ export default function Followings({ following, token }) {
               image={item.image}
               page='followings'
               isfollow={item.isfollow}
-              isMyAccount={isMyAccount}
+              isMyAccount={item.accountname === myAccountname}
               token={token}
             />
           );
