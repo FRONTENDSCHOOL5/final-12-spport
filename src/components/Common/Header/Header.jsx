@@ -54,6 +54,7 @@ export default function Header({
   setFilterClick,
   uploadText,
   disabled,
+  isChatRoom,
 }) {
   const navigate = useNavigate();
   const [isBsOpen, setIsBsOpen] = useRecoilState(isBottomSheetOpen);
@@ -75,32 +76,46 @@ export default function Header({
   };
   const handleMoreClick = () => {
     setIsBsOpen((prev) => !prev);
-    const onInfoClick = () => {
-      alert('info');
-      setIsBsOpen(false);
-    };
-    const resetLogin = () => {
-      setToken('');
-      setIsLogin(false);
-      setAccountName('');
-      setUserImage('');
-    };
-    const onLogout = () => {
-      setIsBsOpen(false);
-      setIsModal(true);
-      const logout = async () => {
-        await resetLogin();
-        navigate('/welcome');
+    if (isChatRoom) {
+      const leaveChatRoom = () => {
+        setIsBsOpen(false);
         setIsModal(true);
-        setModalItem(['로그아웃되었습니다.', '확인', function () {}]);
+        const leaveRoom = async () => {
+          navigate('/chat');
+          setIsModal(false);
+        };
+        setModalItem(['채팅방을 나가시겠어요?', '나가기', leaveRoom]);
       };
-      setModalItem(['로그아웃하시겠어요?', '로그아웃', logout]);
-    };
-    const loginBsItems = [
-      ['설정 및 개인정보', onInfoClick],
-      ['로그아웃', onLogout],
-    ];
-    setBsItems(loginBsItems);
+      const chatRoomBsItems = [['채팅방 나가기', leaveChatRoom]];
+      setBsItems(chatRoomBsItems);
+    } else {
+      const onInfoClick = () => {
+        alert('info');
+        setIsBsOpen(false);
+      };
+      const resetLogin = () => {
+        setToken('');
+        setIsLogin(false);
+        setAccountName('');
+        setUserImage('');
+      };
+      const onLogout = () => {
+        setIsBsOpen(false);
+        setIsModal(true);
+        const logout = async () => {
+          await resetLogin();
+          navigate('/welcome');
+          setIsModal(true);
+          setModalItem(['로그아웃되었습니다.', '확인', function () {}]);
+        };
+        setModalItem(['로그아웃하시겠어요?', '로그아웃', logout]);
+      };
+      const loginBsItems = [
+        ['설정 및 개인정보', onInfoClick],
+        ['로그아웃', onLogout],
+      ];
+      setBsItems(loginBsItems);
+    }
   };
   function test() {
     console.log('Ddd');
