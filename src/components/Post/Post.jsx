@@ -12,7 +12,10 @@ import {
 } from '../../atom/bottomSheetAtom';
 import { accountname, userToken } from '../../atom/loginAtom';
 import { isModalOpen, modalItems } from '../../atom/modalAtom';
-import { deletePostAPI } from '../../api/PostAPI.js/PostDetailAPI';
+import {
+  deletePostAPI,
+  reportPostAPI,
+} from '../../api/PostAPI.js/PostDetailAPI';
 
 const PostStyle = styled.article`
   width: 358px;
@@ -65,9 +68,16 @@ export default function Post({ post }) {
             },
           ]);
         };
-        setModalItem(['게시물을 삭제할까요?', '삭제', deletePost]);
+        setModalItem(['해당 게시물을 삭제할까요?', '삭제', deletePost]);
       };
-      const onPostEdit = () => {};
+      const onPostEdit = () => {
+        // setIsModal(true);
+        navigate('/editpost', {
+          state: {
+            post_id: post.id,
+          },
+        });
+      };
       const postItems = [
         ['삭제', onPostDelete],
         ['수정', onPostEdit],
@@ -76,6 +86,12 @@ export default function Post({ post }) {
     } else {
       const onPostReport = () => {
         setIsModal(true);
+        const reportPost = async () => {
+          const data = await reportPostAPI(token, post.id);
+          setIsModal(true);
+          setModalItem(['게시물이 신고되었습니다', '확인', function () {}]);
+        };
+        setModalItem(['해당 게시물을 신고할까요?', '신고', reportPost]);
       };
       const postItems = [['신고', onPostReport]];
       setBsItems(postItems);
