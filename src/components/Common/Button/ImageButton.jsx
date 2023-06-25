@@ -64,7 +64,7 @@ function ImageButton(props) {
 // UploadButton
 // props.func=실행할 함수
 // 50px navy
-const UploadButtonStyle = styled.button`
+const UploadButtonStyle = styled.section`
   .btn-upload-img {
     width: 50px;
     height: 50px;
