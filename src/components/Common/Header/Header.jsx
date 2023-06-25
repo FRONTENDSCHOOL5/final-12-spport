@@ -1,4 +1,3 @@
-Header;
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import iconBack from '../../../assets/image/icon-back.svg';

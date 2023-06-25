@@ -1,9 +1,6 @@
-EditProfile;
-
 import React, { useState } from 'react';
 import { ImageWrap, LabelImg, ProfileImg } from './Signup';
 import Input from '../components/Common/Input';
-// import MsButton from '../components/Common/Button/MsButton';
 import { FormStyle, ErrorText } from './Login';
 import Header from '../components/Common/Header/Header';
 import styled from 'styled-components';
@@ -61,7 +58,7 @@ export default function EditProfile() {
 
     setErrorMsg('');
   };
-  console.log(userInfo);
+  // console.log(userInfo);
 
   const handleImageUpload = async (e) => {
     try {
@@ -98,7 +95,7 @@ export default function EditProfile() {
       });
 
       const result = await response.json();
-      console.log(result);
+      // console.log(result);
     } catch (error) {
       console.error(error);
     }
@@ -124,7 +121,7 @@ export default function EditProfile() {
       body: JSON.stringify(accountData),
     });
     const json = await res.json();
-    console.log(json);
+    // console.log(json);
     setErrorMsg(json.message);
 
     const accountnames = bsData.map((item) => item.accountname.substring(9));
