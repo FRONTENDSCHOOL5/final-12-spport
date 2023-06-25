@@ -33,7 +33,7 @@ function GameItemLoader() {
         style={{ borderRadius: '40px', marginLeft: '76px' }}
         containerClassName='flex-1'
         width={56}
-        height={28}
+        height={30}
       />
     </GameItemStyle>
   );

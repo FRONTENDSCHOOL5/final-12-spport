@@ -8,6 +8,8 @@ import NavBar from '../components/Common/NavBar';
 import { getProfileAPI } from '../api/ProfileAPI';
 import { useRecoilState } from 'recoil';
 import { accountname, userToken } from '../atom/loginAtom';
+import UserProfileLoader from '../components/Skeleton/UserProfileLoader';
+import TeamProfileLoader from '../components/Skeleton/TeamProfileLoader';
 
 const MainStyle = styled.main`
   padding: 50px 0 60px;
@@ -17,6 +19,7 @@ const MainStyle = styled.main`
 
 export default function Profile() {
   const [profile, setProfile] = useState([]);
+  const [isLoad, setIsLoad] = useState(false);
   const { id } = useParams();
   const isTeam = id.startsWith('SPORT_');
   const [username, setUsername] = useRecoilState(accountname);
@@ -24,8 +27,10 @@ export default function Profile() {
 
   useEffect(() => {
     const getProfile = async () => {
+      setIsLoad(true);
       const data = await getProfileAPI(token, id);
       setProfile(data.profile);
+      setIsLoad(false);
     };
     getProfile();
   }, [id]);
@@ -33,14 +38,19 @@ export default function Profile() {
     <>
       <Header text />
       <MainStyle>
-        {isTeam
-          ? profile.length !== 0 && <TeamProfile profile={profile} />
-          : profile.length !== 0 &&
-            (username === profile.accountname ? (
-              <MyProfile profile={profile} />
-            ) : (
-              <UserProfile profile={profile} />
-            ))}
+        {isLoad && isTeam && <TeamProfileLoader />}
+        {!isLoad && isTeam && profile.length !== 0 && (
+          <TeamProfile profile={profile} />
+        )}
+        {isLoad && !isTeam && <UserProfileLoader />}
+        {!isLoad &&
+          !isTeam &&
+          profile.length !== 0 &&
+          (username === profile.accountname ? (
+            <MyProfile profile={profile} />
+          ) : (
+            <UserProfile profile={profile} />
+          ))}
       </MainStyle>
       <NavBar />
     </>

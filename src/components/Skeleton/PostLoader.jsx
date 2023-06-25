@@ -53,7 +53,7 @@ const PostLoaderStyle = styled.div`
   }
 `;
 
-function PostLoaderItem() {
+export function PostLoaderItem() {
   return (
     <PostLoaderStyle>
       <div className='profile-wrapper'>

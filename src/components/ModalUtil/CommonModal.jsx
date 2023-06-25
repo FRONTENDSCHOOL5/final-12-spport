@@ -1,5 +1,5 @@
 import React from 'react';
-import Modal from '../Common/Modal/Modal';
+import Modal from '../Common/Modals/Modal';
 import { useRecoilState } from 'recoil';
 import { modalItems } from '../../atom/modalAtom';
 

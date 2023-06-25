@@ -12,7 +12,8 @@ const BottomSheetStyle = styled.article`
   width: 390px;
   margin: auto;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 20;
   .bottomsheet {
     width: 390px;
     background: var(--color-navy);
@@ -22,7 +23,6 @@ const BottomSheetStyle = styled.article`
     bottom: 0;
     overflow: hidden;
     padding-bottom: 10px;
-    z-index: 10;
     button {
       width: 100%;
       padding: 14px 26px;
