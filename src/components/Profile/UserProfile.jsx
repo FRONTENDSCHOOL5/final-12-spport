@@ -6,6 +6,7 @@ import CardList from '../List/CardList';
 import MButton from '../Common/Button/MButton';
 import IconShareBtn from '../../assets/image/icon-share-btn.svg';
 import IconMessageBtn from '../../assets/image/icon-message-btn.svg';
+import IconCamera from '../../assets/image/icon-camera.svg';
 import { useRecoilState } from 'recoil';
 import { userToken, accountname } from '../../atom/loginAtom';
 import PostList from '../Post/PostList';
@@ -13,6 +14,31 @@ import { followAPI, unfollowAPI } from '../../api/FollowAPI';
 import { getProductAPI } from '../../api/AddProductAPI';
 import { getUserPostAPI } from '../../api/ProfileAPI';
 
+const NoPostStyle = styled.section`
+  position: relative;
+  background: white;
+  border-top: 0.5px solid var(--color-maingrey);
+  border-bottom: 0.5px solid var(--color-maingrey);
+  height: 390px;
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    img {
+      vertical-align: top;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 25px;
+      font-weight: bolder;
+    }
+    button {
+      margin-top: 20px;
+    }
+  }
+`;
 const LikedGameStyle = styled.section`
   background: white;
   border-top: 0.5px solid var(--color-maingrey);
@@ -66,7 +92,6 @@ function UserProfile({ profile }) {
     getLikedGameData();
     getPostData();
   }, []);
-
   return (
     <Container>
       <CommonProfile profile={profile} numFollower={numFollower}>
@@ -92,7 +117,18 @@ function UserProfile({ profile }) {
         {planGame.length > 0 && <CardList games={planGame} />}
       </LikedGameStyle>
       {/* <ProfilePost post={postData} onlyGame={false} /> */}
-      <PostList post={postData} onlyGame={false} />
+      {postData.length === 0 ? (
+        <NoPostStyle>
+          <div>
+            <img src={IconCamera} alt='' />
+            <h2>게시물 없음</h2>
+          </div>
+        </NoPostStyle>
+      ) : (
+        <PostList post={postData} onlyGame={false} />
+      )}
+
+      {/* <PostList post={postData} onlyGame={false} /> */}
     </Container>
   );
 }
@@ -140,7 +176,22 @@ function MyProfile({ profile }) {
         <h2>직관 일정</h2>
         {planGame.length > 0 && <CardList games={planGame} />}
       </LikedGameStyle>
-      <PostList post={postData} onlyGame={false} />
+      {postData.length === 0 ? (
+        <NoPostStyle>
+          <div>
+            <img src={IconCamera} alt='' />
+            <h2>게시물 없음</h2>
+            <MButton
+              text='첫 게시글 쓰러가기'
+              func={() => {
+                navigate('/upload');
+              }}
+            />
+          </div>
+        </NoPostStyle>
+      ) : (
+        <PostList post={postData} onlyGame={false} />
+      )}
     </Container>
   );
 }
