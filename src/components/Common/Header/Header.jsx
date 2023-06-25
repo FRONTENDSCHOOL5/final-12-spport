@@ -14,6 +14,13 @@ import {
   bottomSheetItems,
 } from '../../../atom/bottomSheetAtom';
 import { isModalOpen, modalItems } from '../../../atom/modalAtom';
+import {
+  userToken,
+  loginState,
+  accountname,
+  userimage,
+} from '../../../atom/loginAtom';
+
 const HeaderStyle = styled.header`
   height: 50px;
   display: flex;
@@ -23,6 +30,7 @@ const HeaderStyle = styled.header`
   background: var(--color-navy);
   position: fixed;
   width: 390px;
+  z-index: 10;
   .header-title {
     color: var(--color-lime);
     font-size: 14px;
@@ -52,7 +60,12 @@ export default function Header({
   const [bsItems, setBsItems] = useRecoilState(bottomSheetItems);
   const [isModal, setIsModal] = useRecoilState(isModalOpen);
   const [modalItem, setModalItem] = useRecoilState(modalItems);
-  console.log(onUploadClick);
+
+  // Login와 User
+  const [token, setToken] = useRecoilState(userToken);
+  const [isLogin, setIsLogin] = useRecoilState(loginState);
+  const [accountName, setAccountName] = useRecoilState(accountname);
+  const [userImage, setUserImage] = useRecoilState(userimage);
 
   const handleBackClick = () => {
     navigate(-1);
@@ -66,14 +79,20 @@ export default function Header({
       alert('info');
       setIsBsOpen(false);
     };
+    const resetLogin = () => {
+      setToken('');
+      setIsLogin(false);
+      setAccountName('');
+      setUserImage('');
+    };
     const onLogout = () => {
-      alert('logout');
       setIsBsOpen(false);
       setIsModal(true);
-      const logout = () => {
-        // 로그아웃 로직
-        console.log('로그아웃 로직 불러오가');
-        setIsModal(false);
+      const logout = async () => {
+        await resetLogin();
+        navigate('/welcome');
+        setIsModal(true);
+        setModalItem(['로그아웃되었습니다.', '확인', function () {}]);
       };
       setModalItem(['로그아웃하시겠어요?', '로그아웃', logout]);
     };

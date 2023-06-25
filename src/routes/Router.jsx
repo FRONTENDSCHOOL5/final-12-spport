@@ -15,6 +15,7 @@ import Post from '../pages/Post';
 import Search from '../pages/Search';
 import Profile from '../pages/Profile';
 import Splash from '../pages/Splash';
+import EditPost from '../pages/EditPost';
 import { useRecoilState } from 'recoil';
 import { loginState } from '../atom/loginAtom';
 
@@ -40,7 +41,8 @@ export default function Router() {
       <Route path='/upload' element={<Upload />} />
       <Route path='/addgame' element={<AddGame />} />
       <Route path='/error' element={<Error />} />
-      <Route path='/editpost' element={<EditProfile />} />
+      <Route path='/editpost' element={<EditPost />} />
+      <Route path='/editprofile' element={<EditProfile />} />
       <Route path='/chat' element={<Chat />} />
       <Route path='/profile/:id/*' element={<Outlet />}>
         <Route path='' element={<Profile />} />

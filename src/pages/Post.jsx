@@ -8,9 +8,10 @@ import Header from '../components/Common/Header/Header';
 import styled from 'styled-components';
 import { useRecoilState } from 'recoil';
 import { userToken } from '../atom/loginAtom';
+import { PostDetailLoader } from '../components/Skeleton/PostLoader';
 
 const MainStyle = styled.main`
-  height: 100vh;
+  height: 100%;
 `;
 
 const PostSectionStyle = styled.section`
@@ -19,6 +20,7 @@ const PostSectionStyle = styled.section`
 
 export default function Post() {
   const { id } = useParams();
+  const [isLoad, setIsLoad] = useState(false);
   const [post, setPost] = useState({});
   const [comment, setComment] = useState([]);
   const [token, setToken] = useRecoilState(userToken);
@@ -26,6 +28,7 @@ export default function Post() {
 
   useEffect(() => {
     const getData = async () => {
+      setIsLoad(true);
       const data = await getPostDetailAPI(token, id);
       const cmtData = await getCommentAPI(token, id);
       if (data.status === 404) {
@@ -34,6 +37,7 @@ export default function Post() {
       }
       setPost(data.post);
       setComment(cmtData.comments);
+      setIsLoad(false);
     };
     getData();
   }, []);
@@ -41,10 +45,18 @@ export default function Post() {
     <>
       <Header text />
       <MainStyle>
-        <PostSectionStyle>
-          {Object.keys(post).length > 0 && <PostDetail post={post} />}
-        </PostSectionStyle>
-        <section>{comment && <CommentList comments={comment} post_id={post.id}/>}</section>
+        {isLoad ? (
+          <PostDetailLoader />
+        ) : (
+          <>
+            <PostSectionStyle>
+              {Object.keys(post).length > 0 && <PostDetail post={post} />}
+            </PostSectionStyle>
+            <section>
+              {comment && <CommentList comments={comment} post_id={post.id} />}
+            </section>
+          </>
+        )}
       </MainStyle>
     </>
   );
