@@ -17,6 +17,7 @@ const LikedGameStyle = styled.section`
   background: white;
   border-top: 0.5px solid var(--color-maingrey);
   border-bottom: 0.5px solid var(--color-maingrey);
+  height: 205px;
   h2 {
     padding: 20px 20px 0;
   }
@@ -85,7 +86,7 @@ function UserProfile({ profile }) {
         <h2>직관 일정</h2>
         {planGame.length > 0 && <CardList games={planGame} />}
       </LikedGameStyle>
-
+          {/* <ProfilePost post={postData} onlyGame={false} /> */}
       <PostList post={postData} onlyGame={false} />
     </Container>
   );
@@ -117,7 +118,7 @@ function MyProfile({ profile }) {
         <MButton
           text='프로필 수정'
           func={() => {
-            navigate('/edit');
+            navigate('/editprofile');
           }}
           active
         />

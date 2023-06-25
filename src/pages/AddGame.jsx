@@ -12,6 +12,7 @@ import {
 import { useRecoilState } from 'recoil';
 import { userToken } from '../atom/loginAtom';
 import Empty from '../components/Common/Empty';
+import GameLoader from '../components/Skeleton/GameLoader';
 
 const MainStyle = styled.main`
   padding: 50px 0 60px;
@@ -36,6 +37,7 @@ const MainStyle = styled.main`
 `;
 
 export default function AddGame() {
+  const [isLoad, setIsLoad] = useState(false);
   const [token, setToken] = useRecoilState(userToken);
   const [game, setGame] = useState([]); // total game 처음에 받아오고 변하지 않음
   const [filterGame, setFilterGame] = useState([]); // filtered game 필터링된 게임 저장
@@ -47,9 +49,11 @@ export default function AddGame() {
   // 처음에 전체 게임 정보와 팀 정보를 얻음
   useEffect(() => {
     const getData = async () => {
+      setIsLoad(true);
       const gameData = await getGameInfo(token);
       setGame(gameData);
       setFilterGame(gameData);
+      setIsLoad(false);
     };
     getData();
     setTeam(getTeamName());
@@ -82,15 +86,14 @@ export default function AddGame() {
           />
         </section>
         <section className='section-game'>
-          {filterGame.length === 0 ? (
+          {!isLoad && filterGame.length === 0 && (
             <Empty
               message='관심있는 스포츠 팀을 팔로우 해보세요!'
               btnText='검색하기'
               link='/search/SPORT_'
             />
-          ) : (
-            <GameList games={filterGame} />
           )}
+          {isLoad ? <GameLoader /> : <GameList games={filterGame} />}
         </section>
       </MainStyle>
       <NavBar />

@@ -46,6 +46,7 @@ const VComment = styled.article`
     padding-left: 60px;
     padding: 10px 20px 10px 50px;
     font-size: 14px;
+    word-break: break-all;
   }
   .btn-more {
     margin-left: 0;

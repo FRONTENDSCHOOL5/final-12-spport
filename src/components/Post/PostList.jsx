@@ -6,9 +6,18 @@ import { sortFeedPost } from '../../api/GameAPI/FeedGame';
 const PostListStyle = styled.ul`
   border-top: 0.5px solid var(--color-maingrey);
   background: white;
-  padding: 20px 16px;
+  padding: 20px 16px 50px;
+  min-height: 350px;
   li {
     margin-bottom: 40px;
+  }
+  p {
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
   }
 `;
 
@@ -18,7 +27,7 @@ export default function PostList({ post, onlyGame }) {
   useEffect(() => {
     setSortedPost(sortFeedPost(post, onlyGame));
   }, [post, onlyGame]);
-  console.log(sortedPost);
+
   return (
     <PostListStyle>
       {sortedPost.map((item) => {

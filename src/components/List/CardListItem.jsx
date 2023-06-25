@@ -36,9 +36,11 @@ const CardStyle = styled.li`
 
 export default function CardListItem({ game }) {
   const game_info = game.itemName.split(',');
+  console.log(game);
+  const linkPost = `/post/${game.link.split(',')[0]}`;
   return (
     <CardStyle key={game.id}>
-      {/* <Link to={linkPost}> */}
+      <Link to={linkPost}>
         <img className='img-card' src={game.itemImage} alt='' />
         <p className='card-title'>
           {game_info[3]} vs. {game_info[4]}
@@ -46,7 +48,7 @@ export default function CardListItem({ game }) {
         <p className='card-info'>
           {game_info[0].slice(5)} ({game_info[1]}) in {game_info[5]}
         </p>
-      {/* </Link> */}
+      </Link>
     </CardStyle>
   );
 }
