@@ -1,5 +1,5 @@
 import React from 'react';
-import BottomSheet from '../Common/Modal/BottomSheet';
+import BottomSheet from '../Common/Modals/BottomSheet';
 import { useRecoilState } from 'recoil';
 import { bottomSheetItems } from '../../atom/bottomSheetAtom';
 
