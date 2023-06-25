@@ -57,7 +57,13 @@ export default function Post({ post }) {
         const deletePost = async () => {
           const data = await deletePostAPI(token, post.id);
           setIsModal(true);
-          setModalItem(['게시물이 삭제되었습니다', '확인', function () {navigate(-1);}]);
+          setModalItem([
+            '게시물이 삭제되었습니다',
+            '확인',
+            function () {
+              navigate(-1);
+            },
+          ]);
         };
         setModalItem(['게시물을 삭제할까요?', '삭제', deletePost]);
       };

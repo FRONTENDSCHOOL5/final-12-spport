@@ -13,7 +13,7 @@ export default function CardList({ games }) {
   games.sort((a, b) => {
     const dateA = new Date(a.itemName.split(',')[0]);
     const dateB = new Date(b.itemName.split(',')[0]);
-    if(dateA > dateB) {
+    if (dateA > dateB) {
       return 2;
     } else {
       return -1;
