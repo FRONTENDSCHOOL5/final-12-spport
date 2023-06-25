@@ -11,6 +11,14 @@ const PostListStyle = styled.ul`
   li {
     margin-bottom: 40px;
   }
+  p {
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+  }
 `;
 
 export default function PostList({ post, onlyGame }) {
@@ -19,7 +27,7 @@ export default function PostList({ post, onlyGame }) {
   useEffect(() => {
     setSortedPost(sortFeedPost(post, onlyGame));
   }, [post, onlyGame]);
-  
+
   return (
     <PostListStyle>
       {sortedPost.map((item) => {
