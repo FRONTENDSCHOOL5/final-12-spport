@@ -14,13 +14,6 @@ import {
   bottomSheetItems,
 } from '../../../atom/bottomSheetAtom';
 import { isModalOpen, modalItems } from '../../../atom/modalAtom';
-import {
-  userToken,
-  loginState,
-  accountname,
-  userimage,
-} from '../../../atom/loginAtom';
-
 const HeaderStyle = styled.header`
   height: 50px;
   display: flex;
@@ -51,19 +44,15 @@ export default function Header({
   main,
   onUploadClick,
   setFilterClick,
+  uploadText,
+  disabled,
 }) {
-  // BottomSheet와 Modal
   const navigate = useNavigate();
   const [isBsOpen, setIsBsOpen] = useRecoilState(isBottomSheetOpen);
   const [bsItems, setBsItems] = useRecoilState(bottomSheetItems);
   const [isModal, setIsModal] = useRecoilState(isModalOpen);
   const [modalItem, setModalItem] = useRecoilState(modalItems);
-
-  // Login와 User
-  const [token, setToken] = useRecoilState(userToken);
-  const [isLogin, setIsLogin] = useRecoilState(loginState);
-  const [accountName, setAccountName] = useRecoilState(accountname);
-  const [userImage, setUserImage] = useRecoilState(userimage);
+  console.log(onUploadClick);
 
   const handleBackClick = () => {
     navigate(-1);
@@ -75,23 +64,16 @@ export default function Header({
     setIsBsOpen((prev) => !prev);
     const onInfoClick = () => {
       alert('info');
+      setIsBsOpen(false);
     };
-
-    const resetLogin = () => {
-      setToken('');
-      setIsLogin(false);
-      setAccountName('');
-      setUserImage('');
-    };
-    // 로그아웃 로직
     const onLogout = () => {
+      alert('logout');
       setIsBsOpen(false);
       setIsModal(true);
-      const logout = async () => {
-        await resetLogin();
-        navigate('/welcome');
-        setIsModal(true);
-        setModalItem(['로그아웃되었습니다.', '확인', function () {}]);
+      const logout = () => {
+        // 로그아웃 로직
+        console.log('로그아웃 로직 불러오가');
+        setIsModal(false);
       };
       setModalItem(['로그아웃하시겠어요?', '로그아웃', logout]);
     };
@@ -101,6 +83,9 @@ export default function Header({
     ];
     setBsItems(loginBsItems);
   };
+  function test() {
+    console.log('Ddd');
+  }
 
   return (
     <HeaderStyle>
@@ -131,7 +116,13 @@ export default function Header({
           </button>
         </>
       )}
-      {upload && <MsButton text='업로드' onClick={onUploadClick} />}
+      {upload && (
+        <MsButton
+          text={uploadText || '업로드'}
+          func={(e) => onUploadClick(e)}
+          disabled={disabled}
+        />
+      )}
     </HeaderStyle>
   );
 }
