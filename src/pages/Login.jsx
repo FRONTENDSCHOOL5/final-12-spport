@@ -1,4 +1,3 @@
-Login;
 import React, { useState, useEffect, useCallback } from 'react';
 import Input from '../components/Common/Input';
 import styled from 'styled-components';

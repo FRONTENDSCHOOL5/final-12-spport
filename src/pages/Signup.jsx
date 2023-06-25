@@ -1,4 +1,3 @@
-Signup;
 import React, { useState } from 'react';
 import { H1Style, FormStyle } from './Login';
 import Input from '../components/Common/Input';
@@ -41,7 +40,7 @@ export default function Signup() {
     }));
     setErrorMsg('');
   };
-  console.log(userInfo);
+  // console.log(userInfo);
 
   const handleEmailValid = async () => {
     try {
@@ -60,7 +59,7 @@ export default function Signup() {
       const result = await response.json();
       if (result) {
         setEmailError(result.message);
-        console.log(result);
+        // console.log(result);
       }
     } catch (error) {
       console.error('error', error);
@@ -108,7 +107,7 @@ export default function Signup() {
 
       const res = await response.json();
       setErrorMsg(res.message);
-      console.log(res);
+      // console.log(res);
 
       if (res.message === '회원가입 성공') {
         navigate('/login');
