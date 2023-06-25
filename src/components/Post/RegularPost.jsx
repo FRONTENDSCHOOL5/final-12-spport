@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
+import NoImage from '../../assets/image/noimage.png';
 
 const RegularPostStyle = styled.div`
   p {
@@ -33,6 +34,10 @@ export default function RegularPost({ post }) {
     }, []);
   }
 
+  const handleImgError = (e) => {
+    e.target.src = NoImage;
+  };
+
   return (
     <>
       <RegularPostStyle className='content-wrapper'>
@@ -40,7 +45,9 @@ export default function RegularPost({ post }) {
         <section className='post-img-wrapper'>
           {images &&
             images.map((image) => {
-              return <img key={image} src={image} alt='' />;
+              return (
+                <img key={image} src={image} alt='' onError={handleImgError} />
+              );
             })}
         </section>
       </RegularPostStyle>

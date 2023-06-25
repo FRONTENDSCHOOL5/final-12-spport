@@ -26,12 +26,12 @@ export default function Empty({ message, btnText, link }) {
   return (
     <EmptySection>
       <p className='emptyMessage'>{message}</p>
-      <MButton
+      {btnText && <MButton
         text={btnText}
         func={() => {
           navigate(link);
         }}
-      />
+      />}
     </EmptySection>
   );
 }
