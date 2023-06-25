@@ -57,14 +57,15 @@ function UserProfile({ profile }) {
       const plan = await getProductAPI(token, id);
       setPlanGame(plan);
     };
-    const getPostData = async () => {
-      const data = await getUserPostAPI(token, id);
-      setPostData(data.post);
-    };
+
+    // const getPostData = async () => {
+    //   const data = await getPost(token, id);
+    //   setPostData(data.post);
+    // };
     getLikedGameData();
-    getPostData();
+    // getPostData();
   }, []);
-  
+
   return (
     <Container>
       <CommonProfile profile={profile} numFollower={numFollower}>
