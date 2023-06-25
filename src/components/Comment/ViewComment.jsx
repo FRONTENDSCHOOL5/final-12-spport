@@ -65,6 +65,10 @@ export default function ViewComment({ comment, post_id }) {
   // modal이 false면 안나오고 버튼을 누르면 setModal로 true로 바뀌며 모달 생성
   // 기본값은 false
   const profileLink = `/profile/${comment.author.accountname}`;
+  const date = comment.createdAt;
+  const displayDate = `${date.slice(0, 4)}.${parseInt(
+    date.slice(5, 7),
+  )}.${parseInt(date.slice(8))} ${date.slice(11, 13)}:${date.slice(14, 16)}`;
 
   const [token, setToken] = useRecoilState(userToken);
   const [accountName, setAccountName] = useRecoilState(accountname);
@@ -118,7 +122,7 @@ export default function ViewComment({ comment, post_id }) {
           {/* comment가 없으면 댓글이 없습니다 */}
           {/* 나중에 조건부 렌더링으로 아예 다른 페이지가 나오도록 수정 */}
           <p className='w-name'>{comment.author.username}</p>
-          <p className='w-time'>{comment.createdAt}</p>
+          <p className='w-time'>{displayDate}</p>
         </section>
         <button className='btn-more' onClick={onMoreClick}></button>
       </section>
