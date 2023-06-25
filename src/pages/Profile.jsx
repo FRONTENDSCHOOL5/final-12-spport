@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import Header from '../components/Common/Header/Header';
 import { UserProfile, MyProfile } from '../components/Profile/UserProfile';
@@ -24,11 +24,15 @@ export default function Profile() {
   const isTeam = id.startsWith('SPORT_');
   const [username, setUsername] = useRecoilState(accountname);
   const [token, setToken] = useRecoilState(userToken);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const getProfile = async () => {
       setIsLoad(true);
       const data = await getProfileAPI(token, id);
+      if (data.status === '404') {
+        navigate('/error');
+      }
       setProfile(data.profile);
       setIsLoad(false);
     };
