@@ -2,7 +2,10 @@ import React, { useEffect, useRef, useState } from 'react';
 import Header from '../components/Common/Header/Header';
 import styled from 'styled-components';
 import { ProfileImage36 } from '../components/Common/ProfileImage';
-import { ImageButton } from '../components/Common/Button/ImageButton';
+import {
+  ImageButton,
+  UploadButton,
+} from '../components/Common/Button/ImageButton';
 import { POST_API } from '../api/CommonAPI';
 import { useNavigate } from 'react-router-dom';
 import { userToken } from '../atom/loginAtom';
@@ -64,7 +67,7 @@ const StyledProfileImage36 = styled(ProfileImage36)`
   flex-shrink: 0;
 `;
 
-const StyledImageButton = styled(ImageButton)`
+const StyledUploadButton = styled(UploadButton)`
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -343,7 +346,7 @@ export default function Upload(props) {
               onChange={postContent}
             ></textarea>
             {/* 버튼을 누르면 포스트가 올라가고 끝인데 새로고침을 해야하는지 다른 페이지로 이동해야 하는지 */}
-            <StyledImageButton func={imageUpload3} />
+            <StyledUploadButton func={imageUpload3} />
           </form>
         </section>
         <section className='upload-images-wrapper'>
