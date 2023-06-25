@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import SButton from '../Common/Button/SButton';
 import IconBaseball from '../../assets/image/icon-baseball.svg';
 import IconSoccer from '../../assets/image/icon-soccer.svg';
+import { followAPI, unfollowAPI } from '../../api/FollowAPI';
 
 const ListStyle = styled.li`
   display: flex;
@@ -36,67 +37,60 @@ const ListStyle = styled.li`
   & > button {
     display: flex;
     text-align: start;
-    /* btnBox의 left margin을 어떤걸 사용해서 채워줄지 고민 */
-    /* flex-basis: 100%; */
     width: 100%;
   }
 `;
-export default function FollowList({
-  username,
-  accountname,
-  image,
-  page,
-  func,
-}) {
+export default function FollowList(props) {
   const navigate = useNavigate();
-  const [state, setState] = useState(false);
-  // followings 페이지의 팔로우/언팔로우 버튼
-  const handleState = () => {
-    if (page === 'followings') setState(!state);
+  const [isFollow, setIsFollow] = useState(props.isfollow);
+
+  // 팔로우 기능
+  const handleFollow = async () => {
+    if (isFollow) {
+      const data = await unfollowAPI(props.token, props.accountname);
+      setIsFollow(data.profile.isfollow);
+    } else {
+      const data = await followAPI(props.token, props.accountname);
+      setIsFollow(data.profile.isfollow);
+    }
   };
   return (
     <ListStyle>
-      <button type='button' onClick={() => navigate(`/profile/${accountname}`)}>
-        <ProfileImage50 image={image} />
+      <button
+        type='button'
+        onClick={() => navigate(`/profile/${props.accountname}`)}
+      >
+        <ProfileImage50 image={props.image} />
         <div className='text'>
-          <strong>{username}</strong>
+          <strong>{props.username}</strong>
           <p>
             @{' '}
-            {accountname.startsWith('SPORT_')
-              ? accountname.slice(9)
-              : accountname}
+            {props.accountname.startsWith('SPORT_')
+              ? props.accountname.slice(9)
+              : props.accountname}
           </p>
         </div>
       </button>
       <div className='btnBox'>
-        {/*  
-          팀프로필 및 사람프로필에 따라 팔로우버튼 옆 공 아이콘 유무 조건부렌더링
-        */}
-        {accountname.startsWith('SPORT_BS') ? (
+        {/* 팀프로필 및 사람프로필에 따라 팔로우버튼 옆 공 아이콘 조건부렌더링 */}
+        {props.accountname.startsWith('SPORT_BS') ? (
           <button className='btnBall'>
             <img src={IconBaseball} alt='' />
           </button>
-        ) : accountname.startsWith('SPORT_SC') ? (
-          <button className='btnBall'>
-            <img src={IconSoccer} alt='' />
-          </button>
-        ) : null}
-        <SButton
-          // followings 페이지와 followers 페이지의 버튼의 텍스트 차이
-          text={
-            page === 'followings'
-              ? state === false
-                ? '취소'
-                : '팔로우'
-              : state === false
-              ? '삭제'
-              : null
-          }
-          page={page}
-          func={page === 'followings' ? handleState : func}
-          // 버튼의 css가 반대여야하므로 !state 값을 넣어줌
-          active={!state}
-        />
+        ) : (
+          props.accountname.startsWith('SPORT_SC') && (
+            <button className='btnBall'>
+              <img src={IconSoccer} alt='' />
+            </button>
+          )
+        )}
+        {props.isMyAccount || (
+          <SButton
+            text={isFollow === true ? '취소' : '팔로우'}
+            func={handleFollow}
+            active={isFollow}
+          />
+        )}
       </div>
     </ListStyle>
   );
