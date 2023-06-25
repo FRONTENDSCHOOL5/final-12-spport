@@ -40,7 +40,7 @@ function UserProfile({ profile }) {
   const [numFollower, setNumFollower] = useState(profile.followerCount);
   const [planGame, setPlanGame] = useState([]);
 
-  const handleState = async () => {
+  const handleFollow = async () => {
     if (isFollow) {
       const data = await unfollowAPI(token, id);
       setIsFollow(data.profile.isfollow);
@@ -58,12 +58,7 @@ function UserProfile({ profile }) {
       setPlanGame(plan);
     };
 
-    // const getPostData = async () => {
-    //   const data = await getPost(token, id);
-    //   setPostData(data.post);
-    // };
     getLikedGameData();
-    // getPostData();
   }, []);
 
   return (
@@ -74,7 +69,7 @@ function UserProfile({ profile }) {
         </button>
         <MButton
           text={isFollow ? '언팔로우' : '팔로우'}
-          func={handleState}
+          func={handleFollow}
           active={isFollow}
         />
         <button
