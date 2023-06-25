@@ -26,3 +26,15 @@ export const userimage = atom({
   default: '',
   effects_UNSTABLE: [persistAtom],
 });
+
+export const username = atom({
+  key: 'username',
+  default: '',
+  effects_UNSTABLE: [persistAtom],
+});
+
+export const intro = atom({
+  key: 'intro',
+  default: '',
+  effects_UNSTABLE: [persistAtom],
+});
