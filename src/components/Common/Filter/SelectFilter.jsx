@@ -5,7 +5,7 @@ import classnames from 'classnames';
 
 const SelectFilterStyle = styled.div`
   position: relative;
-  width: 105px;
+  width: 113px;
   text-align: center;
   * {
     color: var(--color-steelblue);
@@ -26,9 +26,7 @@ const SelectFilterStyle = styled.div`
       right: 6px;
       background: url(${iconToggle}) center right no-repeat;
       transition: 0.1s ease;
-    }
-    &.on:after {
-      transform: rotate(180deg);
+      transform: ${(props) => (props.isOpen ? 'rotate(180deg)' : 'none')};
     }
   }
   .list-select {
@@ -66,14 +64,17 @@ export default function SelectFilter({
   selectItem,
   setSelectItem,
 }) {
+  const [isOpen, setIsOpen] = useState(false);
   const [filterClick, setFilterClick] = useState(false);
   const handleFilterClick = (e) => {
     setFilterClick((prev) => !prev);
+    setIsOpen((prev) => !prev);
   };
 
   const handleSelectClick = (e) => {
     setSelectItem(e.target.textContent);
     setFilterClick(false);
+    setIsOpen(false);
   };
 
   useEffect(() => {
@@ -81,7 +82,7 @@ export default function SelectFilter({
   }, []);
 
   return (
-    <SelectFilterStyle className='select-filter'>
+    <SelectFilterStyle className='select-filter' isOpen={isOpen}>
       <button className='btn-select' type='button' onClick={handleFilterClick}>
         {selectItem === '선택' ? `${type} 선택` : selectItem}
       </button>

@@ -1,5080 +1,5080 @@
 [
- {
-  "uniform_number": "23",
-  "name": "강매성",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "28",
-  "name": "강진성",
-  "team": "SSG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "12",
-  "name": "고명준",
-  "team": "SSG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "15",
-  "name": "고효준",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "0",
-  "name": "김강민",
-  "team": "SSG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "44",
-  "name": "김건웅",
-  "team": "SSG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "03",
-  "name": "김건이",
-  "team": "SSG",
-  "position": "포수"
- },
- {
-  "uniform_number": "29",
-  "name": "김광현",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "57",
-  "name": "김규남",
-  "team": "SSG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "68",
-  "name": "김도현",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "24",
-  "name": "김민식",
-  "team": "SSG",
-  "position": "포수"
- },
- {
-  "uniform_number": "93",
-  "name": "김민준",
-  "team": "SSG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "6",
-  "name": "김성현",
-  "team": "SSG",
-  "position": "내야수"
- },
- {
-  "name": "김재현",
-  "team": "SSG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "65",
-  "name": "김정민",
-  "team": "SSG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "11",
-  "name": "김주온",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "21",
-  "name": "김주한",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "05",
-  "name": "김준영",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "04",
-  "name": "김태윤",
-  "team": "SSG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "51",
-  "name": "김태훈",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "38",
-  "name": "노경은",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "name": "로메로",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "06",
-  "name": "류현곤",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "95",
-  "name": "류효승",
-  "team": "SSG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "33",
-  "name": "맥카티",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "42",
-  "name": "문승원",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "41",
-  "name": "박민호",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "64",
-  "name": "박상후",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "2",
-  "name": "박성한",
-  "team": "SSG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "00",
-  "name": "박세직",
-  "team": "SSG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "46",
-  "name": "박시후",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "50",
-  "name": "박종훈",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "59",
-  "name": "백승건",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "18",
-  "name": "서동민",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "61",
-  "name": "서상준",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "22",
-  "name": "서진용",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "98",
-  "name": "송영진",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "49",
-  "name": "신헌민",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "10",
-  "name": "안상현",
-  "team": "SSG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "97",
-  "name": "안현서",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "94",
-  "name": "양선률",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "27",
-  "name": "에레디아",
-  "team": "SSG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "25",
-  "name": "엘리아스",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "47",
-  "name": "오원석",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "37",
-  "name": "오태곤",
-  "team": "SSG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "45",
-  "name": "유호식",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "30",
-  "name": "윤태현",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "36",
-  "name": "이거연",
-  "team": "SSG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "16",
-  "name": "이건욱",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "39",
-  "name": "이기순",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "92",
-  "name": "이로운",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "09",
-  "name": "이승훈",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "66",
-  "name": "이원준",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "20",
-  "name": "이재원",
-  "team": "SSG",
-  "position": "포수"
- },
- {
-  "uniform_number": "31",
-  "name": "이정범",
-  "team": "SSG",
-  "position": "외야수"
- },
- {
-  "name": "이현석",
-  "team": "SSG",
-  "position": "포수"
- },
- {
-  "uniform_number": "55",
-  "name": "이흥련",
-  "team": "SSG",
-  "position": "포수"
- },
- {
-  "uniform_number": "48",
-  "name": "임준섭",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "52",
-  "name": "전경원",
-  "team": "SSG",
-  "position": "포수"
- },
- {
-  "name": "전영준",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "56",
-  "name": "전의산",
-  "team": "SSG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "9",
-  "name": "전진우",
-  "team": "SSG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "62",
-  "name": "정동윤",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "1",
-  "name": "정성곤",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "08",
-  "name": "조강희",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "43",
-  "name": "조성훈",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "32",
-  "name": "조형우",
-  "team": "SSG",
-  "position": "포수"
- },
- {
-  "uniform_number": "58",
-  "name": "최경모",
-  "team": "SSG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "67",
-  "name": "최민준",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "8",
-  "name": "최상민",
-  "team": "SSG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "19",
-  "name": "최수호",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "3",
-  "name": "최유빈",
-  "team": "SSG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "14",
-  "name": "최정",
-  "team": "SSG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "53",
-  "name": "최주환",
-  "team": "SSG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "7",
-  "name": "최준우",
-  "team": "SSG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "54",
-  "name": "최지훈",
-  "team": "SSG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "4",
-  "name": "최항",
-  "team": "SSG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "17",
-  "name": "추신수",
-  "team": "SSG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "13",
-  "name": "하재훈",
-  "team": "SSG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "34",
-  "name": "한두솔",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "35",
-  "name": "한유섬",
-  "team": "SSG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "40",
-  "name": "허민혁",
-  "team": "SSG",
-  "position": "투수"
- },
- {
-  "uniform_number": "117",
-  "name": "강민균",
-  "team": "LG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "59",
-  "name": "강효종",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "19",
-  "name": "고우석",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "116",
-  "name": "곽민호",
-  "team": "LG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "68",
-  "name": "권동혁",
-  "team": "LG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "12",
-  "name": "김기연",
-  "team": "LG",
-  "position": "포수"
- },
- {
-  "uniform_number": "109",
-  "name": "김단우",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "34",
-  "name": "김대현",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "64",
-  "name": "김동규",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "16",
-  "name": "김민성",
-  "team": "LG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "44",
-  "name": "김범석",
-  "team": "LG",
-  "position": "포수"
- },
- {
-  "uniform_number": "105",
-  "name": "김성우",
-  "team": "LG",
-  "position": "포수"
- },
- {
-  "uniform_number": "114",
-  "name": "김성진",
-  "team": "LG",
-  "position": "포수"
- },
- {
-  "uniform_number": "102",
-  "name": "김성협",
-  "team": "LG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "35",
-  "name": "김영준",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "0",
-  "name": "김유영",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "47",
-  "name": "김윤식",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "115",
-  "name": "김의준",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "5",
-  "name": "김주성",
-  "team": "LG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "40",
-  "name": "김주완",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "42",
-  "name": "김진성",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "25",
-  "name": "김진수",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "110",
-  "name": "김태형",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "22",
-  "name": "김현수",
-  "team": "LG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "2",
-  "name": "문보경",
-  "team": "LG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "8",
-  "name": "문성주",
-  "team": "LG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "27",
-  "name": "박동원",
-  "team": "LG",
-  "position": "포수"
- },
- {
-  "uniform_number": "39",
-  "name": "박명근",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "106",
-  "name": "박민호",
-  "team": "LG",
-  "position": "포수"
- },
- {
-  "uniform_number": "17",
-  "name": "박해민",
-  "team": "LG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "36",
-  "name": "배재준",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "61",
-  "name": "백승현",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "14",
-  "name": "서건창",
-  "team": "LG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "58",
-  "name": "성동현",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "125",
-  "name": "성재헌",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "29",
-  "name": "손주영",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "24",
-  "name": "손호영",
-  "team": "LG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "63",
-  "name": "송대현",
-  "team": "LG",
-  "position": "내야수"
- },
- {
-  "name": "송승기",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "46",
-  "name": "송은범",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "66",
-  "name": "송찬의",
-  "team": "LG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "4",
-  "name": "신민재",
-  "team": "LG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "15",
-  "name": "안익훈",
-  "team": "LG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "123",
-  "name": "양진혁",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "124",
-  "name": "엄태경",
-  "team": "LG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "104",
-  "name": "오석주",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "23",
-  "name": "오스틴",
-  "team": "LG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "10",
-  "name": "오지환",
-  "team": "LG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "107",
-  "name": "원상훈",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "54",
-  "name": "유영찬",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "28",
-  "name": "윤호솔",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "26",
-  "name": "이민호",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "48",
-  "name": "이상규",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "37",
-  "name": "이우찬",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "52",
-  "name": "이재원",
-  "team": "LG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "31",
-  "name": "이정용",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "53",
-  "name": "이주형",
-  "team": "LG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "60",
-  "name": "이준서",
-  "team": "LG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "50",
-  "name": "이지강",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "100",
-  "name": "이찬혁",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "32",
-  "name": "이천웅",
-  "team": "LG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "113",
-  "name": "이철민",
-  "team": "LG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "108",
-  "name": "임정균",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "20",
-  "name": "임정우",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "1",
-  "name": "임찬규",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "103",
-  "name": "전준호",
-  "team": "LG",
-  "position": "포수"
- },
- {
-  "uniform_number": "18",
-  "name": "정우영",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "7",
-  "name": "정주현",
-  "team": "LG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "49",
-  "name": "조원태",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "21",
-  "name": "진해수",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "43",
-  "name": "채지선",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "13",
-  "name": "최동환",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "38",
-  "name": "최민창",
-  "team": "LG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "56",
-  "name": "최성훈",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "118",
-  "name": "최원영",
-  "team": "LG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "67",
-  "name": "최현준",
-  "team": "LG",
-  "position": "내야수"
- },
- {
-  "uniform_number": "3",
-  "name": "켈리",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "45",
-  "name": "플럿코",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "11",
-  "name": "함덕주",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "30",
-  "name": "허도환",
-  "team": "LG",
-  "position": "포수"
- },
- {
-  "uniform_number": "111",
-  "name": "허용주",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "name": "허준혁",
-  "team": "LG",
-  "position": "투수"
- },
- {
-  "uniform_number": "51",
-  "name": "홍창기",
-  "team": "LG",
-  "position": "외야수"
- },
- {
-  "uniform_number": "32",
-  "name": "강태율",
-  "team": "롯데",
-  "position": "포수"
- },
- {
-  "uniform_number": "65",
-  "name": "고승민",
-  "team": "롯데",
-  "position": "외야수"
- },
- {
-  "uniform_number": "22",
-  "name": "구승민",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "12",
-  "name": "국해성",
-  "team": "롯데",
-  "position": "외야수"
- },
- {
-  "uniform_number": "19",
-  "name": "김강현",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "40",
-  "name": "김기준",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "23",
-  "name": "김도규",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "37",
-  "name": "김동우",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "101",
-  "name": "김동혁",
-  "team": "롯데",
-  "position": "외야수"
- },
- {
-  "uniform_number": "2",
-  "name": "김민석",
-  "team": "롯데",
-  "position": "외야수"
- },
- {
-  "uniform_number": "5",
-  "name": "김민수",
-  "team": "롯데",
-  "position": "내야수"
- },
- {
-  "uniform_number": "24",
-  "name": "김상수",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "64",
-  "name": "김서진",
-  "team": "롯데",
-  "position": "내야수"
- },
- {
-  "uniform_number": "14",
-  "name": "김세민",
-  "team": "롯데",
-  "position": "내야수"
- },
- {
-  "uniform_number": "34",
-  "name": "김원중",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "name": "김재유",
-  "team": "롯데",
-  "position": "외야수"
- },
- {
-  "uniform_number": "50",
-  "name": "김주현",
-  "team": "롯데",
-  "position": "내야수"
- },
- {
-  "uniform_number": "15",
-  "name": "김진욱",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "61",
-  "name": "김창훈",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "107",
-  "name": "김태욱",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "43",
-  "name": "나균안",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "name": "나원탁",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "52",
-  "name": "노진혁",
-  "team": "롯데",
-  "position": "내야수"
- },
- {
-  "uniform_number": "17",
-  "name": "렉스",
-  "team": "롯데",
-  "position": "외야수"
- },
- {
-  "uniform_number": "38",
-  "name": "문경찬",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "00",
-  "name": "민성우",
-  "team": "롯데",
-  "position": "포수"
- },
- {
-  "uniform_number": "97",
-  "name": "박건",
-  "team": "롯데",
-  "position": "외야수"
- },
- {
-  "uniform_number": "111",
-  "name": "박명현",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "21",
-  "name": "박세웅",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "53",
-  "name": "박승욱",
-  "team": "롯데",
-  "position": "내야수"
- },
- {
-  "uniform_number": "67",
-  "name": "박영완",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "44",
-  "name": "박진",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "103",
-  "name": "박형준",
-  "team": "롯데",
-  "position": "외야수"
- },
- {
-  "uniform_number": "28",
-  "name": "반즈",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "87",
-  "name": "배영빈",
-  "team": "롯데",
-  "position": "내야수"
- },
- {
-  "uniform_number": "98",
-  "name": "배인혁",
-  "team": "롯데",
-  "position": "내야수"
- },
- {
-  "uniform_number": "69",
-  "name": "서동욱",
-  "team": "롯데",
-  "position": "포수"
- },
- {
-  "name": "서준원",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "60",
-  "name": "석상호",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "58",
-  "name": "스트레일리",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "3",
-  "name": "신윤후",
-  "team": "롯데",
-  "position": "외야수"
- },
- {
-  "uniform_number": "31",
-  "name": "신정락",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "39",
-  "name": "심재민",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "0",
-  "name": "안권수",
-  "team": "롯데",
-  "position": "외야수"
- },
- {
-  "uniform_number": "13",
-  "name": "안치홍",
-  "team": "롯데",
-  "position": "내야수"
- },
- {
-  "uniform_number": "100",
-  "name": "엄태호",
-  "team": "롯데",
-  "position": "외야수"
- },
- {
-  "uniform_number": "105",
-  "name": "우강훈",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "27",
-  "name": "유강남",
-  "team": "롯데",
-  "position": "포수"
- },
- {
-  "uniform_number": "91",
-  "name": "윤동희",
-  "team": "롯데",
-  "position": "외야수"
- },
- {
-  "uniform_number": "41",
-  "name": "윤명준",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "51",
-  "name": "윤성빈",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "63",
-  "name": "윤수녕",
-  "team": "롯데",
-  "position": "외야수"
- },
- {
-  "uniform_number": "30",
-  "name": "이민석",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "104",
-  "name": "이병준",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "35",
-  "name": "이인복",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "57",
-  "name": "이정우",
-  "team": "롯데",
-  "position": "외야수"
- },
- {
-  "uniform_number": "48",
-  "name": "이정훈",
-  "team": "롯데",
-  "position": "포수"
- },
- {
-  "uniform_number": "62",
-  "name": "이진하",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "94",
-  "name": "이태연",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "7",
-  "name": "이학주",
-  "team": "롯데",
-  "position": "내야수"
- },
- {
-  "uniform_number": "49",
-  "name": "장두성",
-  "team": "롯데",
-  "position": "외야수"
- },
- {
-  "uniform_number": "96",
-  "name": "장세진",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "8",
-  "name": "전준우",
-  "team": "롯데",
-  "position": "내야수"
- },
- {
-  "uniform_number": "68",
-  "name": "정대선",
-  "team": "롯데",
-  "position": "내야수"
- },
- {
-  "uniform_number": "55",
-  "name": "정대혁",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "42",
-  "name": "정보근",
-  "team": "롯데",
-  "position": "포수"
- },
- {
-  "uniform_number": "56",
-  "name": "정성종",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "59",
-  "name": "정재환",
-  "team": "롯데",
-  "position": "포수"
- },
- {
-  "uniform_number": "95",
-  "name": "정태승",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "9",
-  "name": "정훈",
-  "team": "롯데",
-  "position": "내야수"
- },
- {
-  "uniform_number": "102",
-  "name": "조경민",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "name": "조세진",
-  "team": "롯데",
-  "position": "외야수"
- },
- {
-  "uniform_number": "84",
-  "name": "조준혁",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "66",
-  "name": "지시완",
-  "team": "롯데",
-  "position": "포수"
- },
- {
-  "uniform_number": "26",
-  "name": "진승현",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "47",
-  "name": "차우찬",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "46",
-  "name": "최민재",
-  "team": "롯데",
-  "position": "외야수"
- },
- {
-  "uniform_number": "45",
-  "name": "최영환",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "108",
-  "name": "최우인",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "33",
-  "name": "최이준",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "110",
-  "name": "최종은",
-  "team": "롯데",
-  "position": "내야수"
- },
- {
-  "uniform_number": "18",
-  "name": "최준용",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "25",
-  "name": "한동희",
-  "team": "롯데",
-  "position": "내야수"
- },
- {
-  "name": "한태양",
-  "team": "롯데",
-  "position": "내야수"
- },
- {
-  "uniform_number": "16",
-  "name": "한현희",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "54",
-  "name": "현도훈",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "106",
-  "name": "홍민기",
-  "team": "롯데",
-  "position": "투수"
- },
- {
-  "uniform_number": "1",
-  "name": "황성빈",
-  "team": "롯데",
-  "position": "외야수"
- },
- {
-  "name": "강산",
-  "team": "두산",
-  "position": "포수"
- },
- {
-  "uniform_number": "23",
-  "name": "강승호",
-  "team": "두산",
-  "position": "내야수"
- },
- {
-  "uniform_number": "63",
-  "name": "고봉재",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "47",
-  "name": "곽빈",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "34",
-  "name": "권민석",
-  "team": "두산",
-  "position": "내야수"
- },
- {
-  "uniform_number": "27",
-  "name": "김강률",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "37",
-  "name": "김대한",
-  "team": "두산",
-  "position": "외야수"
- },
- {
-  "uniform_number": "41",
-  "name": "김동주",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "46",
-  "name": "김명신",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "109",
-  "name": "김문수",
-  "team": "두산",
-  "position": "외야수"
- },
- {
-  "uniform_number": "18",
-  "name": "김민혁",
-  "team": "두산",
-  "position": "내야수"
- },
- {
-  "uniform_number": "106",
-  "name": "김시완",
-  "team": "두산",
-  "position": "외야수"
- },
- {
-  "uniform_number": "62",
-  "name": "김유성",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "39",
-  "name": "김인태",
-  "team": "두산",
-  "position": "외야수"
- },
- {
-  "uniform_number": "52",
-  "name": "김재호",
-  "team": "두산",
-  "position": "내야수"
- },
- {
-  "uniform_number": "32",
-  "name": "김재환",
-  "team": "두산",
-  "position": "외야수"
- },
- {
-  "uniform_number": "30",
-  "name": "김정우",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "2",
-  "name": "김지용",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "92",
-  "name": "김태근",
-  "team": "두산",
-  "position": "외야수"
- },
- {
-  "uniform_number": "56",
-  "name": "김호준",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "111",
-  "name": "남율",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "33",
-  "name": "딜런",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "11",
-  "name": "로하스",
-  "team": "두산",
-  "position": "외야수"
- },
- {
-  "uniform_number": "101",
-  "name": "문원",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "14",
-  "name": "박계범",
-  "team": "두산",
-  "position": "내야수"
- },
- {
-  "uniform_number": "108",
-  "name": "박민준",
-  "team": "두산",
-  "position": "포수"
- },
- {
-  "name": "박성재",
-  "team": "두산",
-  "position": "포수"
- },
- {
-  "uniform_number": "100",
-  "name": "박소준",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "66",
-  "name": "박신지",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "26",
-  "name": "박유연",
-  "team": "두산",
-  "position": "포수"
- },
- {
-  "uniform_number": "60",
-  "name": "박정수",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "9",
-  "name": "박준영",
-  "team": "두산",
-  "position": "내야수"
- },
- {
-  "uniform_number": "1",
-  "name": "박치국",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "103",
-  "name": "배창현",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "98",
-  "name": "백승우",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "16",
-  "name": "서예일",
-  "team": "두산",
-  "position": "내야수"
- },
- {
-  "uniform_number": "8",
-  "name": "송승환",
-  "team": "두산",
-  "position": "외야수"
- },
- {
-  "uniform_number": "94",
-  "name": "신민철",
-  "team": "두산",
-  "position": "내야수"
- },
- {
-  "uniform_number": "5",
-  "name": "신성현",
-  "team": "두산",
-  "position": "내야수"
- },
- {
-  "uniform_number": "38",
-  "name": "신창희",
-  "team": "두산",
-  "position": "포수"
- },
- {
-  "uniform_number": "20",
-  "name": "안승한",
-  "team": "두산",
-  "position": "포수"
- },
- {
-  "uniform_number": "3",
-  "name": "안재석",
-  "team": "두산",
-  "position": "내야수"
- },
- {
-  "uniform_number": "43",
-  "name": "알칸타라",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "53",
-  "name": "양석환",
-  "team": "두산",
-  "position": "내야수"
- },
- {
-  "uniform_number": "25",
-  "name": "양의지",
-  "team": "두산",
-  "position": "포수"
- },
- {
-  "uniform_number": "57",
-  "name": "양찬열",
-  "team": "두산",
-  "position": "외야수"
- },
- {
-  "uniform_number": "96",
-  "name": "윤준호",
-  "team": "두산",
-  "position": "포수"
- },
- {
-  "uniform_number": "113",
-  "name": "이기석",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "116",
-  "name": "이민혁",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "29",
-  "name": "이병헌",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "117",
-  "name": "이상연",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "55",
-  "name": "이승진",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "50",
-  "name": "이영하",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "95",
-  "name": "이원재",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "7",
-  "name": "이유찬",
-  "team": "두산",
-  "position": "내야수"
- },
- {
-  "uniform_number": "112",
-  "name": "이정원",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "110",
-  "name": "이주엽",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "45",
-  "name": "이형범",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "93",
-  "name": "임서준",
-  "team": "두산",
-  "position": "내야수"
- },
- {
-  "uniform_number": "118",
-  "name": "장규빈",
-  "team": "두산",
-  "position": "포수"
- },
- {
-  "uniform_number": "58",
-  "name": "장빈",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "22",
-  "name": "장승현",
-  "team": "두산",
-  "position": "포수"
- },
- {
-  "uniform_number": "67",
-  "name": "장우진",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "28",
-  "name": "장원준",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "35",
-  "name": "전민재",
-  "team": "두산",
-  "position": "내야수"
- },
- {
-  "uniform_number": "104",
-  "name": "전형근",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "name": "전희범",
-  "team": "두산",
-  "position": "외야수"
- },
- {
-  "uniform_number": "31",
-  "name": "정수빈",
-  "team": "두산",
-  "position": "외야수"
- },
- {
-  "uniform_number": "105",
-  "name": "정유석",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "102",
-  "name": "정은재",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "65",
-  "name": "정철원",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "102",
-  "name": "제환유",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "114",
-  "name": "조선명",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "51",
-  "name": "조수행",
-  "team": "두산",
-  "position": "외야수"
- },
- {
-  "uniform_number": "64",
-  "name": "최승용",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "61",
-  "name": "최원준",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "107",
-  "name": "최종인",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "59",
-  "name": "최준호",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "42",
-  "name": "최지강",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "97",
-  "name": "한충희",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "13",
-  "name": "허경민",
-  "team": "두산",
-  "position": "내야수"
- },
- {
-  "uniform_number": "17",
-  "name": "홍건희",
-  "team": "두산",
-  "position": "투수"
- },
- {
-  "uniform_number": "44",
-  "name": "홍성호",
-  "team": "두산",
-  "position": "외야수"
- },
- {
-  "uniform_number": "102",
-  "name": "강건준",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "59",
-  "name": "구창모",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "35",
-  "name": "권정웅",
-  "team": "NC",
-  "position": "포수"
- },
- {
-  "uniform_number": "36",
-  "name": "권희동",
-  "team": "NC",
-  "position": "외야수"
- },
- {
-  "uniform_number": "95",
-  "name": "김녹원",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "100",
-  "name": "김범준",
-  "team": "NC",
-  "position": "외야수"
- },
- {
-  "uniform_number": "25",
-  "name": "김성욱",
-  "team": "NC",
-  "position": "외야수"
- },
- {
-  "uniform_number": "3",
-  "name": "김수윤",
-  "team": "NC",
-  "position": "내야수"
- },
- {
-  "uniform_number": "21",
-  "name": "김시훈",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "17",
-  "name": "김영규",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "8",
-  "name": "김재균",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "7",
-  "name": "김주원",
-  "team": "NC",
-  "position": "내야수"
- },
- {
-  "uniform_number": "107",
-  "name": "김주환",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "4",
-  "name": "김준상",
-  "team": "NC",
-  "position": "내야수"
- },
- {
-  "uniform_number": "54",
-  "name": "김진호",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "6",
-  "name": "김철호",
-  "team": "NC",
-  "position": "내야수"
- },
- {
-  "uniform_number": "15",
-  "name": "김태현",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "108",
-  "name": "김택우",
-  "team": "NC",
-  "position": "내야수"
- },
- {
-  "uniform_number": "68",
-  "name": "김한별",
-  "team": "NC",
-  "position": "내야수"
- },
- {
-  "uniform_number": "47",
-  "name": "김형준",
-  "team": "NC",
-  "position": "포수"
- },
- {
-  "uniform_number": "63",
-  "name": "노시훈",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "16",
-  "name": "도태훈",
-  "team": "NC",
-  "position": "내야수"
- },
- {
-  "uniform_number": "41",
-  "name": "류진욱",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "55",
-  "name": "마틴",
-  "team": "NC",
-  "position": "외야수"
- },
- {
-  "uniform_number": "73",
-  "name": "목지훈",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "37",
-  "name": "박건우",
-  "team": "NC",
-  "position": "외야수"
- },
- {
-  "uniform_number": "26",
-  "name": "박대온",
-  "team": "NC",
-  "position": "포수"
- },
- {
-  "uniform_number": "2",
-  "name": "박민우",
-  "team": "NC",
-  "position": "내야수"
- },
- {
-  "uniform_number": "18",
-  "name": "박석민",
-  "team": "NC",
-  "position": "내야수"
- },
- {
-  "uniform_number": "44",
-  "name": "박성재",
-  "team": "NC",
-  "position": "포수"
- },
- {
-  "uniform_number": "10",
-  "name": "박세혁",
-  "team": "NC",
-  "position": "포수"
- },
- {
-  "uniform_number": "28",
-  "name": "박시원",
-  "team": "NC",
-  "position": "외야수"
- },
- {
-  "uniform_number": "00",
-  "name": "박영빈",
-  "team": "NC",
-  "position": "외야수"
- },
- {
-  "uniform_number": "71",
-  "name": "박주찬",
-  "team": "NC",
-  "position": "내야수"
- },
- {
-  "uniform_number": "111",
-  "name": "박주현",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "110",
-  "name": "박찬희",
-  "team": "NC",
-  "position": "포수"
- },
- {
-  "uniform_number": "92",
-  "name": "박한결",
-  "team": "NC",
-  "position": "외야수"
- },
- {
-  "uniform_number": "106",
-  "name": "배상호",
-  "team": "NC",
-  "position": "외야수"
- },
- {
-  "uniform_number": "61",
-  "name": "배재환",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "105",
-  "name": "서동욱",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "58",
-  "name": "서의태",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "42",
-  "name": "서준교",
-  "team": "NC",
-  "position": "내야수"
- },
- {
-  "uniform_number": "5",
-  "name": "서호철",
-  "team": "NC",
-  "position": "내야수"
- },
- {
-  "uniform_number": "31",
-  "name": "손아섭",
-  "team": "NC",
-  "position": "외야수"
- },
- {
-  "uniform_number": "11",
-  "name": "송명기",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "53",
-  "name": "신민혁",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "103",
-  "name": "신성호",
-  "team": "NC",
-  "position": "내야수"
- },
- {
-  "uniform_number": "19",
-  "name": "신영우",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "70",
-  "name": "신용석",
-  "team": "NC",
-  "position": "포수"
- },
- {
-  "uniform_number": "1",
-  "name": "심창민",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "32",
-  "name": "안중열",
-  "team": "NC",
-  "position": "포수"
- },
- {
-  "uniform_number": "34",
-  "name": "오영수",
-  "team": "NC",
-  "position": "내야수"
- },
- {
-  "uniform_number": "38",
-  "name": "오장한",
-  "team": "NC",
-  "position": "외야수"
- },
- {
-  "uniform_number": "50",
-  "name": "오태양",
-  "team": "NC",
-  "position": "내야수"
- },
- {
-  "uniform_number": "27",
-  "name": "와이드너",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "52",
-  "name": "윤형준",
-  "team": "NC",
-  "position": "내야수"
- },
- {
-  "uniform_number": "29",
-  "name": "이민호",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "48",
-  "name": "이용준",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "22",
-  "name": "이용찬",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "45",
-  "name": "이우석",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "0",
-  "name": "이인혁",
-  "team": "NC",
-  "position": "외야수"
- },
- {
-  "uniform_number": "51",
-  "name": "이재학",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "72",
-  "name": "이주형",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "67",
-  "name": "이준혁",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "96",
-  "name": "이준호",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "43",
-  "name": "이한",
-  "team": "NC",
-  "position": "내야수"
- },
- {
-  "uniform_number": "65",
-  "name": "이현우",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "30",
-  "name": "임정호",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "69",
-  "name": "임지민",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "109",
-  "name": "임형원",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "14",
-  "name": "전루건",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "57",
-  "name": "전사민",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "56",
-  "name": "정구범",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "104",
-  "name": "정주영",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "12",
-  "name": "정진기",
-  "team": "NC",
-  "position": "외야수"
- },
- {
-  "uniform_number": "64",
-  "name": "조민석",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "94",
-  "name": "조현진",
-  "team": "NC",
-  "position": "내야수"
- },
- {
-  "uniform_number": "23",
-  "name": "천재환",
-  "team": "NC",
-  "position": "외야수"
- },
- {
-  "uniform_number": "49",
-  "name": "최보성",
-  "team": "NC",
-  "position": "내야수"
- },
- {
-  "uniform_number": "20",
-  "name": "최성영",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "9",
-  "name": "최승민",
-  "team": "NC",
-  "position": "외야수"
- },
- {
-  "uniform_number": "91",
-  "name": "최시혁",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "24",
-  "name": "최우재",
-  "team": "NC",
-  "position": "외야수"
- },
- {
-  "uniform_number": "13",
-  "name": "페디",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "62",
-  "name": "하준수",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "39",
-  "name": "하준영",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "66",
-  "name": "한건희",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "46",
-  "name": "한석현",
-  "team": "NC",
-  "position": "외야수"
- },
- {
-  "uniform_number": "60",
-  "name": "한재승",
-  "team": "NC",
-  "position": "투수"
- },
- {
-  "uniform_number": "101",
-  "name": "한재환",
-  "team": "NC",
-  "position": "내야수"
- },
- {
-  "uniform_number": "15",
-  "name": "강병우",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "36",
-  "name": "강이준",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "60",
-  "name": "고영창",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "57",
-  "name": "고종욱",
-  "team": "KIA",
-  "position": "외야수"
- },
- {
-  "uniform_number": "9",
-  "name": "곽도규",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "029",
-  "name": "김건국",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "14",
-  "name": "김규성",
-  "team": "KIA",
-  "position": "내야수"
- },
- {
-  "uniform_number": "53",
-  "name": "김기훈",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "69",
-  "name": "김대유",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "5",
-  "name": "김도영",
-  "team": "KIA",
-  "position": "내야수"
- },
- {
-  "uniform_number": "018",
-  "name": "김도월",
-  "team": "KIA",
-  "position": "내야수"
- },
- {
-  "uniform_number": "04",
-  "name": "김민수",
-  "team": "KIA",
-  "position": "외야수"
- },
- {
-  "uniform_number": "21",
-  "name": "김사윤",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "35",
-  "name": "김석환",
-  "team": "KIA",
-  "position": "외야수"
- },
- {
-  "uniform_number": "3",
-  "name": "김선빈",
-  "team": "KIA",
-  "position": "내야수"
- },
- {
-  "uniform_number": "42",
-  "name": "김선우",
-  "team": "KIA",
-  "position": "포수"
- },
- {
-  "uniform_number": "37",
-  "name": "김세일",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "24",
-  "name": "김승현",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "08",
-  "name": "김양수",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "012",
-  "name": "김용완",
-  "team": "KIA",
-  "position": "내야수"
- },
- {
-  "uniform_number": "07",
-  "name": "김원경",
-  "team": "KIA",
-  "position": "내야수"
- },
- {
-  "uniform_number": "49",
-  "name": "김유신",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "32",
-  "name": "김재열",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "019",
-  "name": "김재현",
-  "team": "KIA",
-  "position": "내야수"
- },
- {
-  "uniform_number": "027",
-  "name": "김주섭",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "38",
-  "name": "김찬민",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "27",
-  "name": "김호령",
-  "team": "KIA",
-  "position": "외야수"
- },
- {
-  "uniform_number": "47",
-  "name": "나성범",
-  "team": "KIA",
-  "position": "외야수"
- },
- {
-  "uniform_number": "09",
-  "name": "나용기",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "41",
-  "name": "남하준",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "8",
-  "name": "류지혁",
-  "team": "KIA",
-  "position": "내야수"
- },
- {
-  "uniform_number": "45",
-  "name": "메디나",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "02",
-  "name": "박승훈",
-  "team": "KIA",
-  "position": "내야수"
- },
- {
-  "uniform_number": "29",
-  "name": "박일훈",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "0",
-  "name": "박정우",
-  "team": "KIA",
-  "position": "외야수"
- },
- {
-  "uniform_number": "31",
-  "name": "박준표",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "1",
-  "name": "박찬호",
-  "team": "KIA",
-  "position": "내야수"
- },
- {
-  "uniform_number": "33",
-  "name": "변우혁",
-  "team": "KIA",
-  "position": "내야수"
- },
- {
-  "uniform_number": "30",
-  "name": "소크라테스",
-  "team": "KIA",
-  "position": "외야수"
- },
- {
-  "uniform_number": "03",
-  "name": "손호원",
-  "team": "KIA",
-  "position": "내야수"
- },
- {
-  "uniform_number": "11",
-  "name": "송후섭",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "12",
-  "name": "신범수",
-  "team": "KIA",
-  "position": "포수"
- },
- {
-  "uniform_number": "64",
-  "name": "앤더슨",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "54",
-  "name": "양현종",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "56",
-  "name": "오선우",
-  "team": "KIA",
-  "position": "내야수"
- },
- {
-  "uniform_number": "2",
-  "name": "오정환",
-  "team": "KIA",
-  "position": "내야수"
- },
- {
-  "uniform_number": "40",
-  "name": "유승철",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "4",
-  "name": "유지성",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "67",
-  "name": "윤도현",
-  "team": "KIA",
-  "position": "내야수"
- },
- {
-  "uniform_number": "13",
-  "name": "윤영철",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "19",
-  "name": "윤중현",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "015",
-  "name": "이도현",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "06",
-  "name": "이성주",
-  "team": "KIA",
-  "position": "포수"
- },
- {
-  "uniform_number": "63",
-  "name": "이송찬",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "25",
-  "name": "이우성",
-  "team": "KIA",
-  "position": "외야수"
- },
- {
-  "uniform_number": "48",
-  "name": "이의리",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "20",
-  "name": "이준영",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "66",
-  "name": "이창진",
-  "team": "KIA",
-  "position": "외야수"
- },
- {
-  "uniform_number": "61",
-  "name": "이태규",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "17",
-  "name": "임기영",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "28",
-  "name": "임석진",
-  "team": "KIA",
-  "position": "내야수"
- },
- {
-  "uniform_number": "50",
-  "name": "장현식",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "51",
-  "name": "전상현",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "62",
-  "name": "정해영",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "59",
-  "name": "정해원",
-  "team": "KIA",
-  "position": "내야수"
- },
- {
-  "uniform_number": "22",
-  "name": "주효상",
-  "team": "KIA",
-  "position": "포수"
- },
- {
-  "uniform_number": "013",
-  "name": "최수빈",
-  "team": "KIA",
-  "position": "내야수"
- },
- {
-  "uniform_number": "23",
-  "name": "최정용",
-  "team": "KIA",
-  "position": "내야수"
- },
- {
-  "uniform_number": "39",
-  "name": "최지민",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "34",
-  "name": "최형우",
-  "team": "KIA",
-  "position": "외야수"
- },
- {
-  "uniform_number": "028",
-  "name": "한승연",
-  "team": "KIA",
-  "position": "외야수"
- },
- {
-  "uniform_number": "26",
-  "name": "한승택",
-  "team": "KIA",
-  "position": "포수"
- },
- {
-  "uniform_number": "025",
-  "name": "한준수",
-  "team": "KIA",
-  "position": "포수"
- },
- {
-  "uniform_number": "021",
-  "name": "홍원빈",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "6",
-  "name": "홍종표",
-  "team": "KIA",
-  "position": "내야수"
- },
- {
-  "uniform_number": "52",
-  "name": "황대인",
-  "team": "KIA",
-  "position": "내야수"
- },
- {
-  "uniform_number": "10",
-  "name": "황동하",
-  "team": "KIA",
-  "position": "투수"
- },
- {
-  "uniform_number": "47",
-  "name": "강민호",
-  "team": "삼성",
-  "position": "포수"
- },
- {
-  "uniform_number": "60",
-  "name": "강준서",
-  "team": "삼성",
-  "position": "내야수"
- },
- {
-  "uniform_number": "6",
-  "name": "강한울",
-  "team": "삼성",
-  "position": "내야수"
- },
- {
-  "uniform_number": "9",
-  "name": "공민규",
-  "team": "삼성",
-  "position": "내야수"
- },
- {
-  "uniform_number": "5",
-  "name": "구자욱",
-  "team": "삼성",
-  "position": "외야수"
- },
- {
-  "uniform_number": "17",
-  "name": "김대우",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "38",
-  "name": "김동엽",
-  "team": "삼성",
-  "position": "외야수"
- },
- {
-  "uniform_number": "3",
-  "name": "김동진",
-  "team": "삼성",
-  "position": "내야수"
- },
- {
-  "uniform_number": "12",
-  "name": "김민수",
-  "team": "삼성",
-  "position": "포수"
- },
- {
-  "uniform_number": "121",
-  "name": "김민호",
-  "team": "삼성",
-  "position": "내야수"
- },
- {
-  "uniform_number": "25",
-  "name": "김상민",
-  "team": "삼성",
-  "position": "외야수"
- },
- {
-  "uniform_number": "53",
-  "name": "김서준",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "39",
-  "name": "김성윤",
-  "team": "삼성",
-  "position": "외야수"
- },
- {
-  "uniform_number": "64",
-  "name": "김시온",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "100",
-  "name": "김시현",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "30",
-  "name": "김영웅",
-  "team": "삼성",
-  "position": "내야수"
- },
- {
-  "uniform_number": "00",
-  "name": "김용하",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "0",
-  "name": "김재상",
-  "team": "삼성",
-  "position": "내야수"
- },
- {
-  "uniform_number": "48",
-  "name": "김재성",
-  "team": "삼성",
-  "position": "포수"
- },
- {
-  "uniform_number": "110",
-  "name": "김준우",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "58",
-  "name": "김지찬",
-  "team": "삼성",
-  "position": "내야수"
- },
- {
-  "uniform_number": "42",
-  "name": "김태군",
-  "team": "삼성",
-  "position": "포수"
- },
- {
-  "uniform_number": "113",
-  "name": "김태우",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "24",
-  "name": "김태훈",
-  "team": "삼성",
-  "position": "외야수"
- },
- {
-  "uniform_number": "27",
-  "name": "김태훈",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "34",
-  "name": "김헌곤",
-  "team": "삼성",
-  "position": "외야수"
- },
- {
-  "uniform_number": "41",
-  "name": "김현준",
-  "team": "삼성",
-  "position": "외야수"
- },
- {
-  "uniform_number": "8",
-  "name": "김호재",
-  "team": "삼성",
-  "position": "내야수"
- },
- {
-  "uniform_number": "37",
-  "name": "노건우",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "104",
-  "name": "류승민",
-  "team": "삼성",
-  "position": "외야수"
- },
- {
-  "uniform_number": "106",
-  "name": "맹성주",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "43",
-  "name": "문용익",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "69",
-  "name": "박권후",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "50",
-  "name": "박세웅",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "109",
-  "name": "박시원",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "101",
-  "name": "박용민",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "116",
-  "name": "박장민",
-  "team": "삼성",
-  "position": "내야수"
- },
- {
-  "name": "박주혁",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "111",
-  "name": "박진우",
-  "team": "삼성",
-  "position": "포수"
- },
- {
-  "uniform_number": "29",
-  "name": "백정현",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "4",
-  "name": "뷰캐넌",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "120",
-  "name": "서주원",
-  "team": "삼성",
-  "position": "포수"
- },
- {
-  "uniform_number": "28",
-  "name": "서현원",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "52",
-  "name": "송준석",
-  "team": "삼성",
-  "position": "외야수"
- },
- {
-  "uniform_number": "57",
-  "name": "수아레즈",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "15",
-  "name": "신윤호",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "40",
-  "name": "신정환",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "14",
-  "name": "안주형",
-  "team": "삼성",
-  "position": "내야수"
- },
- {
-  "uniform_number": "105",
-  "name": "양우현",
-  "team": "삼성",
-  "position": "내야수"
- },
- {
-  "uniform_number": "1",
-  "name": "양창섭",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "21",
-  "name": "오승환",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "44",
-  "name": "오재일",
-  "team": "삼성",
-  "position": "내야수"
- },
- {
-  "uniform_number": "103",
-  "name": "오현석",
-  "team": "삼성",
-  "position": "내야수"
- },
- {
-  "uniform_number": "2",
-  "name": "우규민",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "18",
-  "name": "원태인",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "31",
-  "name": "윤정빈",
-  "team": "삼성",
-  "position": "외야수"
- },
- {
-  "uniform_number": "107",
-  "name": "윤정훈",
-  "team": "삼성",
-  "position": "내야수"
- },
- {
-  "uniform_number": "23",
-  "name": "이병헌",
-  "team": "삼성",
-  "position": "포수"
- },
- {
-  "uniform_number": "59",
-  "name": "이상민",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "13",
-  "name": "이성규",
-  "team": "삼성",
-  "position": "내야수"
- },
- {
-  "uniform_number": "20",
-  "name": "이승현",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "54",
-  "name": "이승현",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "45",
-  "name": "이재익",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "7",
-  "name": "이재현",
-  "team": "삼성",
-  "position": "내야수"
- },
- {
-  "name": "이재희",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "35",
-  "name": "이태훈",
-  "team": "삼성",
-  "position": "내야수"
- },
- {
-  "name": "이해승",
-  "team": "삼성",
-  "position": "내야수"
- },
- {
-  "uniform_number": "55",
-  "name": "이호성",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "117",
-  "name": "장재혁",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "26",
-  "name": "장필준",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "112",
-  "name": "정진수",
-  "team": "삼성",
-  "position": "포수"
- },
- {
-  "uniform_number": "32",
-  "name": "조민성",
-  "team": "삼성",
-  "position": "내야수"
- },
- {
-  "uniform_number": "51",
-  "name": "최충연",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "19",
-  "name": "최하늘",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "63",
-  "name": "피렐라",
-  "team": "삼성",
-  "position": "외야수"
- },
- {
-  "uniform_number": "115",
-  "name": "한연욱",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "49",
-  "name": "허윤동",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "62",
-  "name": "홍무원",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "108",
-  "name": "홍승원",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "11",
-  "name": "홍정우",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "61",
-  "name": "황동재",
-  "team": "삼성",
-  "position": "투수"
- },
- {
-  "uniform_number": "12",
-  "name": "김건희",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "65",
-  "name": "김동욱",
-  "team": "고양",
-  "position": "투수"
- },
- {
-  "uniform_number": "44",
-  "name": "김동헌",
-  "team": "키움",
-  "position": "포수"
- },
- {
-  "uniform_number": "60",
-  "name": "김동혁",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "37",
-  "name": "김리안",
-  "team": "고양",
-  "position": "포수"
- },
- {
-  "uniform_number": "0",
-  "name": "김병휘",
-  "team": "키움",
-  "position": "내야수"
- },
- {
-  "uniform_number": "49",
-  "name": "김선기",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "34",
-  "name": "김성진",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "31",
-  "name": "김수환",
-  "team": "키움",
-  "position": "내야수"
- },
- {
-  "uniform_number": "26",
-  "name": "김시앙",
-  "team": "키움",
-  "position": "포수"
- },
- {
-  "uniform_number": "98",
-  "name": "김신회",
-  "team": "고양",
-  "position": "외야수"
- },
- {
-  "uniform_number": "1",
-  "name": "김웅빈",
-  "team": "키움",
-  "position": "내야수"
- },
- {
-  "uniform_number": "28",
-  "name": "김재웅",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "32",
-  "name": "김재현",
-  "team": "키움",
-  "position": "포수"
- },
- {
-  "uniform_number": "19",
-  "name": "김정인",
-  "team": "고양",
-  "position": "투수"
- },
- {
-  "uniform_number": "6",
-  "name": "김주형",
-  "team": "키움",
-  "position": "내야수"
- },
- {
-  "uniform_number": "10",
-  "name": "김준완",
-  "team": "키움",
-  "position": "외야수"
- },
- {
-  "uniform_number": "93",
-  "name": "김준형",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "2",
-  "name": "김태진",
-  "team": "키움",
-  "position": "내야수"
- },
- {
-  "uniform_number": "3",
-  "name": "김혜성",
-  "team": "키움",
-  "position": "내야수"
- },
- {
-  "uniform_number": "33",
-  "name": "김휘집",
-  "team": "키움",
-  "position": "내야수"
- },
- {
-  "uniform_number": "94",
-  "name": "노운현",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "27",
-  "name": "러셀",
-  "team": "키움",
-  "position": "내야수"
- },
- {
-  "uniform_number": "21",
-  "name": "문성현",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "05",
-  "name": "박성빈",
-  "team": "고양",
-  "position": "포수"
- },
- {
-  "uniform_number": "14",
-  "name": "박수종",
-  "team": "고양",
-  "position": "외야수"
- },
- {
-  "uniform_number": "42",
-  "name": "박승주",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "01",
-  "name": "박윤성",
-  "team": "고양",
-  "position": "투수"
- },
- {
-  "name": "박주성",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "68",
-  "name": "박주현",
-  "team": "고양",
-  "position": "투수"
- },
- {
-  "uniform_number": "57",
-  "name": "박주홍",
-  "team": "키움",
-  "position": "외야수"
- },
- {
-  "uniform_number": "23",
-  "name": "박준태",
-  "team": "키움",
-  "position": "외야수"
- },
- {
-  "uniform_number": "48",
-  "name": "박찬혁",
-  "team": "키움",
-  "position": "외야수"
- },
- {
-  "uniform_number": "92",
-  "name": "백진수",
-  "team": "고양",
-  "position": "투수"
- },
- {
-  "uniform_number": "66",
-  "name": "변시원",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "07",
-  "name": "변헌성",
-  "team": "고양",
-  "position": "포수"
- },
- {
-  "uniform_number": "09",
-  "name": "서유신",
-  "team": "고양",
-  "position": "내야수"
- },
- {
-  "uniform_number": "24",
-  "name": "송성문",
-  "team": "키움",
-  "position": "내야수"
- },
- {
-  "uniform_number": "63",
-  "name": "송재선",
-  "team": "키움",
-  "position": "외야수"
- },
- {
-  "uniform_number": "59",
-  "name": "송정인",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "5",
-  "name": "신준우",
-  "team": "키움",
-  "position": "내야수"
- },
- {
-  "uniform_number": "08",
-  "name": "안겸",
-  "team": "고양",
-  "position": "포수"
- },
- {
-  "uniform_number": "41",
-  "name": "안우진",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "38",
-  "name": "양경식",
-  "team": "고양",
-  "position": "내야수"
- },
- {
-  "uniform_number": "55",
-  "name": "양지율",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "39",
-  "name": "양현",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "53",
-  "name": "예진원",
-  "team": "키움",
-  "position": "외야수"
- },
- {
-  "uniform_number": "00",
-  "name": "오상원",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "40",
-  "name": "오윤성",
-  "team": "고양",
-  "position": "투수"
- },
- {
-  "uniform_number": "43",
-  "name": "요키시",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "04",
-  "name": "우승원",
-  "team": "키움",
-  "position": "내야수"
- },
- {
-  "uniform_number": "46",
-  "name": "원종현",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "95",
-  "name": "윤석원",
-  "team": "고양",
-  "position": "투수"
- },
- {
-  "uniform_number": "99",
-  "name": "윤정현",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "name": "이강준",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "97",
-  "name": "이명종",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "9",
-  "name": "이병규",
-  "team": "키움",
-  "position": "외야수"
- },
- {
-  "uniform_number": "91",
-  "name": "이세호",
-  "team": "고양",
-  "position": "내야수"
- },
- {
-  "uniform_number": "8",
-  "name": "이승원",
-  "team": "키움",
-  "position": "내야수"
- },
- {
-  "uniform_number": "47",
-  "name": "이승호",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "64",
-  "name": "이영준",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "15",
-  "name": "이용규",
-  "team": "키움",
-  "position": "외야수"
- },
- {
-  "uniform_number": "17",
-  "name": "이원석",
-  "team": "키움",
-  "position": "내야수"
- },
- {
-  "uniform_number": "4",
-  "name": "이재홍",
-  "team": "고양",
-  "position": "내야수"
- },
- {
-  "uniform_number": "51",
-  "name": "이정후",
-  "team": "키움",
-  "position": "외야수"
- },
- {
-  "uniform_number": "54",
-  "name": "이종민",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "name": "이주형",
-  "team": "키움",
-  "position": "내야수"
- },
- {
-  "uniform_number": "56",
-  "name": "이지영",
-  "team": "키움",
-  "position": "포수"
- },
- {
-  "uniform_number": "36",
-  "name": "이형종",
-  "team": "키움",
-  "position": "외야수"
- },
- {
-  "uniform_number": "06",
-  "name": "이호열",
-  "team": "고양",
-  "position": "내야수"
- },
- {
-  "uniform_number": "35",
-  "name": "임병욱",
-  "team": "키움",
-  "position": "외야수"
- },
- {
-  "uniform_number": "29",
-  "name": "임지열",
-  "team": "키움",
-  "position": "내야수"
- },
- {
-  "uniform_number": "45",
-  "name": "임창민",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "61",
-  "name": "장재영",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "13",
-  "name": "전병우",
-  "team": "키움",
-  "position": "내야수"
- },
- {
-  "uniform_number": "62",
-  "name": "정연제",
-  "team": "고양",
-  "position": "투수"
- },
- {
-  "uniform_number": "58",
-  "name": "정찬헌",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "100",
-  "name": "정현민",
-  "team": "고양",
-  "position": "내야수"
- },
- {
-  "uniform_number": "25",
-  "name": "주성원",
-  "team": "키움",
-  "position": "외야수"
- },
- {
-  "uniform_number": "96",
-  "name": "주승빈",
-  "team": "고양",
-  "position": "투수"
- },
- {
-  "uniform_number": "30",
-  "name": "주승우",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "20",
-  "name": "최원태",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "50",
-  "name": "하영민",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "67",
-  "name": "홍성민",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "75",
-  "name": "후라도",
-  "team": "키움",
-  "position": "투수"
- },
- {
-  "uniform_number": "55",
-  "name": "강재민",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "110",
-  "name": "고영재",
-  "team": "한화",
-  "position": "외야수"
- },
- {
-  "uniform_number": "56",
-  "name": "권광민",
-  "team": "한화",
-  "position": "외야수"
- },
- {
-  "uniform_number": "97",
-  "name": "김건",
-  "team": "한화",
-  "position": "내야수"
- },
- {
-  "uniform_number": "03",
-  "name": "김겸재",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "101",
-  "name": "김관우",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "60",
-  "name": "김규연",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "15",
-  "name": "김기중",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "2",
-  "name": "김민기",
-  "team": "한화",
-  "position": "내야수"
- },
- {
-  "uniform_number": "53",
-  "name": "김민우",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "47",
-  "name": "김범수",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "68",
-  "name": "김범준",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "54",
-  "name": "김서현",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "113",
-  "name": "김석훈",
-  "team": "한화",
-  "position": "포수"
- },
- {
-  "uniform_number": "108",
-  "name": "김예준",
-  "team": "한화",
-  "position": "내야수"
- },
- {
-  "uniform_number": "37",
-  "name": "김인환",
-  "team": "한화",
-  "position": "내야수"
- },
- {
-  "uniform_number": "19",
-  "name": "김재영",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "38",
-  "name": "김종수",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "115",
-  "name": "김진욱",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "25",
-  "name": "김태연",
-  "team": "한화",
-  "position": "내야수"
- },
- {
-  "uniform_number": "102",
-  "name": "김해찬",
-  "team": "한화",
-  "position": "외야수"
- },
- {
-  "uniform_number": "62",
-  "name": "김현우",
-  "team": "한화",
-  "position": "포수"
- },
- {
-  "uniform_number": "11",
-  "name": "남지민",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "05",
-  "name": "노석진",
-  "team": "한화",
-  "position": "내야수"
- },
- {
-  "uniform_number": "17",
-  "name": "노수광",
-  "team": "한화",
-  "position": "외야수"
- },
- {
-  "uniform_number": "8",
-  "name": "노시환",
-  "team": "한화",
-  "position": "내야수"
- },
- {
-  "uniform_number": "61",
-  "name": "류원석",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "18",
-  "name": "류희운",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "1",
-  "name": "문동주",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "64",
-  "name": "문현빈",
-  "team": "한화",
-  "position": "내야수"
- },
- {
-  "uniform_number": "01",
-  "name": "민승기",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "42",
-  "name": "박상언",
-  "team": "한화",
-  "position": "포수"
- },
- {
-  "uniform_number": "58",
-  "name": "박상원",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "114",
-  "name": "박성웅",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "31",
-  "name": "박윤철",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "106",
-  "name": "박재규",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "9",
-  "name": "박정현",
-  "team": "한화",
-  "position": "내야수"
- },
- {
-  "uniform_number": "29",
-  "name": "박준영",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "34",
-  "name": "산체스",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "111",
-  "name": "성지훈",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "104",
-  "name": "송성훈",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "10",
-  "name": "송윤준",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "name": "스미스",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "117",
-  "name": "신우재",
-  "team": "한화",
-  "position": "외야수"
- },
- {
-  "uniform_number": "40",
-  "name": "신지후",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "116",
-  "name": "안진",
-  "team": "한화",
-  "position": "포수"
- },
- {
-  "uniform_number": "02",
-  "name": "양경모",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "12",
-  "name": "오그레디",
-  "team": "한화",
-  "position": "외야수"
- },
- {
-  "uniform_number": "6",
-  "name": "오선진",
-  "team": "한화",
-  "position": "내야수"
- },
- {
-  "uniform_number": "93",
-  "name": "오세훈",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "24",
-  "name": "원혁재",
-  "team": "한화",
-  "position": "외야수"
- },
- {
-  "uniform_number": "33",
-  "name": "유로결",
-  "team": "한화",
-  "position": "외야수"
- },
- {
-  "uniform_number": "65",
-  "name": "유상빈",
-  "team": "한화",
-  "position": "외야수"
- },
- {
-  "uniform_number": "5",
-  "name": "윤대경",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "32",
-  "name": "윤산흠",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "7",
-  "name": "이도윤",
-  "team": "한화",
-  "position": "내야수"
- },
- {
-  "uniform_number": "14",
-  "name": "이명기",
-  "team": "한화",
-  "position": "외야수"
- },
- {
-  "uniform_number": "27",
-  "name": "이민우",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "95",
-  "name": "이민준",
-  "team": "한화",
-  "position": "내야수"
- },
- {
-  "uniform_number": "04",
-  "name": "이상혁",
-  "team": "한화",
-  "position": "내야수"
- },
- {
-  "uniform_number": "109",
-  "name": "이석제",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "44",
-  "name": "이성곤",
-  "team": "한화",
-  "position": "내야수"
- },
- {
-  "uniform_number": "98",
-  "name": "이성원",
-  "team": "한화",
-  "position": "포수"
- },
- {
-  "uniform_number": "4",
-  "name": "이승관",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "50",
-  "name": "이원석",
-  "team": "한화",
-  "position": "외야수"
- },
- {
-  "uniform_number": "39",
-  "name": "이재민",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "96",
-  "name": "이재용",
-  "team": "한화",
-  "position": "포수"
- },
- {
-  "uniform_number": "112",
-  "name": "이정재",
-  "team": "한화",
-  "position": "외야수"
- },
- {
-  "uniform_number": "45",
-  "name": "이진영",
-  "team": "한화",
-  "position": "외야수"
- },
- {
-  "uniform_number": "49",
-  "name": "이충호",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "46",
-  "name": "이태양",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "36",
-  "name": "장민재",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "28",
-  "name": "장시환",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "30",
-  "name": "장운호",
-  "team": "한화",
-  "position": "외야수"
- },
- {
-  "uniform_number": "69",
-  "name": "장지수",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "63",
-  "name": "장지승",
-  "team": "한화",
-  "position": "외야수"
- },
- {
-  "uniform_number": "51",
-  "name": "장진혁",
-  "team": "한화",
-  "position": "외야수"
- },
- {
-  "name": "정민규",
-  "team": "한화",
-  "position": "내야수"
- },
- {
-  "uniform_number": "57",
-  "name": "정우람",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "43",
-  "name": "정은원",
-  "team": "한화",
-  "position": "내야수"
- },
- {
-  "uniform_number": "67",
-  "name": "정이황",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "66",
-  "name": "주현상",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "22",
-  "name": "채은성",
-  "team": "한화",
-  "position": "외야수"
- },
- {
-  "uniform_number": "107",
-  "name": "천보웅",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "105",
-  "name": "최원준",
-  "team": "한화",
-  "position": "내야수"
- },
- {
-  "uniform_number": "13",
-  "name": "최재훈",
-  "team": "한화",
-  "position": "포수"
- },
- {
-  "uniform_number": "20",
-  "name": "페냐",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "16",
-  "name": "하주석",
-  "team": "한화",
-  "position": "내야수"
- },
- {
-  "uniform_number": "94",
-  "name": "한경빈",
-  "team": "한화",
-  "position": "내야수"
- },
- {
-  "uniform_number": "103",
-  "name": "한서구",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "59",
-  "name": "한승주",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "26",
-  "name": "한승혁",
-  "team": "한화",
-  "position": "투수"
- },
- {
-  "uniform_number": "48",
-  "name": "허관회",
-  "team": "한화",
-  "position": "포수"
- },
- {
-  "uniform_number": "106",
-  "name": "강건",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "5",
-  "name": "강민성",
-  "team": "KT",
-  "position": "내야수"
- },
- {
-  "uniform_number": "50",
-  "name": "강백호",
-  "team": "KT",
-  "position": "내야수"
- },
- {
-  "uniform_number": "55",
-  "name": "강현우",
-  "team": "KT",
-  "position": "포수"
- },
- {
-  "uniform_number": "9",
-  "name": "고명성",
-  "team": "KT",
-  "position": "내야수"
- },
- {
-  "uniform_number": "1",
-  "name": "고영표",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "96",
-  "name": "권성준",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "49",
-  "name": "김건웅",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "32",
-  "name": "김건형",
-  "team": "KT",
-  "position": "외야수"
- },
- {
-  "uniform_number": "11",
-  "name": "김민",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "26",
-  "name": "김민수",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "53",
-  "name": "김민혁",
-  "team": "KT",
-  "position": "외야수"
- },
- {
-  "uniform_number": "97",
-  "name": "김병준",
-  "team": "KT",
-  "position": "외야수"
- },
- {
-  "uniform_number": "14",
-  "name": "김병희",
-  "team": "KT",
-  "position": "내야수"
- },
- {
-  "uniform_number": "7",
-  "name": "김상수",
-  "team": "KT",
-  "position": "내야수"
- },
- {
-  "uniform_number": "48",
-  "name": "김영현",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "62",
-  "name": "김재윤",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "29",
-  "name": "김정운",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "44",
-  "name": "김준태",
-  "team": "KT",
-  "position": "포수"
- },
- {
-  "uniform_number": "20",
-  "name": "김태오",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "36",
-  "name": "류현인",
-  "team": "KT",
-  "position": "내야수"
- },
- {
-  "uniform_number": "33",
-  "name": "문상인",
-  "team": "KT",
-  "position": "포수"
- },
- {
-  "uniform_number": "0",
-  "name": "문상준",
-  "team": "KT",
-  "position": "내야수"
- },
- {
-  "uniform_number": "24",
-  "name": "문상철",
-  "team": "KT",
-  "position": "외야수"
- },
- {
-  "uniform_number": "6",
-  "name": "박경수",
-  "team": "KT",
-  "position": "내야수"
- },
- {
-  "uniform_number": "98",
-  "name": "박민석",
-  "team": "KT",
-  "position": "내야수"
- },
- {
-  "uniform_number": "52",
-  "name": "박병호",
-  "team": "KT",
-  "position": "내야수"
- },
- {
-  "uniform_number": "45",
-  "name": "박선우",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "47",
-  "name": "박세진",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "46",
-  "name": "박시영",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "67",
-  "name": "박시윤",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "60",
-  "name": "박영현",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "63",
-  "name": "박준혁",
-  "team": "KT",
-  "position": "외야수"
- },
- {
-  "uniform_number": "27",
-  "name": "배정대",
-  "team": "KT",
-  "position": "외야수"
- },
- {
-  "uniform_number": "19",
-  "name": "배제성",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "35",
-  "name": "백선기",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "107",
-  "name": "백현수",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "43",
-  "name": "벤자민",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "99",
-  "name": "서경찬",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "30",
-  "name": "소형준",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "41",
-  "name": "손동현",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "57",
-  "name": "손민석",
-  "team": "KT",
-  "position": "내야수"
- },
- {
-  "uniform_number": "12",
-  "name": "송민섭",
-  "team": "KT",
-  "position": "외야수"
- },
- {
-  "uniform_number": "40",
-  "name": "슐서",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "15",
-  "name": "신병률",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "56",
-  "name": "신본기",
-  "team": "KT",
-  "position": "내야수"
- },
- {
-  "uniform_number": "8",
-  "name": "안치영",
-  "team": "KT",
-  "position": "외야수"
- },
- {
-  "uniform_number": "25",
-  "name": "알포드",
-  "team": "KT",
-  "position": "외야수"
- },
- {
-  "uniform_number": "2",
-  "name": "양승혁",
-  "team": "KT",
-  "position": "내야수"
- },
- {
-  "uniform_number": "18",
-  "name": "엄상백",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "4",
-  "name": "오윤석",
-  "team": "KT",
-  "position": "내야수"
- },
- {
-  "uniform_number": "111",
-  "name": "우종휘",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "65",
-  "name": "윤강찬",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "109",
-  "name": "이동관",
-  "team": "KT",
-  "position": "내야수"
- },
- {
-  "uniform_number": "37",
-  "name": "이상동",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "21",
-  "name": "이상우",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "16",
-  "name": "이상호",
-  "team": "KT",
-  "position": "내야수"
- },
- {
-  "uniform_number": "68",
-  "name": "이선우",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "13",
-  "name": "이시원",
-  "team": "KT",
-  "position": "외야수"
- },
- {
-  "uniform_number": "51",
-  "name": "이정현",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "102",
-  "name": "이정훈",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "66",
-  "name": "이종혁",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "105",
-  "name": "이준명",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "101",
-  "name": "이준희",
-  "team": "KT",
-  "position": "포수"
- },
- {
-  "uniform_number": "17",
-  "name": "이채호",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "34",
-  "name": "이호연",
-  "team": "KT",
-  "position": "내야수"
- },
- {
-  "uniform_number": "22",
-  "name": "장성우",
-  "team": "KT",
-  "position": "포수"
- },
- {
-  "uniform_number": "3",
-  "name": "장준원",
-  "team": "KT",
-  "position": "내야수"
- },
- {
-  "uniform_number": "64",
-  "name": "전용주",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "108",
-  "name": "정우성",
-  "team": "KT",
-  "position": "포수"
- },
- {
-  "uniform_number": "93",
-  "name": "정정우",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "58",
-  "name": "정준영",
-  "team": "KT",
-  "position": "외야수"
- },
- {
-  "uniform_number": "104",
-  "name": "정진호",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "42",
-  "name": "조대현",
-  "team": "KT",
-  "position": "포수"
- },
- {
-  "uniform_number": "39",
-  "name": "조병욱",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "23",
-  "name": "조용호",
-  "team": "KT",
-  "position": "외야수"
- },
- {
-  "uniform_number": "54",
-  "name": "조이현",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "59",
-  "name": "조현우",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "38",
-  "name": "주권",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "94",
-  "name": "지강혁",
-  "team": "KT",
-  "position": "내야수"
- },
- {
-  "uniform_number": "61",
-  "name": "최동희",
-  "team": "KT",
-  "position": "외야수"
- },
- {
-  "uniform_number": "69",
-  "name": "최성민",
-  "team": "KT",
-  "position": "외야수"
- },
- {
-  "uniform_number": "110",
-  "name": "최정태",
-  "team": "KT",
-  "position": "외야수"
- },
- {
-  "uniform_number": "28",
-  "name": "하준호",
-  "team": "KT",
-  "position": "투수"
- },
- {
-  "uniform_number": "95",
-  "name": "한지용",
-  "team": "KT",
-  "position": "포수"
- },
- {
-  "uniform_number": "31",
-  "name": "홍현빈",
-  "team": "KT",
-  "position": "외야수"
- },
- {
-  "uniform_number": "103",
-  "name": "황의준",
-  "team": "KT",
-  "position": "외야수"
- },
- {
-  "uniform_number": "10",
-  "name": "황재균",
-  "team": "KT",
-  "position": "내야수"
- }
+  {
+    "uniform_number": "23",
+    "name": "강매성",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "28",
+    "name": "강진성",
+    "team": "SSG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "12",
+    "name": "고명준",
+    "team": "SSG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "15",
+    "name": "고효준",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "0",
+    "name": "김강민",
+    "team": "SSG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "44",
+    "name": "김건웅",
+    "team": "SSG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "03",
+    "name": "김건이",
+    "team": "SSG",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "29",
+    "name": "김광현",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "57",
+    "name": "김규남",
+    "team": "SSG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "68",
+    "name": "김도현",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "24",
+    "name": "김민식",
+    "team": "SSG",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "93",
+    "name": "김민준",
+    "team": "SSG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "6",
+    "name": "김성현",
+    "team": "SSG",
+    "position": "내야수"
+  },
+  {
+    "name": "김재현",
+    "team": "SSG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "65",
+    "name": "김정민",
+    "team": "SSG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "11",
+    "name": "김주온",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "21",
+    "name": "김주한",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "05",
+    "name": "김준영",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "04",
+    "name": "김태윤",
+    "team": "SSG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "51",
+    "name": "김태훈",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "38",
+    "name": "노경은",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "name": "로메로",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "06",
+    "name": "류현곤",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "95",
+    "name": "류효승",
+    "team": "SSG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "33",
+    "name": "맥카티",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "42",
+    "name": "문승원",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "41",
+    "name": "박민호",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "64",
+    "name": "박상후",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "2",
+    "name": "박성한",
+    "team": "SSG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "00",
+    "name": "박세직",
+    "team": "SSG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "46",
+    "name": "박시후",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "50",
+    "name": "박종훈",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "59",
+    "name": "백승건",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "18",
+    "name": "서동민",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "61",
+    "name": "서상준",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "22",
+    "name": "서진용",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "98",
+    "name": "송영진",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "49",
+    "name": "신헌민",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "10",
+    "name": "안상현",
+    "team": "SSG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "97",
+    "name": "안현서",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "94",
+    "name": "양선률",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "27",
+    "name": "에레디아",
+    "team": "SSG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "25",
+    "name": "엘리아스",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "47",
+    "name": "오원석",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "37",
+    "name": "오태곤",
+    "team": "SSG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "45",
+    "name": "유호식",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "30",
+    "name": "윤태현",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "36",
+    "name": "이거연",
+    "team": "SSG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "16",
+    "name": "이건욱",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "39",
+    "name": "이기순",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "92",
+    "name": "이로운",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "09",
+    "name": "이승훈",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "66",
+    "name": "이원준",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "20",
+    "name": "이재원",
+    "team": "SSG",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "31",
+    "name": "이정범",
+    "team": "SSG",
+    "position": "외야수"
+  },
+  {
+    "name": "이현석",
+    "team": "SSG",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "55",
+    "name": "이흥련",
+    "team": "SSG",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "48",
+    "name": "임준섭",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "52",
+    "name": "전경원",
+    "team": "SSG",
+    "position": "포수"
+  },
+  {
+    "name": "전영준",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "56",
+    "name": "전의산",
+    "team": "SSG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "9",
+    "name": "전진우",
+    "team": "SSG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "62",
+    "name": "정동윤",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "1",
+    "name": "정성곤",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "08",
+    "name": "조강희",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "43",
+    "name": "조성훈",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "32",
+    "name": "조형우",
+    "team": "SSG",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "58",
+    "name": "최경모",
+    "team": "SSG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "67",
+    "name": "최민준",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "8",
+    "name": "최상민",
+    "team": "SSG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "19",
+    "name": "최수호",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "3",
+    "name": "최유빈",
+    "team": "SSG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "14",
+    "name": "최정",
+    "team": "SSG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "53",
+    "name": "최주환",
+    "team": "SSG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "7",
+    "name": "최준우",
+    "team": "SSG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "54",
+    "name": "최지훈",
+    "team": "SSG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "4",
+    "name": "최항",
+    "team": "SSG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "17",
+    "name": "추신수",
+    "team": "SSG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "13",
+    "name": "하재훈",
+    "team": "SSG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "34",
+    "name": "한두솔",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "35",
+    "name": "한유섬",
+    "team": "SSG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "40",
+    "name": "허민혁",
+    "team": "SSG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "117",
+    "name": "강민균",
+    "team": "LG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "59",
+    "name": "강효종",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "19",
+    "name": "고우석",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "116",
+    "name": "곽민호",
+    "team": "LG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "68",
+    "name": "권동혁",
+    "team": "LG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "12",
+    "name": "김기연",
+    "team": "LG",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "109",
+    "name": "김단우",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "34",
+    "name": "김대현",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "64",
+    "name": "김동규",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "16",
+    "name": "김민성",
+    "team": "LG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "44",
+    "name": "김범석",
+    "team": "LG",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "105",
+    "name": "김성우",
+    "team": "LG",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "114",
+    "name": "김성진",
+    "team": "LG",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "102",
+    "name": "김성협",
+    "team": "LG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "35",
+    "name": "김영준",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "0",
+    "name": "김유영",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "47",
+    "name": "김윤식",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "115",
+    "name": "김의준",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "5",
+    "name": "김주성",
+    "team": "LG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "40",
+    "name": "김주완",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "42",
+    "name": "김진성",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "25",
+    "name": "김진수",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "110",
+    "name": "김태형",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "22",
+    "name": "김현수",
+    "team": "LG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "2",
+    "name": "문보경",
+    "team": "LG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "8",
+    "name": "문성주",
+    "team": "LG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "27",
+    "name": "박동원",
+    "team": "LG",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "39",
+    "name": "박명근",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "106",
+    "name": "박민호",
+    "team": "LG",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "17",
+    "name": "박해민",
+    "team": "LG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "36",
+    "name": "배재준",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "61",
+    "name": "백승현",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "14",
+    "name": "서건창",
+    "team": "LG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "58",
+    "name": "성동현",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "125",
+    "name": "성재헌",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "29",
+    "name": "손주영",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "24",
+    "name": "손호영",
+    "team": "LG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "63",
+    "name": "송대현",
+    "team": "LG",
+    "position": "내야수"
+  },
+  {
+    "name": "송승기",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "46",
+    "name": "송은범",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "66",
+    "name": "송찬의",
+    "team": "LG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "4",
+    "name": "신민재",
+    "team": "LG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "15",
+    "name": "안익훈",
+    "team": "LG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "123",
+    "name": "양진혁",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "124",
+    "name": "엄태경",
+    "team": "LG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "104",
+    "name": "오석주",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "23",
+    "name": "오스틴",
+    "team": "LG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "10",
+    "name": "오지환",
+    "team": "LG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "107",
+    "name": "원상훈",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "54",
+    "name": "유영찬",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "28",
+    "name": "윤호솔",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "26",
+    "name": "이민호",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "48",
+    "name": "이상규",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "37",
+    "name": "이우찬",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "52",
+    "name": "이재원",
+    "team": "LG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "31",
+    "name": "이정용",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "53",
+    "name": "이주형",
+    "team": "LG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "60",
+    "name": "이준서",
+    "team": "LG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "50",
+    "name": "이지강",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "100",
+    "name": "이찬혁",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "32",
+    "name": "이천웅",
+    "team": "LG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "113",
+    "name": "이철민",
+    "team": "LG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "108",
+    "name": "임정균",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "20",
+    "name": "임정우",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "1",
+    "name": "임찬규",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "103",
+    "name": "전준호",
+    "team": "LG",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "18",
+    "name": "정우영",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "7",
+    "name": "정주현",
+    "team": "LG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "49",
+    "name": "조원태",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "21",
+    "name": "진해수",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "43",
+    "name": "채지선",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "13",
+    "name": "최동환",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "38",
+    "name": "최민창",
+    "team": "LG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "56",
+    "name": "최성훈",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "118",
+    "name": "최원영",
+    "team": "LG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "67",
+    "name": "최현준",
+    "team": "LG",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "3",
+    "name": "켈리",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "45",
+    "name": "플럿코",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "11",
+    "name": "함덕주",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "30",
+    "name": "허도환",
+    "team": "LG",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "111",
+    "name": "허용주",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "name": "허준혁",
+    "team": "LG",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "51",
+    "name": "홍창기",
+    "team": "LG",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "32",
+    "name": "강태율",
+    "team": "롯데",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "65",
+    "name": "고승민",
+    "team": "롯데",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "22",
+    "name": "구승민",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "12",
+    "name": "국해성",
+    "team": "롯데",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "19",
+    "name": "김강현",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "40",
+    "name": "김기준",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "23",
+    "name": "김도규",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "37",
+    "name": "김동우",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "101",
+    "name": "김동혁",
+    "team": "롯데",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "2",
+    "name": "김민석",
+    "team": "롯데",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "5",
+    "name": "김민수",
+    "team": "롯데",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "24",
+    "name": "김상수",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "64",
+    "name": "김서진",
+    "team": "롯데",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "14",
+    "name": "김세민",
+    "team": "롯데",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "34",
+    "name": "김원중",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "name": "김재유",
+    "team": "롯데",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "50",
+    "name": "김주현",
+    "team": "롯데",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "15",
+    "name": "김진욱",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "61",
+    "name": "김창훈",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "107",
+    "name": "김태욱",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "43",
+    "name": "나균안",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "name": "나원탁",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "52",
+    "name": "노진혁",
+    "team": "롯데",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "17",
+    "name": "렉스",
+    "team": "롯데",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "38",
+    "name": "문경찬",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "00",
+    "name": "민성우",
+    "team": "롯데",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "97",
+    "name": "박건",
+    "team": "롯데",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "111",
+    "name": "박명현",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "21",
+    "name": "박세웅",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "53",
+    "name": "박승욱",
+    "team": "롯데",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "67",
+    "name": "박영완",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "44",
+    "name": "박진",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "103",
+    "name": "박형준",
+    "team": "롯데",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "28",
+    "name": "반즈",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "87",
+    "name": "배영빈",
+    "team": "롯데",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "98",
+    "name": "배인혁",
+    "team": "롯데",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "69",
+    "name": "서동욱",
+    "team": "롯데",
+    "position": "포수"
+  },
+  {
+    "name": "서준원",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "60",
+    "name": "석상호",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "58",
+    "name": "스트레일리",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "3",
+    "name": "신윤후",
+    "team": "롯데",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "31",
+    "name": "신정락",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "39",
+    "name": "심재민",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "0",
+    "name": "안권수",
+    "team": "롯데",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "13",
+    "name": "안치홍",
+    "team": "롯데",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "100",
+    "name": "엄태호",
+    "team": "롯데",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "105",
+    "name": "우강훈",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "27",
+    "name": "유강남",
+    "team": "롯데",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "91",
+    "name": "윤동희",
+    "team": "롯데",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "41",
+    "name": "윤명준",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "51",
+    "name": "윤성빈",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "63",
+    "name": "윤수녕",
+    "team": "롯데",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "30",
+    "name": "이민석",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "104",
+    "name": "이병준",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "35",
+    "name": "이인복",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "57",
+    "name": "이정우",
+    "team": "롯데",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "48",
+    "name": "이정훈",
+    "team": "롯데",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "62",
+    "name": "이진하",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "94",
+    "name": "이태연",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "7",
+    "name": "이학주",
+    "team": "롯데",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "49",
+    "name": "장두성",
+    "team": "롯데",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "96",
+    "name": "장세진",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "8",
+    "name": "전준우",
+    "team": "롯데",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "68",
+    "name": "정대선",
+    "team": "롯데",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "55",
+    "name": "정대혁",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "42",
+    "name": "정보근",
+    "team": "롯데",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "56",
+    "name": "정성종",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "59",
+    "name": "정재환",
+    "team": "롯데",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "95",
+    "name": "정태승",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "9",
+    "name": "정훈",
+    "team": "롯데",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "102",
+    "name": "조경민",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "name": "조세진",
+    "team": "롯데",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "84",
+    "name": "조준혁",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "66",
+    "name": "지시완",
+    "team": "롯데",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "26",
+    "name": "진승현",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "47",
+    "name": "차우찬",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "46",
+    "name": "최민재",
+    "team": "롯데",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "45",
+    "name": "최영환",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "108",
+    "name": "최우인",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "33",
+    "name": "최이준",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "110",
+    "name": "최종은",
+    "team": "롯데",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "18",
+    "name": "최준용",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "25",
+    "name": "한동희",
+    "team": "롯데",
+    "position": "내야수"
+  },
+  {
+    "name": "한태양",
+    "team": "롯데",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "16",
+    "name": "한현희",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "54",
+    "name": "현도훈",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "106",
+    "name": "홍민기",
+    "team": "롯데",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "1",
+    "name": "황성빈",
+    "team": "롯데",
+    "position": "외야수"
+  },
+  {
+    "name": "강산",
+    "team": "두산",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "23",
+    "name": "강승호",
+    "team": "두산",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "63",
+    "name": "고봉재",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "47",
+    "name": "곽빈",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "34",
+    "name": "권민석",
+    "team": "두산",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "27",
+    "name": "김강률",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "37",
+    "name": "김대한",
+    "team": "두산",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "41",
+    "name": "김동주",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "46",
+    "name": "김명신",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "109",
+    "name": "김문수",
+    "team": "두산",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "18",
+    "name": "김민혁",
+    "team": "두산",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "106",
+    "name": "김시완",
+    "team": "두산",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "62",
+    "name": "김유성",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "39",
+    "name": "김인태",
+    "team": "두산",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "52",
+    "name": "김재호",
+    "team": "두산",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "32",
+    "name": "김재환",
+    "team": "두산",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "30",
+    "name": "김정우",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "2",
+    "name": "김지용",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "92",
+    "name": "김태근",
+    "team": "두산",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "56",
+    "name": "김호준",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "111",
+    "name": "남율",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "33",
+    "name": "딜런",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "11",
+    "name": "로하스",
+    "team": "두산",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "101",
+    "name": "문원",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "14",
+    "name": "박계범",
+    "team": "두산",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "108",
+    "name": "박민준",
+    "team": "두산",
+    "position": "포수"
+  },
+  {
+    "name": "박성재",
+    "team": "두산",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "100",
+    "name": "박소준",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "66",
+    "name": "박신지",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "26",
+    "name": "박유연",
+    "team": "두산",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "60",
+    "name": "박정수",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "9",
+    "name": "박준영",
+    "team": "두산",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "1",
+    "name": "박치국",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "103",
+    "name": "배창현",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "98",
+    "name": "백승우",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "16",
+    "name": "서예일",
+    "team": "두산",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "8",
+    "name": "송승환",
+    "team": "두산",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "94",
+    "name": "신민철",
+    "team": "두산",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "5",
+    "name": "신성현",
+    "team": "두산",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "38",
+    "name": "신창희",
+    "team": "두산",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "20",
+    "name": "안승한",
+    "team": "두산",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "3",
+    "name": "안재석",
+    "team": "두산",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "43",
+    "name": "알칸타라",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "53",
+    "name": "양석환",
+    "team": "두산",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "25",
+    "name": "양의지",
+    "team": "두산",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "57",
+    "name": "양찬열",
+    "team": "두산",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "96",
+    "name": "윤준호",
+    "team": "두산",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "113",
+    "name": "이기석",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "116",
+    "name": "이민혁",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "29",
+    "name": "이병헌",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "117",
+    "name": "이상연",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "55",
+    "name": "이승진",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "50",
+    "name": "이영하",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "95",
+    "name": "이원재",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "7",
+    "name": "이유찬",
+    "team": "두산",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "112",
+    "name": "이정원",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "110",
+    "name": "이주엽",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "45",
+    "name": "이형범",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "93",
+    "name": "임서준",
+    "team": "두산",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "118",
+    "name": "장규빈",
+    "team": "두산",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "58",
+    "name": "장빈",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "22",
+    "name": "장승현",
+    "team": "두산",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "67",
+    "name": "장우진",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "28",
+    "name": "장원준",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "35",
+    "name": "전민재",
+    "team": "두산",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "104",
+    "name": "전형근",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "name": "전희범",
+    "team": "두산",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "31",
+    "name": "정수빈",
+    "team": "두산",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "105",
+    "name": "정유석",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "102",
+    "name": "정은재",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "65",
+    "name": "정철원",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "102",
+    "name": "제환유",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "114",
+    "name": "조선명",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "51",
+    "name": "조수행",
+    "team": "두산",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "64",
+    "name": "최승용",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "61",
+    "name": "최원준",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "107",
+    "name": "최종인",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "59",
+    "name": "최준호",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "42",
+    "name": "최지강",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "97",
+    "name": "한충희",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "13",
+    "name": "허경민",
+    "team": "두산",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "17",
+    "name": "홍건희",
+    "team": "두산",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "44",
+    "name": "홍성호",
+    "team": "두산",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "102",
+    "name": "강건준",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "59",
+    "name": "구창모",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "35",
+    "name": "권정웅",
+    "team": "NC",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "36",
+    "name": "권희동",
+    "team": "NC",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "95",
+    "name": "김녹원",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "100",
+    "name": "김범준",
+    "team": "NC",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "25",
+    "name": "김성욱",
+    "team": "NC",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "3",
+    "name": "김수윤",
+    "team": "NC",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "21",
+    "name": "김시훈",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "17",
+    "name": "김영규",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "8",
+    "name": "김재균",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "7",
+    "name": "김주원",
+    "team": "NC",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "107",
+    "name": "김주환",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "4",
+    "name": "김준상",
+    "team": "NC",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "54",
+    "name": "김진호",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "6",
+    "name": "김철호",
+    "team": "NC",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "15",
+    "name": "김태현",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "108",
+    "name": "김택우",
+    "team": "NC",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "68",
+    "name": "김한별",
+    "team": "NC",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "47",
+    "name": "김형준",
+    "team": "NC",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "63",
+    "name": "노시훈",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "16",
+    "name": "도태훈",
+    "team": "NC",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "41",
+    "name": "류진욱",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "55",
+    "name": "마틴",
+    "team": "NC",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "73",
+    "name": "목지훈",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "37",
+    "name": "박건우",
+    "team": "NC",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "26",
+    "name": "박대온",
+    "team": "NC",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "2",
+    "name": "박민우",
+    "team": "NC",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "18",
+    "name": "박석민",
+    "team": "NC",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "44",
+    "name": "박성재",
+    "team": "NC",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "10",
+    "name": "박세혁",
+    "team": "NC",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "28",
+    "name": "박시원",
+    "team": "NC",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "00",
+    "name": "박영빈",
+    "team": "NC",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "71",
+    "name": "박주찬",
+    "team": "NC",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "111",
+    "name": "박주현",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "110",
+    "name": "박찬희",
+    "team": "NC",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "92",
+    "name": "박한결",
+    "team": "NC",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "106",
+    "name": "배상호",
+    "team": "NC",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "61",
+    "name": "배재환",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "105",
+    "name": "서동욱",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "58",
+    "name": "서의태",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "42",
+    "name": "서준교",
+    "team": "NC",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "5",
+    "name": "서호철",
+    "team": "NC",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "31",
+    "name": "손아섭",
+    "team": "NC",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "11",
+    "name": "송명기",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "53",
+    "name": "신민혁",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "103",
+    "name": "신성호",
+    "team": "NC",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "19",
+    "name": "신영우",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "70",
+    "name": "신용석",
+    "team": "NC",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "1",
+    "name": "심창민",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "32",
+    "name": "안중열",
+    "team": "NC",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "34",
+    "name": "오영수",
+    "team": "NC",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "38",
+    "name": "오장한",
+    "team": "NC",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "50",
+    "name": "오태양",
+    "team": "NC",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "27",
+    "name": "와이드너",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "52",
+    "name": "윤형준",
+    "team": "NC",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "29",
+    "name": "이민호",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "48",
+    "name": "이용준",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "22",
+    "name": "이용찬",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "45",
+    "name": "이우석",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "0",
+    "name": "이인혁",
+    "team": "NC",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "51",
+    "name": "이재학",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "72",
+    "name": "이주형",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "67",
+    "name": "이준혁",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "96",
+    "name": "이준호",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "43",
+    "name": "이한",
+    "team": "NC",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "65",
+    "name": "이현우",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "30",
+    "name": "임정호",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "69",
+    "name": "임지민",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "109",
+    "name": "임형원",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "14",
+    "name": "전루건",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "57",
+    "name": "전사민",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "56",
+    "name": "정구범",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "104",
+    "name": "정주영",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "12",
+    "name": "정진기",
+    "team": "NC",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "64",
+    "name": "조민석",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "94",
+    "name": "조현진",
+    "team": "NC",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "23",
+    "name": "천재환",
+    "team": "NC",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "49",
+    "name": "최보성",
+    "team": "NC",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "20",
+    "name": "최성영",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "9",
+    "name": "최승민",
+    "team": "NC",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "91",
+    "name": "최시혁",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "24",
+    "name": "최우재",
+    "team": "NC",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "13",
+    "name": "페디",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "62",
+    "name": "하준수",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "39",
+    "name": "하준영",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "66",
+    "name": "한건희",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "46",
+    "name": "한석현",
+    "team": "NC",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "60",
+    "name": "한재승",
+    "team": "NC",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "101",
+    "name": "한재환",
+    "team": "NC",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "15",
+    "name": "강병우",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "36",
+    "name": "강이준",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "60",
+    "name": "고영창",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "57",
+    "name": "고종욱",
+    "team": "KIA",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "9",
+    "name": "곽도규",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "029",
+    "name": "김건국",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "14",
+    "name": "김규성",
+    "team": "KIA",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "53",
+    "name": "김기훈",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "69",
+    "name": "김대유",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "5",
+    "name": "김도영",
+    "team": "KIA",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "018",
+    "name": "김도월",
+    "team": "KIA",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "04",
+    "name": "김민수",
+    "team": "KIA",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "21",
+    "name": "김사윤",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "35",
+    "name": "김석환",
+    "team": "KIA",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "3",
+    "name": "김선빈",
+    "team": "KIA",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "42",
+    "name": "김선우",
+    "team": "KIA",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "37",
+    "name": "김세일",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "24",
+    "name": "김승현",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "08",
+    "name": "김양수",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "012",
+    "name": "김용완",
+    "team": "KIA",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "07",
+    "name": "김원경",
+    "team": "KIA",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "49",
+    "name": "김유신",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "32",
+    "name": "김재열",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "019",
+    "name": "김재현",
+    "team": "KIA",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "027",
+    "name": "김주섭",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "38",
+    "name": "김찬민",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "27",
+    "name": "김호령",
+    "team": "KIA",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "47",
+    "name": "나성범",
+    "team": "KIA",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "09",
+    "name": "나용기",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "41",
+    "name": "남하준",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "8",
+    "name": "류지혁",
+    "team": "KIA",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "45",
+    "name": "메디나",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "02",
+    "name": "박승훈",
+    "team": "KIA",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "29",
+    "name": "박일훈",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "0",
+    "name": "박정우",
+    "team": "KIA",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "31",
+    "name": "박준표",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "1",
+    "name": "박찬호",
+    "team": "KIA",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "33",
+    "name": "변우혁",
+    "team": "KIA",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "30",
+    "name": "소크라테스",
+    "team": "KIA",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "03",
+    "name": "손호원",
+    "team": "KIA",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "11",
+    "name": "송후섭",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "12",
+    "name": "신범수",
+    "team": "KIA",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "64",
+    "name": "앤더슨",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "54",
+    "name": "양현종",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "56",
+    "name": "오선우",
+    "team": "KIA",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "2",
+    "name": "오정환",
+    "team": "KIA",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "40",
+    "name": "유승철",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "4",
+    "name": "유지성",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "67",
+    "name": "윤도현",
+    "team": "KIA",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "13",
+    "name": "윤영철",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "19",
+    "name": "윤중현",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "015",
+    "name": "이도현",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "06",
+    "name": "이성주",
+    "team": "KIA",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "63",
+    "name": "이송찬",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "25",
+    "name": "이우성",
+    "team": "KIA",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "48",
+    "name": "이의리",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "20",
+    "name": "이준영",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "66",
+    "name": "이창진",
+    "team": "KIA",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "61",
+    "name": "이태규",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "17",
+    "name": "임기영",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "28",
+    "name": "임석진",
+    "team": "KIA",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "50",
+    "name": "장현식",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "51",
+    "name": "전상현",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "62",
+    "name": "정해영",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "59",
+    "name": "정해원",
+    "team": "KIA",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "22",
+    "name": "주효상",
+    "team": "KIA",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "013",
+    "name": "최수빈",
+    "team": "KIA",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "23",
+    "name": "최정용",
+    "team": "KIA",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "39",
+    "name": "최지민",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "34",
+    "name": "최형우",
+    "team": "KIA",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "028",
+    "name": "한승연",
+    "team": "KIA",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "26",
+    "name": "한승택",
+    "team": "KIA",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "025",
+    "name": "한준수",
+    "team": "KIA",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "021",
+    "name": "홍원빈",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "6",
+    "name": "홍종표",
+    "team": "KIA",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "52",
+    "name": "황대인",
+    "team": "KIA",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "10",
+    "name": "황동하",
+    "team": "KIA",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "47",
+    "name": "강민호",
+    "team": "삼성",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "60",
+    "name": "강준서",
+    "team": "삼성",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "6",
+    "name": "강한울",
+    "team": "삼성",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "9",
+    "name": "공민규",
+    "team": "삼성",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "5",
+    "name": "구자욱",
+    "team": "삼성",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "17",
+    "name": "김대우",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "38",
+    "name": "김동엽",
+    "team": "삼성",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "3",
+    "name": "김동진",
+    "team": "삼성",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "12",
+    "name": "김민수",
+    "team": "삼성",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "121",
+    "name": "김민호",
+    "team": "삼성",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "25",
+    "name": "김상민",
+    "team": "삼성",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "53",
+    "name": "김서준",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "39",
+    "name": "김성윤",
+    "team": "삼성",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "64",
+    "name": "김시온",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "100",
+    "name": "김시현",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "30",
+    "name": "김영웅",
+    "team": "삼성",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "00",
+    "name": "김용하",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "0",
+    "name": "김재상",
+    "team": "삼성",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "48",
+    "name": "김재성",
+    "team": "삼성",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "110",
+    "name": "김준우",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "58",
+    "name": "김지찬",
+    "team": "삼성",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "42",
+    "name": "김태군",
+    "team": "삼성",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "113",
+    "name": "김태우",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "24",
+    "name": "김태훈",
+    "team": "삼성",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "27",
+    "name": "김태훈",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "34",
+    "name": "김헌곤",
+    "team": "삼성",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "41",
+    "name": "김현준",
+    "team": "삼성",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "8",
+    "name": "김호재",
+    "team": "삼성",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "37",
+    "name": "노건우",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "104",
+    "name": "류승민",
+    "team": "삼성",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "106",
+    "name": "맹성주",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "43",
+    "name": "문용익",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "69",
+    "name": "박권후",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "50",
+    "name": "박세웅",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "109",
+    "name": "박시원",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "101",
+    "name": "박용민",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "116",
+    "name": "박장민",
+    "team": "삼성",
+    "position": "내야수"
+  },
+  {
+    "name": "박주혁",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "111",
+    "name": "박진우",
+    "team": "삼성",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "29",
+    "name": "백정현",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "4",
+    "name": "뷰캐넌",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "120",
+    "name": "서주원",
+    "team": "삼성",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "28",
+    "name": "서현원",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "52",
+    "name": "송준석",
+    "team": "삼성",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "57",
+    "name": "수아레즈",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "15",
+    "name": "신윤호",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "40",
+    "name": "신정환",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "14",
+    "name": "안주형",
+    "team": "삼성",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "105",
+    "name": "양우현",
+    "team": "삼성",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "1",
+    "name": "양창섭",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "21",
+    "name": "오승환",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "44",
+    "name": "오재일",
+    "team": "삼성",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "103",
+    "name": "오현석",
+    "team": "삼성",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "2",
+    "name": "우규민",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "18",
+    "name": "원태인",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "31",
+    "name": "윤정빈",
+    "team": "삼성",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "107",
+    "name": "윤정훈",
+    "team": "삼성",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "23",
+    "name": "이병헌",
+    "team": "삼성",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "59",
+    "name": "이상민",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "13",
+    "name": "이성규",
+    "team": "삼성",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "20",
+    "name": "이승현",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "54",
+    "name": "이승현",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "45",
+    "name": "이재익",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "7",
+    "name": "이재현",
+    "team": "삼성",
+    "position": "내야수"
+  },
+  {
+    "name": "이재희",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "35",
+    "name": "이태훈",
+    "team": "삼성",
+    "position": "내야수"
+  },
+  {
+    "name": "이해승",
+    "team": "삼성",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "55",
+    "name": "이호성",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "117",
+    "name": "장재혁",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "26",
+    "name": "장필준",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "112",
+    "name": "정진수",
+    "team": "삼성",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "32",
+    "name": "조민성",
+    "team": "삼성",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "51",
+    "name": "최충연",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "19",
+    "name": "최하늘",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "63",
+    "name": "피렐라",
+    "team": "삼성",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "115",
+    "name": "한연욱",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "49",
+    "name": "허윤동",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "62",
+    "name": "홍무원",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "108",
+    "name": "홍승원",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "11",
+    "name": "홍정우",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "61",
+    "name": "황동재",
+    "team": "삼성",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "12",
+    "name": "김건희",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "65",
+    "name": "김동욱",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "44",
+    "name": "김동헌",
+    "team": "키움",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "60",
+    "name": "김동혁",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "37",
+    "name": "김리안",
+    "team": "키움",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "0",
+    "name": "김병휘",
+    "team": "키움",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "49",
+    "name": "김선기",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "34",
+    "name": "김성진",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "31",
+    "name": "김수환",
+    "team": "키움",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "26",
+    "name": "김시앙",
+    "team": "키움",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "98",
+    "name": "김신회",
+    "team": "키움",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "1",
+    "name": "김웅빈",
+    "team": "키움",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "28",
+    "name": "김재웅",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "32",
+    "name": "김재현",
+    "team": "키움",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "19",
+    "name": "김정인",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "6",
+    "name": "김주형",
+    "team": "키움",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "10",
+    "name": "김준완",
+    "team": "키움",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "93",
+    "name": "김준형",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "2",
+    "name": "김태진",
+    "team": "키움",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "3",
+    "name": "김혜성",
+    "team": "키움",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "33",
+    "name": "김휘집",
+    "team": "키움",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "94",
+    "name": "노운현",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "27",
+    "name": "러셀",
+    "team": "키움",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "21",
+    "name": "문성현",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "05",
+    "name": "박성빈",
+    "team": "키움",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "14",
+    "name": "박수종",
+    "team": "키움",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "42",
+    "name": "박승주",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "01",
+    "name": "박윤성",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "name": "박주성",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "68",
+    "name": "박주현",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "57",
+    "name": "박주홍",
+    "team": "키움",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "23",
+    "name": "박준태",
+    "team": "키움",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "48",
+    "name": "박찬혁",
+    "team": "키움",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "92",
+    "name": "백진수",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "66",
+    "name": "변시원",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "07",
+    "name": "변헌성",
+    "team": "키움",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "09",
+    "name": "서유신",
+    "team": "키움",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "24",
+    "name": "송성문",
+    "team": "키움",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "63",
+    "name": "송재선",
+    "team": "키움",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "59",
+    "name": "송정인",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "5",
+    "name": "신준우",
+    "team": "키움",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "08",
+    "name": "안겸",
+    "team": "키움",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "41",
+    "name": "안우진",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "38",
+    "name": "양경식",
+    "team": "키움",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "55",
+    "name": "양지율",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "39",
+    "name": "양현",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "53",
+    "name": "예진원",
+    "team": "키움",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "00",
+    "name": "오상원",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "40",
+    "name": "오윤성",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "43",
+    "name": "요키시",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "04",
+    "name": "우승원",
+    "team": "키움",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "46",
+    "name": "원종현",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "95",
+    "name": "윤석원",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "99",
+    "name": "윤정현",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "name": "이강준",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "97",
+    "name": "이명종",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "9",
+    "name": "이병규",
+    "team": "키움",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "91",
+    "name": "이세호",
+    "team": "키움",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "8",
+    "name": "이승원",
+    "team": "키움",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "47",
+    "name": "이승호",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "64",
+    "name": "이영준",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "15",
+    "name": "이용규",
+    "team": "키움",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "17",
+    "name": "이원석",
+    "team": "키움",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "4",
+    "name": "이재홍",
+    "team": "키움",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "51",
+    "name": "이정후",
+    "team": "키움",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "54",
+    "name": "이종민",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "name": "이주형",
+    "team": "키움",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "56",
+    "name": "이지영",
+    "team": "키움",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "36",
+    "name": "이형종",
+    "team": "키움",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "06",
+    "name": "이호열",
+    "team": "키움",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "35",
+    "name": "임병욱",
+    "team": "키움",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "29",
+    "name": "임지열",
+    "team": "키움",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "45",
+    "name": "임창민",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "61",
+    "name": "장재영",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "13",
+    "name": "전병우",
+    "team": "키움",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "62",
+    "name": "정연제",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "58",
+    "name": "정찬헌",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "100",
+    "name": "정현민",
+    "team": "키움",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "25",
+    "name": "주성원",
+    "team": "키움",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "96",
+    "name": "주승빈",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "30",
+    "name": "주승우",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "20",
+    "name": "최원태",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "50",
+    "name": "하영민",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "67",
+    "name": "홍성민",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "75",
+    "name": "후라도",
+    "team": "키움",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "55",
+    "name": "강재민",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "110",
+    "name": "고영재",
+    "team": "한화",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "56",
+    "name": "권광민",
+    "team": "한화",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "97",
+    "name": "김건",
+    "team": "한화",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "03",
+    "name": "김겸재",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "101",
+    "name": "김관우",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "60",
+    "name": "김규연",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "15",
+    "name": "김기중",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "2",
+    "name": "김민기",
+    "team": "한화",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "53",
+    "name": "김민우",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "47",
+    "name": "김범수",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "68",
+    "name": "김범준",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "54",
+    "name": "김서현",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "113",
+    "name": "김석훈",
+    "team": "한화",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "108",
+    "name": "김예준",
+    "team": "한화",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "37",
+    "name": "김인환",
+    "team": "한화",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "19",
+    "name": "김재영",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "38",
+    "name": "김종수",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "115",
+    "name": "김진욱",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "25",
+    "name": "김태연",
+    "team": "한화",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "102",
+    "name": "김해찬",
+    "team": "한화",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "62",
+    "name": "김현우",
+    "team": "한화",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "11",
+    "name": "남지민",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "05",
+    "name": "노석진",
+    "team": "한화",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "17",
+    "name": "노수광",
+    "team": "한화",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "8",
+    "name": "노시환",
+    "team": "한화",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "61",
+    "name": "류원석",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "18",
+    "name": "류희운",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "1",
+    "name": "문동주",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "64",
+    "name": "문현빈",
+    "team": "한화",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "01",
+    "name": "민승기",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "42",
+    "name": "박상언",
+    "team": "한화",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "58",
+    "name": "박상원",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "114",
+    "name": "박성웅",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "31",
+    "name": "박윤철",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "106",
+    "name": "박재규",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "9",
+    "name": "박정현",
+    "team": "한화",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "29",
+    "name": "박준영",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "34",
+    "name": "산체스",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "111",
+    "name": "성지훈",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "104",
+    "name": "송성훈",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "10",
+    "name": "송윤준",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "name": "스미스",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "117",
+    "name": "신우재",
+    "team": "한화",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "40",
+    "name": "신지후",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "116",
+    "name": "안진",
+    "team": "한화",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "02",
+    "name": "양경모",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "12",
+    "name": "오그레디",
+    "team": "한화",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "6",
+    "name": "오선진",
+    "team": "한화",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "93",
+    "name": "오세훈",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "24",
+    "name": "원혁재",
+    "team": "한화",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "33",
+    "name": "유로결",
+    "team": "한화",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "65",
+    "name": "유상빈",
+    "team": "한화",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "5",
+    "name": "윤대경",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "32",
+    "name": "윤산흠",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "7",
+    "name": "이도윤",
+    "team": "한화",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "14",
+    "name": "이명기",
+    "team": "한화",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "27",
+    "name": "이민우",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "95",
+    "name": "이민준",
+    "team": "한화",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "04",
+    "name": "이상혁",
+    "team": "한화",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "109",
+    "name": "이석제",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "44",
+    "name": "이성곤",
+    "team": "한화",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "98",
+    "name": "이성원",
+    "team": "한화",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "4",
+    "name": "이승관",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "50",
+    "name": "이원석",
+    "team": "한화",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "39",
+    "name": "이재민",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "96",
+    "name": "이재용",
+    "team": "한화",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "112",
+    "name": "이정재",
+    "team": "한화",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "45",
+    "name": "이진영",
+    "team": "한화",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "49",
+    "name": "이충호",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "46",
+    "name": "이태양",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "36",
+    "name": "장민재",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "28",
+    "name": "장시환",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "30",
+    "name": "장운호",
+    "team": "한화",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "69",
+    "name": "장지수",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "63",
+    "name": "장지승",
+    "team": "한화",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "51",
+    "name": "장진혁",
+    "team": "한화",
+    "position": "외야수"
+  },
+  {
+    "name": "정민규",
+    "team": "한화",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "57",
+    "name": "정우람",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "43",
+    "name": "정은원",
+    "team": "한화",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "67",
+    "name": "정이황",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "66",
+    "name": "주현상",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "22",
+    "name": "채은성",
+    "team": "한화",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "107",
+    "name": "천보웅",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "105",
+    "name": "최원준",
+    "team": "한화",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "13",
+    "name": "최재훈",
+    "team": "한화",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "20",
+    "name": "페냐",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "16",
+    "name": "하주석",
+    "team": "한화",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "94",
+    "name": "한경빈",
+    "team": "한화",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "103",
+    "name": "한서구",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "59",
+    "name": "한승주",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "26",
+    "name": "한승혁",
+    "team": "한화",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "48",
+    "name": "허관회",
+    "team": "한화",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "106",
+    "name": "강건",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "5",
+    "name": "강민성",
+    "team": "KT",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "50",
+    "name": "강백호",
+    "team": "KT",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "55",
+    "name": "강현우",
+    "team": "KT",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "9",
+    "name": "고명성",
+    "team": "KT",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "1",
+    "name": "고영표",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "96",
+    "name": "권성준",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "49",
+    "name": "김건웅",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "32",
+    "name": "김건형",
+    "team": "KT",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "11",
+    "name": "김민",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "26",
+    "name": "김민수",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "53",
+    "name": "김민혁",
+    "team": "KT",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "97",
+    "name": "김병준",
+    "team": "KT",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "14",
+    "name": "김병희",
+    "team": "KT",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "7",
+    "name": "김상수",
+    "team": "KT",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "48",
+    "name": "김영현",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "62",
+    "name": "김재윤",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "29",
+    "name": "김정운",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "44",
+    "name": "김준태",
+    "team": "KT",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "20",
+    "name": "김태오",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "36",
+    "name": "류현인",
+    "team": "KT",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "33",
+    "name": "문상인",
+    "team": "KT",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "0",
+    "name": "문상준",
+    "team": "KT",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "24",
+    "name": "문상철",
+    "team": "KT",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "6",
+    "name": "박경수",
+    "team": "KT",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "98",
+    "name": "박민석",
+    "team": "KT",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "52",
+    "name": "박병호",
+    "team": "KT",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "45",
+    "name": "박선우",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "47",
+    "name": "박세진",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "46",
+    "name": "박시영",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "67",
+    "name": "박시윤",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "60",
+    "name": "박영현",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "63",
+    "name": "박준혁",
+    "team": "KT",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "27",
+    "name": "배정대",
+    "team": "KT",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "19",
+    "name": "배제성",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "35",
+    "name": "백선기",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "107",
+    "name": "백현수",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "43",
+    "name": "벤자민",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "99",
+    "name": "서경찬",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "30",
+    "name": "소형준",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "41",
+    "name": "손동현",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "57",
+    "name": "손민석",
+    "team": "KT",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "12",
+    "name": "송민섭",
+    "team": "KT",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "40",
+    "name": "슐서",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "15",
+    "name": "신병률",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "56",
+    "name": "신본기",
+    "team": "KT",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "8",
+    "name": "안치영",
+    "team": "KT",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "25",
+    "name": "알포드",
+    "team": "KT",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "2",
+    "name": "양승혁",
+    "team": "KT",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "18",
+    "name": "엄상백",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "4",
+    "name": "오윤석",
+    "team": "KT",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "111",
+    "name": "우종휘",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "65",
+    "name": "윤강찬",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "109",
+    "name": "이동관",
+    "team": "KT",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "37",
+    "name": "이상동",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "21",
+    "name": "이상우",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "16",
+    "name": "이상호",
+    "team": "KT",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "68",
+    "name": "이선우",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "13",
+    "name": "이시원",
+    "team": "KT",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "51",
+    "name": "이정현",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "102",
+    "name": "이정훈",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "66",
+    "name": "이종혁",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "105",
+    "name": "이준명",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "101",
+    "name": "이준희",
+    "team": "KT",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "17",
+    "name": "이채호",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "34",
+    "name": "이호연",
+    "team": "KT",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "22",
+    "name": "장성우",
+    "team": "KT",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "3",
+    "name": "장준원",
+    "team": "KT",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "64",
+    "name": "전용주",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "108",
+    "name": "정우성",
+    "team": "KT",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "93",
+    "name": "정정우",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "58",
+    "name": "정준영",
+    "team": "KT",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "104",
+    "name": "정진호",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "42",
+    "name": "조대현",
+    "team": "KT",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "39",
+    "name": "조병욱",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "23",
+    "name": "조용호",
+    "team": "KT",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "54",
+    "name": "조이현",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "59",
+    "name": "조현우",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "38",
+    "name": "주권",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "94",
+    "name": "지강혁",
+    "team": "KT",
+    "position": "내야수"
+  },
+  {
+    "uniform_number": "61",
+    "name": "최동희",
+    "team": "KT",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "69",
+    "name": "최성민",
+    "team": "KT",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "110",
+    "name": "최정태",
+    "team": "KT",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "28",
+    "name": "하준호",
+    "team": "KT",
+    "position": "투수"
+  },
+  {
+    "uniform_number": "95",
+    "name": "한지용",
+    "team": "KT",
+    "position": "포수"
+  },
+  {
+    "uniform_number": "31",
+    "name": "홍현빈",
+    "team": "KT",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "103",
+    "name": "황의준",
+    "team": "KT",
+    "position": "외야수"
+  },
+  {
+    "uniform_number": "10",
+    "name": "황재균",
+    "team": "KT",
+    "position": "내야수"
+  }
 ]
