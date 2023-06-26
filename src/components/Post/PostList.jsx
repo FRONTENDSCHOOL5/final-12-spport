@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Post from './Post';
 import styled from 'styled-components';
 import { sortFeedPost } from '../../api/GameAPI/FeedGame';
+import { useInView } from 'react-intersection-observer';
 
 const PostListStyle = styled.ul`
   border-top: 0.5px solid var(--color-maingrey);
@@ -23,6 +24,8 @@ const PostListStyle = styled.ul`
 
 export default function PostList({ post, onlyGame, isHome }) {
   const [sortedPost, setSortedPost] = useState([]);
+  const [ref, inView] = useInView();
+  const [page, setPage] = useState(0);
 
   useEffect(() => {
     if (isHome) {
@@ -32,17 +35,24 @@ export default function PostList({ post, onlyGame, isHome }) {
     }
   }, [post, onlyGame]);
 
-  console.log(sortedPost);
+  useEffect(() => {
+    if (inView) {
+      isHome ? setPage((prev) => prev + 10) : setPage((prev) => prev + 3);
+    }
+  }, [inView]);
 
   return (
     <PostListStyle>
-      {sortedPost.map((item) => {
-        return (
-          <li key={item.id}>
-            <Post post={item} />
-          </li>
-        );
+      {sortedPost.map((item, index) => {
+        if (index < page) {
+          return (
+            <li key={item.id}>
+              <Post post={item} />
+            </li>
+          );
+        }
       })}
+      <span ref={ref} />
     </PostListStyle>
   );
 }
