@@ -7,6 +7,7 @@ import MButton from '../Common/Button/MButton';
 import IconShareBtn from '../../assets/image/icon-share-btn.svg';
 import IconMessageBtn from '../../assets/image/icon-message-btn.svg';
 import IconCamera from '../../assets/image/icon-camera.svg';
+import IconCalendar from '../../assets/image/icon-calendar.svg';
 import { useRecoilState } from 'recoil';
 import { userToken, accountname } from '../../atom/loginAtom';
 import PostList from '../Post/PostList';
@@ -32,10 +33,10 @@ const NoPostStyle = styled.section`
     text-align: center;
     img {
       vertical-align: top;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
     h2 {
-      font-size: 25px;
+      font-size: 20px;
       font-weight: bolder;
     }
     button {
@@ -59,14 +60,21 @@ const LikedGameStyle = styled.section`
   }
 
   /* 직관일정 없을 때 */
-  & > p {
+  & > div {
     width: fit-content;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 25px;
-    font-weight: bold;
+    text-align: center;
+    p {
+      font-size: 17px;
+      font-weight: bold;
+    }
+    img {
+      vertical-align: top;
+      margin-bottom: 10px;
+    }
   }
 `;
 const Container = styled.div`
@@ -228,7 +236,10 @@ function UserProfile({ profile }) {
       <LikedGameStyle className='section-game'>
         <h2>직관 일정</h2>
         {planGame.length === 0 ? (
-          <p>직관일정 없음</p>
+          <div>
+            <img src={IconCalendar} alt='' />
+            <p>직관일정 없음</p>
+          </div>
         ) : (
           <CardList games={planGame} />
         )}
@@ -334,7 +345,10 @@ function MyProfile({ profile }) {
       <LikedGameStyle className='section-game'>
         <h2>직관 일정</h2>
         {planGame.length === 0 ? (
-          <p>직관일정 없음</p>
+          <div>
+            <img src={IconCalendar} alt='' />
+            <p>직관일정 없음</p>
+          </div>
         ) : (
           <CardList games={planGame} />
         )}
