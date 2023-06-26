@@ -112,14 +112,9 @@ export default function EditPost(props) {
   // post값이 바뀌면 post길이가 0보다 큰지 확인해서 값을 바꿔준다.
   useEffect(() => {
     console.log('use effect 실행 post 바뀜');
-    // 이건 왜 안되지
-    // if (post.length > 0) {
-    // if (post.length) {
-
     // 첫 렌더링시 빈 배열[] 예외처리
     if (post.length !== 0) {
       // 불러온 이미지리스트 분리해서 넣어준다
-      // const previurl = post.post.image.split(',');
       if (post.post.image !== []) {
         const previurl = post.post.image.split(',');
         if (previurl[0] !== '') {
@@ -127,10 +122,7 @@ export default function EditPost(props) {
         }
       }
 
-      console.log(images);
-
       // 불러온 게시물 글 넣기
-      // 문제 : 별로 리액트 같지 않음
       document.querySelector('.text-area').value = post.post.content;
       setText(post.post.content);
     }
@@ -140,7 +132,6 @@ export default function EditPost(props) {
   // textarea가 바뀌면 내용을 가져와서 setText()로 text에 넣어줌
   const postContent = (e) => {
     console.log('내용 바뀜');
-    // console.log(e.target.value);
     setText(e.target.value);
   };
   // postContent 끝
@@ -158,7 +149,6 @@ export default function EditPost(props) {
 
     // setImages로 새로운 이미지 넣기
     setImages(modify);
-    // setImage([]);
   };
   // imageDeleteModify 끝
 
@@ -173,7 +163,6 @@ export default function EditPost(props) {
         },
       };
       const data = await PUT_API(token, '/post/' + postId, bodyData);
-      // 일단 수정한 포스트 페이지로 이동하도록
       navigate('/post/' + postId);
     };
     setModalItem(['게시물을 수정하시겠습니까?', '수정', editPost]);
@@ -191,17 +180,9 @@ export default function EditPost(props) {
       alert('사진은 3장까지만 가능합니다');
       return;
     }
-    if (imageFile.length > 2) {
-      alert('사진은 3장까지만 가능합니다');
-      return;
-    }
-    console.log(imageFile);
 
     //폼데이터를 만들고 내 데이터를 추가
     const formData = new FormData();
-    // for (let i = 0; i < imageFile.length; i++) {
-    //   formData.append('image', imageFile[i]);
-    // }
     formData.append('image', imageFile);
     console.log(formData);
 
@@ -223,28 +204,18 @@ export default function EditPost(props) {
     });
 
     setImages([...images, ...fileUrl]);
-    // console.log(fileUrl);
 
     console.log(images);
-    // console.log(fileUrl);
-    // setImages(fileUrl);
   };
   // imageUploadModify 끝
 
-  //콘솔에서 이미지 확인
-  // console.log(image);
-
   // 이미지 전송을 위해 이미지 주소 이어 붙이기
   const iurl = images.join(',');
-  // console.log(iurl);
 
   // iurl이 바뀔때만 setImageUrl로 imageUrl 변경
   useEffect(() => {
     setImageUrl(iurl);
   }, [iurl]);
-
-  // console.log(images);
-  // console.log(imageUrl);
 
   // textarea의 길이를 들어오는 게시글에 따라서 조정되게 하는 함수
   const autoResizeTextarea = () => {
@@ -258,7 +229,6 @@ export default function EditPost(props) {
   };
   // autoResizeTextarea 끝
 
-  //////////
   //렌더링
   return (
     <>
