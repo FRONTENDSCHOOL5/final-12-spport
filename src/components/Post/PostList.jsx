@@ -33,6 +33,7 @@ export default function PostList({ post, onlyGame, isHome }) {
     } else {
       setSortedPost(post);
     }
+    setPage(0);
   }, [post, onlyGame]);
 
   useEffect(() => {
