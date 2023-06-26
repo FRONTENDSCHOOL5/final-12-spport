@@ -1,5 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+// import required modules
+import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper';
+import NoImage from '../../assets/image/noimage.png';
 
 const RegularPostStyle = styled.div`
   p {
@@ -9,19 +18,28 @@ const RegularPostStyle = styled.div`
     word-break: break-all;
   }
   .post-img-wrapper {
-    box-shadow: inset 0 0 10px red;
-    display: flex;
-    gap: 20px;
-    overflow: scroll;
   }
 
   img {
     width: calc(100% - 10px);
+    background-color: #fff;
     aspect-ratio: 304/228;
-    object-fit: cover;
+    object-fit: contain;
     border: 0.5px solid var(--color-steelblue);
     border-radius: 10px;
   }
+
+  /* .swiper-slide { */
+  /* 추가 */
+  /* position: relative; */
+  /* } */
+
+  /* .swiper-slide img { */
+  /* 추가 */
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  /* } */
 `;
 
 export default function RegularPost({ post }) {
@@ -33,15 +51,33 @@ export default function RegularPost({ post }) {
     }, []);
   }
 
+  const handleImgError = (e) => {
+    e.target.src = NoImage;
+  };
+
   return (
     <>
       <RegularPostStyle className='content-wrapper'>
         <p>{post.content}</p>
         <section className='post-img-wrapper'>
-          {images &&
-            images.map((image) => {
-              return <img key={image} src={image} alt='' />;
-            })}
+          <Swiper
+            effect={'fade'}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Navigation, EffectFade, Pagination]}
+            className='mySwiper'
+            loop={true}
+          >
+            {images &&
+              images.map((image) => {
+                return (
+                  <SwiperSlide key={image}>
+                    <img key={image} src={image} alt='' onError={handleImgError}/>
+                  </SwiperSlide>
+                );
+              })}
+          </Swiper>
         </section>
       </RegularPostStyle>
     </>

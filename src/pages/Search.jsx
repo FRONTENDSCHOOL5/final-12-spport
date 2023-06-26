@@ -8,6 +8,7 @@ import UserList from '../components/List/UserList';
 import { useParams } from 'react-router-dom';
 import { getSearchAPI } from '../api/SearchAPI';
 import ListLoader from '../components/Skeleton/ListLoader';
+import Empty from '../components/Common/Empty';
 
 const MainStyle = styled.main`
   height: 100%;
@@ -37,6 +38,9 @@ export default function Search() {
     <>
       <Header search />
       <MainStyle>
+        {!isLoad && searchUser.length === 0 && (
+          <Empty message='검색된 유저가 없습니다.' />
+        )}
         {isLoad ? <ListLoader /> : <UserList searchUser={searchUser} />}
       </MainStyle>
       <NavBar page='홈' />

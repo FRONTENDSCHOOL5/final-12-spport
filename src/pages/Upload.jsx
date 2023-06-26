@@ -1,15 +1,21 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Header from '../components/Common/Header/Header';
 import styled from 'styled-components';
-import { ProfileImage36 } from '../components/Common/ProfileImage';
-import { ImageButton } from '../components/Common/Button/ImageButton';
+import { ProfileImage42 } from '../components/Common/ProfileImage';
+import {
+  ImageButton,
+  UploadButton,
+} from '../components/Common/Button/ImageButton';
 import { POST_API } from '../api/CommonAPI';
 import { useNavigate } from 'react-router-dom';
-import { userToken } from '../atom/loginAtom';
+import { userToken, userimage } from '../atom/loginAtom';
 import { useRecoilState } from 'recoil';
+import { isModalOpen, modalItems } from '../atom/modalAtom';
+import iconClose from '../assets/image/icon-close.svg';
 
 const USection = styled.section`
   padding: 70px 20px;
+  position: relative;
 
   .form-wrapper {
     width: 100%;
@@ -19,7 +25,7 @@ const USection = styled.section`
 
   form {
     position: relative;
-    width: 100%;
+    width: calc(100% - 52px);
   }
 
   textarea {
@@ -31,10 +37,10 @@ const USection = styled.section`
   }
 
   .upload-images-wrapper {
-    margin-top: 10px;
+    margin-left: 60px;
     display: flex;
     gap: 20px;
-    padding-left: 60px;
+    padding: 20px;
     overflow: scroll;
   }
 
@@ -48,23 +54,18 @@ const USection = styled.section`
   }
 
   .delete-button {
-    width: 50px;
     position: absolute;
     top: 10px;
     right: 10px;
   }
 
-  img {
-    border: 1px solid black;
+  .upload-image {
+    border: 1px solid var(--color-bg);
     border-radius: 20px;
   }
 `;
 
-const StyledProfileImage36 = styled(ProfileImage36)`
-  flex-shrink: 0;
-`;
-
-const StyledImageButton = styled(ImageButton)`
+const StyledUploadButton = styled(UploadButton)`
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -72,6 +73,7 @@ const StyledImageButton = styled(ImageButton)`
 
 export default function Upload(props) {
   const [token, setToken] = useRecoilState(userToken);
+  const [userImage, setUserImage] = useRecoilState(userimage);
   // 요청에 사용하는 url
   const url = '/post';
 
@@ -84,15 +86,25 @@ export default function Upload(props) {
   const [images, setImages] = useState([]);
   //업로드할 게시물 이미지 서버주소
   const [imageUrl, setImageUrl] = useState('');
+  const [isReady, setIsReady] = useState(false);
+
+  const [isModal, setIsModal] = useRecoilState(isModalOpen);
+  const [modalItem, setModalItem] = useRecoilState(modalItems);
 
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (text === '' && images.length === 0) {
+      setIsReady(true);
+    } else {
+      setIsReady(false);
+    }
+  }, [text, images]);
 
   //게시글 내용
   // textarea가 바뀌면 내용을 가져와서 setText()로 text에 넣어줌
   // 문제 : 자음모음 하나하나 바뀔 때 마다 동작함
   const postContent = (e) => {
-    // console.log('내용 바뀜');
-    // console.log(e.target.value);
     setText(e.target.value);
   };
   // postContent 끝
@@ -102,7 +114,6 @@ export default function Upload(props) {
   // 문제 : 이미지가 이미 이미지서버에 올라가있음
   // 문제 : image가 null이라 엑박뜸
   const imageDelete = () => {
-    console.log('이미지 삭제');
     setImage(null);
   };
   // imageDelete 끝
@@ -110,17 +121,12 @@ export default function Upload(props) {
   // 이미지를 삭제하는 함수
   // setImage()로 image를 null
   const imageDelete2 = (e) => {
-    console.log('이미지 삭제');
-    console.log(e);
-    console.log(e.target);
     setImage(null);
     const deleteImage = document.querySelector('');
   };
   // imageDelete2 끝
 
   const imageDelete3 = (e) => {
-    console.log('이미지 삭제');
-
     // 누른 버튼의 아이디값(키와 동일)을 가져옴
     const deleteImage = e.currentTarget.getAttribute('id');
 
@@ -163,16 +169,20 @@ export default function Upload(props) {
   // 게시글 내용을 서버에 업로드 하는 함수 2
   // 이미지 여러개일 때
   const handleSubmit2 = async () => {
-    const bodyData = {
-      'post': {
-        'content': text,
-        'image': imageUrl,
-      },
-    };
-    const data = await POST_API(token, url, bodyData);
-    console.log(data);
+    setIsModal(true);
+    const uploadPost = async () => {
+      const bodyData = {
+        'post': {
+          'content': text,
+          'image': imageUrl,
+        },
+      };
+      const data = await POST_API(token, url, bodyData);
+      console.log(data);
 
-    navigate('/home');
+      navigate(`/post/${data.post.id}`);
+    };
+    setModalItem(['게시물을 업로드하시겠습니까?', '업로드', uploadPost]);
   };
   // handleSubmit2 끝
 
@@ -297,12 +307,8 @@ export default function Upload(props) {
   };
   // imageUpload3 끝
 
-  //콘솔에서 이미지 확인
-  console.log(image);
-
   // 이미지 전송을 위해 이미지 주소 이어 붙이기
   const iurl = images.join(',');
-  console.log(iurl);
 
   // iurl이 바뀔때만 setImageUrl로 imageUrl 변경
   useEffect(() => {
@@ -328,11 +334,10 @@ export default function Upload(props) {
   //렌더링
   return (
     <>
-      <Header upload onUploadClick={handleSubmit2} />
+      <Header upload onUploadClick={handleSubmit2} disabled={isReady} />
       <USection>
         <section className='form-wrapper'>
-          {/* <ProfileImage36 /> */}
-          <StyledProfileImage36 />
+          <ProfileImage42 image={userImage} />
           <form>
             <textarea
               className='text-area'
@@ -343,7 +348,7 @@ export default function Upload(props) {
               onChange={postContent}
             ></textarea>
             {/* 버튼을 누르면 포스트가 올라가고 끝인데 새로고침을 해야하는지 다른 페이지로 이동해야 하는지 */}
-            <StyledImageButton func={imageUpload3} />
+            <StyledUploadButton func={imageUpload3} />
           </form>
         </section>
         <section className='upload-images-wrapper'>
@@ -368,7 +373,7 @@ export default function Upload(props) {
                     id={image}
                     onClick={imageDelete3}
                   >
-                    삭제버튼
+                    <img src={iconClose} alt='이미지 삭제' />
                   </button>
                   <img className='upload-image' width={'100%'} src={image} />
                 </article>

@@ -13,7 +13,8 @@ import {
   username,
   intro,
 } from '../atom/loginAtom';
-import bsData from '.././data/sport_bs_users.json';
+import { isModalOpen, modalItems } from '../atom/modalAtom';
+import bsData from '../data/sport_bs_users.json';
 
 export default function EditProfile() {
   const URL = 'https://api.mandarin.weniv.co.kr';
@@ -27,6 +28,8 @@ export default function EditProfile() {
   const [userimageValue, setUserimageValue] = useRecoilState(userimage);
   const [usernameValue, setUsernameValue] = useRecoilState(username);
   const [introValue, setIntroValue] = useRecoilState(intro);
+  const [isModal, setIsModal] = useRecoilState(isModalOpen);
+  const [modalItem, setModalItem] = useRecoilState(modalItems);
 
   const [userInfo, setUserInfo] = useState({
     user: {
@@ -103,8 +106,12 @@ export default function EditProfile() {
 
   const handleUSaveClick = async (e) => {
     e.preventDefault();
-    await handleEdit(userInfo);
-    navigate(`/profile/${userInfo.user.accountname}`);
+    setIsModal(true);
+    const editProfile = async () => {
+      await handleEdit(userInfo);
+      navigate(`/profile/${userInfo.user.accountname}`);
+    };
+    setModalItem(['프로필을 수정하시겠습니까?', '수정', editProfile]);
   };
 
   const handleAccountnameValid = async () => {

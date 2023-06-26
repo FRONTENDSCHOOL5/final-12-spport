@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
 import { userToken, userimage } from '../../atom/loginAtom';
 
-const InputCommentStyle = styled.form`
+export const InputCommentStyle = styled.form`
   position: fixed;
   bottom: 0;
   width: 390px;
