@@ -96,7 +96,7 @@ const SectionFilter = styled.section`
     font-weight: bold;
   }
 
-  &::after {
+  &::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -121,15 +121,15 @@ const SectionList = styled.section`
       padding: 10px;
 
       button {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: bold;
-        width: 30px;
-        height: 30px;
+        width: 27px;
+        height: 27px;
       }
     }
 
     span {
-      font-size: 20px;
+      font-size: 18px;
       color: var(--color-navy);
     }
   }
