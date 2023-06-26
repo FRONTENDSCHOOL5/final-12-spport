@@ -16,6 +16,7 @@ import Search from '../pages/Search';
 import Profile from '../pages/Profile';
 import Splash from '../pages/Splash';
 import EditPost from '../pages/EditPost';
+import PlayerList from '../pages/PlayerList';
 import { useRecoilState } from 'recoil';
 import { loginState } from '../atom/loginAtom';
 
@@ -48,6 +49,7 @@ export default function Router() {
         <Route path='' element={<Profile />} />
         <Route path='follower' element={<Follow />} />
         <Route path='following' element={<Follow />} />
+        <Route path='player' element={<PlayerList />} />
       </Route>
       <Route path='/chat/:id' element={<ChatRoom />} />
       <Route path='/search' element={<Search />} />

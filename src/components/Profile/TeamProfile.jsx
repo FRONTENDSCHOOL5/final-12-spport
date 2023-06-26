@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import CommonProfile from './CommonProfile';
 import styled from 'styled-components';
 import MButton from '../Common/Button/MButton';
@@ -46,6 +46,7 @@ export default function TeamProfile({ profile }) {
   const [isFollow, setIsFollow] = useState(profile.isfollow);
   const [numFollower, setNumFollower] = useState(profile.followerCount);
   const { id } = useParams();
+  const navigate = useNavigate();
 
   const handleState = async () => {
     if (isFollow) {
@@ -70,6 +71,10 @@ export default function TeamProfile({ profile }) {
     getData();
   }, []);
 
+  const handlePlayerList = () => {
+    navigate('player');
+  };
+
   return (
     <>
       <Container>
@@ -80,7 +85,7 @@ export default function TeamProfile({ profile }) {
             active={isFollow}
           />
         </CommonProfile>
-        <BtnPlayer>선수보러가기</BtnPlayer>
+        <BtnPlayer onClick={handlePlayerList}>선수보러가기</BtnPlayer>
         <SectionGameStyle className='section-game'>
           <h2>경기 일정</h2>
           <GameList games={game} />
