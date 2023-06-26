@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-// npm i swiper 필요
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -9,6 +8,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 // import required modules
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper';
+import NoImage from '../../assets/image/noimage.png';
 
 const RegularPostStyle = styled.div`
   p {
@@ -51,6 +51,10 @@ export default function RegularPost({ post }) {
     }, []);
   }
 
+  const handleImgError = (e) => {
+    e.target.src = NoImage;
+  };
+
   return (
     <>
       <RegularPostStyle className='content-wrapper'>
@@ -69,7 +73,7 @@ export default function RegularPost({ post }) {
               images.map((image) => {
                 return (
                   <SwiperSlide key={image}>
-                    <img key={image} src={image} alt='' />
+                    <img key={image} src={image} alt='' onError={handleImgError}/>
                   </SwiperSlide>
                 );
               })}

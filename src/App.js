@@ -1,8 +1,8 @@
 import React from 'react';
 import GlobalStyles from './style/GlobalStyles';
 import Router from './routes/Router';
-import BottomSheet from './components/CommonBottomSheet';
-import Modal from './components/CommonModal';
+import BottomSheet from './components/ModalUtil/CommonBottomSheet';
+import Modal from './components/ModalUtil/CommonModal';
 import styled from 'styled-components';
 import { useRecoilState } from 'recoil';
 import { isBottomSheetOpen } from './atom/bottomSheetAtom';

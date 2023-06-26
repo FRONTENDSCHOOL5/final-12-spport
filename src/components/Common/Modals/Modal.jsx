@@ -16,6 +16,7 @@ const ModalStyle = styled.article`
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 20;
   .modal-wrapper {
     position: fixed;
     width: 252px;

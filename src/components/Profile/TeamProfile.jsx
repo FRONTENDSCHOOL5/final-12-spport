@@ -11,12 +11,13 @@ import { followAPI, unfollowAPI } from '../../api/FollowAPI';
 
 const SectionGameStyle = styled.section`
   background: white;
+  padding-bottom: 60px;
   h2 {
     border-bottom: 0.5px solid var(--color-maingrey);
     padding: 12px 20px;
   }
   ul {
-    padding: 20px;
+    padding: 20px 16px;
   }
 `;
 
@@ -30,8 +31,8 @@ const Container = styled.div`
 const BtnPlayer = styled.button`
   background-color: #fff;
   padding: 12px 0;
-  border-top: 1px solid var(--color-maingrey);
-  border-bottom: 1px solid var(--color-maingrey);
+  border-top: 0.5px solid var(--color-maingrey);
+  border-bottom: 0.5px solid var(--color-maingrey);
   &:not(:disabled):hover {
     background-color: var(--color-lime);
     color: var(--color-navy);
