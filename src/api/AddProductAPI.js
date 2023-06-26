@@ -45,6 +45,8 @@ const getProductByPostIdAPI = async (token, accountname, ids) => {
     const idlist = item.link.split(',');
     if (idlist.includes(ids[0])) {
       return true;
+    } else if (ids.length == 2 && idlist.includes(ids[1])) {
+      return true;
     }
   });
   return data;

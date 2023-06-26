@@ -103,9 +103,7 @@ export default function Post({ post }) {
       <PostStyle>
         <PostProfile author={post.author} onMoreClick={handleMoreClick} />
         <div className='post-wrapper'>
-          <Link to={`/post/${post.id}`}>
-            {isTeam ? <GamePost post={post} /> : <RegularPost post={post} />}
-          </Link>
+          {isTeam ? <GamePost post={post} /> : <RegularPost post={post} />}
           <BtnGroup
             id={post.id}
             hearted={post.hearted}
