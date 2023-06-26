@@ -21,12 +21,18 @@ const PostListStyle = styled.ul`
   }
 `;
 
-export default function PostList({ post, onlyGame }) {
+export default function PostList({ post, onlyGame, isHome }) {
   const [sortedPost, setSortedPost] = useState([]);
 
   useEffect(() => {
-    setSortedPost(sortFeedPost(post, onlyGame));
+    if (isHome) {
+      setSortedPost(sortFeedPost(post, onlyGame));
+    } else {
+      setSortedPost(post);
+    }
   }, [post, onlyGame]);
+
+  console.log(sortedPost);
 
   return (
     <PostListStyle>
