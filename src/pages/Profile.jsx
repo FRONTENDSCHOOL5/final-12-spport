@@ -14,7 +14,7 @@ import TeamProfileLoader from '../components/Skeleton/TeamProfileLoader';
 const MainStyle = styled.main`
   padding: 50px 0 60px;
   background: var(--color-bg);
-  height: 100vh;
+  /* height: 100vh; */
 `;
 
 export default function Profile() {
