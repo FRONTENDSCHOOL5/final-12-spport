@@ -3,16 +3,10 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// import 'swiper/css';
-// import 'swiper/css/effect-fade';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
-// import { EffectFade, Navigation, Pagination } from 'swiper';
-import 'swiper/swiper-bundle.min.css';
-import 'swiper/swiper.min.css';
-import 'swiper/components/effect-fade/effect-fade.min.css';
-import 'swiper/components/navigation/navigation.min.css';
-import 'swiper/components/pagination/pagination.min.css';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import SwiperCore, { EffectFade, Navigation, Pagination } from 'swiper';
 import NoImage from '../../assets/image/noimage.png';
 
@@ -53,13 +47,9 @@ const RegularPostStyle = styled.div`
     font-weight: 600 !important;
   }
 
-  /* .swiper-pagination {
-    position: absolute;
-    bottom: 0;
-  } */
-  /* .swiper-pagination-bullet {
-    background: black !important;
-  } */
+  .swiper-pagination-bullet {
+    background: var(--color-lime) !important;
+  }
 `;
 
 export default function RegularPost({ post }) {
@@ -89,14 +79,12 @@ export default function RegularPost({ post }) {
           )}
           {images.length > 1 && (
             <Swiper
-              // modules={[Navigation, EffectFade, Pagination]}
+              modules={[Navigation, EffectFade, Pagination]}
               className='mySwiper'
               effect={'fade'}
               spaceBetween={0}
               pagination={{
-                el: '.mySwiper .swiper-pagination',
                 clickable: true,
-                type: 'bullets',
               }}
               observer='true'
               observeParents='true'
@@ -104,9 +92,9 @@ export default function RegularPost({ post }) {
               slidePerView={1}
               navigation
             >
-              {images.map((image) => {
+              {images.map((image, index) => {
                 return (
-                  <SwiperSlide key={image}>
+                  <SwiperSlide key={index}>
                     <img
                       key={image}
                       src={image}
