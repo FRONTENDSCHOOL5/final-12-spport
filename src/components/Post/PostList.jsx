@@ -30,10 +30,10 @@ export default function PostList({ post, onlyGame, isHome }) {
   useEffect(() => {
     if (isHome) {
       setSortedPost(sortFeedPost(post, onlyGame));
+      setPage(0);
     } else {
       setSortedPost(post);
     }
-    setPage(0);
   }, [post, onlyGame]);
 
   useEffect(() => {
