@@ -1,7 +1,7 @@
 import React from 'react';
 import PostProfile from './PostProfile';
 import styled from 'styled-components';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import GamePost from './GamePost';
 import RegularPost from './RegularPost';
 import BtnGroup from './BtnGroup';
@@ -44,6 +44,7 @@ export default function Post({ post }) {
   const displayDate = `${date.slice(0, 4)}년 ${parseInt(
     date.slice(5, 7),
   )}월 ${parseInt(date.slice(8))}일`;
+  const loca = useLocation().pathname.split('/')[1];
 
   const [token, setToken] = useRecoilState(userToken);
   const [accountName, setAccountName] = useRecoilState(accountname);
@@ -64,7 +65,11 @@ export default function Post({ post }) {
             '게시물이 삭제되었습니다',
             '확인',
             function () {
-              navigate(-1);
+              if(location === 'post') {
+                navigate(-1);
+              } else {
+                location.reload();
+              }
             },
           ]);
         };
