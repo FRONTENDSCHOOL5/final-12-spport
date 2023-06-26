@@ -46,7 +46,7 @@ export default function Home(props) {
         {isLoad ? (
           <PostLoader />
         ) : (
-          <PostList post={feed} onlyGame={filterClick} />
+          <PostList post={feed} onlyGame={filterClick} isHome />
         )}
       </FullSection>
       <NavBar page='홈' />

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import WeatherCard from './WeatherCard';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { getWeather, getWeatherPosted } from '../../api/WeatherAPI';
 import { arrToGame } from '../../api/GameAPI/AddGameAPI';
 
@@ -61,24 +62,28 @@ export default function GamePost({ post }) {
   }, []);
   return (
     <>
-      <GamePostStyle className='content-article'>
-        <p>
-          {isHome
-            ? `오늘 ${game.home}의 홈 게임이 있습니다.`
-            : `오늘 ${game.away}의 어웨이 게임이 있습니다.`}
-          <br />
-          {game.date} ({game.day}) {game.time} <br />
-          <span>
-            <strong>{game.home}</strong> vs. <strong>{game.away}</strong>
-          </span>{' '}
-          <br />
-          in {game.full_stadium}
-        </p>
-      </GamePostStyle>
-      {Object.keys(weather).length > 0 && !isFuture && (
-        <WeatherCard city={game.stadium} weather={weather} />
-      )}
-      {isFuture && <NoWeatherStyle>--- 날씨 업데이트 예정 ---</NoWeatherStyle>}
+      <Link to={`/post/${post.id}`}>
+        <GamePostStyle className='content-article'>
+          <p>
+            {isHome
+              ? `오늘 ${game.home}의 홈 게임이 있습니다.`
+              : `오늘 ${game.away}의 어웨이 게임이 있습니다.`}
+            <br />
+            {game.date} ({game.day}) {game.time} <br />
+            <span>
+              <strong>{game.home}</strong> vs. <strong>{game.away}</strong>
+            </span>{' '}
+            <br />
+            in {game.full_stadium}
+          </p>
+        </GamePostStyle>
+        {Object.keys(weather).length > 0 && !isFuture && (
+          <WeatherCard city={game.stadium} weather={weather} />
+        )}
+        {isFuture && (
+          <NoWeatherStyle>--- 날씨 업데이트 예정 ---</NoWeatherStyle>
+        )}
+      </Link>
     </>
   );
 }

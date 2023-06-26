@@ -1,7 +1,38 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { useRecoilState } from 'recoil';
 import { isBottomSheetOpen } from '../../../atom/bottomSheetAtom';
+import { useState } from 'react';
+
+const animation = css`
+  @keyframes slideOn {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes slideOff {
+    from {
+      transform: translateY(0%);
+    }
+    to {
+      transform: translateY(100%);
+    }
+  }
+`;
+
+const BsAnimationStyle = styled.div`
+  ${animation}
+  &.up {
+    animation: slideOn 0.5s ease-in-out 0s 1 normal forwards;
+  }
+  &.down {
+    animation: slideOff 0.5s ease-in-out 0s 1 normal forwards;
+  }
+`;
 
 const BottomSheetStyle = styled.article`
   position: fixed;
@@ -23,6 +54,7 @@ const BottomSheetStyle = styled.article`
     bottom: 0;
     overflow: hidden;
     padding-bottom: 10px;
+    /* animation: slideOn 0.5s ease-in-out 0s 1 normal forwards; */
     button {
       width: 100%;
       padding: 14px 26px;
@@ -50,15 +82,20 @@ const BottomSheetStyle = styled.article`
   }
 `;
 
-// https://seo-tory.tistory.com/73
 export default function BottomSheet({ items }) {
   const [isBsOpen, setIsBsOpen] = useRecoilState(isBottomSheetOpen);
+  const [effect, setEffect] = useState('up');
   const closeBottomSheet = () => {
-    setIsBsOpen(false);
+    if (isBsOpen) {
+      setEffect('down');
+      setTimeout(() => {
+        setIsBsOpen(false);
+      }, 500);
+    }
   };
   return (
     <BottomSheetStyle onClick={closeBottomSheet}>
-      <div className='bottomsheet'>
+      <BsAnimationStyle className={`bottomsheet ${effect}`}>
         <button className='btn-header'>
           <span></span>
         </button>
@@ -71,7 +108,7 @@ export default function BottomSheet({ items }) {
             );
           })}
         </ul>
-      </div>
+      </BsAnimationStyle>
     </BottomSheetStyle>
   );
 }

@@ -117,6 +117,7 @@ function MyProfile({ profile }) {
     getLikedGameData();
     getPostData();
   }, []);
+
   return (
     <Container>
       <CommonProfile profile={profile} numFollower={numFollower}>
