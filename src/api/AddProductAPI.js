@@ -2,10 +2,8 @@ import { GET_API, POST_API, DELETE_API } from './CommonAPI';
 import { getHomeImage } from './GameAPI/AddGameAPI';
 
 const addProductAPI = async (token, post, ids, isGame) => {
-  console.log(post);
   const team_name = isGame ? post.home : post.content.split(',')[3];
   const content = isGame ? Object.values(post).join(',') : post.content;
-  console.log(team_name, content);
   const productData = {
     'product': {
       'itemName': content,
@@ -59,7 +57,7 @@ const getProductDetailAPI = async (token, product_id) => {
 
 const deleteProductAPI = async (token, accountname, ids) => {
   const plist = await getProductByPostIdAPI(token, accountname, ids);
-  const product_id = plist[0].id;
+  const product_id = plist[0]?.id;
   const data = await DELETE_API(token, `/product/${product_id}`);
   return data;
 };
