@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams, Link } from 'react-router-dom';
 import CommonProfile from './CommonProfile';
 import CardList from '../List/CardList';
 import MButton from '../Common/Button/MButton';
@@ -54,6 +54,11 @@ const LikedGameStyle = styled.section`
   height: 205px;
   h2 {
     padding: 20px 20px 0;
+    a {
+      margin-left: 20px;
+      font-size: 12px;
+      color: var(--color-steelblue);
+    }
   }
   ul {
     overflow-x: scroll;
@@ -119,6 +124,8 @@ const AlbumFeed = styled.ul`
     border: 0.5px solid #c4c4c4;
     button {
       position: relative;
+      width: 100%;
+      height: 100%;
       .albumThumbnail {
         width: 100%;
         height: 100%;
@@ -178,6 +185,7 @@ function UserProfile({ profile }) {
   const [numFollower, setNumFollower] = useState(profile.followerCount);
   const [planGame, setPlanGame] = useState([]);
   const [listType, setListType] = useState('list');
+  const gameLink = '/schedule/' + profile.accountname;
 
   const handleFollow = async () => {
     if (isFollow) {
@@ -234,7 +242,9 @@ function UserProfile({ profile }) {
 
       {/* 직관 일정 */}
       <LikedGameStyle className='section-game'>
-        <h2>직관 일정</h2>
+        <h2>
+          직관 일정 <Link to={gameLink}>전체보기</Link>
+        </h2>
         {planGame.length === 0 ? (
           <div>
             <img src={IconCalendar} alt='' />
@@ -272,7 +282,7 @@ function UserProfile({ profile }) {
           <AlbumFeed>
             {albumPostData.map((item) => {
               return (
-                <li>
+                <li key={item.id}>
                   <button
                     type='button'
                     onClick={() => navigate(`/post/${item.id}`)}
@@ -283,7 +293,7 @@ function UserProfile({ profile }) {
                       alt=''
                     />
                     {item.image.split(',').length > 1 && (
-                      <div class='layer'></div>
+                      <div className='layer'></div>
                     )}
                   </button>
                 </li>
@@ -304,6 +314,7 @@ function MyProfile({ profile }) {
   const [token, setToken] = useRecoilState(userToken);
   const [accountName, setAccountName] = useRecoilState(accountname);
   const [listType, setListType] = useState('list');
+  const gameLink = '/schedule/' + profile.accountname;
 
   useEffect(() => {
     const getLikedGameData = async () => {
@@ -343,7 +354,9 @@ function MyProfile({ profile }) {
 
       {/* 직관 일정 */}
       <LikedGameStyle className='section-game'>
-        <h2>직관 일정</h2>
+        <h2>
+          직관 일정 <Link to={gameLink}>전체보기</Link>
+        </h2>
         {planGame.length === 0 ? (
           <div>
             <img src={IconCalendar} alt='' />
@@ -379,7 +392,7 @@ function MyProfile({ profile }) {
           <AlbumFeed>
             {albumPostData.map((item) => {
               return (
-                <li>
+                <li key={item.id}>
                   <button
                     type='button'
                     onClick={() => navigate(`/post/${item.id}`)}
