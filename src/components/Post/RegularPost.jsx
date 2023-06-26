@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+// import 'swiper/css';
+// import 'swiper/css/effect-fade';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
+// import { EffectFade, Navigation, Pagination } from 'swiper';
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.min.css';
 import 'swiper/components/effect-fade/effect-fade.min.css';
