@@ -11,7 +11,7 @@ const writeCommentAPI = async (token, post_id, content) => {
 };
 
 const getCommentAPI = async (token, post_id) => {
-  const data = await GET_API(token, `/post/${post_id}/comments`);
+  const data = await GET_API(token, `/post/${post_id}/comments?limit=100`);
   return data;
 };
 
