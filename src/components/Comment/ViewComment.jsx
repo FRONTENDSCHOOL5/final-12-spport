@@ -43,8 +43,8 @@ const VComment = styled.article`
     color: var(--color-darkgrey);
   }
   .w-content {
-    padding-left: 60px;
-    padding: 10px 20px 10px 50px;
+    /* padding-left: 50px; */
+    padding: 10px 20px 10px 47px;
     font-size: 14px;
     word-break: break-all;
   }
@@ -121,9 +121,8 @@ export default function ViewComment({ comment, post_id }) {
         <section className='w-info'>
           {/* comment가 없으면 댓글이 없습니다 */}
           {/* 나중에 조건부 렌더링으로 아예 다른 페이지가 나오도록 수정 */}
-          <Link to={profileLink}>
-            <p className='w-name'>{comment.author.username}</p>
-          </Link>
+    
+          <p className='w-name'>{comment.author.username}</p>
           <p className='w-time'>{displayDate}</p>
         </section>
         <button className='btn-more' onClick={onMoreClick}></button>

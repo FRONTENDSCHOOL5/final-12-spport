@@ -65,7 +65,7 @@ export default function Post({ post }) {
             '게시물이 삭제되었습니다',
             '확인',
             function () {
-              if(location === 'post') {
+              if(loca === 'post') {
                 navigate(-1);
               } else {
                 location.reload();

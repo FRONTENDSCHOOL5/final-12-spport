@@ -48,17 +48,15 @@ const USection = styled.section`
     width: 150px;
     height: 150px;
     flex-shrink: 0;
+    object-fit: cover;
+    border: 1px solid var(--color-bg);
+    border-radius: 20px;
   }
 
   .delete-button {
     position: absolute;
     top: 10px;
     right: 10px;
-  }
-
-  .upload-image {
-    border: 1px solid var(--color-bg);
-    border-radius: 20px;
   }
 `;
 
