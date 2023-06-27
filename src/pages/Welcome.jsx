@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import logoLime from '../assets/logo/logo-lime.svg';
 
 import {
@@ -66,11 +66,23 @@ const UlLogin = styled.div`
   }
 `;
 
+const slideUp = keyframes`
+  from {
+    transform: translateY(100%);
+    opacity:0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`;
+
 const LoginMethodDiv = styled.div`
   background-color: var(--color-lime);
   border-radius: 20px 20px 0 0;
   padding: 50px 0;
   height: 100%;
+  animation: ${slideUp} 0.7s ease-in-out;
 `;
 
 export const LinkWrap = styled.div`
