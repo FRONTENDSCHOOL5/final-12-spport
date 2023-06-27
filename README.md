@@ -3,24 +3,23 @@
 ## 소개 및 개요
 * 프로젝트 기간 : 2023.06.01 ~ 2023.06.30
 * 배포 URL : 
-* TestID / PW : /
+* TestID / PW : only_lions@test.com / only_lions123
 
 ## [프로젝트 설명]
 * 'SPPORT'은 **스포츠 팬들에게 유용한 정보를 제공하고 사용자가 서로의 일상을 공유하는 SNS 플랫폼**입니다.
 * 'SPPORT'이라는 이름은 'SPORTS'와 'SUPPORT'를 합친 것으로 스포츠 팬들이 그동안 불편하게 느꼈을 부분들을 다양한 기능을 통해 편의를 제공하겠다는 의미를 담았습니다. 
-* 경기장, 팀을 팔로우하여 게시물 피드에서 해당 날씨와 경기 일정에 대해서 알 수 있고 팬들끼리의 팔로우를 통해 서로의 게시글을 확인하고, 댓글과 좋아요를 통해 서로 소통할 수 있습니다.             
+* 팀을 팔로우하여 게시물 피드에서 해당 날씨와 경기 일정에 대해서 알 수 있고 팬들끼리의 팔로우를 통해 서로의 게시글을 확인하고, 댓글과 좋아요를 통해 서로 소통할 수 있습니다.             
 
 ## 목차
 1.[ 팀 소개](#1-팀-소개)  
 2.[ 기술 및 개발 환경](#2-기술-및-개발-환경)  
-3.[ 개발 기간 및 작업 문화](#3-개발-기간-및-작업-문화)  
-4.[ 주요 기능](#4-주요-기능)  
-5.[ 프로젝트 구조](#5-프로젝트-구조)  
-6.[ 역할 분담](#6-역할-분담)  
-7.[ UI](#7-ui)  
-8.[ 페이지 기능](#8-페이지-기능)  
-9.[ 핵심 기능](#9-핵심-기능)  
-10.[ 느낀점](#10-느낀점)
+3.[ 주요 기능](#3-주요-기능)  
+4.[ 프로젝트 구조](#4-프로젝트-구조)  
+5.[ 역할 분담](#5-역할-분담)  
+6.[ UI](#6-ui)  
+7.[ 페이지 기능](#7-페이지-기능)  
+8.[ 핵심 기능](#8-핵심-기능)  
+9.[ 느낀점](#9-느낀점)
 
 
 ## 1. 팀 소개
@@ -33,7 +32,7 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 | :------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | <img width="180" alt="hyeri-woo_profile_img" src="https://avatars.githubusercontent.com/u/107099724?v=4"> | <img width="180"  alt="seoyoung-kim_profile_img" src="https://avatars.githubusercontent.com/u/124869695?v=4"> | <img width="180" alt="mincheol.shin_profile_img" src="https://avatars.githubusercontent.com/u/110030523?v=4"> | <img width="180" alt="gbsb227_profile_img" src="https://avatars.githubusercontent.com/u/126536358?v=4" > |
 | [hyeri-woo](https://github.com/hyeri-woo) | [seoyoung-kim](https://github.com/doong2imdang) | [mincheol.shin](https://github.com/meenoie) | [gbsb227](https://github.com/gbsb227) |
-|![FrontEnd](https://img.shields.io/badge/FrontEnd-3f97fb)</br> ![Team%20Leader](https://img.shields.io/badge/-Team%20leader-yellow)</br> ![Design%20Leader](https://img.shields.io/badge/-Design%20leader-purple)| ![FrontEnd](https://img.shields.io/badge/FrontEnd-3f97fb)</br> ![Communication%20Leader](https://img.shields.io/badge/-Comunication%20Leader-orange) | ![FrontEnd](https://img.shields.io/badge/FrontEnd-3f97fb)</br> ![WorkManagement](https://img.shields.io/badge/-Work%20Management%20leader-f67280) | ![FrontEnd](https://img.shields.io/badge/FrontEnd-3f97fb)</br> |
+| 팀장| 문서 정리 | 깃허브 관리 | 마스코트
 
 ## 2. 기술 및 개발 환경
 ### [사용 기술]
@@ -81,61 +80,266 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
     "semi": true,
     "trailingComma": "all",
     "bracketSpacing": true,
-    "arrowParens": "always"
+    "arrowParens": "always",
+    "quoteProps": "preserve"
 }
 ```
 * <img src="https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=ESLint&logoColor=white">
 ```
 {
-	"extends": ["react-app", "react-app/jest", "naver" "prettier"],
-	"rules": {
-		"no-console": 1,
-        	"react-hooks/exhaustive-deps": 0,
-        	"no-unused-expression": false
-	}
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "prettier"],
+  "rules": {
+    "prettier/prettier": "warn",
+    "react/react-in-jsx-scope": "off",
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "no-extra-semi": "error",
+    "no-tabs": ["error", { "allowIndentationTabs": true }],
+    "react/prop-types": "off",
+    "no-unused-vars": "off",
+    "indent": "off"
+  }
 }
 ```
-### [배포 서비스]
-
-## 3. 개발 기간 및 작업 문화
-### [프로젝트 기간] : 2023.06.01 ~ 2023.06.30
-
-### [작업 문화]
-📍 GitHub Project
-
-📍 GitHub Wiki
-
-## 4. 주요 기능
+## 3. 주요 기능
 ### 🔒 로그인 / 회원가입
 * 로그인
 * 회원가입
+* 프로필 설정
 * 유효성 검사
 * 토큰 검증
 
 ### 📎 피드          
 * 게시글 업로드
-* 무한 스크롤 
+* 무한 스크롤
+* 필터링
 
 ### 🔍 검색
-* 유저 검색
-* 경기장 검색
-* 팀 검색   
+* 유저/팀 검색
+
 
 ### 🖼 게시글
-* 게시글 수정, 삭제
-* 댓글 게시, 삭제
+* 게시글 수정/삭제
+* 댓글 게시/삭제
 * 게시글/댓글 신고
 
 ### 👨🏿‍🤝‍👨🏼프로필
 * 로그아웃
 * 프로필 수정
-* 팔로우 / 팔로잉 
-* 일정 추가       
-* 그리드, 리스트형 게시글
+* 팔로우/팔로잉 
+* 일정 추가
+* 선수 리스트       
+* 앨범형/리스트형 게시글
+* 무한 스크롤 
  
-## 5. 프로젝트 구조
-## 6. 역할 분담
-## 7. UI
-## 8. 페이지 기능
-## 9. 핵심 기능
-## 10. 느낀점
+## 4. 프로젝트 구조
+[폴더구조]
+* api : api들
+* assets : 로고 및 이미지들
+* atom : 상태 관리
+* components : 컴포넌트들
+* data : 내장 데이터
+* pages : 각 페이지들
+* routes : 라우터
+* style : 스타일
+```
+📦 FINAL-12-SPPORT
+├─ .env
+├─ .eslintignore
+├─ .eslintrc.json
+├─ .github 
+│  ├─ ISSUE_TEMPLATE
+│  │  ├─ -basic-issue.md
+│  │  ├─ -bug-issue.md
+│  │  └─ help-issue.md
+│  └─ pull_request_template.md
+├─ .gitignore
+├─ .prettierignore
+├─ .prettierrc
+├─ README.md
+├─ package-lock.json
+├─ package.json
+├─ public
+│  └─ index.html
+└─ src
+   ├─ App.js
+   ├─ index.js
+   ├─ api
+   │  ├─ AddProductAPI.js
+   │  ├─ CommonAPI.js
+   │  ├─ FollowAPI.js
+   │  ├─ ProfileAPI.js
+   │  ├─ SearchAPI.js
+   │  ├─ WeatherAPI.js
+   │  ├─ GameAPI
+   │  │  ├─ AddGameAPI.js
+   │  │  ├─ FeedGame.js
+   │  │  ├─ LikeGameAPI.js
+   │  │  ├─ PostGameAPI.js
+   │  │  └─ TeamProfileGameAPI.js
+   │  ├─ PostAPI.js
+   │  │  ├─ CommentAPI.js
+   │  │  └─ PostDetailAPI.js
+   ├─ assets
+   │  ├─ image
+   │  │  └─ 이미지들
+   │  └─ logo
+   │     └─ text-logo.svg
+   ├─ atom
+   │  ├─ bottomSheetAtom.jsx
+   │  ├─ loginAtom.jsx
+   │  └─ modalAtom.jsx
+   ├─ components
+   │  ├─ Comment
+   │  │  ├─ CommentList.jsx
+   │  │  ├─ InputComment.jsx
+   │  │  └─ ViewComment.jsx
+   │  ├─ Common
+   │  │  ├─ Empty.jsx
+   │  │  ├─ Input.jsx
+   │  │  ├─ NavBar.jsx
+   │  │  ├─ ProfileImage.jsx
+   │  │  ├─ Button
+   │  │  │  ├─ Button.js
+   │  │  │  ├─ ImageButton.jsx
+   │  │  │  ├─ LButton.jsx
+   │  │  │  ├─ MButton.jsx
+   │  │  │  ├─ MsButton.jsx
+   │  │  │  ├─ SButton.jsx
+   │  │  │  ├─ SnsButton.jsx
+   │  │  │  └─ TagButton.jsx
+   │  │  ├─ Filter
+   │  │  │  ├─ FeedFilter.jsx
+   │  │  │  └─ SelectFilter.jsx
+   │  │  ├─ Header
+   │  │  │  ├─ Header.jsx
+   │  │  │  └─ SearchBox.jsx
+   │  │  ├─ Modals
+   │  │  │  ├─ BottomSheet.jsx
+   │  │  │  └─ Modal.jsx
+   │  ├─ Follow
+   │  │  ├─ FollowList.jsx
+   │  │  ├─ Followers.jsx
+   │  │  └─ Followings.jsx
+   │  ├─ List
+   │  │  ├─ CardGrid.jsx
+   │  │  ├─ CardList.jsx
+   │  │  ├─ CardListItem.jsx
+   │  │  ├─ GameList.jsx
+   │  │  ├─ GameListItem.jsx
+   │  │  ├─ UserList.jsx
+   │  │  └─ UserListItem.jsx
+   │  ├─ ModalUtil
+   │  │  ├─ CommonBottomSheet.jsx
+   │  │  └─ CommonModal.jsx
+   │  ├─ Post
+   │  │  ├─ BtnGroup.jsx
+   │  │  ├─ GamePost.jsx
+   │  │  ├─ Post.jsx
+   │  │  ├─ PostList.jsx
+   │  │  ├─ PostProfile.jsx
+   │  │  ├─ RegularPost.jsx
+   │  │  └─ WeatherCard.jsx
+   │  ├─ Profile
+   │  │  ├─ CommonProfile.jsx
+   │  │  ├─ FeedHeader.jsx
+   │  │  ├─ MyProfile.jsx
+   │  │  ├─ ProfleStyle.jsx
+   │  │  ├─ TeamProfile.jsx
+   │  │  └─ UserProfile.jsx
+   │  └─ Skeleton
+   │     ├─ CardLoader.jsx
+   │     ├─ GameLoader.jsx
+   │     ├─ ListLoader.jsx
+   │     ├─ PostLoader.jsx
+   │     ├─ TeamProfileLoader.jsx
+   │     └─ UserProfileLoader.jsx
+   ├─ data
+   │  ├─ baseball_games.json
+   │  ├─ baseball_players.json
+   │  └─ sport_bs_users.json
+   ├─ pages
+   │  ├─ AddGame.jsx
+   │  ├─ Chat.jsx
+   │  ├─ ChatRoom.jsx
+   │  ├─ EditPost.jsx
+   │  ├─ EditProfile.jsx
+   │  ├─ Error.jsx
+   │  ├─ Follow.jsx
+   │  ├─ Home.jsx
+   │  ├─ Login.jsx
+   │  ├─ PlayerList.jsx
+   │  ├─ Post.jsx
+   │  ├─ Profile.jsx
+   │  ├─ Schedule.jsx
+   │  ├─ Search.jsx
+   │  ├─ Signup.jsx
+   │  ├─ Splash.jsx
+   │  ├─ Upload.jsx
+   │  └─ Welcome.jsx
+   ├─ routes
+   │  └─ Router.jsx
+   └─ style
+      └─ GlobalStyles.js
+```
+
+
+## 5. 역할 분담
+### 🧑🏻‍💻우혜리
+* 역할
+	* 팀리더
+	* 컨벤션 관리
+ 	* 피그마 디자인 작업 
+ * UI
+ 	* 컴포넌트: Header, Filter, BottomSheet
+  	* 페이지: 직관일정, 팀 포스트, 404, 검색, 일정 추가
+* 기능
+	* 댓글 게시/삭제, 좋아요를 통한 일정 추가 , 댓글/게시글 신고하기, 유저검색, 홈피드 필터링, 로그아웃, 무한스크롤, 스켈레톤, Modal
+
+
+### 🧑🏻‍💻김서영
+* 역할
+	* 문서 정리	 
+* UI
+	* 컴포넌트 : Input, Modal 	
+	* 페이지: Splash, Login, Signup, 선수리스트, 채팅
+ * 기능
+ 	* 유효성 검사, 회원가입, 로그인 화면, 프로필 설정, 프로필 수정, 필터링
+
+### 🧑🏻‍💻이영주
+* 역할
+	* 마스코트	 
+* UI
+	* 컴포넌트 : Button, 일반 포스트	
+	* 페이지: Upload, EditPost, Home
+ * 기능
+ 	* 게시물 작성/수정/삭제, 홈피드 게시글 목록, 이미지 슬라드
+### 🧑🏻‍💻신민철
+* 역할
+	* 깃허브 관리	 
+* UI
+	* 컴포넌트 : ProfileImage/NavBar	
+	* 페이지: 유저/팀/나의 프로필 페이지, 팔로우/팔로잉 페이지
+ * 기능
+ 	* 팔로우, 게시글 앨범형/리스트형, 
+  
+
+## 6. UI
+
+## 7. 페이지 기능
+
+## 8. 핵심 기능
+
+## 9. 느낀점
+
+
