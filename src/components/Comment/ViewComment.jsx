@@ -121,7 +121,9 @@ export default function ViewComment({ comment, post_id }) {
         <section className='w-info'>
           {/* comment가 없으면 댓글이 없습니다 */}
           {/* 나중에 조건부 렌더링으로 아예 다른 페이지가 나오도록 수정 */}
-          <p className='w-name'>{comment.author.username}</p>
+          <Link to={profileLink}>
+            <p className='w-name'>{comment.author.username}</p>
+          </Link>
           <p className='w-time'>{displayDate}</p>
         </section>
         <button className='btn-more' onClick={onMoreClick}></button>
