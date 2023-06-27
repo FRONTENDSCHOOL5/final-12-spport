@@ -9,7 +9,15 @@ const getSearchAPI = async (token, keyword) => {
       return -2;
     }
   });
-  return data;
+
+  return data.filter((item) => {
+    if (
+      item.accountname !== 'SPORT_' &&
+      item.accountname !== 'SPORT_BS_kiwwom_heroes'
+    ) {
+      return true;
+    }
+  });
 };
 
 export { getSearchAPI };
