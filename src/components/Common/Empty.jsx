@@ -5,12 +5,11 @@ import logoblue from '../../assets/logo/logo-blue.svg';
 
 const EmptySection = styled.section`
   width: 100%;
-  padding: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  height: calc(100vh - 220px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .emptyMessage {
     background: url(${logoblue}) no-repeat;
     color: var(--color-steelblue);
