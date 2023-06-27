@@ -163,7 +163,7 @@ export default function CommonProfile({ profile, children, numFollower }) {
         <div className='tag-container'>
           {!!tags.length &&
             tags.map((item) => {
-              return <TagButton key={item} className='tagBtn' text={item} />;
+              return <TagButton key={item} className='tagBtn' text={item} func={() => navigate(`/search/${item.trim()}`)} />;
             })}
         </div>
       </div>
