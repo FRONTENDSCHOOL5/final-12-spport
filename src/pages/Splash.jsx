@@ -31,8 +31,8 @@ export default function Splash() {
       {!fadeCompleted && (
         <div>
           <h1 className='a11y-hidden'>SPPORT 로딩 화면</h1>
-          <ImageLogoDiv>
-            <img src={fullLogo} alt='로고' />
+          <ImageLogoDiv className='logo-container'>
+            <img src={fullLogo} alt='로고' className='logo-image' />
           </ImageLogoDiv>
         </div>
       )}
@@ -49,12 +49,34 @@ const fadeOut = keyframes`
   }
 `;
 
+const bounce = keyframes`
+  0%{
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-165px);
+  }
+  100% {
+    transform: translateY(-145px);
+  }
+`;
+
 const FadeOutWrapper = styled.div`
-  animation: ${fadeOut} 1s ease-in-out;
+  animation: ${fadeOut} 1.3s ease-in-out;
 
   div {
     background-color: var(--color-lime);
     height: 100vh;
     width: 390px;
+  }
+
+  .logo-container {
+    animation: ${bounce} 0.7s ease-in-out;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+  }
+
+  .logo-image {
+    position: relative;
   }
 `;
