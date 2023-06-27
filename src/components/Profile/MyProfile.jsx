@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useRecoilState } from 'recoil';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import {
   NoPostStyle,
   LikedGameStyle,
@@ -29,6 +29,7 @@ export default function MyProfile({ profile }) {
   const [token, setToken] = useRecoilState(userToken);
   const [accountName, setAccountName] = useRecoilState(accountname);
   const [listType, setListType] = useState('list');
+  const gameLink = '/schedule/' + profile.accountname;
 
   // 직관일정, 게시글 데이터 호출
   useEffect(() => {
@@ -76,7 +77,9 @@ export default function MyProfile({ profile }) {
 
       {/* 직관 일정 */}
       <LikedGameStyle className='section-game'>
-        <h2>직관 일정</h2>
+        <h2>
+          직관 일정 <Link to={gameLink}>전체보기</Link>
+        </h2>
         {planGame.length === 0 ? (
           <div>
             <img src={IconCalendar} alt='' />
@@ -114,7 +117,7 @@ export default function MyProfile({ profile }) {
           <AlbumFeed>
             {albumPostData.map((item) => {
               return (
-                <li>
+                <li key={item.id}>
                   <button
                     type='button'
                     onClick={() => navigate(`/post/${item.id}`)}
