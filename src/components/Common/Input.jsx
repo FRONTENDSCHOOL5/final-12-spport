@@ -25,7 +25,7 @@ export const InputStyle = styled.input`
   padding: 7px 0;
   font-size: 14px;
   border-bottom: ${(props) =>
-    props.onError
+    props.getError
       ? '1px solid var(--color-red)'
       : '1px solid var(--color-lightgrey)'};
   outline: none;
