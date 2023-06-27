@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -54,6 +54,8 @@ const RegularPostStyle = styled.div`
 
 export default function RegularPost({ post }) {
   const [images, setImages] = useState([]);
+  const location = useLocation();
+  console.log(location.pathname);
   if (post.image) {
     const imageUrl = post.image.split(',');
     useEffect(() => {
@@ -70,9 +72,14 @@ export default function RegularPost({ post }) {
   return (
     <>
       <RegularPostStyle className='content-wrapper'>
-        <Link to={`/post/${post.id}`}>
+        {location.pathname.includes('post') ? (
           <p>{post.content}</p>
-        </Link>
+        ) : (
+          <Link to={`/post/${post.id}`}>
+            <p>{post.content}</p>
+          </Link>
+        )}
+
         <section className='post-img-wrapper'>
           {images.length === 1 && (
             <img src={images[0]} alt='' onError={handleImgError} />
