@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useRecoilState } from 'recoil';
-import { useNavigate, useParams, Link } from 'react-router-dom';
-import { getProductAPI } from '../../api/AddProductAPI';
-import { getUserPostAPI } from '../../api/ProfileAPI';
-import { followAPI, unfollowAPI } from '../../api/FollowAPI';
-import { userToken, accountname } from '../../atom/loginAtom';
+import { useNavigate } from 'react-router-dom';
 import {
   NoPostStyle,
   LikedGameStyle,
@@ -12,39 +8,38 @@ import {
   SectionFeed,
   AlbumFeed,
 } from './ProfleStyle';
+
 import CommonProfile from './CommonProfile';
-import FeedHeader from './FeedHeader';
 import CardList from '../List/CardList';
 import MButton from '../Common/Button/MButton';
+import FeedHeader from './FeedHeader';
 import PostList from '../Post/PostList';
-import IconCalendar from '../../assets/image/icon-calendar.svg';
-import IconShareBtn from '../../assets/image/icon-share-btn.svg';
-import IconMessageBtn from '../../assets/image/icon-message-btn.svg';
+import { userToken, accountname } from '../../atom/loginAtom';
+import { getProductAPI } from '../../api/AddProductAPI';
+import { getUserPostAPI } from '../../api/ProfileAPI';
 import IconCamera from '../../assets/image/icon-camera.svg';
+import IconCalendar from '../../assets/image/icon-calendar.svg';
 import NoImage from '../../assets/image/noimage.png';
 
-export default function UserProfile({ profile }) {
-  const { id } = useParams();
-  const [token, setToken] = useRecoilState(userToken);
+export default function MyProfile({ profile }) {
   const navigate = useNavigate();
-  const [postData, setPostData] = useState([]);
-  const [isFollow, setIsFollow] = useState(profile.isfollow);
   const [numFollower, setNumFollower] = useState(profile.followerCount);
+  const [postData, setPostData] = useState([]);
   const [planGame, setPlanGame] = useState([]);
+  const [token, setToken] = useRecoilState(userToken);
+  const [accountName, setAccountName] = useRecoilState(accountname);
   const [listType, setListType] = useState('list');
-  const gameLink = '/schedule/' + profile.accountname;
 
   // 직관일정, 게시글 데이터 호출
   useEffect(() => {
     const getLikedGameData = async () => {
-      const plan = await getProductAPI(token, id);
+      const plan = await getProductAPI(token, accountName);
       setPlanGame(plan);
     };
     const getPostData = async () => {
-      const data = await getUserPostAPI(token, id);
+      const data = await getUserPostAPI(token, accountName);
       setPostData(data.post);
     };
-
     getLikedGameData();
     getPostData();
   }, []);
@@ -59,46 +54,29 @@ export default function UserProfile({ profile }) {
     e.target.src = NoImage;
   };
 
-  // 팔로우 기능 함수
-  const handleFollow = async () => {
-    if (isFollow) {
-      const data = await unfollowAPI(token, id);
-      setIsFollow(data.profile.isfollow);
-      setNumFollower(data.profile.followerCount);
-    } else {
-      const data = await followAPI(token, id);
-      setIsFollow(data.profile.isfollow);
-      setNumFollower(data.profile.followerCount);
-    }
-  };
-
   return (
     <Container>
       {/* 상단 프로필 */}
       <CommonProfile profile={profile} numFollower={numFollower}>
-        <button type='button'>
-          <img src={IconShareBtn} alt='공유' />
-        </button>
         <MButton
-          text={isFollow ? '언팔로우' : '팔로우'}
-          func={handleFollow}
-          active={isFollow}
-        />
-        <button
-          type='button'
-          onClick={() => {
-            navigate(`/chat/${id}`);
+          text='프로필 수정'
+          func={() => {
+            navigate('/editprofile');
           }}
-        >
-          <img src={IconMessageBtn} alt='공유' />
-        </button>
+          active
+        />
+        <MButton
+          text='일정 추가'
+          func={() => {
+            navigate('/addgame');
+          }}
+          active
+        />
       </CommonProfile>
 
       {/* 직관 일정 */}
       <LikedGameStyle className='section-game'>
-        <h2>
-          직관 일정 <Link to={gameLink}>전체보기</Link>
-        </h2>
+        <h2>직관 일정</h2>
         {planGame.length === 0 ? (
           <div>
             <img src={IconCalendar} alt='' />
@@ -136,7 +114,7 @@ export default function UserProfile({ profile }) {
           <AlbumFeed>
             {albumPostData.map((item) => {
               return (
-                <li key={item.id}>
+                <li>
                   <button
                     type='button'
                     onClick={() => navigate(`/post/${item.id}`)}
