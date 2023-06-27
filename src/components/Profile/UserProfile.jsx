@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useRecoilState } from 'recoil';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams, Link } from 'react-router-dom';
 import { getProductAPI } from '../../api/AddProductAPI';
 import { getUserPostAPI } from '../../api/ProfileAPI';
 import { followAPI, unfollowAPI } from '../../api/FollowAPI';
@@ -32,6 +32,7 @@ export default function UserProfile({ profile }) {
   const [numFollower, setNumFollower] = useState(profile.followerCount);
   const [planGame, setPlanGame] = useState([]);
   const [listType, setListType] = useState('list');
+  const gameLink = '/schedule/' + profile.accountname;
 
   // 직관일정, 게시글 데이터 호출
   useEffect(() => {
@@ -95,7 +96,9 @@ export default function UserProfile({ profile }) {
 
       {/* 직관 일정 */}
       <LikedGameStyle className='section-game'>
-        <h2>직관 일정</h2>
+        <h2>
+          직관 일정 <Link to={gameLink}>전체보기</Link>
+        </h2>
         {planGame.length === 0 ? (
           <div>
             <img src={IconCalendar} alt='' />
@@ -133,7 +136,7 @@ export default function UserProfile({ profile }) {
           <AlbumFeed>
             {albumPostData.map((item) => {
               return (
-                <li>
+                <li key={item.id}>
                   <button
                     type='button'
                     onClick={() => navigate(`/post/${item.id}`)}

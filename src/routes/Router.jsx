@@ -17,6 +17,7 @@ import Profile from '../pages/Profile';
 import Splash from '../pages/Splash';
 import EditPost from '../pages/EditPost';
 import PlayerList from '../pages/PlayerList';
+import Schedule from '../pages/Schedule';
 import { useRecoilState } from 'recoil';
 import { loginState } from '../atom/loginAtom';
 
@@ -55,6 +56,7 @@ export default function Router() {
       <Route path='/search' element={<Search />} />
       <Route path='/search/:keyword' element={<Search />} />
       <Route path='/post/:id' element={<Post />} />
+      <Route path='/schedule/:id' element={<Schedule />} />
       <Route path='/*' element={<Error />} />
       <Route path='/error' element={<Error />} />
     </Routes>
