@@ -20,7 +20,7 @@
 6.[ Flowchart](#6-flowchart)  
 7.[ UI](#7-ui)  
 8.[ 페이지 기능](#8-페이지-기능)  
-9.[ 핵심 기능](#9-핵심-기능)  
+9.[ 핵심 기능](#9-핵심-기능)   
 10.[ 느낀점](#10-느낀점)
 
 
@@ -301,8 +301,8 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 * 역할
 	* 팀리더
 	* 컨벤션 관리
- 	* 피그마 디자인 작업 
- * UI
+ 	* 피그마 디자인 작업
+* UI
  	* 컴포넌트: Header, Filter, BottomSheet
   	* 페이지: 직관일정, 팀 포스트, 404, 검색, 일정 추가
 * 기능
@@ -315,7 +315,7 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 * UI
 	* 컴포넌트 : Input, Modal 	
 	* 페이지: Splash, Login, Signup, 선수리스트, 채팅
- * 기능
+* 기능
  	* 유효성 검사, 회원가입, 로그인 화면, 프로필 설정, 프로필 수정, 필터링
 
 ### 🧑🏻‍💻이영주
@@ -324,16 +324,16 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 * UI
 	* 컴포넌트 : Button, 일반 포스트	
 	* 페이지: Upload, EditPost, Home
- * 기능
- 	* 게시물 작성/수정/삭제, 홈피드 게시글 목록, 이미지 슬라드
+* 기능
+ 	* 게시물 작성/수정/삭제, 홈피드 게시글 목록, 이미지 슬라이더
 ### 🧑🏻‍💻신민철
 * 역할
 	* 깃허브 관리	 
 * UI
 	* 컴포넌트 : ProfileImage/NavBar	
 	* 페이지: 유저/팀/나의 프로필 페이지, 팔로우/팔로잉 페이지
- * 기능
- 	* 팔로우, 게시글 앨범형/리스트형, 
+* 기능
+ 	* 팔로우, 게시글 앨범형/리스트형
   
 ## 6. Flowchart
 ![Spport-main](https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/107099724/cd8277a9-a788-4db5-9cad-7750fda5e176)
@@ -344,17 +344,16 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 ## 8. 페이지 기능
 
 ### 1) 홈
-|Splash|로그인 페이지|회원가입 페이지|
+|Splash|로그인 페이지|회원가입 페이지
 |:-:|:-:|:-:|
-|<img width="390px;" height="590px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/a72b11a8-f450-4190-ad01-3afc5fdc0418"> |<img width="390px;" height="590px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/f5771864-2f5a-4098-ba25-6b898a90b792">|<img width="390px;" height="590px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/ea8fc923-f27d-4556-a687-c2832356a652">|
+|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/a72b11a8-f450-4190-ad01-3afc5fdc0418"> |<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/f5771864-2f5a-4098-ba25-6b898a90b792">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/7299251a-209d-4db0-89f8-2c7e0da5b104">|
 
 
-|홈 페이지|검색 페이지|
-|:-:|:-:|
-|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/4391a1e5-4cac-4860-b3c4-4cb385de4608">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/5e67f42a-29ec-432d-acba-cbd1a5397ca5">|
+|홈 페이지|홈 페이지 필터링/좋아요|검색 페이지
+|:-:|:-:|:-:|
+|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/4391a1e5-4cac-4860-b3c4-4cb385de4608">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/87a24327-49c8-4e06-a82d-9ca5455f7a7b">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/5e67f42a-29ec-432d-acba-cbd1a5397ca5">|
 
 <br/>
-
 
 ### 2) 프로필
 |마이 프로필 페이지 게시글|마이 프로필 페이지 일정 추가|유저 프로필 페이지
@@ -363,22 +362,29 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 
 |팀 프로필 페이지 공 아이콘|팀 프로필 페이지 선수 보러 가기
 |:-:|:-:|
-|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/f86cbb3b-3e58-47ea-99e6-93e57cbecba7">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/2ff543df-aee7-4197-83f7-d7327c199332">|
+|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/f86cbb3b-3e58-47ea-99e6-93e57cbecba7">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/74c183bb-87d7-4eab-80ea-7189cf2bc1b5">|
 
-|프로필 수정 페이지|로그아웃 모달
+|프로필 수정 페이지|로그아웃
 |:-:|:-:|
 |<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/b4e9540f-55a9-48ce-84d5-ba96ae5222d1">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/0f79f26f-2e75-4007-ba21-58d4fde52b71">|
 
 <br/>
 
 ### 3) 게시글
-|게시글 작성 페이지|게시글 수정 페이지|게시글 상세페이지/모달|
+|게시글 작성|게시글 수정|게시글 삭제
 |:-:|:-:|:-:|
-|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/aad058cb-d0bd-4ecd-9b6e-799168409b0c">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/dc3ec37c-8f73-4acf-a275-5a23bf744237">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/d9d90a7e-0695-4a20-bb35-7569944a8ed7">|
+|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/aad058cb-d0bd-4ecd-9b6e-799168409b0c">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/dc3ec37c-8f73-4acf-a275-5a23bf744237">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/134f8058-ad37-459b-be0f-bf65b6d8d115">|
 
-|게시글 신고 모달|댓글 삭제 모달|댓글 신고 모달
+|게시글 상세 페이지|이미지 슬라이더|게시글 신고
 |:-:|:-:|:-:|
-|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/f8bb8034-966e-477e-a570-a0260fb0b621">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/9074cf18-3154-4bb9-a903-6a13f32313d8">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/2c9d1e04-8c79-4add-9fd8-c6f93b3c46af">|
+|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/89a946f3-356c-4f06-9489-1271ae13ad2b">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/5f509915-3c82-4451-a35a-7b2e39ecc100">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/f8bb8034-966e-477e-a570-a0260fb0b621">|
+
+<br/>
+
+### 4) 댓글
+|댓글 작성|댓글 삭제|댓글 신고
+|:-:|:-:|:-:|
+|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/1b13d436-2741-447c-bd28-78cabc8a353e">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/9074cf18-3154-4bb9-a903-6a13f32313d8">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/2c9d1e04-8c79-4add-9fd8-c6f93b3c46af">|
 
 <br/>
 
