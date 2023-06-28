@@ -360,9 +360,9 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 |:-:|:-:|:-:|
 |<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/d068fa5a-69fb-4a98-8d9e-f81250256edb">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/6c5ced03-6adc-4b6e-a7e0-4afcbc9f7b3f">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/9f15e462-52cb-4381-aeb0-9b98d56a9b6f">
 
-|팀 프로필 페이지 공 아이콘|팀 프로필 페이지 선수 보러 가기
-|:-:|:-:|
-|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/f86cbb3b-3e58-47ea-99e6-93e57cbecba7">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/74c183bb-87d7-4eab-80ea-7189cf2bc1b5">|
+|팀 프로필 페이지 공 아이콘|팀 프로필 페이지 선수 보러 가기|팀 프로필 페이지 경기일정
+|:-:|:-:|:-:|
+|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/f86cbb3b-3e58-47ea-99e6-93e57cbecba7">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/74c183bb-87d7-4eab-80ea-7189cf2bc1b5">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/5f2cdffe-ad96-47ec-91ed-aed2158fd381">|
 
 |프로필 수정 페이지|로그아웃
 |:-:|:-:|
