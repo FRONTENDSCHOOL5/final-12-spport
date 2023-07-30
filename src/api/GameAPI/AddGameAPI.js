@@ -1,5 +1,5 @@
 import { GET_API } from '../CommonAPI';
-import tokenData from '../../data/sport_bs_users.json';
+import tokenData from '../../assets/data/sport_users.json';
 
 // get TEAM IMAGE from team tokenData
 const getHomeImage = (team_name) => {

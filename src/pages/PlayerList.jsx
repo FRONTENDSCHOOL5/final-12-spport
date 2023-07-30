@@ -4,8 +4,8 @@ import { useParams } from 'react-router-dom';
 import NavBar from '../components/Common/NavBar';
 import styled from 'styled-components';
 import SelectFilter from '../components/Common/Filter/SelectFilter';
-import bsPlayerData from '../data/baseball_players.json';
-import bsUserData from '../data/sport_bs_users.json';
+import bsPlayerData from '../assets/data/baseball_players.json';
+import tokenData from '../assets/data/sport_users.json';
 
 export default function PlayerList() {
   const [position, setPosition] = useState([
@@ -19,8 +19,8 @@ export default function PlayerList() {
   const { id } = useParams();
 
   // team 구분
-  const teamName = bsUserData.map((item) => item.accountname);
-  const sameName = bsUserData.map((item) => item.username);
+  const teamName = tokenData.map((item) => item.accountname);
+  const sameName = tokenData.map((item) => item.username);
 
   const matchingTeam =
     sameName.find((_, index) => teamName[index] === id) || '';

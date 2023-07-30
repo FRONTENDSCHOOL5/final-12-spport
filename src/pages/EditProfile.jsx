@@ -14,7 +14,7 @@ import {
   intro,
 } from '../atom/loginAtom';
 import { isModalOpen, modalItems } from '../atom/modalAtom';
-import bsData from '../data/sport_bs_users.json';
+import tokenData from '../assets/data/sport_users.json';
 
 export default function EditProfile() {
   const URL = 'https://api.mandarin.weniv.co.kr';
@@ -131,7 +131,7 @@ export default function EditProfile() {
     // console.log(json);
     setErrorMsg(json.message);
 
-    const accountnames = bsData.map((item) => item.accountname.substring(9));
+    const accountnames = tokenData.map((item) => item.accountname.substring(9));
     const errorMessage = '스포츠팀의 이름은 사용할 수 없습니다.';
     let accountnameErrorMessage = '';
 
