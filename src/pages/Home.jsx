@@ -18,7 +18,7 @@ const FullSection = styled.main`
 export default function Home(props) {
   const [token] = useRecoilState(userToken);
   const [filterClick, setFilterClick] = useState(false);
-  const [feeds, isFeedLoading, isFeedError] = useFeedQuery(token);
+  const [feed, isFeedLoading, isFeedError] = useFeedQuery(token);
 
   return (
     <>
@@ -31,7 +31,7 @@ export default function Home(props) {
             link='/home'
           />
         )}
-        {!isFeedLoading && feeds.posts.length === 0 && (
+        {!isFeedLoading && feed.posts.length === 0 && (
           <Empty
             message='유저 또는 팀을 검색해 팔로우 해보세요!'
             btnText='검색하기'
@@ -41,7 +41,7 @@ export default function Home(props) {
         {isFeedLoading ? (
           <PostLoader />
         ) : (
-          <PostList post={feeds.posts} onlyGame={filterClick} isHome />
+          <PostList post={feed.posts} onlyGame={filterClick} isHome />
         )}
       </FullSection>
       <NavBar page='홈' />
