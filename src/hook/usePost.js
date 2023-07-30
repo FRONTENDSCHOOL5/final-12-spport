@@ -26,10 +26,20 @@ function useFeedQuery(token) {
   return [feedQuery.data, feedQuery.isLoading, feedQuery.isError];
 }
 
-function usePostQuery() {}
+function usePostQuery(token, postId) {
+  const getPostDetail = async () => {
+    return await GET_API(token, `/post/${postId}`);
+  };
+
+  const postQuery = useQuery({
+    queryKey: ['postdetail'],
+    queryFn: () => getPostDetail(),
+  });
+  return [postQuery.data, postQuery.isLoading, postQuery.isError];
+}
 
 function useDeletePostMutation() {}
 
 function useReportPostMutation() {}
 
-export { useFeedQuery };
+export { useFeedQuery, usePostQuery };

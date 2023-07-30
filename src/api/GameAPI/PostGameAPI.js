@@ -28,11 +28,6 @@ const postGameInfo = () => {
   });
 };
 
-const getPostDetailAPI = async (token, id) => {
-  const post = await GET_API(token, `/post/${id}`);
-  return post;
-};
-
 const editGamePostAPI = async (token, id, content, weather) => {
   const reqUrl = `/post/${id}`;
   const image = weather.join(',');
@@ -46,4 +41,4 @@ const editGamePostAPI = async (token, id, content, weather) => {
   return data;
 };
 
-export { getPostDetailAPI, editGamePostAPI };
+export { editGamePostAPI };
