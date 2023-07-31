@@ -4,6 +4,7 @@ import iconBack from '../../../assets/image/icon-back.svg';
 import iconMore from '../../../assets/image/icon-more.svg';
 import iconSearch from '../../../assets/image/icon-search.svg';
 import logoText from '../../../assets/logo/text-logo.svg';
+import logoImg from '../../../assets/logo/logo-lime.svg';
 import SearchBox from './SearchBox';
 import FeedFilter from '../Filter/FeedFilter';
 import MsButton from '../Button/MsButton';
@@ -29,7 +30,7 @@ const HeaderStyle = styled.header`
   gap: 10px;
   background: var(--color-navy);
   position: fixed;
-  width: 390px;
+  width: 100%;
   z-index: 10;
   .header-title {
     color: var(--color-lime);
@@ -69,7 +70,9 @@ export default function Header({
   const [userImage, setUserImage] = useRecoilState(userimage);
 
   const handleBackClick = () => {
-    navigate(-1);
+    if (!disabled) {
+      navigate(-1);
+    }
   };
   const handleSearchClick = () => {
     navigate('/search');

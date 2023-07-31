@@ -20,12 +20,16 @@ const MainStyle = styled.main`
     display: flex;
     align-items: center;
     position: fixed;
-    width: 390px;
+    width: 100%;
     background: white;
     gap: 10px;
   }
   .section-game {
     padding: 60px 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 60px;
   }
 `;
 
