@@ -1,0 +1,1388 @@
+[
+ {
+  "uniform_number": 9,
+  "name": "곽승석",
+  "team": "대한항공",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 7,
+  "name": "이준",
+  "team": "대한항공",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 16,
+  "name": "정한용",
+  "team": "대한항공",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 18,
+  "name": "링컨",
+  "team": "대한항공",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 17,
+  "name": "임동혁",
+  "team": "대한항공",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 1,
+  "name": "김규민",
+  "team": "대한항공",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 23,
+  "name": "김민재",
+  "team": "대한항공",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 6,
+  "name": "이수황",
+  "team": "대한항공",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 12,
+  "name": "조재영",
+  "team": "대한항공",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 8,
+  "name": "진지위",
+  "team": "대한항공",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 5,
+  "name": "유광우",
+  "team": "대한항공",
+  "position": "S"
+ },
+ {
+  "uniform_number": 3,
+  "name": "정진혁",
+  "team": "대한항공",
+  "position": "S"
+ },
+ {
+  "uniform_number": 2,
+  "name": "한선수",
+  "team": "대한항공",
+  "position": "S"
+ },
+ {
+  "uniform_number": 21,
+  "name": "강승일",
+  "team": "대한항공",
+  "position": "L"
+ },
+ {
+  "uniform_number": 4,
+  "name": "송민근",
+  "team": "대한항공",
+  "position": "L"
+ },
+ {
+  "uniform_number": 14,
+  "name": "오은렬",
+  "team": "대한항공",
+  "position": "L"
+ },
+ {
+  "uniform_number": 20,
+  "name": "정성민",
+  "team": "대한항공",
+  "position": "L"
+ },
+ {
+  "uniform_number": 31,
+  "name": "김동민",
+  "team": "우리카드",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 99,
+  "name": "김지한",
+  "team": "우리카드",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 77,
+  "name": "송명근",
+  "team": "우리카드",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 16,
+  "name": "정성규",
+  "team": "우리카드",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 11,
+  "name": "한성정",
+  "team": "우리카드",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 8,
+  "name": "아가메즈",
+  "team": "우리카드",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 1,
+  "name": "이강원",
+  "team": "우리카드",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 15,
+  "name": "김완종",
+  "team": "우리카드",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 19,
+  "name": "김재휘",
+  "team": "우리카드",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 10,
+  "name": "박준혁",
+  "team": "우리카드",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 33,
+  "name": "박진우",
+  "team": "우리카드",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 20,
+  "name": "이상형",
+  "team": "우리카드",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 7,
+  "name": "최석기",
+  "team": "우리카드",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 3,
+  "name": "김광일",
+  "team": "우리카드",
+  "position": "S"
+ },
+ {
+  "uniform_number": 2,
+  "name": "한태준",
+  "team": "우리카드",
+  "position": "S"
+ },
+ {
+  "uniform_number": 9,
+  "name": "김영준",
+  "team": "우리카드",
+  "position": "L"
+ },
+ {
+  "uniform_number": 5,
+  "name": "오재성",
+  "team": "우리카드",
+  "position": "L"
+ },
+ {
+  "uniform_number": 4,
+  "name": "황준태",
+  "team": "우리카드",
+  "position": "L"
+ },
+ {
+  "uniform_number": 1,
+  "name": "박승수",
+  "team": "OK금융그룹",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 14,
+  "name": "송희재",
+  "team": "OK금융그룹",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 15,
+  "name": "이진성",
+  "team": "OK금융그룹",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 8,
+  "name": "차지환",
+  "team": "OK금융그룹",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 13,
+  "name": "레오",
+  "team": "OK금융그룹",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 20,
+  "name": "신호진",
+  "team": "OK금융그룹",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 12,
+  "name": "전병선",
+  "team": "OK금융그룹",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 11,
+  "name": "박원빈",
+  "team": "OK금융그룹",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 18,
+  "name": "전진선",
+  "team": "OK금융그룹",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 16,
+  "name": "진상헌",
+  "team": "OK금융그룹",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 9,
+  "name": "강정민",
+  "team": "OK금융그룹",
+  "position": "S"
+ },
+ {
+  "uniform_number": 2,
+  "name": "곽명우",
+  "team": "OK금융그룹",
+  "position": "S"
+ },
+ {
+  "uniform_number": 6,
+  "name": "이민규",
+  "team": "OK금융그룹",
+  "position": "S"
+ },
+ {
+  "uniform_number": 10,
+  "name": "부용찬",
+  "team": "OK금융그룹",
+  "position": "L"
+ },
+ {
+  "uniform_number": 3,
+  "name": "정성현",
+  "team": "OK금융그룹",
+  "position": "L"
+ },
+ {
+  "uniform_number": 7,
+  "name": "조국기",
+  "team": "OK금융그룹",
+  "position": "L"
+ },
+ {
+  "uniform_number": 10,
+  "name": "김정호",
+  "team": "삼성화재",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 12,
+  "name": "박성진",
+  "team": "삼성화재",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 11,
+  "name": "손현종",
+  "team": "삼성화재",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 1,
+  "name": "신장호",
+  "team": "삼성화재",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 13,
+  "name": "요스바니",
+  "team": "삼성화재",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 18,
+  "name": "홍민기",
+  "team": "삼성화재",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 13,
+  "name": "김준우",
+  "team": "삼성화재",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 4,
+  "name": "손태훈",
+  "team": "삼성화재",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 19,
+  "name": "양희준",
+  "team": "삼성화재",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 7,
+  "name": "하현용",
+  "team": "삼성화재",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 3,
+  "name": "노재욱",
+  "team": "삼성화재",
+  "position": "S"
+ },
+ {
+  "uniform_number": 2,
+  "name": "이호건",
+  "team": "삼성화재",
+  "position": "S"
+ },
+ {
+  "uniform_number": 17,
+  "name": "신동광",
+  "team": "삼성화재",
+  "position": "L"
+ },
+ {
+  "uniform_number": 5,
+  "name": "안지원",
+  "team": "삼성화재",
+  "position": "L"
+ },
+ {
+  "uniform_number": 9,
+  "name": "이상욱",
+  "team": "삼성화재",
+  "position": "L"
+ },
+ {
+  "uniform_number": 6,
+  "name": "김선호",
+  "team": "현대캐피탈",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 10,
+  "name": "오레올",
+  "team": "현대캐피탈",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 14,
+  "name": "이승준",
+  "team": "현대캐피탈",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 56,
+  "name": "이시우",
+  "team": "현대캐피탈",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 12,
+  "name": "전광인",
+  "team": "현대캐피탈",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 4,
+  "name": "함형진",
+  "team": "현대캐피탈",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 18,
+  "name": "홍동선",
+  "team": "현대캐피탈",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 15,
+  "name": "문성민",
+  "team": "현대캐피탈",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 24,
+  "name": "이크바이리",
+  "team": "현대캐피탈",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 7,
+  "name": "허수봉",
+  "team": "현대캐피탈",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 17,
+  "name": "박상하",
+  "team": "현대캐피탈",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 31,
+  "name": "정태준",
+  "team": "현대캐피탈",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 11,
+  "name": "최민호",
+  "team": "현대캐피탈",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 3,
+  "name": "김명관",
+  "team": "현대캐피탈",
+  "position": "S"
+ },
+ {
+  "uniform_number": 20,
+  "name": "이준협",
+  "team": "현대캐피탈",
+  "position": "S"
+ },
+ {
+  "uniform_number": 2,
+  "name": "이현승",
+  "team": "현대캐피탈",
+  "position": "S"
+ },
+ {
+  "uniform_number": 13,
+  "name": "박경민",
+  "team": "현대캐피탈",
+  "position": "L"
+ },
+ {
+  "uniform_number": 5,
+  "name": "여오현",
+  "team": "현대캐피탈",
+  "position": "L"
+ },
+ {
+  "uniform_number": 16,
+  "name": "이준승",
+  "team": "현대캐피탈",
+  "position": "L"
+ },
+ {
+  "uniform_number": 14,
+  "name": "강우석",
+  "team": "한국전력",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 13,
+  "name": "공재학",
+  "team": "한국전력",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 15,
+  "name": "구교혁",
+  "team": "한국전력",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 1,
+  "name": "서재덕",
+  "team": "한국전력",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 9,
+  "name": "임성진",
+  "team": "한국전력",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 4,
+  "name": "타이스",
+  "team": "한국전력",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 3,
+  "name": "박철우",
+  "team": "한국전력",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 30,
+  "name": "이태호",
+  "team": "한국전력",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 17,
+  "name": "박찬웅",
+  "team": "한국전력",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 23,
+  "name": "신영석",
+  "team": "한국전력",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 8,
+  "name": "안우재",
+  "team": "한국전력",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 20,
+  "name": "정성환",
+  "team": "한국전력",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 11,
+  "name": "조근호",
+  "team": "한국전력",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 5,
+  "name": "김광국",
+  "team": "한국전력",
+  "position": "S"
+ },
+ {
+  "uniform_number": 2,
+  "name": "김주영",
+  "team": "한국전력",
+  "position": "S"
+ },
+ {
+  "uniform_number": 6,
+  "name": "하승우",
+  "team": "한국전력",
+  "position": "S"
+ },
+ {
+  "uniform_number": 12,
+  "name": "이지석",
+  "team": "한국전력",
+  "position": "L"
+ },
+ {
+  "uniform_number": 10,
+  "name": "장지원",
+  "team": "한국전력",
+  "position": "L"
+ },
+ {
+  "uniform_number": 24,
+  "name": "배상진",
+  "team": "KB손해보험",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 1,
+  "name": "정동근",
+  "team": "KB손해보험",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 9,
+  "name": "홍상혁",
+  "team": "KB손해보험",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 12,
+  "name": "황경민",
+  "team": "KB손해보험",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 23,
+  "name": "비예나",
+  "team": "KB손해보험",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 26,
+  "name": "손준영",
+  "team": "KB손해보험",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 25,
+  "name": "한국민",
+  "team": "KB손해보험",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 11,
+  "name": "김홍정",
+  "team": "KB손해보험",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 15,
+  "name": "우상조",
+  "team": "KB손해보험",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 17,
+  "name": "최요한",
+  "team": "KB손해보험",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 6,
+  "name": "박현빈",
+  "team": "KB손해보험",
+  "position": "S"
+ },
+ {
+  "uniform_number": 33,
+  "name": "신승훈",
+  "team": "KB손해보험",
+  "position": "S"
+ },
+ {
+  "uniform_number": 3,
+  "name": "황승빈",
+  "team": "KB손해보험",
+  "position": "S"
+ },
+ {
+  "uniform_number": 5,
+  "name": "백광현",
+  "team": "KB손해보험",
+  "position": "L"
+ },
+ {
+  "uniform_number": 4,
+  "name": "정민수",
+  "team": "KB손해보험",
+  "position": "L"
+ },
+ {
+  "uniform_number": 1,
+  "name": "김다은",
+  "team": "흥국생명",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 19,
+  "name": "김미연",
+  "team": "흥국생명",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 10,
+  "name": "김연경",
+  "team": "흥국생명",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 20,
+  "name": "박수연",
+  "team": "흥국생명",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 14,
+  "name": "정윤주",
+  "team": "흥국생명",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 12,
+  "name": "박현주",
+  "team": "흥국생명",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 13,
+  "name": "옐레나",
+  "team": "흥국생명",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 7,
+  "name": "김나희",
+  "team": "흥국생명",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 11,
+  "name": "김수지 ",
+  "team": "흥국생명",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 15,
+  "name": "김채연",
+  "team": "흥국생명",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 6,
+  "name": "변지수",
+  "team": "흥국생명",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 4,
+  "name": "이주아",
+  "team": "흥국생명",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 18,
+  "name": "김다솔",
+  "team": "흥국생명",
+  "position": "S"
+ },
+ {
+  "uniform_number": 9,
+  "name": "박은서 ",
+  "team": "흥국생명",
+  "position": "S"
+ },
+ {
+  "uniform_number": 3,
+  "name": "박혜진",
+  "team": "흥국생명",
+  "position": "S"
+ },
+ {
+  "uniform_number": 23,
+  "name": "이원정",
+  "team": "흥국생명",
+  "position": "S"
+ },
+ {
+  "uniform_number": 5,
+  "name": "김해란",
+  "team": "흥국생명",
+  "position": "L"
+ },
+ {
+  "uniform_number": 8,
+  "name": "도수빈",
+  "team": "흥국생명",
+  "position": "L"
+ },
+ {
+  "uniform_number": 18,
+  "name": "김세인",
+  "team": "한국도로공사",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 15,
+  "name": "백채림",
+  "team": "한국도로공사",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 17,
+  "name": "우수민",
+  "team": "한국도로공사",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 16,
+  "name": "이미소",
+  "team": "한국도로공사",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 7,
+  "name": "이예림",
+  "team": "한국도로공사",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 21,
+  "name": "이예은",
+  "team": "한국도로공사",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 4,
+  "name": "전새얀",
+  "team": "한국도로공사",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 12,
+  "name": "문정원",
+  "team": "한국도로공사",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 1,
+  "name": "캣벨",
+  "team": "한국도로공사",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 10,
+  "name": "배유나",
+  "team": "한국도로공사",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 11,
+  "name": "이예담",
+  "team": "한국도로공사",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 14,
+  "name": "임주은",
+  "team": "한국도로공사",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 1,
+  "name": "최가은",
+  "team": "한국도로공사",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 3,
+  "name": "안예림",
+  "team": "한국도로공사",
+  "position": "S"
+ },
+ {
+  "uniform_number": 6,
+  "name": "이윤정",
+  "team": "한국도로공사",
+  "position": "S"
+ },
+ {
+  "uniform_number": 2,
+  "name": "안나은",
+  "team": "한국도로공사",
+  "position": "L"
+ },
+ {
+  "uniform_number": 8,
+  "name": "임명옥",
+  "team": "한국도로공사",
+  "position": "L"
+ },
+ {
+  "uniform_number": 10,
+  "name": "강소휘",
+  "team": "GS칼텍스",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 18,
+  "name": "권민지",
+  "team": "GS칼텍스",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 19,
+  "name": "유서연",
+  "team": "GS칼텍스",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 11,
+  "name": "최은지",
+  "team": "GS칼텍스",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 17,
+  "name": "문지윤",
+  "team": "GS칼텍스",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 15,
+  "name": "문명화",
+  "team": "GS칼텍스",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 54,
+  "name": "오세연",
+  "team": "GS칼텍스",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 23,
+  "name": "윤결",
+  "team": "GS칼텍스",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 13,
+  "name": "정대영",
+  "team": "GS칼텍스",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 34,
+  "name": "한수지",
+  "team": "GS칼텍스",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 14,
+  "name": "김지원",
+  "team": "GS칼텍스",
+  "position": "S"
+ },
+ {
+  "uniform_number": 7,
+  "name": "안혜진",
+  "team": "GS칼텍스",
+  "position": "S"
+ },
+ {
+  "uniform_number": 4,
+  "name": "한다혜",
+  "team": "GS칼텍스",
+  "position": "L"
+ },
+ {
+  "uniform_number": 47,
+  "name": "한수진",
+  "team": "GS칼텍스",
+  "position": "L"
+ },
+ {
+  "uniform_number": 12,
+  "name": "박경현",
+  "team": "페퍼저축은행",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 13,
+  "name": "박은서",
+  "team": "페퍼저축은행",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 10,
+  "name": "박정아",
+  "team": "페퍼저축은행",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 16,
+  "name": "이한비",
+  "team": "페퍼저축은행",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 11,
+  "name": "채선아",
+  "team": "페퍼저축은행",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 10,
+  "name": "야스민",
+  "team": "페퍼저축은행",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 21,
+  "name": "이민서",
+  "team": "페퍼저축은행",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 8,
+  "name": "박연화",
+  "team": "페퍼저축은행",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 4,
+  "name": "서채원",
+  "team": "페퍼저축은행",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 18,
+  "name": "염어르헝",
+  "team": "페퍼저축은행",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 17,
+  "name": "하혜진",
+  "team": "페퍼저축은행",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 15,
+  "name": "박사랑",
+  "team": "페퍼저축은행",
+  "position": "S"
+ },
+ {
+  "uniform_number": 6,
+  "name": "이고은",
+  "team": "페퍼저축은행",
+  "position": "S"
+ },
+ {
+  "uniform_number": 19,
+  "name": "김해빈",
+  "team": "페퍼저축은행",
+  "position": "L"
+ },
+ {
+  "uniform_number": 7,
+  "name": "문슬기",
+  "team": "페퍼저축은행",
+  "position": "L"
+ },
+ {
+  "uniform_number": 9,
+  "name": "오지영",
+  "team": "페퍼저축은행",
+  "position": "L"
+ },
+ {
+  "uniform_number": 17,
+  "name": "고예림",
+  "team": "현대건설",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 11,
+  "name": "김주향",
+  "team": "현대건설",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 1,
+  "name": "서가은",
+  "team": "현대건설",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 21,
+  "name": "정시영",
+  "team": "현대건설",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 13,
+  "name": "정지윤",
+  "team": "현대건설",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 11,
+  "name": "모마",
+  "team": "현대건설",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 4,
+  "name": "황연주",
+  "team": "현대건설",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 9,
+  "name": "나현수",
+  "team": "현대건설",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 14,
+  "name": "양효진",
+  "team": "현대건설",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 12,
+  "name": "이다현",
+  "team": "현대건설",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 3,
+  "name": "김다인",
+  "team": "현대건설",
+  "position": "S"
+ },
+ {
+  "uniform_number": 6,
+  "name": "김사랑",
+  "team": "현대건설",
+  "position": "S"
+ },
+ {
+  "uniform_number": 25,
+  "name": "이나연",
+  "team": "현대건설",
+  "position": "S"
+ },
+ {
+  "uniform_number": 15,
+  "name": "고민지",
+  "team": "현대건설",
+  "position": "L"
+ },
+ {
+  "uniform_number": 8,
+  "name": "김연견",
+  "team": "현대건설",
+  "position": "L"
+ },
+ {
+  "uniform_number": 5,
+  "name": "이영주",
+  "team": "현대건설",
+  "position": "L"
+ },
+ {
+  "uniform_number": 18,
+  "name": "한미르",
+  "team": "현대건설",
+  "position": "L"
+ },
+ {
+  "uniform_number": 16,
+  "name": "고의정",
+  "team": "KGC인삼공사",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 11,
+  "name": "박혜민",
+  "team": "KGC인삼공사",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 15,
+  "name": "이선우",
+  "team": "KGC인삼공사",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 1,
+  "name": "이소영",
+  "team": "KGC인삼공사",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 8,
+  "name": "엘리자벳",
+  "team": "KGC인삼공사",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 7,
+  "name": "이예솔",
+  "team": "KGC인삼공사",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 6,
+  "name": "박은진",
+  "team": "KGC인삼공사",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 18,
+  "name": "이지수",
+  "team": "KGC인삼공사",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 17,
+  "name": "정호영",
+  "team": "KGC인삼공사",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 12,
+  "name": "한송이",
+  "team": "KGC인삼공사",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 14,
+  "name": "김채나",
+  "team": "KGC인삼공사",
+  "position": "S"
+ },
+ {
+  "uniform_number": 13,
+  "name": "박은지",
+  "team": "KGC인삼공사",
+  "position": "S"
+ },
+ {
+  "uniform_number": 3,
+  "name": "염혜선",
+  "team": "KGC인삼공사",
+  "position": "S"
+ },
+ {
+  "uniform_number": 5,
+  "name": "노란",
+  "team": "KGC인삼공사",
+  "position": "L"
+ },
+ {
+  "uniform_number": 9,
+  "name": "서유경",
+  "team": "KGC인삼공사",
+  "position": "L"
+ },
+ {
+  "uniform_number": 20,
+  "name": "최효서",
+  "team": "KGC인삼공사",
+  "position": "L"
+ },
+ {
+  "uniform_number": 12,
+  "name": "박민지",
+  "team": "IBK기업은행",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 8,
+  "name": "산타나",
+  "team": "IBK기업은행",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 1,
+  "name": "육서영",
+  "team": "IBK기업은행",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 19,
+  "name": "표승주",
+  "team": "IBK기업은행",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 15,
+  "name": "황민주",
+  "team": "IBK기업은행",
+  "position": "OH"
+ },
+ {
+  "uniform_number": 4,
+  "name": "김희진",
+  "team": "IBK기업은행",
+  "position": "OP"
+ },
+ {
+  "uniform_number": 17,
+  "name": "김현정",
+  "team": "IBK기업은행",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 21,
+  "name": "임혜린",
+  "team": "IBK기업은행",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 13,
+  "name": "최정민",
+  "team": "IBK기업은행",
+  "position": "MB"
+ },
+ {
+  "uniform_number": 22,
+  "name": "김윤우",
+  "team": "IBK기업은행",
+  "position": "S"
+ },
+ {
+  "uniform_number": 5,
+  "name": "김하경",
+  "team": "IBK기업은행",
+  "position": "S"
+ },
+ {
+  "uniform_number": 2,
+  "name": "이솔아",
+  "team": "IBK기업은행",
+  "position": "S"
+ },
+ {
+  "uniform_number": 10,
+  "name": "구혜인",
+  "team": "IBK기업은행",
+  "position": "L"
+ },
+ {
+  "uniform_number": 18,
+  "name": "김수빈",
+  "team": "IBK기업은행",
+  "position": "L"
+ },
+ {
+  "uniform_number": 3,
+  "name": "심연경",
+  "team": "IBK기업은행",
+  "position": "L"
+ }
+]

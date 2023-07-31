@@ -7,7 +7,7 @@ import { ErrorText } from './Login';
 import { useNavigate } from 'react-router-dom';
 import profileImg from '../assets/image/default-profile.png';
 import uploadImg from '../assets/image/icon-image.svg';
-import bsData from '.././data/sport_bs_users.json';
+import tokenData from '../assets/data/sport_users.json';
 import closeBtn from '../assets/image/icon-x.svg';
 
 export default function Signup() {
@@ -122,7 +122,7 @@ export default function Signup() {
   };
 
   const handleAccountnameValid = () => {
-    const accountnames = bsData.map((item) => item.accountname.substring(9));
+    const accountnames = tokenData.map((item) => item.accountname.substring(9));
     const errorMessage = '스포츠팀의 이름은 사용할 수 없습니다.';
     let accountnameErrorMessage = '';
 

@@ -1,0 +1,218 @@
+[
+ {
+  "date": "2023-07-29",
+  "day": "토",
+  "time": "13:30",
+  "home": "한국도로공사",
+  "away": "페퍼저축은행",
+  "stadium": "구미",
+  "full_stadium": "구미박정희체육관"
+ },
+ {
+  "date": "2023-07-29",
+  "day": "토",
+  "time": "16:00",
+  "home": "현대건설",
+  "away": "KGC인삼공사",
+  "stadium": "구미",
+  "full_stadium": "구미박정희체육관"
+ },
+ {
+  "date": "2023-07-30",
+  "day": "일",
+  "time": "13:30",
+  "home": "GS칼텍스",
+  "away": "촌부리",
+  "stadium": "구미",
+  "full_stadium": "구미박정희체육관"
+ },
+ {
+  "date": "2023-07-30",
+  "day": "일",
+  "time": "16:00",
+  "home": "흥국생명",
+  "away": "IBK기업은행",
+  "stadium": "구미",
+  "full_stadium": "구미박정희체육관"
+ },
+ {
+  "date": "2023-07-31",
+  "day": "월",
+  "time": "15:30",
+  "home": "페퍼저축은행",
+  "away": "현대건설",
+  "stadium": "구미",
+  "full_stadium": "구미박정희체육관"
+ },
+ {
+  "date": "2023-07-31",
+  "day": "월",
+  "time": "19:00",
+  "home": "KGC인삼공사",
+  "away": "한국도로공사",
+  "stadium": "구미",
+  "full_stadium": "구미박정희체육관"
+ },
+ {
+  "date": "2023-08-01",
+  "day": "화",
+  "time": "15:30",
+  "home": "IBK기업은행",
+  "away": "GS칼텍스",
+  "stadium": "구미",
+  "full_stadium": "구미박정희체육관"
+ },
+ {
+  "date": "2023-08-01",
+  "day": "화",
+  "time": "19:00",
+  "home": "촌부리",
+  "away": "흥국생명",
+  "stadium": "구미",
+  "full_stadium": "구미박정희체육관"
+ },
+ {
+  "date": "2023-08-02",
+  "day": "수",
+  "time": "15:30",
+  "home": "페퍼저축은행",
+  "away": "KGC인삼공사",
+  "stadium": "구미",
+  "full_stadium": "구미박정희체육관"
+ },
+ {
+  "date": "2023-08-02",
+  "day": "수",
+  "time": "19:00",
+  "home": "한국도로공사",
+  "away": "현대건설",
+  "stadium": "구미",
+  "full_stadium": "구미박정희체육관"
+ },
+ {
+  "date": "2023-08-03",
+  "day": "목",
+  "time": "15:30",
+  "home": "흥국생명",
+  "away": "GS칼텍스",
+  "stadium": "구미",
+  "full_stadium": "구미박정희체육관"
+ },
+ {
+  "date": "2023-08-03",
+  "day": "목",
+  "time": "19:00",
+  "home": "IBK기업은행",
+  "away": "촌부리",
+  "stadium": "구미",
+  "full_stadium": "구미박정희체육관"
+ },
+ {
+  "date": "2023-08-06",
+  "day": "일",
+  "time": "13:30",
+  "home": "대한항공",
+  "away": "우리카드",
+  "stadium": "구미",
+  "full_stadium": "구미박정희체육관"
+ },
+ {
+  "date": "2023-08-06",
+  "day": "일",
+  "time": "16:00",
+  "home": "KB손해보험",
+  "away": "OK금융그룹",
+  "stadium": "구미",
+  "full_stadium": "구미박정희체육관"
+ },
+ {
+  "date": "2023-08-07",
+  "day": "월",
+  "time": "15:30",
+  "home": "현대캐피탈",
+  "away": "파나소닉",
+  "stadium": "구미",
+  "full_stadium": "구미박정희체육관"
+ },
+ {
+  "date": "2023-08-07",
+  "day": "월",
+  "time": "19:00",
+  "home": "한국전력",
+  "away": "삼성화재",
+  "stadium": "구미",
+  "full_stadium": "구미박정희체육관"
+ },
+ {
+  "date": "2023-08-08",
+  "day": "화",
+  "time": "15:30",
+  "home": "우리카드",
+  "away": "KB손해보험",
+  "stadium": "구미",
+  "full_stadium": "구미박정희체육관"
+ },
+ {
+  "date": "2023-08-08",
+  "day": "화",
+  "time": "19:00",
+  "home": "OK금융그룹",
+  "away": "대한항공",
+  "stadium": "구미",
+  "full_stadium": "구미박정희체육관"
+ },
+ {
+  "date": "2023-08-09",
+  "day": "수",
+  "time": "15:30",
+  "home": "삼성화재",
+  "away": "현대캐피탈",
+  "stadium": "구미",
+  "full_stadium": "구미박정희체육관"
+ },
+ {
+  "date": "2023-08-09",
+  "day": "수",
+  "time": "19:00",
+  "home": "파나소닉",
+  "away": "한국전력",
+  "stadium": "구미",
+  "full_stadium": "구미박정희체육관"
+ },
+ {
+  "date": "2023-08-10",
+  "day": "목",
+  "time": "15:30",
+  "home": "우리카드",
+  "away": "OK금융그룹",
+  "stadium": "구미",
+  "full_stadium": "구미박정희체육관"
+ },
+ {
+  "date": "2023-08-10",
+  "day": "목",
+  "time": "19:00",
+  "home": "대한항공",
+  "away": "KB손해보험",
+  "stadium": "구미",
+  "full_stadium": "구미박정희체육관"
+ },
+ {
+  "date": "2023-08-11",
+  "day": "금",
+  "time": "15:30",
+  "home": "한국전력",
+  "away": "현대캐피탈",
+  "stadium": "구미",
+  "full_stadium": "구미박정희체육관"
+ },
+ {
+  "date": "2023-08-11",
+  "day": "금",
+  "time": "19:00",
+  "home": "삼성화재",
+  "away": "파나소닉",
+  "stadium": "구미",
+  "full_stadium": "구미박정희체육관"
+ }
+]
