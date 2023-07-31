@@ -9,7 +9,6 @@ import { userToken, userimage } from '../../atom/loginAtom';
 export const InputCommentStyle = styled.form`
   position: fixed;
   bottom: 0;
-  width: 390px;
   padding: 12px 16px;
   display: flex;
   align-items: center;

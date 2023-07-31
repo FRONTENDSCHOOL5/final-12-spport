@@ -40,13 +40,13 @@ const BottomSheetStyle = styled.article`
   bottom: 0;
   left: 0;
   right: 0;
-  width: 390px;
+  width: 100%;
   margin: auto;
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
   z-index: 20;
   .bottomsheet {
-    width: 390px;
+    width: 100%;
     background: var(--color-navy);
     box-shadow: 0px -4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 20px 20px 0 0;

@@ -7,24 +7,39 @@ import iconMessage from '../../assets/image/icon-message.svg';
 import iconMessageFill from '../../assets/image/icon-message-fill.svg';
 import iconUser from '../../assets/image/icon-user.svg';
 import iconUserFill from '../../assets/image/icon-user-fill.svg';
+import iconCharacter from '../../assets/logo/logo-lime.svg';
 import { useNavigate, LInk, useLocation } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
 import { accountname } from '../../atom/loginAtom';
 
 // nav 스타일 컴포넌트
 const NavContainer = styled.nav`
-  width: 390px;
+  width: 100%;
   height: 60px;
   background-color: var(--color-navy);
   position: fixed;
   bottom: 0;
-  z-index: 10;
+  z-index: 1;
+
+  @media screen and (min-width: 768px) {
+    width: 60px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: unset;
+    flex-direction: column;
+  }
 `;
 // ul과 ul 안의 li, button, img 스타일 컴포넌트
 const NavUnorderedList = styled.ul`
   width: 100%;
   height: 100%;
   display: flex;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+  }
+
   li {
     display: inline-block;
     list-style: none;

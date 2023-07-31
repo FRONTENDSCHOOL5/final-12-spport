@@ -18,7 +18,7 @@ import {
 } from '../../api/PostAPI.js/PostDetailAPI';
 
 const PostStyle = styled.article`
-  width: 358px;
+  width: 500px;
   .post-wrapper {
     margin-left: 52px;
     color: var(--color-navy);
@@ -65,7 +65,7 @@ export default function Post({ post }) {
             '게시물이 삭제되었습니다',
             '확인',
             function () {
-              if(loca === 'post') {
+              if (loca === 'post') {
                 navigate(-1);
               } else {
                 location.reload();

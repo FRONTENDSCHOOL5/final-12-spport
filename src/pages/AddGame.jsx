@@ -23,8 +23,7 @@ const MainStyle = styled.main`
     padding: 16px;
     display: flex;
     align-items: center;
-    position: fixed;
-    width: 390px;
+    width: 100%;
     background: white;
     gap: 10px;
     div:nth-child(2) {
@@ -32,7 +31,11 @@ const MainStyle = styled.main`
     }
   }
   .section-game {
-    padding: 80px 16px 16px;
+    padding: 15px 16px 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 60px;
   }
 `;
 

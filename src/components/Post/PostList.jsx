@@ -5,11 +5,12 @@ import { sortFeedPost } from '../../api/GameAPI/FeedGame';
 import { useInView } from 'react-intersection-observer';
 
 const PostListStyle = styled.ul`
-  background: white;
   padding: 20px 16px 50px;
   min-height: 350px;
   li {
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
   }
   p {
     overflow: hidden;
