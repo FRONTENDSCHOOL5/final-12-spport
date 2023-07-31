@@ -18,6 +18,7 @@ import Splash from '../pages/Splash';
 import EditPost from '../pages/EditPost';
 import PlayerList from '../pages/PlayerList';
 import Schedule from '../pages/Schedule';
+import SameTag from '../components/Profile/SameTag';
 import { useRecoilState } from 'recoil';
 import { loginState } from '../atom/loginAtom';
 
@@ -59,6 +60,7 @@ export default function Router() {
       <Route path='/schedule/:id' element={<Schedule />} />
       <Route path='/*' element={<Error />} />
       <Route path='/error' element={<Error />} />
+      <Route path='/tag/:tag' element={<SameTag />} />
     </Routes>
   );
 }
