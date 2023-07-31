@@ -1,8 +1,9 @@
 # ⚾ SPPORT ⚽
+![KakaoTalk_20230627_200910852](https://github.com/doong2imdang/final-12-spport/assets/124869695/8e053c59-eb66-435f-babe-a3822cf9a873)
 
 ## 소개 및 개요
 * 프로젝트 기간 : 2023.06.01 ~ 2023.06.30
-* 배포 URL : 
+* 배포 URL : [🔗SPPORT](https://hyeri-woo.github.io/final-12-spport/)
 * TestID / PW : only_lions@test.com / only_lions123
 
 ## [프로젝트 설명]
@@ -16,10 +17,11 @@
 3.[ 주요 기능](#3-주요-기능)  
 4.[ 프로젝트 구조](#4-프로젝트-구조)  
 5.[ 역할 분담](#5-역할-분담)  
-6.[ UI](#6-ui)  
-7.[ 페이지 기능](#7-페이지-기능)  
-8.[ 핵심 기능](#8-핵심-기능)  
-9.[ 느낀점](#9-느낀점)
+6.[ Flowchart](#6-flowchart)  
+7.[ UI](#7-ui)  
+8.[ 페이지 기능](#8-페이지-기능)  
+9.[ 핵심 기능](#9-핵심-기능)   
+10.[ 느낀점](#10-느낀점)
 
 
 ## 1. 팀 소개
@@ -42,7 +44,7 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 ### [개발 환경]
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"> <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=Figma&logoColor=white"> <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white"> <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=Discord&logoColor=white">
 * GitHub Projects : 진행상황을 page별로 나누어 GitHub Issues에서 각자 맡은 업무를 이슈 템플릿에 체크리스트 형식으로 공유했습니다.
-* GitHub Wiki : 회의와 컨벤션을 기록하고 요점노트를 기록하여 공유하였습니다.
+* GitHub Wiki : 컨벤션을 기록하고 페이지 상세설명을 기록하여 공유하였습니다.
 * Figma : 동시 접속하여 함께 UI, 색상 디자인 상의를 진행했습니다.
 * Discord : 원활한 의사소통을 위해 디스코드에서 영상 및 음성 통화를 적극 활용했습니다.
 
@@ -299,8 +301,8 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 * 역할
 	* 팀리더
 	* 컨벤션 관리
- 	* 피그마 디자인 작업 
- * UI
+ 	* 피그마 디자인 작업
+* UI
  	* 컴포넌트: Header, Filter, BottomSheet
   	* 페이지: 직관일정, 팀 포스트, 404, 검색, 일정 추가
 * 기능
@@ -313,7 +315,7 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 * UI
 	* 컴포넌트 : Input, Modal 	
 	* 페이지: Splash, Login, Signup, 선수리스트, 채팅
- * 기능
+* 기능
  	* 유효성 검사, 회원가입, 로그인 화면, 프로필 설정, 프로필 수정, 필터링
 
 ### 🧑🏻‍💻이영주
@@ -322,16 +324,16 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 * UI
 	* 컴포넌트 : Button, 일반 포스트	
 	* 페이지: Upload, EditPost, Home
- * 기능
- 	* 게시물 작성/수정/삭제, 홈피드 게시글 목록, 이미지 슬라드
+* 기능
+ 	* 게시물 작성/수정/삭제, 홈피드 게시글 목록, 이미지 슬라이더
 ### 🧑🏻‍💻신민철
 * 역할
 	* 깃허브 관리	 
 * UI
 	* 컴포넌트 : ProfileImage/NavBar	
 	* 페이지: 유저/팀/나의 프로필 페이지, 팔로우/팔로잉 페이지
- * 기능
- 	* 팔로우, 게시글 앨범형/리스트형, 
+* 기능
+ 	* 팔로우, 게시글 앨범형/리스트형
   
 ## 6. Flowchart
 ![Spport-main](https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/107099724/cd8277a9-a788-4db5-9cad-7750fda5e176)
@@ -340,6 +342,51 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 ![Frame 7](https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/107099724/25817f9b-7ece-4b4f-b961-01162ce39c69)
 
 ## 8. 페이지 기능
+
+### 1) 홈
+|Splash|로그인 페이지|회원가입 페이지
+|:-:|:-:|:-:|
+|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/a72b11a8-f450-4190-ad01-3afc5fdc0418"> |<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/f5771864-2f5a-4098-ba25-6b898a90b792">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/7299251a-209d-4db0-89f8-2c7e0da5b104">|
+
+
+|홈 페이지|홈 페이지 필터링/좋아요|검색 페이지
+|:-:|:-:|:-:|
+|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/4391a1e5-4cac-4860-b3c4-4cb385de4608">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/87a24327-49c8-4e06-a82d-9ca5455f7a7b">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/5e67f42a-29ec-432d-acba-cbd1a5397ca5">|
+
+<br/>
+
+### 2) 프로필
+|마이 프로필 페이지 게시글|마이 프로필 페이지 일정 추가|유저 프로필 페이지
+|:-:|:-:|:-:|
+|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/d068fa5a-69fb-4a98-8d9e-f81250256edb">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/6c5ced03-6adc-4b6e-a7e0-4afcbc9f7b3f">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/9f15e462-52cb-4381-aeb0-9b98d56a9b6f">
+
+|팀 프로필 페이지 공 아이콘|팀 프로필 페이지 선수 보러 가기|팀 프로필 페이지 경기일정
+|:-:|:-:|:-:|
+|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/f86cbb3b-3e58-47ea-99e6-93e57cbecba7">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/74c183bb-87d7-4eab-80ea-7189cf2bc1b5">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/5f2cdffe-ad96-47ec-91ed-aed2158fd381">|
+
+|프로필 수정 페이지|로그아웃
+|:-:|:-:|
+|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/b4e9540f-55a9-48ce-84d5-ba96ae5222d1">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/0f79f26f-2e75-4007-ba21-58d4fde52b71">|
+
+<br/>
+
+### 3) 게시글
+|게시글 작성|게시글 수정|게시글 삭제
+|:-:|:-:|:-:|
+|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/aad058cb-d0bd-4ecd-9b6e-799168409b0c">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/dc3ec37c-8f73-4acf-a275-5a23bf744237">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/134f8058-ad37-459b-be0f-bf65b6d8d115">|
+
+|게시글 상세 페이지|이미지 슬라이더|게시글 신고
+|:-:|:-:|:-:|
+|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/89a946f3-356c-4f06-9489-1271ae13ad2b">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/5f509915-3c82-4451-a35a-7b2e39ecc100">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/f8bb8034-966e-477e-a570-a0260fb0b621">|
+
+<br/>
+
+### 4) 댓글
+|댓글 작성|댓글 삭제|댓글 신고
+|:-:|:-:|:-:|
+|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/1b13d436-2741-447c-bd28-78cabc8a353e">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/9074cf18-3154-4bb9-a903-6a13f32313d8">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/2c9d1e04-8c79-4add-9fd8-c6f93b3c46af">|
+
+<br/>
 
 ## 9. 핵심 기능
 
@@ -350,12 +397,37 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 
 1. 일정 추가 페이지에서 중복 게임은 하나만 보여주기 </br>
 스포츠 팀을 여러 개 팔로우한 경우 게임 일정이 겹치게 됩니다. 일정 추가 페이지에서 같은 게임 일정을 반복해서 보여주지 않기 위해 같은 일정의 경우 Map으로 묶어 key 값으로는 게임 정보를 저장하고 value 값으로는 해당 게시물들의 ID를 저장했습니다. 그 Map을 다시 순환하면서 중복되더라도 하나만 보일 수 있도록 처리하였습니다.  
+```js
+const gameMap = new Map();
+  game.forEach((item) => {
+    if (gameMap.has(item.content)) {
+      gameMap.set(item.content, [...gameMap.get(item.content), item.id]);
+    } else {
+      gameMap.set(item.content, [item.id]);
+    }
+  });
+  ```
 
 2. 추가/취소할 시 중복 게임 전부 좋아요 활성화/취소 </br>
 위에서 Map으로 처리하면서 key 값으로는 게임 리스트에 보여주고 value 값을 다시 순환하여 추가할 경우 해당되는 모든 게시물은 좋아요를 활성화시키고 취소할 경우 좋아요를 취소하였습니다. 
 
 3. 추가/취소할 시 직관일정을 추가/취소 </br>
 좋아요를 활성화/취소하면서 동시에 상품등록 API를 사용해 해당 게임일정 정보와 해당 게시물 정보들의 ID를 전부 저장해주었습니다. 이후 좋아요 활성화/취소할 경우 상품을 추가/삭제를 해야할 때 저장한 ID를 전부 순환하여 해당 직관일정을 삭제하도록 합니다. 
+```js
+const likeGameAPI = async (token, ids, isTeam, post, isGame = false) => {
+  const returnArr = [];
+  if (isTeam) {
+    const data = await addProductAPI(token, post, ids, isGame);
+  }
+  for (const id of ids) {
+    const like = await POST_API_NO_BODY(token, `/post/${id}/heart`);
+    returnArr.push(like);
+  }
+
+  return returnArr;
+};
+```
+
 
 ### [날씨 API 사용]
 ![Frame 9](https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/107099724/d2db5ce6-75eb-4305-82f3-b3a88a0d5328)
@@ -409,7 +481,6 @@ const storeWeather = async (team_name, post, data) => {
 
 ### [Intersection Observer API을 사용한 무한 스크롤]
 스크롤 이벤트가 발생할 때마다 처리하는 것은 불필요하게 과도한 이벤트가 발생하여 성능 저하로 이어질 수 있기 때문에 Intersection Observer API를 사용하여 성능 저하를 방지하고 타겟 요소와 상위 요소 또는 최상위 document의 뷰포트 사이의 교차 영역 변화를 비동기적으로 관찰했습니다.
-
 구체적으로, 리스트 요소의 가장 마지막에 <span> 요소에 ref를 설정하여 해당 요소의 가시성 변화를 감지하고, inView라는 변수의 값을 변경하도록 설정했습니다. inView 값이 true로 변경될 때마다 페이지 값을 증가시켜 화면 끝에 도달할 때마다 추가적인 게시물을 가져오도록 구현했습니다.
 ```js
 ...
