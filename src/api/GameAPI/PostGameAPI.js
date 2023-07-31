@@ -1,5 +1,5 @@
-import tokenData from '../../data/sport_bs_users.json';
-import gameData from '../../data/baseball_games.json';
+import tokenData from '../../assets/data/sport_users.json';
+import bsGameData from '../../assets/data/baseball_games.json';
 import { GET_API, POST_API, PUT_API } from '../CommonAPI';
 
 const postAPI = async (token, content, image = '') => {
@@ -17,7 +17,7 @@ const postGameInfo = () => {
   tokenData.forEach((team) => {
     const team_name = team.username.split(' ')[0];
     const token = team.token;
-    const filteredGame = gameData.filter(
+    const filteredGame = bsGameData.filter(
       (game) => team_name === game.home || team_name === game.away,
     );
     filteredGame.forEach((game) => {
@@ -26,11 +26,6 @@ const postGameInfo = () => {
       postAPI(token, content, image);
     });
   });
-};
-
-const getPostDetailAPI = async (token, id) => {
-  const post = await GET_API(token, `/post/${id}`);
-  return post;
 };
 
 const editGamePostAPI = async (token, id, content, weather) => {
@@ -46,4 +41,4 @@ const editGamePostAPI = async (token, id, content, weather) => {
   return data;
 };
 
-export { getPostDetailAPI, editGamePostAPI };
+export { editGamePostAPI };

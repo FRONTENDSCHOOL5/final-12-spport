@@ -52,7 +52,7 @@ const WelcomeWrap = styled.div`
   grid-template-rows: 3fr 2fr;
   background-color: var(--color-navy);
   height: 100vh;
-  width: 390px;
+  width: 100%;
 `;
 
 const UlLogin = styled.div`

@@ -26,6 +26,10 @@ const Container = styled.div`
   flex-direction: column;
   gap: 6px;
   background-color: var(--color-bg);
+
+  @media screen and (min-width: 768px) {
+    padding-left: 60px;
+  }
 `;
 
 const BtnPlayer = styled.button`

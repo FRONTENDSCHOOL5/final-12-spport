@@ -1,6 +1,6 @@
 import { GET_API } from '../CommonAPI';
 import { arrToGame } from './AddGameAPI';
-import tokenData from '../../data/sport_bs_users.json';
+import tokenData from '../../assets/data/sport_users.json';
 
 const getTeamToken = (team_name) => {
   const team = tokenData.filter(

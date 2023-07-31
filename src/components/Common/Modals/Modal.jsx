@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { useRecoilState } from 'recoil';
 import { isModalOpen } from '../../../atom/modalAtom';
@@ -9,7 +9,7 @@ const ModalStyle = styled.article`
   bottom: 0;
   left: 0;
   right: 0;
-  width: 390px;
+  width: 100%;
   height: 100vh;
   margin: auto;
   background: rgba(0, 0, 0, 0.3);
@@ -56,6 +56,26 @@ export default function Modal({ items }) {
   const closeModal = () => {
     setModalOpen(false);
   };
+  useEffect(() => {
+    const btnCancel = document.querySelector('.btn-cancel');
+    const btnYes = document.querySelector('.btn-yes');
+    if (modalOpen) {
+      btnCancel.focus();
+      console.log(document.activeElement);
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Tab') {
+          if (document.activeElement === btnYes) {
+            e.preventDefault();
+            btnCancel.focus();
+          } else if (document.activeElement === btnCancel && e.shiftKey) {
+            e.preventDefault();
+            btnYes.focus();
+          }
+        }
+      });
+    }
+  }, []);
+
   return (
     <ModalStyle onClick={closeModal}>
       <div className='modal-wrapper'>

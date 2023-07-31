@@ -1,0 +1,5618 @@
+[
+ {
+  "uniform_number": "1",
+  "name": "강정묵",
+  "team": "서울E",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "31",
+  "name": "강현무",
+  "team": "김천",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "1",
+  "name": "고동민",
+  "team": "경남",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "51",
+  "name": "공시현",
+  "team": "전북",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "1",
+  "name": "구상민",
+  "team": "부산",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "1",
+  "name": "김경민",
+  "team": "광주",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "41",
+  "name": "김근배",
+  "team": "제주",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "31",
+  "name": "김다솔",
+  "team": "전남",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "41",
+  "name": "김동건",
+  "team": "천안",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "1",
+  "name": "김동준",
+  "team": "제주",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "1",
+  "name": "김동헌",
+  "team": "인천",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "51",
+  "name": "김민승",
+  "team": "부산",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "51",
+  "name": "김민재",
+  "team": "김포",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "1",
+  "name": "김민준",
+  "team": "천안",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "21",
+  "name": "김선우",
+  "team": "안산",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "23",
+  "name": "김성동",
+  "team": "안양",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "41",
+  "name": "김영광",
+  "team": "성남",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "31",
+  "name": "김영호",
+  "team": "안산",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "29",
+  "name": "김유성",
+  "team": "인천",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "25",
+  "name": "김정호",
+  "team": "강원",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "1",
+  "name": "김정훈",
+  "team": "전북",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "41",
+  "name": "김준홍",
+  "team": "김천",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "71",
+  "name": "김태양",
+  "team": "전북",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "41",
+  "name": "김태준",
+  "team": "광주",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "21",
+  "name": "김태훈",
+  "team": "안양",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "23",
+  "name": "김현석",
+  "team": "전남",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "13",
+  "name": "김현엽",
+  "team": "부천",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "21",
+  "name": "김형근",
+  "team": "제주",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "31",
+  "name": "김효준",
+  "team": "천안",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "17",
+  "name": "노동건",
+  "team": "수원FC",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "31",
+  "name": "노희동",
+  "team": "광주",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "1",
+  "name": "류원우",
+  "team": "충북청주",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "1",
+  "name": "문경건",
+  "team": "김천",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "23",
+  "name": "문정인",
+  "team": "서울E",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "37",
+  "name": "문현호",
+  "team": "충남아산",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "77",
+  "name": "민동환",
+  "team": "울산",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "23",
+  "name": "민성준",
+  "team": "인천",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "21",
+  "name": "박대한",
+  "team": "충북청주",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "1",
+  "name": "박배종",
+  "team": "수원FC",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "41",
+  "name": "박범수",
+  "team": "전북",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "1",
+  "name": "박성수",
+  "team": "안양",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "21",
+  "name": "박주원",
+  "team": "충남아산",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "34",
+  "name": "박지민",
+  "team": "수원",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "13",
+  "name": "박청효",
+  "team": "김포",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "1",
+  "name": "박한근",
+  "team": "충남아산",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "51",
+  "name": "배상필",
+  "team": "대전",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "1",
+  "name": "백종범",
+  "team": "서울",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "23",
+  "name": "서주환",
+  "team": "서울",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "28",
+  "name": "설현빈",
+  "team": "울산",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "31",
+  "name": "손정현",
+  "team": "경남",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "18",
+  "name": "신송훈",
+  "team": "김천",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "98",
+  "name": "안준수",
+  "team": "전남",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "99",
+  "name": "안찬기",
+  "team": "수원",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "41",
+  "name": "안태윤",
+  "team": "대전",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "87",
+  "name": "안호진",
+  "team": "경남",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "21",
+  "name": "양형모",
+  "team": "수원",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "21",
+  "name": "오승훈",
+  "team": "대구",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "1",
+  "name": "유상훈",
+  "team": "강원",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "77",
+  "name": "윤보상",
+  "team": "서울E",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "1",
+  "name": "윤평국",
+  "team": "포항",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "31",
+  "name": "이광연",
+  "team": "강원",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "25",
+  "name": "이범수",
+  "team": "부천",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "31",
+  "name": "이범영",
+  "team": "수원FC",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "1",
+  "name": "이상욱",
+  "team": "김포",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "31",
+  "name": "이성주",
+  "team": "수원",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "13",
+  "name": "이승규",
+  "team": "부산",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "1",
+  "name": "이승빈",
+  "team": "안산",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "32",
+  "name": "이승환",
+  "team": "포항",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "25",
+  "name": "이윤오",
+  "team": "경남",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "61",
+  "name": "이재훈",
+  "team": "수원FC",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "1",
+  "name": "이주현",
+  "team": "부천",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "21",
+  "name": "이준",
+  "team": "광주",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "25",
+  "name": "이준서",
+  "team": "대전",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "88",
+  "name": "이준희",
+  "team": "대구",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "1",
+  "name": "이창근",
+  "team": "대전",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "21",
+  "name": "이태희",
+  "team": "인천",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "38",
+  "name": "임기목",
+  "team": "부산",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "36",
+  "name": "임민혁",
+  "team": "천안",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "23",
+  "name": "임준섭",
+  "team": "제주",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "61",
+  "name": "전지완",
+  "team": "전북",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "30",
+  "name": "정명제",
+  "team": "성남",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "13",
+  "name": "정민기",
+  "team": "전북",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "23",
+  "name": "정산",
+  "team": "대전",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "18",
+  "name": "정진욱",
+  "team": "충북청주",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "25",
+  "name": "정현호",
+  "team": "충북청주",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "41",
+  "name": "조민규",
+  "team": "강원",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "99",
+  "name": "조성빈",
+  "team": "전남",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "41",
+  "name": "조성훈",
+  "team": "포항",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "1",
+  "name": "조수혁",
+  "team": "울산",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "21",
+  "name": "조현우",
+  "team": "울산",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "31",
+  "name": "주현성",
+  "team": "서울E",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "1",
+  "name": "최봉진",
+  "team": "전남",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "1",
+  "name": "최영은",
+  "team": "대구",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "21",
+  "name": "최철원",
+  "team": "서울",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "1",
+  "name": "최필수",
+  "team": "성남",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "51",
+  "name": "한지율",
+  "team": "대구",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "31",
+  "name": "한태희",
+  "team": "대구",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "41",
+  "name": "황병근",
+  "team": "부산",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "18",
+  "name": "황성민",
+  "team": "서울",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "21",
+  "name": "황인재",
+  "team": "포항",
+  "position": "GK"
+ },
+ {
+  "uniform_number": "31",
+  "name": "감한솔",
+  "team": "부천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "91",
+  "name": "강상희",
+  "team": "서울",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "13",
+  "name": "강윤구",
+  "team": "인천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "71",
+  "name": "강윤성",
+  "team": "대전",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "3",
+  "name": "강의빈",
+  "team": "성남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "99",
+  "name": "강준혁",
+  "team": "충남아산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "74",
+  "name": "강투지",
+  "team": "강원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "15",
+  "name": "고명석",
+  "team": "수원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "34",
+  "name": "고민우",
+  "team": "안산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "4",
+  "name": "고태규",
+  "team": "안산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "5",
+  "name": "고태원",
+  "team": "전남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "32",
+  "name": "곽동준",
+  "team": "수원FC",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "35",
+  "name": "곽성훈",
+  "team": "수원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "38",
+  "name": "곽승민",
+  "team": "제주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "90",
+  "name": "구대영",
+  "team": "안양",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "15",
+  "name": "구자룡",
+  "team": "전북",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "19",
+  "name": "구현준",
+  "team": "충북청주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "42",
+  "name": "권석주",
+  "team": "강원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "3",
+  "name": "권완규",
+  "team": "서울",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "30",
+  "name": "권우현",
+  "team": "안산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "55",
+  "name": "권한진",
+  "team": "인천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "5",
+  "name": "그랜트",
+  "team": "포항",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "20",
+  "name": "김강산",
+  "team": "대구",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "44",
+  "name": "김건희",
+  "team": "인천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "15",
+  "name": "김경재",
+  "team": "광주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "17",
+  "name": "김규민",
+  "team": "부천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "38",
+  "name": "김기환",
+  "team": "강원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "44",
+  "name": "김기희",
+  "team": "울산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "18",
+  "name": "김대경",
+  "team": "안산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "26",
+  "name": "김대생",
+  "team": "천안",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "29",
+  "name": "김대환",
+  "team": "제주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "27",
+  "name": "김동국",
+  "team": "광주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "47",
+  "name": "김동민",
+  "team": "인천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "3",
+  "name": "김동수",
+  "team": "부산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "22",
+  "name": "김동진",
+  "team": "안양",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "12",
+  "name": "김륜성",
+  "team": "김천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "44",
+  "name": "김리관",
+  "team": "대구",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "39",
+  "name": "김명순",
+  "team": "충북청주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "3",
+  "name": "김민규",
+  "team": "서울E",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "3",
+  "name": "김민덕",
+  "team": "대전",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "20",
+  "name": "김민호",
+  "team": "김포",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "37",
+  "name": "김선호",
+  "team": "부천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "17",
+  "name": "김성주",
+  "team": "충남아산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "28",
+  "name": "김수범",
+  "team": "전남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "4",
+  "name": "김승우",
+  "team": "광주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "3",
+  "name": "김연수",
+  "team": "인천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "19",
+  "name": "김영권",
+  "team": "울산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "2",
+  "name": "김영빈",
+  "team": "강원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "5",
+  "name": "김영찬",
+  "team": "경남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "20",
+  "name": "김오규",
+  "team": "제주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "3",
+  "name": "김용환",
+  "team": "포항",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "21",
+  "name": "김우석",
+  "team": "강원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "40",
+  "name": "김원균",
+  "team": "충북청주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "95",
+  "name": "김재봉",
+  "team": "광주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "14",
+  "name": "김재성",
+  "team": "안산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "34",
+  "name": "김재우",
+  "team": "김천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "20",
+  "name": "김정호",
+  "team": "안산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "30",
+  "name": "김종민",
+  "team": "김포",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "50",
+  "name": "김종필",
+  "team": "경남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "30",
+  "name": "김주성",
+  "team": "서울",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "2",
+  "name": "김주성",
+  "team": "충남아산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "24",
+  "name": "김주엽",
+  "team": "수원FC",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "66",
+  "name": "김주원",
+  "team": "수원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "15",
+  "name": "김주헌",
+  "team": "천안",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "28",
+  "name": "김주형",
+  "team": "강원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "2",
+  "name": "김주환",
+  "team": "천안",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "17",
+  "name": "김준엽",
+  "team": "인천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "2",
+  "name": "김지운",
+  "team": "충북청주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "26",
+  "name": "김지훈",
+  "team": "대전",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "16",
+  "name": "김진래",
+  "team": "성남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "23",
+  "name": "김진수",
+  "team": "전북",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "17",
+  "name": "김진야",
+  "team": "서울",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "7",
+  "name": "김진혁",
+  "team": "대구",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "24",
+  "name": "김진호",
+  "team": "강원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "39",
+  "name": "김창수",
+  "team": "천안",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "3",
+  "name": "김채운",
+  "team": "안산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "4",
+  "name": "김태한",
+  "team": "김포",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "28",
+  "name": "김태현",
+  "team": "김천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "32",
+  "name": "김태현",
+  "team": "대전",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "23",
+  "name": "김태환",
+  "team": "울산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "11",
+  "name": "김태환",
+  "team": "수원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "25",
+  "name": "김하준",
+  "team": "안양",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "10",
+  "name": "김한길",
+  "team": "광주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "20",
+  "name": "김현덕",
+  "team": "서울",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "4",
+  "name": "김현우",
+  "team": "대전",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "44",
+  "name": "김현훈",
+  "team": "전남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "15",
+  "name": "김형진",
+  "team": "안양",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "37",
+  "name": "김훈민",
+  "team": "성남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "40",
+  "name": "남현욱",
+  "team": "부천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "55",
+  "name": "노윤상",
+  "team": "전북",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "6",
+  "name": "닐손주니어",
+  "team": "부천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "20",
+  "name": "델브리지",
+  "team": "인천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "66",
+  "name": "류광현",
+  "team": "강원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "5",
+  "name": "류언재",
+  "team": "김포",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "28",
+  "name": "문건호",
+  "team": "천안",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "6",
+  "name": "문지환",
+  "team": "인천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "39",
+  "name": "민상기",
+  "team": "부산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "13",
+  "name": "박건",
+  "team": "충북청주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "22",
+  "name": "박건우",
+  "team": "포항",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "3",
+  "name": "박경록",
+  "team": "김포",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "33",
+  "name": "박경민",
+  "team": "서울E",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "3",
+  "name": "박경빈",
+  "team": "안양",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "91",
+  "name": "박광일",
+  "team": "김포",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "33",
+  "name": "박대원",
+  "team": "수원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "2",
+  "name": "박동휘",
+  "team": "안산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "23",
+  "name": "박민규",
+  "team": "김천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "66",
+  "name": "박병현",
+  "team": "수원FC",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "73",
+  "name": "박성결",
+  "team": "전남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "27",
+  "name": "박성우",
+  "team": "충남아산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "40",
+  "name": "박성훈",
+  "team": "서울",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "66",
+  "name": "박세진",
+  "team": "부산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "96",
+  "name": "박수일",
+  "team": "서울",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "14",
+  "name": "박승욱",
+  "team": "포항",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "39",
+  "name": "박재경",
+  "team": "대구",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "2",
+  "name": "박재우",
+  "team": "부천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "29",
+  "name": "박재현",
+  "team": "대구",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "73",
+  "name": "박재환",
+  "team": "경남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "5",
+  "name": "박종현",
+  "team": "안양",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "37",
+  "name": "박준강",
+  "team": "천안",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "40",
+  "name": "박준영",
+  "team": "안산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "20",
+  "name": "박준영",
+  "team": "서울E",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "4",
+  "name": "박진섭",
+  "team": "전북",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "24",
+  "name": "박진성",
+  "team": "충북청주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "20",
+  "name": "박찬용",
+  "team": "포항",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "70",
+  "name": "박창우",
+  "team": "전북",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "3",
+  "name": "박철우",
+  "team": "수원FC",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "21",
+  "name": "박형진",
+  "team": "부천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "35",
+  "name": "박호영",
+  "team": "부산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "24",
+  "name": "배서준",
+  "team": "대전",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "5",
+  "name": "배수용",
+  "team": "충남아산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "30",
+  "name": "백동규",
+  "team": "안양",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "15",
+  "name": "변준수",
+  "team": "대전",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "4",
+  "name": "불투이스",
+  "team": "수원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "20",
+  "name": "서명관",
+  "team": "부천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "2",
+  "name": "서영재",
+  "team": "대전",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "66",
+  "name": "설영우",
+  "team": "울산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "34",
+  "name": "손승우",
+  "team": "대구",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "77",
+  "name": "손호준",
+  "team": "수원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "4",
+  "name": "송주훈",
+  "team": "제주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "34",
+  "name": "송준석",
+  "team": "김포",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "13",
+  "name": "신민기",
+  "team": "안산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "30",
+  "name": "신세계",
+  "team": "수원FC",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "13",
+  "name": "신원철",
+  "team": "포항",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "21",
+  "name": "신원호",
+  "team": "천안",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "26",
+  "name": "신일수",
+  "team": "전남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "55",
+  "name": "심민용",
+  "team": "김포",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "2",
+  "name": "심상민",
+  "team": "포항",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "28",
+  "name": "아론",
+  "team": "광주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "14",
+  "name": "아스나위",
+  "team": "전남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "24",
+  "name": "안",
+  "team": "천안",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "6",
+  "name": "안영규",
+  "team": "광주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "2",
+  "name": "안태현",
+  "team": "제주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "98",
+  "name": "안톤",
+  "team": "대전",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "94",
+  "name": "안현범",
+  "team": "전북",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "44",
+  "name": "양시후",
+  "team": "성남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "17",
+  "name": "여승원",
+  "team": "전남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "40",
+  "name": "연제민",
+  "team": "안양",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "3",
+  "name": "연제운",
+  "team": "제주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "4",
+  "name": "오반석",
+  "team": "인천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "23",
+  "name": "오윤석",
+  "team": "천안",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "13",
+  "name": "오인표",
+  "team": "수원FC",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "22",
+  "name": "오재석",
+  "team": "대전",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "22",
+  "name": "오현교",
+  "team": "천안",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "25",
+  "name": "우고 고메스",
+  "team": "수원FC",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "15",
+  "name": "우주성",
+  "team": "경남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "32",
+  "name": "원태랑",
+  "team": "부산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "77",
+  "name": "유선",
+  "team": "성남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "77",
+  "name": "유수환",
+  "team": "전북",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "15",
+  "name": "유승표",
+  "team": "김포",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "66",
+  "name": "유승현",
+  "team": "부천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "34",
+  "name": "유예찬",
+  "team": "전북",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "17",
+  "name": "유인수",
+  "team": "강원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "43",
+  "name": "유지운",
+  "team": "대구",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "27",
+  "name": "유지원",
+  "team": "충북청주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "2",
+  "name": "유지하",
+  "team": "전남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "2",
+  "name": "윤서호",
+  "team": "수원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "20",
+  "name": "윤석영",
+  "team": "강원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "5",
+  "name": "윤영선",
+  "team": "전북",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "24",
+  "name": "윤종규",
+  "team": "김천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "83",
+  "name": "윤준성",
+  "team": "안양",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "35",
+  "name": "윤태민",
+  "team": "대구",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "45",
+  "name": "이강한",
+  "team": "강원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "35",
+  "name": "이건웅",
+  "team": "안산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "20",
+  "name": "이광선",
+  "team": "경남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "3",
+  "name": "이광준",
+  "team": "천안",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "34",
+  "name": "이규백",
+  "team": "포항",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "28",
+  "name": "이규석",
+  "team": "수원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "66",
+  "name": "이규혁",
+  "team": "전남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "23",
+  "name": "이기제",
+  "team": "수원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "46",
+  "name": "이동원",
+  "team": "대전",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "30",
+  "name": "이동진",
+  "team": "강원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "3",
+  "name": "이동희",
+  "team": "부천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "13",
+  "name": "이명재",
+  "team": "울산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "3",
+  "name": "이민기",
+  "team": "광주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "33",
+  "name": "이민기",
+  "team": "경남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "5",
+  "name": "이민형",
+  "team": "충북청주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "22",
+  "name": "이상기",
+  "team": "광주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "35",
+  "name": "이상민",
+  "team": "김천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "44",
+  "name": "이상혁",
+  "team": "김포",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "66",
+  "name": "이선호",
+  "team": "대전",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "22",
+  "name": "이시영",
+  "team": "서울",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "88",
+  "name": "이용",
+  "team": "수원FC",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "5",
+  "name": "이용혁",
+  "team": "부천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "40",
+  "name": "이우연",
+  "team": "전북",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "5",
+  "name": "이웅희",
+  "team": "강원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "15",
+  "name": "이원우",
+  "team": "대구",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "11",
+  "name": "이유현",
+  "team": "김천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "8",
+  "name": "이으뜸",
+  "team": "광주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "47",
+  "name": "이은범",
+  "team": "충남아산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "92",
+  "name": "이인재",
+  "team": "서울E",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "17",
+  "name": "이재명",
+  "team": "경남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "15",
+  "name": "이재성",
+  "team": "충남아산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "5",
+  "name": "이재원",
+  "team": "천안",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "14",
+  "name": "이재익",
+  "team": "서울E",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "77",
+  "name": "이정",
+  "team": "부산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "42",
+  "name": "이정문",
+  "team": "서울E",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "14",
+  "name": "이정택",
+  "team": "충북청주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "27",
+  "name": "이종현",
+  "team": "대전",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "33",
+  "name": "이종훈",
+  "team": "충북청주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "40",
+  "name": "이주영",
+  "team": "경남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "32",
+  "name": "이주용",
+  "team": "제주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "18",
+  "name": "이준재",
+  "team": "경남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "22",
+  "name": "이준희",
+  "team": "안산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "39",
+  "name": "이지석",
+  "team": "서울",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "3",
+  "name": "이지솔",
+  "team": "강원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "36",
+  "name": "이지우",
+  "team": "강원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "17",
+  "name": "이지훈",
+  "team": "성남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "26",
+  "name": "이진용",
+  "team": "대구",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "3",
+  "name": "이찬욱",
+  "team": "경남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "4",
+  "name": "이창용",
+  "team": "안양",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "88",
+  "name": "이태석",
+  "team": "서울",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "27",
+  "name": "이태섭",
+  "team": "수원FC",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "32",
+  "name": "이태희",
+  "team": "안양",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "33",
+  "name": "이택근",
+  "team": "안산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "14",
+  "name": "이학민",
+  "team": "충남아산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "20",
+  "name": "이한도",
+  "team": "부산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "4",
+  "name": "이한범",
+  "team": "서울",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "55",
+  "name": "이한빈",
+  "team": "대전",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "3",
+  "name": "이한샘",
+  "team": "충북청주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "25",
+  "name": "이현규",
+  "team": "부산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "3",
+  "name": "이호인",
+  "team": "충남아산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "5",
+  "name": "임덕근",
+  "team": "대전",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "27",
+  "name": "임도훈",
+  "team": "김포",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "6",
+  "name": "임승겸",
+  "team": "김천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "31",
+  "name": "임유석",
+  "team": "대전",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "5",
+  "name": "임종은",
+  "team": "울산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "16",
+  "name": "임준우",
+  "team": "김포",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "28",
+  "name": "임창우",
+  "team": "제주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "26",
+  "name": "임채민",
+  "team": "제주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "15",
+  "name": "임형진",
+  "team": "인천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "34",
+  "name": "장명근",
+  "team": "부산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "25",
+  "name": "장석환",
+  "team": "수원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "5",
+  "name": "장성원",
+  "team": "대구",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "3",
+  "name": "장시영",
+  "team": "울산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "23",
+  "name": "장유섭",
+  "team": "안산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "4",
+  "name": "장준영",
+  "team": "충남아산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "3",
+  "name": "장호익",
+  "team": "수원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "29",
+  "name": "장효준",
+  "team": "성남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "5",
+  "name": "잭슨",
+  "team": "수원FC",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "27",
+  "name": "전성진",
+  "team": "제주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "44",
+  "name": "전현병",
+  "team": "강원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "37",
+  "name": "정강민",
+  "team": "대전",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "14",
+  "name": "정동윤",
+  "team": "인천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "2",
+  "name": "정동호",
+  "team": "수원FC",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "44",
+  "name": "정수환",
+  "team": "부천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "23",
+  "name": "정승용",
+  "team": "성남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "15",
+  "name": "정승현",
+  "team": "울산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "15",
+  "name": "정용희",
+  "team": "안산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "32",
+  "name": "정우재",
+  "team": "전북",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "13",
+  "name": "정운",
+  "team": "제주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "47",
+  "name": "정원식",
+  "team": "대전",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "42",
+  "name": "정윤서",
+  "team": "대구",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "5",
+  "name": "정재민",
+  "team": "안산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "2",
+  "name": "정준연",
+  "team": "안양",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "3",
+  "name": "정태욱",
+  "team": "전북",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "34",
+  "name": "정현욱",
+  "team": "경남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "27",
+  "name": "조동재",
+  "team": "서울E",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "2",
+  "name": "조성권",
+  "team": "김포",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "20",
+  "name": "조성욱",
+  "team": "성남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "32",
+  "name": "조영광",
+  "team": "서울",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "5",
+  "name": "조위제",
+  "team": "부산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "20",
+  "name": "조유민",
+  "team": "대전",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "20",
+  "name": "조윤성",
+  "team": "충남아산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "66",
+  "name": "조진우",
+  "team": "대구",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "26",
+  "name": "조현태",
+  "team": "강원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "26",
+  "name": "조현택",
+  "team": "울산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "99",
+  "name": "주현우",
+  "team": "안양",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "13",
+  "name": "차승현",
+  "team": "서울E",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "6",
+  "name": "차오연",
+  "team": "천안",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "44",
+  "name": "최동렬",
+  "team": "부산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "7",
+  "name": "최병찬",
+  "team": "김천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "21",
+  "name": "최보경",
+  "team": "수원FC",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "21",
+  "name": "최예훈",
+  "team": "부산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "34",
+  "name": "최재현",
+  "team": "대전",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "6",
+  "name": "최준",
+  "team": "부산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "26",
+  "name": "최지묵",
+  "team": "부산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "25",
+  "name": "최철순",
+  "team": "전북",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "55",
+  "name": "최현웅",
+  "team": "포항",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "3",
+  "name": "최희원",
+  "team": "전남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "18",
+  "name": "케이타",
+  "team": "대구",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "5",
+  "name": "티모",
+  "team": "광주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "5",
+  "name": "패트릭",
+  "team": "성남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "2",
+  "name": "페트라섹",
+  "team": "전북",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "7",
+  "name": "피터",
+  "team": "충북청주",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "45",
+  "name": "하창래",
+  "team": "포항",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "4",
+  "name": "한용수",
+  "team": "서울E",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "5",
+  "name": "한호강",
+  "team": "수원",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "4",
+  "name": "한희훈",
+  "team": "부산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "43",
+  "name": "홍석현",
+  "team": "부산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "24",
+  "name": "홍성욱",
+  "team": "부천",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "19",
+  "name": "홍욱현",
+  "team": "부산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "31",
+  "name": "홍장우",
+  "team": "전북",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "6",
+  "name": "홍정운",
+  "team": "대구",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "26",
+  "name": "홍정호",
+  "team": "전북",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "33",
+  "name": "홍철",
+  "team": "대구",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "8",
+  "name": "황기욱",
+  "team": "안양",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "14",
+  "name": "황도연",
+  "team": "김포",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "45",
+  "name": "황명현",
+  "team": "전남",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "18",
+  "name": "황인택",
+  "team": "서울E",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "2",
+  "name": "황재원",
+  "team": "대구",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "28",
+  "name": "황정욱",
+  "team": "서울E",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "45",
+  "name": "황준호",
+  "team": "부산",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "2",
+  "name": "황태현",
+  "team": "서울E",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "2",
+  "name": "황현수",
+  "team": "서울",
+  "position": "DF"
+ },
+ {
+  "uniform_number": "55",
+  "name": "강상윤",
+  "team": "부산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "35",
+  "name": "강영석",
+  "team": "전북",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "30",
+  "name": "강윤구",
+  "team": "울산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "77",
+  "name": "강재우",
+  "team": "부천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "32",
+  "name": "강준모",
+  "team": "안산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "13",
+  "name": "강지훈",
+  "team": "강원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "19",
+  "name": "강태원",
+  "team": "수원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "39",
+  "name": "강현묵",
+  "team": "김천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "87",
+  "name": "고경민",
+  "team": "부천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "32",
+  "name": "고민석",
+  "team": "강원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "7",
+  "name": "고승범",
+  "team": "수원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "11",
+  "name": "고영준",
+  "team": "포항",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "13",
+  "name": "고요한",
+  "team": "서울",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "17",
+  "name": "고재현",
+  "team": "대구",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "50",
+  "name": "고종현",
+  "team": "수원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "8",
+  "name": "곽성욱",
+  "team": "서울E",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "7",
+  "name": "구자철",
+  "team": "제주",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "23",
+  "name": "국진우",
+  "team": "경남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "25",
+  "name": "권성현",
+  "team": "충남아산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "7",
+  "name": "권순형",
+  "team": "성남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "37",
+  "name": "권순호",
+  "team": "제주",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "22",
+  "name": "권창훈",
+  "team": "수원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "42",
+  "name": "권혁규",
+  "team": "부산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "6",
+  "name": "기성용",
+  "team": "서울",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "22",
+  "name": "김강국",
+  "team": "충남아산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "8",
+  "name": "김건웅",
+  "team": "제주",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "16",
+  "name": "김경환",
+  "team": "대전",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "88",
+  "name": "김규표",
+  "team": "포항",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "19",
+  "name": "김규형",
+  "team": "수원FC",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "14",
+  "name": "김대우",
+  "team": "강원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "29",
+  "name": "김도윤",
+  "team": "대전",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "71",
+  "name": "김도윤",
+  "team": "수원FC",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "7",
+  "name": "김도혁",
+  "team": "인천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "30",
+  "name": "김동현",
+  "team": "김천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "63",
+  "name": "김래우",
+  "team": "전북",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "8",
+  "name": "김민석",
+  "team": "충남아산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "38",
+  "name": "김민준",
+  "team": "김천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "22",
+  "name": "김민혁",
+  "team": "울산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "18",
+  "name": "김범진",
+  "team": "전남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "13",
+  "name": "김보경",
+  "team": "수원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "30",
+  "name": "김봉수",
+  "team": "제주",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "33",
+  "name": "김상준",
+  "team": "부산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "55",
+  "name": "김선민",
+  "team": "수원FC",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "17",
+  "name": "김성민",
+  "team": "김포",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "77",
+  "name": "김성민",
+  "team": "서울",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "4",
+  "name": "김성주",
+  "team": "천안",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "91",
+  "name": "김성주",
+  "team": "수원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "16",
+  "name": "김성준",
+  "team": "울산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "20",
+  "name": "김세윤",
+  "team": "천안",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "66",
+  "name": "김세훈",
+  "team": "인천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "6",
+  "name": "김영남",
+  "team": "안산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "14",
+  "name": "김영욱",
+  "team": "대전",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "34",
+  "name": "김예성",
+  "team": "수원FC",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "15",
+  "name": "김원식",
+  "team": "서울E",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "28",
+  "name": "김윤겸",
+  "team": "서울",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "8",
+  "name": "김이석",
+  "team": "김포",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "11",
+  "name": "김인균",
+  "team": "대전",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "26",
+  "name": "김정민",
+  "team": "안양",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "6",
+  "name": "김정현",
+  "team": "안양",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "28",
+  "name": "김정현",
+  "team": "포항",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "6",
+  "name": "김종국",
+  "team": "충남아산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "10",
+  "name": "김종석",
+  "team": "김포",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "6",
+  "name": "김종우",
+  "team": "포항",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "17",
+  "name": "김준범",
+  "team": "김천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "8",
+  "name": "김준형",
+  "team": "부천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "66",
+  "name": "김준호",
+  "team": "포항",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "32",
+  "name": "김진규",
+  "team": "김천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "8",
+  "name": "김진현",
+  "team": "안산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "23",
+  "name": "김택근",
+  "team": "충남아산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "37",
+  "name": "김현규",
+  "team": "강원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "33",
+  "name": "김현서",
+  "team": "인천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "25",
+  "name": "김현욱",
+  "team": "김천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "16",
+  "name": "김현중",
+  "team": "천안",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "6",
+  "name": "김현태",
+  "team": "성남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "16",
+  "name": "김혜성",
+  "team": "충남아산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "36",
+  "name": "김희승",
+  "team": "대구",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "10",
+  "name": "노경호",
+  "team": "안산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "10",
+  "name": "다미르",
+  "team": "천안",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "66",
+  "name": "도재경",
+  "team": "전북",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "27",
+  "name": "레오",
+  "team": "경남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "17",
+  "name": "루빅손",
+  "team": "울산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "17",
+  "name": "류승우",
+  "team": "안양",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "29",
+  "name": "류재문",
+  "team": "전북",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "28",
+  "name": "맹성웅",
+  "team": "전북",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "36",
+  "name": "명준재",
+  "team": "수원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "6",
+  "name": "문상윤",
+  "team": "충북청주",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "28",
+  "name": "문성우",
+  "team": "안양",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "21",
+  "name": "문창진",
+  "team": "성남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "28",
+  "name": "민경현",
+  "team": "인천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "97",
+  "name": "바사니",
+  "team": "수원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "10",
+  "name": "바코",
+  "team": "울산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "63",
+  "name": "박건희",
+  "team": "부산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "21",
+  "name": "박민서",
+  "team": "경남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "8",
+  "name": "박상혁",
+  "team": "성남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "24",
+  "name": "박세직",
+  "team": "충남아산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "14",
+  "name": "박세진",
+  "team": "대구",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "42",
+  "name": "박장한결",
+  "team": "서울",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "88",
+  "name": "박재현",
+  "team": "김포",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "8",
+  "name": "박종우",
+  "team": "부산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "26",
+  "name": "박준배",
+  "team": "안산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "47",
+  "name": "박지원",
+  "team": "성남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "38",
+  "name": "박진홍",
+  "team": "인천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "30",
+  "name": "박창환",
+  "team": "서울E",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "88",
+  "name": "박태용",
+  "team": "전남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "55",
+  "name": "박태준",
+  "team": "성남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "33",
+  "name": "박한빈",
+  "team": "광주",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "26",
+  "name": "박현빈",
+  "team": "인천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "38",
+  "name": "배수민",
+  "team": "대구",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "22",
+  "name": "배재우",
+  "team": "김포",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "33",
+  "name": "배준호",
+  "team": "대전",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "35",
+  "name": "백상훈",
+  "team": "서울",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "8",
+  "name": "백승호",
+  "team": "전북",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "13",
+  "name": "벨톨라",
+  "team": "대구",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "57",
+  "name": "보아텡",
+  "team": "전북",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "8",
+  "name": "보야니치",
+  "team": "울산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "40",
+  "name": "브루노",
+  "team": "서울E",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "25",
+  "name": "서도협",
+  "team": "대구",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "4",
+  "name": "서민우",
+  "team": "강원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "7",
+  "name": "서보민",
+  "team": "서울E",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "35",
+  "name": "서승우",
+  "team": "수원FC",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "33",
+  "name": "서유민",
+  "team": "충남아산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "21",
+  "name": "서재민",
+  "team": "김포",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "31",
+  "name": "서재민",
+  "team": "서울",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "17",
+  "name": "손휘",
+  "team": "부산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "15",
+  "name": "송진규",
+  "team": "부천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "44",
+  "name": "송한록",
+  "team": "포항",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "4",
+  "name": "송홍민",
+  "team": "경남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "17",
+  "name": "신광훈",
+  "team": "포항",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "15",
+  "name": "신재원",
+  "team": "성남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "8",
+  "name": "신진호",
+  "team": "인천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "32",
+  "name": "신형민",
+  "team": "천안",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "21",
+  "name": "아마노 준",
+  "team": "전북",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "31",
+  "name": "아타루",
+  "team": "울산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "36",
+  "name": "안재민",
+  "team": "서울",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "22",
+  "name": "안진범",
+  "team": "성남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "89",
+  "name": "안치우",
+  "team": "수원FC",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "6",
+  "name": "알리바예프",
+  "team": "강원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "30",
+  "name": "양세영",
+  "team": "부산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "11",
+  "name": "양지훈",
+  "team": "충북청주",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "28",
+  "name": "양태양",
+  "team": "성남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "2",
+  "name": "어정원",
+  "team": "부산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "11",
+  "name": "엄원상",
+  "team": "울산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "7",
+  "name": "엄지성",
+  "team": "광주",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "81",
+  "name": "여름",
+  "team": "부산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "8",
+  "name": "오베르단",
+  "team": "포항",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "5",
+  "name": "오스마르",
+  "team": "서울",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "30",
+  "name": "오재혁",
+  "team": "전북",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "75",
+  "name": "오후성",
+  "team": "광주",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "12",
+  "name": "완드류",
+  "team": "안산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "26",
+  "name": "원두재",
+  "team": "김천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "94",
+  "name": "윌리안",
+  "team": "서울",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "17",
+  "name": "유정완",
+  "team": "서울E",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "88",
+  "name": "유제호",
+  "team": "수원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "16",
+  "name": "유준수",
+  "team": "안산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "24",
+  "name": "유헤이",
+  "team": "전남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "19",
+  "name": "윤민호",
+  "team": "포항",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "14",
+  "name": "윤빛가람",
+  "team": "수원FC",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "14",
+  "name": "윤석주",
+  "team": "김천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "8",
+  "name": "윤용호",
+  "team": "천안",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "40",
+  "name": "음포쿠",
+  "team": "인천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "26",
+  "name": "이강연",
+  "team": "김포",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "24",
+  "name": "이강현",
+  "team": "광주",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "88",
+  "name": "이강희",
+  "team": "경남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "16",
+  "name": "이광진",
+  "team": "경남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "37",
+  "name": "이규빈",
+  "team": "안산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "24",
+  "name": "이규성",
+  "team": "울산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "24",
+  "name": "이기혁",
+  "team": "제주",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "14",
+  "name": "이동경",
+  "team": "울산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "20",
+  "name": "이동수",
+  "team": "안양",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "5",
+  "name": "이명주",
+  "team": "인천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "14",
+  "name": "이민수",
+  "team": "천안",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "26",
+  "name": "이민혁",
+  "team": "경남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "6",
+  "name": "이상민",
+  "team": "서울E",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "4",
+  "name": "이상민",
+  "team": "성남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "22",
+  "name": "이상헌",
+  "team": "부산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "8",
+  "name": "이석현",
+  "team": "전남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "6",
+  "name": "이성재",
+  "team": "김포",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "16",
+  "name": "이수빈",
+  "team": "전북",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "44",
+  "name": "이순민",
+  "team": "광주",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "88",
+  "name": "이승기",
+  "team": "부산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "8",
+  "name": "이승모",
+  "team": "서울",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "28",
+  "name": "이승민",
+  "team": "안산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "33",
+  "name": "이승원",
+  "team": "강원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "72",
+  "name": "이승준",
+  "team": "서울",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "21",
+  "name": "이시헌",
+  "team": "서울E",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "28",
+  "name": "이영재",
+  "team": "수원FC",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "74",
+  "name": "이용래",
+  "team": "대구",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "30",
+  "name": "이은재",
+  "team": "대전",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "36",
+  "name": "이재욱",
+  "team": "울산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "15",
+  "name": "이재원",
+  "team": "강원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "88",
+  "name": "이정빈",
+  "team": "부천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "15",
+  "name": "이정윤",
+  "team": "부산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "16",
+  "name": "이종성",
+  "team": "수원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "30",
+  "name": "이주영",
+  "team": "충북청주",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "8",
+  "name": "이지승",
+  "team": "경남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "19",
+  "name": "이지훈",
+  "team": "김천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "97",
+  "name": "이진현",
+  "team": "대전",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "20",
+  "name": "이찬우",
+  "team": "충북청주",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "27",
+  "name": "이청용",
+  "team": "울산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "28",
+  "name": "이현기",
+  "team": "부천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "17",
+  "name": "이현식",
+  "team": "대전",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "31",
+  "name": "이현준",
+  "team": "부산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "16",
+  "name": "이후권",
+  "team": "전남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "18",
+  "name": "임민혁",
+  "team": "부산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "6",
+  "name": "임은수",
+  "team": "대전",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "42",
+  "name": "임현섭",
+  "team": "수원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "19",
+  "name": "장백규",
+  "team": "천안",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "6",
+  "name": "장성재",
+  "team": "전남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "24",
+  "name": "장영기",
+  "team": "성남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "7",
+  "name": "장윤호",
+  "team": "김포",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "8",
+  "name": "장혁진",
+  "team": "충북청주",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "47",
+  "name": "전승민",
+  "team": "부산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "10",
+  "name": "정승원",
+  "team": "수원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "14",
+  "name": "정원진",
+  "team": "부산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "8",
+  "name": "정재용",
+  "team": "수원FC",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "42",
+  "name": "정진우",
+  "team": "대전",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "24",
+  "name": "정현철",
+  "team": "서울",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "14",
+  "name": "정호연",
+  "team": "광주",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "15",
+  "name": "정호진",
+  "team": "전남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "36",
+  "name": "조민호",
+  "team": "부산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "10",
+  "name": "조수철",
+  "team": "부천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "26",
+  "name": "조재훈",
+  "team": "포항",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "25",
+  "name": "조지훈",
+  "team": "전남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "8",
+  "name": "주세종",
+  "team": "대전",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "29",
+  "name": "주재현",
+  "team": "안산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "30",
+  "name": "진현태",
+  "team": "수원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "24",
+  "name": "천지현",
+  "team": "부산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "28",
+  "name": "최민기",
+  "team": "대구",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "33",
+  "name": "최상헌",
+  "team": "천안",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "8",
+  "name": "최성근",
+  "team": "수원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "24",
+  "name": "최성범",
+  "team": "안양",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "6",
+  "name": "최영준",
+  "team": "제주",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "30",
+  "name": "최우진",
+  "team": "인천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "14",
+  "name": "최재영",
+  "team": "부천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "23",
+  "name": "최재훈",
+  "team": "김포",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "20",
+  "name": "최준혁",
+  "team": "광주",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "7",
+  "name": "최한솔",
+  "team": "안산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "44",
+  "name": "츠바사",
+  "team": "서울E",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "95",
+  "name": "카스트로",
+  "team": "경남",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "23",
+  "name": "카즈",
+  "team": "부천",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "81",
+  "name": "카즈키",
+  "team": "수원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "26",
+  "name": "팔로세비치",
+  "team": "서울",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "7",
+  "name": "페신",
+  "team": "부산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "7",
+  "name": "한교원",
+  "team": "전북",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "8",
+  "name": "한국영",
+  "team": "강원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "30",
+  "name": "한규진",
+  "team": "천안",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "6",
+  "name": "한석종",
+  "team": "수원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "66",
+  "name": "한승규",
+  "team": "서울",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "29",
+  "name": "한재훈",
+  "team": "천안",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "25",
+  "name": "한종무",
+  "team": "제주",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "16",
+  "name": "한찬희",
+  "team": "포항",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "24",
+  "name": "허동호",
+  "team": "수원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "10",
+  "name": "헤이스",
+  "team": "제주",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "46",
+  "name": "홍성무",
+  "team": "강원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "15",
+  "name": "홍성민",
+  "team": "충북청주",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "99",
+  "name": "홍원진",
+  "team": "충북청주",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "14",
+  "name": "홍창범",
+  "team": "안양",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "81",
+  "name": "황도윤",
+  "team": "서울",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "88",
+  "name": "황문기",
+  "team": "강원",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "20",
+  "name": "황순민",
+  "team": "수원FC",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "29",
+  "name": "황재환",
+  "team": "울산",
+  "position": "MF"
+ },
+ {
+  "uniform_number": "96",
+  "name": "가브리엘",
+  "team": "성남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "63",
+  "name": "가브리엘",
+  "team": "강원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "11",
+  "name": "갈레고",
+  "team": "강원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "11",
+  "name": "강민규",
+  "team": "충남아산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "96",
+  "name": "강민성",
+  "team": "수원FC",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "29",
+  "name": "강민승",
+  "team": "충북청주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "11",
+  "name": "강성진",
+  "team": "서울",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "28",
+  "name": "강영웅",
+  "team": "부산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "18",
+  "name": "강현제",
+  "team": "포항",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "27",
+  "name": "고무열",
+  "team": "수원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "81",
+  "name": "공민현",
+  "team": "안양",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "91",
+  "name": "곽승조",
+  "team": "부산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "36",
+  "name": "구본철",
+  "team": "김천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "9",
+  "name": "구스타보",
+  "team": "전북",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "99",
+  "name": "구텍",
+  "team": "대전",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "11",
+  "name": "권기표",
+  "team": "경남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "37",
+  "name": "권민재",
+  "team": "부산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "96",
+  "name": "글레이손",
+  "team": "경남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "77",
+  "name": "김건오",
+  "team": "전남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "19",
+  "name": "김경민",
+  "team": "서울",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "9",
+  "name": "김경준",
+  "team": "안산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "17",
+  "name": "김경중",
+  "team": "수원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "27",
+  "name": "김규민",
+  "team": "부천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "10",
+  "name": "김대원",
+  "team": "강원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "50",
+  "name": "김대중",
+  "team": "인천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "23",
+  "name": "김도현",
+  "team": "충북청주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "27",
+  "name": "김동현",
+  "team": "대구",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "18",
+  "name": "김륜도",
+  "team": "안양",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "25",
+  "name": "김민석",
+  "team": "인천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "17",
+  "name": "김범수",
+  "team": "안산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "27",
+  "name": "김보섭",
+  "team": "인천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "9",
+  "name": "김보용",
+  "team": "부천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "29",
+  "name": "김수안",
+  "team": "서울E",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "12",
+  "name": "김승대",
+  "team": "포항",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "11",
+  "name": "김승섭",
+  "team": "제주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "13",
+  "name": "김승호",
+  "team": "충남아산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "9",
+  "name": "김신진",
+  "team": "서울",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "19",
+  "name": "김영준",
+  "team": "대구",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "18",
+  "name": "김원준",
+  "team": "성남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "7",
+  "name": "김인성",
+  "team": "포항",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "91",
+  "name": "김재현",
+  "team": "수원FC",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "11",
+  "name": "김정환",
+  "team": "부산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "18",
+  "name": "김종민",
+  "team": "천안",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "19",
+  "name": "김주공",
+  "team": "제주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "37",
+  "name": "김주찬",
+  "team": "수원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "16",
+  "name": "김지운",
+  "team": "충북청주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "96",
+  "name": "김지현",
+  "team": "울산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "9",
+  "name": "김찬",
+  "team": "부산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "99",
+  "name": "김창훈",
+  "team": "전북",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "43",
+  "name": "김해승",
+  "team": "강원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "7",
+  "name": "김현",
+  "team": "수원FC",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "19",
+  "name": "김호남",
+  "team": "부천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "7",
+  "name": "나상호",
+  "team": "서울",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "35",
+  "name": "노건우",
+  "team": "전남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "9",
+  "name": "데닐손",
+  "team": "성남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "30",
+  "name": "도동현",
+  "team": "경남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "10",
+  "name": "두아르테",
+  "team": "충남아산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "13",
+  "name": "두현석",
+  "team": "광주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "10",
+  "name": "라마스",
+  "team": "부산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "9",
+  "name": "라스",
+  "team": "수원FC",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "10",
+  "name": "라에르시오",
+  "team": "안양",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "70",
+  "name": "레안드로",
+  "team": "대전",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "10",
+  "name": "로페즈",
+  "team": "수원FC",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "24",
+  "name": "루이스",
+  "team": "김포",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "42",
+  "name": "루페타",
+  "team": "부천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "29",
+  "name": "류지민",
+  "team": "김포",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "7",
+  "name": "마사",
+  "team": "대전",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "9",
+  "name": "마틴 아담",
+  "team": "울산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "9",
+  "name": "모따",
+  "team": "천안",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "10",
+  "name": "모재현",
+  "team": "경남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "9",
+  "name": "무고사",
+  "team": "인천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "27",
+  "name": "문선민",
+  "team": "전북",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "44",
+  "name": "뮬리치",
+  "team": "수원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "20",
+  "name": "미키치",
+  "team": "전남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "77",
+  "name": "민성연",
+  "team": "김포",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "99",
+  "name": "바셀루스",
+  "team": "대구",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "37",
+  "name": "바우테르손",
+  "team": "수원FC",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "88",
+  "name": "박규민",
+  "team": "전북",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "16",
+  "name": "박기현",
+  "team": "강원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "19",
+  "name": "박대훈",
+  "team": "충남아산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "49",
+  "name": "박동진",
+  "team": "부산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "77",
+  "name": "박민서",
+  "team": "경남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "35",
+  "name": "박상혁",
+  "team": "강원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "72",
+  "name": "박성빈",
+  "team": "부산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "47",
+  "name": "박승수",
+  "team": "수원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "77",
+  "name": "박승호",
+  "team": "인천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "30",
+  "name": "박용희",
+  "team": "대구",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "10",
+  "name": "박재용",
+  "team": "전북",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "11",
+  "name": "박정인",
+  "team": "서울E",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "37",
+  "name": "박준범",
+  "team": "전북",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "90",
+  "name": "박준영",
+  "team": "서울E",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "47",
+  "name": "박채준",
+  "team": "전북",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "26",
+  "name": "박현빈",
+  "team": "성남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "29",
+  "name": "박형우",
+  "team": "포항",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "99",
+  "name": "박호민",
+  "team": "부천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "20",
+  "name": "박희준",
+  "team": "수원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "9",
+  "name": "반토안",
+  "team": "서울E",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "10",
+  "name": "발디비아",
+  "team": "전남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "10",
+  "name": "백성동",
+  "team": "포항",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "99",
+  "name": "베카",
+  "team": "광주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "16",
+  "name": "변경준",
+  "team": "서울E",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "9",
+  "name": "브루노",
+  "team": "안양",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "32",
+  "name": "서동한",
+  "team": "수원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "24",
+  "name": "서재원",
+  "team": "경남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "14",
+  "name": "서진수",
+  "team": "제주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "19",
+  "name": "설현진",
+  "team": "경남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "23",
+  "name": "성호영",
+  "team": "부산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "11",
+  "name": "세징야",
+  "team": "대구",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "99",
+  "name": "손석용",
+  "team": "김포",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "37",
+  "name": "손승범",
+  "team": "서울",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "17",
+  "name": "송민규",
+  "team": "전북",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "7",
+  "name": "송승민",
+  "team": "충남아산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "82",
+  "name": "송시우",
+  "team": "서울E",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "19",
+  "name": "송창석",
+  "team": "김포",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "19",
+  "name": "신상은",
+  "team": "대전",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "27",
+  "name": "신재혁",
+  "team": "안산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "17",
+  "name": "신창무",
+  "team": "광주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "40",
+  "name": "신한결",
+  "team": "대구",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "11",
+  "name": "심동운",
+  "team": "성남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "11",
+  "name": "아사니",
+  "team": "광주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "99",
+  "name": "아이에쉬",
+  "team": "서울",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "18",
+  "name": "아코스티",
+  "team": "수원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "90",
+  "name": "아폰자",
+  "team": "충남아산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "97",
+  "name": "안드레 루이스",
+  "team": "전북",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "9",
+  "name": "안병준",
+  "team": "수원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "7",
+  "name": "안용우",
+  "team": "안양",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "11",
+  "name": "안재준",
+  "team": "부천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "3",
+  "name": "안창민",
+  "team": "대구",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "97",
+  "name": "야고",
+  "team": "안양",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "9",
+  "name": "야고",
+  "team": "강원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "18",
+  "name": "양동현",
+  "team": "수원FC",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "19",
+  "name": "양정운",
+  "team": "안양",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "7",
+  "name": "양현준",
+  "team": "강원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "9",
+  "name": "에드가",
+  "team": "대구",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "10",
+  "name": "에르난데스",
+  "team": "인천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "77",
+  "name": "완델손",
+  "team": "포항",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "7",
+  "name": "원기종",
+  "team": "경남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "45",
+  "name": "웨릭포포",
+  "team": "수원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "93",
+  "name": "웰링턴",
+  "team": "강원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "10",
+  "name": "유강현",
+  "team": "대전",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "9",
+  "name": "유리 조나탄",
+  "team": "제주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "43",
+  "name": "유선우",
+  "team": "대전",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "13",
+  "name": "유주안",
+  "team": "성남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "42",
+  "name": "유준하",
+  "team": "경남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "50",
+  "name": "윤도원",
+  "team": "전북",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "32",
+  "name": "윤민호",
+  "team": "김포",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "73",
+  "name": "윤일록",
+  "team": "강원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "30",
+  "name": "윤재운",
+  "team": "포항",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "24",
+  "name": "윤주태",
+  "team": "안산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "18",
+  "name": "윤태웅",
+  "team": "김포",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "18",
+  "name": "이건희",
+  "team": "광주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "22",
+  "name": "이광혁",
+  "team": "수원FC",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "79",
+  "name": "이규동",
+  "team": "전북",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "22",
+  "name": "이근호",
+  "team": "대구",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "10",
+  "name": "이동률",
+  "team": "서울E",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "11",
+  "name": "이동준",
+  "team": "전북",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "29",
+  "name": "이상민",
+  "team": "수원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "27",
+  "name": "이석규",
+  "team": "천안",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "77",
+  "name": "이선유",
+  "team": "대전",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "24",
+  "name": "이성윤",
+  "team": "전북",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "22",
+  "name": "이승엽",
+  "team": "충북청주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "11",
+  "name": "이승우",
+  "team": "수원FC",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "98",
+  "name": "이승재",
+  "team": "충북청주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "40",
+  "name": "이영준",
+  "team": "김천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "19",
+  "name": "이용재",
+  "team": "전남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "18",
+  "name": "이의형",
+  "team": "부천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "13",
+  "name": "이재용",
+  "team": "안양",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "18",
+  "name": "이정협",
+  "team": "강원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "79",
+  "name": "이종언",
+  "team": "경남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "10",
+  "name": "이종호",
+  "team": "성남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "37",
+  "name": "이종훈",
+  "team": "대구",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "27",
+  "name": "이준상",
+  "team": "성남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "20",
+  "name": "이준석",
+  "team": "김천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "44",
+  "name": "이준호",
+  "team": "전북",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "37",
+  "name": "이중민",
+  "team": "김천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "17",
+  "name": "이찬협",
+  "team": "천안",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "76",
+  "name": "이태민",
+  "team": "전남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "19",
+  "name": "이현규",
+  "team": "안산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "33",
+  "name": "이호재",
+  "team": "포항",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "16",
+  "name": "이희균",
+  "team": "광주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "90",
+  "name": "일류첸코",
+  "team": "서울",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "18",
+  "name": "임동혁",
+  "team": "제주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "14",
+  "name": "임상협",
+  "team": "서울",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "7",
+  "name": "임찬울",
+  "team": "전남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "29",
+  "name": "장재웅",
+  "team": "수원FC",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "13",
+  "name": "전병관",
+  "team": "대전",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "33",
+  "name": "전성수",
+  "team": "성남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "16",
+  "name": "전용준",
+  "team": "대구",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "14",
+  "name": "전진우",
+  "team": "수원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "17",
+  "name": "정기운",
+  "team": "충북청주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "77",
+  "name": "정민우",
+  "team": "충북청주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "7",
+  "name": "정석화",
+  "team": "천안",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "9",
+  "name": "정성호",
+  "team": "충남아산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "58",
+  "name": "정우빈",
+  "team": "대전",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "77",
+  "name": "정은우",
+  "team": "수원FC",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "16",
+  "name": "정재윤",
+  "team": "수원FC",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "27",
+  "name": "정재희",
+  "team": "포항",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "11",
+  "name": "정지용",
+  "team": "안산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "23",
+  "name": "정지훈",
+  "team": "광주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "29",
+  "name": "정치인",
+  "team": "김천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "19",
+  "name": "정한민",
+  "team": "성남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "11",
+  "name": "제르소",
+  "team": "인천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "9",
+  "name": "제카",
+  "team": "포항",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "15",
+  "name": "조나탄 링",
+  "team": "제주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "9",
+  "name": "조르지",
+  "team": "충북청주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "99",
+  "name": "조상준",
+  "team": "경남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "11",
+  "name": "조성준",
+  "team": "안양",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "27",
+  "name": "조영욱",
+  "team": "김천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "19",
+  "name": "조진혁",
+  "team": "강원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "9",
+  "name": "조향기",
+  "team": "경남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "9",
+  "name": "주닝요",
+  "team": "김포",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "18",
+  "name": "주민규",
+  "team": "울산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "32",
+  "name": "주영재",
+  "team": "광주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "10",
+  "name": "지동원",
+  "team": "서울",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "12",
+  "name": "지상욱",
+  "team": "전남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "29",
+  "name": "지언학",
+  "team": "충남아산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "93",
+  "name": "진성욱",
+  "team": "성남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "99",
+  "name": "천성훈",
+  "team": "인천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "99",
+  "name": "최건주",
+  "team": "부산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "29",
+  "name": "최기윤",
+  "team": "부산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "39",
+  "name": "최성민",
+  "team": "강원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "22",
+  "name": "최성진",
+  "team": "전남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "27",
+  "name": "추상훈",
+  "team": "전남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "16",
+  "name": "추정호",
+  "team": "부천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "99",
+  "name": "크리스",
+  "team": "성남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "30",
+  "name": "토마스",
+  "team": "광주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "95",
+  "name": "티아고",
+  "team": "안산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "28",
+  "name": "티아고",
+  "team": "대전",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "11",
+  "name": "파블로",
+  "team": "김포",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "96",
+  "name": "파울리뇨",
+  "team": "천안",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "10",
+  "name": "파울리뉴",
+  "team": "충북청주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "96",
+  "name": "프랭클린",
+  "team": "부산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "11",
+  "name": "플라나",
+  "team": "전남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "9",
+  "name": "하남",
+  "team": "전남",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "35",
+  "name": "하동선",
+  "team": "인천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "7",
+  "name": "하모스",
+  "team": "부천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "19",
+  "name": "하승운",
+  "team": "광주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "19",
+  "name": "하파 실바",
+  "team": "전북",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "96",
+  "name": "하파엘",
+  "team": "충남아산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "11",
+  "name": "한석희",
+  "team": "천안",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "22",
+  "name": "한지호",
+  "team": "부천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "13",
+  "name": "허승우",
+  "team": "천안",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "9",
+  "name": "허율",
+  "team": "광주",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "19",
+  "name": "헤난",
+  "team": "서울E",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "22",
+  "name": "호난",
+  "team": "서울E",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "29",
+  "name": "홍석환",
+  "team": "강원",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "37",
+  "name": "홍시후",
+  "team": "인천",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "37",
+  "name": "홍윤상",
+  "team": "포항",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "25",
+  "name": "홍재훈",
+  "team": "안산",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "27",
+  "name": "홍현호",
+  "team": "안양",
+  "position": "FW"
+ },
+ {
+  "uniform_number": "25",
+  "name": "히에우",
+  "team": "천안",
+  "position": "FW"
+ }
+]

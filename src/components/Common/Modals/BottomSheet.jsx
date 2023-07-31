@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled, { css } from 'styled-components';
 import { useRecoilState } from 'recoil';
 import { isBottomSheetOpen } from '../../../atom/bottomSheetAtom';
@@ -40,13 +40,13 @@ const BottomSheetStyle = styled.article`
   bottom: 0;
   left: 0;
   right: 0;
-  width: 390px;
+  width: 100%;
   margin: auto;
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
   z-index: 20;
   .bottomsheet {
-    width: 390px;
+    width: 100%;
     background: var(--color-navy);
     box-shadow: 0px -4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 20px 20px 0 0;
@@ -93,6 +93,36 @@ export default function BottomSheet({ items }) {
       }, 500);
     }
   };
+
+  useEffect(() => {
+    if (isBsOpen) {
+      setTimeout(() => {
+        const elements = document.querySelectorAll(
+          '[class*="bottomsheet"] > ul button, .btn-header',
+        );
+        console.log(elements[0]);
+        console.log(elements[1]);
+        console.log(elements[2]);
+        elements[1].focus();
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Tab') {
+            if (e.shiftKey) {
+              if (document.activeElement === elements[0]) {
+                e.preventDefault();
+                elements[elements.length - 1].focus();
+              }
+            } else if (
+              document.activeElement === elements[elements.length - 1]
+            ) {
+              e.preventDefault();
+              elements[0].focus();
+            }
+          }
+        });
+      }, 501);
+    }
+  }, []);
+
   return (
     <BottomSheetStyle onClick={closeBottomSheet}>
       <BsAnimationStyle className={`bottomsheet ${effect}`}>

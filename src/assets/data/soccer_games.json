@@ -1,0 +1,762 @@
+[
+ {
+  "date": "2023-07-01",
+  "day": "토",
+  "time": "18:00",
+  "home": "전북",
+  "away": "제주",
+  "stadium": "전주",
+  "full_stadium": "전주 월드컵 경기장",
+  "en_city": "Jeonju"
+ },
+ {
+  "date": "2023-07-01",
+  "day": "토",
+  "time": "19:00",
+  "home": "대구",
+  "away": "수원",
+  "stadium": "대구",
+  "full_stadium": "DGB 대구은행파크",
+  "en_city": "Daegu"
+ },
+ {
+  "date": "2023-07-01",
+  "day": "토",
+  "time": "19:30",
+  "home": "서울",
+  "away": "대전",
+  "stadium": "서울",
+  "full_stadium": "서울월드컵경기장",
+  "en_city": "Seoul"
+ },
+ {
+  "date": "2023-07-02",
+  "day": "일",
+  "time": "18:00",
+  "home": "광주",
+  "away": "울산",
+  "stadium": "광주",
+  "full_stadium": "광주축구전용구장",
+  "en_city": "Gwangju"
+ },
+ {
+  "date": "2023-07-02",
+  "day": "일",
+  "time": "19:00",
+  "home": "포항",
+  "away": "수원FC",
+  "stadium": "포항",
+  "full_stadium": "포항스틸야드",
+  "en_city": "Pohang"
+ },
+ {
+  "date": "2023-07-02",
+  "day": "일",
+  "time": "20:00",
+  "home": "인천",
+  "away": "강원",
+  "stadium": "인천",
+  "full_stadium": "인천축구전용경기장",
+  "en_city": "Incheon"
+ },
+ {
+  "date": "2023-07-07",
+  "day": "금",
+  "time": "19:30",
+  "home": "제주",
+  "away": "대구",
+  "stadium": "제주",
+  "full_stadium": "제주월드컵경기장",
+  "en_city": "Jeju City"
+ },
+ {
+  "date": "2023-07-07",
+  "day": "금",
+  "time": "19:30",
+  "home": "강원",
+  "away": "광주",
+  "stadium": "강릉",
+  "full_stadium": "강릉종합운동장",
+  "en_city": "Gangneung"
+ },
+ {
+  "date": "2023-07-08",
+  "day": "토",
+  "time": "18:00",
+  "home": "포항",
+  "away": "울산",
+  "stadium": "포항",
+  "full_stadium": "포항스틸야드",
+  "en_city": "Pohang"
+ },
+ {
+  "date": "2023-07-08",
+  "day": "토",
+  "time": "19:00",
+  "home": "수원FC",
+  "away": "인천",
+  "stadium": "수원종합",
+  "full_stadium": "수원종합운동장",
+  "en_city": "Suwon"
+ },
+ {
+  "date": "2023-07-08",
+  "day": "토",
+  "time": "19:30",
+  "home": "전북",
+  "away": "서울",
+  "stadium": "전주",
+  "full_stadium": "전주 월드컵 경기장",
+  "en_city": "Jeonju"
+ },
+ {
+  "date": "2023-07-09",
+  "day": "일",
+  "time": "19:00",
+  "home": "대전",
+  "away": "수원",
+  "stadium": "대전",
+  "full_stadium": "대전월드컵경기장",
+  "en_city": "Daejeon"
+ },
+ {
+  "date": "2023-07-11",
+  "day": "화",
+  "time": "19:00",
+  "home": "대구",
+  "away": "강원",
+  "stadium": "대구",
+  "full_stadium": "DGB 대구은행파크",
+  "en_city": "Daegu"
+ },
+ {
+  "date": "2023-07-11",
+  "day": "화",
+  "time": "19:30",
+  "home": "제주",
+  "away": "광주",
+  "stadium": "제주",
+  "full_stadium": "제주월드컵경기장",
+  "en_city": "Jeju City"
+ },
+ {
+  "date": "2023-07-12",
+  "day": "수",
+  "time": "19:00",
+  "home": "울산",
+  "away": "인천",
+  "stadium": "울산",
+  "full_stadium": "울산현대축구단",
+  "en_city": "Ulsan"
+ },
+ {
+  "date": "2023-07-12",
+  "day": "수",
+  "time": "19:30",
+  "home": "수원",
+  "away": "포항",
+  "stadium": "수원 월드컵",
+  "full_stadium": "수원월드컵경기장",
+  "en_city": "Suwon"
+ },
+ {
+  "date": "2023-07-12",
+  "day": "수",
+  "time": "19:30",
+  "home": "대전",
+  "away": "전북",
+  "stadium": "대전",
+  "full_stadium": "대전월드컵경기장",
+  "en_city": "Daejeon"
+ },
+ {
+  "date": "2023-07-12",
+  "day": "수",
+  "time": "19:30",
+  "home": "서울",
+  "away": "수원FC",
+  "stadium": "서울",
+  "full_stadium": "서울월드컵경기장",
+  "en_city": "Seoul"
+ },
+ {
+  "date": "2023-07-15",
+  "day": "토",
+  "time": "19:00",
+  "home": "수원",
+  "away": "울산",
+  "stadium": "수원 월드컵",
+  "full_stadium": "수원월드컵경기장",
+  "en_city": "Suwon"
+ },
+ {
+  "date": "2023-07-15",
+  "day": "토",
+  "time": "19:30",
+  "home": "강원",
+  "away": "서울",
+  "stadium": "강릉",
+  "full_stadium": "강릉종합운동장",
+  "en_city": "Gangneung"
+ },
+ {
+  "date": "2023-07-15",
+  "day": "토",
+  "time": "20:00",
+  "home": "광주",
+  "away": "대구",
+  "stadium": "광주",
+  "full_stadium": "광주축구전용구장",
+  "en_city": "Gwangju"
+ },
+ {
+  "date": "2023-07-16",
+  "day": "일",
+  "time": "19:00",
+  "home": "전북",
+  "away": "수원FC",
+  "stadium": "전주",
+  "full_stadium": "전주 월드컵 경기장",
+  "en_city": "Jeonju"
+ },
+ {
+  "date": "2023-07-16",
+  "day": "일",
+  "time": "19:30",
+  "home": "포항",
+  "away": "제주",
+  "stadium": "포항",
+  "full_stadium": "포항스틸야드",
+  "en_city": "Pohang"
+ },
+ {
+  "date": "2023-07-16",
+  "day": "일",
+  "time": "20:00",
+  "home": "인천",
+  "away": "대전",
+  "stadium": "인천",
+  "full_stadium": "인천축구전용경기장",
+  "en_city": "Incheon"
+ },
+ {
+  "date": "2023-07-21",
+  "day": "금",
+  "time": "19:30",
+  "home": "울산",
+  "away": "제주",
+  "stadium": "울산",
+  "full_stadium": "울산현대축구단",
+  "en_city": "Ulsan"
+ },
+ {
+  "date": "2023-07-21",
+  "day": "금",
+  "time": "19:30",
+  "home": "포항",
+  "away": "전북",
+  "stadium": "포항",
+  "full_stadium": "포항스틸야드",
+  "en_city": "Pohang"
+ },
+ {
+  "date": "2023-07-22",
+  "day": "토",
+  "time": "19:00",
+  "home": "수원FC",
+  "away": "광주",
+  "stadium": "수원종합",
+  "full_stadium": "수원종합운동장",
+  "en_city": "Suwon"
+ },
+ {
+  "date": "2023-07-22",
+  "day": "토",
+  "time": "19:30",
+  "home": "강원",
+  "away": "수원",
+  "stadium": "강릉",
+  "full_stadium": "강릉종합운동장",
+  "en_city": "Gangneung"
+ },
+ {
+  "date": "2023-07-22",
+  "day": "토",
+  "time": "19:30",
+  "home": "서울",
+  "away": "인천",
+  "stadium": "서울",
+  "full_stadium": "서울월드컵경기장",
+  "en_city": "Seoul"
+ },
+ {
+  "date": "2023-07-22",
+  "day": "토",
+  "time": "20:00",
+  "home": "대전",
+  "away": "대구",
+  "stadium": "대전",
+  "full_stadium": "대전월드컵경기장",
+  "en_city": "Daejeon"
+ },
+ {
+  "date": "2023-08-04",
+  "day": "금",
+  "time": "19:30",
+  "home": "서울",
+  "away": "포항",
+  "stadium": "서울",
+  "full_stadium": "서울월드컵경기장",
+  "en_city": "Seoul"
+ },
+ {
+  "date": "2023-08-04",
+  "day": "금",
+  "time": "19:30",
+  "home": "광주",
+  "away": "대전",
+  "stadium": "광주",
+  "full_stadium": "광주축구전용구장",
+  "en_city": "Gwangju"
+ },
+ {
+  "date": "2023-08-05",
+  "day": "토",
+  "time": "19:00",
+  "home": "수원",
+  "away": "수원FC",
+  "stadium": "수원 월드컵",
+  "full_stadium": "수원월드컵경기장",
+  "en_city": "Suwon"
+ },
+ {
+  "date": "2023-08-05",
+  "day": "토",
+  "time": "19:30",
+  "home": "대구",
+  "away": "울산",
+  "stadium": "대구",
+  "full_stadium": "DGB 대구은행파크",
+  "en_city": "Daegu"
+ },
+ {
+  "date": "2023-08-06",
+  "day": "일",
+  "time": "19:00",
+  "home": "전북",
+  "away": "인천",
+  "stadium": "전주",
+  "full_stadium": "전주 월드컵 경기장",
+  "en_city": "Jeonju"
+ },
+ {
+  "date": "2023-08-06",
+  "day": "일",
+  "time": "19:30",
+  "home": "제주",
+  "away": "강원",
+  "stadium": "제주",
+  "full_stadium": "제주월드컵경기장",
+  "en_city": "Jeju City"
+ },
+ {
+  "date": "2023-08-12",
+  "day": "토",
+  "time": "19:00",
+  "home": "전북",
+  "away": "수원",
+  "stadium": "전주",
+  "full_stadium": "전주 월드컵 경기장",
+  "en_city": "Jeonju"
+ },
+ {
+  "date": "2023-08-12",
+  "day": "토",
+  "time": "19:30",
+  "home": "강원",
+  "away": "울산",
+  "stadium": "강릉",
+  "full_stadium": "강릉종합운동장",
+  "en_city": "Gangneung"
+ },
+ {
+  "date": "2023-08-12",
+  "day": "토",
+  "time": "20:00",
+  "home": "제주",
+  "away": "수원FC",
+  "stadium": "제주",
+  "full_stadium": "제주월드컵경기장",
+  "en_city": "Jeju City"
+ },
+ {
+  "date": "2023-08-13",
+  "day": "일",
+  "time": "19:00",
+  "home": "대전",
+  "away": "서울",
+  "stadium": "대전",
+  "full_stadium": "대전월드컵경기장",
+  "en_city": "Daejeon"
+ },
+ {
+  "date": "2023-08-13",
+  "day": "일",
+  "time": "19:30",
+  "home": "인천",
+  "away": "대구",
+  "stadium": "인천",
+  "full_stadium": "인천축구전용경기장",
+  "en_city": "Incheon"
+ },
+ {
+  "date": "2023-08-13",
+  "day": "일",
+  "time": "20:00",
+  "home": "포항",
+  "away": "광주",
+  "stadium": "포항",
+  "full_stadium": "포항스틸야드",
+  "en_city": "Pohang"
+ },
+ {
+  "date": "2023-08-18",
+  "day": "금",
+  "time": "19:30",
+  "home": "수원",
+  "away": "제주",
+  "stadium": "수원 월드컵",
+  "full_stadium": "수원월드컵경기장",
+  "en_city": "Suwon"
+ },
+ {
+  "date": "2023-08-18",
+  "day": "금",
+  "time": "19:30",
+  "home": "인천",
+  "away": "광주",
+  "stadium": "인천",
+  "full_stadium": "인천축구전용경기장",
+  "en_city": "Incheon"
+ },
+ {
+  "date": "2023-08-19",
+  "day": "토",
+  "time": "19:00",
+  "home": "울산",
+  "away": "전북",
+  "stadium": "울산",
+  "full_stadium": "울산현대축구단",
+  "en_city": "Ulsan"
+ },
+ {
+  "date": "2023-08-19",
+  "day": "토",
+  "time": "19:00",
+  "home": "강원",
+  "away": "수원FC",
+  "stadium": "강릉",
+  "full_stadium": "강릉종합운동장",
+  "en_city": "Gangneung"
+ },
+ {
+  "date": "2023-08-19",
+  "day": "토",
+  "time": "19:30",
+  "home": "서울",
+  "away": "대구",
+  "stadium": "서울",
+  "full_stadium": "서울월드컵경기장",
+  "en_city": "Seoul"
+ },
+ {
+  "date": "2023-08-20",
+  "day": "일",
+  "time": "19:00",
+  "home": "포항",
+  "away": "대전",
+  "stadium": "포항",
+  "full_stadium": "포항스틸야드",
+  "en_city": "Pohang"
+ },
+ {
+  "date": "2023-08-25",
+  "day": "금",
+  "time": "19:00",
+  "home": "수원FC",
+  "away": "인천",
+  "stadium": "수원종합",
+  "full_stadium": "수원종합운동장",
+  "en_city": "Suwon"
+ },
+ {
+  "date": "2023-08-25",
+  "day": "금",
+  "time": "19:30",
+  "home": "전북",
+  "away": "대전",
+  "stadium": "전주",
+  "full_stadium": "전주 월드컵 경기장",
+  "en_city": "Jeonju"
+ },
+ {
+  "date": "2023-08-26",
+  "day": "토",
+  "time": "19:00",
+  "home": "대구",
+  "away": "제주",
+  "stadium": "대구",
+  "full_stadium": "DGB 대구은행파크",
+  "en_city": "Daegu"
+ },
+ {
+  "date": "2023-08-26",
+  "day": "토",
+  "time": "19:30",
+  "home": "강원",
+  "away": "포항",
+  "stadium": "강릉",
+  "full_stadium": "강릉종합운동장",
+  "en_city": "Gangneung"
+ },
+ {
+  "date": "2023-08-27",
+  "day": "일",
+  "time": "19:00",
+  "home": "서울",
+  "away": "울산",
+  "stadium": "서울",
+  "full_stadium": "서울월드컵경기장",
+  "en_city": "Seoul"
+ },
+ {
+  "date": "2023-08-27",
+  "day": "일",
+  "time": "19:30",
+  "home": "광주",
+  "away": "수원",
+  "stadium": "광주",
+  "full_stadium": "광주축구전용구장",
+  "en_city": "Gwangju"
+ },
+ {
+  "date": "2023-09-01",
+  "day": "금",
+  "time": "19:00",
+  "home": "대전",
+  "away": "수원FC",
+  "stadium": "대전",
+  "full_stadium": "대전월드컵경기장",
+  "en_city": "Daejeon"
+ },
+ {
+  "date": "2023-09-01",
+  "day": "금",
+  "time": "19:30",
+  "home": "대구",
+  "away": "강원",
+  "stadium": "대구",
+  "full_stadium": "DGB 대구은행파크",
+  "en_city": "Daegu"
+ },
+ {
+  "date": "2023-09-02",
+  "day": "토",
+  "time": "16:30",
+  "home": "수원",
+  "away": "서울",
+  "stadium": "수원 월드컵",
+  "full_stadium": "수원월드컵경기장",
+  "en_city": "Suwon"
+ },
+ {
+  "date": "2023-09-02",
+  "day": "토",
+  "time": "19:00",
+  "home": "인천",
+  "away": "포항",
+  "stadium": "인천",
+  "full_stadium": "인천축구전용경기장",
+  "en_city": "Incheon"
+ },
+ {
+  "date": "2023-09-03",
+  "day": "일",
+  "time": "16:30",
+  "home": "울산",
+  "away": "광주",
+  "stadium": "울산",
+  "full_stadium": "울산현대축구단",
+  "en_city": "Ulsan"
+ },
+ {
+  "date": "2023-09-03",
+  "day": "일",
+  "time": "19:00",
+  "home": "제주",
+  "away": "전북",
+  "stadium": "제주",
+  "full_stadium": "제주월드컵경기장",
+  "en_city": "Jeju City"
+ },
+ {
+  "date": "2023-09-16",
+  "day": "토",
+  "time": "14:00",
+  "home": "전북",
+  "away": "강원",
+  "stadium": "전주",
+  "full_stadium": "전주 월드컵 경기장",
+  "en_city": "Jeonju"
+ },
+ {
+  "date": "2023-09-16",
+  "day": "토",
+  "time": "14:00",
+  "home": "인천",
+  "away": "제주",
+  "stadium": "인천",
+  "full_stadium": "인천축구전용경기장",
+  "en_city": "Incheon"
+ },
+ {
+  "date": "2023-09-16",
+  "day": "토",
+  "time": "16:30",
+  "home": "포항",
+  "away": "수원FC",
+  "stadium": "포항",
+  "full_stadium": "포항스틸야드",
+  "en_city": "Pohang"
+ },
+ {
+  "date": "2023-09-16",
+  "day": "토",
+  "time": "19:00",
+  "home": "울산",
+  "away": "대전",
+  "stadium": "울산",
+  "full_stadium": "울산현대축구단",
+  "en_city": "Ulsan"
+ },
+ {
+  "date": "2023-09-17",
+  "day": "일",
+  "time": "14:00",
+  "home": "서울",
+  "away": "광주",
+  "stadium": "서울",
+  "full_stadium": "서울월드컵경기장",
+  "en_city": "Seoul"
+ },
+ {
+  "date": "2023-09-17",
+  "day": "일",
+  "time": "16:30",
+  "home": "수원",
+  "away": "대구",
+  "stadium": "수원 월드컵",
+  "full_stadium": "수원월드컵경기장",
+  "en_city": "Suwon"
+ },
+ {
+  "date": "2023-09-23",
+  "day": "토",
+  "time": "14:00",
+  "home": "대전",
+  "away": "수원",
+  "stadium": "대전",
+  "full_stadium": "대전월드컵경기장",
+  "en_city": "Daejeon"
+ },
+ {
+  "date": "2023-09-23",
+  "day": "토",
+  "time": "16:30",
+  "home": "제주",
+  "away": "서울",
+  "stadium": "제주",
+  "full_stadium": "제주월드컵경기장",
+  "en_city": "Jeju City"
+ },
+ {
+  "date": "2023-09-24",
+  "day": "일",
+  "time": "14:00",
+  "home": "수원FC",
+  "away": "울산",
+  "stadium": "수원종합",
+  "full_stadium": "수원종합운동장",
+  "en_city": "Suwon"
+ },
+ {
+  "date": "2023-09-24",
+  "day": "일",
+  "time": "14:00",
+  "home": "광주",
+  "away": "전북",
+  "stadium": "광주",
+  "full_stadium": "광주축구전용구장",
+  "en_city": "Gwangju"
+ },
+ {
+  "date": "2023-09-24",
+  "day": "일",
+  "time": "16:30",
+  "home": "강원",
+  "away": "인천",
+  "stadium": "강릉",
+  "full_stadium": "강릉종합운동장",
+  "en_city": "Gangneung"
+ },
+ {
+  "date": "2023-09-24",
+  "day": "일",
+  "time": "19:00",
+  "home": "대구",
+  "away": "포항",
+  "stadium": "대구",
+  "full_stadium": "DGB 대구은행파크",
+  "en_city": "Daegu"
+ },
+ {
+  "date": "2023-09-30",
+  "day": "토",
+  "time": "14:00",
+  "home": "포항",
+  "away": "울산",
+  "stadium": "포항",
+  "full_stadium": "포항스틸야드",
+  "en_city": "Pohang"
+ },
+ {
+  "date": "2023-09-30",
+  "day": "토",
+  "time": "14:00",
+  "home": "수원FC",
+  "away": "서울",
+  "stadium": "수원종합",
+  "full_stadium": "수원종합운동장",
+  "en_city": "Suwon"
+ },
+ {
+  "date": "2023-09-30",
+  "day": "토",
+  "time": "16:30",
+  "home": "전북",
+  "away": "대구",
+  "stadium": "전주",
+  "full_stadium": "전주 월드컵 경기장",
+  "en_city": "Jeonju"
+ },
+ {
+  "date": "2023-09-30",
+  "day": "토",
+  "time": "19:00",
+  "home": "인천",
+  "away": "수원",
+  "stadium": "인천",
+  "full_stadium": "인천축구전용경기장",
+  "en_city": "Incheon"
+ }
+]

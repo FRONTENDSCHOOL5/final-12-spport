@@ -110,7 +110,7 @@ export default function CommonProfile({ profile, children, numFollower }) {
 
   return (
     <ContainerStyle>
-      {/* 1열 */}
+      {/* 1행 */}
       {/* follwers, profile image, followings */}
       <div className='followers'>
         <button
@@ -150,7 +150,7 @@ export default function CommonProfile({ profile, children, numFollower }) {
         )}
       </div>
 
-      {/* 2열 */}
+      {/* 2행 */}
       {/* 이름, 아이디, 태그 */}
       <div className='description'>
         <strong>{profile.username}</strong>
@@ -163,11 +163,18 @@ export default function CommonProfile({ profile, children, numFollower }) {
         <div className='tag-container'>
           {!!tags.length &&
             tags.map((item) => {
-              return <TagButton key={item} className='tagBtn' text={item} func={() => navigate(`/search/${item.trim()}`)} />;
+              return (
+                <TagButton
+                  key={item}
+                  className='tagBtn'
+                  text={item}
+                  func={() => navigate(`/tag/${item}`)}
+                />
+              );
             })}
         </div>
       </div>
-      {/* 3열 */}
+      {/* 3행 */}
       {/* 프로필별 버튼(다른사람: 메시지, 팔로우, 공유 / 나: 프로필수정, 일정추가 / 팀: 팔로우, 언팔로우 ) */}
       <div className='follow'>{children}</div>
     </ContainerStyle>
