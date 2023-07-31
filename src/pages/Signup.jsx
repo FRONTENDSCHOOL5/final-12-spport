@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import profileImg from '../assets/image/default-profile.png';
 import uploadImg from '../assets/image/icon-image.svg';
 import bsData from '.././data/sport_bs_users.json';
+import closeBtn from '../assets/image/icon-x.svg';
 
 export default function Signup() {
   const URL = 'https://api.mandarin.weniv.co.kr';
@@ -16,8 +17,10 @@ export default function Signup() {
   const [passwordError, setPasswordError] = useState('');
   const [accountnameError, setAccountnameError] = useState('');
   const [errorMsg, setErrorMsg] = useState('');
+  const [introErrorMsg, setIntroErrorMsg] = useState('');
   const [emailPwValid, setEmailPwValid] = useState(false);
   const [changeProfile, setchangeProfile] = useState('');
+  const [interest, setInterest] = useState('');
   const [userInfo, setUserInfo] = useState({
     user: {
       username: '',
@@ -40,7 +43,51 @@ export default function Signup() {
     }));
     setErrorMsg('');
   };
-  // console.log(userInfo);
+  console.log(userInfo);
+
+  const handleInterestChange = (e) => {
+    setInterest(e.target.value);
+  };
+
+  const handleInterestKeyDown = (e) => {
+    if (e.key === 'Enter' && interest.trim() !== '') {
+      const newInterest = interest.trim();
+
+      if (
+        !userInfo.user.intro
+          .split(',')
+          .some((item) => item.trim() === newInterest)
+      ) {
+        setUserInfo((prevState) => ({
+          ...prevState,
+          user: {
+            ...prevState.user,
+            intro: prevState.user.intro
+              ? prevState.user.intro + `,${newInterest}`
+              : newInterest,
+          },
+        }));
+        setIntroErrorMsg('');
+      } else {
+        setIntroErrorMsg('이미 추가된 관심사입니다.');
+      }
+
+      setInterest('');
+    }
+  };
+
+  const handleInterestRemove = (index) => {
+    setUserInfo((prevState) => ({
+      ...prevState,
+      user: {
+        ...prevState.user,
+        intro: prevState.user.intro
+          .split(',')
+          .filter((_, i) => i !== index)
+          .join(','),
+      },
+    }));
+  };
 
   const handleEmailValid = async () => {
     try {
@@ -148,7 +195,7 @@ export default function Signup() {
   return (
     <>
       {emailPwValid ? (
-        <LoginSection>
+        <div>
           <H1Style>프로필 설정</H1Style>
           <PStyle>나중에 언제든지 변경할 수 있습니다.</PStyle>
           <ImageWrap>
@@ -188,15 +235,33 @@ export default function Signup() {
             />
             {accountnameError && <ErrorText>*{accountnameError}</ErrorText>}
             {errorMsg && <ErrorText>*{errorMsg}</ErrorText>}
-            <Input
-              title='관심사'
-              type='text'
-              inputId='label-intro'
-              placeholder='자신의 관심사를 추가해주세요. (,)로 구분해주세요.'
-              value={userInfo.user.intro}
-              name='intro'
-              onChange={handleInputChange}
-            />
+            <IntroContainer>
+              <strong>관심사</strong>
+              {/* <p>자신의 관심사를 Enter를 눌러 추가해주세요.</p> */}
+              <div>
+                <ul>
+                  {userInfo.user.intro &&
+                    userInfo.user.intro
+                      .split(',')
+                      .map((interestItem, index) => (
+                        <li
+                          key={index}
+                          onClick={() => handleInterestRemove(index)}
+                        >
+                          {interestItem}
+                        </li>
+                      ))}
+                  <input
+                    type='text'
+                    value={interest}
+                    placeholder='자신의 관심사를 Enter를 눌러 추가해주세요.'
+                    onChange={handleInterestChange}
+                    onKeyDown={handleInterestKeyDown}
+                  />
+                </ul>
+              </div>
+              {introErrorMsg && <ErrorText>*{introErrorMsg}</ErrorText>}
+            </IntroContainer>
             <LButton
               text='SSPORT 시작하기'
               type='submit'
@@ -207,9 +272,9 @@ export default function Signup() {
               }
             ></LButton>
           </FormStyle>
-        </LoginSection>
+        </div>
       ) : (
-        <LoginSection>
+        <div>
           <H1Style>이메일로 회원가입</H1Style>
           <FormStyle onSubmit={goSignup}>
             <Input
@@ -252,23 +317,18 @@ export default function Signup() {
               }
             ></LButton>
           </FormStyle>
-        </LoginSection>
+        </div>
       )}
     </>
   );
 }
-
-export const LoginSection = styled.section`
-  div {
-    margin: 30px auto 0 auto;
-  }
-`;
 
 export const PStyle = styled.p`
   text-align: center;
   color: var(--color-steelblue);
   font-size: 14px;
   padding-top: 12px;
+  margin-bottom: 30px;
 `;
 
 export const ImageWrap = styled.div`
@@ -303,4 +363,53 @@ export const ProfileImg = styled.img`
   width: 100%;
   height: 100%;
   border-radius: 50%;
+`;
+
+export const IntroContainer = styled.div`
+  strong {
+    color: var(--color-darkgrey);
+    font-size: 12px;
+  }
+  /* p {
+    color: var(--color-lightgrey);
+    font-size: 14px;
+    padding: 5px 0;
+  } */
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    border: 1px solid var(--color-lightgrey);
+    border-radius: 5px;
+    margin: 10px 0 17px 0;
+
+    li {
+      color: var(--color-lime);
+      font-size: 14px;
+      padding: 5px 20px 5px 5px;
+      background: var(--color-navy) no-repeat right/ cover url(${closeBtn});
+      background-size: 19px;
+      border-radius: 5px;
+      margin: 5px 0;
+      cursor: pointer;
+    }
+
+    &:focus-within {
+      border: 1px solid var(--color-navy);
+    }
+
+    input {
+      width: 100%;
+      color: var(--color-navy);
+      font-size: 14px;
+      outline: none;
+      font-size: 14px;
+      padding: 8px 0;
+      flex: 1;
+
+      &::placeholder {
+        color: var(--color-lightgrey);
+      }
+    }
+  }
 `;

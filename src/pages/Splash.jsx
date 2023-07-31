@@ -67,7 +67,6 @@ const FadeOutWrapper = styled.div`
   div {
     background-color: var(--color-lime);
     height: 100vh;
-    width: 390px;
   }
 
   .logo-container {

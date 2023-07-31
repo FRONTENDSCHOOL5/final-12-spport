@@ -4,7 +4,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyles = createGlobalStyle`
     ${reset}
     body {
-        background: var(--color-lime);
+        background: white;
     }
     .a11y-hidden {
         clip: rect(1px, 1px, 1px, 1px);
