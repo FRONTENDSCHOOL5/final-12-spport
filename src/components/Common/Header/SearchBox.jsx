@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 
@@ -25,11 +25,33 @@ export default function SearchBox() {
     navigate(`/search/${keyword}`);
     setKeyword('');
   };
+
   const handleInputChange = (e) => {
     setKeyword(e.target.value);
+    console.log(keyword);
+    // navigate(`/search/${keyword}`);
   };
+
+  useEffect(() => {
+    // +
+    // 입력한 대로 바로 검색되도록
+    const debounce = setTimeout(() => {
+      if (keyword) {
+        console.log(keyword);
+        navigate(`/search/${keyword}`);
+      }
+      if (keyword === '') {
+        navigate('/search');
+      }
+    }, 300);
+    return () => {
+      clearTimeout(debounce);
+    };
+  }, [keyword]);
+
   return (
     <SearchBoxStyle onSubmit={handleSearchSubmit}>
+      {console.log('Searchbox')}
       <label>
         <span className='a11y-hidden'>유저 또는 팀 계정을 검색해보세요!</span>
         <input
