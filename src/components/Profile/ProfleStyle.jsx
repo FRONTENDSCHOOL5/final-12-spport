@@ -71,6 +71,10 @@ const Container = styled.div`
   flex-direction: column;
   gap: 6px;
   background-color: var(--color-bg);
+
+  @media screen and (min-width: 768px) {
+    padding-left: 60px;
+  }
 `;
 
 // 피드 스타일
@@ -84,10 +88,10 @@ const AlbumFeed = styled.ul`
   gap: 8px;
   padding: 16px;
   flex-wrap: wrap;
+  justify-content: center;
   li {
-    display: inline-block;
-    width: 114px;
-    height: 114px;
+    max-width: 30%;
+
     border: 0.5px solid #c4c4c4;
     button {
       position: relative;

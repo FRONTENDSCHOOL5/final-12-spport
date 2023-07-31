@@ -12,6 +12,10 @@ import { userToken } from '../atom/loginAtom';
 const MainStyle = styled.main`
   padding: 50px 0 60px;
   height: 100%;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 60px;
+  }
 `;
 
 export default function Follow() {

@@ -481,7 +481,6 @@ const storeWeather = async (team_name, post, data) => {
 
 ### [Intersection Observer API을 사용한 무한 스크롤]
 스크롤 이벤트가 발생할 때마다 처리하는 것은 불필요하게 과도한 이벤트가 발생하여 성능 저하로 이어질 수 있기 때문에 Intersection Observer API를 사용하여 성능 저하를 방지하고 타겟 요소와 상위 요소 또는 최상위 document의 뷰포트 사이의 교차 영역 변화를 비동기적으로 관찰했습니다.
-
 구체적으로, 리스트 요소의 가장 마지막에 <span> 요소에 ref를 설정하여 해당 요소의 가시성 변화를 감지하고, inView라는 변수의 값을 변경하도록 설정했습니다. inView 값이 true로 변경될 때마다 페이지 값을 증가시켜 화면 끝에 도달할 때마다 추가적인 게시물을 가져오도록 구현했습니다.
 ```js
 ...

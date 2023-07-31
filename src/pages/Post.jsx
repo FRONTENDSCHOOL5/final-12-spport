@@ -16,6 +16,8 @@ const MainStyle = styled.main`
 
 const PostSectionStyle = styled.section`
   padding: 70px 20px 20px;
+  display: flex;
+  justify-content: center;
 `;
 
 export default function Post() {

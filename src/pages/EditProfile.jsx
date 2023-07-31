@@ -1,18 +1,12 @@
 import React, { useState } from 'react';
-import { ImageWrap, LabelImg, ProfileImg } from './Signup';
+import { ImageWrap, LabelImg, ProfileImg, IntroContainer } from './Signup';
 import Input from '../components/Common/Input';
 import { FormStyle, ErrorText } from './Login';
 import Header from '../components/Common/Header/Header';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import { useRecoilValue, useRecoilState } from 'recoil';
-import {
-  userToken,
-  accountname,
-  userimage,
-  username,
-  intro,
-} from '../atom/loginAtom';
+import { userToken, accountname, userimage } from '../atom/loginAtom';
 import { isModalOpen, modalItems } from '../atom/modalAtom';
 import tokenData from '../assets/data/sport_users.json';
 
@@ -22,21 +16,25 @@ export default function EditProfile() {
 
   const [errorMsg, setErrorMsg] = useState('');
   const [accountnameError, setAccountnameError] = useState('');
+  const [introErrorMsg, setIntroErrorMsg] = useState('');
 
   const token = useRecoilValue(userToken);
   const [accountNameValue, setAccountNameValue] = useRecoilState(accountname);
   const [userimageValue, setUserimageValue] = useRecoilState(userimage);
-  const [usernameValue, setUsernameValue] = useRecoilState(username);
-  const [introValue, setIntroValue] = useRecoilState(intro);
   const [isModal, setIsModal] = useRecoilState(isModalOpen);
+  const [interest, setInterest] = useState('');
   const [modalItem, setModalItem] = useRecoilState(modalItems);
+
+  const [initialAccountnameValue, setInitialAccountnameValue] =
+    useState(accountNameValue);
 
   const [userInfo, setUserInfo] = useState({
     user: {
-      username: usernameValue,
-      accountname: accountNameValue,
-      intro: introValue,
-      image: userimageValue,
+      id: '',
+      username: '',
+      accountname: '',
+      image: '',
+      token: '',
     },
   });
 
@@ -51,17 +49,74 @@ export default function EditProfile() {
         [name]: value,
       },
     }));
-    if (name === 'username') {
-      setUsernameValue(value);
-    } else if (name === 'accountname') {
-      setAccountNameValue(value);
-    } else if (name === 'intro') {
-      setIntroValue(value);
-    }
-
-    setErrorMsg('');
   };
-  // console.log(userInfo);
+  console.log(userInfo);
+
+  const handleInterestChange = (e) => {
+    setInterest(e.target.value);
+  };
+
+  const handleInterestKeyDown = (e) => {
+    if (e.key === 'Enter' && interest.trim() !== '') {
+      const newInterest = interest.trim();
+
+      if (
+        !userInfo.user.intro
+          .split(',')
+          .some((item) => item.trim() === newInterest)
+      ) {
+        setUserInfo((prevState) => ({
+          ...prevState,
+          user: {
+            ...prevState.user,
+            intro: prevState.user.intro
+              ? prevState.user.intro + `,${newInterest}`
+              : newInterest,
+          },
+        }));
+        setIntroErrorMsg('');
+      } else {
+        setIntroErrorMsg('이미 추가된 관심사입니다.');
+      }
+
+      setInterest('');
+    }
+  };
+
+  const handleInterestRemove = (index) => {
+    setUserInfo((prevState) => ({
+      ...prevState,
+      user: {
+        ...prevState.user,
+        intro: prevState.user.intro
+          .split(',')
+          .filter((_, i) => i !== index)
+          .join(','),
+      },
+    }));
+  };
+
+  const handleEditProfile = async () => {
+    try {
+      const response = await fetch(URL + '/user/myinfo', {
+        method: 'GET',
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        setUserInfo(data);
+      }
+    } catch (error) {
+      console.log('error', error);
+    }
+  };
+
+  React.useEffect(() => {
+    handleEditProfile();
+  }, [token]);
 
   const handleImageUpload = async (e) => {
     try {
@@ -98,7 +153,6 @@ export default function EditProfile() {
       });
 
       const result = await response.json();
-      // console.log(result);
     } catch (error) {
       console.error(error);
     }
@@ -120,6 +174,13 @@ export default function EditProfile() {
         accountname: accountNameValue,
       },
     };
+
+    if (accountNameValue === initialAccountnameValue) {
+      setAccountnameError('');
+      setErrorMsg('');
+      return;
+    }
+
     const res = await fetch(URL + '/user/accountnamevalid', {
       method: 'POST',
       headers: {
@@ -127,8 +188,9 @@ export default function EditProfile() {
       },
       body: JSON.stringify(accountData),
     });
+
     const json = await res.json();
-    // console.log(json);
+
     setErrorMsg(json.message);
 
     const accountnames = tokenData.map((item) => item.accountname.substring(9));
@@ -197,15 +259,28 @@ export default function EditProfile() {
         />
         {accountnameError && <ErrorText>*{accountnameError}</ErrorText>}
         {errorMsg && <ErrorText>*{errorMsg}</ErrorText>}
-        <Input
-          title='관심사'
-          type='text'
-          inputId='label-intro'
-          placeholder='자신의 관심사를 추가해주세요. (,)로 구분해주세요.'
-          value={userInfo.user.intro}
-          name='intro'
-          onChange={handleInputChange}
-        />
+        <IntroContainer>
+          <strong>관심사</strong>
+          {/* <p>자신의 관심사를 Enter를 눌러 추가해주세요.</p> */}
+          <div>
+            <ul>
+              {userInfo.user.intro &&
+                userInfo.user.intro.split(',').map((interestItem, index) => (
+                  <li key={index} onClick={() => handleInterestRemove(index)}>
+                    {interestItem}
+                  </li>
+                ))}
+              <input
+                type='text'
+                value={interest}
+                placeholder='자신의 관심사를 Enter를 눌러 추가해주세요.'
+                onChange={handleInterestChange}
+                onKeyDown={handleInterestKeyDown}
+              />
+            </ul>
+          </div>
+          {introErrorMsg && <ErrorText>*{introErrorMsg}</ErrorText>}
+        </IntroContainer>
       </StyledFormStyle>
     </>
   );

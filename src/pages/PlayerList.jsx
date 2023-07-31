@@ -13,15 +13,12 @@ export default function PlayerList() {
     '외야수',
     '내야수',
     '포수',
-  ]); // 필터 내 포지션 정보
-  const [selectPosition, setSelectPosition] = useState('선택'); // 필터 내 선택된 포지션 정보
-
+  ]);
+  const [selectPosition, setSelectPosition] = useState('선택');
   const { id } = useParams();
 
-  // team 구분
   const teamName = tokenData.map((item) => item.accountname);
   const sameName = tokenData.map((item) => item.username);
-
   const matchingTeam =
     sameName.find((_, index) => teamName[index] === id) || '';
 
@@ -82,6 +79,10 @@ export default function PlayerList() {
 
 const MainContainer = styled.main`
   padding: 70px 15px 0 15px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 60px;
+  }
 `;
 
 const SectionFilter = styled.section`
@@ -100,11 +101,10 @@ const SectionFilter = styled.section`
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
-    min-width: 390px;
+    left: -3%;
+    width: 100vw;
     height: 1px;
     background-color: var(--color-maingrey);
-    transform: translateX(-3.8%);
   }
 `;
 
@@ -123,8 +123,8 @@ const SectionList = styled.section`
       button {
         font-size: 18px;
         font-weight: bold;
-        width: 27px;
-        height: 27px;
+        width: 32px;
+        height: 32px;
       }
     }
 

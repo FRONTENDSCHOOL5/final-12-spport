@@ -3,14 +3,15 @@ import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 
 const SearchBoxStyle = styled.form`
-  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
   .inp-search {
     font-size: 14px;
     color: var(--color-navy);
     background: var(--color-bg);
     border-radius: 32px;
     padding: 7px 16px;
-    width: 316px;
+    width: 100%;
     &::placeholder {
       color: var(--color-maingrey);
     }
