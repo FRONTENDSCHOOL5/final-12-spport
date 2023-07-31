@@ -10,10 +10,7 @@ import {
   bottomSheetItems,
 } from '../../atom/bottomSheetAtom';
 import { isModalOpen, modalItems } from '../../atom/modalAtom';
-import {
-  deleteCommentAPI,
-  reportCommentAPI,
-} from '../../api/PostAPI.js/CommentAPI';
+import { useDeleteCommentMutation, useReportCommentMutation } from '../../hook/useComment';
 
 const VComment = styled.article`
   padding: 12px 16px;
@@ -70,12 +67,15 @@ export default function ViewComment({ comment, post_id }) {
     date.slice(5, 7),
   )}.${parseInt(date.slice(8))} ${date.slice(11, 13)}:${date.slice(14, 16)}`;
 
-  const [token, setToken] = useRecoilState(userToken);
-  const [accountName, setAccountName] = useRecoilState(accountname);
+  const [token] = useRecoilState(userToken);
+  const [accountName] = useRecoilState(accountname);
   const [isBsOpen, setIsBsOpen] = useRecoilState(isBottomSheetOpen);
   const [bsItems, setBsItems] = useRecoilState(bottomSheetItems);
   const [isModal, setIsModal] = useRecoilState(isModalOpen);
   const [modalItem, setModalItem] = useRecoilState(modalItems);
+  const deleteCommentMutate = useDeleteCommentMutation(token, post_id, comment.id);
+  const reportCommentMutate = useReportCommentMutation(token, post_id, comment.id);
+  
 
   const onMoreClick = () => {
     setIsBsOpen((prev) => !prev);
@@ -83,13 +83,12 @@ export default function ViewComment({ comment, post_id }) {
       const onCommentDelete = () => {
         setIsModal(true);
         const deleteComment = async () => {
-          const data = await deleteCommentAPI(token, post_id, comment.id);
+          await deleteCommentMutate.mutateAsync();
           setIsModal(true);
           setModalItem([
             '해당 댓글이 삭제되었습니다.',
             '확인',
             function () {
-              location.reload();
             },
           ]);
         };
@@ -101,7 +100,7 @@ export default function ViewComment({ comment, post_id }) {
       const onCommentReport = () => {
         setIsModal(true);
         const reportComment = async () => {
-          const data = await reportCommentAPI(token, post_id, comment.id);
+          await reportCommentMutate.mutateAsync();
           setIsModal(true);
           setModalItem(['해당 댓글이 신고되었습니다.', '확인', function () {}]);
         };
@@ -119,9 +118,6 @@ export default function ViewComment({ comment, post_id }) {
           <ProfileImage36 image={comment.author.image} />
         </Link>
         <section className='w-info'>
-          {/* comment가 없으면 댓글이 없습니다 */}
-          {/* 나중에 조건부 렌더링으로 아예 다른 페이지가 나오도록 수정 */}
-    
           <p className='w-name'>{comment.author.username}</p>
           <p className='w-time'>{displayDate}</p>
         </section>
