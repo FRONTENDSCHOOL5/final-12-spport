@@ -9,6 +9,7 @@ import { userToken, userimage } from '../atom/loginAtom';
 import { useRecoilState } from 'recoil';
 import { isModalOpen, modalItems } from '../atom/modalAtom';
 import iconClose from '../assets/image/icon-close.svg';
+import imageCompression from 'browser-image-compression';
 
 const USection = styled.section`
   padding: 70px 20px;
@@ -134,10 +135,32 @@ export default function Upload(props) {
   };
   // handleSubmit 끝
 
+  // +
+  // 이미지를 압축
+  // browser-image-compression 라이브러리 사용
+  // npm install browser-image-compression --save
+  const getResizeImg = async (image) => {
+    // 받은 이미지를 압축 후 blob 형식으로 반환
+    const resizeBlob = await imageCompression(image, { maxSizeMB: 0.1 });
+    //blob을 업로드 가능한 형태인 file로 변환
+    const resizeFile = new File([resizeBlob], image.name, {
+      type: image.type,
+    });
+    return resizeFile;
+  };
+
   // 이미지 여러개를 하나씩 선택해서 올림 (업로드 버튼 클릭 여러번)
   const imageUpload = async (e) => {
     //input이 변경되면 변경된 요소를 가져온다
     const imageFile = e.target.files[0];
+
+    console.log('원본파일');
+    console.log(imageFile);
+
+    // 이미지를 압축하기 위해 리사이징 함수 호출
+    const resizeFile = await getResizeImg(imageFile);
+    console.log('리사이즈 된 파일');
+    console.log(resizeFile);
 
     // 사진 갯수 제한
     if (images.length > 2) {
@@ -147,7 +170,9 @@ export default function Upload(props) {
 
     //폼데이터를 만들고 내 데이터를 추가
     const formData = new FormData();
-    formData.append('image', imageFile);
+    // formData.append('image', imageFile);
+    formData.append('image', resizeFile);
+
     console.log(formData);
 
     //요청

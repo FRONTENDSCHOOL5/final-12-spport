@@ -31,12 +31,26 @@ export default function MyProfile({ profile }) {
   const [listType, setListType] = useState('list');
   const gameLink = '/schedule/' + profile.accountname;
 
+  const today = new Date().setHours(0, 0, 0, 0);
+
   // 직관일정, 게시글 데이터 호출
   useEffect(() => {
     const getLikedGameData = async () => {
       const plan = await getProductAPI(token, accountName);
       setPlanGame(plan);
+
+      //+
+      // 게임 일정이 오늘보다 전이면 안나오게 한다
+      const newgame = [];
+      for (let i = 0; i < plan.length; i++) {
+        const gameday = new Date(plan[i].itemName.slice(0, 10));
+        if (today < gameday) {
+          newgame.push(plan[i]);
+        }
+      }
+      setPlanGame(newgame);
     };
+
     const getPostData = async () => {
       const data = await getUserPostAPI(token, accountName);
       setPostData(data.post);
@@ -58,6 +72,7 @@ export default function MyProfile({ profile }) {
   return (
     <Container>
       {/* 상단 프로필 */}
+      {console.log('myprofile')}
       <CommonProfile profile={profile} numFollower={numFollower}>
         <MButton
           text='프로필 수정'
