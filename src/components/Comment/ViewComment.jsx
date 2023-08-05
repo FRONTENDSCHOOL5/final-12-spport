@@ -10,7 +10,10 @@ import {
   bottomSheetItems,
 } from '../../atom/bottomSheetAtom';
 import { isModalOpen, modalItems } from '../../atom/modalAtom';
-import { useDeleteCommentMutation, useReportCommentMutation } from '../../hook/useComment';
+import {
+  useDeleteCommentMutation,
+  useReportCommentMutation,
+} from '../../hook/useComment';
 
 const VComment = styled.article`
   padding: 12px 16px;
@@ -73,9 +76,16 @@ export default function ViewComment({ comment, post_id }) {
   const [bsItems, setBsItems] = useRecoilState(bottomSheetItems);
   const [isModal, setIsModal] = useRecoilState(isModalOpen);
   const [modalItem, setModalItem] = useRecoilState(modalItems);
-  const deleteCommentMutate = useDeleteCommentMutation(token, post_id, comment.id);
-  const reportCommentMutate = useReportCommentMutation(token, post_id, comment.id);
-  
+  const deleteCommentMutate = useDeleteCommentMutation(
+    token,
+    post_id,
+    comment.id,
+  );
+  const reportCommentMutate = useReportCommentMutation(
+    token,
+    post_id,
+    comment.id,
+  );
 
   const onMoreClick = () => {
     setIsBsOpen((prev) => !prev);
@@ -85,12 +95,7 @@ export default function ViewComment({ comment, post_id }) {
         const deleteComment = async () => {
           await deleteCommentMutate.mutateAsync();
           setIsModal(true);
-          setModalItem([
-            '해당 댓글이 삭제되었습니다.',
-            '확인',
-            function () {
-            },
-          ]);
+          setModalItem(['해당 댓글이 삭제되었습니다.', '확인', function () {}]);
         };
         setModalItem(['해당 댓글을 삭제할까요?', '삭제', deleteComment]);
       };
