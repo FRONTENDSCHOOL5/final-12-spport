@@ -3,7 +3,7 @@
 
 ## 소개 및 개요
 * 프로젝트 기간 : 2023.06.01 ~ 2023.06.30
-* 배포 URL : [🔗SPPORT](https://hyeri-woo.github.io/final-12-spport/)
+* 배포 URL : [🔗SPPORT](https://spport-dozen.netlify.app/)
 * TestID / PW : only_lions@test.com / only_lions123
 
 ## [프로젝트 설명]
