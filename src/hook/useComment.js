@@ -6,9 +6,9 @@ import {
 } from '../api/CommonAPI';
 import { useQuery, useMutation, useQueryClient } from 'react-query';
 
-function useCommentQuery(token, postId) {
+function useCommentQuery(token, post_id) {
   const getComment = async () => {
-    return await GET_API(token, `/post/${postId}/comments?limit=100`);
+    return await GET_API(token, `/post/${post_id}/comments?limit=100`);
   };
 
   const commentQuery = useQuery({
@@ -19,7 +19,7 @@ function useCommentQuery(token, postId) {
   return [commentQuery.data, commentQuery.isLoading, commentQuery.isError];
 }
 
-function useAddCommentMutation(token, postId) {
+function useAddCommentMutation(token, post_id) {
   const queryClient = useQueryClient();
   const addComment = async (content) => {
     const bodyData = {
@@ -27,7 +27,7 @@ function useAddCommentMutation(token, postId) {
         'content': content,
       },
     };
-    return await POST_API(token, `/post/${postId}/comments`, bodyData);
+    return await POST_API(token, `/post/${post_id}/comments`, bodyData);
   };
 
   return useMutation((content) => addComment(content), {
@@ -40,10 +40,10 @@ function useAddCommentMutation(token, postId) {
   });
 }
 
-function useDeleteCommentMutation(token, postId, commentId) {
+function useDeleteCommentMutation(token, post_id, comment_id) {
   const queryClient = useQueryClient();
   const deleteComment = async () => {
-    return await DELETE_API(token, `/post/${postId}/comments/${commentId}`);
+    return await DELETE_API(token, `/post/${post_id}/comments/${comment_id}`);
   };
 
   return useMutation(() => deleteComment(), {
@@ -56,11 +56,11 @@ function useDeleteCommentMutation(token, postId, commentId) {
   });
 }
 
-function useReportCommentMutation(token, postId, commentId) {
+function useReportCommentMutation(token, post_id, comment_id) {
   const reportComment = async () => {
     return await POST_API_NO_BODY(
       token,
-      `/post/${postId}/comments/${commentId}/report`,
+      `/post/${post_id}/comments/${comment_id}/report`,
     );
   };
 
