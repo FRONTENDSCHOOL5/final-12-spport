@@ -7,7 +7,7 @@ import GameList from '../List/GameList';
 import { getGameInfoByTeam } from '../../api/GameAPI/TeamProfileGameAPI';
 import { useRecoilState } from 'recoil';
 import { userToken } from '../../atom/loginAtom';
-import { followAPI, unfollowAPI } from '../../api/FollowAPI';
+import { useFollowMutation, useUnfollowMutation } from '../../hook/useFollow';
 
 const SectionGameStyle = styled.section`
   background: white;
@@ -51,15 +51,18 @@ export default function TeamProfile({ profile }) {
   const [numFollower, setNumFollower] = useState(profile.followerCount);
   const { id } = useParams();
   const navigate = useNavigate();
+  const followMutate = useFollowMutation(token, id);
+  const unfollowMutate = useUnfollowMutation(token, id);
+
 
   const handleState = async () => {
     if (isFollow) {
-      const data = await unfollowAPI(token, id);
+      const data = await unfollowMutate.mutateAsync();
       console.log(data);
       setIsFollow(data.profile.isfollow);
       setNumFollower(data.profile.followerCount);
     } else {
-      const data = await followAPI(token, id);
+      const data = await followMutate.mutateAsync();
       console.log(data);
       setIsFollow(data.profile.isfollow);
       setNumFollower(data.profile.followerCount);

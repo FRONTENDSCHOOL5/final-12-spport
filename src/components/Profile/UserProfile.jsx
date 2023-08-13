@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useRecoilState } from 'recoil';
 import { useNavigate, useParams, Link } from 'react-router-dom';
 import { getProductAPI } from '../../api/AddProductAPI';
-import { followAPI, unfollowAPI } from '../../api/FollowAPI';
 import { userToken } from '../../atom/loginAtom';
 import {
   NoPostStyle,
@@ -21,6 +20,7 @@ import IconShareBtn from '../../assets/image/icon-share-btn.svg';
 import IconMessageBtn from '../../assets/image/icon-message-btn.svg';
 import IconCamera from '../../assets/image/icon-camera.svg';
 import NoImage from '../../assets/image/noimage.png';
+import { useFollowMutation, useUnfollowMutation } from '../../hook/useFollow';
 
 export default function UserProfile({ profile, post }) {
   const { id } = useParams();
@@ -31,6 +31,8 @@ export default function UserProfile({ profile, post }) {
   const [planGame, setPlanGame] = useState([]);
   const [listType, setListType] = useState('list');
   const gameLink = '/schedule/' + profile.accountname;
+  const followMutate = useFollowMutation(token, id);
+  const unfollowMutate = useUnfollowMutation(token, id);
 
   // 직관일정, 게시글 데이터 호출
   useEffect(() => {
@@ -55,11 +57,11 @@ export default function UserProfile({ profile, post }) {
   // 팔로우 기능 함수
   const handleFollow = async () => {
     if (isFollow) {
-      const data = await unfollowAPI(token, id);
+      const data = await unfollowMutate.mutateAsync();
       setIsFollow(data.profile.isfollow);
       setNumFollower(data.profile.followerCount);
     } else {
-      const data = await followAPI(token, id);
+      const data = await followMutate.mutateAsync();
       setIsFollow(data.profile.isfollow);
       setNumFollower(data.profile.followerCount);
     }
