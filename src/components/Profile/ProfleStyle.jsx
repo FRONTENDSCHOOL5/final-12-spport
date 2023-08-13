@@ -37,8 +37,10 @@ const LikedGameStyle = styled.section`
   height: 205px;
   h2 {
     padding: 20px 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     a {
-      margin-left: 240px;
       font-size: 12px;
       color: var(--color-steelblue);
     }
