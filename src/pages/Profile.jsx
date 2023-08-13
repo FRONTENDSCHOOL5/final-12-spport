@@ -6,7 +6,7 @@ import MyProfile from '../components/Profile/MyProfile';
 import UserProfile from '../components/Profile/UserProfile';
 import TeamProfile from '../components/Profile/TeamProfile';
 import NavBar from '../components/Common/NavBar';
-import { getProfileAPI } from '../api/ProfileAPI';
+import {useProfileQuery, useUserPostQuery} from '../hook/useProfile';
 import { useRecoilState } from 'recoil';
 import { accountname, userToken } from '../atom/loginAtom';
 import UserProfileLoader from '../components/Skeleton/UserProfileLoader';
@@ -19,42 +19,31 @@ const MainStyle = styled.main`
 `;
 
 export default function Profile() {
-  const [profile, setProfile] = useState([]);
-  const [isLoad, setIsLoad] = useState(false);
   const { id } = useParams();
   const isTeam = id.startsWith('SPORT_');
   const [username, setUsername] = useRecoilState(accountname);
   const [token, setToken] = useRecoilState(userToken);
   const navigate = useNavigate();
+  const [profile, isProfileLoading, isProfileError] = useProfileQuery(token, id);
+  const [post, isPostLoading, isPostError] = useUserPostQuery(token, id);
 
-  useEffect(() => {
-    const getProfile = async () => {
-      setIsLoad(true);
-      const data = await getProfileAPI(token, id);
-      if (data.status === '404') {
-        navigate('/error');
-      }
-      setProfile(data.profile);
-      setIsLoad(false);
-    };
-    getProfile();
-  }, [id]);
   return (
     <>
       <Header text />
       <MainStyle>
-        {isLoad && isTeam && <TeamProfileLoader />}
-        {!isLoad && isTeam && profile.length !== 0 && (
-          <TeamProfile profile={profile} />
+        {/* {isProfileError && <Error/>} */}
+        {isProfileLoading && isTeam && <TeamProfileLoader />}
+        {!isProfileLoading && !isPostLoading && isTeam && profile.profile.length !== 0 && (
+          <TeamProfile profile={profile.profile} />
         )}
-        {isLoad && !isTeam && <UserProfileLoader />}
-        {!isLoad &&
+        {isProfileLoading && !isTeam && <UserProfileLoader />}
+        {!isProfileLoading && !isPostLoading && 
           !isTeam &&
-          profile.length !== 0 &&
-          (username === profile.accountname ? (
-            <MyProfile profile={profile} />
+          profile.profile.length !== 0 &&
+          (username === profile.profile.accountname ? (
+            <MyProfile profile={profile.profile} post={post.post}/>
           ) : (
-            <UserProfile profile={profile} />
+            <UserProfile profile={profile.profile} post={post.post}/>
           ))}
       </MainStyle>
       <NavBar />

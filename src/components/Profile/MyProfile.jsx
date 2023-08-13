@@ -16,15 +16,13 @@ import FeedHeader from './FeedHeader';
 import PostList from '../Post/PostList';
 import { userToken, accountname } from '../../atom/loginAtom';
 import { getProductAPI } from '../../api/AddProductAPI';
-import { getUserPostAPI } from '../../api/ProfileAPI';
 import IconCamera from '../../assets/image/icon-camera.svg';
 import IconCalendar from '../../assets/image/icon-calendar.svg';
 import NoImage from '../../assets/image/noimage.png';
 
-export default function MyProfile({ profile }) {
+export default function MyProfile({ profile, post }) {
   const navigate = useNavigate();
   const [numFollower, setNumFollower] = useState(profile.followerCount);
-  const [postData, setPostData] = useState([]);
   const [planGame, setPlanGame] = useState([]);
   const [token, setToken] = useRecoilState(userToken);
   const [accountName, setAccountName] = useRecoilState(accountname);
@@ -51,16 +49,11 @@ export default function MyProfile({ profile }) {
       setPlanGame(newgame);
     };
 
-    const getPostData = async () => {
-      const data = await getUserPostAPI(token, accountName);
-      setPostData(data.post);
-    };
     getLikedGameData();
-    getPostData();
   }, []);
 
   // 앨범형에 필요한 사진 있는 게시글 필터링
-  const albumPostData = postData.filter((item) => {
+  const albumPostData = post.filter((item) => {
     return item.image;
   });
 
@@ -107,10 +100,11 @@ export default function MyProfile({ profile }) {
 
       {/* 게시글 */}
       <SectionFeed>
+
         <FeedHeader listType={listType} setListType={setListType} />
         {listType === 'list' ? (
           // 리스트형
-          postData.length === 0 ? (
+          post.length === 0 ? (
             <NoPostStyle>
               <div>
                 <img src={IconCamera} alt='' />
@@ -118,7 +112,7 @@ export default function MyProfile({ profile }) {
               </div>
             </NoPostStyle>
           ) : (
-            <PostList post={postData} onlyGame={false} />
+            <PostList post={post} onlyGame={false} />
           )
         ) : // 앨범형
         albumPostData.length === 0 ? (

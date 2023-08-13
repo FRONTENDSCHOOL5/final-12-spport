@@ -2,9 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useRecoilState } from 'recoil';
 import { useNavigate, useParams, Link } from 'react-router-dom';
 import { getProductAPI } from '../../api/AddProductAPI';
-import { getUserPostAPI } from '../../api/ProfileAPI';
 import { followAPI, unfollowAPI } from '../../api/FollowAPI';
-import { userToken, accountname } from '../../atom/loginAtom';
+import { userToken } from '../../atom/loginAtom';
 import {
   NoPostStyle,
   LikedGameStyle,
@@ -23,11 +22,10 @@ import IconMessageBtn from '../../assets/image/icon-message-btn.svg';
 import IconCamera from '../../assets/image/icon-camera.svg';
 import NoImage from '../../assets/image/noimage.png';
 
-export default function UserProfile({ profile }) {
+export default function UserProfile({ profile, post }) {
   const { id } = useParams();
   const [token, setToken] = useRecoilState(userToken);
   const navigate = useNavigate();
-  const [postData, setPostData] = useState([]);
   const [isFollow, setIsFollow] = useState(profile.isfollow);
   const [numFollower, setNumFollower] = useState(profile.followerCount);
   const [planGame, setPlanGame] = useState([]);
@@ -40,17 +38,12 @@ export default function UserProfile({ profile }) {
       const plan = await getProductAPI(token, id);
       setPlanGame(plan);
     };
-    const getPostData = async () => {
-      const data = await getUserPostAPI(token, id);
-      setPostData(data.post);
-    };
-
     getLikedGameData();
-    getPostData();
+
   }, []);
 
   // 앨범형에 필요한 사진 있는 게시글 필터링
-  const albumPostData = postData.filter((item) => {
+  const albumpost = post.filter((item) => {
     return item.image;
   });
 
@@ -114,7 +107,7 @@ export default function UserProfile({ profile }) {
         <FeedHeader listType={listType} setListType={setListType} />
         {listType === 'list' ? (
           // 리스트형
-          postData.length === 0 ? (
+          post.length === 0 ? (
             <NoPostStyle>
               <div>
                 <img src={IconCamera} alt='' />
@@ -122,10 +115,10 @@ export default function UserProfile({ profile }) {
               </div>
             </NoPostStyle>
           ) : (
-            <PostList post={postData} onlyGame={false} />
+            <PostList post={post} onlyGame={false} />
           )
         ) : // 앨범형
-        albumPostData.length === 0 ? (
+        albumpost.length === 0 ? (
           <NoPostStyle>
             <div>
               <img src={IconCamera} alt='' />
@@ -134,7 +127,7 @@ export default function UserProfile({ profile }) {
           </NoPostStyle>
         ) : (
           <AlbumFeed>
-            {albumPostData.map((item) => {
+            {albumpost.map((item) => {
               return (
                 <li key={item.id}>
                   <button
