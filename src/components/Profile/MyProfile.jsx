@@ -100,7 +100,6 @@ export default function MyProfile({ profile, post }) {
 
       {/* 게시글 */}
       <SectionFeed>
-
         <FeedHeader listType={listType} setListType={setListType} />
         {listType === 'list' ? (
           // 리스트형

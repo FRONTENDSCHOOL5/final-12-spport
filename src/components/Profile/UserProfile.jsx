@@ -41,7 +41,6 @@ export default function UserProfile({ profile, post }) {
       setPlanGame(plan);
     };
     getLikedGameData();
-
   }, []);
 
   // 앨범형에 필요한 사진 있는 게시글 필터링

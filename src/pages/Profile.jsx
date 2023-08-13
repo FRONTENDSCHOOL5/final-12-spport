@@ -6,7 +6,7 @@ import MyProfile from '../components/Profile/MyProfile';
 import UserProfile from '../components/Profile/UserProfile';
 import TeamProfile from '../components/Profile/TeamProfile';
 import NavBar from '../components/Common/NavBar';
-import {useProfileQuery, useUserPostQuery} from '../hook/useProfile';
+import { useProfileQuery, useUserPostQuery } from '../hook/useProfile';
 import { useRecoilState } from 'recoil';
 import { accountname, userToken } from '../atom/loginAtom';
 import UserProfileLoader from '../components/Skeleton/UserProfileLoader';
@@ -24,8 +24,12 @@ export default function Profile() {
   const [username, setUsername] = useRecoilState(accountname);
   const [token, setToken] = useRecoilState(userToken);
   const navigate = useNavigate();
-  const [profile, isProfileLoading, isProfileError, profileRefetch] = useProfileQuery(token, id);
-  const [post, isPostLoading, isPostError, postRefetch] = useUserPostQuery(token, id);
+  const [profile, isProfileLoading, isProfileError, profileRefetch] =
+    useProfileQuery(token, id);
+  const [post, isPostLoading, isPostError, postRefetch] = useUserPostQuery(
+    token,
+    id,
+  );
 
   useEffect(() => {
     profileRefetch();
@@ -38,17 +42,21 @@ export default function Profile() {
       <MainStyle>
         {/* {isProfileError && <Error/>} */}
         {isProfileLoading && isTeam && <TeamProfileLoader />}
-        {!isProfileLoading && !isPostLoading && isTeam && profile.profile.length !== 0 && (
-          <TeamProfile profile={profile.profile} />
-        )}
+        {!isProfileLoading &&
+          !isPostLoading &&
+          isTeam &&
+          profile.profile.length !== 0 && (
+            <TeamProfile profile={profile.profile} />
+          )}
         {isProfileLoading && !isTeam && <UserProfileLoader />}
-        {!isProfileLoading && !isPostLoading && 
+        {!isProfileLoading &&
+          !isPostLoading &&
           !isTeam &&
           profile.profile.length !== 0 &&
           (username === profile.profile.accountname ? (
-            <MyProfile profile={profile.profile} post={post.post}/>
+            <MyProfile profile={profile.profile} post={post.post} />
           ) : (
-            <UserProfile profile={profile.profile} post={post.post}/>
+            <UserProfile profile={profile.profile} post={post.post} />
           ))}
       </MainStyle>
       <NavBar />
