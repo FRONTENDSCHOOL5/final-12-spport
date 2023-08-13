@@ -10,7 +10,12 @@ function useProfileQuery(token, accountname) {
     queryKey: ['profile'],
     queryFn: () => getProfile(),
   });
-  return [profileQuery.data, profileQuery.isLoading, profileQuery.isError];
+  return [
+    profileQuery.data,
+    profileQuery.isLoading,
+    profileQuery.isError,
+    profileQuery.refetch,
+  ];
 }
 
 function useUserPostQuery(token, accountname) {
@@ -22,7 +27,12 @@ function useUserPostQuery(token, accountname) {
     queryFn: () => getPost(),
   });
   console.log(postQuery);
-  return [postQuery.data, postQuery.isLoading, postQuery.isError];
+  return [
+    postQuery.data,
+    postQuery.isLoading,
+    postQuery.isError,
+    postQuery.refetch,
+  ];
 }
 
 export { useProfileQuery, useUserPostQuery };

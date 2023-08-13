@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import Header from '../components/Common/Header/Header';
@@ -24,8 +24,13 @@ export default function Profile() {
   const [username, setUsername] = useRecoilState(accountname);
   const [token, setToken] = useRecoilState(userToken);
   const navigate = useNavigate();
-  const [profile, isProfileLoading, isProfileError] = useProfileQuery(token, id);
-  const [post, isPostLoading, isPostError] = useUserPostQuery(token, id);
+  const [profile, isProfileLoading, isProfileError, profileRefetch] = useProfileQuery(token, id);
+  const [post, isPostLoading, isPostError, postRefetch] = useUserPostQuery(token, id);
+
+  useEffect(() => {
+    profileRefetch();
+    postRefetch();
+  }, [id]);
 
   return (
     <>
