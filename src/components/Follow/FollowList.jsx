@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import SButton from '../Common/Button/SButton';
 import IconBaseball from '../../assets/image/icon-baseball.svg';
 import IconSoccer from '../../assets/image/icon-soccer.svg';
-import { followAPI, unfollowAPI } from '../../api/FollowAPI';
+import { useFollowMutation, useUnfollowMutation } from '../../hook/useFollow';
 
 const ListStyle = styled.li`
   display: flex;
@@ -43,14 +43,16 @@ const ListStyle = styled.li`
 export default function FollowList(props) {
   const navigate = useNavigate();
   const [isFollow, setIsFollow] = useState(props.isfollow);
+  const followMutate = useFollowMutation(props.token, props.accountname);
+  const unfollowMutate = useUnfollowMutation(props.token, props.accountname);
 
   // 팔로우 기능
   const handleFollow = async () => {
     if (isFollow) {
-      const data = await unfollowAPI(props.token, props.accountname);
+      const data = await unfollowMutate.mutateAsync();
       setIsFollow(data.profile.isfollow);
     } else {
-      const data = await followAPI(props.token, props.accountname);
+      const data = await followMutate.mutateAsync();
       setIsFollow(data.profile.isfollow);
     }
   };

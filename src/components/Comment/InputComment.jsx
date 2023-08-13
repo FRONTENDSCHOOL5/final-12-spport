@@ -33,7 +33,7 @@ export const InputCommentStyle = styled.form`
   }
 `;
 
-export default function InputComment({ image }) {
+export default function InputComment() {
   const { id } = useParams();
   const [inputVal, setInputVal] = useState('');
   const [token] = useRecoilState(userToken);

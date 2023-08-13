@@ -73,7 +73,7 @@ export default function EditPost(props) {
   const [token, setToken] = useRecoilState(userToken);
   const [userImage, setUserImage] = useRecoilState(userimage);
   const location = useLocation();
-  const postId = location.state.post_id;
+  const post_id = location.state.post_id;
 
   // 요청에 사용하는 url
   const url = '/post';
@@ -93,7 +93,7 @@ export default function EditPost(props) {
   // 이전 데이터 요청
   useEffect(() => {
     const prevPost = async (e) => {
-      const res = await GET_API(token, '/post/' + postId);
+      const res = await GET_API(token, '/post/' + post_id);
       setPost(res);
     };
     prevPost();
@@ -162,8 +162,8 @@ export default function EditPost(props) {
           'image': imageUrl,
         },
       };
-      const data = await PUT_API(token, '/post/' + postId, bodyData);
-      navigate('/post/' + postId);
+      const data = await PUT_API(token, '/post/' + post_id, bodyData);
+      navigate('/post/' + post_id);
     };
     setModalItem(['게시물을 수정하시겠습니까?', '수정', editPost]);
   };

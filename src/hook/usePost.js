@@ -1,17 +1,5 @@
-import { GET_API } from '../api/CommonAPI';
+import { DELETE_API, GET_API, POST_API_NO_BODY } from '../api/CommonAPI';
 import { useQuery, useMutation, useQueryClient } from 'react-query';
-
-// const getPostDetailAPI = async () => {
-
-// }
-
-// const deletePostAPI = async () => {
-
-// }
-
-// const reportPostAPI = async () => {
-
-// }
 
 function useFeedQuery(token) {
   const getFeed = async () => {
@@ -26,9 +14,9 @@ function useFeedQuery(token) {
   return [feedQuery.data, feedQuery.isLoading, feedQuery.isError];
 }
 
-function usePostQuery(token, postId) {
+function usePostQuery(token, post_id) {
   const getPostDetail = async () => {
-    return await GET_API(token, `/post/${postId}`);
+    return await GET_API(token, `/post/${post_id}`);
   };
 
   const postQuery = useQuery({
@@ -38,8 +26,32 @@ function usePostQuery(token, postId) {
   return [postQuery.data, postQuery.isLoading, postQuery.isError];
 }
 
-function useDeletePostMutation() {}
+function useDeletePostMutation(token, post_id) {
+  const queryClient = useQueryClient();
+  const deletePost = async () => {
+    return await DELETE_API(token, `/post/${post_id}`);
+  };
+  return useMutation(() => deletePost(), {
+    onSuccess: () => {
+      queryClient.invalidateQueries({
+        queryKey: ['postDetail'],
+        refetchType: 'active',
+      });
+    },
+  });
+}
 
-function useReportPostMutation() {}
+function useReportPostMutation(token, post_id) {
+  const reportPost = async () => {
+    return await POST_API_NO_BODY(token, `/post/${post_id}/report`);
+  };
 
-export { useFeedQuery, usePostQuery };
+  return useMutation(() => reportPost());
+}
+
+export {
+  useFeedQuery,
+  usePostQuery,
+  useDeletePostMutation,
+  useReportPostMutation,
+};
