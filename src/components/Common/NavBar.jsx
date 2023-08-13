@@ -3,11 +3,10 @@ import styled from 'styled-components';
 import iconHome from '../../assets/image/icon-home.svg';
 import iconHomeFill from '../../assets/image/icon-home-fill.svg';
 import iconEdit from '../../assets/image/icon-edit.svg';
-import iconMessage from '../../assets/image/icon-message.svg';
-import iconMessageFill from '../../assets/image/icon-message-fill.svg';
 import iconUser from '../../assets/image/icon-user.svg';
 import iconUserFill from '../../assets/image/icon-user-fill.svg';
-import iconCharacter from '../../assets/logo/logo-lime.svg';
+import iconSearch from '../../assets/image/icon-search-white.svg';
+import iconSearchFill from '../../assets/image/icon-search-lime.svg';
 import { useNavigate, LInk, useLocation } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
 import { accountname } from '../../atom/loginAtom';
@@ -68,8 +67,8 @@ export default function NavBar(props) {
 
   const menu = [
     ['홈', 'home', iconHome, iconHomeFill],
+    ['검색', 'search', iconSearch, iconSearchFill],
     ['게시물 작성', 'upload', iconEdit, iconEdit],
-    ['채팅', 'chat', iconMessage, iconMessageFill],
     ['프로필', `profile/${username}`, iconUser, iconUserFill],
   ];
 
