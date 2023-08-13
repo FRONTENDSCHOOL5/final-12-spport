@@ -237,7 +237,6 @@ export default function Signup() {
             {errorMsg && <ErrorText>*{errorMsg}</ErrorText>}
             <IntroContainer>
               <strong>관심사</strong>
-              {/* <p>자신의 관심사를 Enter를 눌러 추가해주세요.</p> */}
               <div>
                 <ul>
                   {userInfo.user.intro &&
@@ -254,7 +253,11 @@ export default function Signup() {
                   <input
                     type='text'
                     value={interest}
-                    placeholder='자신의 관심사를 Enter를 눌러 추가해주세요.'
+                    placeholder={
+                      userInfo.user.intro
+                        ? ''
+                        : '자신의 관심사를 Enter를 눌러 추가해주세요.'
+                    }
                     onChange={handleInterestChange}
                     onKeyDown={handleInterestKeyDown}
                   />
@@ -370,11 +373,7 @@ export const IntroContainer = styled.div`
     color: var(--color-darkgrey);
     font-size: 12px;
   }
-  /* p {
-    color: var(--color-lightgrey);
-    font-size: 14px;
-    padding: 5px 0;
-  } */
+
   ul {
     display: flex;
     flex-wrap: wrap;

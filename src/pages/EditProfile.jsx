@@ -276,7 +276,11 @@ export default function EditProfile() {
               <input
                 type='text'
                 value={interest}
-                placeholder='자신의 관심사를 Enter를 눌러 추가해주세요.'
+                placeholder={
+                  userInfo.user.intro
+                    ? ''
+                    : '자신의 관심사를 Enter를 눌러 추가해주세요.'
+                }
                 onChange={handleInterestChange}
                 onKeyDown={handleInterestKeyDown}
               />
