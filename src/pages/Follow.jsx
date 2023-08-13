@@ -23,9 +23,15 @@ export default function Follow() {
   const location = useLocation();
   const path = location.pathname.split('/')[3];
   const [token, setToken] = useRecoilState(userToken);
-  const [follower, isFollowerLoading, isFollowerError] = useFollowerQuery(token, id);
-  const [following, isFollowingLoading, isFollowingError] = useFollowingQuery(token, id);
-  
+  const [follower, isFollowerLoading, isFollowerError] = useFollowerQuery(
+    token,
+    id,
+  );
+  const [following, isFollowingLoading, isFollowingError] = useFollowingQuery(
+    token,
+    id,
+  );
+
   return (
     <>
       <Header text />

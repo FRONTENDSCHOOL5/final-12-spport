@@ -12,7 +12,10 @@ import {
 } from '../../atom/bottomSheetAtom';
 import { accountname, userToken } from '../../atom/loginAtom';
 import { isModalOpen, modalItems } from '../../atom/modalAtom';
-import { useDeletePostMutation, useReportPostMutation } from '../../hook/usePost';
+import {
+  useDeletePostMutation,
+  useReportPostMutation,
+} from '../../hook/usePost';
 
 const PostStyle = styled.article`
   width: 500px;

@@ -54,7 +54,6 @@ export default function TeamProfile({ profile }) {
   const followMutate = useFollowMutation(token, id);
   const unfollowMutate = useUnfollowMutation(token, id);
 
-
   const handleState = async () => {
     if (isFollow) {
       const data = await unfollowMutate.mutateAsync();
