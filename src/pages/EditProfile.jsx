@@ -42,6 +42,9 @@ export default function EditProfile() {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
+    if (name === 'accountname') {
+      setAccountNameValue(value);
+    }
     setUserInfo((prevState) => ({
       ...prevState,
       user: {
@@ -152,7 +155,8 @@ export default function EditProfile() {
         body: JSON.stringify({ ...userInfo }),
       });
 
-      const result = await response.json();
+      const res = await response.json();
+      setErrorMsg(res.message);
     } catch (error) {
       console.error(error);
     }
@@ -261,7 +265,6 @@ export default function EditProfile() {
         {errorMsg && <ErrorText>*{errorMsg}</ErrorText>}
         <IntroContainer>
           <strong>관심사</strong>
-          {/* <p>자신의 관심사를 Enter를 눌러 추가해주세요.</p> */}
           <div>
             <ul>
               {userInfo.user.intro &&
