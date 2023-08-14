@@ -48,7 +48,11 @@ export default function GamePost({ post }) {
       setWeather(weatherData);
     };
     const getPastWeather = async () => {
-      const weatherData = await getWeatherPosted(post.image);
+      const weatherData = await getWeatherPosted(
+        post.image,
+        game.en_city,
+        post,
+      );
       setWeather(weatherData);
     };
     const today = new Date().setHours(0, 0, 0, 0);
