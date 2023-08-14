@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import iconBack from '../../../assets/image/icon-back.svg';
 import iconMore from '../../../assets/image/icon-more.svg';
-import iconSearch from '../../../assets/image/icon-search.svg';
+import iconSearch from '../../../assets/image/icon-search-lime.svg';
 import logoText from '../../../assets/logo/text-logo.svg';
 import logoImg from '../../../assets/logo/logo-lime.svg';
 import SearchBox from './SearchBox';

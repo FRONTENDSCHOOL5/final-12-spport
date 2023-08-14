@@ -37,8 +37,10 @@ const LikedGameStyle = styled.section`
   height: 205px;
   h2 {
     padding: 20px 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     a {
-      margin-left: 240px;
       font-size: 12px;
       color: var(--color-steelblue);
     }
@@ -84,14 +86,15 @@ const SectionFeed = styled.section`
 
 // 앨범형 피드
 const AlbumFeed = styled.ul`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(30%, 1fr)
+  ); /* 한 줄에 최대 3개, 너비는 동일 */
   gap: 8px;
   padding: 16px;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start; /* 이미지 왼쪽부터 배치 */
   li {
-    max-width: 30%;
-
     border: 0.5px solid #c4c4c4;
     button {
       position: relative;

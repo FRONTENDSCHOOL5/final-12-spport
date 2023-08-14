@@ -13,9 +13,9 @@ import {
 import { accountname, userToken } from '../../atom/loginAtom';
 import { isModalOpen, modalItems } from '../../atom/modalAtom';
 import {
-  deletePostAPI,
-  reportPostAPI,
-} from '../../api/PostAPI.js/PostDetailAPI';
+  useDeletePostMutation,
+  useReportPostMutation,
+} from '../../hook/usePost';
 
 const PostStyle = styled.article`
   width: 500px;
@@ -53,13 +53,16 @@ export default function Post({ post }) {
   const [isModal, setIsModal] = useRecoilState(isModalOpen);
   const [modalItem, setModalItem] = useRecoilState(modalItems);
 
+  const deletePostMutate = useDeletePostMutation(token, post.id);
+  const reportPostMutate = useReportPostMutation(token, post.id);
+
   const handleMoreClick = () => {
     setIsBsOpen(true);
     if (post.author.accountname === accountName) {
       const onPostDelete = () => {
         setIsModal(true);
         const deletePost = async () => {
-          const data = await deletePostAPI(token, post.id);
+          await deletePostMutate.mutateAsync();
           setIsModal(true);
           setModalItem([
             '게시물이 삭제되었습니다',
@@ -76,7 +79,6 @@ export default function Post({ post }) {
         setModalItem(['해당 게시물을 삭제할까요?', '삭제', deletePost]);
       };
       const onPostEdit = () => {
-        // setIsModal(true);
         navigate('/editpost', {
           state: {
             post_id: post.id,
@@ -92,7 +94,7 @@ export default function Post({ post }) {
       const onPostReport = () => {
         setIsModal(true);
         const reportPost = async () => {
-          const data = await reportPostAPI(token, post.id);
+          await reportPostMutate.mutateAsync();
           setIsModal(true);
           setModalItem(['게시물이 신고되었습니다', '확인', function () {}]);
         };
