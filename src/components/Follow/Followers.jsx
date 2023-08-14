@@ -26,6 +26,7 @@ export default function Followers({ follower, token }) {
 
   return (
     <>
+      <h1 className='a11y-hidden'>팔로워 목록</h1>
       <ul>
         {sortedData.map((item, index) => {
           if (index < page) {

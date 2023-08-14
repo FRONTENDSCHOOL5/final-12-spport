@@ -44,12 +44,17 @@ export default function Post() {
           <PostDetailLoader />
         ) : (
           <>
+            <h1 className='a11y-hidden'>
+              {post.post.author.username}님의 게시글 상세 페이지
+            </h1>
             <PostSectionStyle>
+              <h2 className='a11y-hidden'>게시글 내용</h2>
               {Object.keys(post.post).length > 0 && (
                 <PostDetail post={post.post} />
               )}
             </PostSectionStyle>
             <section>
+              <h2 className='a11y-hidden'>댓글 목록</h2>
               {comment.comments.length > 0 && (
                 <CommentList
                   comments={comment.comments}
