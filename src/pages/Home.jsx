@@ -24,6 +24,7 @@ export default function Home(props) {
     <>
       <Header main setFilterClick={setFilterClick} />
       <FullSection>
+        <h1 className='a11y-hidden'>피드</h1>
         {isFeedError && (
           <Empty
             message='피드 정보를 가져오는데 실패했습니다.'

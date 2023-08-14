@@ -26,6 +26,7 @@ export default function Followings({ following, token }) {
 
   return (
     <>
+      <h1 className='a11y-hidden'>팔로잉 목록</h1>
       <ul>
         {sortedData.map((item, index) => {
           if (index < page) {

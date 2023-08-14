@@ -75,6 +75,7 @@ export default function UserProfile({ profile }) {
   return (
     <Container>
       {/* 상단 프로필 */}
+      <h1 className='a11y-hidden'>{profile.username}님의 프로필 페이지</h1>
       <CommonProfile profile={profile} numFollower={numFollower}>
         <button type='button'>
           <img src={IconShareBtn} alt='공유' />
@@ -134,9 +135,13 @@ export default function UserProfile({ profile }) {
           </NoPostStyle>
         ) : (
           <AlbumFeed>
+            <h2 className='a11y-hidden'>게시글 (앨범형)</h2>
             {albumPostData.map((item) => {
               return (
                 <li key={item.id}>
+                  <h3 className='a11y-hidden'>
+                    {item.author.username}님의 게시글
+                  </h3>
                   <button
                     type='button'
                     onClick={() => navigate(`/post/${item.id}`)}

@@ -29,8 +29,6 @@ export default function SameTag() {
       getData();
     }
   }, [keyword]);
-  console.log(searchUser);
-  console.log(tag);
 
   const sameTagGroup = searchUser
     .filter((item) => {
@@ -43,6 +41,7 @@ export default function SameTag() {
   return (
     <>
       <Header text={tag} />
+      <h1 className='a11y-hidden'>{tag} 태그 검색</h1>
       {!isLoad && sameTagGroup.length === 0 && (
         <Empty message={`${tag} 태그를 가진 유저가 없습니다.`} />
       )}
