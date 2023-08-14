@@ -1,5 +1,5 @@
 import { editGamePostAPI } from './GameAPI/PostGameAPI';
-import { getTeamToken } from './GameAPI/TeamProfileGameAPI';
+import { getTeamToken } from '../util/gameUtil';
 
 const getWeatherAPI = async (city) => {
   const reqUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=kr&appid=${process.env.REACT_APP_WEATHER_API_KEY}`;

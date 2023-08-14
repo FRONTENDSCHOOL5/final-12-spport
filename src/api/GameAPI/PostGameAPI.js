@@ -1,6 +1,4 @@
-import tokenData from '../../assets/data/sport_users.json';
-import bsGameData from '../../assets/data/baseball_games.json';
-import { GET_API, POST_API, PUT_API } from '../CommonAPI';
+import { POST_API, PUT_API } from '../CommonAPI';
 
 const postAPI = async (token, content, image = '') => {
   const postData = {
@@ -10,22 +8,6 @@ const postAPI = async (token, content, image = '') => {
     },
   };
   POST_API(token, '/post', postData);
-};
-
-// 팀 일정을 포스트하기 위한 함수
-const postGameInfo = () => {
-  tokenData.forEach((team) => {
-    const team_name = team.username.split(' ')[0];
-    const token = team.token;
-    const filteredGame = bsGameData.filter(
-      (game) => team_name === game.home || team_name === game.away,
-    );
-    filteredGame.forEach((game) => {
-      const content = `${game.date},${game.day},${game.time},${game.home},${game.away},${game.stadium},${game.full_stadium},${game.en_city}`;
-      const image = '';
-      postAPI(token, content, image);
-    });
-  });
 };
 
 const editGamePostAPI = async (token, id, content, weather) => {

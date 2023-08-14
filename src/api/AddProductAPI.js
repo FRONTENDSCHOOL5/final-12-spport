@@ -1,5 +1,5 @@
 import { GET_API, POST_API, DELETE_API } from './CommonAPI';
-import { getHomeImage } from './GameAPI/AddGameAPI';
+import { getHomeImage } from '../util/gameUtil';
 
 const addProductAPI = async (token, post, ids, isGame) => {
   const team_name = isGame ? post.home : post.content.split(',')[3];

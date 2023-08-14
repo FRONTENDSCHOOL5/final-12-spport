@@ -4,11 +4,8 @@ import NavBar from '../components/Common/NavBar';
 import styled from 'styled-components';
 import GameList from '../components/List/GameList';
 import SelectFilter from '../components/Common/Filter/SelectFilter';
-import {
-  getGameInfo,
-  getTeamName,
-  filterGameInfo,
-} from '../api/GameAPI/AddGameAPI';
+import { getGameInfo } from '../api/GameAPI/AddGameAPI';
+import { getTeamName, filterGameInfo } from '../util/gameUtil';
 import { useRecoilState } from 'recoil';
 import { userToken } from '../atom/loginAtom';
 import Empty from '../components/Common/Empty';
@@ -45,7 +42,7 @@ export default function AddGame() {
   const [game, setGame] = useState([]); // total game 처음에 받아오고 변하지 않음
   const [filterGame, setFilterGame] = useState([]); // filtered game 필터링된 게임 저장
   const [team, setTeam] = useState([]); // 필터 내 팀 정보
-  const [sport, setSport] = useState(['야구', '축구', '배구', '농구']); // 필터 내 스포츠 정보
+  const [sport, setSport] = useState(['야구', '축구', '배구']); // 필터 내 스포츠 정보
   const [selectTeam, setSelectTeam] = useState('선택'); // 필터 내 선택된 팀 정보
   const [selectSport, setSelectSport] = useState('선택'); // 필터 내 선택된 스포츠 정보
 

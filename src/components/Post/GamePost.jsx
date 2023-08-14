@@ -3,7 +3,7 @@ import WeatherCard from './WeatherCard';
 import styled from 'styled-components';
 import { Link, useLocation } from 'react-router-dom';
 import { getWeather, getWeatherPosted } from '../../api/WeatherAPI';
-import { arrToGame } from '../../api/GameAPI/AddGameAPI';
+import { arrToGame } from '../../util/gameUtil';
 
 const GamePostStyle = styled.article`
   p {

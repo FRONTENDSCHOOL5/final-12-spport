@@ -1,11 +1,6 @@
 import { GET_API, POST_API_NO_BODY, DELETE_API } from '../CommonAPI';
-import {
-  addProductAPI,
-  getProductAPI,
-  getProductDetailAPI,
-  deleteProductAPI,
-} from '../AddProductAPI';
-import { sortGameByDate, arrToGame } from './AddGameAPI';
+import { addProductAPI, deleteProductAPI } from '../AddProductAPI';
+import { arrToGame, sortGameByDate } from '../../util/gameUtil';
 
 // token을 가진 유저가 post_id를 좋아요 눌렀는지 확인합니다.
 const checkLikeAPI = async (token, id) => {

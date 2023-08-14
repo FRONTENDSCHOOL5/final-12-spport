@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Post from './Post';
 import styled from 'styled-components';
-import { sortFeedPost } from '../../api/GameAPI/FeedGame';
+import { sortFeedPost } from '../../util/gameUtil';
 import { useInView } from 'react-intersection-observer';
 
 const PostListStyle = styled.ul`
