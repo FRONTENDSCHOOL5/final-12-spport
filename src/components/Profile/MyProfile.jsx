@@ -63,8 +63,8 @@ export default function MyProfile({ profile, post }) {
 
   return (
     <Container>
+      <h1 className='a11y-hidden'>내 프로필 페이지</h1>
       {/* 상단 프로필 */}
-      {console.log('myprofile')}
       <CommonProfile profile={profile} numFollower={numFollower}>
         <MButton
           text='프로필 수정'
@@ -122,9 +122,13 @@ export default function MyProfile({ profile, post }) {
           </NoPostStyle>
         ) : (
           <AlbumFeed>
+            <h2 className='a11y-hidden'>게시글 (앨범형)</h2>
             {albumPostData.map((item) => {
               return (
                 <li key={item.id}>
+                  <h3 className='a11y-hidden'>
+                    {item.author.username}님의 게시글
+                  </h3>
                   <button
                     type='button'
                     onClick={() => navigate(`/post/${item.id}`)}

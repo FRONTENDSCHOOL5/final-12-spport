@@ -220,6 +220,7 @@ export default function Upload(props) {
     <>
       <Header upload onUploadClick={handleSubmit} disabled={isReady} />
       <USection>
+        <h1 className='a11y-hidden'>게시글 작성 페이지</h1>
         <section className='form-wrapper'>
           <ProfileImage42 image={userImage} />
           <form>

@@ -223,6 +223,7 @@ export default function EditProfile() {
         onUploadClick={(e) => handleUSaveClick(e)}
         disabled={hasErrorMsg}
       />
+      <h1 className='a11y-hidden'>프로필 수정</h1>
       <StyledFormStyle>
         <ImageWrap>
           <LabelImg htmlFor='input-upload'>

@@ -67,6 +67,7 @@ export default function TeamProfile({ profile, game }) {
   return (
     <>
       <Container>
+        <h1 className='a11y-hidden'>{profile.username}님의 프로필 페이지</h1>
         <CommonProfile profile={profile} numFollower={numFollower}>
           <MButton
             text={isFollow ? '언팔로우' : '팔로우'}
