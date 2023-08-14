@@ -4,8 +4,8 @@ import { sortGameByDate } from '../../util/gameUtil';
 
 // get Game info with API
 // sort them in increasing order of date and time
-const getGameInfo = async (token) => {
-  const posts = await GET_API(token, '/post/feed?limit=1000');
+const getGameInfo = async () => {
+  const posts = await GET_API('/post/feed?limit=1000');
   const game = posts.posts.filter((item) => {
     if (item.author.accountname.startsWith('SPORT_')) {
       const today = new Date();

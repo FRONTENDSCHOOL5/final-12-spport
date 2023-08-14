@@ -2,9 +2,9 @@ import { GET_API } from '../api/CommonAPI';
 import { useQuery } from 'react-query';
 import { sortGameByDate, arrToGame } from '../util/gameUtil';
 
-function useProfileQuery(token, accountname) {
+function useProfileQuery(accountname) {
   const getProfile = async () => {
-    return await GET_API(token, `/profile/${accountname}`);
+    return await GET_API(`/profile/${accountname}`);
   };
 
   const profileQuery = useQuery({
@@ -19,12 +19,9 @@ function useProfileQuery(token, accountname) {
   ];
 }
 
-function useUserPostQuery(token, accountname, length = 10) {
+function useUserPostQuery(accountname, length = 10) {
   const getPost = async () => {
-    return await GET_API(
-      token,
-      `/post/${accountname}/userpost?limit=${length}`,
-    );
+    return await GET_API(`/post/${accountname}/userpost?limit=${length}`);
   };
   const postQuery = useQuery({
     queryKey: ['userPost'],
@@ -38,14 +35,11 @@ function useUserPostQuery(token, accountname, length = 10) {
   ];
 }
 
-function useTeamPostQuery(token, accountname) {
+function useTeamPostQuery(accountname) {
   const [data, isLoadiing, isError, refetch] = useUserPostQuery(
-    token,
     accountname,
     100,
   );
-
-  console.log(refetch);
 
   const game = data.post.filter((item) => {
     if (item.author.accountname.startsWith('SPORT_')) {

@@ -4,8 +4,6 @@ import CommonProfile from './CommonProfile';
 import styled from 'styled-components';
 import MButton from '../Common/Button/MButton';
 import GameList from '../List/GameList';
-import { useRecoilState } from 'recoil';
-import { userToken } from '../../atom/loginAtom';
 import { useFollowMutation, useUnfollowMutation } from '../../hook/useFollow';
 
 const SectionGameStyle = styled.section`
@@ -43,13 +41,12 @@ const BtnPlayer = styled.button`
 `;
 
 export default function TeamProfile({ profile, game }) {
-  const [token, setToken] = useRecoilState(userToken);
   const [isFollow, setIsFollow] = useState(profile.isfollow);
   const [numFollower, setNumFollower] = useState(profile.followerCount);
   const { id } = useParams();
   const navigate = useNavigate();
-  const followMutate = useFollowMutation(token, id);
-  const unfollowMutate = useUnfollowMutation(token, id);
+  const followMutate = useFollowMutation(id);
+  const unfollowMutate = useUnfollowMutation(id);
 
   const handleState = async () => {
     if (isFollow) {

@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import NavBar from '../components/Common/NavBar';
 import Header from '../components/Common/Header/Header';
 import PostList from '../components/Post/PostList';
-import { useRecoilState } from 'recoil';
-import { userToken } from '../atom/loginAtom';
 import Empty from '../components/Common/Empty';
 import PostLoader from '../components/Skeleton/PostLoader';
 import { useFeedQuery } from '../hook/usePost';
@@ -16,9 +14,8 @@ const FullSection = styled.main`
 `;
 
 export default function Home(props) {
-  const [token] = useRecoilState(userToken);
   const [filterClick, setFilterClick] = useState(false);
-  const [feed, isFeedLoading, isFeedError] = useFeedQuery(token);
+  const [feed, isFeedLoading, isFeedError] = useFeedQuery();
 
   return (
     <>

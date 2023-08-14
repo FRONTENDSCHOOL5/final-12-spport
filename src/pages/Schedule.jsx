@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Header from '../components/Common/Header/Header';
 import NavBar from '../components/Common/NavBar';
 import styled from 'styled-components';
-import { useRecoilState } from 'recoil';
-import { userToken } from '../atom/loginAtom';
 import { getProductAPI } from '../api/AddProductAPI';
 import Empty from '../components/Common/Empty';
 import GameGrid from '../components/List/CardGrid';
@@ -35,14 +33,13 @@ const MainStyle = styled.main`
 
 export default function Schedule() {
   const [isLoad, setIsLoad] = useState(false);
-  const [token, setToken] = useRecoilState(userToken);
   const [game, setGame] = useState([]);
   const { id } = useParams();
 
   useEffect(() => {
     const getData = async () => {
       setIsLoad(true);
-      const plan = await getProductAPI(token, id);
+      const plan = await getProductAPI(id);
       setGame(plan);
       setIsLoad(false);
     };

@@ -55,6 +55,7 @@ export default function GamePost({ post }) {
       );
       setWeather(weatherData);
     };
+
     const today = new Date().setHours(0, 0, 0, 0);
     const date = new Date(game.date).setHours(0, 0, 0, 0);
     if (today === date) {

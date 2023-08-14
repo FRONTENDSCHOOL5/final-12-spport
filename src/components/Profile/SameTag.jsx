@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { getSearchAPI } from '../../api/SearchAPI';
-import { useRecoilState } from 'recoil';
-import { userToken } from '../../atom/loginAtom';
 import { useParams } from 'react-router-dom';
 import Empty from '../Common/Empty';
 import ListLoader from '../Skeleton/ListLoader';
@@ -12,14 +10,13 @@ import NavBar from '../Common/NavBar';
 export default function SameTag() {
   const [searchUser, setSearchUser] = useState([]);
   const [isLoad, setIsLoad] = useState(false);
-  const [token, setToken] = useRecoilState(userToken);
   const keyword = '&npsp;&skip=10000&limit=10000';
   const { tag } = useParams();
 
   useEffect(() => {
     const getData = async () => {
       setIsLoad(true);
-      const data = await getSearchAPI(token, keyword);
+      const data = await getSearchAPI(keyword);
       setSearchUser(data);
       setIsLoad(false);
     };

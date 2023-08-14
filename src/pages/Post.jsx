@@ -4,8 +4,6 @@ import CommentList from '../components/Comment/CommentList';
 import PostDetail from '../components/Post/Post';
 import Header from '../components/Common/Header/Header';
 import styled from 'styled-components';
-import { useRecoilState } from 'recoil';
-import { userToken } from '../atom/loginAtom';
 import { PostDetailLoader } from '../components/Skeleton/PostLoader';
 import { usePostQuery } from '../hook/usePost';
 import { useCommentQuery } from '../hook/useComment';
@@ -22,12 +20,8 @@ const PostSectionStyle = styled.section`
 
 export default function Post() {
   const { id } = useParams();
-  const [token] = useRecoilState(userToken);
-  const [post, isPostLoading, isPostError] = usePostQuery(token, id);
-  const [comment, isCommentLoading, isCommentError] = useCommentQuery(
-    token,
-    id,
-  );
+  const [post, isPostLoading, isPostError] = usePostQuery(id);
+  const [comment, isCommentLoading, isCommentError] = useCommentQuery(id);
   const navigate = useNavigate();
 
   useEffect(() => {

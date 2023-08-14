@@ -1,5 +1,5 @@
 import { getTeamToken } from '../util/gameUtil';
-import { PUT_API } from './CommonAPI';
+import api from '../api/index';
 
 const getWeatherAPI = async (city) => {
   const reqUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=kr&appid=${process.env.REACT_APP_WEATHER_API_KEY}`;
@@ -16,7 +16,6 @@ const getWeatherAPI = async (city) => {
 };
 
 const editGamePostAPI = async (token, id, content, weather) => {
-  const reqUrl = `/post/${id}`;
   const image = weather.join(',');
   const bodyData = {
     'post': {
@@ -24,8 +23,17 @@ const editGamePostAPI = async (token, id, content, weather) => {
       'image': image,
     },
   };
-  const data = await PUT_API(token, reqUrl, bodyData);
-  return data;
+
+  const res = await fetch(`https://api.mandarin.weniv.co.kr/post/${id}`, {
+    method: 'PUT',
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify(bodyData),
+  });
+  const json = await res.json();
+  return json;
 };
 
 const storeWeather = async (team_name, post, data) => {

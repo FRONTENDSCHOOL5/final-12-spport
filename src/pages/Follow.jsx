@@ -5,8 +5,6 @@ import NavBar from '../components/Common/NavBar';
 import styled from 'styled-components';
 import Followers from '../components/Follow/Followers';
 import Followings from '../components/Follow/Followings';
-import { useRecoilState } from 'recoil';
-import { userToken } from '../atom/loginAtom';
 import { useFollowerQuery, useFollowingQuery } from '../hook/useFollow';
 
 const MainStyle = styled.main`
@@ -22,27 +20,17 @@ export default function Follow() {
   const { id } = useParams();
   const location = useLocation();
   const path = location.pathname.split('/')[3];
-  const [token, setToken] = useRecoilState(userToken);
-  const [follower, isFollowerLoading, isFollowerError] = useFollowerQuery(
-    token,
-    id,
-  );
-  const [following, isFollowingLoading, isFollowingError] = useFollowingQuery(
-    token,
-    id,
-  );
+  const [follower, isFollowerLoading, isFollowerError] = useFollowerQuery(id);
+  const [following, isFollowingLoading, isFollowingError] =
+    useFollowingQuery(id);
 
   return (
     <>
       <Header text />
       <MainStyle>
         {path === 'follower'
-          ? !isFollowerLoading && (
-              <Followers follower={follower} token={token} />
-            )
-          : !isFollowingLoading && (
-              <Followings following={following} token={token} />
-            )}
+          ? !isFollowerLoading && <Followers follower={follower} />
+          : !isFollowingLoading && <Followings following={following} />}
       </MainStyle>
       <NavBar />
     </>

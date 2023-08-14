@@ -12,7 +12,7 @@ import {
   useUserPostQuery,
 } from '../hook/useProfile';
 import { useRecoilState } from 'recoil';
-import { accountname, userToken } from '../atom/loginAtom';
+import { accountname } from '../atom/loginAtom';
 import UserProfileLoader from '../components/Skeleton/UserProfileLoader';
 import TeamProfileLoader from '../components/Skeleton/TeamProfileLoader';
 
@@ -25,13 +25,12 @@ export default function Profile() {
   const { id } = useParams();
   const isTeam = id.startsWith('SPORT_');
   const [username, setUsername] = useRecoilState(accountname);
-  const [token, setToken] = useRecoilState(userToken);
   const navigate = useNavigate();
   const [profile, isProfileLoading, isProfileError, profileRefetch] =
-    useProfileQuery(token, id);
+    useProfileQuery(id);
   const [post, isPostLoading, isPostError, postRefetch] = isTeam
-    ? useTeamPostQuery(token, id)
-    : useUserPostQuery(token, id);
+    ? useTeamPostQuery(id)
+    : useUserPostQuery(id);
 
   useEffect(() => {
     profileRefetch();
