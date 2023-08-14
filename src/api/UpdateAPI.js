@@ -1,44 +1,40 @@
 import tokenData from '../../assets/data/sport_users.json';
 import bsGameData from '../../assets/data/baseball_games.json';
-import { GET_API, POST_API, PUT_API } from '../CommonAPI';
+import { POST_API } from '../CommonAPI';
 
-const postAPI = async (token, content, image = '') => {
+const postAPI = async (content, image = '') => {
   const postData = {
     'post': {
       'content': content,
       'image': image,
     },
   };
-  POST_API(token, '/post', postData);
+  POST_API('/post', postData);
 };
 
 // 팀 일정을 포스트하기 위한 함수
 const postGameInfo = () => {
   tokenData.forEach((team) => {
     const team_name = team.username.split(' ')[0];
-    const token = team.token;
     const filteredGame = bsGameData.filter(
       (game) => team_name === game.home || team_name === game.away,
     );
     filteredGame.forEach((game) => {
       const content = `${game.date},${game.day},${game.time},${game.home},${game.away},${game.stadium},${game.full_stadium},${game.en_city}`;
       const image = '';
-      postAPI(token, content, image);
+      postAPI(content, image);
     });
   });
 };
 
-const editGamePostAPI = async (token, id, content, weather) => {
-  const reqUrl = `/post/${id}`;
-  const image = weather.join(',');
-  const bodyData = {
-    'post': {
-      'content': content,
-      'image': image,
-    },
-  };
-  const data = await PUT_API(token, reqUrl, bodyData);
-  return data;
+const updateTeamToken = () => {
+  tokenData.forEach(async (team) => {
+    const userData = {
+      'user': {
+        'email': team.email,
+        'password': team.password,
+      },
+    };
+    const data = await POST_API('/user/login', userData);
+  });
 };
-
-export { editGamePostAPI };

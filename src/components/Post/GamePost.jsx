@@ -3,7 +3,7 @@ import WeatherCard from './WeatherCard';
 import styled from 'styled-components';
 import { Link, useLocation } from 'react-router-dom';
 import { getWeather, getWeatherPosted } from '../../api/WeatherAPI';
-import { arrToGame } from '../../api/GameAPI/AddGameAPI';
+import { arrToGame } from '../../util/gameUtil';
 
 const GamePostStyle = styled.article`
   p {
@@ -48,9 +48,14 @@ export default function GamePost({ post }) {
       setWeather(weatherData);
     };
     const getPastWeather = async () => {
-      const weatherData = await getWeatherPosted(post.image);
+      const weatherData = await getWeatherPosted(
+        post.image,
+        game.en_city,
+        post,
+      );
       setWeather(weatherData);
     };
+
     const today = new Date().setHours(0, 0, 0, 0);
     const date = new Date(game.date).setHours(0, 0, 0, 0);
     if (today === date) {

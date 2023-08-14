@@ -43,8 +43,8 @@ const ListStyle = styled.li`
 export default function FollowList(props) {
   const navigate = useNavigate();
   const [isFollow, setIsFollow] = useState(props.isfollow);
-  const followMutate = useFollowMutation(props.token, props.accountname);
-  const unfollowMutate = useUnfollowMutation(props.token, props.accountname);
+  const followMutate = useFollowMutation(props.accountname);
+  const unfollowMutate = useUnfollowMutation(props.accountname);
 
   // 팔로우 기능
   const handleFollow = async () => {

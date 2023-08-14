@@ -14,7 +14,7 @@ import CardList from '../List/CardList';
 import MButton from '../Common/Button/MButton';
 import FeedHeader from './FeedHeader';
 import PostList from '../Post/PostList';
-import { userToken, accountname } from '../../atom/loginAtom';
+import { accountname } from '../../atom/loginAtom';
 import { getProductAPI } from '../../api/AddProductAPI';
 import IconCamera from '../../assets/image/icon-camera.svg';
 import IconCalendar from '../../assets/image/icon-calendar.svg';
@@ -24,7 +24,6 @@ export default function MyProfile({ profile, post }) {
   const navigate = useNavigate();
   const [numFollower, setNumFollower] = useState(profile.followerCount);
   const [planGame, setPlanGame] = useState([]);
-  const [token, setToken] = useRecoilState(userToken);
   const [accountName, setAccountName] = useRecoilState(accountname);
   const [listType, setListType] = useState('list');
   const gameLink = '/schedule/' + profile.accountname;
@@ -34,7 +33,7 @@ export default function MyProfile({ profile, post }) {
   // 직관일정, 게시글 데이터 호출
   useEffect(() => {
     const getLikedGameData = async () => {
-      const plan = await getProductAPI(token, accountName);
+      const plan = await getProductAPI(accountName);
       setPlanGame(plan);
 
       //+

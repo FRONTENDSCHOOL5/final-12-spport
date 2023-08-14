@@ -1,12 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import CommonProfile from './CommonProfile';
 import styled from 'styled-components';
 import MButton from '../Common/Button/MButton';
 import GameList from '../List/GameList';
-import { getGameInfoByTeam } from '../../api/GameAPI/TeamProfileGameAPI';
-import { useRecoilState } from 'recoil';
-import { userToken } from '../../atom/loginAtom';
 import { useFollowMutation, useUnfollowMutation } from '../../hook/useFollow';
 
 const SectionGameStyle = styled.section`
@@ -43,39 +40,25 @@ const BtnPlayer = styled.button`
   }
 `;
 
-export default function TeamProfile({ profile }) {
-  const [state, setState] = useState(false);
-  const [game, setGame] = useState([]);
-  const [token, setToken] = useRecoilState(userToken);
+export default function TeamProfile({ profile, game }) {
   const [isFollow, setIsFollow] = useState(profile.isfollow);
   const [numFollower, setNumFollower] = useState(profile.followerCount);
   const { id } = useParams();
   const navigate = useNavigate();
-  const followMutate = useFollowMutation(token, id);
-  const unfollowMutate = useUnfollowMutation(token, id);
+  const followMutate = useFollowMutation(id);
+  const unfollowMutate = useUnfollowMutation(id);
 
   const handleState = async () => {
     if (isFollow) {
       const data = await unfollowMutate.mutateAsync();
-      console.log(data);
       setIsFollow(data.profile.isfollow);
       setNumFollower(data.profile.followerCount);
     } else {
       const data = await followMutate.mutateAsync();
-      console.log(data);
       setIsFollow(data.profile.isfollow);
       setNumFollower(data.profile.followerCount);
     }
   };
-  // 팀프로필에 url SPORT_BS 빼주기 API에 추가 `SPORT_${accountname}`
-  useEffect(() => {
-    const getData = async () => {
-      const data = await getGameInfoByTeam(id);
-      setGame(data);
-    };
-
-    getData();
-  }, []);
 
   const handlePlayerList = () => {
     navigate('player');

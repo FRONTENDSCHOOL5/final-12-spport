@@ -1,7 +1,7 @@
 import React from 'react';
 import PostProfile from './PostProfile';
 import styled from 'styled-components';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import GamePost from './GamePost';
 import RegularPost from './RegularPost';
 import BtnGroup from './BtnGroup';
@@ -10,7 +10,7 @@ import {
   isBottomSheetOpen,
   bottomSheetItems,
 } from '../../atom/bottomSheetAtom';
-import { accountname, userToken } from '../../atom/loginAtom';
+import { accountname } from '../../atom/loginAtom';
 import { isModalOpen, modalItems } from '../../atom/modalAtom';
 import {
   useDeletePostMutation,
@@ -46,15 +46,14 @@ export default function Post({ post }) {
   )}월 ${parseInt(date.slice(8))}일`;
   const loca = useLocation().pathname.split('/')[1];
 
-  const [token, setToken] = useRecoilState(userToken);
   const [accountName, setAccountName] = useRecoilState(accountname);
   const [isBsOpen, setIsBsOpen] = useRecoilState(isBottomSheetOpen);
   const [bsItems, setBsItems] = useRecoilState(bottomSheetItems);
   const [isModal, setIsModal] = useRecoilState(isModalOpen);
   const [modalItem, setModalItem] = useRecoilState(modalItems);
 
-  const deletePostMutate = useDeletePostMutation(token, post.id);
-  const reportPostMutate = useReportPostMutation(token, post.id);
+  const deletePostMutate = useDeletePostMutation(post.id);
+  const reportPostMutate = useReportPostMutation(post.id);
 
   const handleMoreClick = () => {
     setIsBsOpen(true);
@@ -69,9 +68,7 @@ export default function Post({ post }) {
             '확인',
             function () {
               if (loca === 'post') {
-                navigate(-1);
-              } else {
-                location.reload();
+                navigate(`/profile/${accountName}`);
               }
             },
           ]);
