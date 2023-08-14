@@ -1,6 +1,5 @@
 import { GET_API, POST_API_NO_BODY, DELETE_API } from '../CommonAPI';
 import { addProductAPI, deleteProductAPI } from '../AddProductAPI';
-import { arrToGame, sortGameByDate } from '../../util/gameUtil';
 
 // token을 가진 유저가 post_id를 좋아요 눌렀는지 확인합니다.
 const checkLikeAPI = async (token, id) => {
@@ -43,37 +42,4 @@ const unlikeGameAPI = async (token, ids, isTeam, accountname) => {
   return returnArr;
 };
 
-// token을 가진 유저가 like를 누른 포스트만 필터링합니다.
-const getLikedGameAPI = async (token) => {
-  const posts = await GET_API(token, '/post/feed?limit=1000');
-  const game = posts.posts.filter((item) => {
-    if (item.author.accountname.startsWith('SPORT_') && item.hearted == true) {
-      const today = new Date();
-      const date = new Date(item.content.split(',')[0]);
-      if (today < date) {
-        return true;
-      }
-    }
-  });
-
-  // 중복되는 게임 map으로 묶기 (key: content, value: [post_ids])
-  const gameMap = new Map();
-  game.forEach((item) => {
-    if (gameMap.has(item.content)) {
-      gameMap.set(item.content, [...gameMap.get(item.content), item.id]);
-    } else {
-      gameMap.set(item.content, [item.id]);
-    }
-  });
-
-  const gameArr = sortGameByDate(Array.from(gameMap));
-  return gameArr.map((item) => [arrToGame(item[0].split(',')), item[1]]);
-};
-
-export {
-  checkLikeAPI,
-  likeGameAPI,
-  unlikeGameAPI,
-  getLikedGameAPI,
-  getLikeCountAPI,
-};
+export { checkLikeAPI, likeGameAPI, unlikeGameAPI, getLikeCountAPI };
