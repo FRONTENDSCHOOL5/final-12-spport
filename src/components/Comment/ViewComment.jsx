@@ -4,7 +4,7 @@ import { ProfileImage36 } from '../Common/ProfileImage';
 import more from '../../assets/image/icon-more-small.svg';
 import { Link } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
-import { userToken, accountname } from '../../atom/loginAtom';
+import { accountname } from '../../atom/loginAtom';
 import {
   isBottomSheetOpen,
   bottomSheetItems,
@@ -70,22 +70,13 @@ export default function ViewComment({ comment, post_id }) {
     date.slice(5, 7),
   )}.${parseInt(date.slice(8))} ${date.slice(11, 13)}:${date.slice(14, 16)}`;
 
-  const [token] = useRecoilState(userToken);
   const [accountName] = useRecoilState(accountname);
   const [isBsOpen, setIsBsOpen] = useRecoilState(isBottomSheetOpen);
   const [bsItems, setBsItems] = useRecoilState(bottomSheetItems);
   const [isModal, setIsModal] = useRecoilState(isModalOpen);
   const [modalItem, setModalItem] = useRecoilState(modalItems);
-  const deleteCommentMutate = useDeleteCommentMutation(
-    token,
-    post_id,
-    comment.id,
-  );
-  const reportCommentMutate = useReportCommentMutation(
-    token,
-    post_id,
-    comment.id,
-  );
+  const deleteCommentMutate = useDeleteCommentMutation(post_id, comment.id);
+  const reportCommentMutate = useReportCommentMutation(post_id, comment.id);
 
   const onMoreClick = () => {
     setIsBsOpen((prev) => !prev);

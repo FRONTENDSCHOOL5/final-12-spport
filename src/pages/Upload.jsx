@@ -1,11 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '../components/Common/Header/Header';
 import styled from 'styled-components';
 import { ProfileImage42 } from '../components/Common/ProfileImage';
 import { UploadButton } from '../components/Common/Button/ImageButton';
 import { POST_API } from '../api/CommonAPI';
 import { useNavigate } from 'react-router-dom';
-import { userToken, userimage } from '../atom/loginAtom';
+import { userimage } from '../atom/loginAtom';
 import { useRecoilState } from 'recoil';
 import { isModalOpen, modalItems } from '../atom/modalAtom';
 import iconClose from '../assets/image/icon-close.svg';
@@ -68,7 +68,6 @@ const StyledUploadButton = styled(UploadButton)`
 `;
 
 export default function Upload(props) {
-  const [token, setToken] = useRecoilState(userToken);
   const [userImage, setUserImage] = useRecoilState(userimage);
   // 요청에 사용하는 url
   const url = '/post';
@@ -126,7 +125,7 @@ export default function Upload(props) {
           'image': imageUrl,
         },
       };
-      const data = await POST_API(token, url, bodyData);
+      const data = await POST_API(url, bodyData);
       console.log(data);
 
       navigate(`/post/${data.post.id}`);
@@ -221,6 +220,7 @@ export default function Upload(props) {
     <>
       <Header upload onUploadClick={handleSubmit} disabled={isReady} />
       <USection>
+        <h1 className='a11y-hidden'>게시글 작성 페이지</h1>
         <section className='form-wrapper'>
           <ProfileImage42 image={userImage} />
           <form>

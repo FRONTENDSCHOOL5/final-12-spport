@@ -1,10 +1,9 @@
-import { GET_API, POST_API_NO_BODY, DELETE_API } from '../api/CommonAPI';
-import { useQuery, useMutation, useQueryClient } from 'react-query';
+import { GET_API, POST_API, DELETE_API } from '../api/CommonAPI';
+import { useQuery, useMutation } from 'react-query';
 
-function useFollowerQuery(token, accountname) {
+function useFollowerQuery(accountname) {
   const getFollower = async () => {
     return await GET_API(
-      token,
       `/profile/${accountname}/follower?limit=Number&skip=Number`,
     );
   };
@@ -16,10 +15,9 @@ function useFollowerQuery(token, accountname) {
   return [followerQuery.data, followerQuery.isLoading, followerQuery.isError];
 }
 
-function useFollowingQuery(token, accountname) {
+function useFollowingQuery(accountname) {
   const getFollowing = async () => {
     return await GET_API(
-      token,
       `/profile/${accountname}/following?limit=Number&skip=Number`,
     );
   };
@@ -35,20 +33,18 @@ function useFollowingQuery(token, accountname) {
   ];
 }
 
-function useFollowMutation(token, accountname) {
-  const queryClient = useQueryClient();
+function useFollowMutation(accountname) {
   const follow = async () => {
-    return await POST_API_NO_BODY(token, `/profile/${accountname}/follow`);
+    return await POST_API(`/profile/${accountname}/follow`);
   };
   return useMutation(() => follow(), {
     onSuccess: () => {},
   });
 }
 
-function useUnfollowMutation(token, accountname) {
-  const queryClient = useQueryClient();
+function useUnfollowMutation(accountname) {
   const unfollow = async () => {
-    return await DELETE_API(token, `/profile/${accountname}/unfollow`);
+    return await DELETE_API(`/profile/${accountname}/unfollow`);
   };
   return useMutation(() => unfollow(), {
     onSuccess: () => {},

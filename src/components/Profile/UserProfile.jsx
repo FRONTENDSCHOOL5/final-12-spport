@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useRecoilState } from 'recoil';
 import { useNavigate, useParams, Link } from 'react-router-dom';
 import { getProductAPI } from '../../api/AddProductAPI';
-import { userToken } from '../../atom/loginAtom';
 import {
   NoPostStyle,
   LikedGameStyle,
@@ -24,20 +22,19 @@ import { useFollowMutation, useUnfollowMutation } from '../../hook/useFollow';
 
 export default function UserProfile({ profile, post }) {
   const { id } = useParams();
-  const [token, setToken] = useRecoilState(userToken);
   const navigate = useNavigate();
   const [isFollow, setIsFollow] = useState(profile.isfollow);
   const [numFollower, setNumFollower] = useState(profile.followerCount);
   const [planGame, setPlanGame] = useState([]);
   const [listType, setListType] = useState('list');
   const gameLink = '/schedule/' + profile.accountname;
-  const followMutate = useFollowMutation(token, id);
-  const unfollowMutate = useUnfollowMutation(token, id);
+  const followMutate = useFollowMutation(id);
+  const unfollowMutate = useUnfollowMutation(id);
 
   // 직관일정, 게시글 데이터 호출
   useEffect(() => {
     const getLikedGameData = async () => {
-      const plan = await getProductAPI(token, id);
+      const plan = await getProductAPI(id);
       setPlanGame(plan);
     };
     getLikedGameData();
@@ -69,6 +66,7 @@ export default function UserProfile({ profile, post }) {
   return (
     <Container>
       {/* 상단 프로필 */}
+      <h1 className='a11y-hidden'>{profile.username}님의 프로필 페이지</h1>
       <CommonProfile profile={profile} numFollower={numFollower}>
         <button type='button'>
           <img src={IconShareBtn} alt='공유' />
@@ -128,9 +126,13 @@ export default function UserProfile({ profile, post }) {
           </NoPostStyle>
         ) : (
           <AlbumFeed>
+            <h2 className='a11y-hidden'>게시글 (앨범형)</h2>
             {albumpost.map((item) => {
               return (
                 <li key={item.id}>
+                  <h3 className='a11y-hidden'>
+                    {item.author.username}님의 게시글
+                  </h3>
                   <button
                     type='button'
                     onClick={() => navigate(`/post/${item.id}`)}

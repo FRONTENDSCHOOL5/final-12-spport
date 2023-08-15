@@ -4,7 +4,7 @@ import { useRecoilState } from 'recoil';
 import { accountname } from '../../atom/loginAtom';
 import { useInView } from 'react-intersection-observer';
 
-export default function Followings({ following, token }) {
+export default function Followings({ following }) {
   const [myAccountname, setMyAccountname] = useRecoilState(accountname);
   const [ref, inView] = useInView();
   const [page, setPage] = useState(0);
@@ -26,6 +26,7 @@ export default function Followings({ following, token }) {
 
   return (
     <>
+      <h1 className='a11y-hidden'>팔로잉 목록</h1>
       <ul>
         {sortedData.map((item, index) => {
           if (index < page) {
@@ -38,7 +39,6 @@ export default function Followings({ following, token }) {
                 page='followings'
                 isfollow={item.isfollow}
                 isMyAccount={item.accountname === myAccountname}
-                token={token}
               />
             );
           }

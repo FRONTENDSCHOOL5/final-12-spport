@@ -5,7 +5,7 @@ import { ProfileImage42 } from '../components/Common/ProfileImage';
 import { UploadButton } from '../components/Common/Button/ImageButton';
 import { GET_API, PUT_API } from '../api/CommonAPI';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { userToken, userimage } from '../atom/loginAtom';
+import { userimage } from '../atom/loginAtom';
 import { useRecoilState } from 'recoil';
 import { isModalOpen, modalItems } from '../atom/modalAtom';
 import iconClose from '../assets/image/icon-close.svg';
@@ -70,7 +70,6 @@ const StyledUploadButton = styled(UploadButton)`
 
 export default function EditPost(props) {
   // 직접 받아올 때 사용
-  const [token, setToken] = useRecoilState(userToken);
   const [userImage, setUserImage] = useRecoilState(userimage);
   const location = useLocation();
   const post_id = location.state.post_id;
@@ -93,7 +92,7 @@ export default function EditPost(props) {
   // 이전 데이터 요청
   useEffect(() => {
     const prevPost = async (e) => {
-      const res = await GET_API(token, '/post/' + post_id);
+      const res = await GET_API('/post/' + post_id);
       setPost(res);
     };
     prevPost();
@@ -162,7 +161,8 @@ export default function EditPost(props) {
           'image': imageUrl,
         },
       };
-      const data = await PUT_API(token, '/post/' + post_id, bodyData);
+      const data = await PUT_API('/post/' + post_id, bodyData);
+      console.log(data);
       navigate('/post/' + post_id);
     };
     setModalItem(['게시물을 수정하시겠습니까?', '수정', editPost]);

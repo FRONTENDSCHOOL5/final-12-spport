@@ -1,7 +1,7 @@
 import { GET_API, POST_API, DELETE_API } from './CommonAPI';
-import { getHomeImage } from './GameAPI/AddGameAPI';
+import { getHomeImage } from '../util/gameUtil';
 
-const addProductAPI = async (token, post, ids, isGame) => {
+const addProductAPI = async (post, ids, isGame) => {
   const team_name = isGame ? post.home : post.content.split(',')[3];
   const content = isGame ? Object.values(post).join(',') : post.content;
   const productData = {
@@ -12,12 +12,12 @@ const addProductAPI = async (token, post, ids, isGame) => {
       'itemImage': getHomeImage(team_name),
     },
   };
-  const data = await POST_API(token, '/product', productData);
+  const data = await POST_API('/product', productData);
   return data;
 };
 
-const getProductAPI = async (token, accountname) => {
-  const data = await GET_API(token, `/product/${accountname}`);
+const getProductAPI = async (accountname) => {
+  const data = await GET_API(`/product/${accountname}`);
   const product =
     data.product &&
     data.product.filter((item) => {
@@ -37,8 +37,8 @@ const getProductAPI = async (token, accountname) => {
   return product;
 };
 
-const getProductByPostIdAPI = async (token, accountname, ids) => {
-  const plist = await getProductAPI(token, accountname);
+const getProductByPostIdAPI = async (accountname, ids) => {
+  const plist = await getProductAPI(accountname);
   const data = plist.filter((item) => {
     const idlist = item.link.split(',');
     if (idlist.includes(ids[0])) {
@@ -50,16 +50,11 @@ const getProductByPostIdAPI = async (token, accountname, ids) => {
   return data;
 };
 
-const getProductDetailAPI = async (token, product_id) => {
-  const data = await GET_API(token, `/product/detail/${product_id}`);
-  return data;
-};
-
-const deleteProductAPI = async (token, accountname, ids) => {
-  const plist = await getProductByPostIdAPI(token, accountname, ids);
+const deleteProductAPI = async (accountname, ids) => {
+  const plist = await getProductByPostIdAPI(accountname, ids);
   const product_id = plist[0]?.id;
-  const data = await DELETE_API(token, `/product/${product_id}`);
+  const data = await DELETE_API(`/product/${product_id}`);
   return data;
 };
 
-export { addProductAPI, getProductAPI, getProductDetailAPI, deleteProductAPI };
+export { addProductAPI, getProductAPI, deleteProductAPI };
