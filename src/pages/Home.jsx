@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import NavBar from '../components/Common/NavBar';
 import Header from '../components/Common/Header/Header';
 import PostList from '../components/Post/PostList';
-import { useRecoilState } from 'recoil';
-import { userToken } from '../atom/loginAtom';
 import Empty from '../components/Common/Empty';
 import PostLoader from '../components/Skeleton/PostLoader';
 import { useFeedQuery } from '../hook/usePost';
@@ -16,14 +14,14 @@ const FullSection = styled.main`
 `;
 
 export default function Home(props) {
-  const [token] = useRecoilState(userToken);
   const [filterClick, setFilterClick] = useState(false);
-  const [feed, isFeedLoading, isFeedError] = useFeedQuery(token);
+  const [feed, isFeedLoading, isFeedError] = useFeedQuery();
 
   return (
     <>
       <Header main setFilterClick={setFilterClick} />
       <FullSection>
+        <h1 className='a11y-hidden'>피드</h1>
         {isFeedError && (
           <Empty
             message='피드 정보를 가져오는데 실패했습니다.'

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Post from './Post';
 import styled from 'styled-components';
-import { sortFeedPost } from '../../api/GameAPI/FeedGame';
+import { sortFeedPost } from '../../util/gameUtil';
 import { useInView } from 'react-intersection-observer';
 
 const PostListStyle = styled.ul`
@@ -44,10 +44,17 @@ export default function PostList({ post, onlyGame, isHome }) {
 
   return (
     <PostListStyle>
+      {isHome ? (
+        <h2 className='a11y-hidden'>{onlyGame ? '일정 피드' : '전체 피드'}</h2>
+      ) : (
+        <h2 className='a11y-hidden'>게시글 (리스트형)</h2>
+      )}
+
       {sortedPost.map((item, index) => {
         if (index < page) {
           return (
             <li key={item.id}>
+              <h3 className='a11y-hidden'>{item.author.username}님의 게시글</h3>
               <Post post={item} />
             </li>
           );

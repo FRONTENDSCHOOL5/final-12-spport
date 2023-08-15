@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { ProfileImage36 } from '../Common/ProfileImage';
 import { useParams } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
-import { userToken, userimage } from '../../atom/loginAtom';
+import { userimage } from '../../atom/loginAtom';
 import { useAddCommentMutation } from '../../hook/useComment';
 
 export const InputCommentStyle = styled.form`
@@ -36,9 +36,8 @@ export const InputCommentStyle = styled.form`
 export default function InputComment() {
   const { id } = useParams();
   const [inputVal, setInputVal] = useState('');
-  const [token] = useRecoilState(userToken);
   const [userImage, setUserImage] = useRecoilState(userimage);
-  const addCommentMutate = useAddCommentMutation(token, id);
+  const addCommentMutate = useAddCommentMutation(id);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

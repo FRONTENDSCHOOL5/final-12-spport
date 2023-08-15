@@ -1,9 +1,9 @@
-import { DELETE_API, GET_API, POST_API_NO_BODY } from '../api/CommonAPI';
+import { DELETE_API, GET_API, POST_API } from '../api/CommonAPI';
 import { useQuery, useMutation, useQueryClient } from 'react-query';
 
-function useFeedQuery(token) {
+function useFeedQuery() {
   const getFeed = async () => {
-    return await GET_API(token, '/post/feed/?limit=Number?skip=Number');
+    return await GET_API('/post/feed/?limit=Number?skip=Number');
   };
 
   const feedQuery = useQuery({
@@ -14,9 +14,9 @@ function useFeedQuery(token) {
   return [feedQuery.data, feedQuery.isLoading, feedQuery.isError];
 }
 
-function usePostQuery(token, post_id) {
+function usePostQuery(post_id) {
   const getPostDetail = async () => {
-    return await GET_API(token, `/post/${post_id}`);
+    return await GET_API(`/post/${post_id}`);
   };
 
   const postQuery = useQuery({
@@ -26,10 +26,10 @@ function usePostQuery(token, post_id) {
   return [postQuery.data, postQuery.isLoading, postQuery.isError];
 }
 
-function useDeletePostMutation(token, post_id) {
+function useDeletePostMutation(post_id) {
   const queryClient = useQueryClient();
   const deletePost = async () => {
-    return await DELETE_API(token, `/post/${post_id}`);
+    return await DELETE_API(`/post/${post_id}`);
   };
   return useMutation(() => deletePost(), {
     onSuccess: () => {
@@ -41,9 +41,9 @@ function useDeletePostMutation(token, post_id) {
   });
 }
 
-function useReportPostMutation(token, post_id) {
+function useReportPostMutation(post_id) {
   const reportPost = async () => {
-    return await POST_API_NO_BODY(token, `/post/${post_id}/report`);
+    return await POST_API(`/post/${post_id}/report`);
   };
 
   return useMutation(() => reportPost());

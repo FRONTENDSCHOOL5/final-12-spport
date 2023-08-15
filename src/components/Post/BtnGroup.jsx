@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import iconEmptyHeart from '../../assets/image/icon-heart-empty.svg';
 import iconFillHeart from '../../assets/image/icon-heart-fill.svg';
 import iconMessage from '../../assets/image/icon-message-small.svg';
@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { likeGameAPI, unlikeGameAPI } from '../../api/GameAPI/LikeGameAPI';
 import { useRecoilState } from 'recoil';
-import { accountname, userToken } from '../../atom/loginAtom';
+import { accountname } from '../../atom/loginAtom';
 
 const BtnWrapperStyle = styled.div`
   text-align: start;
@@ -40,18 +40,17 @@ export default function BtnGroup({
 }) {
   const [isLike, setIsLike] = useState(hearted);
   const [likeCount, setLikeCount] = useState(heartCount);
-  const [token, setToken] = useRecoilState(userToken);
   const [accountName, setAccountName] = useRecoilState(accountname);
 
   const handleLikeClick = async () => {
     if (isLike) {
       console.log('unlike');
-      const unlike = await unlikeGameAPI(token, [id], isTeam, accountName);
+      const unlike = await unlikeGameAPI([id], isTeam, accountName);
       setIsLike(unlike[0].post.hearted);
       setLikeCount(unlike[0].post.heartCount);
     } else {
       console.log('like');
-      const like = await likeGameAPI(token, [id], isTeam, post);
+      const like = await likeGameAPI([id], isTeam, post);
       setIsLike(like[0].post.hearted);
       setLikeCount(like[0].post.heartCount);
     }

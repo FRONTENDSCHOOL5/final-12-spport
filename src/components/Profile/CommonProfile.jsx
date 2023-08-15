@@ -110,6 +110,7 @@ export default function CommonProfile({ profile, children, numFollower }) {
 
   return (
     <ContainerStyle>
+      <h2 className='a11y-hidden'>프로필</h2>
       {/* 1행 */}
       {/* follwers, profile image, followings */}
       <div className='followers'>

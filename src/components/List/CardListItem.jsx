@@ -40,6 +40,9 @@ export default function CardListItem({ game }) {
   const linkPost = `/post/${game.link.split(',')[0]}`;
   return (
     <CardStyle key={game.id}>
+      <h3 className='a11y-hidden'>
+        {game_info[3]} vs. {game_info[4]} ({game_info[0].slice(5)})
+      </h3>
       <Link to={linkPost}>
         <img className='img-card' src={game.itemImage} alt='' />
         <p className='card-title'>

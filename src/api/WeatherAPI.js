@@ -1,5 +1,5 @@
-import { editGamePostAPI } from './GameAPI/PostGameAPI';
-import { getTeamToken } from './GameAPI/TeamProfileGameAPI';
+import { getTeamToken } from '../util/gameUtil';
+import api from '../api/index';
 
 const getWeatherAPI = async (city) => {
   const reqUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=kr&appid=${process.env.REACT_APP_WEATHER_API_KEY}`;
@@ -15,17 +15,25 @@ const getWeatherAPI = async (city) => {
   }
 };
 
-const getWeather = async (city, post) => {
-  const data = await getWeatherAPI(city);
-  const weather = await storeWeather(post.author.accountname, post, data);
-  return {
-    'avg_temp': weather[0],
-    'max_temp': weather[1],
-    'min_temp': weather[2],
-    'humidity': weather[3],
-    'description': weather[4],
-    'image': weather[5],
+const editGamePostAPI = async (token, id, content, weather) => {
+  const image = weather.join(',');
+  const bodyData = {
+    'post': {
+      'content': content,
+      'image': image,
+    },
   };
+
+  const res = await fetch(`https://api.mandarin.weniv.co.kr/post/${id}`, {
+    method: 'PUT',
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify(bodyData),
+  });
+  const json = await res.json();
+  return json;
 };
 
 const storeWeather = async (team_name, post, data) => {
@@ -45,8 +53,24 @@ const storeWeather = async (team_name, post, data) => {
   return weather;
 };
 
-const getWeatherPosted = (weather) => {
+const getWeather = async (city, post) => {
+  const data = await getWeatherAPI(city);
+  const weather = await storeWeather(post.author.accountname, post, data);
+  return {
+    'avg_temp': weather[0],
+    'max_temp': weather[1],
+    'min_temp': weather[2],
+    'humidity': weather[3],
+    'description': weather[4],
+    'image': weather[5],
+  };
+};
+
+const getWeatherPosted = async (weather, city, post) => {
   const weatherArr = weather.split(',');
+  if (weatherArr.length < 6) {
+    return await getWeather(city, post);
+  }
   return {
     'avg_temp': weatherArr[0],
     'max_temp': weatherArr[1],

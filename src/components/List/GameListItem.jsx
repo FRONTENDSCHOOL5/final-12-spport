@@ -7,7 +7,7 @@ import {
   likeGameAPI,
   unlikeGameAPI,
 } from '../../api/GameAPI/LikeGameAPI';
-import { accountname, userToken } from '../../atom/loginAtom';
+import { accountname } from '../../atom/loginAtom';
 import { useRecoilState } from 'recoil';
 import { isModalOpen, modalItems } from '../../atom/modalAtom';
 
@@ -45,14 +45,13 @@ export default function GameListItem({ game }) {
   const game_info = game[0];
   const game_id = game[1];
   const [isLike, setIsLike] = useState(false);
-  const [token, setToken] = useRecoilState(userToken);
   const [accountName, setAccountName] = useRecoilState(accountname);
   const [isModal, setIsModal] = useRecoilState(isModalOpen);
   const [modalItem, setModalItem] = useRecoilState(modalItems);
 
   useEffect(() => {
     const setLike = async () => {
-      const like = await checkLikeAPI(token, game_id[0]);
+      const like = await checkLikeAPI(game_id[0]);
       setIsLike(like);
     };
     setLike();
@@ -61,7 +60,7 @@ export default function GameListItem({ game }) {
   const likeModal = () => {
     setIsModal(true);
     const likeGame = async () => {
-      const like = await likeGameAPI(token, game_id, true, game[0], true);
+      const like = await likeGameAPI(game_id, true, game[0], true);
       setIsLike(like[0].post.hearted);
       // confirm like
       setIsModal(true);
@@ -73,7 +72,7 @@ export default function GameListItem({ game }) {
   const unlikeModal = () => {
     setIsModal(true);
     const unlikeGame = async () => {
-      const unlike = await unlikeGameAPI(token, game_id, true, accountName);
+      const unlike = await unlikeGameAPI(game_id, true, accountName);
       setIsLike(unlike[0].post.hearted);
       // confirm unlike
       setIsModal(true);
