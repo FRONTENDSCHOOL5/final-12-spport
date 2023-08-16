@@ -283,7 +283,7 @@ export default function EditProfile() {
                     : '자신의 관심사를 Enter를 눌러 추가해주세요.'
                 }
                 onChange={handleInterestChange}
-                onKeyDown={handleInterestKeyDown}
+                onKeyUp={handleInterestKeyDown}
               />
             </ul>
           </div>
