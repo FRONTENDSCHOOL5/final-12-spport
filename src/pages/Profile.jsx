@@ -18,7 +18,30 @@ import TeamProfileLoader from '../components/Skeleton/TeamProfileLoader';
 
 const MainStyle = styled.main`
   padding: 50px 0 60px;
-  background: var(--color-bg);
+
+  @media screen and (min-width: 1247px) {
+    margin-left: 200px;
+  }
+`;
+
+const SkipNavStyle = styled.div`
+  a {
+    z-index: 99999;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background: #000;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+    padding: 0 15px;
+    font-weight: bolder;
+  }
+  a:focus,
+  a:active {
+    top: 0;
+  }
 `;
 
 export default function Profile() {
@@ -45,6 +68,16 @@ export default function Profile() {
 
   return (
     <>
+      <SkipNavStyle>
+        <a href='#profile'>프로필 바로가기</a>
+        <a href={isTeam ? '#player' : '#game-schedule'}>
+          {isTeam ? '선수 보러가기' : '직관 일정 바로가기'}
+        </a>
+        <a href={isTeam ? '#games' : '#feed'}>
+          {isTeam ? '경기 일정 바로가기' : '게시글 바로가기'}
+        </a>
+        <a href='#nav-홈'>네비게이션바 바로가기</a>
+      </SkipNavStyle>
       <Header text />
       <MainStyle>
         {/* {isProfileError && <Error/>} */}

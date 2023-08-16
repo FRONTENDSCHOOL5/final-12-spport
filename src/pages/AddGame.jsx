@@ -29,8 +29,14 @@ const MainStyle = styled.main`
     padding: 15px 16px 16px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1246px) {
     margin-left: 60px;
+    padding-top: 15px;
+  }
+
+  @media screen and (min-width: 1247px) {
+    margin-left: 200px;
+    padding-top: 15px;
   }
 `;
 

@@ -78,10 +78,16 @@ export default function PlayerList() {
 }
 
 const MainContainer = styled.main`
-  padding: 70px 15px 0 15px;
+  padding: 60px 15px 0 15px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1246px) {
     margin-left: 60px;
+    padding-top: 15px;
+  }
+
+  @media screen and (min-width: 1247px) {
+    margin-left: 200px;
+    padding-top: 15px;
   }
 `;
 

@@ -45,7 +45,9 @@ export default function PostList({ post, onlyGame, isHome }) {
   return (
     <PostListStyle>
       {isHome ? (
-        <h2 className='a11y-hidden'>{onlyGame ? '일정 피드' : '전체 피드'}</h2>
+        <h2 id='feed' className='a11y-hidden'>
+          {onlyGame ? '일정 피드' : '전체 피드'}
+        </h2>
       ) : (
         <h2 className='a11y-hidden'>게시글 (리스트형)</h2>
       )}

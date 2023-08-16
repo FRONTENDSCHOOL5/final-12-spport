@@ -4,7 +4,6 @@ import iconBack from '../../../assets/image/icon-back.svg';
 import iconMore from '../../../assets/image/icon-more.svg';
 import iconSearch from '../../../assets/image/icon-search-lime.svg';
 import logoText from '../../../assets/logo/text-logo.svg';
-import logoImg from '../../../assets/logo/logo-lime.svg';
 import SearchBox from './SearchBox';
 import FeedFilter from '../Filter/FeedFilter';
 import MsButton from '../Button/MsButton';
@@ -38,6 +37,10 @@ const HeaderStyle = styled.header`
   }
   button:not(.btn-back) {
     margin-left: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: ${(props) => (props.search || props.upload ? 'flex' : 'none')};
   }
 `;
 
@@ -120,7 +123,7 @@ export default function Header({
   };
 
   return (
-    <HeaderStyle>
+    <HeaderStyle search={search} upload={upload}>
       {main || (
         <button className='btn-back' type='button' onClick={handleBackClick}>
           <img src={iconBack} alt='뒤로 가기' />

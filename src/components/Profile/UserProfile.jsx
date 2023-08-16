@@ -88,7 +88,7 @@ export default function UserProfile({ profile, post }) {
 
       {/* 직관 일정 */}
       <LikedGameStyle className='section-game'>
-        <h2>
+        <h2 id='game-schedule'>
           직관 일정 <Link to={gameLink}>전체보기</Link>
         </h2>
         {planGame.length === 0 ? (
@@ -102,7 +102,7 @@ export default function UserProfile({ profile, post }) {
       </LikedGameStyle>
 
       {/* 게시글 */}
-      <SectionFeed>
+      <SectionFeed id='feed'>
         <FeedHeader listType={listType} setListType={setListType} />
         {listType === 'list' ? (
           // 리스트형

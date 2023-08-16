@@ -17,6 +17,10 @@ const CardListStyle = styled.ul`
   @media screen and (min-width: 1247px) {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  @media screen and (min-width: 1700px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
 `;
 
 export default function CardList({ games }) {
