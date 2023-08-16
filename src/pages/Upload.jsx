@@ -214,7 +214,7 @@ export default function Upload(props) {
   //렌더링
   return (
     <>
-      <Header upload onUploadClick={handleSubmit} disabled={isReady} />
+      <Header onUploadClick={handleSubmit} disabled={isReady} upload />
       <USection>
         <h1 className='a11y-hidden'>게시글 작성 페이지</h1>
         <section className='form-wrapper'>
