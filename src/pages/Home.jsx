@@ -5,13 +5,29 @@ import Header from '../components/Common/Header/Header';
 import PostList from '../components/Post/PostList';
 import Empty from '../components/Common/Empty';
 import PostLoader from '../components/Skeleton/PostLoader';
+import FeedFilter from '../components/Common/Filter/FeedFilter';
 import { useFeedQuery } from '../hook/usePost';
 
 const FullSection = styled.main`
   padding: 50px 0 0;
   height: 100%;
   background: white;
+
+  @media screen and (min-width: 768px) and (max-width: 1246px) {
+    margin-left: 60px;
+  }
+
+  @media screen and (min-width: 1247px) {
+    margin-left: 200px;
+  }
 `;
+
+const FeedFilterWrapper = styled.div`
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+`;
+
 const SkipNavStyle = styled.div`
   a {
     z-index: 99999;
@@ -31,6 +47,7 @@ const SkipNavStyle = styled.div`
     top: 0;
   }
 `;
+
 export default function Home(props) {
   const [filterClick, setFilterClick] = useState(false);
   const { feed, isFeedLoading, isFeedError } = useFeedQuery();
@@ -43,6 +60,9 @@ export default function Home(props) {
       </SkipNavStyle>
       <Header main setFilterClick={setFilterClick} />
       <FullSection>
+        <FeedFilterWrapper>
+          <FeedFilter setFilterClick={setFilterClick} />
+        </FeedFilterWrapper>
         <h1 className='a11y-hidden'>피드</h1>
         {isFeedError && (
           <Empty
