@@ -10,7 +10,7 @@ const ErrorStyle = styled.main`
   align-items: center;
   top: 30%;
   position: absolute;
-  width: 390px;
+  width: 100%;
   height: 100%;
   gap: 20px;
 
