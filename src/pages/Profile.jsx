@@ -21,6 +21,25 @@ const MainStyle = styled.main`
   background: var(--color-bg);
 `;
 
+const SkipNavStyle = styled.div`
+  a {
+    z-index: 99999;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background: #000;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+    padding: 0 15px;
+    font-weight: bolder;
+  }
+  a:focus,
+  a:active {
+    top: 0;
+  }
+`;
 export default function Profile() {
   const { id } = useParams();
   const isTeam = id.startsWith('SPORT_');
@@ -45,6 +64,16 @@ export default function Profile() {
 
   return (
     <>
+      <SkipNavStyle>
+        <a href='#profile'>프로필 바로가기</a>
+        <a href={isTeam ? '#player' : '#game-schedule'}>
+          {isTeam ? '선수 보러가기' : '직관 일정 바로가기'}
+        </a>
+        <a href={isTeam ? '#games' : '#feed'}>
+          {isTeam ? '경기 일정 바로가기' : '게시글 바로가기'}
+        </a>
+        <a href='#nav-홈'>네비게이션바 바로가기</a>
+      </SkipNavStyle>
       <Header text />
       <MainStyle>
         {/* {isProfileError && <Error/>} */}

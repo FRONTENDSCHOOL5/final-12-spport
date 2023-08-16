@@ -94,6 +94,7 @@ export default function NavBar(props) {
           return (
             <li key={index}>
               <button
+                id={`nav-${item[0]}`}
                 type='button'
                 onClick={handlePage(item)}
                 style={{ color: textColor(item[1] === currentLocation) }}
