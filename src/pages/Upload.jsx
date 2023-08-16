@@ -126,7 +126,6 @@ export default function Upload(props) {
         },
       };
       const data = await POST_API(url, bodyData);
-      console.log(data);
 
       navigate(`/post/${data.post.id}`);
     };
@@ -139,6 +138,12 @@ export default function Upload(props) {
   // browser-image-compression 라이브러리 사용
   // npm install browser-image-compression --save
   const getResizeImg = async (image) => {
+    // 업로드 버튼을 눌렀을 때 아무것도 선택하지 않고 취소한 경우
+    // 라이브러리에서 처리해줘야 하는거 아님?
+    if (image === undefined) {
+      alert('이미지 선택을 취소하셨습니다!');
+      return;
+    }
     // 받은 이미지를 압축 후 blob 형식으로 반환
     const resizeBlob = await imageCompression(image, { maxSizeMB: 0.1 });
     //blob을 업로드 가능한 형태인 file로 변환
@@ -153,13 +158,8 @@ export default function Upload(props) {
     //input이 변경되면 변경된 요소를 가져온다
     const imageFile = e.target.files[0];
 
-    console.log('원본파일');
-    console.log(imageFile);
-
     // 이미지를 압축하기 위해 리사이징 함수 호출
     const resizeFile = await getResizeImg(imageFile);
-    console.log('리사이즈 된 파일');
-    console.log(resizeFile);
 
     // 사진 갯수 제한
     if (images.length > 2) {
@@ -172,8 +172,6 @@ export default function Upload(props) {
     // formData.append('image', imageFile);
     formData.append('image', resizeFile);
 
-    console.log(formData);
-
     //요청
     const res = await fetch(
       'https://api.mandarin.weniv.co.kr/image/uploadfiles',
@@ -182,10 +180,8 @@ export default function Upload(props) {
         body: formData,
       },
     );
-
     // 데이터를 json으로 받아오기
     const json = await res.json();
-    console.log(json);
 
     const fileUrl = json.map((img) => {
       return 'https://api.mandarin.weniv.co.kr/' + img.filename;
@@ -232,7 +228,12 @@ export default function Upload(props) {
               onKeyUp={autoResizeTextarea}
               onChange={postContent}
             ></textarea>
-            <StyledUploadButton func={imageUpload} />
+            {/* {images.length < 3 && <StyledUploadButton func={imageUpload} />} */}
+            {images.length === 3 ? (
+              <StyledUploadButton isDisable />
+            ) : (
+              <StyledUploadButton func={imageUpload} />
+            )}
           </form>
         </section>
         <section className='upload-images-wrapper'>

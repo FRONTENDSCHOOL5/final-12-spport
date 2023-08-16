@@ -26,16 +26,22 @@ export default function Profile() {
   const isTeam = id.startsWith('SPORT_');
   const [username, setUsername] = useRecoilState(accountname);
   const navigate = useNavigate();
-  const [profile, isProfileLoading, isProfileError, profileRefetch] =
+  const { profile, isProfileLoading, isProfileError, profileRefetch } =
     useProfileQuery(id);
-  const [post, isPostLoading, isPostError, postRefetch] = isTeam
+  const { post, isPostLoading, isPostError, postRefetch } = isTeam
     ? useTeamPostQuery(id)
     : useUserPostQuery(id);
 
   useEffect(() => {
-    profileRefetch();
-    postRefetch();
+    if (!isPostLoading) {
+      profileRefetch();
+    }
+    if (!isPostLoading) {
+      postRefetch();
+    }
   }, [id]);
+
+  console.log(isPostLoading, post);
 
   return (
     <>

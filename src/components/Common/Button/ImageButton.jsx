@@ -97,23 +97,28 @@ const UploadButtonStyle = styled.section`
     clip: rect(0, 0, 0, 0);
     border: 0;
   }
+
+  input[type='file']:disabled ~ label .btn-upload-img {
+    background-color: var(--color-maingrey);
+  }
 `;
 
 function UploadButton(props) {
   return (
     <UploadButtonStyle {...props}>
-      <label htmlFor='btn-upload'>
-        <div className='btn-upload-img'>
-          <img src={iconimage} alt='이미지 업로드 하기' />
-        </div>
-      </label>
       <input
         type='file'
         id='btn-upload'
         accept='image/*'
         multiple
         onChange={props.func}
+        disabled={props.isDisable ? true : false}
       />
+      <label htmlFor='btn-upload'>
+        <div className='btn-upload-img'>
+          <img src={iconimage} alt='이미지 업로드 하기' />
+        </div>
+      </label>
     </UploadButtonStyle>
   );
 }

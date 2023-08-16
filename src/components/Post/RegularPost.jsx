@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-import 'swiper/css';
-import 'swiper/css/effect-fade';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import SwiperCore, { EffectFade, Navigation, Pagination } from 'swiper';
 import NoImage from '../../assets/image/noimage.png';
+
+// +
+// 슬라이더 라이브러리 변경함
+// npm install @splidejs/react-splide
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/react-splide/css';
 
 const RegularPostStyle = styled.div`
   width: calc(100% - 10px);
@@ -28,34 +27,34 @@ const RegularPostStyle = styled.div`
     border-radius: 10px;
   }
 
-  .swiper-button-prev,
-  .swiper-button-next {
+  .splide__arrow--prev,
+  .splide__arrow--next {
     background-color: #fff;
     opacity: 0.5;
     padding: 15px 5px;
     border-radius: 20px;
-    color: black !important;
+    color: black;
   }
 
-  .swiper-button-next {
+  .splide__arrow--next {
     margin-right: 10px;
   }
 
-  .swiper-button-prev:after,
-  .swiper-button-next:after {
-    font-size: 1.1rem !important;
-    font-weight: 600 !important;
+  .splide__arrow--prev:after,
+  .splide__arrow--next:after {
+    font-size: 1.1rem;
+    font-weight: 600;
   }
 
-  .swiper-pagination-bullet {
-    background: var(--color-lime) !important;
+  .splide__pagination__page {
+    background: var(--color-lime);
   }
 `;
 
 export default function RegularPost({ post }) {
   const [images, setImages] = useState([]);
   const location = useLocation();
-  console.log(location.pathname);
+
   if (post.image) {
     const imageUrl = post.image.split(',');
     useEffect(() => {
@@ -66,8 +65,6 @@ export default function RegularPost({ post }) {
   const handleImgError = (e) => {
     e.target.src = NoImage;
   };
-
-  SwiperCore.use([EffectFade, Navigation, Pagination]);
 
   return (
     <>
@@ -84,34 +81,22 @@ export default function RegularPost({ post }) {
           {images.length === 1 && (
             <img src={images[0]} alt='' onError={handleImgError} />
           )}
+
           {images.length > 1 && (
-            <Swiper
-              modules={[Navigation, EffectFade, Pagination]}
-              className='mySwiper'
-              effect={'fade'}
-              spaceBetween={0}
-              pagination={{
-                clickable: true,
-              }}
-              observer='true'
-              observeParents='true'
-              loop={false}
-              slidePerView={1}
-              navigation
-            >
+            <Splide>
               {images.map((image, index) => {
                 return (
-                  <SwiperSlide key={index}>
+                  <SplideSlide key={index}>
                     <img
                       key={image}
                       src={image}
                       alt=''
                       onError={handleImgError}
                     />
-                  </SwiperSlide>
+                  </SplideSlide>
                 );
               })}
-            </Swiper>
+            </Splide>
           )}
         </section>
       </RegularPostStyle>

@@ -7,60 +7,75 @@ function useProfileQuery(accountname) {
     return await GET_API(`/profile/${accountname}`);
   };
 
-  const profileQuery = useQuery({
+  const { data, isLoading, isError, refetch } = useQuery({
     queryKey: ['profile'],
     queryFn: () => getProfile(),
   });
-  return [
-    profileQuery.data,
-    profileQuery.isLoading,
-    profileQuery.isError,
-    profileQuery.refetch,
-  ];
+  return {
+    profile: data,
+    isProfileLoading: isLoading,
+    isProfileError: isError,
+    profileRefetch: refetch,
+  };
 }
 
-function useUserPostQuery(accountname, length = 10) {
+function useUserPostQuery(accountname) {
   const getPost = async () => {
-    return await GET_API(`/post/${accountname}/userpost?limit=${length}`);
+    return await GET_API(`/post/${accountname}/userpost`);
   };
-  const postQuery = useQuery({
+
+  const { data, isLoading, isError, refetch } = useQuery({
     queryKey: ['userPost'],
     queryFn: () => getPost(),
   });
-  return [
-    postQuery.data,
-    postQuery.isLoading,
-    postQuery.isError,
-    postQuery.refetch,
-  ];
+
+  return {
+    post: data,
+    isPostLoading: isLoading,
+    isPostError: isError,
+    postRefetch: refetch,
+  };
 }
 
 function useTeamPostQuery(accountname) {
-  const [data, isLoadiing, isError, refetch] = useUserPostQuery(
-    accountname,
-    100,
-  );
+  const getPost = async () => {
+    return await GET_API(
+      `/post/${accountname}/userpost?limit=Number?skip=Number`,
+    );
+  };
 
-  const game = data.post.filter((item) => {
-    if (item.author.accountname.startsWith('SPORT_')) {
-      const today = new Date();
-      const date = new Date(item.content.split(',')[0]);
-      const time = item.content.split(',')[2].split(':');
-      date.setHours(time[0], time[1], 0, 0);
-      if (today <= date) {
-        return true;
-      }
-    }
+  const { data, isLoading, isError, refetch } = useQuery({
+    queryKey: ['userPost'],
+    queryFn: () => getPost(),
   });
 
-  sortGameByDate(game, false);
+  let filteredGame;
+  if (!isLoading && !isError) {
+    const game = data.post.filter((item) => {
+      if (item.author.accountname.startsWith('SPORT_')) {
+        const today = new Date();
+        const date = new Date(item.content.split(',')[0]);
+        const time = item.content.split(',')[2].split(':');
+        date.setHours(time[0], time[1], 0, 0);
+        if (today <= date) {
+          return true;
+        }
+      }
+    });
 
-  return [
-    game.map((item) => [arrToGame(item.content.split(',')), [item.id]]),
-    isLoadiing,
-    isError,
-    refetch,
-  ];
+    sortGameByDate(game, false);
+    filteredGame = game.map((item) => [
+      arrToGame(item.content.split(',')),
+      [item.id],
+    ]);
+  }
+
+  return {
+    post: filteredGame,
+    isPostLoading: isLoading,
+    isPostError: isError,
+    postRefetch: refetch,
+  };
 }
 
 export { useProfileQuery, useUserPostQuery, useTeamPostQuery };

@@ -21,15 +21,20 @@ const SearchBoxStyle = styled.form`
 export default function SearchBox() {
   const [keyword, setKeyword] = useState('');
   const navigate = useNavigate();
+
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    navigate(`/search/${keyword}`);
-    setKeyword('');
+    // 입력된 값이 빈칸이면
+    if (e === '') {
+      return false;
+    } else {
+      navigate(`/search/${keyword}`);
+      setKeyword(keyword);
+    }
   };
 
   const handleInputChange = (e) => {
     setKeyword(e.target.value);
-    console.log(keyword);
     // navigate(`/search/${keyword}`);
   };
 
@@ -38,7 +43,6 @@ export default function SearchBox() {
     // 입력한 대로 바로 검색되도록
     const debounce = setTimeout(() => {
       if (keyword) {
-        console.log(keyword);
         navigate(`/search/${keyword}`);
       }
       if (keyword === '') {
@@ -52,7 +56,6 @@ export default function SearchBox() {
 
   return (
     <SearchBoxStyle onSubmit={handleSearchSubmit}>
-      {console.log('Searchbox')}
       <label>
         <span className='a11y-hidden'>유저 또는 팀 계정을 검색해보세요!</span>
         <input

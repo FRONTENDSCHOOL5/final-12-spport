@@ -15,7 +15,7 @@ const FullSection = styled.main`
 
 export default function Home(props) {
   const [filterClick, setFilterClick] = useState(false);
-  const [feed, isFeedLoading, isFeedError] = useFeedQuery();
+  const {feed, isFeedLoading, isFeedError} = useFeedQuery();
 
   return (
     <>
