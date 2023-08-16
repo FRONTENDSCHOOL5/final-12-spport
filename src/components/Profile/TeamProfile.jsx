@@ -24,8 +24,8 @@ const Container = styled.div`
   gap: 6px;
   background-color: var(--color-bg);
 
-  @media screen and (min-width: 768px) {
-    padding-left: 60px;
+  @media screen and (min-width: 768px) and (max-width: 1246px) {
+    margin-left: 60px;
   }
 `;
 

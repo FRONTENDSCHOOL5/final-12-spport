@@ -18,7 +18,10 @@ import TeamProfileLoader from '../components/Skeleton/TeamProfileLoader';
 
 const MainStyle = styled.main`
   padding: 50px 0 60px;
-  background: var(--color-bg);
+
+  @media screen and (min-width: 1247px) {
+    margin-left: 200px;
+  }
 `;
 
 const SkipNavStyle = styled.div`
@@ -40,6 +43,7 @@ const SkipNavStyle = styled.div`
     top: 0;
   }
 `;
+
 export default function Profile() {
   const { id } = useParams();
   const isTeam = id.startsWith('SPORT_');

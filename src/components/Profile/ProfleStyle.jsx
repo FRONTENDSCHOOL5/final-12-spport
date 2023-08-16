@@ -74,7 +74,7 @@ const Container = styled.div`
   gap: 6px;
   background-color: var(--color-bg);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1246px) {
     padding-left: 60px;
   }
 `;
@@ -96,6 +96,7 @@ const AlbumFeed = styled.ul`
   justify-content: flex-start; /* 이미지 왼쪽부터 배치 */
   li {
     border: 0.5px solid #c4c4c4;
+    line-height: 0;
     button {
       position: relative;
       .albumThumbnail {

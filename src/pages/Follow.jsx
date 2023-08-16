@@ -11,8 +11,12 @@ const MainStyle = styled.main`
   padding: 50px 0 60px;
   height: 100%;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1246px) {
     margin-left: 60px;
+  }
+
+  @media screen and (min-width: 1247px) {
+    margin-left: 200px;
   }
 `;
 
