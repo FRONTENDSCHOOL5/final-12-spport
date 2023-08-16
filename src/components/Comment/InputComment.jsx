@@ -15,6 +15,7 @@ export const InputCommentStyle = styled.form`
   gap: 10px;
   border-top: 0.5px solid var(--color-maingrey);
   background: white;
+  width: 100%;
 
   .inp-comment {
     width: calc(100% - 100px);
