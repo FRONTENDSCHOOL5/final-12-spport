@@ -20,7 +20,7 @@ const PostSectionStyle = styled.section`
 
 export default function Post() {
   const { id } = useParams();
-  const [post, isPostLoading, isPostError] = usePostQuery(id);
+  const [post, isPostLoading, isPostError, postRefetch] = usePostQuery(id);
   const [comment, isCommentLoading, isCommentError] = useCommentQuery(id);
   const navigate = useNavigate();
 
@@ -29,6 +29,10 @@ export default function Post() {
       navigate('/error');
     }
   }, []);
+
+  useEffect(() => {
+    postRefetch();
+  }, [id]);
 
   return (
     <>

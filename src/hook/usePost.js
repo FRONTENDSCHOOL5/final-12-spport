@@ -11,7 +11,11 @@ function useFeedQuery() {
     queryFn: () => getFeed(),
   });
 
-  return [feedQuery.data, feedQuery.isLoading, feedQuery.isError];
+  return {
+    feed: feedQuery.data,
+    isFeedLoading: feedQuery.isLoading,
+    isFeedError: feedQuery.isError,
+  };
 }
 
 function usePostQuery(post_id) {
@@ -23,7 +27,12 @@ function usePostQuery(post_id) {
     queryKey: ['postdetail'],
     queryFn: () => getPostDetail(),
   });
-  return [postQuery.data, postQuery.isLoading, postQuery.isError];
+  return [
+    postQuery.data,
+    postQuery.isLoading,
+    postQuery.isError,
+    postQuery.refetch,
+  ];
 }
 
 function useDeletePostMutation(post_id) {
@@ -34,7 +43,7 @@ function useDeletePostMutation(post_id) {
   return useMutation(() => deletePost(), {
     onSuccess: () => {
       queryClient.invalidateQueries({
-        queryKey: ['postDetail'],
+        queryKey: ['userPost'],
         refetchType: 'active',
       });
     },
