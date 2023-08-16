@@ -15,6 +15,14 @@ const FeedFilterStyle = styled.div`
     padding: 5px 6px;
     background: var(--color-bg);
     border-radius: 50px;
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+      border: 1px solid var(--color-lightgrey);
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
   }
   .toggle-track:before {
     content: '';
