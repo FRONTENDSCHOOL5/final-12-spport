@@ -75,8 +75,10 @@ export default function TeamProfile({ profile, game }) {
             active={isFollow}
           />
         </CommonProfile>
-        <BtnPlayer onClick={handlePlayerList}>선수보러가기</BtnPlayer>
-        <SectionGameStyle className='section-game'>
+        <BtnPlayer id='player' onClick={handlePlayerList}>
+          선수보러가기
+        </BtnPlayer>
+        <SectionGameStyle id='games' className='section-game'>
           <h2>경기 일정</h2>
           <GameList games={game} />
         </SectionGameStyle>

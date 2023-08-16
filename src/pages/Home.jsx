@@ -12,13 +12,35 @@ const FullSection = styled.main`
   height: 100%;
   background: white;
 `;
-
+const SkipNavStyle = styled.div`
+  a {
+    z-index: 99999;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background: #000;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+    padding: 0 15px;
+    font-weight: bolder;
+  }
+  a:focus,
+  a:active {
+    top: 0;
+  }
+`;
 export default function Home(props) {
   const [filterClick, setFilterClick] = useState(false);
-  const {feed, isFeedLoading, isFeedError} = useFeedQuery();
+  const { feed, isFeedLoading, isFeedError } = useFeedQuery();
 
   return (
     <>
+      <SkipNavStyle>
+        <a href='#feed'>게시글 바로가기</a>
+        <a href='#nav-홈'>네비게이션바 바로가기</a>
+      </SkipNavStyle>
       <Header main setFilterClick={setFilterClick} />
       <FullSection>
         <h1 className='a11y-hidden'>피드</h1>

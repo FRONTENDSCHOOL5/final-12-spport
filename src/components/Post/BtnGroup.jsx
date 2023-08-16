@@ -12,15 +12,9 @@ const BtnWrapperStyle = styled.div`
   text-align: start;
   display: flex;
   gap: 18px;
-  .btn-like {
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    img {
-      margin-right: 6px;
-    }
-  }
-  .btn-comment {
+  line-height: normal;
+  .btn-like,
+  .comment {
     font-size: 12px;
     display: flex;
     align-items: center;
@@ -64,10 +58,10 @@ export default function BtnGroup({
         <span className='num-like'>{likeCount}</span>
       </button>
       <Link to={`/post/${id}`}>
-        <button type='button' className='btn-comment'>
+        <div className='comment'>
           <img src={iconMessage} alt='댓글 달기 버튼' />
           <span className='num-comment'>{commentCount}</span>
-        </button>
+        </div>
       </Link>
     </BtnWrapperStyle>
   );
