@@ -27,7 +27,12 @@ const MainStyle = styled.main`
   }
 
   @media screen and (min-width: 768px) {
+    padding-top: 0;
     margin-left: 60px;
+  }
+
+  @media screen and (min-width: 1247px) {
+    margin-left: 200px;
   }
 `;
 
