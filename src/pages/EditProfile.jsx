@@ -9,6 +9,7 @@ import { useRecoilValue, useRecoilState } from 'recoil';
 import { userToken, accountname, userimage } from '../atom/loginAtom';
 import { isModalOpen, modalItems } from '../atom/modalAtom';
 import tokenData from '../assets/data/sport_users.json';
+import { Helmet } from 'react-helmet-async';
 
 export default function EditProfile() {
   const URL = 'https://api.mandarin.weniv.co.kr';
@@ -217,6 +218,9 @@ export default function EditProfile() {
 
   return (
     <>
+      <Helmet>
+        <title>프로필 수정 • Spport</title>
+      </Helmet>
       <Header
         upload
         uploadText='저장'
