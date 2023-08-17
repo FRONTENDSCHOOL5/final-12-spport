@@ -81,7 +81,7 @@ export default function Header({
   const [userImage, setUserImage] = useRecoilState(userimage);
 
   const handleBackClick = () => {
-      navigate(-1);
+    navigate(-1);
   };
   const handleSearchClick = () => {
     navigate('/search');

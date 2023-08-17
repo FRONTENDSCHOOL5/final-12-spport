@@ -27,12 +27,12 @@ export default function Follow() {
   const location = useLocation();
   const path = location.pathname.split('/')[3];
   const navigate = useNavigate();
-  const {follower, isFollowerLoading, isFollowerError} = useFollowerQuery(id);
-  const {following, isFollowingLoading, isFollowingError} =
+  const { follower, isFollowerLoading, isFollowerError } = useFollowerQuery(id);
+  const { following, isFollowingLoading, isFollowingError } =
     useFollowingQuery(id);
 
   useEffect(() => {
-    if(isFollowerError || isFollowingError) {
+    if (isFollowerError || isFollowingError) {
       navigate('/error');
     }
   }, [isFollowerError, isFollowingError]);

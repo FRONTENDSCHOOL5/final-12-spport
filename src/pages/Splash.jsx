@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import fullLogo from '../assets/logo/full-logo.svg';
-import { ImageLogoDiv } from '../pages/Welcome';
+import { ImageLogoDiv } from './Welcome';
 import styled, { keyframes } from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 

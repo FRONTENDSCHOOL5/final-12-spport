@@ -38,8 +38,10 @@ const MainStyle = styled.main`
 
 export default function Schedule() {
   const { id } = useParams();
-  const { product, isProductLoading, isProductError } =
-    useProductQuery(id, true);
+  const { product, isProductLoading, isProductError } = useProductQuery(
+    id,
+    true,
+  );
 
   return (
     <>
@@ -55,10 +57,10 @@ export default function Schedule() {
         <section className='section-game'>
           {isProductError && (
             <Empty
-            message='정보를 가져오는데 실패했습니다.'
-            btnText='새로고침'
-            link={`/schedule/${id}`}
-          />
+              message='정보를 가져오는데 실패했습니다.'
+              btnText='새로고침'
+              link={`/schedule/${id}`}
+            />
           )}
           {!isProductLoading && product.length === 0 && (
             <Empty

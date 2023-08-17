@@ -21,8 +21,8 @@ const PostSectionStyle = styled.section`
 
 export default function Post() {
   const { id } = useParams();
-  const {post, isPostLoading, isPostError} = usePostQuery(id);
-  const {comment, isCommentLoading, isCommentError} = useCommentQuery(id);
+  const { post, isPostLoading, isPostError } = usePostQuery(id);
+  const { comment, isCommentLoading, isCommentError } = useCommentQuery(id);
   const navigate = useNavigate();
 
   useEffect(() => {

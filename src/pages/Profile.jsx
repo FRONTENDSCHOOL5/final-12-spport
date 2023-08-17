@@ -51,14 +51,11 @@ export default function Profile() {
   const { id } = useParams();
   const isTeam = id.startsWith('SPORT_');
   const [username, setUsername] = useRecoilState(accountname);
-  const { profile, isProfileLoading, isProfileError } =
-    useProfileQuery(id);
+  const { profile, isProfileLoading, isProfileError } = useProfileQuery(id);
   const { post, isPostLoading, isPostError } = isTeam
     ? useTeamPostQuery(id)
     : useUserPostQuery(id);
-  const { product, isProductLoading, isProductError } =
-    useProductQuery(id);
-
+  const { product, isProductLoading, isProductError } = useProductQuery(id);
 
   return (
     <>
@@ -85,12 +82,13 @@ export default function Profile() {
       </SkipNavStyle>
       <Header text />
       <MainStyle>
-        {(isProfileError || isPostError || isProductError) &&
-          (<Empty
-              message='데이터를 받아오는데 실패했습니다.'
-              btnText='새로고침'
-              link={`/profile/${id}`}
-            />)}
+        {(isProfileError || isPostError || isProductError) && (
+          <Empty
+            message='데이터를 받아오는데 실패했습니다.'
+            btnText='새로고침'
+            link={`/profile/${id}`}
+          />
+        )}
         {isProfileLoading && isTeam && <TeamProfileLoader />}
         {!isProfileLoading &&
           !isPostLoading &&
