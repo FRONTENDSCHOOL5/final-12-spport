@@ -54,12 +54,7 @@ export default function Post() {
             </PostSectionStyle>
             <section>
               <h2 className='a11y-hidden'>댓글 목록</h2>
-              {comment.comments.length > 0 && (
-                <CommentList
-                  comments={comment.comments}
-                  post_id={post.post.id}
-                />
-              )}
+              <CommentList comments={comment.comments} post_id={post.post.id} />
             </section>
           </>
         )}
