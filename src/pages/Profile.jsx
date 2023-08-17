@@ -11,6 +11,7 @@ import {
   useTeamPostQuery,
   useUserPostQuery,
 } from '../hook/useProfile';
+import { useProductQuery } from '../hook/useProduct';
 import { useRecoilState } from 'recoil';
 import { accountname } from '../atom/loginAtom';
 import UserProfileLoader from '../components/Skeleton/UserProfileLoader';
@@ -54,17 +55,14 @@ export default function Profile() {
   const { post, isPostLoading, isPostError, postRefetch } = isTeam
     ? useTeamPostQuery(id)
     : useUserPostQuery(id);
+  const { product, isProductLoading, isProductError, productRefetch } =
+    useProductQuery(id);
 
   useEffect(() => {
-    if (!isPostLoading) {
-      profileRefetch();
-    }
-    if (!isPostLoading) {
-      postRefetch();
-    }
+    profileRefetch();
+    postRefetch();
+    productRefetch();
   }, [id]);
-
-  console.log(isPostLoading, post);
 
   return (
     <>
@@ -91,12 +89,21 @@ export default function Profile() {
         {isProfileLoading && !isTeam && <UserProfileLoader />}
         {!isProfileLoading &&
           !isPostLoading &&
+          !isProductLoading &&
           !isTeam &&
           profile.profile.length !== 0 &&
           (username === profile.profile.accountname ? (
-            <MyProfile profile={profile.profile} post={post.post} />
+            <MyProfile
+              profile={profile.profile}
+              post={post.post}
+              product={product}
+            />
           ) : (
-            <UserProfile profile={profile.profile} post={post.post} />
+            <UserProfile
+              profile={profile.profile}
+              post={post.post}
+              product={product}
+            />
           ))}
       </MainStyle>
       <NavBar />

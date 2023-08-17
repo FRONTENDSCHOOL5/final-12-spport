@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
 import Header from '../components/Common/Header/Header';
 import NavBar from '../components/Common/NavBar';
 import styled from 'styled-components';
-import { getProductAPI } from '../api/AddProductAPI';
 import Empty from '../components/Common/Empty';
 import GameGrid from '../components/List/CardGrid';
 import { useParams } from 'react-router-dom';
 import CardLoader from '../components/Skeleton/CardLoader';
+import { useProductQuery } from '../hook/useProduct';
+import { useEffect } from 'react';
 
 const MainStyle = styled.main`
   padding: 50px 0 60px;
@@ -37,19 +37,13 @@ const MainStyle = styled.main`
 `;
 
 export default function Schedule() {
-  const [isLoad, setIsLoad] = useState(false);
-  const [game, setGame] = useState([]);
   const { id } = useParams();
+  const { product, isProductLoading, isProductError, productRefetch } =
+    useProductQuery(id, true);
 
   useEffect(() => {
-    const getData = async () => {
-      setIsLoad(true);
-      const plan = await getProductAPI(id);
-      setGame(plan);
-      setIsLoad(false);
-    };
-    getData();
-  }, []);
+    productRefetch();
+  }, [id]);
 
   return (
     <>
@@ -60,14 +54,14 @@ export default function Schedule() {
           <h2>직관 일정</h2>
         </section>
         <section className='section-game'>
-          {!isLoad && game.length === 0 && (
+          {!isProductLoading && product.length === 0 && (
             <Empty
               message='직관 일정을 추가해보세요'
               btnText='추가하기'
               link='/addgame'
             />
           )}
-          {isLoad ? <CardLoader /> : <GameGrid games={game} />}
+          {isProductLoading ? <CardLoader /> : <GameGrid games={product} />}
         </section>
       </MainStyle>
       <NavBar />

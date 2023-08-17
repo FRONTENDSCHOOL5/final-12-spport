@@ -4,9 +4,9 @@ import iconFillHeart from '../../assets/image/icon-heart-fill.svg';
 import iconMessage from '../../assets/image/icon-message-small.svg';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { likeGameAPI, unlikeGameAPI } from '../../api/GameAPI/LikeGameAPI';
 import { useRecoilState } from 'recoil';
 import { accountname } from '../../atom/loginAtom';
+import { useLikeMutation, useUnlikeMutation } from '../../hook/useLike';
 
 const BtnWrapperStyle = styled.div`
   text-align: start;
@@ -35,18 +35,18 @@ export default function BtnGroup({
   const [isLike, setIsLike] = useState(hearted);
   const [likeCount, setLikeCount] = useState(heartCount);
   const [accountName, setAccountName] = useRecoilState(accountname);
+  const useLikeMutate = useLikeMutation(setIsLike, setLikeCount);
+  const useUnlikeMutate = useUnlikeMutation(
+    accountName,
+    setIsLike,
+    setLikeCount,
+  );
 
   const handleLikeClick = async () => {
     if (isLike) {
-      console.log('unlike');
-      const unlike = await unlikeGameAPI([id], isTeam, accountName);
-      setIsLike(unlike[0].post.hearted);
-      setLikeCount(unlike[0].post.heartCount);
+      useUnlikeMutate.mutate({ ids: [id], isTeam: isTeam });
     } else {
-      console.log('like');
-      const like = await likeGameAPI([id], isTeam, post);
-      setIsLike(like[0].post.hearted);
-      setLikeCount(like[0].post.heartCount);
+      useLikeMutate.mutate({ ids: [id], isTeam: isTeam, post: post });
     }
   };
 

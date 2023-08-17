@@ -24,7 +24,7 @@ function usePostQuery(post_id) {
   };
 
   const postQuery = useQuery({
-    queryKey: ['postdetail'],
+    queryKey: ['postDetail'],
     queryFn: () => getPostDetail(),
   });
   return [
