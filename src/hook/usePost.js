@@ -1,5 +1,10 @@
 import { DELETE_API, GET_API, POST_API } from '../api/CommonAPI';
-import { useQuery, useMutation, useQueryClient } from 'react-query';
+import {
+  useQuery,
+  useLazyQuery,
+  useMutation,
+  useQueryClient,
+} from 'react-query';
 
 function useFeedQuery() {
   const getFeed = async () => {
@@ -27,12 +32,13 @@ function usePostQuery(post_id) {
     queryKey: ['postDetail'],
     queryFn: () => getPostDetail(),
   });
-  return [
-    postQuery.data,
-    postQuery.isLoading,
-    postQuery.isError,
-    postQuery.refetch,
-  ];
+
+  return {
+    post: postQuery.data,
+    isPostLoading: postQuery.isLoading,
+    isPostError: postQuery.isError,
+    postRefetch: postQuery.refetch,
+  };
 }
 
 function useDeletePostMutation(post_id) {

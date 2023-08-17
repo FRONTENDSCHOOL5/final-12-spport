@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import CommentList from '../components/Comment/CommentList';
 import PostDetail from '../components/Post/Post';
@@ -21,8 +21,9 @@ const PostSectionStyle = styled.section`
 
 export default function Post() {
   const { id } = useParams();
-  const [post, isPostLoading, isPostError, postRefetch] = usePostQuery(id);
+  const {post, isPostLoading, isPostError, postRefetch} = usePostQuery(id);
   const [comment, isCommentLoading, isCommentError] = useCommentQuery(id);
+  const [isFetch, setIsFetch] = useState(true);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -32,14 +33,20 @@ export default function Post() {
   }, []);
 
   useEffect(() => {
-    postRefetch();
+    const refetch = async () => {
+      setIsFetch(false);
+      const data = await postRefetch();
+      setIsFetch(true);
+      return data;
+    };
+    refetch();
   }, [id]);
 
   return (
     <>
       <Header text />
       <MainStyle>
-        {isPostLoading || isCommentLoading ? (
+        {isPostLoading || isCommentLoading || !isFetch ? (
           <PostDetailLoader />
         ) : (
           <>
