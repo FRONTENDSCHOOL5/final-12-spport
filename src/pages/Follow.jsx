@@ -32,7 +32,7 @@ export default function Follow() {
 
   return (
     <>
-      <Header text />
+      <Header text={path === 'follower' ? 'followers' : 'followings'} />
       <MainStyle>
         {path === 'follower'
           ? !isFollowerLoading && <Followers follower={follower} />
