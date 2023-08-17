@@ -6,11 +6,17 @@ const SearchBoxStyle = styled.form`
   width: 100vw;
 
   @media screen and (min-width: 768px) and (max-width: 1256px) {
-    margin-left: 20px;
+    margin-left: 30px;
+    .inp-search {
+      border: 1px solid var(--color-lightgrey);
+    }
   }
 
   @media screen and (min-width: 1247px) {
-    margin-left: 160px;
+    margin-left: 170px;
+    .inp-search {
+      border: 1px solid var(--color-lightgrey);
+    }
   }
   .inp-search {
     font-size: 14px;

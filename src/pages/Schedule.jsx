@@ -54,7 +54,7 @@ export default function Schedule() {
   return (
     <>
       <h1 className='a11y-hidden'>직관일정 전체보기</h1>
-      <Header />
+      <Header text />
       <MainStyle>
         <section className='section-header'>
           <h2>직관 일정</h2>

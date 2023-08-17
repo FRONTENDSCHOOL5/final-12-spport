@@ -5,7 +5,6 @@ import Header from '../components/Common/Header/Header';
 import PostList from '../components/Post/PostList';
 import Empty from '../components/Common/Empty';
 import PostLoader from '../components/Skeleton/PostLoader';
-import FeedFilter from '../components/Common/Filter/FeedFilter';
 import { useFeedQuery } from '../hook/usePost';
 
 const FullSection = styled.main`
@@ -19,12 +18,6 @@ const FullSection = styled.main`
 
   @media screen and (min-width: 1247px) {
     margin-left: 200px;
-  }
-`;
-
-const FeedFilterWrapper = styled.div`
-  @media screen and (max-width: 767px) {
-    display: none;
   }
 `;
 
@@ -60,9 +53,6 @@ export default function Home(props) {
       </SkipNavStyle>
       <Header main setFilterClick={setFilterClick} />
       <FullSection>
-        <FeedFilterWrapper>
-          <FeedFilter setFilterClick={setFilterClick} />
-        </FeedFilterWrapper>
         <h1 className='a11y-hidden'>피드</h1>
         {isFeedError && (
           <Empty

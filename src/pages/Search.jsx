@@ -10,6 +10,14 @@ import Empty from '../components/Common/Empty';
 
 const MainStyle = styled.main`
   height: 100%;
+
+  @media screen and (min-width: 768px) and (max-width: 1256px) {
+    margin-left: 60px;
+  }
+
+  @media screen and (min-width: 1247px) {
+    margin-left: 200px;
+  }
 `;
 
 export default function Search() {
