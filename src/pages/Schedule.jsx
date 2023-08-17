@@ -6,7 +6,6 @@ import GameGrid from '../components/List/CardGrid';
 import { useParams } from 'react-router-dom';
 import CardLoader from '../components/Skeleton/CardLoader';
 import { useProductQuery } from '../hook/useProduct';
-import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 
 const MainStyle = styled.main`
@@ -39,12 +38,8 @@ const MainStyle = styled.main`
 
 export default function Schedule() {
   const { id } = useParams();
-  const { product, isProductLoading, isProductError, productRefetch } =
+  const { product, isProductLoading, isProductError } =
     useProductQuery(id, true);
-
-  useEffect(() => {
-    productRefetch();
-  }, [id]);
 
   return (
     <>
@@ -58,6 +53,13 @@ export default function Schedule() {
           <h2>직관 일정</h2>
         </section>
         <section className='section-game'>
+          {isProductError && (
+            <Empty
+            message='정보를 가져오는데 실패했습니다.'
+            btnText='새로고침'
+            link={`/schedule/${id}`}
+          />
+          )}
           {!isProductLoading && product.length === 0 && (
             <Empty
               message='직관 일정을 추가해보세요'

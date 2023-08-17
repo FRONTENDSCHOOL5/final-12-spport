@@ -86,6 +86,13 @@ export default function AddGame() {
         </section>
         <section className='section-game'>
           {isGameLoading && <GameLoader />}
+          {isGameError && (
+            <Empty
+              message='정보를 가져오는데 실패했습니다.'
+              btnText='새로고침'
+              link='/addgame'
+            />
+          )}
           {!isGameLoading && filterGame.length === 0 && (
             <Empty
               message='관심있는 스포츠 팀을 팔로우 해보세요!'

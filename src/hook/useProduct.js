@@ -7,7 +7,7 @@ function useProductQuery(accountname, all = false) {
     return await GET_API(`/product/${accountname}/?limit=Number`);
   };
   const { data, isLoading, isError, refetch } = useQuery({
-    queryKey: ['product'],
+    queryKey: ['product', accountname],
     queryFn: () => getProduct(),
   });
 

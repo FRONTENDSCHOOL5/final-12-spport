@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import CommentList from '../components/Comment/CommentList';
 import PostDetail from '../components/Post/Post';
@@ -22,7 +22,7 @@ const PostSectionStyle = styled.section`
 export default function Post() {
   const { id } = useParams();
   const {post, isPostLoading, isPostError} = usePostQuery(id);
-  const [comment, isCommentLoading, isCommentError] = useCommentQuery(id);
+  const {comment, isCommentLoading, isCommentError} = useCommentQuery(id);
   const navigate = useNavigate();
 
   useEffect(() => {

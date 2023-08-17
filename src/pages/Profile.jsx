@@ -6,6 +6,7 @@ import MyProfile from '../components/Profile/MyProfile';
 import UserProfile from '../components/Profile/UserProfile';
 import TeamProfile from '../components/Profile/TeamProfile';
 import NavBar from '../components/Common/NavBar';
+import Empty from '../components/Common/Empty';
 import {
   useProfileQuery,
   useTeamPostQuery,
@@ -50,20 +51,14 @@ export default function Profile() {
   const { id } = useParams();
   const isTeam = id.startsWith('SPORT_');
   const [username, setUsername] = useRecoilState(accountname);
-  const navigate = useNavigate();
-  const { profile, isProfileLoading, isProfileError, profileRefetch } =
+  const { profile, isProfileLoading, isProfileError } =
     useProfileQuery(id);
-  const { post, isPostLoading, isPostError, postRefetch } = isTeam
+  const { post, isPostLoading, isPostError } = isTeam
     ? useTeamPostQuery(id)
     : useUserPostQuery(id);
-  const { product, isProductLoading, isProductError, productRefetch } =
+  const { product, isProductLoading, isProductError } =
     useProductQuery(id);
 
-  useEffect(() => {
-    profileRefetch();
-    postRefetch();
-    productRefetch();
-  }, [id]);
 
   return (
     <>
@@ -90,7 +85,12 @@ export default function Profile() {
       </SkipNavStyle>
       <Header text />
       <MainStyle>
-        {/* {isProfileError && <Error/>} */}
+        {(isProfileError || isPostError || isProductError) &&
+          (<Empty
+              message='데이터를 받아오는데 실패했습니다.'
+              btnText='새로고침'
+              link={`/profile/${id}`}
+            />)}
         {isProfileLoading && isTeam && <TeamProfileLoader />}
         {!isProfileLoading &&
           !isPostLoading &&

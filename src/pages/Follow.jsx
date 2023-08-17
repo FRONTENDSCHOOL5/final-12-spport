@@ -1,5 +1,5 @@
-import React from 'react';
-import { useParams, useLocation } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useParams, useLocation, useNavigate } from 'react-router-dom';
 import Header from '../components/Common/Header/Header';
 import NavBar from '../components/Common/NavBar';
 import styled from 'styled-components';
@@ -26,9 +26,16 @@ export default function Follow() {
   const { id } = useParams();
   const location = useLocation();
   const path = location.pathname.split('/')[3];
-  const [follower, isFollowerLoading, isFollowerError] = useFollowerQuery(id);
-  const [following, isFollowingLoading, isFollowingError] =
+  const navigate = useNavigate();
+  const {follower, isFollowerLoading, isFollowerError} = useFollowerQuery(id);
+  const {following, isFollowingLoading, isFollowingError} =
     useFollowingQuery(id);
+
+  useEffect(() => {
+    if(isFollowerError || isFollowingError) {
+      navigate('/error');
+    }
+  }, [isFollowerError, isFollowingError]);
 
   return (
     <>
