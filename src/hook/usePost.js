@@ -29,7 +29,7 @@ function usePostQuery(post_id) {
   };
 
   const postQuery = useQuery({
-    queryKey: ['postDetail'],
+    queryKey: ['postDetail', post_id],
     queryFn: () => getPostDetail(),
   });
 
@@ -37,7 +37,6 @@ function usePostQuery(post_id) {
     post: postQuery.data,
     isPostLoading: postQuery.isLoading,
     isPostError: postQuery.isError,
-    postRefetch: postQuery.refetch,
   };
 }
 

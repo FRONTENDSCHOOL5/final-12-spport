@@ -21,32 +21,21 @@ const PostSectionStyle = styled.section`
 
 export default function Post() {
   const { id } = useParams();
-  const {post, isPostLoading, isPostError, postRefetch} = usePostQuery(id);
+  const {post, isPostLoading, isPostError} = usePostQuery(id);
   const [comment, isCommentLoading, isCommentError] = useCommentQuery(id);
-  const [isFetch, setIsFetch] = useState(true);
   const navigate = useNavigate();
 
   useEffect(() => {
     if (isPostError || isCommentError) {
       navigate('/error');
     }
-  }, []);
-
-  useEffect(() => {
-    const refetch = async () => {
-      setIsFetch(false);
-      const data = await postRefetch();
-      setIsFetch(true);
-      return data;
-    };
-    refetch();
-  }, [id]);
+  }, [isPostError, isCommentError]);
 
   return (
     <>
       <Header text />
       <MainStyle>
-        {isPostLoading || isCommentLoading || !isFetch ? (
+        {isPostLoading || isCommentLoading ? (
           <PostDetailLoader />
         ) : (
           <>
