@@ -7,6 +7,7 @@ import styled from 'styled-components';
 import { PostDetailLoader } from '../components/Skeleton/PostLoader';
 import { usePostQuery } from '../hook/usePost';
 import { useCommentQuery } from '../hook/useComment';
+import NavBar from '../components/Common/NavBar';
 
 const MainStyle = styled.main`
   height: 100%;
@@ -53,16 +54,12 @@ export default function Post() {
             </PostSectionStyle>
             <section>
               <h2 className='a11y-hidden'>댓글 목록</h2>
-              {comment.comments.length > 0 && (
-                <CommentList
-                  comments={comment.comments}
-                  post_id={post.post.id}
-                />
-              )}
+              <CommentList comments={comment.comments} post_id={post.post.id} />
             </section>
           </>
         )}
       </MainStyle>
+      <NavBar />
     </>
   );
 }

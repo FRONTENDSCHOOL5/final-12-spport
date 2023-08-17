@@ -40,7 +40,15 @@ const HeaderStyle = styled.header`
   }
 
   @media screen and (min-width: 768px) {
-    display: ${(props) => (props.search || props.upload ? 'flex' : 'none')};
+    display: ${(props) => (props.text ? 'none' : 'flex')};
+    background: ${(props) =>
+      !props.text && !props.main && !props.search
+        ? 'var(--color-navy)'
+        : 'transparent'};
+    .header-title,
+    .btn-search {
+      display: none;
+    }
   }
 `;
 
@@ -123,7 +131,7 @@ export default function Header({
   };
 
   return (
-    <HeaderStyle search={search} upload={upload}>
+    <HeaderStyle text={text} search={search} main={main}>
       {main || (
         <button className='btn-back' type='button' onClick={handleBackClick}>
           <img src={iconBack} alt='뒤로 가기' />

@@ -13,10 +13,12 @@ const MainStyle = styled.main`
 
   @media screen and (min-width: 768px) and (max-width: 1246px) {
     margin-left: 60px;
+    padding-top: 0;
   }
 
   @media screen and (min-width: 1247px) {
     margin-left: 200px;
+    padding-top: 0;
   }
 `;
 
@@ -30,7 +32,7 @@ export default function Follow() {
 
   return (
     <>
-      <Header text />
+      <Header text={path === 'follower' ? 'followers' : 'followings'} />
       <MainStyle>
         {path === 'follower'
           ? !isFollowerLoading && <Followers follower={follower} />

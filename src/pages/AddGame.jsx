@@ -8,6 +8,7 @@ import { getTeamName, filterGameInfo } from '../util/gameUtil';
 import Empty from '../components/Common/Empty';
 import GameLoader from '../components/Skeleton/GameLoader';
 import useGameQuery from '../hook/useGame';
+import { Helmet } from 'react-helmet-async';
 
 const MainStyle = styled.main`
   padding: 50px 0 60px;
@@ -31,12 +32,12 @@ const MainStyle = styled.main`
 
   @media screen and (min-width: 768px) and (max-width: 1246px) {
     margin-left: 60px;
-    padding-top: 15px;
+    padding-top: 0;
   }
 
   @media screen and (min-width: 1247px) {
     margin-left: 200px;
-    padding-top: 15px;
+    padding-top: 0;
   }
 `;
 
@@ -62,6 +63,9 @@ export default function AddGame() {
 
   return (
     <>
+      <Helmet>
+        <title>일정 추가 • Spport</title>
+      </Helmet>
       <h1 className='a11y-hidden'>일정 추가</h1>
       <Header text='일정 추가' />
       <MainStyle>

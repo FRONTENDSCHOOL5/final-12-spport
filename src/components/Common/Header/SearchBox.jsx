@@ -6,11 +6,17 @@ const SearchBoxStyle = styled.form`
   width: 100vw;
 
   @media screen and (min-width: 768px) and (max-width: 1256px) {
-    margin-left: 20px;
+    margin-left: 30px;
+    .inp-search {
+      border: 1px solid var(--color-lightgrey);
+    }
   }
 
   @media screen and (min-width: 1247px) {
-    margin-left: 160px;
+    margin-left: 170px;
+    .inp-search {
+      border: 1px solid var(--color-lightgrey);
+    }
   }
   .inp-search {
     font-size: 14px;
@@ -31,13 +37,6 @@ export default function SearchBox() {
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    // 입력된 값이 빈칸이면
-    if (e === '') {
-      return false;
-    } else {
-      navigate(`/search/${keyword}`);
-      setKeyword(keyword);
-    }
   };
 
   const handleInputChange = (e) => {
@@ -47,13 +46,14 @@ export default function SearchBox() {
 
   useEffect(() => {
     // +
-    // 입력한 대로 바로 검색되도록
+    // 입력하고 잠시 뒤 검색되도록
     const debounce = setTimeout(() => {
-      if (keyword) {
-        navigate(`/search/${keyword}`);
-      }
-      if (keyword === '') {
+      // 글자수가 3자 이상일 때만 검색되도록
+      if (keyword === '' || keyword.length < 3) {
         navigate('/search');
+      }
+      if (keyword.length >= 3) {
+        navigate(`/search/${keyword}`);
       }
     }, 300);
     return () => {

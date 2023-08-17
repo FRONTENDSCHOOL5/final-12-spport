@@ -9,6 +9,7 @@ import { userimage } from '../atom/loginAtom';
 import { useRecoilState } from 'recoil';
 import { isModalOpen, modalItems } from '../atom/modalAtom';
 import iconClose from '../assets/image/icon-close.svg';
+import { Helmet } from 'react-helmet-async';
 
 const USection = styled.section`
   padding: 70px 20px;
@@ -232,6 +233,9 @@ export default function EditPost(props) {
   //렌더링
   return (
     <>
+      <Helmet>
+        <title>게시글 작성 • Spport</title>
+      </Helmet>
       <Header upload onUploadClick={handleSubmitModify} disabled={isReady} />
       <USection>
         <section className='form-wrapper'>

@@ -7,6 +7,7 @@ import { useParams } from 'react-router-dom';
 import CardLoader from '../components/Skeleton/CardLoader';
 import { useProductQuery } from '../hook/useProduct';
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const MainStyle = styled.main`
   padding: 50px 0 60px;
@@ -47,8 +48,11 @@ export default function Schedule() {
 
   return (
     <>
+      <Helmet>
+        <title>직관 일정 • Spport</title>
+      </Helmet>
       <h1 className='a11y-hidden'>직관일정 전체보기</h1>
-      <Header />
+      <Header text />
       <MainStyle>
         <section className='section-header'>
           <h2>직관 일정</h2>
