@@ -10,6 +10,7 @@ import { useRecoilState } from 'recoil';
 import { isModalOpen, modalItems } from '../atom/modalAtom';
 import iconClose from '../assets/image/icon-close.svg';
 import imageCompression from 'browser-image-compression';
+import { Helmet } from 'react-helmet-async';
 
 const USection = styled.section`
   padding: 70px 20px;
@@ -214,6 +215,9 @@ export default function Upload(props) {
   //렌더링
   return (
     <>
+      <Helmet>
+        <title>게시글 작성 • Spport</title>
+      </Helmet>
       <Header upload onUploadClick={handleSubmit} disabled={isReady} />
       <USection>
         <h1 className='a11y-hidden'>게시글 작성 페이지</h1>

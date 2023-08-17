@@ -8,6 +8,7 @@ import { getGameInfo } from '../api/GameAPI/AddGameAPI';
 import { getTeamName, filterGameInfo } from '../util/gameUtil';
 import Empty from '../components/Common/Empty';
 import GameLoader from '../components/Skeleton/GameLoader';
+import { Helmet } from 'react-helmet-async';
 
 const MainStyle = styled.main`
   padding: 50px 0 60px;
@@ -70,6 +71,9 @@ export default function AddGame() {
 
   return (
     <>
+      <Helmet>
+        <title>일정 추가 • Spport</title>
+      </Helmet>
       <h1 className='a11y-hidden'>일정 추가</h1>
       <Header text='일정 추가' />
       <MainStyle>

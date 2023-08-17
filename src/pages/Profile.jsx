@@ -15,6 +15,7 @@ import { useRecoilState } from 'recoil';
 import { accountname } from '../atom/loginAtom';
 import UserProfileLoader from '../components/Skeleton/UserProfileLoader';
 import TeamProfileLoader from '../components/Skeleton/TeamProfileLoader';
+import { Helmet } from 'react-helmet-async';
 
 const MainStyle = styled.main`
   padding: 50px 0 60px;
@@ -64,10 +65,19 @@ export default function Profile() {
     }
   }, [id]);
 
-  console.log(isPostLoading, post);
-
   return (
     <>
+      {!isProfileLoading && id === profile.profile.accountname && (
+        <Helmet>
+          <title>
+            {profile.profile.username}(@
+            {isTeam
+              ? profile.profile.accountname.slice(9)
+              : profile.profile.accountname}
+            ) • Spport
+          </title>
+        </Helmet>
+      )}
       <SkipNavStyle>
         <a href='#profile'>프로필 바로가기</a>
         <a href={isTeam ? '#player' : '#game-schedule'}>

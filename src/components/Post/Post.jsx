@@ -16,6 +16,7 @@ import {
   useDeletePostMutation,
   useReportPostMutation,
 } from '../../hook/usePost';
+import { Helmet } from 'react-helmet-async';
 
 const PostStyle = styled.article`
   width: 500px;
@@ -45,6 +46,7 @@ export default function Post({ post }) {
     date.slice(5, 7),
   )}월 ${parseInt(date.slice(8))}일`;
   const loca = useLocation().pathname.split('/')[1];
+  const postNum = useLocation().pathname.split('/')[2];
 
   const [accountName, setAccountName] = useRecoilState(accountname);
   const [isBsOpen, setIsBsOpen] = useRecoilState(isBottomSheetOpen);
@@ -104,6 +106,18 @@ export default function Post({ post }) {
 
   return (
     <>
+      {loca === 'post' && postNum === post.id && (
+        <Helmet>
+          <title>
+            {post.content.length === 0
+              ? `@${post.author.accountname}님의 Spport 사진 • ${displayDate}`
+              : post.content.length >= 50
+              ? `${post.content.slice(0, 50)} ... | Spport`
+              : `${post.content} | Spport`}
+          </title>
+        </Helmet>
+      )}
+
       <PostStyle>
         <PostProfile author={post.author} onMoreClick={handleMoreClick} />
         <div className='post-wrapper'>

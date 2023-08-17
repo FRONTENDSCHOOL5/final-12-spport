@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import SelectFilter from '../components/Common/Filter/SelectFilter';
 import bsPlayerData from '../assets/data/baseball_players.json';
 import tokenData from '../assets/data/sport_users.json';
+import { Helmet } from 'react-helmet-async';
 
 export default function PlayerList() {
   const [position, setPosition] = useState([
@@ -35,6 +36,9 @@ export default function PlayerList() {
 
   return (
     <>
+      <Helmet>
+        <title>{matchingTeam} 선수 보러가기 • Spport</title>
+      </Helmet>
       <h1 className='a11y-hidden'>선수 리스트</h1>
       <Header text='선수 리스트' />
       <MainContainer>

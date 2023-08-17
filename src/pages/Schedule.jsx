@@ -7,6 +7,7 @@ import Empty from '../components/Common/Empty';
 import GameGrid from '../components/List/CardGrid';
 import { useParams } from 'react-router-dom';
 import CardLoader from '../components/Skeleton/CardLoader';
+import { Helmet } from 'react-helmet-async';
 
 const MainStyle = styled.main`
   padding: 50px 0 60px;
@@ -53,6 +54,9 @@ export default function Schedule() {
 
   return (
     <>
+      <Helmet>
+        <title>직관 일정 • Spport</title>
+      </Helmet>
       <h1 className='a11y-hidden'>직관일정 전체보기</h1>
       <Header text />
       <MainStyle>
