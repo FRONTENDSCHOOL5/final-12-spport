@@ -20,7 +20,13 @@ const CommentContainerStyle = styled.div`
 `;
 
 const CommentItemStyle = styled.div`
-  margin: 10px 16px;
+  margin: 20px 16px;
+  @media screen and (min-width: 768px) {
+    margin-left: 76px;
+  }
+  @media screen and (min-width: 1247px) {
+    margin-left: 216px;
+  }
 `;
 
 const CommentInputStyle = styled.div`
