@@ -39,16 +39,26 @@ export default function SearchBox() {
     e.preventDefault();
   };
 
+  // +
+  // 엔터 시 포커스 아웃 및 입력단어 유지하고 검색
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 13) {
+      setKeyword(keyword);
+      // 글자 수 상관없이 검색되도록 (데이터 많아서 렉걸리면 빼기)
+      navigate(`/search/${keyword}`);
+      e.target.blur();
+    }
+  };
+
   const handleInputChange = (e) => {
     setKeyword(e.target.value);
-    // navigate(`/search/${keyword}`);
   };
 
   useEffect(() => {
     // +
-    // 입력하고 잠시 뒤 검색되도록
+    // 입력하고 잠시 뒤 검색되도록 (디바운스)
     const debounce = setTimeout(() => {
-      // 글자수가 3자 이상일 때만 검색되도록
+      // 글자수가 3자 이상일 때만 검색되도록 (데이터 양 많아서 임시방책임)
       if (keyword === '' || keyword.length < 3) {
         navigate('/search');
       }
@@ -70,6 +80,7 @@ export default function SearchBox() {
           type='text'
           placeholder='계정 검색'
           onChange={handleInputChange}
+          onKeyDown={handleKeyDown}
           value={keyword}
         />
       </label>
