@@ -20,13 +20,17 @@ const ErrorStyle = styled.main`
   }
 `;
 
-export default function Error() {
+export default function Error({ isLogin }) {
   const navigate = useNavigate();
   return (
     <ErrorStyle>
       <img src={logo404} alt='에러 404' />
       <h1>페이지를 찾을 수 없습니다.</h1>
-      <MButton text='메인 페이지' func={() => navigate('/home')} />
+      {isLogin ? (
+        <MButton text='메인 페이지' func={() => navigate('/home')} />
+      ) : (
+        <MButton text='로그인 페이지' func={() => navigate('/welcome')} />
+      )}
     </ErrorStyle>
   );
 }
