@@ -7,6 +7,15 @@ const UserListStyle = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 60px;
+    padding-top: 20px;
+  }
+
+  @media screen and (min-width: 1247px) {
+    margin-left: 200px;
+  }
 `;
 
 // user-search <ListItem user={user} />
