@@ -36,7 +36,6 @@ const CardStyle = styled.li`
 
 export default function CardListItem({ game }) {
   const game_info = game.itemName.split(',');
-  console.log(game);
   const linkPost = `/post/${game.link.split(',')[0]}`;
   return (
     <CardStyle key={game.id}>

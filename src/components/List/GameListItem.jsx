@@ -2,14 +2,11 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { ProfileImage50 } from '../Common/ProfileImage';
 import SButton from '../Common/Button/SButton';
-import {
-  checkLikeAPI,
-  likeGameAPI,
-  unlikeGameAPI,
-} from '../../api/GameAPI/LikeGameAPI';
 import { accountname } from '../../atom/loginAtom';
 import { useRecoilState } from 'recoil';
 import { isModalOpen, modalItems } from '../../atom/modalAtom';
+import { useLikeMutation, useUnlikeMutation } from '../../hook/useLike';
+import { GET_API } from '../../api/CommonAPI';
 
 const ListItemStyle = styled.li`
   width: 100%;
@@ -48,11 +45,13 @@ export default function GameListItem({ game }) {
   const [accountName, setAccountName] = useRecoilState(accountname);
   const [isModal, setIsModal] = useRecoilState(isModalOpen);
   const [modalItem, setModalItem] = useRecoilState(modalItems);
+  const useLikeMutate = useLikeMutation(setIsLike);
+  const useUnlikeMutate = useUnlikeMutation(accountName, setIsLike);
 
   useEffect(() => {
     const setLike = async () => {
-      const like = await checkLikeAPI(game_id[0]);
-      setIsLike(like);
+      const response = await GET_API(`/post/${game_id[0]}`);
+      setIsLike(response.post.hearted);
     };
     setLike();
   }, []);
@@ -60,9 +59,12 @@ export default function GameListItem({ game }) {
   const likeModal = () => {
     setIsModal(true);
     const likeGame = async () => {
-      const like = await likeGameAPI(game_id, true, game[0], true);
-      setIsLike(like[0].post.hearted);
-      // confirm like
+      await useLikeMutate.mutate({
+        ids: game_id,
+        isTeam: true,
+        post: game[0],
+        isGame: true,
+      });
       setIsModal(true);
       setModalItem(['해당 일정이 추가되었습니다.', '확인', function () {}]);
     };
@@ -72,9 +74,7 @@ export default function GameListItem({ game }) {
   const unlikeModal = () => {
     setIsModal(true);
     const unlikeGame = async () => {
-      const unlike = await unlikeGameAPI(game_id, true, accountName);
-      setIsLike(unlike[0].post.hearted);
-      // confirm unlike
+      await useUnlikeMutate.mutate({ ids: game_id, isTeam: true });
       setIsModal(true);
       setModalItem(['해당 일정이 삭제되었습니다.', '확인', function () {}]);
     };

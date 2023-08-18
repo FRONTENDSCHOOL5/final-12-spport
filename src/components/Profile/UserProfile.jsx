@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate, useParams, Link } from 'react-router-dom';
-import { getProductAPI } from '../../api/AddProductAPI';
 import {
   NoPostStyle,
   LikedGameStyle,
@@ -20,25 +19,15 @@ import IconCamera from '../../assets/image/icon-camera.svg';
 import NoImage from '../../assets/image/noimage.png';
 import { useFollowMutation, useUnfollowMutation } from '../../hook/useFollow';
 
-export default function UserProfile({ profile, post }) {
+export default function UserProfile({ profile, post, product }) {
   const { id } = useParams();
   const navigate = useNavigate();
   const [isFollow, setIsFollow] = useState(profile.isfollow);
   const [numFollower, setNumFollower] = useState(profile.followerCount);
-  const [planGame, setPlanGame] = useState([]);
   const [listType, setListType] = useState('list');
   const gameLink = '/schedule/' + profile.accountname;
   const followMutate = useFollowMutation(id);
   const unfollowMutate = useUnfollowMutation(id);
-
-  // 직관일정, 게시글 데이터 호출
-  useEffect(() => {
-    const getLikedGameData = async () => {
-      const plan = await getProductAPI(id);
-      setPlanGame(plan);
-    };
-    getLikedGameData();
-  }, []);
 
   // 앨범형에 필요한 사진 있는 게시글 필터링
   const albumpost = post.filter((item) => {
@@ -91,13 +80,13 @@ export default function UserProfile({ profile, post }) {
         <h2 id='game-schedule'>
           직관 일정 <Link to={gameLink}>전체보기</Link>
         </h2>
-        {planGame.length === 0 ? (
+        {product.length === 0 ? (
           <div>
             <img src={IconCalendar} alt='' />
             <p>직관일정 없음</p>
           </div>
         ) : (
-          <CardList games={planGame} />
+          <CardList games={product} />
         )}
       </LikedGameStyle>
 

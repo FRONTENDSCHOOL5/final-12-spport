@@ -8,11 +8,15 @@ function useFollowerQuery(accountname) {
     );
   };
 
-  const followerQuery = useQuery({
-    queryKey: ['follower'],
+  const { data, isLoading, isError } = useQuery({
+    queryKey: ['follower', accountname],
     queryFn: () => getFollower(),
   });
-  return [followerQuery.data, followerQuery.isLoading, followerQuery.isError];
+  return {
+    follower: data,
+    isFollowerLoading: isLoading,
+    isFollowerError: isError,
+  };
 }
 
 function useFollowingQuery(accountname) {
@@ -22,15 +26,15 @@ function useFollowingQuery(accountname) {
     );
   };
 
-  const followingQuery = useQuery({
+  const { data, isLoading, isError } = useQuery({
     queryKey: ['following'],
     queryFn: () => getFollowing(),
   });
-  return [
-    followingQuery.data,
-    followingQuery.isLoading,
-    followingQuery.isError,
-  ];
+  return {
+    following: data,
+    isFollowingLoading: isLoading,
+    isFollowingError: isError,
+  };
 }
 
 function useFollowMutation(accountname) {

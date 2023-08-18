@@ -6,11 +6,13 @@ import MyProfile from '../components/Profile/MyProfile';
 import UserProfile from '../components/Profile/UserProfile';
 import TeamProfile from '../components/Profile/TeamProfile';
 import NavBar from '../components/Common/NavBar';
+import Empty from '../components/Common/Empty';
 import {
   useProfileQuery,
   useTeamPostQuery,
   useUserPostQuery,
 } from '../hook/useProfile';
+import { useProductQuery } from '../hook/useProduct';
 import { useRecoilState } from 'recoil';
 import { accountname } from '../atom/loginAtom';
 import UserProfileLoader from '../components/Skeleton/UserProfileLoader';
@@ -49,21 +51,11 @@ export default function Profile() {
   const { id } = useParams();
   const isTeam = id.startsWith('SPORT_');
   const [username, setUsername] = useRecoilState(accountname);
-  const navigate = useNavigate();
-  const { profile, isProfileLoading, isProfileError, profileRefetch } =
-    useProfileQuery(id);
-  const { post, isPostLoading, isPostError, postRefetch } = isTeam
+  const { profile, isProfileLoading, isProfileError } = useProfileQuery(id);
+  const { post, isPostLoading, isPostError } = isTeam
     ? useTeamPostQuery(id)
     : useUserPostQuery(id);
-
-  useEffect(() => {
-    if (!isPostLoading) {
-      profileRefetch();
-    }
-    if (!isPostLoading) {
-      postRefetch();
-    }
-  }, [id]);
+  const { product, isProductLoading, isProductError } = useProductQuery(id);
 
   return (
     <>
@@ -90,7 +82,13 @@ export default function Profile() {
       </SkipNavStyle>
       <Header text />
       <MainStyle>
-        {/* {isProfileError && <Error/>} */}
+        {(isProfileError || isPostError || isProductError) && (
+          <Empty
+            message='데이터를 받아오는데 실패했습니다.'
+            btnText='새로고침'
+            link={`/profile/${id}`}
+          />
+        )}
         {isProfileLoading && isTeam && <TeamProfileLoader />}
         {!isProfileLoading &&
           !isPostLoading &&
@@ -101,12 +99,21 @@ export default function Profile() {
         {isProfileLoading && !isTeam && <UserProfileLoader />}
         {!isProfileLoading &&
           !isPostLoading &&
+          !isProductLoading &&
           !isTeam &&
           profile.profile.length !== 0 &&
           (username === profile.profile.accountname ? (
-            <MyProfile profile={profile.profile} post={post.post} />
+            <MyProfile
+              profile={profile.profile}
+              post={post.post}
+              product={product}
+            />
           ) : (
-            <UserProfile profile={profile.profile} post={post.post} />
+            <UserProfile
+              profile={profile.profile}
+              post={post.post}
+              product={product}
+            />
           ))}
       </MainStyle>
       <NavBar />

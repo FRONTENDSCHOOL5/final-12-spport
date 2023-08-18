@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { useRecoilState } from 'recoil';
+import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import {
   NoPostStyle,
@@ -14,42 +13,17 @@ import CardList from '../List/CardList';
 import MButton from '../Common/Button/MButton';
 import FeedHeader from './FeedHeader';
 import PostList from '../Post/PostList';
-import { accountname } from '../../atom/loginAtom';
-import { getProductAPI } from '../../api/AddProductAPI';
 import IconCamera from '../../assets/image/icon-camera.svg';
 import IconCalendar from '../../assets/image/icon-calendar.svg';
 import NoImage from '../../assets/image/noimage.png';
 
-export default function MyProfile({ profile, post }) {
+export default function MyProfile({ profile, post, product }) {
   const navigate = useNavigate();
   const [numFollower, setNumFollower] = useState(profile.followerCount);
-  const [planGame, setPlanGame] = useState([]);
-  const [accountName, setAccountName] = useRecoilState(accountname);
   const [listType, setListType] = useState('list');
   const gameLink = '/schedule/' + profile.accountname;
 
   const today = new Date().setHours(0, 0, 0, 0);
-
-  // 직관일정, 게시글 데이터 호출
-  useEffect(() => {
-    const getLikedGameData = async () => {
-      const plan = await getProductAPI(accountName);
-      setPlanGame(plan);
-
-      //+
-      // 게임 일정이 오늘보다 전이면 안나오게 한다
-      const newgame = [];
-      for (let i = 0; i < plan.length; i++) {
-        const gameday = new Date(plan[i].itemName.slice(0, 10));
-        if (today < gameday) {
-          newgame.push(plan[i]);
-        }
-      }
-      setPlanGame(newgame);
-    };
-
-    getLikedGameData();
-  }, []);
 
   // 앨범형에 필요한 사진 있는 게시글 필터링
   const albumPostData = post.filter((item) => {
@@ -87,13 +61,13 @@ export default function MyProfile({ profile, post }) {
         <h2 id='game-schedule'>
           직관 일정 <Link to={gameLink}>전체보기</Link>
         </h2>
-        {planGame.length === 0 ? (
+        {!product && product.length === 0 ? (
           <div>
             <img src={IconCalendar} alt='' />
             <p>직관일정 없음</p>
           </div>
         ) : (
-          <CardList games={planGame} />
+          <CardList games={product} />
         )}
       </LikedGameStyle>
 

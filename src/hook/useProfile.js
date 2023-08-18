@@ -7,15 +7,14 @@ function useProfileQuery(accountname) {
     return await GET_API(`/profile/${accountname}`);
   };
 
-  const { data, isLoading, isError, refetch } = useQuery({
-    queryKey: ['profile'],
+  const { data, isLoading, isError } = useQuery({
+    queryKey: ['profile', accountname],
     queryFn: () => getProfile(),
   });
   return {
     profile: data,
     isProfileLoading: isLoading,
     isProfileError: isError,
-    profileRefetch: refetch,
   };
 }
 
@@ -24,8 +23,8 @@ function useUserPostQuery(accountname) {
     return await GET_API(`/post/${accountname}/userpost`);
   };
 
-  const { data, isLoading, isError, refetch } = useQuery({
-    queryKey: ['userPost'],
+  const { data, isLoading, isError } = useQuery({
+    queryKey: ['userPost', accountname],
     queryFn: () => getPost(),
   });
 
@@ -33,7 +32,6 @@ function useUserPostQuery(accountname) {
     post: data,
     isPostLoading: isLoading,
     isPostError: isError,
-    postRefetch: refetch,
   };
 }
 
@@ -44,8 +42,8 @@ function useTeamPostQuery(accountname) {
     );
   };
 
-  const { data, isLoading, isError, refetch } = useQuery({
-    queryKey: ['userPost'],
+  const { data, isLoading, isError } = useQuery({
+    queryKey: ['userPost', accountname],
     queryFn: () => getPost(),
   });
 
@@ -74,7 +72,6 @@ function useTeamPostQuery(accountname) {
     post: filteredGame,
     isPostLoading: isLoading,
     isPostError: isError,
-    postRefetch: refetch,
   };
 }
 

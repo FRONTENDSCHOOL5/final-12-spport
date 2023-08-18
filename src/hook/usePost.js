@@ -6,15 +6,15 @@ function useFeedQuery() {
     return await GET_API('/post/feed/?limit=Number?skip=Number');
   };
 
-  const feedQuery = useQuery({
+  const { data, isLoading, isError } = useQuery({
     queryKey: ['feed'],
     queryFn: () => getFeed(),
   });
 
   return {
-    feed: feedQuery.data,
-    isFeedLoading: feedQuery.isLoading,
-    isFeedError: feedQuery.isError,
+    feed: data,
+    isFeedLoading: isLoading,
+    isFeedError: isError,
   };
 }
 
@@ -23,16 +23,16 @@ function usePostQuery(post_id) {
     return await GET_API(`/post/${post_id}`);
   };
 
-  const postQuery = useQuery({
-    queryKey: ['postdetail'],
+  const { data, isLoading, isError } = useQuery({
+    queryKey: ['postDetail', post_id],
     queryFn: () => getPostDetail(),
   });
-  return [
-    postQuery.data,
-    postQuery.isLoading,
-    postQuery.isError,
-    postQuery.refetch,
-  ];
+
+  return {
+    post: data,
+    isPostLoading: isLoading,
+    isPostError: isError,
+  };
 }
 
 function useDeletePostMutation(post_id) {

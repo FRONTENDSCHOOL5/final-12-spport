@@ -6,12 +6,16 @@ function useCommentQuery(post_id) {
     return await GET_API(`/post/${post_id}/comments?limit=100`);
   };
 
-  const commentQuery = useQuery({
-    queryKey: ['comment'],
+  const { data, isLoading, isError } = useQuery({
+    queryKey: ['comment', post_id],
     queryFn: () => getComment(),
   });
 
-  return [commentQuery.data, commentQuery.isLoading, commentQuery.isError];
+  return {
+    comment: data,
+    isCommentLoading: isLoading,
+    isCommentError: isError,
+  };
 }
 
 function useAddCommentMutation(post_id) {

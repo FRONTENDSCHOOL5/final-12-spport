@@ -81,9 +81,7 @@ export default function Header({
   const [userImage, setUserImage] = useRecoilState(userimage);
 
   const handleBackClick = () => {
-    if (!disabled) {
-      navigate(-1);
-    }
+    navigate(-1);
   };
   const handleSearchClick = () => {
     navigate('/search');
@@ -131,9 +129,6 @@ export default function Header({
       setBsItems(loginBsItems);
     }
   };
-  function test() {
-    console.log('Ddd');
-  }
 
   return (
     <HeaderStyle text={text} search={search} main={main}>

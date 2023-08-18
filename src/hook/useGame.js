@@ -1,12 +1,11 @@
-import { GET_API } from '../CommonAPI';
-import { arrToGame } from '../../util/gameUtil';
-import { sortGameByDate } from '../../util/gameUtil';
+import { sortGameByDate, arrToGame } from '../util/gameUtil';
+import { useFeedQuery } from './usePost';
 
-// get Game info with API
-// sort them in increasing order of date and time
-const getGameInfo = async () => {
-  const posts = await GET_API('/post/feed?limit=1000');
-  const game = posts.posts.filter((item) => {
+const filterGame = (data) => {
+  if (!data) {
+    return [];
+  }
+  const game = data.posts.filter((item) => {
     if (item.author.accountname.startsWith('SPORT_')) {
       const today = new Date();
       const date = new Date(item.content.split(',')[0]);
@@ -28,10 +27,17 @@ const getGameInfo = async () => {
     }
   });
 
-  console.log(Array.from(gameMap));
   // date / time 오름차순 정렬
   const gameArr = sortGameByDate(Array.from(gameMap));
   return gameArr.map((item) => [arrToGame(item[0].split(',')), item[1]]);
 };
 
-export { getGameInfo };
+export default function useGameQuery() {
+  const { feed, isFeedLoading, isFeedError } = useFeedQuery();
+
+  return {
+    game: filterGame(feed),
+    isGameLoading: isFeedLoading,
+    isGameError: isFeedError,
+  };
+}
