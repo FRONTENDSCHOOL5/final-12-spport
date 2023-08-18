@@ -6,6 +6,14 @@ import { useState } from 'react';
 
 const ContainerStyle = styled.div`
   padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) and (max-width: 1247px) {
+    margin-left: 60px;
+  }
+
+  @media screen and (min-width: 1247px) {
+    margin-left: 200px;
+  }
 `;
 
 const CommentListStyle = styled.ul`
