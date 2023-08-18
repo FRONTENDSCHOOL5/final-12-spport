@@ -4,6 +4,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { ProfileImage110 } from '../Common/ProfileImage';
 import IconBaseball from '../../assets/image/icon-baseball.svg';
 import IconSoccer from '../../assets/image/icon-soccer.svg';
+import IconVolleyball from '../../assets/image/icon-volleyball.svg';
 import TagButton from '../Common/Button/TagButton';
 
 const ContainerStyle = styled.section`
@@ -107,6 +108,7 @@ export default function CommonProfile({ profile, children, numFollower }) {
   const path = location.pathname;
   const isTeamBS = profile.accountname.startsWith('SPORT_BS');
   const isTeamSC = profile.accountname.startsWith('SPORT_SC');
+  const isTeamVB = profile.accountname.startsWith('SPORT_VB');
 
   return (
     <ContainerStyle>
@@ -132,15 +134,22 @@ export default function CommonProfile({ profile, children, numFollower }) {
       </div>
       {/* 팀 프로필일 시 followings 대신 야구공/축구공 아이콘 조건부 렌더링(sort로 축구/야구 구분) */}
       <div className='followings'>
-        {isTeamBS ? (
+        {isTeamBS && (
           <button type='button' onClick={() => navigate('/search/SPORT_BS_')}>
             <img src={IconBaseball} alt='' />
           </button>
-        ) : isTeamSC ? (
-          <button type='button'>
+        )}
+        {isTeamSC && (
+          <button type='button' onClick={() => navigate('/search/SPORT_SC_')}>
             <img src={IconSoccer} alt='' />
           </button>
-        ) : (
+        )}
+        {isTeamVB && (
+          <button type='button' onClick={() => navigate('/search/SPORT_VB_')}>
+            <img src={IconVolleyball} alt='' />
+          </button>
+        )}
+        {!isTeamBS && !isTeamSC && !isTeamVB && (
           <button
             type='button'
             onClick={() => {

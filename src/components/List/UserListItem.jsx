@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { ProfileImage50 } from '../Common/ProfileImage';
 import SButton from '../Common/Button/SButton';
 import iconBaseball from '../../assets/image/icon-baseball.svg';
+import IconSoccer from '../../assets/image/icon-soccer.svg';
+import IconVolleyball from '../../assets/image/icon-volleyball.svg';
 import { Link } from 'react-router-dom';
 
 const ListItemStyle = styled.div`
@@ -44,6 +46,10 @@ const ListItemStyle = styled.div`
 
 export default function UserListItem({ user, follow, onFollowClick }) {
   const isTeam = user.accountname.startsWith('SPORT_');
+  const isTeamBS = user.accountname.startsWith('SPORT_BS');
+  const isTeamSC = user.accountname.startsWith('SPORT_SC');
+  const isTeamVB = user.accountname.startsWith('SPORT_VB');
+
   return (
     <ListItemStyle className='ListItem-wrapper'>
       <Link to={`/profile/${user.accountname}`}>
@@ -56,7 +62,9 @@ export default function UserListItem({ user, follow, onFollowClick }) {
             @ {isTeam ? user.accountname.slice(9) : user.accountname}
           </span>
         </div>
-        {isTeam && <img src={iconBaseball} alt='스포츠팀 아이콘' />}
+        {isTeamBS && <img src={iconBaseball} alt='야구팀 아이콘' />}
+        {isTeamSC && <img src={IconSoccer} alt='축구팀 아이콘' />}
+        {isTeamVB && <img src={IconVolleyball} alt='배구팀 아이콘' />}
       </Link>
       {follow && <SButton text='팔로우' func={onFollowClick} />}
     </ListItemStyle>
