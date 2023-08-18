@@ -5,7 +5,7 @@ import Header from '../components/Common/Header/Header';
 import PostList from '../components/Post/PostList';
 import Empty from '../components/Common/Empty';
 import PostLoader from '../components/Skeleton/PostLoader';
-import { useFeedQuery } from '../hook/usePost';
+import { useFeedQuery } from '../hooks/usePost';
 import { setTeamToken } from '../util/setGameToken';
 
 const FullSection = styled.main`

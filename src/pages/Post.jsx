@@ -5,8 +5,8 @@ import PostDetail from '../components/Post/Post';
 import Header from '../components/Common/Header/Header';
 import styled from 'styled-components';
 import { PostDetailLoader } from '../components/Skeleton/PostLoader';
-import { usePostQuery } from '../hook/usePost';
-import { useCommentQuery } from '../hook/useComment';
+import { usePostQuery } from '../hooks/usePost';
+import { useCommentQuery } from '../hooks/useComment';
 import NavBar from '../components/Common/NavBar';
 
 const MainStyle = styled.main`

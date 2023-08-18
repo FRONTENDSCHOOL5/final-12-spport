@@ -4,7 +4,7 @@ import CommonProfile from './CommonProfile';
 import styled from 'styled-components';
 import MButton from '../Common/Button/MButton';
 import GameList from '../List/GameList';
-import { useFollowMutation, useUnfollowMutation } from '../../hook/useFollow';
+import { useFollowMutation, useUnfollowMutation } from '../../hooks/useFollow';
 
 const SectionGameStyle = styled.section`
   background: white;

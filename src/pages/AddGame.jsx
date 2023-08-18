@@ -7,7 +7,7 @@ import SelectFilter from '../components/Common/Filter/SelectFilter';
 import { getTeamNameList, filterGameInfo } from '../util/gameUtil';
 import Empty from '../components/Common/Empty';
 import GameLoader from '../components/Skeleton/GameLoader';
-import useGameQuery from '../hook/useGame';
+import useGameQuery from '../hooks/useGame';
 import { Helmet } from 'react-helmet-async';
 
 const MainStyle = styled.main`

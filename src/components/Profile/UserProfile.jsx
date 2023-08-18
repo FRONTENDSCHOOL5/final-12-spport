@@ -17,7 +17,7 @@ import IconShareBtn from '../../assets/image/icon-share-btn.svg';
 import IconMessageBtn from '../../assets/image/icon-message-btn.svg';
 import IconCamera from '../../assets/image/icon-camera.svg';
 import NoImage from '../../assets/image/noimage.png';
-import { useFollowMutation, useUnfollowMutation } from '../../hook/useFollow';
+import { useFollowMutation, useUnfollowMutation } from '../../hooks/useFollow';
 
 export default function UserProfile({ profile, post, product }) {
   const { id } = useParams();
