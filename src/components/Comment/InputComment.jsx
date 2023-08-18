@@ -8,7 +8,7 @@ import { useAddCommentMutation } from '../../hooks/useComment';
 
 export const InputCommentStyle = styled.form`
   position: fixed;
-  bottom: 0;
+  bottom: 60px;
   padding: 12px 16px;
   display: flex;
   align-items: center;
@@ -30,6 +30,34 @@ export const InputCommentStyle = styled.form`
     font-size: 14px;
     &:disabled {
       color: var(--color-maingrey);
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1247px) {
+    margin-left: 60px;
+    bottom: 0;
+
+    .inp-comment {
+      width: calc(100% - 160px);
+    }
+
+    .btn-comment {
+      width: 100px;
+      text-align: left;
+    }
+  }
+
+  @media screen and (min-width: 1247px) {
+    margin-left: 200px;
+    bottom: 0;
+
+    .inp-comment {
+      width: calc(100% - 260px);
+    }
+
+    .btn-comment {
+      width: 240px;
+      text-align: left;
     }
   }
 `;
