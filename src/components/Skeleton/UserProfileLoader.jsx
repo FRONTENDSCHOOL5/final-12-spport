@@ -7,6 +7,10 @@ const ContainerStyle = styled.div`
   display: flex;
   flex-direction: column;
   gap: 6px;
+  @media screen and (min-width: 768px) and (max-width: 1247px) {
+    margin-left: 60px;
+  }
+  background: var(--color-bg);
 `;
 const CommonStyle = styled.section`
   display: grid;

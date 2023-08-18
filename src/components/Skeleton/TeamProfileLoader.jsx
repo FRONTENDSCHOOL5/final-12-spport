@@ -8,6 +8,10 @@ const ContainerStyle = styled.div`
   display: flex;
   flex-direction: column;
   gap: 6px;
+  background: var(--color-bg);
+  @media screen and (min-width: 768px) and (max-width: 1247px) {
+    margin-left: 60px;
+  }
 `;
 const CommonStyle = styled.section`
   display: grid;
@@ -83,6 +87,9 @@ const CommonStyle = styled.section`
       vertical-align: top;
     }
   }
+  @media screen and (min-width: 768px) and (max-width: 1247px) {
+    width: calc(100% - 60px);
+  }
 `;
 
 const SectionGameStyle = styled.section`
@@ -95,6 +102,9 @@ const SectionGameStyle = styled.section`
   & > div {
     padding: 20px 16px;
   }
+  @media screen and (min-width: 768px) and (max-width: 1247px) {
+    width: calc(100% - 60px);
+  }
 `;
 
 const BtnPlayer = styled.button`
@@ -105,6 +115,9 @@ const BtnPlayer = styled.button`
   &:not(:disabled):hover {
     background-color: var(--color-lime);
     color: var(--color-navy);
+  }
+  @media screen and (min-width: 768px) and (max-width: 1247px) {
+    width: calc(100% - 60px);
   }
 `;
 

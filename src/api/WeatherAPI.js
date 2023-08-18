@@ -67,9 +67,6 @@ const getWeather = async (city, post) => {
 
 const getWeatherPosted = async (weather, city, post) => {
   const weatherArr = weather.split(',');
-  if (weatherArr.length < 6) {
-    return await getWeather(city, post);
-  }
   return {
     'avg_temp': weatherArr[0],
     'max_temp': weatherArr[1],

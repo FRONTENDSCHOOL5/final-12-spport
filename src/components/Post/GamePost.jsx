@@ -58,14 +58,15 @@ export default function GamePost({ post }) {
 
     const today = new Date().setHours(0, 0, 0, 0);
     const date = new Date(game.date).setHours(0, 0, 0, 0);
-    if (today === date) {
-      getCurrentWeather();
-    } else if (today > date) {
-      getPastWeather();
-    } else {
+    if (today < date) {
       setIsFuture(true);
+    } else if (post.image.split(',').length < 6) {
+      getCurrentWeather();
+    } else {
+      getPastWeather();
     }
   }, []);
+
   return (
     <>
       {location.pathname.includes('post') ? (

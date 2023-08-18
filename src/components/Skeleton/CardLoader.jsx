@@ -8,6 +8,10 @@ const ContainerStyle = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   padding: 20px;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
 `;
 
 const LikedGameStyle = styled.div`
@@ -20,7 +24,7 @@ const LikedGameStyle = styled.div`
 function CardItemLoader() {
   return (
     <LikedGameStyle>
-      <Skeleton width={154} height={90} style={{ borderRadius: '8px' }} />
+      <Skeleton width={'100%'} height={90} style={{ borderRadius: '8px' }} />
       <Skeleton width={100} height={18} />
       <Skeleton width={120} height={16} />
     </LikedGameStyle>
@@ -29,7 +33,7 @@ function CardItemLoader() {
 
 export default function CardLoader() {
   const items = [];
-  for (let i = 0; i < 12; i++) {
+  for (let i = 0; i < 24; i++) {
     items.push(<CardItemLoader />);
   }
   return <ContainerStyle>{items.map((item) => item)}</ContainerStyle>;

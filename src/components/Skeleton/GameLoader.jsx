@@ -3,13 +3,13 @@ import 'react-loading-skeleton/dist/skeleton.css';
 import styled from 'styled-components';
 
 const ContainerStyle = styled.div`
-  /* padding: 60px 10px; */
+  width: 100%;
 `;
 
 const GameItemStyle = styled.div`
-  /* padding: 10px; */
   margin-bottom: 20px;
   display: flex;
+  width: 100%;
   align-items: center;
   gap: 12px;
   z-index: -1;
@@ -19,22 +19,28 @@ const GameItemStyle = styled.div`
     justify-content: center;
     gap: 10px;
   }
+  .button {
+    min-width: 56px;
+    width: 15%;
+    margin-left: auto;
+  }
 `;
 
 function GameItemLoader() {
   return (
     <GameItemStyle>
-      <Skeleton containerClassName='flex-1' width={50} height={50} circle />
+      <Skeleton width={50} height={50} circle />
       <div className='title'>
         <Skeleton width={120} height={15} />
         <Skeleton width={150} height={15} />
       </div>
-      <Skeleton
-        style={{ borderRadius: '40px', marginLeft: '76px' }}
-        containerClassName='flex-1'
-        width={56}
-        height={30}
-      />
+      <div className='button'>
+        <Skeleton
+          style={{ borderRadius: '40px' }}
+          containerClassName='flex-1'
+          height={30}
+        />
+      </div>
     </GameItemStyle>
   );
 }
