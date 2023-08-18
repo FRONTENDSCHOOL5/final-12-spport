@@ -11,8 +11,8 @@ import {
   useProfileQuery,
   useTeamPostQuery,
   useUserPostQuery,
-} from '../hook/useProfile';
-import { useProductQuery } from '../hook/useProduct';
+} from '../hooks/useProfile';
+import { useProductQuery } from '../hooks/useProduct';
 import { useRecoilState } from 'recoil';
 import { accountname } from '../atom/loginAtom';
 import UserProfileLoader from '../components/Skeleton/UserProfileLoader';

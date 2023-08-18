@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
 import { accountname } from '../../atom/loginAtom';
-import { useLikeMutation, useUnlikeMutation } from '../../hook/useLike';
+import { useLikeMutation, useUnlikeMutation } from '../../hooks/useLike';
 
 const BtnWrapperStyle = styled.div`
   text-align: start;

@@ -15,7 +15,7 @@ import { isModalOpen, modalItems } from '../../atom/modalAtom';
 import {
   useDeletePostMutation,
   useReportPostMutation,
-} from '../../hook/usePost';
+} from '../../hooks/usePost';
 import { Helmet } from 'react-helmet-async';
 
 const PostStyle = styled.article`

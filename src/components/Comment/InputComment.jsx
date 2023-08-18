@@ -4,7 +4,7 @@ import { ProfileImage36 } from '../Common/ProfileImage';
 import { useParams } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
 import { userimage } from '../../atom/loginAtom';
-import { useAddCommentMutation } from '../../hook/useComment';
+import { useAddCommentMutation } from '../../hooks/useComment';
 
 export const InputCommentStyle = styled.form`
   position: fixed;

@@ -5,7 +5,7 @@ import NavBar from '../components/Common/NavBar';
 import styled from 'styled-components';
 import Followers from '../components/Follow/Followers';
 import Followings from '../components/Follow/Followings';
-import { useFollowerQuery, useFollowingQuery } from '../hook/useFollow';
+import { useFollowerQuery, useFollowingQuery } from '../hooks/useFollow';
 
 const MainStyle = styled.main`
   padding: 50px 0 60px;

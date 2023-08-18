@@ -5,7 +5,7 @@ import Empty from '../components/Common/Empty';
 import GameGrid from '../components/List/CardGrid';
 import { useParams } from 'react-router-dom';
 import CardLoader from '../components/Skeleton/CardLoader';
-import { useProductQuery } from '../hook/useProduct';
+import { useProductQuery } from '../hooks/useProduct';
 import { Helmet } from 'react-helmet-async';
 
 const MainStyle = styled.main`

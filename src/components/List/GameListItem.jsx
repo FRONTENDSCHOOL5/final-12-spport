@@ -5,7 +5,7 @@ import SButton from '../Common/Button/SButton';
 import { accountname } from '../../atom/loginAtom';
 import { useRecoilState } from 'recoil';
 import { isModalOpen, modalItems } from '../../atom/modalAtom';
-import { useLikeMutation, useUnlikeMutation } from '../../hook/useLike';
+import { useLikeMutation, useUnlikeMutation } from '../../hooks/useLike';
 import { GET_API } from '../../api/CommonAPI';
 
 const ListItemStyle = styled.li`

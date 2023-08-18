@@ -18,7 +18,7 @@ import Splash from '../pages/Splash';
 import EditPost from '../pages/EditPost';
 import PlayerList from '../pages/PlayerList';
 import Schedule from '../pages/Schedule';
-import SameTag from '../components/Profile/SameTag';
+import SameTag from '../pages/SameTag';
 import { useRecoilState } from 'recoil';
 import { loginState } from '../atom/loginAtom';
 

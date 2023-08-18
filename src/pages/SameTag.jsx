@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { getSearchAPI } from '../../api/SearchAPI';
+import { getSearchAPI } from '../api/SearchAPI';
 import { useParams } from 'react-router-dom';
-import Empty from '../Common/Empty';
-import ListLoader from '../Skeleton/ListLoader';
-import UserList from '../List/UserList';
-import Header from '../Common/Header/Header';
-import NavBar from '../Common/NavBar';
+import Empty from '../components/Common/Empty';
+import ListLoader from '../components/Skeleton/ListLoader';
+import UserList from '../components/List/UserList';
+import Header from '../components/Common/Header/Header';
+import NavBar from '../components/Common/NavBar';
 
 export default function SameTag() {
   const [searchUser, setSearchUser] = useState([]);

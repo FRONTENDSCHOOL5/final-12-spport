@@ -13,7 +13,7 @@ import { isModalOpen, modalItems } from '../../atom/modalAtom';
 import {
   useDeleteCommentMutation,
   useReportCommentMutation,
-} from '../../hook/useComment';
+} from '../../hooks/useComment';
 
 const VComment = styled.article`
   padding: 12px 16px;

@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import GameLoader from './GameLoader';
 
 const ContainerStyle = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 6px;

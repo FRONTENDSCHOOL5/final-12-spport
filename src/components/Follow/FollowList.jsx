@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import SButton from '../Common/Button/SButton';
 import IconBaseball from '../../assets/image/icon-baseball.svg';
 import IconSoccer from '../../assets/image/icon-soccer.svg';
-import { useFollowMutation, useUnfollowMutation } from '../../hook/useFollow';
+import { useFollowMutation, useUnfollowMutation } from '../../hooks/useFollow';
 
 const ListStyle = styled.li`
   display: flex;
