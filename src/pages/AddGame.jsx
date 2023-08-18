@@ -4,7 +4,7 @@ import NavBar from '../components/Common/NavBar';
 import styled from 'styled-components';
 import GameList from '../components/List/GameList';
 import SelectFilter from '../components/Common/Filter/SelectFilter';
-import { getTeamName, filterGameInfo } from '../util/gameUtil';
+import { getTeamNameList, filterGameInfo } from '../util/gameUtil';
 import Empty from '../components/Common/Empty';
 import GameLoader from '../components/Skeleton/GameLoader';
 import useGameQuery from '../hook/useGame';
@@ -52,14 +52,15 @@ export default function AddGame() {
   // 처음에 전체 게임 정보와 팀 정보를 얻음
   useEffect(() => {
     setFilterGame(game);
-    setTeam(getTeamName());
+    setTeam(getTeamNameList(selectSport));
   }, [isGameLoading]);
 
   // 필터 내 팀 정보/스포츠 정보가 선택될 시 필터된 게임 정보를 가져옴
   useEffect(() => {
-    const filteredGame = filterGameInfo(game, '야구', selectTeam);
+    setTeam(getTeamNameList(selectSport));
+    const filteredGame = filterGameInfo(game, selectSport, selectTeam);
     setFilterGame(filteredGame);
-  }, [selectTeam]);
+  }, [selectSport, selectTeam]);
 
   return (
     <>

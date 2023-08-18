@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import NavBar from '../components/Common/NavBar';
 import Header from '../components/Common/Header/Header';
@@ -6,6 +6,7 @@ import PostList from '../components/Post/PostList';
 import Empty from '../components/Common/Empty';
 import PostLoader from '../components/Skeleton/PostLoader';
 import { useFeedQuery } from '../hook/usePost';
+import { setTeamToken } from '../util/setGameToken';
 
 const FullSection = styled.main`
   padding: 50px 0 0;
@@ -41,9 +42,13 @@ const SkipNavStyle = styled.div`
   }
 `;
 
-export default function Home(props) {
+export default function Home() {
   const [filterClick, setFilterClick] = useState(false);
   const { feed, isFeedLoading, isFeedError } = useFeedQuery();
+
+  useEffect(() => {
+    setTeamToken();
+  }, []);
 
   return (
     <>

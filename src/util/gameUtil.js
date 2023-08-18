@@ -3,22 +3,37 @@ import tokenData from '../assets/data/sport_users.json';
 /* get game util */
 const getHomeImage = (team_name) => {
   const team = tokenData.filter(
-    (item) => item.username.split(' ')[0] === team_name,
+    (item) => getTeamName(item.username, item.accountname) === team_name,
   );
   return team[0].image;
 };
 
-const getTeamName = () => {
-  const team = tokenData.map((item) => item.username.split(' ')[0]);
-  team.unshift('전체');
-  return team;
+const getTeamName = (team_name, accountname) => {
+  if (team_name === '수원 FC') {
+    return '수원FC';
+  } else if (team_name === 'FC 서울') {
+    return '서울';
+  } else if (accountname.startsWith('SPORT_VB')) {
+    return team_name.split(' ')[1];
+  }
+  return team_name.split(' ')[0];
 };
 
-const getTeamToken = (team_name) => {
-  const team = tokenData.filter(
-    (item) => item.accountname.split(' ')[0] === team_name,
-  );
-  return team[0].token;
+const getTeamNameList = (type) => {
+  const team = [];
+  tokenData.forEach((item) => {
+    if (type === '전체') {
+      team.push(getTeamName(item.username, item.accountname));
+    } else if (type === '야구' && item.accountname.startsWith('SPORT_BS')) {
+      team.push(getTeamName(item.username, item.accountname));
+    } else if (type === '축구' && item.accountname.startsWith('SPORT_SC')) {
+      team.push(getTeamName(item.username, item.accountname));
+    } else if (type === '배구' && item.accountname.startsWith('SPORT_VB')) {
+      team.push(getTeamName(item.username, item.accountname));
+    }
+  });
+  team.unshift('전체');
+  return team;
 };
 
 const getDateTime = (post) => {
@@ -32,6 +47,12 @@ const getDateTime = (post) => {
 // Conver Arr to Game Object
 const arrToGame = (gameArr) => {
   const image = getHomeImage(gameArr[3]);
+  let type = '야구';
+  if (gameArr[8] === 'SC') {
+    type = '축구';
+  } else if (gameArr[8] === 'VB') {
+    type = '배구';
+  }
   return {
     'date': gameArr[0],
     'day': gameArr[1],
@@ -42,15 +63,27 @@ const arrToGame = (gameArr) => {
     'full_stadium': gameArr[6],
     'en_city': gameArr[7],
     'image': image,
+    'type': type,
   };
 };
 
 // filter by type and team
 const filterGameInfo = (game, type, team) => {
-  if (team === '전체') {
+  if (type === '전체' && team === '전체') {
     return game;
+  } else if (type === '전체') {
+    return game.filter(
+      (item) => item[0].home === team || item[0].away === team,
+    );
+  } else if (team === '전체') {
+    return game.filter((item) => item[0].type === type);
+  } else {
+    return game.filter(
+      (item) =>
+        (item[0].home === team || item[0].away === team) &&
+        item[0].type === type,
+    );
   }
-  return game.filter((item) => item[0].home === team || item[0].away === team);
 };
 
 const sortFeedPost = (posts, onlyGame) => {
@@ -111,8 +144,8 @@ const sortGameByDate = (gameArr, addGame = true) => {
 
 export {
   arrToGame,
-  getTeamToken,
   getTeamName,
+  getTeamNameList,
   getHomeImage,
   filterGameInfo,
   sortFeedPost,

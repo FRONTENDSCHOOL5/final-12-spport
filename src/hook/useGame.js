@@ -20,10 +20,11 @@ const filterGame = (data) => {
   // 중복되는 게임 map으로 묶기 (key: content, value: [post_ids])
   const gameMap = new Map();
   game.forEach((item) => {
-    if (gameMap.has(item.content)) {
-      gameMap.set(item.content, [...gameMap.get(item.content), item.id]);
+    const content = item.content + `,${item.author.accountname.slice(6, 8)}`;
+    if (gameMap.has(content)) {
+      gameMap.set(content, [...gameMap.get(content), item.id]);
     } else {
-      gameMap.set(item.content, [item.id]);
+      gameMap.set(content, [item.id]);
     }
   });
 
