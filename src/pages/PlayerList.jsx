@@ -5,34 +5,71 @@ import NavBar from '../components/Common/NavBar';
 import styled from 'styled-components';
 import SelectFilter from '../components/Common/Filter/SelectFilter';
 import bsPlayerData from '../assets/data/baseball_players.json';
+import scPlayerData from '../assets/data/soccer_players.json';
+import vbPlayerData from '../assets/data/volleyball_players.json';
 import tokenData from '../assets/data/sport_users.json';
 import { Helmet } from 'react-helmet-async';
 
 export default function PlayerList() {
-  const [position, setPosition] = useState([
-    '투수',
-    '외야수',
-    '내야수',
-    '포수',
-  ]);
+  const [position, setPosition] = useState([]);
   const [selectPosition, setSelectPosition] = useState('선택');
   const { id } = useParams();
+
+  const sportIdentifier = id.split('_')[1];
+
+  useEffect(() => {
+    let initialPositions = [];
+    if (sportIdentifier === 'BS') {
+      initialPositions = ['전체', '투수', '외야수', '내야수', '포수'];
+    } else if (sportIdentifier === 'SC') {
+      initialPositions = ['전체', 'GK', 'DF', 'MF', 'FW'];
+    } else if (sportIdentifier === 'VB') {
+      initialPositions = ['전체', 'OH', 'OP', 'MB', 'S', 'L'];
+    }
+    setPosition(initialPositions);
+  }, [sportIdentifier]);
 
   const teamName = tokenData.map((item) => item.accountname);
   const sameName = tokenData.map((item) => item.username);
   const matchingTeam =
     sameName.find((_, index) => teamName[index] === id) || '';
 
-  const teamPlayers = bsPlayerData.filter(
-    (player) => player.team === matchingTeam.split(' ')[0],
-  );
+  console.log(matchingTeam);
+
+  let teamPlayers = [];
+  if (sportIdentifier === 'BS') {
+    teamPlayers = bsPlayerData;
+    teamPlayers = teamPlayers.filter(
+      (player) => player.team === matchingTeam.split(' ')[0],
+    );
+  } else if (sportIdentifier === 'SC') {
+    teamPlayers = scPlayerData;
+    teamPlayers = teamPlayers.filter((player) => {
+      const teamName = matchingTeam.split(' ')[0];
+      if (teamName === 'FC') {
+        return player.team === matchingTeam.split(' ')[1];
+      } else if (teamName === '수원') {
+        if (matchingTeam.split(' ')[1] === 'FC') {
+          return player.team === '수원FC';
+        } else if (matchingTeam.split(' ')[1] === '삼성') {
+          return player.team === '수원';
+        }
+      } else {
+        return player.team === teamName;
+      }
+    });
+  } else if (sportIdentifier === 'VB') {
+    teamPlayers = vbPlayerData;
+    teamPlayers = teamPlayers.filter(
+      (player) => player.team === matchingTeam.split(' ')[1],
+    );
+  }
+  console.log(matchingTeam.split(' ')[1]);
 
   const filteredPlayers =
     selectPosition === '전체'
       ? teamPlayers
       : teamPlayers.filter((player) => player.position === selectPosition);
-
-  useEffect(() => {}, [filteredPlayers]);
 
   return (
     <>
