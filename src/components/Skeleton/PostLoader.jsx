@@ -35,8 +35,29 @@ const CommentInputStyle = styled.div`
   align-items: center;
 `;
 
+const PostStyle = styled.article`
+  width: 500px;
+  .post-wrapper {
+    margin-left: 52px;
+    color: var(--color-navy);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 10px;
+    .post-time {
+      color: var(--color-steelblue);
+      font-size: 10px;
+      text-align: start;
+    }
+  }
+`;
+
 const PostLoaderStyle = styled.div`
-  padding: 0 20px;
+  max-width: 500px;
+  width: 100%;
+  padding: 0 30px 0 20px;
+  margin: 0 auto;
   .profile-wrapper {
     display: flex;
     gap: 12px;
@@ -50,6 +71,9 @@ const PostLoaderStyle = styled.div`
   }
   .content-wrapper {
     margin: 10px 0 20px 45px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 0 10px 0 0;
   }
 `;
 
@@ -65,12 +89,16 @@ export function PostLoaderItem() {
       </div>
       <div className='content-wrapper'>
         <Skeleton
-          width={300}
+          width={'100%'}
           height={12}
           count={3}
           style={{ marginBottom: '10px' }}
         />
-        <Skeleton width={300} height={200} style={{ marginBottom: '10px' }} />
+        <Skeleton
+          width={'100%'}
+          height={200}
+          style={{ marginBottom: '10px' }}
+        />
         <Skeleton width={120} height={12} style={{ marginBottom: '6px' }} />
         <Skeleton width={100} height={12} style={{ marginBottom: '10px' }} />
       </div>
