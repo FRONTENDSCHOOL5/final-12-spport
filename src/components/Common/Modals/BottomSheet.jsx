@@ -1,8 +1,12 @@
 import React, { useEffect } from 'react';
 import styled, { css } from 'styled-components';
 import { useRecoilState } from 'recoil';
-import { isBottomSheetOpen } from '../../../atom/bottomSheetAtom';
+import {
+  isBottomSheetOpen,
+  bottomSheetItems,
+} from '../../../atom/bottomSheetAtom';
 import { useState } from 'react';
+import { createPortal } from 'react-dom';
 
 const animation = css`
   @keyframes slideOn {
@@ -54,7 +58,6 @@ const BottomSheetStyle = styled.article`
     bottom: 0;
     overflow: hidden;
     padding-bottom: 10px;
-    /* animation: slideOn 0.5s ease-in-out 0s 1 normal forwards; */
     button {
       width: 100%;
       padding: 14px 26px;
@@ -82,8 +85,9 @@ const BottomSheetStyle = styled.article`
   }
 `;
 
-export default function BottomSheet({ items }) {
+export default function BottomSheet() {
   const [isBsOpen, setIsBsOpen] = useRecoilState(isBottomSheetOpen);
+  const [items] = useRecoilState(bottomSheetItems);
   const [effect, setEffect] = useState('up');
   const closeBottomSheet = () => {
     if (isBsOpen) {
@@ -100,9 +104,6 @@ export default function BottomSheet({ items }) {
         const elements = document.querySelectorAll(
           '[class*="bottomsheet"] > ul button, .btn-header',
         );
-        console.log(elements[0]);
-        console.log(elements[1]);
-        console.log(elements[2]);
         elements[1].focus();
         document.addEventListener('keydown', (e) => {
           if (e.key === 'Tab') {
@@ -123,7 +124,7 @@ export default function BottomSheet({ items }) {
     }
   }, []);
 
-  return (
+  return createPortal(
     <BottomSheetStyle onClick={closeBottomSheet}>
       <BsAnimationStyle className={`bottomsheet ${effect}`}>
         <button className='btn-header'>
@@ -139,6 +140,7 @@ export default function BottomSheet({ items }) {
           })}
         </ul>
       </BsAnimationStyle>
-    </BottomSheetStyle>
+    </BottomSheetStyle>,
+    document.getElementById('modal-root'),
   );
 }

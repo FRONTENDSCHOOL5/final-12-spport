@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { useRecoilState } from 'recoil';
-import { isModalOpen } from '../../../atom/modalAtom';
+import { isModalOpen, modalItems } from '../../../atom/modalAtom';
+import { createPortal } from 'react-dom';
 
 const ModalStyle = styled.article`
   position: fixed;
@@ -51,8 +52,9 @@ const ModalStyle = styled.article`
   }
 `;
 // title, btnText, onYesClick
-export default function Modal({ items }) {
+export default function Modal() {
   const [modalOpen, setModalOpen] = useRecoilState(isModalOpen);
+  const [items] = useRecoilState(modalItems);
   const closeModal = () => {
     setModalOpen(false);
   };
@@ -61,7 +63,6 @@ export default function Modal({ items }) {
     const btnYes = document.querySelector('.btn-yes');
     if (modalOpen) {
       btnCancel.focus();
-      console.log(document.activeElement);
       document.addEventListener('keydown', (e) => {
         if (e.key === 'Tab') {
           if (document.activeElement === btnYes) {
@@ -76,7 +77,7 @@ export default function Modal({ items }) {
     }
   }, []);
 
-  return (
+  return createPortal(
     <ModalStyle onClick={closeModal}>
       <div className='modal-wrapper'>
         <p>{items[0]}</p>
@@ -89,6 +90,7 @@ export default function Modal({ items }) {
           </button>
         </div>
       </div>
-    </ModalStyle>
+    </ModalStyle>,
+    document.getElementById('modal-root'),
   );
 }
