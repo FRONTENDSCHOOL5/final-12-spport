@@ -2,6 +2,7 @@ import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import styled from 'styled-components';
 import { PostLoaderItem } from './PostLoader';
+import FeedHeader from '../Profile/FeedHeader';
 
 const ContainerStyle = styled.div`
   display: flex;
@@ -110,9 +111,10 @@ const LikedGameStyle = styled.section`
 `;
 
 const PostStyle = styled.section`
-  padding: 20px 0;
-  border-top: 0.5px solid var(--color-maingrey);
   background: white;
+  & > div:nth-child(2) {
+    padding: 20px 0;
+  }
 `;
 
 export default function UserProfileLoader() {
@@ -170,6 +172,7 @@ export default function UserProfileLoader() {
         </div>
       </LikedGameStyle>
       <PostStyle>
+        <FeedHeader />
         <PostLoaderItem />
       </PostStyle>
     </ContainerStyle>

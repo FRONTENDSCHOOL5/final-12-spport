@@ -17,6 +17,7 @@ const CommentContainerStyle = styled.div`
     gap: 12px;
     align-items: center;
   }
+  overflow: hidden;
 `;
 
 const CommentItemStyle = styled.div`
@@ -30,32 +31,27 @@ const CommentItemStyle = styled.div`
 `;
 
 const CommentInputStyle = styled.div`
+  width: 100%;
   padding: 12px 16px;
   height: 60.5px;
   position: fixed;
-  width: 390px;
   bottom: 0;
   border-top: 0.5px solid var(--color-maingrey);
   display: flex;
   gap: 18px;
   align-items: center;
-`;
-
-const PostStyle = styled.article`
-  width: 500px;
-  .post-wrapper {
-    margin-left: 52px;
-    color: var(--color-navy);
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding-top: 10px;
-    .post-time {
-      color: var(--color-steelblue);
-      font-size: 10px;
-      text-align: start;
-    }
+  background: white;
+  & > div {
+    margin-left: auto;
+  }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-left: 76px;
+  }
+  @media screen and (min-width: 1247px) {
+    padding-left: 216px;
   }
 `;
 
@@ -126,7 +122,7 @@ function CommentLoader() {
     );
   }
   const items = [];
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < 4; i++) {
     items.push(<CommentItem />);
   }
   return (
@@ -135,7 +131,9 @@ function CommentLoader() {
       <CommentInputStyle>
         <Skeleton containerClassName='flex-1' width={34} height={34} circle />
         <Skeleton width={230} height={25} />
-        <Skeleton width={50} height={25} />
+        <div>
+          <Skeleton width={50} height={25} />
+        </div>
       </CommentInputStyle>
     </>
   );
