@@ -2,11 +2,10 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { ProfileImage50 } from '../Common/ProfileImage';
 import SButton from '../Common/Button/SButton';
-import { accountname } from '../../atom/loginAtom';
-import { useRecoilState } from 'recoil';
 import { useLikeMutation, useUnlikeMutation } from '../../hooks/useLike';
 import { GET_API } from '../../api/CommonAPI';
 import useModal from '../../hooks/useModal';
+import useAuth from '../../hooks/useAuth';
 
 const ListItemStyle = styled.li`
   width: 100%;
@@ -42,10 +41,10 @@ export default function GameListItem({ game }) {
   const game_info = game[0];
   const game_id = game[1];
   const [isLike, setIsLike] = useState(false);
-  const [accountName, setAccountName] = useRecoilState(accountname);
+  const { accountname } = useAuth();
   const { functionModal } = useModal();
   const useLikeMutate = useLikeMutation(setIsLike);
-  const useUnlikeMutate = useUnlikeMutation(accountName, setIsLike);
+  const useUnlikeMutate = useUnlikeMutation(accountname, setIsLike);
 
   useEffect(() => {
     const setLike = async () => {

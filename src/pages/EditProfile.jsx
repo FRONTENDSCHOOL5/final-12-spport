@@ -5,11 +5,10 @@ import { FormStyle, ErrorText } from './Login';
 import Header from '../components/Common/Header/Header';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
-import { useRecoilValue, useRecoilState } from 'recoil';
-import { userToken, accountname, userimage } from '../atom/loginAtom';
 import tokenData from '../assets/data/sport_users.json';
 import { Helmet } from 'react-helmet-async';
 import useModal from '../hooks/useModal';
+import useAuth from '../hooks/useAuth';
 
 export default function EditProfile() {
   const URL = 'https://api.mandarin.weniv.co.kr';
@@ -19,16 +18,14 @@ export default function EditProfile() {
   const [accountnameError, setAccountnameError] = useState('');
   const [introErrorMsg, setIntroErrorMsg] = useState('');
 
-  const token = useRecoilValue(userToken);
-  const [accountNameValue, setAccountNameValue] = useRecoilState(accountname);
-  const [userimageValue, setUserimageValue] = useRecoilState(userimage);
+  const { token, accountname, userimage, setUserInfo } = useAuth();
   const [interest, setInterest] = useState('');
   const { functionModal } = useModal();
 
   const [initialAccountnameValue, setInitialAccountnameValue] =
-    useState(accountNameValue);
+    useState(accountname);
 
-  const [userInfo, setUserInfo] = useState({
+  const [userinfo, setUserinfo] = useState({
     user: {
       id: '',
       username: '',
@@ -38,14 +35,12 @@ export default function EditProfile() {
     },
   });
 
-  console.log(userInfo);
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     if (name === 'accountname') {
-      setAccountNameValue(value);
+      setUserInfo({ accountname: value });
     }
-    setUserInfo((prevState) => ({
+    setUserinfo((prevState) => ({
       ...prevState,
       user: {
         ...prevState.user,
@@ -53,7 +48,7 @@ export default function EditProfile() {
       },
     }));
   };
-  console.log(userInfo);
+  console.log(userinfo);
 
   const handleInterestChange = (e) => {
     setInterest(e.target.value);
@@ -64,11 +59,11 @@ export default function EditProfile() {
       const newInterest = interest.trim();
 
       if (
-        !userInfo.user.intro
+        !userinfo.user.intro
           .split(',')
           .some((item) => item.trim() === newInterest)
       ) {
-        setUserInfo((prevState) => ({
+        setUserinfo((prevState) => ({
           ...prevState,
           user: {
             ...prevState.user,
@@ -87,7 +82,7 @@ export default function EditProfile() {
   };
 
   const handleInterestRemove = (index) => {
-    setUserInfo((prevState) => ({
+    setUserinfo((prevState) => ({
       ...prevState,
       user: {
         ...prevState.user,
@@ -110,7 +105,7 @@ export default function EditProfile() {
 
       if (response.ok) {
         const data = await response.json();
-        setUserInfo(data);
+        setUserinfo(data);
       }
     } catch (error) {
       console.log('error', error);
@@ -130,8 +125,8 @@ export default function EditProfile() {
         body: formData,
       });
       const data = await response.json();
-      setUserimageValue(URL + '/' + data.filename);
-      setUserInfo((prevState) => ({
+      setUserInfo({ userimage: URL + '/' + data.filename });
+      setUserinfo((prevState) => ({
         ...prevState,
         user: {
           ...prevState.user,
@@ -144,7 +139,7 @@ export default function EditProfile() {
     }
   };
 
-  const handleEdit = async (userInfo) => {
+  const handleEdit = async (userinfo) => {
     try {
       const response = await fetch(URL + '/user', {
         method: 'PUT',
@@ -152,7 +147,7 @@ export default function EditProfile() {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ ...userInfo }),
+        body: JSON.stringify({ ...userinfo }),
       });
 
       const res = await response.json();
@@ -165,8 +160,8 @@ export default function EditProfile() {
   const handleUSaveClick = async (e) => {
     e.preventDefault();
     const editProfile = async () => {
-      await handleEdit(userInfo);
-      navigate(`/profile/${userInfo.user.accountname}`);
+      await handleEdit(userinfo);
+      navigate(`/profile/${userinfo.user.accountname}`);
     };
     functionModal(
       '프로필을 수정하시겠습니까?',
@@ -180,11 +175,11 @@ export default function EditProfile() {
   const handleAccountnameValid = async () => {
     const accountData = {
       user: {
-        accountname: accountNameValue,
+        accountname: accountname,
       },
     };
 
-    if (accountNameValue === initialAccountnameValue) {
+    if (accountname === initialAccountnameValue) {
       setAccountnameError('');
       setErrorMsg('');
       return;
@@ -206,9 +201,9 @@ export default function EditProfile() {
     const errorMessage = '스포츠팀의 이름은 사용할 수 없습니다.';
     let accountnameErrorMessage = '';
 
-    if (userInfo.user.accountname.slice(0, 6) === 'SPORT_') {
+    if (userinfo.user.accountname.slice(0, 6) === 'SPORT_') {
       accountnameErrorMessage = '앞에 SPORT_는 들어갈 수 없습니다.';
-    } else if (accountnames.includes(userInfo.user.accountname)) {
+    } else if (accountnames.includes(userinfo.user.accountname)) {
       accountnameErrorMessage = errorMessage;
     }
 
@@ -235,9 +230,7 @@ export default function EditProfile() {
       <StyledFormStyle>
         <ImageWrap>
           <LabelImg htmlFor='input-upload'>
-            <ProfileImg
-              src={userimageValue ? userimageValue : userInfo.user.image}
-            />
+            <ProfileImg src={userimage ? userimage : userinfo.user.image} />
           </LabelImg>
           <input
             id='input-upload'
@@ -252,7 +245,7 @@ export default function EditProfile() {
           type='text'
           inputId='label-username'
           placeholder='2~10자 이내여야 합니다.'
-          value={userInfo.user.username}
+          value={userinfo.user.username}
           name='username'
           onChange={handleInputChange}
         />
@@ -261,7 +254,7 @@ export default function EditProfile() {
           type='text'
           inputId='label-accountname'
           placeholder='영문, 숫자, 특수문자(.),(_)만 사용 가능합니다.'
-          value={userInfo.user.accountname}
+          value={userinfo.user.accountname}
           name='accountname'
           onChange={handleInputChange}
           getError={
@@ -276,8 +269,8 @@ export default function EditProfile() {
           <strong>관심사</strong>
           <div>
             <ul>
-              {userInfo.user.intro &&
-                userInfo.user.intro.split(',').map((interestItem, index) => (
+              {userinfo.user.intro &&
+                userinfo.user.intro.split(',').map((interestItem, index) => (
                   <li key={index} onClick={() => handleInterestRemove(index)}>
                     {interestItem}
                   </li>
@@ -286,7 +279,7 @@ export default function EditProfile() {
                 type='text'
                 value={interest}
                 placeholder={
-                  userInfo.user.intro
+                  userinfo.user.intro
                     ? ''
                     : '자신의 관심사를 Enter를 눌러 추가해주세요.'
                 }

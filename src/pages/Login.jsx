@@ -4,15 +4,7 @@ import styled from 'styled-components';
 import LButton from '../components/Common/Button/LButton';
 import { Link, useNavigate } from 'react-router-dom';
 import { LinkWrap } from './Welcome';
-import { useRecoilState } from 'recoil';
-import {
-  userToken,
-  loginState,
-  accountname,
-  username,
-  intro,
-  userimage,
-} from '../atom/loginAtom';
+import useAuth from '../hooks/useAuth';
 
 export default function LoginPage() {
   const URL = 'https://api.mandarin.weniv.co.kr/user/login';
@@ -24,20 +16,12 @@ export default function LoginPage() {
   const [loginError, setLoginError] = useState('');
   const [emailError, setEmailError] = useState('');
   const [pwMessage, setPwMessage] = useState('');
-
-  const [userTokenAtom, setUserTokenAtom] = useRecoilState(userToken);
-  const [loginStateAtom, setLoginStateAtom] = useRecoilState(loginState);
-  const [accountName, setAccountName] = useRecoilState(accountname);
-  const [userName, setUserName] = useRecoilState(username);
-  const [userIntro, setUserIntro] = useRecoilState(intro);
-  const [userImage, setUserImage] = useRecoilState(userimage);
-
+  const { setUserInfo } = useAuth();
   const navigate = useNavigate();
 
   const handleEmailChange = (e) => {
     const email = e.target.value;
     setEmail(email);
-
     if (email === '') {
       setEmailError('*이메일을 입력해주세요.');
     } else {
@@ -92,13 +76,14 @@ export default function LoginPage() {
         if (!data.message) {
           const userData = data.user;
           const { token, accountname, username, intro, image } = userData;
-          setUserTokenAtom(token);
-          setLoginStateAtom(true);
-          setAccountName(accountname);
-          setUserName(username);
-          setUserIntro(intro);
-          setUserImage(image);
-
+          setUserInfo({
+            token: token,
+            accountname,
+            username: username,
+            isLogin: true,
+            intro: intro,
+            userimage: image,
+          });
           navigate('/home');
         } else if (
           data.message === '이메일 또는 비밀번호가 일치하지 않습니다.'

@@ -5,12 +5,11 @@ import { ProfileImage42 } from '../components/Common/ProfileImage';
 import { UploadButton } from '../components/Common/Button/ImageButton';
 import { POST_API } from '../api/CommonAPI';
 import { useNavigate } from 'react-router-dom';
-import { userimage } from '../atom/loginAtom';
-import { useRecoilState } from 'recoil';
 import iconClose from '../assets/image/icon-close.svg';
 import imageCompression from 'browser-image-compression';
 import { Helmet } from 'react-helmet-async';
 import useModal from '../hooks/useModal';
+import useAuth from '../hooks/useAuth';
 
 const USection = styled.section`
   padding: 70px 20px;
@@ -68,8 +67,8 @@ const StyledUploadButton = styled(UploadButton)`
   right: 30px;
 `;
 
-export default function Upload(props) {
-  const [userImage, setUserImage] = useRecoilState(userimage);
+export default function Upload() {
+  const { userimage } = useAuth();
   // 요청에 사용하는 url
   const url = '/post';
 
@@ -224,7 +223,7 @@ export default function Upload(props) {
       <USection>
         <h1 className='a11y-hidden'>게시글 작성 페이지</h1>
         <section className='form-wrapper'>
-          <ProfileImage42 image={userImage} />
+          <ProfileImage42 image={userimage} />
           <form>
             <textarea
               className='text-area'

@@ -5,11 +5,10 @@ import { ProfileImage42 } from '../components/Common/ProfileImage';
 import { UploadButton } from '../components/Common/Button/ImageButton';
 import { GET_API, PUT_API } from '../api/CommonAPI';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { userimage } from '../atom/loginAtom';
-import { useRecoilState } from 'recoil';
 import iconClose from '../assets/image/icon-close.svg';
 import { Helmet } from 'react-helmet-async';
 import useModal from '../hooks/useModal';
+import useAuth from '../hooks/useAuth';
 
 const USection = styled.section`
   padding: 70px 20px;
@@ -69,9 +68,9 @@ const StyledUploadButton = styled(UploadButton)`
   right: 30px;
 `;
 
-export default function EditPost(props) {
+export default function EditPost() {
   // 직접 받아올 때 사용
-  const [userImage, setUserImage] = useRecoilState(userimage);
+  const { userimage } = useAuth();
   const location = useLocation();
   const post_id = location.state.post_id;
 
@@ -239,7 +238,7 @@ export default function EditPost(props) {
       <Header upload onUploadClick={handleSubmitModify} disabled={isReady} />
       <USection>
         <section className='form-wrapper'>
-          <ProfileImage42 image={userImage} />
+          <ProfileImage42 image={userimage} />
           <form>
             <textarea
               className='text-area'

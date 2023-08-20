@@ -3,14 +3,13 @@ import styled from 'styled-components';
 import { ProfileImage36 } from '../Common/ProfileImage';
 import more from '../../assets/image/icon-more-small.svg';
 import { Link } from 'react-router-dom';
-import { useRecoilState } from 'recoil';
-import { accountname } from '../../atom/loginAtom';
 import {
   useDeleteCommentMutation,
   useReportCommentMutation,
 } from '../../hooks/useComment';
 import useModal from '../../hooks/useModal';
 import useBottomSheet from '../../hooks/useBottomSheet';
+import useAuth from '../../hooks/useAuth';
 
 const VComment = styled.article`
   padding: 12px 16px;
@@ -67,7 +66,7 @@ export default function ViewComment({ comment, post_id }) {
     date.slice(5, 7),
   )}.${parseInt(date.slice(8))} ${date.slice(11, 13)}:${date.slice(14, 16)}`;
 
-  const [accountName] = useRecoilState(accountname);
+  const { accountname } = useAuth();
   const { functionModal } = useModal();
   const { updateBottomSheet, openBottomSheet } = useBottomSheet();
   const deleteCommentMutate = useDeleteCommentMutation(post_id, comment.id);
@@ -75,7 +74,7 @@ export default function ViewComment({ comment, post_id }) {
 
   const onMoreClick = () => {
     openBottomSheet();
-    if (accountName === comment.author.accountname) {
+    if (accountname === comment.author.accountname) {
       const onCommentDelete = () => {
         functionModal(
           '해당 댓글을 삭제할까요?',

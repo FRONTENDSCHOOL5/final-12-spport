@@ -13,11 +13,10 @@ import {
   useUserPostQuery,
 } from '../hooks/useProfile';
 import { useProductQuery } from '../hooks/useProduct';
-import { useRecoilState } from 'recoil';
-import { accountname } from '../atom/loginAtom';
 import UserProfileLoader from '../components/Skeleton/UserProfileLoader';
 import TeamProfileLoader from '../components/Skeleton/TeamProfileLoader';
 import { Helmet } from 'react-helmet-async';
+import useAuth from '../hooks/useAuth';
 
 const MainStyle = styled.main`
   padding: 50px 0 60px;
@@ -50,7 +49,7 @@ const SkipNavStyle = styled.div`
 export default function Profile() {
   const { id } = useParams();
   const isTeam = id.startsWith('SPORT_');
-  const [username, setUsername] = useRecoilState(accountname);
+  const { accountname } = useAuth();
   const { profile, isProfileLoading, isProfileError } = useProfileQuery(id);
   const { post, isPostLoading, isPostError } = isTeam
     ? useTeamPostQuery(id)
@@ -62,7 +61,7 @@ export default function Profile() {
       {!isProfileLoading && id === profile.profile.accountname && (
         <Helmet>
           <title>
-            {profile.profile.username}(@
+            {profile.profile.accountname}(@
             {isTeam
               ? profile.profile.accountname.slice(9)
               : profile.profile.accountname}
@@ -102,7 +101,7 @@ export default function Profile() {
           !isProductLoading &&
           !isTeam &&
           profile.profile.length !== 0 &&
-          (username === profile.profile.accountname ? (
+          (accountname === profile.profile.accountname ? (
             <MyProfile
               profile={profile.profile}
               post={post.post}

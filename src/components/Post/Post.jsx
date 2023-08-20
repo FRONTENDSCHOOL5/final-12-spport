@@ -5,8 +5,6 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import GamePost from './GamePost';
 import RegularPost from './RegularPost';
 import BtnGroup from './BtnGroup';
-import { useRecoilState } from 'recoil';
-import { accountname } from '../../atom/loginAtom';
 import {
   useDeletePostMutation,
   useReportPostMutation,
@@ -14,6 +12,7 @@ import {
 import { Helmet } from 'react-helmet-async';
 import useBottomSheet from '../../hooks/useBottomSheet';
 import useModal from '../../hooks/useModal';
+import useAuth from '../../hooks/useAuth';
 
 const PostStyle = styled.article`
   width: 500px;
@@ -45,7 +44,7 @@ function Post({ post }) {
   const loca = useLocation().pathname.split('/')[1];
   const postNum = useLocation().pathname.split('/')[2];
 
-  const [accountName, setAccountName] = useRecoilState(accountname);
+  const { accountname } = useAuth();
   const { openBottomSheet, updateBottomSheet } = useBottomSheet();
   const { functionModal } = useModal();
 
@@ -54,7 +53,7 @@ function Post({ post }) {
 
   const handleMoreClick = () => {
     openBottomSheet();
-    if (post.author.accountname === accountName) {
+    if (post.author.accountname === accountname) {
       const onPostDelete = () => {
         functionModal(
           '해당 게시물을 삭제할까요?',
@@ -64,7 +63,7 @@ function Post({ post }) {
           async () => await deletePostMutate.mutateAsync(),
           () => {
             if (loca === 'post') {
-              navigate(`/profile/${accountName}`);
+              navigate(`/profile/${accountname}`);
             }
           },
         );

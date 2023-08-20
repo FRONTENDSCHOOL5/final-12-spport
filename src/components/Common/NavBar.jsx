@@ -12,9 +12,8 @@ import logoText from '../../assets/logo/text-logo.svg';
 import iconMoreFill from '../../assets/image/icon-more.svg';
 import iconMore from '../../assets/image/icon-more-white.svg';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { useRecoilState } from 'recoil';
-import { accountname } from '../../atom/loginAtom';
 import useBottomSheet from '../../hooks/useBottomSheet';
+import useAuth from '../../hooks/useAuth';
 
 // nav 스타일 컴포넌트
 const NavContainer = styled.nav`
@@ -109,15 +108,15 @@ const NavUnorderedList = styled.ul`
 
 // nav bar 컴포넌트
 export default function NavBar() {
-  const [username] = useRecoilState(accountname);
   const navigate = useNavigate();
+  const { accountname } = useAuth();
   const { logout } = useBottomSheet();
 
   const menu = [
     ['홈', 'home', iconHome, iconHomeFill],
     ['검색', 'search', iconSearch, iconSearchFill],
     ['게시물 작성', 'upload', iconEdit, iconEdit],
-    ['프로필', `profile/${username}`, iconUser, iconUserFill],
+    ['프로필', `profile/${accountname}`, iconUser, iconUserFill],
     ['더보기', 'more', iconMore, iconMoreFill],
   ];
 
