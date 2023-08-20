@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState } from 'react';
 import Input from '../components/Common/Input';
 import styled from 'styled-components';
 import LButton from '../components/Common/Button/LButton';
@@ -8,95 +8,94 @@ import useAuth from '../hooks/useAuth';
 
 export default function LoginPage() {
   const URL = 'https://api.mandarin.weniv.co.kr/user/login';
-
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [isCorrect, setIsCorrect] = useState(true);
-  const [buttonDisabled, setButtonDisabled] = useState(true);
-  const [loginError, setLoginError] = useState('');
-  const [emailError, setEmailError] = useState('');
-  const [pwMessage, setPwMessage] = useState('');
-  const { setUserInfo } = useAuth();
   const navigate = useNavigate();
 
-  const handleEmailChange = (e) => {
-    const email = e.target.value;
-    setEmail(email);
-    if (email === '') {
-      setEmailError('*이메일을 입력해주세요.');
-    } else {
-      setEmailError('');
+  const [isCorrect, setIsCorrect] = useState(true);
+  const [buttonDisabled, setButtonDisabled] = useState(true);
+  const [loginErrorMsg, setLoginErrorMsg] = useState('');
+  const [emailErrorMsg, setEmailErrorMsg] = useState('');
+  const [passwordMsg, setPasswordMsg] = useState('');
+
+  const { setUserInfo } = useAuth();
+
+  const [userinfo, setUserinfo] = useState({
+    user: {
+      email: '',
+      password: '',
+    },
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setUserinfo((prevState) => ({
+      user: {
+        ...prevState.user,
+        [name]: value,
+      },
+    }));
+
+    if (name === 'email') {
+      if (value === '') {
+        setEmailErrorMsg('*이메일을 입력해주세요.');
+      } else {
+        setEmailErrorMsg('');
+      }
+    } else if (name === 'password') {
+      if (value === '') {
+        setPasswordMsg('*비밀번호를 입력해주세요.');
+      } else if (value.length < 6) {
+        setPasswordMsg('*비밀번호는 6자 이상이어야 합니다.');
+      } else {
+        setPasswordMsg('');
+      }
     }
-  };
 
-  const handlePasswordChange = (e) => {
-    const password = e.target.value;
-    setPassword(password);
-
-    if (password === '') {
-      setPwMessage('*비밀번호를 입력해주세요.');
-    } else if (password.length < 6) {
-      setPwMessage('*비밀번호는 6자 이상이어야 합니다.');
-    } else {
-      setPwMessage('');
-      setLoginError('');
-    }
-  };
-
-  useEffect(() => {
+    const { email, password } = userinfo.user;
     if (email && password) {
       setButtonDisabled(false);
-      setIsCorrect(true);
-      setLoginError(null);
     } else {
       setButtonDisabled(true);
     }
-  }, [email, password]);
+  };
 
-  const handleSubmit = useCallback(
-    async (e) => {
-      e.preventDefault();
+  const handleLogin = async () => {
+    try {
+      const response = await fetch(URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ ...userinfo }),
+      });
 
-      try {
-        const response = await fetch(URL, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            user: {
-              email: email,
-              password: password,
-            },
-          }),
+      const data = await response.json();
+
+      if (!data.message) {
+        const userData = data.user;
+        const { token, accountname, username, intro, image } = userData;
+        setUserInfo({
+          token: token,
+          isLogin: true,
+          accountname: accountname,
+          username: username,
+          intro: intro,
+          userimage: image,
         });
 
-        const data = await response.json();
-
-        if (!data.message) {
-          const userData = data.user;
-          const { token, accountname, username, intro, image } = userData;
-          setUserInfo({
-            token: token,
-            accountname,
-            username: username,
-            isLogin: true,
-            intro: intro,
-            userimage: image,
-          });
-          navigate('/home');
-        } else if (
-          data.message === '이메일 또는 비밀번호가 일치하지 않습니다.'
-        ) {
-          setIsCorrect(false);
-          setLoginError('* 이메일 또는 비밀번호가 일치하지 않습니다.');
-        }
-      } catch (error) {
-        console.error(error);
+        navigate('/home');
+      } else if (data.message === '이메일 또는 비밀번호가 일치하지 않습니다.') {
+        setIsCorrect(false);
+        setLoginErrorMsg('*이메일 또는 비밀번호가 일치하지 않습니다.');
       }
-    },
-    [email, password, navigate],
-  );
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    handleLogin();
+  };
 
   return (
     <>
@@ -106,21 +105,21 @@ export default function LoginPage() {
           title='이메일'
           type='email'
           inputId='label-email'
-          value={email}
+          value={userinfo.user.email}
           name='email'
-          onChange={handleEmailChange}
+          onChange={handleInputChange}
         />
-        {emailError && <ErrorText>{emailError}</ErrorText>}
+        {emailErrorMsg && <ErrorText>{emailErrorMsg}</ErrorText>}
         <Input
           title='비밀번호'
           type='password'
           inputId='label-pw'
-          value={password}
+          value={userinfo.user.password}
           name='password'
-          onChange={handlePasswordChange}
+          onChange={handleInputChange}
         />
-        {pwMessage && <ErrorText>{pwMessage}</ErrorText>}
-        {isCorrect === false && <ErrorText>{loginError}</ErrorText>}
+        {passwordMsg && <ErrorText>{passwordMsg}</ErrorText>}
+        {isCorrect === false && <ErrorText>{loginErrorMsg}</ErrorText>}
         <LButton text='로그인' type='submit' disabled={buttonDisabled} />
       </FormStyle>
       <LinkWrap>
