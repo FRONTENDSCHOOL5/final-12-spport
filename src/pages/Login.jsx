@@ -4,15 +4,7 @@ import styled from 'styled-components';
 import LButton from '../components/Common/Button/LButton';
 import { Link, useNavigate } from 'react-router-dom';
 import { LinkWrap } from './Welcome';
-import { useRecoilState } from 'recoil';
-import {
-  userToken,
-  loginState,
-  accountname,
-  username,
-  intro,
-  userimage,
-} from '../atom/loginAtom';
+import useAuth from '../hooks/useAuth';
 
 export default function LoginPage() {
   const URL = 'https://api.mandarin.weniv.co.kr/user/login';
@@ -24,14 +16,9 @@ export default function LoginPage() {
   const [emailErrorMsg, setEmailErrorMsg] = useState('');
   const [passwordMsg, setPasswordMsg] = useState('');
 
-  const [userTokenAtom, setUserTokenAtom] = useRecoilState(userToken);
-  const [loginStateAtom, setLoginStateAtom] = useRecoilState(loginState);
-  const [accountName, setAccountName] = useRecoilState(accountname);
-  const [userName, setUserName] = useRecoilState(username);
-  const [userIntro, setUserIntro] = useRecoilState(intro);
-  const [userImage, setUserImage] = useRecoilState(userimage);
+  const { setUserInfo } = useAuth();
 
-  const [userInfo, setUserInfo] = useState({
+  const [userinfo, setUserinfo] = useState({
     user: {
       email: '',
       password: '',
@@ -40,7 +27,7 @@ export default function LoginPage() {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setUserInfo((prevState) => ({
+    setUserinfo((prevState) => ({
       user: {
         ...prevState.user,
         [name]: value,
@@ -63,7 +50,7 @@ export default function LoginPage() {
       }
     }
 
-    const { email, password } = userInfo.user;
+    const { email, password } = userinfo.user;
     if (email && password) {
       setButtonDisabled(false);
     } else {
@@ -78,7 +65,7 @@ export default function LoginPage() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ ...userInfo }),
+        body: JSON.stringify({ ...userinfo }),
       });
 
       const data = await response.json();
@@ -86,12 +73,14 @@ export default function LoginPage() {
       if (!data.message) {
         const userData = data.user;
         const { token, accountname, username, intro, image } = userData;
-        setUserTokenAtom(token);
-        setLoginStateAtom(true);
-        setAccountName(accountname);
-        setUserName(username);
-        setUserIntro(intro);
-        setUserImage(image);
+        setUserInfo({
+          token: token,
+          isLogin: true,
+          accountname: accountname,
+          username: username,
+          intro: intro,
+          userimage: image,
+        });
 
         navigate('/home');
       } else if (data.message === '이메일 또는 비밀번호가 일치하지 않습니다.') {
@@ -116,7 +105,7 @@ export default function LoginPage() {
           title='이메일'
           type='email'
           inputId='label-email'
-          value={userInfo.user.email}
+          value={userinfo.user.email}
           name='email'
           onChange={handleInputChange}
         />
@@ -125,7 +114,7 @@ export default function LoginPage() {
           title='비밀번호'
           type='password'
           inputId='label-pw'
-          value={userInfo.user.password}
+          value={userinfo.user.password}
           name='password'
           onChange={handleInputChange}
         />

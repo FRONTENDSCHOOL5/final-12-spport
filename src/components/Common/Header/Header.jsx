@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import iconBack from '../../../assets/image/icon-back.svg';
 import iconMore from '../../../assets/image/icon-more.svg';
@@ -8,18 +7,7 @@ import SearchBox from './SearchBox';
 import FeedFilter from '../Filter/FeedFilter';
 import MsButton from '../Button/MsButton';
 import { useNavigate } from 'react-router-dom';
-import { useRecoilState } from 'recoil';
-import {
-  isBottomSheetOpen,
-  bottomSheetItems,
-} from '../../../atom/bottomSheetAtom';
-import { isModalOpen, modalItems } from '../../../atom/modalAtom';
-import {
-  userToken,
-  loginState,
-  accountname,
-  userimage,
-} from '../../../atom/loginAtom';
+import useBottomSheet from '../../../hooks/useBottomSheet';
 
 const HeaderStyle = styled.header`
   height: 50px;
@@ -66,68 +54,21 @@ export default function Header({
   setFilterClick,
   uploadText,
   disabled,
-  isChatRoom,
 }) {
   const navigate = useNavigate();
-  const [isBsOpen, setIsBsOpen] = useRecoilState(isBottomSheetOpen);
-  const [bsItems, setBsItems] = useRecoilState(bottomSheetItems);
-  const [isModal, setIsModal] = useRecoilState(isModalOpen);
-  const [modalItem, setModalItem] = useRecoilState(modalItems);
 
-  // Login와 User
-  const [token, setToken] = useRecoilState(userToken);
-  const [isLogin, setIsLogin] = useRecoilState(loginState);
-  const [accountName, setAccountName] = useRecoilState(accountname);
-  const [userImage, setUserImage] = useRecoilState(userimage);
+  const { logout } = useBottomSheet();
 
   const handleBackClick = () => {
     navigate(-1);
   };
+
   const handleSearchClick = () => {
     navigate('/search');
   };
+
   const handleMoreClick = () => {
-    setIsBsOpen((prev) => !prev);
-    if (isChatRoom) {
-      const leaveChatRoom = () => {
-        setIsBsOpen(false);
-        setIsModal(true);
-        const leaveRoom = async () => {
-          navigate('/chat');
-          setIsModal(false);
-        };
-        setModalItem(['채팅방을 나가시겠어요?', '나가기', leaveRoom]);
-      };
-      const chatRoomBsItems = [['채팅방 나가기', leaveChatRoom]];
-      setBsItems(chatRoomBsItems);
-    } else {
-      const onInfoClick = () => {
-        alert('info');
-        setIsBsOpen(false);
-      };
-      const resetLogin = () => {
-        setToken('');
-        setIsLogin(false);
-        setAccountName('');
-        setUserImage('');
-      };
-      const onLogout = () => {
-        setIsBsOpen(false);
-        setIsModal(true);
-        const logout = async () => {
-          await resetLogin();
-          navigate('/welcome');
-          setIsModal(true);
-          setModalItem(['로그아웃되었습니다.', '확인', function () {}]);
-        };
-        setModalItem(['로그아웃하시겠어요?', '로그아웃', logout]);
-      };
-      const loginBsItems = [
-        ['설정 및 개인정보', onInfoClick],
-        ['로그아웃', onLogout],
-      ];
-      setBsItems(loginBsItems);
-    }
+    logout();
   };
 
   return (

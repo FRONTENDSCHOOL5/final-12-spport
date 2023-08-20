@@ -4,12 +4,11 @@ import { InputCommentStyle } from '../components/Comment/InputComment';
 import styled from 'styled-components';
 import { ImageButton } from '../components/Common/Button/ImageButton';
 import { ProfileImage42 } from '../components/Common/ProfileImage';
-import { username } from '../atom/loginAtom';
-import { useRecoilValue } from 'recoil';
 import ChatImage from '../assets/image/default-profile.png';
+import useAuth from '../hooks/useAuth';
 
 export default function ChatRoom() {
-  const userName = useRecoilValue(username);
+  const { username } = useAuth();
   const [inputValue, setInputValue] = useState('');
 
   const handleInputChange = (e) => {
@@ -26,7 +25,7 @@ export default function ChatRoom() {
 
   return (
     <>
-      <Header text={userName} isChatRoom={true} />
+      <Header text={username} isChatRoom={true} />
       <MessageList>
         <li>
           <ProfileImage42 />

@@ -4,9 +4,8 @@ import iconFillHeart from '../../assets/image/icon-heart-fill.svg';
 import iconMessage from '../../assets/image/icon-message-small.svg';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { useRecoilState } from 'recoil';
-import { accountname } from '../../atom/loginAtom';
 import { useLikeMutation, useUnlikeMutation } from '../../hooks/useLike';
+import useAuth from '../../hooks/useAuth';
 
 const BtnWrapperStyle = styled.div`
   text-align: start;
@@ -34,10 +33,10 @@ export default function BtnGroup({
 }) {
   const [isLike, setIsLike] = useState(hearted);
   const [likeCount, setLikeCount] = useState(heartCount);
-  const [accountName, setAccountName] = useRecoilState(accountname);
+  const { accountname } = useAuth();
   const useLikeMutate = useLikeMutation(setIsLike, setLikeCount);
   const useUnlikeMutate = useUnlikeMutation(
-    accountName,
+    accountname,
     setIsLike,
     setLikeCount,
   );

@@ -1,9 +1,8 @@
 import React from 'react';
 import GlobalStyles from './style/GlobalStyles';
 import Router from './routes/Router';
-import BottomSheet from './components/ModalUtil/CommonBottomSheet';
-import Modal from './components/ModalUtil/CommonModal';
-import styled from 'styled-components';
+import BottomSheet from './components/Common/Modals/BottomSheet';
+import Modal from './components/Common/Modals/Modal';
 import { useRecoilState } from 'recoil';
 import { isBottomSheetOpen } from './atom/bottomSheetAtom';
 import { isModalOpen } from './atom/modalAtom';
@@ -60,8 +59,8 @@ function App() {
       </Helmet>
       <GlobalStyles />
       <Router />
-      {isBsOpen && <BottomSheet />}
       {isModal && <Modal />}
+      {isBsOpen && <BottomSheet />}
     </>
   );
 }

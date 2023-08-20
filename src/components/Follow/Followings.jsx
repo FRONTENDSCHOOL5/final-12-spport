@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import FollowList from './FollowList';
-import { useRecoilState } from 'recoil';
-import { accountname } from '../../atom/loginAtom';
 import { useInView } from 'react-intersection-observer';
+import useAuth from '../../hooks/useAuth';
 
 export default function Followings({ following }) {
-  const [myAccountname, setMyAccountname] = useRecoilState(accountname);
+  const { accountname } = useAuth();
   const [ref, inView] = useInView();
   const [page, setPage] = useState(0);
 
@@ -38,7 +37,7 @@ export default function Followings({ following }) {
                 image={item.image}
                 page='followings'
                 isfollow={item.isfollow}
-                isMyAccount={item.accountname === myAccountname}
+                isMyAccount={item.accountname === accountname}
               />
             );
           }

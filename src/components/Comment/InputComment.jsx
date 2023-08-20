@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { ProfileImage36 } from '../Common/ProfileImage';
 import { useParams } from 'react-router-dom';
-import { useRecoilState } from 'recoil';
-import { userimage } from '../../atom/loginAtom';
 import { useAddCommentMutation } from '../../hooks/useComment';
+import useAuth from '../../hooks/useAuth';
 
 export const InputCommentStyle = styled.form`
   position: fixed;
@@ -65,7 +64,7 @@ export const InputCommentStyle = styled.form`
 export default function InputComment() {
   const { id } = useParams();
   const [inputVal, setInputVal] = useState('');
-  const [userImage, setUserImage] = useRecoilState(userimage);
+  const { userimage } = useAuth();
   const addCommentMutate = useAddCommentMutation(id);
 
   const handleSubmit = async (e) => {
@@ -80,7 +79,7 @@ export default function InputComment() {
 
   return (
     <InputCommentStyle onSubmit={handleSubmit}>
-      <ProfileImage36 image={userImage} />
+      <ProfileImage36 image={userimage} />
       <label htmlFor='inpComment' className='a11y-hidden'>
         댓글을 입력해주세요
       </label>

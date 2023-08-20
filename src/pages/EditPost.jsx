@@ -5,11 +5,10 @@ import { ProfileImage42 } from '../components/Common/ProfileImage';
 import { UploadButton } from '../components/Common/Button/ImageButton';
 import { GET_API, PUT_API } from '../api/CommonAPI';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { userimage } from '../atom/loginAtom';
-import { useRecoilState } from 'recoil';
-import { isModalOpen, modalItems } from '../atom/modalAtom';
 import iconClose from '../assets/image/icon-close.svg';
 import { Helmet } from 'react-helmet-async';
+import useModal from '../hooks/useModal';
+import useAuth from '../hooks/useAuth';
 
 const USection = styled.section`
   padding: 70px 20px;
@@ -69,9 +68,9 @@ const StyledUploadButton = styled(UploadButton)`
   right: 30px;
 `;
 
-export default function EditPost(props) {
+export default function EditPost() {
   // 직접 받아올 때 사용
-  const [userImage, setUserImage] = useRecoilState(userimage);
+  const { userimage } = useAuth();
   const location = useLocation();
   const post_id = location.state.post_id;
 
@@ -84,10 +83,7 @@ export default function EditPost(props) {
   const [images, setImages] = useState([]); //업로드할 게시물 이미지 여러개
   const [imageUrl, setImageUrl] = useState(''); //업로드할 게시물 이미지 서버주소
   const [isReady, setIsReady] = useState(false);
-
-  const [isModal, setIsModal] = useRecoilState(isModalOpen);
-  const [modalItem, setModalItem] = useRecoilState(modalItems);
-
+  const { functionModal } = useModal();
   const navigate = useNavigate();
 
   // 이전 데이터 요청
@@ -101,7 +97,6 @@ export default function EditPost(props) {
   }, []);
 
   useEffect(() => {
-    console.log(images);
     if (text === '' && images[0] === '') {
       setIsReady(true);
     } else {
@@ -154,7 +149,6 @@ export default function EditPost(props) {
 
   // 게시글 내용을 서버에 업로드 하는 함수
   const handleSubmitModify = async () => {
-    setIsModal(true);
     const editPost = async () => {
       const bodyData = {
         'post': {
@@ -163,10 +157,15 @@ export default function EditPost(props) {
         },
       };
       const data = await PUT_API('/post/' + post_id, bodyData);
-      console.log(data);
       navigate('/post/' + post_id);
     };
-    setModalItem(['게시물을 수정하시겠습니까?', '수정', editPost]);
+    functionModal(
+      '게시물을 수정하시겠습니까?',
+      '수정',
+      '게시물이 수정되었습니다',
+      '확인',
+      editPost,
+    );
   };
   // handleSubmitModify 끝
 
@@ -239,7 +238,7 @@ export default function EditPost(props) {
       <Header upload onUploadClick={handleSubmitModify} disabled={isReady} />
       <USection>
         <section className='form-wrapper'>
-          <ProfileImage42 image={userImage} />
+          <ProfileImage42 image={userimage} />
           <form>
             <textarea
               className='text-area'

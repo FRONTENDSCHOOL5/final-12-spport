@@ -22,7 +22,7 @@ const PostListStyle = styled.ul`
   }
 `;
 
-export default function PostList({ post, onlyGame, isHome }) {
+function PostList({ post, onlyGame, isHome }) {
   const [sortedPost, setSortedPost] = useState([]);
   const [ref, inView] = useInView();
   const [page, setPage] = useState(0);
@@ -66,3 +66,5 @@ export default function PostList({ post, onlyGame, isHome }) {
     </PostListStyle>
   );
 }
+
+export default React.memo(PostList);
