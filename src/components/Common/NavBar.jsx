@@ -13,17 +13,8 @@ import iconMoreFill from '../../assets/image/icon-more.svg';
 import iconMore from '../../assets/image/icon-more-white.svg';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
-import {
-  isBottomSheetOpen,
-  bottomSheetItems,
-} from '../../atom/bottomSheetAtom';
-import { isModalOpen, modalItems } from '../../atom/modalAtom';
-import {
-  userToken,
-  loginState,
-  accountname,
-  userimage,
-} from '../../atom/loginAtom';
+import { accountname } from '../../atom/loginAtom';
+import useBottomSheet from '../../hooks/useBottomSheet';
 
 // nav 스타일 컴포넌트
 const NavContainer = styled.nav`
@@ -117,19 +108,10 @@ const NavUnorderedList = styled.ul`
 `;
 
 // nav bar 컴포넌트
-export default function NavBar({ setFilterClick }) {
-  const [username, setUsername] = useRecoilState(accountname);
+export default function NavBar() {
+  const [username] = useRecoilState(accountname);
   const navigate = useNavigate();
-
-  const [isBsOpen, setIsBsOpen] = useRecoilState(isBottomSheetOpen);
-  const [bsItems, setBsItems] = useRecoilState(bottomSheetItems);
-  const [isModal, setIsModal] = useRecoilState(isModalOpen);
-  const [modalItem, setModalItem] = useRecoilState(modalItems);
-
-  const [token, setToken] = useRecoilState(userToken);
-  const [isLogin, setIsLogin] = useRecoilState(loginState);
-  const [accountName, setAccountName] = useRecoilState(accountname);
-  const [userImage, setUserImage] = useRecoilState(userimage);
+  const { logout } = useBottomSheet();
 
   const menu = [
     ['홈', 'home', iconHome, iconHomeFill],
@@ -140,44 +122,15 @@ export default function NavBar({ setFilterClick }) {
   ];
 
   const location = useLocation();
-  const [currentPage, setCurrentPage] = useState('home');
   const currentLocation = location.pathname.slice(1);
   const [currentWidth, setCurrentWidth] = useState(window.innerWidth);
 
   const handlePage = (item) => () => {
-    setCurrentPage(item[1]);
     navigate(`/${item[1]}`);
   };
 
   const handleMoreClick = () => {
-    setIsBsOpen((prev) => !prev);
-
-    const onInfoClick = () => {
-      alert('info');
-      setIsBsOpen(false);
-    };
-    const resetLogin = () => {
-      setToken('');
-      setIsLogin(false);
-      setAccountName('');
-      setUserImage('');
-    };
-    const onLogout = () => {
-      setIsBsOpen(false);
-      setIsModal(true);
-      const logout = async () => {
-        await resetLogin();
-        navigate('/welcome');
-        setIsModal(true);
-        setModalItem(['로그아웃되었습니다.', '확인', function () {}]);
-      };
-      setModalItem(['로그아웃하시겠어요?', '로그아웃', logout]);
-    };
-    const loginBsItems = [
-      ['설정 및 개인정보', onInfoClick],
-      ['로그아웃', onLogout],
-    ];
-    setBsItems(loginBsItems);
+    logout();
   };
 
   useEffect(() => {
@@ -185,9 +138,7 @@ export default function NavBar({ setFilterClick }) {
       const currentWidth = window.innerWidth;
       setCurrentWidth(currentWidth);
     };
-
     window.addEventListener('resize', handleResize);
-
     return () => {
       window.removeEventListener('resize', handleResize);
     };

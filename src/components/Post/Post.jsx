@@ -6,17 +6,14 @@ import GamePost from './GamePost';
 import RegularPost from './RegularPost';
 import BtnGroup from './BtnGroup';
 import { useRecoilState } from 'recoil';
-import {
-  isBottomSheetOpen,
-  bottomSheetItems,
-} from '../../atom/bottomSheetAtom';
 import { accountname } from '../../atom/loginAtom';
-import { isModalOpen, modalItems } from '../../atom/modalAtom';
 import {
   useDeletePostMutation,
   useReportPostMutation,
 } from '../../hooks/usePost';
 import { Helmet } from 'react-helmet-async';
+import useBottomSheet from '../../hooks/useBottomSheet';
+import useModal from '../../hooks/useModal';
 
 const PostStyle = styled.article`
   width: 500px;
@@ -36,7 +33,7 @@ const PostStyle = styled.article`
   }
 `;
 
-export default function Post({ post }) {
+function Post({ post }) {
   const navigate = useNavigate();
   const isTeam = post.author.accountname.startsWith('SPORT_');
   const date = isTeam
@@ -49,33 +46,28 @@ export default function Post({ post }) {
   const postNum = useLocation().pathname.split('/')[2];
 
   const [accountName, setAccountName] = useRecoilState(accountname);
-  const [isBsOpen, setIsBsOpen] = useRecoilState(isBottomSheetOpen);
-  const [bsItems, setBsItems] = useRecoilState(bottomSheetItems);
-  const [isModal, setIsModal] = useRecoilState(isModalOpen);
-  const [modalItem, setModalItem] = useRecoilState(modalItems);
+  const { openBottomSheet, updateBottomSheet } = useBottomSheet();
+  const { functionModal } = useModal();
 
   const deletePostMutate = useDeletePostMutation(post.id);
   const reportPostMutate = useReportPostMutation(post.id);
 
   const handleMoreClick = () => {
-    setIsBsOpen(true);
+    openBottomSheet();
     if (post.author.accountname === accountName) {
       const onPostDelete = () => {
-        setIsModal(true);
-        const deletePost = async () => {
-          await deletePostMutate.mutateAsync();
-          setIsModal(true);
-          setModalItem([
-            '게시물이 삭제되었습니다',
-            '확인',
-            function () {
-              if (loca === 'post') {
-                navigate(`/profile/${accountName}`);
-              }
-            },
-          ]);
-        };
-        setModalItem(['해당 게시물을 삭제할까요?', '삭제', deletePost]);
+        functionModal(
+          '해당 게시물을 삭제할까요?',
+          '삭제',
+          '게시물이 삭제되었습니다',
+          '확인',
+          async () => await deletePostMutate.mutateAsync(),
+          () => {
+            if (loca === 'post') {
+              navigate(`/profile/${accountName}`);
+            }
+          },
+        );
       };
       const onPostEdit = () => {
         navigate('/editpost', {
@@ -84,23 +76,21 @@ export default function Post({ post }) {
           },
         });
       };
-      const postItems = [
+      updateBottomSheet([
         ['삭제', onPostDelete],
         ['수정', onPostEdit],
-      ];
-      setBsItems(postItems);
+      ]);
     } else {
       const onPostReport = () => {
-        setIsModal(true);
-        const reportPost = async () => {
-          await reportPostMutate.mutateAsync();
-          setIsModal(true);
-          setModalItem(['게시물이 신고되었습니다', '확인', function () {}]);
-        };
-        setModalItem(['해당 게시물을 신고할까요?', '신고', reportPost]);
+        functionModal(
+          '해당 게시물을 신고할까요?',
+          '신고',
+          '게시물이 신고되었습니다',
+          '확인',
+          async () => await reportPostMutate.mutateAsync(),
+        );
+        updateBottomSheet([['신고', onPostReport]]);
       };
-      const postItems = [['신고', onPostReport]];
-      setBsItems(postItems);
     }
   };
 
@@ -138,3 +128,5 @@ export default function Post({ post }) {
     </>
   );
 }
+
+export default React.memo(Post);

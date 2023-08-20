@@ -7,9 +7,9 @@ import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import { useRecoilValue, useRecoilState } from 'recoil';
 import { userToken, accountname, userimage } from '../atom/loginAtom';
-import { isModalOpen, modalItems } from '../atom/modalAtom';
 import tokenData from '../assets/data/sport_users.json';
 import { Helmet } from 'react-helmet-async';
+import useModal from '../hooks/useModal';
 
 export default function EditProfile() {
   const URL = 'https://api.mandarin.weniv.co.kr';
@@ -22,9 +22,8 @@ export default function EditProfile() {
   const token = useRecoilValue(userToken);
   const [accountNameValue, setAccountNameValue] = useRecoilState(accountname);
   const [userimageValue, setUserimageValue] = useRecoilState(userimage);
-  const [isModal, setIsModal] = useRecoilState(isModalOpen);
   const [interest, setInterest] = useState('');
-  const [modalItem, setModalItem] = useRecoilState(modalItems);
+  const { functionModal } = useModal();
 
   const [initialAccountnameValue, setInitialAccountnameValue] =
     useState(accountNameValue);
@@ -165,12 +164,17 @@ export default function EditProfile() {
 
   const handleUSaveClick = async (e) => {
     e.preventDefault();
-    setIsModal(true);
     const editProfile = async () => {
       await handleEdit(userInfo);
       navigate(`/profile/${userInfo.user.accountname}`);
     };
-    setModalItem(['프로필을 수정하시겠습니까?', '수정', editProfile]);
+    functionModal(
+      '프로필을 수정하시겠습니까?',
+      '수정',
+      '프로필이 수정되었습니다',
+      '확인',
+      editProfile,
+    );
   };
 
   const handleAccountnameValid = async () => {

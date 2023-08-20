@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
-import { useRecoilState } from 'recoil';
-import { isModalOpen, modalItems } from '../../../atom/modalAtom';
 import { createPortal } from 'react-dom';
+import useModal from '../../../hooks/useModal';
 
 const ModalStyle = styled.article`
   position: fixed;
@@ -53,15 +52,11 @@ const ModalStyle = styled.article`
 `;
 // title, btnText, onYesClick
 export default function Modal() {
-  const [modalOpen, setModalOpen] = useRecoilState(isModalOpen);
-  const [items] = useRecoilState(modalItems);
-  const closeModal = () => {
-    setModalOpen(false);
-  };
+  const { isModalOpen, modalItem, closeModal } = useModal();
   useEffect(() => {
     const btnCancel = document.querySelector('.btn-cancel');
     const btnYes = document.querySelector('.btn-yes');
-    if (modalOpen) {
+    if (isModalOpen) {
       btnCancel.focus();
       document.addEventListener('keydown', (e) => {
         if (e.key === 'Tab') {
@@ -80,13 +75,13 @@ export default function Modal() {
   return createPortal(
     <ModalStyle onClick={closeModal}>
       <div className='modal-wrapper'>
-        <p>{items[0]}</p>
+        <p>{modalItem[0]}</p>
         <div className='btn-group'>
           <button className='btn-cancel' type='button'>
             취소
           </button>
-          <button className='btn-yes' type='button' onClick={items[2]}>
-            {items[1]}
+          <button className='btn-yes' type='button' onClick={modalItem[2]}>
+            {modalItem[1]}
           </button>
         </div>
       </div>

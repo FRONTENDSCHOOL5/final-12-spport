@@ -7,10 +7,10 @@ import { POST_API } from '../api/CommonAPI';
 import { useNavigate } from 'react-router-dom';
 import { userimage } from '../atom/loginAtom';
 import { useRecoilState } from 'recoil';
-import { isModalOpen, modalItems } from '../atom/modalAtom';
 import iconClose from '../assets/image/icon-close.svg';
 import imageCompression from 'browser-image-compression';
 import { Helmet } from 'react-helmet-async';
+import useModal from '../hooks/useModal';
 
 const USection = styled.section`
   padding: 70px 20px;
@@ -84,9 +84,7 @@ export default function Upload(props) {
   const [imageUrl, setImageUrl] = useState('');
   const [isReady, setIsReady] = useState(false);
 
-  const [isModal, setIsModal] = useRecoilState(isModalOpen);
-  const [modalItem, setModalItem] = useRecoilState(modalItems);
-
+  const { functionModal } = useModal();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -118,7 +116,6 @@ export default function Upload(props) {
 
   // 게시글 내용을 서버에 업로드 하는 함수
   const handleSubmit = async () => {
-    setIsModal(true);
     const uploadPost = async () => {
       const bodyData = {
         'post': {
@@ -127,10 +124,15 @@ export default function Upload(props) {
         },
       };
       const data = await POST_API(url, bodyData);
-
       navigate(`/post/${data.post.id}`);
     };
-    setModalItem(['게시물을 업로드하시겠습니까?', '업로드', uploadPost]);
+    functionModal(
+      '게시물을 업로드하시겠습니까?',
+      '업로드',
+      '업로드되었습니다',
+      '확인',
+      uploadPost,
+    );
   };
   // handleSubmit 끝
 

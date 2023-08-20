@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { ProfileImage36 } from '../Common/ProfileImage';
 import more from '../../assets/image/icon-more-small.svg';
@@ -6,14 +6,11 @@ import { Link } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
 import { accountname } from '../../atom/loginAtom';
 import {
-  isBottomSheetOpen,
-  bottomSheetItems,
-} from '../../atom/bottomSheetAtom';
-import { isModalOpen, modalItems } from '../../atom/modalAtom';
-import {
   useDeleteCommentMutation,
   useReportCommentMutation,
 } from '../../hooks/useComment';
+import useModal from '../../hooks/useModal';
+import useBottomSheet from '../../hooks/useBottomSheet';
 
 const VComment = styled.article`
   padding: 12px 16px;
@@ -71,39 +68,36 @@ export default function ViewComment({ comment, post_id }) {
   )}.${parseInt(date.slice(8))} ${date.slice(11, 13)}:${date.slice(14, 16)}`;
 
   const [accountName] = useRecoilState(accountname);
-  const [isBsOpen, setIsBsOpen] = useRecoilState(isBottomSheetOpen);
-  const [bsItems, setBsItems] = useRecoilState(bottomSheetItems);
-  const [isModal, setIsModal] = useRecoilState(isModalOpen);
-  const [modalItem, setModalItem] = useRecoilState(modalItems);
+  const { functionModal } = useModal();
+  const { updateBottomSheet, openBottomSheet } = useBottomSheet();
   const deleteCommentMutate = useDeleteCommentMutation(post_id, comment.id);
   const reportCommentMutate = useReportCommentMutation(post_id, comment.id);
 
   const onMoreClick = () => {
-    setIsBsOpen((prev) => !prev);
+    openBottomSheet();
     if (accountName === comment.author.accountname) {
       const onCommentDelete = () => {
-        setIsModal(true);
-        const deleteComment = async () => {
-          await deleteCommentMutate.mutateAsync();
-          setIsModal(true);
-          setModalItem(['해당 댓글이 삭제되었습니다.', '확인', function () {}]);
-        };
-        setModalItem(['해당 댓글을 삭제할까요?', '삭제', deleteComment]);
+        functionModal(
+          '해당 댓글을 삭제할까요?',
+          '삭제',
+          '해당 댓글이 삭제되었습니다.',
+          '확인',
+          async () => await deleteCommentMutate.mutateAsync(),
+        );
       };
-      const bsItem = [['삭제', onCommentDelete]];
-      setBsItems(bsItem);
+      updateBottomSheet([['삭제', onCommentDelete]]);
     } else {
-      const onCommentReport = () => {
-        setIsModal(true);
-        const reportComment = async () => {
-          await reportCommentMutate.mutateAsync();
-          setIsModal(true);
-          setModalItem(['해당 댓글이 신고되었습니다.', '확인', function () {}]);
-        };
-        setModalItem(['해당 댓글을 신고할까요?', '신고', reportComment]);
+      const onCommentReport = async () => {
+        await reportCommentMutate.mutateAsync();
+        functionModal(
+          '해당 댓글을 신고할까요?',
+          '신고',
+          '해당 댓글이 신고되었습니다.',
+          '확인',
+          async () => await reportCommentMutate.mutateAsync(),
+        );
       };
-      const bsItem = [['신고', onCommentReport]];
-      setBsItems(bsItem);
+      updateBottomSheet([['신고', onCommentReport]]);
     }
   };
 

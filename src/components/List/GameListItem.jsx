@@ -4,9 +4,9 @@ import { ProfileImage50 } from '../Common/ProfileImage';
 import SButton from '../Common/Button/SButton';
 import { accountname } from '../../atom/loginAtom';
 import { useRecoilState } from 'recoil';
-import { isModalOpen, modalItems } from '../../atom/modalAtom';
 import { useLikeMutation, useUnlikeMutation } from '../../hooks/useLike';
 import { GET_API } from '../../api/CommonAPI';
+import useModal from '../../hooks/useModal';
 
 const ListItemStyle = styled.li`
   width: 100%;
@@ -43,8 +43,7 @@ export default function GameListItem({ game }) {
   const game_id = game[1];
   const [isLike, setIsLike] = useState(false);
   const [accountName, setAccountName] = useRecoilState(accountname);
-  const [isModal, setIsModal] = useRecoilState(isModalOpen);
-  const [modalItem, setModalItem] = useRecoilState(modalItems);
+  const { functionModal } = useModal();
   const useLikeMutate = useLikeMutation(setIsLike);
   const useUnlikeMutate = useUnlikeMutation(accountName, setIsLike);
 
@@ -57,7 +56,6 @@ export default function GameListItem({ game }) {
   }, []);
 
   const likeModal = () => {
-    setIsModal(true);
     const likeGame = async () => {
       await useLikeMutate.mutate({
         ids: game_id,
@@ -65,20 +63,27 @@ export default function GameListItem({ game }) {
         post: game[0],
         isGame: true,
       });
-      setIsModal(true);
-      setModalItem(['해당 일정이 추가되었습니다.', '확인', function () {}]);
     };
-    setModalItem(['해당 일정을 추가하시겠습니까?', '추가', likeGame]);
+    functionModal(
+      '해당 일정을 추가하시겠습니까?',
+      '추가',
+      '해당 일정이 추가되었습니다.',
+      '확인',
+      likeGame,
+    );
   };
 
   const unlikeModal = () => {
-    setIsModal(true);
     const unlikeGame = async () => {
       await useUnlikeMutate.mutate({ ids: game_id, isTeam: true });
-      setIsModal(true);
-      setModalItem(['해당 일정이 삭제되었습니다.', '확인', function () {}]);
     };
-    setModalItem(['해당 일정을 삭제하시겠습니까?', '삭제', unlikeGame]);
+    functionModal(
+      '해당 일정을 삭제하시겠습니까?',
+      '삭제',
+      '해당 일정이 삭제되었습니다.',
+      '확인',
+      unlikeGame,
+    );
   };
 
   const onLikeClick = async () => {
