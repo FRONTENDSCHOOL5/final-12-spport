@@ -3,15 +3,18 @@ import GlobalStyles from './style/GlobalStyles';
 import Router from './routes/Router';
 import BottomSheet from './components/Common/Modals/BottomSheet';
 import Modal from './components/Common/Modals/Modal';
-import { useRecoilState } from 'recoil';
-import { isBottomSheetOpen } from './atom/bottomSheetAtom';
-import { isModalOpen } from './atom/modalAtom';
 import { Helmet } from 'react-helmet-async';
 import NavBar from './components/Common/NavBar';
+import useModal from './hooks/useModal';
+import useBottomSheet from './hooks/useBottomSheet';
+import { useLocation } from 'react-router-dom';
 
 function App() {
-  const [isBsOpen, setIsBsOpen] = useRecoilState(isBottomSheetOpen);
-  const [isModal, setIsModal] = useRecoilState(isModalOpen);
+  const { isModalOpen } = useModal();
+  const { isBsOpen } = useBottomSheet();
+  const location = useLocation().pathname;
+  const noNavBar = ['/', '/welcome', '/login', '/signup'];
+
   return (
     <>
       <Helmet>
@@ -60,8 +63,8 @@ function App() {
       </Helmet>
       <GlobalStyles />
       <Router />
-      <NavBar />
-      {isModal && <Modal />}
+      {!noNavBar.includes(location) && <NavBar />}
+      {isModalOpen && <Modal />}
       {isBsOpen && <BottomSheet />}
     </>
   );
