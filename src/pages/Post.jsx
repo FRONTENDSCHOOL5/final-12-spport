@@ -7,7 +7,6 @@ import styled from 'styled-components';
 import { PostDetailLoader } from '../components/Skeleton/PostLoader';
 import { usePostQuery } from '../hooks/usePost';
 import { useCommentQuery } from '../hooks/useComment';
-import NavBar from '../components/Common/NavBar';
 
 const MainStyle = styled.main`
   height: 100%;
@@ -55,7 +54,6 @@ export default function Post() {
           </>
         )}
       </MainStyle>
-      <NavBar />
     </>
   );
 }

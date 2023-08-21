@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Common/Header/Header';
-import NavBar from '../components/Common/NavBar';
 import styled from 'styled-components';
 import GameList from '../components/List/GameList';
 import SelectFilter from '../components/Common/Filter/SelectFilter';
@@ -106,7 +105,6 @@ export default function AddGame() {
           )}
         </section>
       </MainStyle>
-      <NavBar />
     </>
   );
 }

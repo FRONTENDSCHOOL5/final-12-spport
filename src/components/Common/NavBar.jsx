@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import styled from 'styled-components';
 import iconHome from '../../assets/image/icon-home.svg';
 import iconHomeFill from '../../assets/image/icon-home-fill.svg';
@@ -107,7 +107,7 @@ const NavUnorderedList = styled.ul`
 `;
 
 // nav bar 컴포넌트
-export default function NavBar() {
+function NavBar() {
   const navigate = useNavigate();
   const { accountname } = useAuth();
   const { logout } = useBottomSheet();
@@ -132,7 +132,7 @@ export default function NavBar() {
     logout();
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const handleResize = () => {
       const currentWidth = window.innerWidth;
       setCurrentWidth(currentWidth);
@@ -202,3 +202,5 @@ export default function NavBar() {
     </NavContainer>
   );
 }
+
+export default React.memo(NavBar);

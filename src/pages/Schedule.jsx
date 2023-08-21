@@ -1,5 +1,4 @@
 import Header from '../components/Common/Header/Header';
-import NavBar from '../components/Common/NavBar';
 import styled from 'styled-components';
 import Empty from '../components/Common/Empty';
 import GameGrid from '../components/List/CardGrid';
@@ -72,7 +71,6 @@ export default function Schedule() {
           {isProductLoading ? <CardLoader /> : <GameGrid games={product} />}
         </section>
       </MainStyle>
-      <NavBar />
     </>
   );
 }

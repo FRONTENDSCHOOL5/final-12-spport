@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Common/Header/Header';
 import { useParams } from 'react-router-dom';
-import NavBar from '../components/Common/NavBar';
 import styled from 'styled-components';
 import SelectFilter from '../components/Common/Filter/SelectFilter';
 import bsPlayerData from '../assets/data/baseball_players.json';
@@ -113,7 +112,6 @@ export default function PlayerList() {
           </ul>
         </SectionList>
       </MainContainer>
-      <NavBar />
     </>
   );
 }

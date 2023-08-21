@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams, useLocation, useNavigate } from 'react-router-dom';
 import Header from '../components/Common/Header/Header';
-import NavBar from '../components/Common/NavBar';
 import styled from 'styled-components';
 import Followers from '../components/Follow/Followers';
 import Followings from '../components/Follow/Followings';
@@ -45,7 +44,6 @@ export default function Follow() {
           ? !isFollowerLoading && <Followers follower={follower} />
           : !isFollowingLoading && <Followings following={following} />}
       </MainStyle>
-      <NavBar />
     </>
   );
 }

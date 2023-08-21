@@ -7,6 +7,7 @@ import { useRecoilState } from 'recoil';
 import { isBottomSheetOpen } from './atom/bottomSheetAtom';
 import { isModalOpen } from './atom/modalAtom';
 import { Helmet } from 'react-helmet-async';
+import NavBar from './components/Common/NavBar';
 
 function App() {
   const [isBsOpen, setIsBsOpen] = useRecoilState(isBottomSheetOpen);
@@ -59,6 +60,7 @@ function App() {
       </Helmet>
       <GlobalStyles />
       <Router />
+      <NavBar />
       {isModal && <Modal />}
       {isBsOpen && <BottomSheet />}
     </>

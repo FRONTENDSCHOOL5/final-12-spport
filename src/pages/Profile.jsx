@@ -5,7 +5,6 @@ import Header from '../components/Common/Header/Header';
 import MyProfile from '../components/Profile/MyProfile';
 import UserProfile from '../components/Profile/UserProfile';
 import TeamProfile from '../components/Profile/TeamProfile';
-import NavBar from '../components/Common/NavBar';
 import Empty from '../components/Common/Empty';
 import {
   useProfileQuery,
@@ -115,7 +114,6 @@ export default function Profile() {
             />
           ))}
       </MainStyle>
-      <NavBar />
     </>
   );
 }

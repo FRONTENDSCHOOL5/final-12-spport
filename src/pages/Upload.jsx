@@ -59,12 +59,23 @@ const USection = styled.section`
     top: 10px;
     right: 10px;
   }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 60px;
+  }
+
+  @media screen and (min-width: 1247px) {
+    margin-left: 200px;
+  }
 `;
 
 const StyledUploadButton = styled(UploadButton)`
   position: fixed;
-  bottom: 30px;
+  bottom: 90px;
   right: 30px;
+  @media screen and (min-width: 768px) {
+    bottom: 30px;
+  }
 `;
 
 export default function Upload() {
