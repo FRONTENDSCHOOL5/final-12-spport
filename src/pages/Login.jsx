@@ -11,7 +11,7 @@ export default function LoginPage() {
   const navigate = useNavigate();
 
   const [isCorrect, setIsCorrect] = useState(true);
-  const [buttonDisabled, setButtonDisabled] = useState(true);
+  const [buttonDisabled, setButtonDisabled] = useState(false);
   const [loginErrorMsg, setLoginErrorMsg] = useState('');
   const [emailErrorMsg, setEmailErrorMsg] = useState('');
   const [passwordMsg, setPasswordMsg] = useState('');
@@ -20,8 +20,8 @@ export default function LoginPage() {
 
   const [userinfo, setUserinfo] = useState({
     user: {
-      email: '',
-      password: '',
+      email: 'only_lions@test.com',
+      password: 'only_lions123',
     },
   });
 
