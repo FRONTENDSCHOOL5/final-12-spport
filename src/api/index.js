@@ -8,7 +8,7 @@ instance.defaults.headers.post['Content-Type'] = 'application/json';
 instance.defaults.headers.put['Content-Type'] = 'application/json';
 
 instance.interceptors.request.use(
-  function (config) {
+  (config) => {
     const token = JSON.parse(localStorage.getItem('recoil-persist')).userToken;
     if (token) {
       config.headers['Authorization'] = 'Bearer ' + token;
@@ -17,7 +17,7 @@ instance.interceptors.request.use(
     }
     return config;
   },
-  function (error) {
+  (error) => {
     return Promise.reject(error);
   },
 );

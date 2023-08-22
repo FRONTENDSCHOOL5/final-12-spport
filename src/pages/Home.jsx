@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import styled from 'styled-components';
 import Header from '../components/Common/Header/Header';
 import PostList from '../components/Post/PostList';
@@ -45,7 +45,7 @@ export default function Home() {
   const [filterClick, setFilterClick] = useState(false);
   const { feed, isFeedLoading, isFeedError } = useFeedQuery();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setTeamToken();
   }, []);
 
