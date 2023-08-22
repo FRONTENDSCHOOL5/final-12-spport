@@ -12,8 +12,22 @@ import { useLocation } from 'react-router-dom';
 function App() {
   const { isModalOpen } = useModal();
   const { isBsOpen } = useBottomSheet();
-  const location = useLocation().pathname;
-  const noNavBar = ['/', '/welcome', '/login', '/signup'];
+  const location = useLocation().pathname.split('/')[1];
+  const navBar = [
+    'home',
+    'upload',
+    'addgame',
+    'editpost',
+    'editprofile',
+    'profile',
+    'follower',
+    'following',
+    'player',
+    'search',
+    'post',
+    'schedule',
+    'tag',
+  ];
 
   return (
     <>
@@ -63,7 +77,7 @@ function App() {
       </Helmet>
       <GlobalStyles />
       <Router />
-      {!noNavBar.includes(location) && <NavBar />}
+      {navBar.includes(location) && <NavBar />}
       {isModalOpen && <Modal />}
       {isBsOpen && <BottomSheet />}
     </>
