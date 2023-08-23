@@ -9,6 +9,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:  
+      - name: access to secrets
+        run: |
+          echo "REACT_APP_WEATHER_API_KEY=$REACT_APP_WEATHER_API_KEY" >> .env
+        env:
+         REACT_APP_WEATHER_API_KEY: $${{ secrets.REACT_APP_WEATHER_API_KEY }} 
       - uses: actions/checkout@v2
       - name: Install
         run: rm -f package-lock.json && npm install
@@ -23,4 +28,3 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          REACT_APP_WEATHER_API_KEY: $${{ secrets.REACT_APP_WEATHER_API_KEY }}
