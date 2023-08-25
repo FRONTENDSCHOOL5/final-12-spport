@@ -37,19 +37,10 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 | 팀장| 문서 정리 | 깃허브 관리 | 마스코트
 
 ## 2. 기술 및 개발 환경
-### [사용 기술]
-* Front-end : <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"> <img src="https://img.shields.io/badge/Styled Components-DB7093?style=for-the-badge&logo=Styled Components&logoColor=white">
-* Back-end : 제공된 API 사용
-
-### [개발 환경]
-<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"> <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=Figma&logoColor=white"> <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white"> <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=Discord&logoColor=white">
-* GitHub Projects : 진행상황을 page별로 나누어 GitHub Issues에서 각자 맡은 업무를 이슈 템플릿에 체크리스트 형식으로 공유했습니다.
-* GitHub Wiki : 컨벤션을 기록하고 페이지 상세설명을 기록하여 공유하였습니다.
-* Figma : 동시 접속하여 함께 UI, 색상 디자인 상의를 진행했습니다.
-* Discord : 원활한 의사소통을 위해 디스코드에서 영상 및 음성 통화를 적극 활용했습니다.
-
-### [git 흐름 전략]
-페이지 별로 기능을 담당하여 프로젝트를 진행하고자 Git Flow 방식 을 사용했습니다. 페이지 별 브랜치를 만들고 각자 작업 브랜치를 따로 생성하여, 페이지 브랜치로 PR 및 Merge를 진행합니다.
+![개발환경 및 기술 스택](https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/124869695/e9176555-50d2-4879-984c-c9476b0bc070)
+  🔗 [제공된 API](https://likelion.notion.site/SPPORT-API-b3d01d086262421cb1fae632ce503d34)
+### [사용한 이유]
+![사용하는 이유](https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/124869695/0099aede-17e1-4023-bb38-06e88d61c717)
 
 ### [커밋 컨벤션]
 🔗 [커밋 컨벤션](https://github.com/FRONTENDSCHOOL5/final-12-/wiki/%E2%9C%85-Commit-%EC%BB%A8%EB%B2%A4%EC%85%98)
