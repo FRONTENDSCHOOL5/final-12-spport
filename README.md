@@ -37,19 +37,10 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 | 팀장| 문서 정리 | 깃허브 관리 | 마스코트
 
 ## 2. 기술 및 개발 환경
-### [사용 기술]
-* Front-end : <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"> <img src="https://img.shields.io/badge/Styled Components-DB7093?style=for-the-badge&logo=Styled Components&logoColor=white">
-* Back-end : 제공된 API 사용
-
-### [개발 환경]
-<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"> <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=Figma&logoColor=white"> <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white"> <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=Discord&logoColor=white">
-* GitHub Projects : 진행상황을 page별로 나누어 GitHub Issues에서 각자 맡은 업무를 이슈 템플릿에 체크리스트 형식으로 공유했습니다.
-* GitHub Wiki : 컨벤션을 기록하고 페이지 상세설명을 기록하여 공유하였습니다.
-* Figma : 동시 접속하여 함께 UI, 색상 디자인 상의를 진행했습니다.
-* Discord : 원활한 의사소통을 위해 디스코드에서 영상 및 음성 통화를 적극 활용했습니다.
-
-### [git 흐름 전략]
-페이지 별로 기능을 담당하여 프로젝트를 진행하고자 Git Flow 방식 을 사용했습니다. 페이지 별 브랜치를 만들고 각자 작업 브랜치를 따로 생성하여, 페이지 브랜치로 PR 및 Merge를 진행합니다.
+![개발환경 및 기술 스택](https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/124869695/e9176555-50d2-4879-984c-c9476b0bc070)
+  🔗 [제공된 API](https://likelion.notion.site/SPPORT-API-b3d01d086262421cb1fae632ce503d34)
+### [사용한 이유]
+![사용하는 이유](https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/124869695/0099aede-17e1-4023-bb38-06e88d61c717)
 
 ### [커밋 컨벤션]
 🔗 [커밋 컨벤션](https://github.com/FRONTENDSCHOOL5/final-12-/wiki/%E2%9C%85-Commit-%EC%BB%A8%EB%B2%A4%EC%85%98)
@@ -346,45 +337,45 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 ### 1) 홈
 |Splash|로그인 페이지|회원가입 페이지
 |:-:|:-:|:-:|
-|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/a72b11a8-f450-4190-ad01-3afc5fdc0418"> |<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/f5771864-2f5a-4098-ba25-6b898a90b792">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/7299251a-209d-4db0-89f8-2c7e0da5b104">|
+|<img width="390px;" src="https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/110030523/a13519c2-9afc-4f03-8af2-70e4c0a10d6a"> |<img width="390px;" src="https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/110030523/28c8562f-5d0c-4604-a2a1-2ef8f8626b76">|<img width="390px;" src="https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/110030523/95363af0-f437-45ef-a995-eac90f6f86be">|
 
 
-|홈 페이지|홈 페이지 필터링/좋아요|검색 페이지
+|홈 페이지|홈 페이지 필터링|검색 페이지
 |:-:|:-:|:-:|
-|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/4391a1e5-4cac-4860-b3c4-4cb385de4608">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/87a24327-49c8-4e06-a82d-9ca5455f7a7b">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/5e67f42a-29ec-432d-acba-cbd1a5397ca5">|
+|<img width="390px;" src="https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/110030523/3fa499ce-2230-470b-9146-1086cbbb272b">|<img width="390px;" src="https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/110030523/d3043118-083e-46b8-8687-8f14b99151fd">|<img width="390px;" src="https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/110030523/878b65a2-1f72-41af-94ae-7038f997648c">|
 
 <br/>
 
 ### 2) 프로필
-|마이 프로필 페이지 게시글|마이 프로필 페이지 일정 추가|유저 프로필 페이지
+|마이 프로필 페이지|마이 프로필 페이지 일정 추가|유저 프로필 페이지
 |:-:|:-:|:-:|
-|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/d068fa5a-69fb-4a98-8d9e-f81250256edb">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/6c5ced03-6adc-4b6e-a7e0-4afcbc9f7b3f">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/9f15e462-52cb-4381-aeb0-9b98d56a9b6f">
+|<img width="390px;" src="https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/110030523/e48de823-4323-4ec6-93e5-bca02804eb6f">|<img width="390px;" src="https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/110030523/a9d90180-31bb-4fd6-a007-1eb96124d951">|<img width="390px;" src="https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/110030523/586bfb24-9352-4c06-814c-7fc3b24eeb14">
 
 |팀 프로필 페이지 공 아이콘|팀 프로필 페이지 선수 보러 가기|팀 프로필 페이지 경기일정
 |:-:|:-:|:-:|
-|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/f86cbb3b-3e58-47ea-99e6-93e57cbecba7">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/74c183bb-87d7-4eab-80ea-7189cf2bc1b5">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/5f2cdffe-ad96-47ec-91ed-aed2158fd381">|
+|<img width="390px;" src="https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/110030523/bd8f1265-75bd-493a-ae48-a39a56612b5a">|<img width="390px;" src="https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/110030523/20a3750d-664b-4ec3-80a4-e4e149cf9254">|<img width="390px;" src="https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/110030523/4077cfe2-9946-4611-ba55-a67999e36787">|
 
-|프로필 수정 페이지|로그아웃
-|:-:|:-:|
-|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/b4e9540f-55a9-48ce-84d5-ba96ae5222d1">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/0f79f26f-2e75-4007-ba21-58d4fde52b71">|
+|태그 검색|프로필 수정 페이지|로그아웃
+|:-:|:-:|:-:|
+|<img width="390px;" src="https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/110030523/054f299a-711a-4659-ad7a-a61ba71e8185">|<img width="390px;" src="https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/110030523/3a2feed9-ee26-4634-8c89-ccceca98e96b">|<img width="390px;" src="https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/110030523/6d4c27f6-6319-4ddb-8296-a7177b7881ae">|
 
 <br/>
 
 ### 3) 게시글
 |게시글 작성|게시글 수정|게시글 삭제
 |:-:|:-:|:-:|
-|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/aad058cb-d0bd-4ecd-9b6e-799168409b0c">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/dc3ec37c-8f73-4acf-a275-5a23bf744237">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/134f8058-ad37-459b-be0f-bf65b6d8d115">|
+|<img width="390px;" src="https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/110030523/91b32881-95f4-404b-b376-8ba12ffec175">|<img width="390px;" src="https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/110030523/91a6e400-4774-49e8-88a1-65af9fe29216">|<img width="390px;" src="https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/110030523/6b27f4b7-55d6-4e37-9a29-45597d13e2b7">|
 
 |게시글 상세 페이지|이미지 슬라이더|게시글 신고
 |:-:|:-:|:-:|
-|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/89a946f3-356c-4f06-9489-1271ae13ad2b">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/5f509915-3c82-4451-a35a-7b2e39ecc100">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/f8bb8034-966e-477e-a570-a0260fb0b621">|
+|<img width="390px;" src="https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/110030523/4cd6a5b2-2284-45ab-b705-9dc6325b257f">|<img width="390px;" src="https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/110030523/aa277151-4091-41eb-874e-6865ce2b6765">|<img width="390px;" src="https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/110030523/24c83c75-19ee-4a99-bbca-4cdf6070f63f">|
 
 <br/>
 
 ### 4) 댓글
 |댓글 작성|댓글 삭제|댓글 신고
 |:-:|:-:|:-:|
-|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/1b13d436-2741-447c-bd28-78cabc8a353e">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/9074cf18-3154-4bb9-a903-6a13f32313d8">|<img width="390px;" src="https://github.com/doong2imdang/final-12-spport/assets/124869695/2c9d1e04-8c79-4add-9fd8-c6f93b3c46af">|
+|<img width="390px;" src="https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/110030523/ec0b666a-bc93-4fa5-aee6-f1f17a51105e">|<img width="390px;" src="https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/110030523/11d58afe-3e5a-48c6-acb8-4b4042099aea">|<img width="390px;" src="https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/110030523/1768bf79-b740-487e-b3d1-3d38ce517536">|
 
 <br/>
 
