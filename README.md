@@ -21,7 +21,6 @@
 7.[ UI](#7-ui)  
 8.[ 페이지 기능](#8-페이지-기능)  
 9.[ 핵심 기능](#9-핵심-기능)   
-10.[ 느낀점](#10-느낀점)
 
 
 ## 1. 팀 소개
@@ -34,7 +33,6 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 | :------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | <img width="180" alt="hyeri-woo_profile_img" src="https://avatars.githubusercontent.com/u/107099724?v=4"> | <img width="180"  alt="seoyoung-kim_profile_img" src="https://avatars.githubusercontent.com/u/124869695?v=4"> | <img width="180" alt="mincheol.shin_profile_img" src="https://avatars.githubusercontent.com/u/110030523?v=4"> | <img width="180" alt="gbsb227_profile_img" src="https://avatars.githubusercontent.com/u/126536358?v=4" > |
 | [hyeri-woo](https://github.com/hyeri-woo) | [seoyoung-kim](https://github.com/doong2imdang) | [mincheol.shin](https://github.com/meenoie) | [gbsb227](https://github.com/gbsb227) |
-| 팀장| 문서 정리 | 깃허브 관리 | 마스코트
 
 ## 2. 기술 및 개발 환경
 ![개발환경 및 기술 스택](https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/124869695/e9176555-50d2-4879-984c-c9476b0bc070)
@@ -146,148 +144,48 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 * routes : 라우터
 * style : 스타일
 ```
-📦 FINAL-12-SPPORT
-├─ .env
-├─ .eslintignore
-├─ .eslintrc.json
-├─ .github 
-│  ├─ ISSUE_TEMPLATE
-│  │  ├─ -basic-issue.md
-│  │  ├─ -bug-issue.md
-│  │  └─ help-issue.md
-│  └─ pull_request_template.md
-├─ .gitignore
-├─ .prettierignore
-├─ .prettierrc
-├─ README.md
-├─ package-lock.json
-├─ package.json
-├─ public
+⚾ final-12-spport
+├─ .env ------------------------------------ 🛠️ 환경변수
+├─ .eslintignore
+├─ .eslintrc.json -------------------------- 🛠️ eslint 설정파일
+├─ .github
+│  ├─ 📁 ISSUE_TEMPLATE -------------------- 🔖 이슈 템플릿
+│  ├─ 📁 workflows      -------------------- 🛠️ GitHub Action 설정파일
+│  └─ pull_request_template.md ------------- 🔖 PR 템플릿
+├─ .gitignore
+├─ .prettierignore
+├─ .prettierrc ----------------------------- 🛠️ prettier 설정파일
+├─ 📌 README.md
+├─ package-lock.json
+├─ package.json
+├─ 📁 public
+│  ├─ _redirects
+│  ├─ favicon.ico
 │  └─ index.html
-└─ src
-   ├─ App.js
-   ├─ index.js
-   ├─ api
-   │  ├─ AddProductAPI.js
-   │  ├─ CommonAPI.js
-   │  ├─ FollowAPI.js
-   │  ├─ ProfileAPI.js
-   │  ├─ SearchAPI.js
-   │  ├─ WeatherAPI.js
-   │  ├─ GameAPI
-   │  │  ├─ AddGameAPI.js
-   │  │  ├─ FeedGame.js
-   │  │  ├─ LikeGameAPI.js
-   │  │  ├─ PostGameAPI.js
-   │  │  └─ TeamProfileGameAPI.js
-   │  ├─ PostAPI.js
-   │  │  ├─ CommentAPI.js
-   │  │  └─ PostDetailAPI.js
-   ├─ assets
-   │  ├─ image
-   │  │  └─ 이미지들
-   │  └─ logo
-   │     └─ text-logo.svg
-   ├─ atom
-   │  ├─ bottomSheetAtom.jsx
-   │  ├─ loginAtom.jsx
-   │  └─ modalAtom.jsx
-   ├─ components
-   │  ├─ Comment
-   │  │  ├─ CommentList.jsx
-   │  │  ├─ InputComment.jsx
-   │  │  └─ ViewComment.jsx
-   │  ├─ Common
-   │  │  ├─ Empty.jsx
-   │  │  ├─ Input.jsx
-   │  │  ├─ NavBar.jsx
-   │  │  ├─ ProfileImage.jsx
-   │  │  ├─ Button
-   │  │  │  ├─ Button.js
-   │  │  │  ├─ ImageButton.jsx
-   │  │  │  ├─ LButton.jsx
-   │  │  │  ├─ MButton.jsx
-   │  │  │  ├─ MsButton.jsx
-   │  │  │  ├─ SButton.jsx
-   │  │  │  ├─ SnsButton.jsx
-   │  │  │  └─ TagButton.jsx
-   │  │  ├─ Filter
-   │  │  │  ├─ FeedFilter.jsx
-   │  │  │  └─ SelectFilter.jsx
-   │  │  ├─ Header
-   │  │  │  ├─ Header.jsx
-   │  │  │  └─ SearchBox.jsx
-   │  │  ├─ Modals
-   │  │  │  ├─ BottomSheet.jsx
-   │  │  │  └─ Modal.jsx
-   │  ├─ Follow
-   │  │  ├─ FollowList.jsx
-   │  │  ├─ Followers.jsx
-   │  │  └─ Followings.jsx
-   │  ├─ List
-   │  │  ├─ CardGrid.jsx
-   │  │  ├─ CardList.jsx
-   │  │  ├─ CardListItem.jsx
-   │  │  ├─ GameList.jsx
-   │  │  ├─ GameListItem.jsx
-   │  │  ├─ UserList.jsx
-   │  │  └─ UserListItem.jsx
-   │  ├─ ModalUtil
-   │  │  ├─ CommonBottomSheet.jsx
-   │  │  └─ CommonModal.jsx
-   │  ├─ Post
-   │  │  ├─ BtnGroup.jsx
-   │  │  ├─ GamePost.jsx
-   │  │  ├─ Post.jsx
-   │  │  ├─ PostList.jsx
-   │  │  ├─ PostProfile.jsx
-   │  │  ├─ RegularPost.jsx
-   │  │  └─ WeatherCard.jsx
-   │  ├─ Profile
-   │  │  ├─ CommonProfile.jsx
-   │  │  ├─ FeedHeader.jsx
-   │  │  ├─ MyProfile.jsx
-   │  │  ├─ ProfleStyle.jsx
-   │  │  ├─ TeamProfile.jsx
-   │  │  └─ UserProfile.jsx
-   │  └─ Skeleton
-   │     ├─ CardLoader.jsx
-   │     ├─ GameLoader.jsx
-   │     ├─ ListLoader.jsx
-   │     ├─ PostLoader.jsx
-   │     ├─ TeamProfileLoader.jsx
-   │     └─ UserProfileLoader.jsx
-   ├─ data
-   │  ├─ baseball_games.json
-   │  ├─ baseball_players.json
-   │  └─ sport_bs_users.json
-   ├─ pages
-   │  ├─ AddGame.jsx
-   │  ├─ Chat.jsx
-   │  ├─ ChatRoom.jsx
-   │  ├─ EditPost.jsx
-   │  ├─ EditProfile.jsx
-   │  ├─ Error.jsx
-   │  ├─ Follow.jsx
-   │  ├─ Home.jsx
-   │  ├─ Login.jsx
-   │  ├─ PlayerList.jsx
-   │  ├─ Post.jsx
-   │  ├─ Profile.jsx
-   │  ├─ Schedule.jsx
-   │  ├─ Search.jsx
-   │  ├─ Signup.jsx
-   │  ├─ Splash.jsx
-   │  ├─ Upload.jsx
-   │  └─ Welcome.jsx
-   ├─ routes
-   │  └─ Router.jsx
-   └─ style
-      └─ GlobalStyles.js
+└─ 📁 src
+   ├─ App.js
+   ├─ index.js
+   ├─ 📁 api ------------------------------- 🔃 API 관련 폴더
+   ├─ 📁 assets ---------------------------- 🗓️ 정적 데이터 모음
+   ├─ 📁 atom ------------------------------ ⚛️ Recoil 관련 폴더
+   ├─ 📁 components
+   │  ├─ 📁 Comment ------------------------ 🧩 댓글 관련 컴포넌트
+   │  ├─ 📁 Common ------------------------- 🧩 공통 컴포넌트
+   │  ├─ 📁 Follow ------------------------- 🧩 팔로우/팔로잉 관련 컴포넌트
+   │  ├─ 📁 List --------------------------- 🧩 리스트 관련 컴포넌트
+   │  ├─ 📁 Post --------------------------- 🧩 게시글 관련 컴포넌트
+   │  ├─ 📁 Profile ------------------------ 🧩 프로필 관련 컴포넌트
+   │  └─ 📁 Skeleton ----------------------- 🧩 스켈레톤 관련 컴포넌트
+   ├─ 📁 hooks ----------------------------- 🪝 커스텀 훅 폴더
+   ├─ 📁 pages ----------------------------- ⚛️ 페이지 폴더
+   ├─ 📁 routes ---------------------------- 🧭 라우터 설정 폴더
+   ├─ 📁 style ----------------------------- 💄 스타일 설정 폴더
+   └─ 📁 util ------------------------------ 📜 필요한 함수 폴더
 ```
 
 
 ## 5. 역할 분담
+![역할](https://github.com/hyeri-woo/final-12-spport/assets/107099724/a463d745-fa08-4c73-ac1a-70cf9baccf44)
 ### 🧑🏻‍💻우혜리
 * 역할
 	* 팀리더
@@ -330,7 +228,12 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 ![Spport-main](https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/107099724/cd8277a9-a788-4db5-9cad-7750fda5e176)
 
 ## 7. UI
-![Frame 7](https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/107099724/25817f9b-7ece-4b4f-b961-01162ce39c69)
+### Mobile
+![UI mobile](https://github.com/hyeri-woo/final-12-spport/assets/107099724/8686731a-627b-4751-90f3-65592dda2468)
+### Tablet
+![UI tablet](https://github.com/hyeri-woo/final-12-spport/assets/107099724/8008faf7-d1a6-4d6c-b80e-d0bfbc096e10)
+### Desktop
+![UI desktop](https://github.com/hyeri-woo/final-12-spport/assets/107099724/39d59a71-dc41-4644-afe2-e4abea34a8b6)
 
 ## 8. 페이지 기능
 
