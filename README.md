@@ -35,10 +35,72 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 | [hyeri-woo](https://github.com/hyeri-woo) | [seoyoung-kim](https://github.com/doong2imdang) | [mincheol.shin](https://github.com/meenoie) | [gbsb227](https://github.com/gbsb227) |
 
 ## 2. 기술 및 개발 환경
-![개발환경 및 기술 스택](https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/124869695/e9176555-50d2-4879-984c-c9476b0bc070)
-  🔗 [제공된 API](https://likelion.notion.site/SPPORT-API-b3d01d086262421cb1fae632ce503d34)
+<table class="tg">
+<tbody>
+   <tr>
+    <td class="tg-0pky">개발 환경<br></td>
+    <td class="tg-0pky">[FrontEnd] React, React-Query, Axios, Recoil, Styled-Components<br>[BackEnd] 제공되는 API 사용 <a href='https://likelion.notion.site/SPPORT-API-b3d01d086262421cb1fae632ce503d34'>🔗 제공된 API </a></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">버전 및 이슈 관리</td>
+    <td class="tg-0pky">Git/GitHub / Notion</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">컨벤션</td>
+    <td class="tg-0pky">Eslint / Prettier / GitHub PR Template</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">프로젝트 관리</td>
+    <td class="tg-0pky">GitHub Pull Requests</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">커뮤니케이션</td>
+    <td class="tg-0pky">Notion / Discord</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">배포</td>
+    <td class="tg-0pky">Netflify</td>
+  </tr>
+</tbody>
+</table>
+
 ### [사용한 이유]
-![사용하는 이유](https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/124869695/0099aede-17e1-4023-bb38-06e88d61c717)
+<table class="tg">
+<tbody>
+   <tr>
+    <td class="tg-0pky">React Query</td>
+    <td class="tg-0pky">비동기 데이터 요청과 관리를 간단하고 효율적으로 처리하기 위해 사용</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Axios</td>
+    <td class="tg-0pky">HTTP 요청과 응답 처리를 보다 단순하고 직관적으로 처리하기 위해 사용</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Recoil</td>
+    <td class="tg-0pky">상태 관리를 단순하게 만들고, 성능을 최적화하며, 전역 상태를 효율적으로 관리하고 유지 보수를 더 쉽게 하기 위해 사용</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Styled Components</td>
+    <td class="tg-0pky">컴포넌트 기반 스타일링을 통해 관리와 재사용을 강화하고, 코드 유지 보수를 간편하게 하며 CSS 클래스 충돌 문제를 회피하기 위해 사용</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">react-helmet-async</td>
+    <td class="tg-0pky">meta 태그와 페이지별 타이틀을 위해 사용</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">browser-image-compression</td>
+    <td class="tg-0pky">이미지 용량을 줄여 로딩속도를 올리기 위해 사용</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">splide</td>
+    <td class="tg-0pky">빠른 캐러셀 구현하기 위해 사용</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">react-loading-skeleton</td>
+    <td class="tg-0pky">스켈레톤 UI를 구현하기 위해 사용</td>
+  </tr>
+</tbody>
+</table>
 
 ### [커밋 컨벤션]
 🔗 [커밋 컨벤션](https://github.com/FRONTENDSCHOOL5/final-12-/wiki/%E2%9C%85-Commit-%EC%BB%A8%EB%B2%A4%EC%85%98)
@@ -61,8 +123,8 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 
 ### [코드 컨벤션]
 통일성 있는 코드 작성을 위해 다양한 🔗[코드 컨벤션](https://github.com/FRONTENDSCHOOL5/final-12-/wiki/%E2%9C%85-Code-%EC%BB%A8%EB%B2%A4%EC%85%98) 을 정해 사용했습니다. 
-* <img src="https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=Prettier&logoColor=black">
-```
+<img src="https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=Prettier&logoColor=black">
+```js
 {
     "printWidth": 80,
     "singleQuote": true,
@@ -75,8 +137,9 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
     "quoteProps": "preserve"
 }
 ```
-* <img src="https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=ESLint&logoColor=white">
-```
+<img src="https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=ESLint&logoColor=white">
+
+```js
 {
   "env": {
     "browser": true,
@@ -102,7 +165,9 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
   }
 }
 ```
+
 ## 3. 주요 기능
+기능 별 자세한 내용은 <a href='https://github.com/FRONTENDSCHOOL5/final-12-spport/wiki/%F0%9F%93%83%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85'>해당 위키</a>를 참고해주세요.
 ### 🔒 로그인 / 회원가입
 * 로그인
 * 회원가입
@@ -134,15 +199,6 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 * 무한 스크롤 
  
 ## 4. 프로젝트 구조
-[폴더구조]
-* api : api들
-* assets : 로고 및 이미지들
-* atom : 상태 관리
-* components : 컴포넌트들
-* data : 내장 데이터
-* pages : 각 페이지들
-* routes : 라우터
-* style : 스타일
 ```
 ⚾ final-12-spport
 ├─ .env ------------------------------------ 🛠️ 환경변수
@@ -185,45 +241,13 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 
 
 ## 5. 역할 분담
+자세한 내용은 <a href='https://github.com/FRONTENDSCHOOL5/final-12-spport/wiki/%F0%9F%A7%91%E2%80%8D%F0%9F%A4%9D%E2%80%8D%F0%9F%A7%91-%EC%97%AD%ED%95%A0-%EB%B6%84%EB%8B%B4'>🔗 해당 위키</a>에서 확인해주세요.
 ![역할](https://github.com/hyeri-woo/final-12-spport/assets/107099724/a463d745-fa08-4c73-ac1a-70cf9baccf44)
-### 🧑🏻‍💻우혜리
-* 역할
-	* 팀리더
-	* 컨벤션 관리
- 	* 피그마 디자인 작업
-* UI
- 	* 컴포넌트: Header, Filter, BottomSheet
-  	* 페이지: 직관일정, 팀 포스트, 404, 검색, 일정 추가
-* 기능
-	* 댓글 게시/삭제, 좋아요를 통한 일정 추가 , 댓글/게시글 신고하기, 유저검색, 홈피드 필터링, 로그아웃, 무한스크롤, 스켈레톤, Modal
+<<<<<<< Updated upstream
 
-
-### 🧑🏻‍💻김서영
-* 역할
-	* 문서 정리	 
-* UI
-	* 컴포넌트 : Input, Modal 	
-	* 페이지: Splash, Login, Signup, 선수리스트, 채팅
-* 기능
- 	* 유효성 검사, 회원가입, 로그인 화면, 프로필 설정, 프로필 수정, 필터링
-
-### 🧑🏻‍💻이영주
-* 역할
-	* 마스코트	 
-* UI
-	* 컴포넌트 : Button, 일반 포스트	
-	* 페이지: Upload, EditPost, Home
-* 기능
- 	* 게시물 작성/수정/삭제, 홈피드 게시글 목록, 이미지 슬라이더
-### 🧑🏻‍💻신민철
-* 역할
-	* 깃허브 관리	 
-* UI
-	* 컴포넌트 : ProfileImage/NavBar	
-	* 페이지: 유저/팀/나의 프로필 페이지, 팔로우/팔로잉 페이지
-* 기능
- 	* 팔로우, 게시글 앨범형/리스트형
-  
+=======
+자세한 내용은 <a href='https://github.com/FRONTENDSCHOOL5/final-12-spport/wiki/%F0%9F%A7%91%E2%80%8D%F0%9F%A4%9D%E2%80%8D%F0%9F%A7%91-%EC%97%AD%ED%95%A0-%EB%B6%84%EB%8B%B4'>🔗 해당 위키</a>에서 확인해주세요.
+>>>>>>> Stashed changes
 ## 6. Flowchart
 ![Spport-main](https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/107099724/cd8277a9-a788-4db5-9cad-7750fda5e176)
 
@@ -283,145 +307,10 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 <br/>
 
 ## 9. 핵심 기능
-
-### [일정 추가]
-일정 추가 페이지에서 유저가 팔로잉한 팀의 게임 일정을 직관 일정으로 추가할 수 있습니다. 기존에 제공된 API로는 구현이 쉽지 않아 게시물 좋아요 기능과 상품등록 기능 복합적으로 사용해 구현하였습니다. 
-
-해당 기능을 구현하면서 팔로잉된 팀의 일정이 겹치는 경우 여러가지 고려할 사항이 있었습니다. 
-
-1. 일정 추가 페이지에서 중복 게임은 하나만 보여주기 </br>
-스포츠 팀을 여러 개 팔로우한 경우 게임 일정이 겹치게 됩니다. 일정 추가 페이지에서 같은 게임 일정을 반복해서 보여주지 않기 위해 같은 일정의 경우 Map으로 묶어 key 값으로는 게임 정보를 저장하고 value 값으로는 해당 게시물들의 ID를 저장했습니다. 그 Map을 다시 순환하면서 중복되더라도 하나만 보일 수 있도록 처리하였습니다.  
-```js
-const gameMap = new Map();
-  game.forEach((item) => {
-    if (gameMap.has(item.content)) {
-      gameMap.set(item.content, [...gameMap.get(item.content), item.id]);
-    } else {
-      gameMap.set(item.content, [item.id]);
-    }
-  });
-  ```
-
-2. 추가/취소할 시 중복 게임 전부 좋아요 활성화/취소 </br>
-위에서 Map으로 처리하면서 key 값으로는 게임 리스트에 보여주고 value 값을 다시 순환하여 추가할 경우 해당되는 모든 게시물은 좋아요를 활성화시키고 취소할 경우 좋아요를 취소하였습니다. 
-
-3. 추가/취소할 시 직관일정을 추가/취소 </br>
-좋아요를 활성화/취소하면서 동시에 상품등록 API를 사용해 해당 게임일정 정보와 해당 게시물 정보들의 ID를 전부 저장해주었습니다. 이후 좋아요 활성화/취소할 경우 상품을 추가/삭제를 해야할 때 저장한 ID를 전부 순환하여 해당 직관일정을 삭제하도록 합니다. 
-```js
-const likeGameAPI = async (token, ids, isTeam, post, isGame = false) => {
-  const returnArr = [];
-  if (isTeam) {
-    const data = await addProductAPI(token, post, ids, isGame);
-  }
-  for (const id of ids) {
-    const like = await POST_API_NO_BODY(token, `/post/${id}/heart`);
-    returnArr.push(like);
-  }
-
-  return returnArr;
-};
-```
-
-
-### [날씨 API 사용]
-![Frame 9](https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/107099724/d2db5ce6-75eb-4305-82f3-b3a88a0d5328)
-사용자에게 팔로우한 팀의 경기 날짜에 해당하는 당일 날씨 정보를 제공하기 위해 사용자가 팔로우한 팀의 경기 날짜와 경기장의 장소를 기준으로 OpenWeatherMap API를 호출하였습니다. 그러나 해당 API는 현재 날씨 정보만을 제공하기 때문에, 과거의 경기에 대한 날씨 정보를 가져올 수는 없었습니다. 따라서, 과거 경기의 경우에는 미리 저장한 날씨 정보를 사용했습니다. 이를 위해 현재 날씨을 다른 변수에 저장하여, 과거 경기의 경우 저장된 날씨 정보를 활용했습니다.
-
-```js
-const getWeatherAPI = async (city) => {
-  const reqUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=kr&appid=${process.env.REACT_APP_WEATHER_API_KEY}`;
-  try {
-    const response = await fetch(reqUrl);
-    if (!response.ok) {
-      throw new Error('failed to retrieve weather API');
-    }
-    const json = await response.json();
-    return json;
-  } catch (error) {
-    console.error(error);
-  }
-};
-
-const getWeather = async (city, post) => {
-  const data = await getWeatherAPI(city);
-  const weather = await storeWeather(post.author.accountname, post, data);
-  return {
-    'avg_temp': weather[0],
-    'max_temp': weather[1],
-    'min_temp': weather[2],
-    'humidity': weather[3],
-    'description': weather[4],
-    'image': weather[5],
-  };
-};
-
-const storeWeather = async (team_name, post, data) => {
-  const roundSecondDecimal = (num) => {
-    return Math.round(100 * num) / 100;
-  };
-  const token = getTeamToken(team_name);
-  const weather = [
-    roundSecondDecimal(data.main.temp - 270),
-    roundSecondDecimal(data.main.temp_max - 270),
-    roundSecondDecimal(data.main.temp_min - 270),
-    data.main.humidity,
-    data.weather[0].description,
-    `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`,
-  ];
-  const store = await editGamePostAPI(token, post.id, post.content, weather);
-  return weather;
-};
-```
-
-### [Intersection Observer API을 사용한 무한 스크롤]
-스크롤 이벤트가 발생할 때마다 처리하는 것은 불필요하게 과도한 이벤트가 발생하여 성능 저하로 이어질 수 있기 때문에 Intersection Observer API를 사용하여 성능 저하를 방지하고 타겟 요소와 상위 요소 또는 최상위 document의 뷰포트 사이의 교차 영역 변화를 비동기적으로 관찰했습니다.
-구체적으로, 리스트 요소의 가장 마지막에 <span> 요소에 ref를 설정하여 해당 요소의 가시성 변화를 감지하고, inView라는 변수의 값을 변경하도록 설정했습니다. inView 값이 true로 변경될 때마다 페이지 값을 증가시켜 화면 끝에 도달할 때마다 추가적인 게시물을 가져오도록 구현했습니다.
-```js
-...
-import { useInView } from 'react-intersection-observer';
-
-export default function PostList({ post, onlyGame, isHome }) {
-  const [sortedPost, setSortedPost] = useState([]);
-  const [ref, inView] = useInView();
-  const [page, setPage] = useState(0);
-
-  useEffect(() => {
-    if (isHome) {
-      setSortedPost(sortFeedPost(post, onlyGame));
-      setPage(0);
-    } else {
-      setSortedPost(post);
-    }
-  }, [post, onlyGame]);
-
-  useEffect(() => {
-    if (inView) {
-      isHome ? setPage((prev) => prev + 10) : setPage((prev) => prev + 3);
-    }
-  }, [inView]);
-
-  return (
-    <PostListStyle>
-      {sortedPost.map((item, index) => {
-        if (index < page) {
-          return (
-            <li key={item.id}>
-              <Post post={item} />
-            </li>
-          );
-        }
-      })}
-      <span ref={ref} />
-    </PostListStyle>
-  );
-}
-```
-
-## 10. 느낀점
-⚽ 민철
-⚾ 서영
-🏀 영주
-🏐 혜리
-
+- Server-side 데이터 **상태 관리**를 위해 **React Query**를 사용한 **커스텀 훅**을 도입
+	- useQuery 관련 [참고 링크1](https://velog.io/@woohyeri0525/React-Query-Custom-Hook-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0-useQuery-%ED%8E%B8)
+ 	- useMutation 관련 [참고 링크2](https://velog.io/@woohyeri0525/React-Query-Custom-Hook-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0-useMutation-%ED%8E%B8)
+- **Intersection Observer API**와 **useInfiniteQuery**를 사용한 비동기적 **무한 스크롤링** (업데이트 예정)
+- **axios Interceptors**를 활용하여 요청과 응답의 전후 처리와 **중복된 로직 방지**를 통해 효율적인 네트워크 요청 관리 ([참고 링크](https://velog.io/@woohyeri0525/axios-%EB%AA%A8%EB%93%88%ED%99%94-%EB%B0%8F-%EC%9D%BC%EA%B4%84-%EC%97%90%EB%9F%AC-%ED%95%B8%EB%93%A4%EB%A7%81-useNavigate-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EB%B2%95))
 
 
