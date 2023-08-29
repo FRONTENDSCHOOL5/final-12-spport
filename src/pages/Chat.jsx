@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from '../components/Common/Header/Header';
-import NavBar from '../components/Common/NavBar';
 import { ProfileImage42 } from '../components/Common/ProfileImage';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
@@ -45,7 +44,6 @@ export default function Chat() {
           </div>
         </ChatItem>
       </ChatList>
-      <NavBar />
     </>
   );
 }

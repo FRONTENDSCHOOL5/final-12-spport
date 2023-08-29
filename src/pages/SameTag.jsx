@@ -5,7 +5,6 @@ import Empty from '../components/Common/Empty';
 import ListLoader from '../components/Skeleton/ListLoader';
 import UserList from '../components/List/UserList';
 import Header from '../components/Common/Header/Header';
-import NavBar from '../components/Common/NavBar';
 
 export default function SameTag() {
   const [searchUser, setSearchUser] = useState([]);
@@ -43,7 +42,6 @@ export default function SameTag() {
         <Empty message={`${tag} 태그를 가진 유저가 없습니다.`} />
       )}
       {isLoad ? <ListLoader /> : <UserList searchUser={sameTagGroup} />}
-      <NavBar />
     </>
   );
 }

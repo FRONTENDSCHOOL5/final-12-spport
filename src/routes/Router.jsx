@@ -6,8 +6,6 @@ import Signup from '../pages/Signup';
 import Home from '../pages/Home';
 import Upload from '../pages/Upload';
 import AddGame from '../pages/AddGame';
-import Chat from '../pages/Chat';
-import ChatRoom from '../pages/ChatRoom';
 import EditProfile from '../pages/EditProfile';
 import Error from '../pages/Error';
 import Follow from '../pages/Follow';
@@ -35,17 +33,14 @@ export default function Router() {
         <Route path='/home' element={<Home />} />
         <Route path='/upload' element={<Upload />} />
         <Route path='/addgame' element={<AddGame />} />
-        <Route path='/error' element={<Error />} />
         <Route path='/editpost' element={<EditPost />} />
         <Route path='/editprofile' element={<EditProfile />} />
-        <Route path='/chat' element={<Chat />} />
         <Route path='/profile/:id/*' element={<Outlet />}>
           <Route path='' element={<Profile />} />
           <Route path='follower' element={<Follow />} />
           <Route path='following' element={<Follow />} />
           <Route path='player' element={<PlayerList />} />
         </Route>
-        <Route path='/chat/:id' element={<ChatRoom />} />
         <Route path='/search' element={<Search />} />
         <Route path='/search/:keyword' element={<Search />} />
         <Route path='/post/:id' element={<Post />} />

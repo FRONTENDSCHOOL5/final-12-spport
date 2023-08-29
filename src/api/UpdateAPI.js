@@ -23,7 +23,6 @@ const postGameAPI = async (accountname, content, image = '') => {
     body: JSON.stringify(postData),
   });
   const json = await res.json();
-  console.log(json);
 };
 
 // 팀 일정을 포스트하기 위한 함수
@@ -48,7 +47,7 @@ const getTeamTokenAPI = async (email, password) => {
     },
   };
   const data = await POST_API('/user/login', userData);
-  return data.user.token;
+  return data?.user.token;
 };
 
 export { postGameInfo, getTeamTokenAPI };

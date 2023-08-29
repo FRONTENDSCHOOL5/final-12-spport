@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import iconBack from '../../../assets/image/icon-back.svg';
 import iconMore from '../../../assets/image/icon-more.svg';
@@ -30,7 +31,7 @@ const HeaderStyle = styled.header`
   @media screen and (min-width: 768px) {
     display: ${(props) => (props.text ? 'none' : 'flex')};
     background: ${(props) =>
-      !props.text && !props.main && !props.search
+      !props.text && !props.main && !props.search && props.upload
         ? 'var(--color-navy)'
         : 'transparent'};
     .header-title,
@@ -45,7 +46,7 @@ const HeaderStyle = styled.header`
 // main-header = <Header onSearchClick={handleSearchClick} main/>
 // upload-header = <Header onUploadClick={handleUploadClick} upload/>
 // text-header = <Header text="text" onMoreClick={handleMoreClick}/>
-export default function Header({
+function Header({
   text,
   search,
   upload,
@@ -110,3 +111,5 @@ export default function Header({
     </HeaderStyle>
   );
 }
+
+export default React.memo(Header);

@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import styled from 'styled-components';
-import NavBar from '../components/Common/NavBar';
 import Header from '../components/Common/Header/Header';
 import PostList from '../components/Post/PostList';
 import Empty from '../components/Common/Empty';
@@ -46,7 +45,7 @@ export default function Home() {
   const [filterClick, setFilterClick] = useState(false);
   const { feed, isFeedLoading, isFeedError } = useFeedQuery();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setTeamToken();
   }, []);
 
@@ -79,7 +78,6 @@ export default function Home() {
           <PostList post={feed.posts} onlyGame={filterClick} isHome />
         )}
       </FullSection>
-      <NavBar page='홈' />
     </>
   );
 }

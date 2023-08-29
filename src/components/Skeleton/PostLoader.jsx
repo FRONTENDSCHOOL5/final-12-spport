@@ -151,7 +151,7 @@ export function PostDetailLoader() {
 export default function PostLoader() {
   const items = [];
   for (let i = 0; i < 2; i++) {
-    items.push(<PostLoaderItem />);
+    items.push(<PostLoaderItem key={i} />);
   }
   return <ContainerStyle>{items.map((item) => item)}</ContainerStyle>;
 }

@@ -1,39 +1,54 @@
 import { GET_API, POST_API, DELETE_API } from '../api/CommonAPI';
-import { useQuery, useMutation } from 'react-query';
+import { useMutation, useInfiniteQuery } from 'react-query';
 
 function useFollowerQuery(accountname) {
-  const getFollower = async () => {
+  const getFollower = async (pageParam) => {
     return await GET_API(
-      `/profile/${accountname}/follower?limit=Number&skip=Number`,
+      `/profile/${accountname}/follower?limit=15&skip=${pageParam}`,
     );
   };
 
-  const { data, isLoading, isError } = useQuery({
-    queryKey: ['follower', accountname],
-    queryFn: () => getFollower(),
-  });
+  const { data, fetchNextPage, isSuccess, isFetching, hasNextPage } =
+    useInfiniteQuery({
+      queryKey: ['follower'],
+      queryFn: ({ pageParam = 0 }) => getFollower(pageParam),
+      getNextPageParam: (lastPage) => {
+        return lastPage.length;
+      },
+    });
+
   return {
     follower: data,
-    isFollowerLoading: isLoading,
-    isFollowerError: isError,
+    getNextFollower: fetchNextPage,
+    isFollowerLoading: isFetching,
+    isFollowerSuccess: isSuccess,
+    hasNextFollower: hasNextPage,
   };
 }
 
 function useFollowingQuery(accountname) {
-  const getFollowing = async () => {
+  const getFollowing = async (pageParam) => {
     return await GET_API(
-      `/profile/${accountname}/following?limit=Number&skip=Number`,
+      `/profile/${accountname}/following?limit=15&skip=${pageParam}`,
     );
   };
 
-  const { data, isLoading, isError } = useQuery({
-    queryKey: ['following'],
-    queryFn: () => getFollowing(),
-  });
+  const { data, fetchNextPage, isSuccess, isFetching, hasNextPage } =
+    useInfiniteQuery({
+      queryKey: ['following'],
+      queryFn: ({ pageParam = 0 }) => getFollowing(pageParam),
+      getNextPageParam: (lastPage) => {
+        console.log('getNextPageParam', lastPage.length);
+        return lastPage.length;
+      },
+    });
+
   return {
     following: data,
-    isFollowingLoading: isLoading,
-    isFollowingError: isError,
+    getNextFollowing: fetchNextPage,
+    isFollowingLoading: isFetching,
+    isFollowingSuccess: isSuccess,
+    hasNextFollowing: hasNextPage,
   };
 }
 

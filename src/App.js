@@ -3,14 +3,32 @@ import GlobalStyles from './style/GlobalStyles';
 import Router from './routes/Router';
 import BottomSheet from './components/Common/Modals/BottomSheet';
 import Modal from './components/Common/Modals/Modal';
-import { useRecoilState } from 'recoil';
-import { isBottomSheetOpen } from './atom/bottomSheetAtom';
-import { isModalOpen } from './atom/modalAtom';
 import { Helmet } from 'react-helmet-async';
+import NavBar from './components/Common/NavBar';
+import useModal from './hooks/useModal';
+import useBottomSheet from './hooks/useBottomSheet';
+import { useLocation } from 'react-router-dom';
 
 function App() {
-  const [isBsOpen, setIsBsOpen] = useRecoilState(isBottomSheetOpen);
-  const [isModal, setIsModal] = useRecoilState(isModalOpen);
+  const { isModalOpen } = useModal();
+  const { isBsOpen } = useBottomSheet();
+  const location = useLocation().pathname.split('/')[1];
+  const navBar = [
+    'home',
+    'upload',
+    'addgame',
+    'editpost',
+    'editprofile',
+    'profile',
+    'follower',
+    'following',
+    'player',
+    'search',
+    'post',
+    'schedule',
+    'tag',
+  ];
+
   return (
     <>
       <Helmet>
@@ -59,7 +77,8 @@ function App() {
       </Helmet>
       <GlobalStyles />
       <Router />
-      {isModal && <Modal />}
+      {navBar.includes(location) && <NavBar />}
+      {isModalOpen && <Modal />}
       {isBsOpen && <BottomSheet />}
     </>
   );

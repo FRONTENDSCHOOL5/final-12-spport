@@ -13,7 +13,6 @@ const setTeamToken = async () => {
 };
 
 const getTeamToken = (accountname) => {
-  console.log(team_token);
   return team_token[accountname];
 };
 
