@@ -4,7 +4,7 @@ import Header from '../components/Common/Header/Header';
 import styled from 'styled-components';
 import Followers from '../components/Follow/Followers';
 import Followings from '../components/Follow/Followings';
-import { useFollowerQuery, useFollowingQuery } from '../hooks/useFollow';
+import { useProfileQuery } from '../hooks/useProfile';
 
 const MainStyle = styled.main`
   padding: 50px 0 60px;
@@ -26,23 +26,25 @@ export default function Follow() {
   const location = useLocation();
   const path = location.pathname.split('/')[3];
   const navigate = useNavigate();
-  const { follower, isFollowerLoading, isFollowerError } = useFollowerQuery(id);
-  const { following, isFollowingLoading, isFollowingError } =
-    useFollowingQuery(id);
+  const { profile, isProfileLoading, isProfileError } = useProfileQuery(id);
 
   useEffect(() => {
-    if (isFollowerError || isFollowingError) {
+    if (isProfileError) {
       navigate('/error');
     }
-  }, [isFollowerError, isFollowingError]);
+  }, [isProfileError]);
 
   return (
     <>
       <Header text={path === 'follower' ? 'followers' : 'followings'} />
       <MainStyle>
         {path === 'follower'
-          ? !isFollowerLoading && <Followers follower={follower} />
-          : !isFollowingLoading && <Followings following={following} />}
+          ? !isProfileLoading && (
+              <Followers id={id} count={profile.profile.followerCount} />
+            )
+          : !isProfileLoading && (
+              <Followings id={id} count={profile.profile.followingCount} />
+            )}
       </MainStyle>
     </>
   );
