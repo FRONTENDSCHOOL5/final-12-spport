@@ -43,7 +43,11 @@ export default function Error({ isLogin }) {
   return (
     <ErrorStyle>
       <img src={logo404} alt='에러 404' />
-      <h1>{error_code === 'ERR_NETWORK' ? '서버 접속에 문제가 생겼습니다.': '페이지를 찾을 수 없습니다.' }</h1>
+      <h1>
+        {error_code === 'ERR_NETWORK'
+          ? '서버 접속에 문제가 생겼습니다.'
+          : '페이지를 찾을 수 없습니다.'}
+      </h1>
       <div>
         {isLogin ? (
           <>
