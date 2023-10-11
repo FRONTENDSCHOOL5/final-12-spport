@@ -3,6 +3,9 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
     ${reset}
+    body {
+        background: white;
+    }
     .a11y-hidden {
         clip: rect(1px, 1px, 1px, 1px);
         clip-path: inset(50%);
@@ -13,8 +16,13 @@ const GlobalStyles = createGlobalStyle`
         padding: 0;
         position: absolute;
     }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
     * {
         box-sizing: border-box;
+        color: var(--color-navy);
     }
     button {
         border: 0;
