@@ -1,0 +1,29 @@
+name: 'weather-api-workflow'
+
+on: 
+  push:
+    branches: ['main', 'develop']
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:  
+      - uses: actions/checkout@v2
+      - name: Create env
+        run: |
+          echo "REACT_APP_WEATHER_API_KEY=$REACT_APP_WEATHER_API_KEY" >> .env
+        env:
+         REACT_APP_WEATHER_API_KEY: ${{ secrets.REACT_APP_WEATHER_API_KEY }} 
+      - name: Install
+        run: rm -f package-lock.json && npm install
+      - name: Build
+        run: npm run build
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: './build'     
+          production-branch: main
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

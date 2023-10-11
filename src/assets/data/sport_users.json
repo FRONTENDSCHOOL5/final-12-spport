@@ -1,0 +1,362 @@
+[
+ {
+  "username": "SSG 랜더스",
+  "email": "ssg_landers@sport.com",
+  "password": "ssg_landers123",
+  "accountname": "SPORT_BS_ssg_landers",
+  "intro": "인천,김원형,인천 SSG 랜더스필드",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1686717220591.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODk0NmM0YjJjYjIwNTY2MzMzZTE1ZSIsImV4cCI6MTY5MTkwMjIxMCwiaWF0IjoxNjg2NzE4MjEwfQ.7F_PxQK3N0MMgHdIN12AgnYpn6wASN7Jhez8B3Wb_Cw",
+  "_id": "648946c4b2cb20566333e15e"
+ },
+ {
+  "username": "키움 히어로즈",
+  "email": "kiwoom_heroes@sport.com",
+  "password": "kiwoom_heroes123",
+  "accountname": "SPORT_BS_kiwoom_heroes",
+  "intro": "서울,홍원기,고척 스카이돔",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1686717265498.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODk0YjFkYjJjYjIwNTY2MzMzZTcwNCIsImV4cCI6MTY5MTkwMzI4MywiaWF0IjoxNjg2NzE5MjgzfQ.2bVACy4PyTd80O2F6jIWc9qMEFBbNfPN9PpVRbDi5Q4",
+  "_id": "64894b1db2cb20566333e704"
+ },
+ {
+  "username": "LG 트윈스",
+  "email": "lg_twins@sport.com",
+  "password": "lg_twins123",
+  "accountname": "SPORT_BS_lg_twins",
+  "intro": "서울,엄경엽,서울종합운동장 야구장",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1686717310006.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODk0NzcwYjJjYjIwNTY2MzMzZTI5MSIsImV4cCI6MTY5MTkwMjMyOCwiaWF0IjoxNjg2NzE4MzI4fQ.M0ggKazLem7rbk_GPLFRvbA3Vnf3YYYZVNNr-L4mmrY",
+  "_id": "64894770b2cb20566333e291"
+ },
+ {
+  "username": "KT 위즈",
+  "email": "kt_wiz@sport.com",
+  "password": "kt_wiz123",
+  "accountname": "SPORT_BS_kt_wiz",
+  "intro": "수원,이강철,인천 SSG 랜더스필드",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1686717347885.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODk0NzhkYjJjYjIwNTY2MzMzZTJhMyIsImV4cCI6MTY5MTkwMjM1NiwiaWF0IjoxNjg2NzE4MzU2fQ.oKP1MammxfTa-cja3ztpG7rMaLKMwxxamygar8LoKVI",
+  "_id": "6489478db2cb20566333e2a3"
+ },
+ {
+  "username": "KIA 타이거즈",
+  "email": "kia_tigers@sport.com",
+  "password": "kia_tigers123",
+  "accountname": "SPORT_BS_kia_tigers",
+  "intro": "광주,김종국,광주-기아 챔피언스 필드",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1686717371657.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODk0N2JjYjJjYjIwNTY2MzMzZTJiNSIsImV4cCI6MTY5MTkwMjQyOSwiaWF0IjoxNjg2NzE4NDI5fQ.BP_zGyW6A3fOiI4NgvLv45zVgqXR6VvQLamUdJD_t8k",
+  "_id": "648947bcb2cb20566333e2b5"
+ },
+ {
+  "username": "NC 다이노스",
+  "email": "nc_dinos@sport.com",
+  "password": "nc_dinos123",
+  "accountname": "SPORT_BS_nc_dinos",
+  "intro": "창원,강인권,창원 NC 파크",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1686717395743.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODk0N2Y2YjJjYjIwNTY2MzMzZTJiZCIsImV4cCI6MTY5MTkwMjQ2MiwiaWF0IjoxNjg2NzE4NDYyfQ.uEDM5bVlirvJXWAlrmBXRhnjWAxDppT1x0dST6WC7D0",
+  "_id": "648947f6b2cb20566333e2bd"
+ },
+ {
+  "username": "삼성 라이온즈",
+  "email": "samsung_lions@sport.com",
+  "password": "samsung_lions123",
+  "accountname": "SPORT_BS_samsung_lions",
+  "intro": "대구,박진만,대구 삼성 라이온즈 파크",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1686717415974.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODk0ODE4YjJjYjIwNTY2MzMzZTJjNSIsImV4cCI6MTY5MTkwMjUxMCwiaWF0IjoxNjg2NzE4NTEwfQ.zijyjekPESbPgnhxCvD0vPb4rYQY7JRsfdfa18A1-DA",
+  "_id": "64894818b2cb20566333e2c5"
+ },
+ {
+  "username": "롯데 자이언츠",
+  "email": "lotte_giants@sport.com",
+  "password": "lotte_giants123",
+  "accountname": "SPORT_BS_lotte_giants",
+  "intro": "부산,래리 서튼,사직 야구장",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1686717447962.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODk0ODRhYjJjYjIwNTY2MzMzZTJlZCIsImV4cCI6MTY5MTkwMjU1MiwiaWF0IjoxNjg2NzE4NTUyfQ.3SeVKn20lS7uQAzu9Jr7lQg2dqZoogZX59YxHhaG7aQ",
+  "_id": "6489484ab2cb20566333e2ed"
+ },
+ {
+  "username": "두산 베어스",
+  "email": "doosan_bears@sport.com",
+  "password": "doosan_bears123",
+  "accountname": "SPORT_BS_doosan_bears",
+  "intro": "서울,이승엽,서울종합운동장 야구장",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1686717487841.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODk0ODczYjJjYjIwNTY2MzMzZTMxNiIsImV4cCI6MTY5MTkwMjU4OCwiaWF0IjoxNjg2NzE4NTg4fQ.yj3SrNmdB9EU7K7uzf-EuaJBiQ0blStUKh7Mj8NTI4Q",
+  "_id": "64894873b2cb20566333e31"
+ },
+ {
+  "username": "한화 이글스",
+  "email": "hanwha_eagles@sport.com",
+  "password": "hanwha_eagles123",
+  "accountname": "SPORT_BS_hanwha_eagles",
+  "intro": "대전,최원호,대전 한화생명 이글스파크",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1686717505385.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODk0ODkyYjJjYjIwNTY2MzMzZTMyNyIsImV4cCI6MTY5MTkwMjYxOSwiaWF0IjoxNjg2NzE4NjE5fQ.Aan4kqHL77ffNL0O0L1YEe48EEqyBH0AyFWjw75g1VQ",
+  "_id": "64894892b2cb20566333e327"
+ },
+ {
+  "username": "강원 FC",
+  "email": "gangwon_fc@sport.com",
+  "password": "gangwon_fc123",
+  "accountname": "SPORT_SC_gangwon_fc",
+  "intro": "강원도,윤정환,강릉종합운동장",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689231503946.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZhM2ViYjJjYjIwNTY2M2ZhMmU5NSIsImV4cCI6MTY5NDQxNjQyNywiaWF0IjoxNjg5MjMyNDI3fQ.wEp4hoBFylB_HgxpSS65rq2kGQ0Vh0iSNaLwamsHcHw",
+  "_id": "64afa3ebb2cb205663fa2e95"
+ },
+ {
+  "username": "광주 FC",
+  "email": "gwangju_fc@sport.com",
+  "password": "gwangju_fc123",
+  "accountname": "SPORT_SC_gwangju_fc",
+  "intro": "광주,이정효,광주축구전용구장",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689231627181.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZhNGEyYjJjYjIwNTY2M2ZhMzAzYiIsImV4cCI6MTY5NDQxNjYwMiwiaWF0IjoxNjg5MjMyNjAyfQ.JkKzOXCrZpqHYkwFnQZvmssJc7Ll5Urll4QmhwCJtu8",
+  "_id": "64afa4a2b2cb205663fa303b"
+ },
+ {
+  "username": "대구 FC",
+  "email": "daegu_fc@sport.com",
+  "password": "daegu_fc123",
+  "accountname": "SPORT_SC_daegu_fc",
+  "intro": "대구,최원권,DGB 대구은행파크",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689231704085.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZhNTU4YjJjYjIwNTY2M2ZhMzBhMSIsImV4cCI6MTY5NDQxNjc0MCwiaWF0IjoxNjg5MjMyNzQwfQ.I8_jeVYsW7zqEFlu8ylyR8rYU5O35KMkiktLcTp4r80",
+  "_id": "64afa558b2cb205663fa30a1"
+ },
+ {
+  "username": "대전 하나 시티즌",
+  "email": "daejeon_hana@sport.com",
+  "password": "daejeon_hana123",
+  "accountname": "SPORT_SC_daejeon_hana",
+  "intro": "대전,이민성,대전월드컵경기장",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689231720490.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZhNWEwYjJjYjIwNTY2M2ZhMzBhNyIsImV4cCI6MTY5NDQxNjgwOSwiaWF0IjoxNjg5MjMyODA5fQ.vYMEQyFcuGeBTB45O8RAb9vFyxu0GAMDrEDJ3Pgb-q8",
+  "_id": "64afa5a0b2cb205663fa30a7"
+ },
+ {
+  "username": "FC 서울",
+  "email": "fc_seoul@sport.com",
+  "password": "fc_seoul123",
+  "accountname": "SPORT_SC_fc_seoul",
+  "intro": "서울,안익수,서울월드컵경기장",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689231740795.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZhNWZlYjJjYjIwNTY2M2ZhMzBhZCIsImV4cCI6MTY5NDQxNjkyNCwiaWF0IjoxNjg5MjMyOTI0fQ.kE3XTge11N04h2BtYG1e-uW-bYpac1ofSN0AIAjlihM",
+  "_id": "64afa5feb2cb205663fa30ad"
+ },
+ {
+  "username": "수원 삼성 블루윙즈",
+  "email": "suwon_blue_wings@sport.com",
+  "password": "suwon_blue_wings123",
+  "accountname": "SPORT_SC_suwon_blue_wings",
+  "intro": "수원,김병수,수원월드컵경기장",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689231759499.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZhNjYwYjJjYjIwNTY2M2ZhMzBmYSIsImV4cCI6MTY5NDQxNzAwMCwiaWF0IjoxNjg5MjMzMDAwfQ.pAw-TWEWHtTWCh_QcWC7B7G2sgiFyD2x2ZPmu_EJ9ps",
+  "_id": "64afa660b2cb205663fa30fa"
+ },
+ {
+  "username": "수원 FC",
+  "email": "suwon_fc@sport.com",
+  "password": "suwon_fc123",
+  "accountname": "SPORT_SC_suwon_fc",
+  "intro": "수원,김도균,수원종합운동장",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689231775517.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZhNjhlYjJjYjIwNTY2M2ZhMzEwMCIsImV4cCI6MTY5NDQxNzA0NywiaWF0IjoxNjg5MjMzMDQ3fQ.hH_r0u9n9-VIef0WqCRvlI0KhqxwO4lp2IqioIjGtDs",
+  "_id": "64afa68eb2cb205663fa3100"
+ },
+ {
+  "username": "울산 현대",
+  "email": "ulsan_hyundai@sport.com",
+  "password": "ulsan_hyundai123",
+  "accountname": "SPORT_SC_ulsan_hyundai",
+  "intro": "울산,홍명보,울산현대축구단",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689231792252.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZhNmM3YjJjYjIwNTY2M2ZhMzEwNiIsImV4cCI6MTY5NDQxNzEyMCwiaWF0IjoxNjg5MjMzMTIwfQ.Bfpq7ttxKcIRacwowgzENpvoTS57l_w5lFSRziFOvnQ",
+  "_id": "64afa6c7b2cb205663fa3106"
+ },
+ {
+  "username": "인천 유나이티드",
+  "email": "incheon_united@sport.com",
+  "password": "incheon_united123",
+  "accountname": "SPORT_SC_incheon_united",
+  "intro": "인천,조성환,인천축구전용경기장",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689231807734.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZhNzI1YjJjYjIwNTY2M2ZhMzEwYyIsImV4cCI6MTY5NDQxNzIwMCwiaWF0IjoxNjg5MjMzMjAwfQ.F9qEO50Elmdeq7QjduOutiKqYubSSIwxfex4qRE7qVE",
+  "_id": "64afa725b2cb205663fa310c"
+ },
+ {
+  "username": "전북 현대 모터스",
+  "email": "jeonbuk_hyundai_motors@sport.com",
+  "password": "jeonbuk_hyundai_motors123",
+  "accountname": "SPORT_SC_jeonbuk_hyundai_motors",
+  "intro": "전라북도,단 페트레스쿠,전주월드컵경기장",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689231839851.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZhNzcyYjJjYjIwNTY2M2ZhMzExNSIsImV4cCI6MTY5NDQxNzI3MywiaWF0IjoxNjg5MjMzMjczfQ.ClI_TQWRFDqNJTQ2FapO7sTdSAayrzrbQO55i8-QP6c",
+  "_id": "64afa772b2cb205663fa3115"
+ },
+ {
+  "username": "제주 유나이티드",
+  "email": "jeju_united@sport.com",
+  "password": "jeju_united123",
+  "accountname": "SPORT_SC_jeju_united",
+  "intro": "제주,남기일,제주월드컵경기장",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689231854121.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZhN2I0YjJjYjIwNTY2M2ZhMzExYiIsImV4cCI6MTY5NDQxNzM0MCwiaWF0IjoxNjg5MjMzMzQwfQ.WAyD8AOiGg6fQonFIyQtrFv6vO5bOsG07XXll8GVcz4",
+  "_id": "64afa7b4b2cb205663fa311b"
+ },
+ {
+  "username": "포항 스틸러스",
+  "email": "pohang_steelers@sport.com",
+  "password": "pohang_steelers123",
+  "accountname": "SPORT_SC_pohang_steelers",
+  "intro": "포항,김기동,포항스틸야드",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689231869055.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZhN2UwYjJjYjIwNTY2M2ZhMzEyMSIsImV4cCI6MTY5NDQxNzM4MywiaWF0IjoxNjg5MjMzMzgzfQ.kOW6p-LDslmrDC9cnaME112syqgNzIt8HleJHFw9LrQ",
+  "_id": "64afa7e0b2cb205663fa3121"
+ },
+ {
+  "username": "인천 대한항공 점보스",
+  "email": "incheon_jumbos@sport.com",
+  "password": "incheon_jumbos123",
+  "accountname": "SPORT_VB_incheon_jumbos",
+  "intro": "인천,토미 틸리카이넨,계양체육관",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689254825707.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZmZDAyYjJjYjIwNTY2M2ZhNTgzYiIsImV4cCI6MTY5NDQzOTE4NSwiaWF0IjoxNjg5MjU1MTg1fQ.Yk3aqCESeIKb59u9cjrerzU73ZeUDbffCnGnfr5NvyU",
+  "_id": "64affd02b2cb205663fa583b"
+ },
+ {
+  "username": "의정부 KB손해보험 스타즈",
+  "email": "uijeongbu_stars@sport.com",
+  "password": "uijeongbu_stars123",
+  "accountname": "SPORT_VB_uijeongbu_stars",
+  "intro": "의정부,후인정,의정부실내체육관",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689254841524.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZmZDQ2YjJjYjIwNTY2M2ZhNTg1YyIsImV4cCI6MTY5NDQzOTI0OCwiaWF0IjoxNjg5MjU1MjQ4fQ.k9LITHUIiayW3bLl-vl93MWP_Bp43R41FT1qyb1p3YY",
+  "_id": "64affd46b2cb205663fa585c"
+ },
+ {
+  "username": "수원 한국전력 빅스톰",
+  "email": "suwon_vixtorm@sport.com",
+  "password": "suwon_vixtorm123",
+  "accountname": "SPORT_VB_suwon_vixtorm",
+  "intro": "수원,권영민,수원실내체육관",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689254882260.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZmZDg1YjJjYjIwNTY2M2ZhNTkxZCIsImV4cCI6MTY5NDQzOTMxMCwiaWF0IjoxNjg5MjU1MzEwfQ.Lcmi9m6TsiYSkuEwqCair8MB8fWeJjpUXAjNnySOnCA",
+  "_id": "64affd85b2cb205663fa591d"
+ },
+ {
+  "username": "서울 우리카드 우리WON",
+  "email": "seoul_wooriwon@sport.com",
+  "password": "seoul_wooriwon123",
+  "accountname": "SPORT_VB_seoul_wooriwon",
+  "intro": "서울,신영철,장충체육관",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689254903581.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZmZGJhYjJjYjIwNTY2M2ZhNTkzZCIsImV4cCI6MTY5NDQzOTM2MywiaWF0IjoxNjg5MjU1MzYzfQ.7r4eJRKEsNUAvDIR3cPbbd9v_tFi2pEpgcTL9oR43xQ",
+  "_id": "64affdbab2cb205663fa593d"
+ },
+ {
+  "username": "안산 OK금융그룹 읏맨",
+  "email": "ansan_eutman@sport.com",
+  "password": "ansan_eutman123",
+  "accountname": "SPORT_VB_ansan_eutman",
+  "intro": "안산,오기노 마사지,상로수체육관",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689254916562.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZmZGYzYjJjYjIwNTY2M2ZhNWExMCIsImV4cCI6MTY5NDQzOTQyMCwiaWF0IjoxNjg5MjU1NDIwfQ.mCFIpOG45HKIejPTz6VzcsqFZ3bvcYXpwco0-A4gI5U",
+  "_id": "64affdf3b2cb205663fa5a10"
+ },
+ {
+  "username": "대전 삼성화재 블루팡스",
+  "email": "daejeon_bluefangs@sport.com",
+  "password": "daejeon_bluefangs123",
+  "accountname": "SPORT_VB_daejeon_bluefangs",
+  "intro": "대전,김상우,충무체육관",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689254937676.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZmZTI3YjJjYjIwNTY2M2ZhNWIwYiIsImV4cCI6MTY5NDQzOTQ3MywiaWF0IjoxNjg5MjU1NDczfQ.Yzbf5FlGFKQdHrLwS-qFGzmiAC3zfhOZSIoTIePq99w",
+  "_id": "64affe27b2cb205663fa5b0b"
+ },
+ {
+  "username": "천안 현대캐피탈 스카이워커스",
+  "email": "cheonan_skywalkers@sport.com",
+  "password": "cheonan_skywalkers123",
+  "accountname": "SPORT_VB_cheonan_skywalkers",
+  "intro": "천안,최태웅,유관순체육관",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689254954891.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZmZTViYjJjYjIwNTY2M2ZhNWJlNiIsImV4cCI6MTY5NDQzOTUyMywiaWF0IjoxNjg5MjU1NTIzfQ._1_0EwaEFgnyiwN8dmTU1-1rghfubU8bSDOhzHxX0G8",
+  "_id": "64affe5bb2cb205663fa5be6"
+ },
+ {
+  "username": "수원 현대건설 힐스테이트",
+  "email": "suwon_hillstate@sport.com",
+  "password": "suwon_hillstate123",
+  "accountname": "SPORT_VB_suwon_hillstate",
+  "intro": "수원,강성형,수원실내체육관",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689254974116.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZmZTk4YjJjYjIwNTY2M2ZhNWQ2MiIsImV4cCI6MTY5NDQzOTU4NCwiaWF0IjoxNjg5MjU1NTg0fQ.ewoBDS4iokJ53egHCoeY4Pn_lHJXdUr7SyHTDJt4k1c",
+  "_id": "64affe98b2cb205663fa5d62"
+ },
+ {
+  "username": "김천 한국도로공사 하이패스",
+  "email": "kimcheon_hipass@sport.com",
+  "password": "kimcheon_hipass123",
+  "accountname": "SPORT_VB_kimcheon_hipass",
+  "intro": "김천,김종민,김천실내체육관",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689254992433.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZmZWNiYjJjYjIwNTY2M2ZhNWQ3NyIsImV4cCI6MTY5NDQzOTYzNSwiaWF0IjoxNjg5MjU1NjM1fQ.l_sk-RddWzoqKHunn3LnobepKmKUgdvX1wtS7ayu6GE",
+  "_id": "64affecbb2cb205663fa5d77"
+ },
+ {
+  "username": "서울 GS칼텍스 KIXX",
+  "email": "seoul_kixx@sport.com",
+  "password": "seoul_kixx123",
+  "accountname": "SPORT_VB_seoul_kixx",
+  "intro": "서울,차상현,장충체육관",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689255021456.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZmZjAzYjJjYjIwNTY2M2ZhNWQ3ZCIsImV4cCI6MTY5NDQzOTY5MiwiaWF0IjoxNjg5MjU1NjkyfQ.5R8R9ZgM8WRCNmsUXNFC3watfrJpD231iJyFOLKRefY",
+  "_id": "64afff03b2cb205663fa5d7d"
+ },
+ {
+  "username": "대전 KGC인삼공사",
+  "email": "daejeon_kgc@sport.com",
+  "password": "daejeon_kgc123",
+  "accountname": "SPORT_VB_daejeon_kgc",
+  "intro": "대전,고희진,충무체육관",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689255037728.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZmZjM4YjJjYjIwNTY2M2ZhNWQ4NCIsImV4cCI6MTY5NDQzOTc0NywiaWF0IjoxNjg5MjU1NzQ3fQ.vNpLly7oxdwN4TBokkpUUG8mgwjKm9RKoMzZDVI4tRs",
+  "_id": "64afff38b2cb205663fa5d84"
+ },
+ {
+  "username": "화성 IBK기업은행 알토스",
+  "email": "hwasung_altos@sport.com",
+  "password": "hwasung_altos123",
+  "accountname": "SPORT_VB_hwasung_altos",
+  "intro": "화성,김호철,화성실내체육관",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689255052643.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZmZjcxYjJjYjIwNTY2M2ZhNWQ4YSIsImV4cCI6MTY5NDQzOTgwMCwiaWF0IjoxNjg5MjU1ODAwfQ.0RFr0yHTqNNs7o7-dKm8o-cwSa1c2jcvdo-jnMO0pqY",
+  "_id": "64afff71b2cb205663fa5d8a"
+ },
+ {
+  "username": "화성 흥국생명 핑크스파이더스",
+  "email": "incheon_pinkspiders@sport.com",
+  "password": "incheon_pinkspiders123",
+  "accountname": "SPORT_VB_incheon_pinkspiders",
+  "intro": "인천,마르첼로 아본단자,인천삼산월드체육관",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689255052643.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWZmZjlmYjJjYjIwNTY2M2ZhNWRhZCIsImV4cCI6MTY5NDQzOTg0OCwiaWF0IjoxNjg5MjU1ODQ4fQ.SdJtfmeg23VaaRZ3ZBEK8Za83V3KvTAUklr8GIRP6jE",
+  "_id": "64afff9fb2cb205663fa5dad"
+ },
+ {
+  "username": "광주 페퍼저축은행 AI 페퍼스",
+  "email": "gwangju_ai_peppers@sport.com",
+  "password": "gwangju_ai_peppers123",
+  "accountname": "SPORT_VB_gwangju_ai_peppers",
+  "intro": "광주,조 트린지,염주종합체육관",
+  "image": "https:\/\/api.mandarin.weniv.co.kr\/1689255102108.png",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YjAwMDM5YjJjYjIwNTY2M2ZhNWY1YiIsImV4cCI6MTY5NDQ0MDAwNSwiaWF0IjoxNjg5MjU2MDA1fQ.q313-4BRP7Nvff9CI2k0HD6JKw9u_BVs-FxRYe7IlJU",
+  "_id": "64b00039b2cb205663fa5f5b"
+ }
+]
