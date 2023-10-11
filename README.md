@@ -3,6 +3,7 @@
 
 ## 소개 및 개요
 * 프로젝트 기간 : 2023.06.01 ~ 2023.06.30
+* 리팩토링 기간: 2023.07.20 ~ 2023.08.20 
 * 배포 URL : [🔗SPPORT](https://spport-dozen.netlify.app/)
 * TestID / PW : only_lions@test.com / only_lions123
 
@@ -241,44 +242,9 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 
 
 ## 5. 역할 분담
-### 🧑🏻‍💻우혜리
-* 역할
-	* 팀리더
-	* 컨벤션 관리
- 	* 피그마 디자인 작업
-* UI
- 	* 컴포넌트: Header, Filter, BottomSheet
-  	* 페이지: 직관일정, 팀 포스트, 404, 검색, 일정 추가
-* 기능
-	* 댓글 게시/삭제, 좋아요를 통한 일정 추가 , 댓글/게시글 신고하기, 유저검색, 홈피드 필터링, 로그아웃, 무한스크롤, 스켈레톤, Modal
+자세한 내용은 <a href='https://github.com/FRONTENDSCHOOL5/final-12-spport/wiki/%F0%9F%A7%91%E2%80%8D%F0%9F%A4%9D%E2%80%8D%F0%9F%A7%91-%EC%97%AD%ED%95%A0-%EB%B6%84%EB%8B%B4'>🔗 해당 위키</a>에서 확인해주세요.
+![역할](https://github.com/hyeri-woo/final-12-spport/assets/107099724/a463d745-fa08-4c73-ac1a-70cf9baccf44)
 
-
-### 🧑🏻‍💻김서영
-* 역할
-	* 문서 정리	 
-* UI
-	* 컴포넌트 : Input, Modal 	
-	* 페이지: Splash, Login, Signup, 선수리스트, 채팅
-* 기능
- 	* 유효성 검사, 회원가입, 로그인 화면, 프로필 설정, 프로필 수정, 필터링
-
-### 🧑🏻‍💻이영주
-* 역할
-	* 마스코트	 
-* UI
-	* 컴포넌트 : Button, 일반 포스트	
-	* 페이지: Upload, EditPost, Home
-* 기능
- 	* 게시물 작성/수정/삭제, 홈피드 게시글 목록, 이미지 슬라이더
-### 🧑🏻‍💻신민철
-* 역할
-	* 깃허브 관리	 
-* UI
-	* 컴포넌트 : ProfileImage/NavBar	
-	* 페이지: 유저/팀/나의 프로필 페이지, 팔로우/팔로잉 페이지
-* 기능
- 	* 팔로우, 게시글 앨범형/리스트형
-  
 ## 6. Flowchart
 ![Spport-main](https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/107099724/cd8277a9-a788-4db5-9cad-7750fda5e176)
 
