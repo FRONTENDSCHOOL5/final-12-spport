@@ -4,6 +4,12 @@ import styled from 'styled-components';
 
 const ContainerStyle = styled.div`
   padding: 60px 10px;
+  @media screen and (min-width: 768px) {
+    padding: 10px 10px;
+  }
+  @media screen and (min-width: 1247px) {
+    padding-top: 60px;
+  }
 `;
 
 const ListLoaderStyle = styled.div`

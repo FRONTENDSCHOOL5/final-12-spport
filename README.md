@@ -3,6 +3,7 @@
 
 ## 소개 및 개요
 * 프로젝트 기간 : 2023.06.01 ~ 2023.06.30
+* 리팩토링 기간: 2023.07.20 ~ 2023.08.20 
 * 배포 URL : [🔗SPPORT](https://spport-dozen.netlify.app/)
 * TestID / PW : only_lions@test.com / only_lions123
 
@@ -242,8 +243,7 @@ dozen은 연필과 같은 물건의 개수를 나타내는 단위 중 12개 묶�
 
 ## 5. 역할 분담
 자세한 내용은 <a href='https://github.com/FRONTENDSCHOOL5/final-12-spport/wiki/%F0%9F%A7%91%E2%80%8D%F0%9F%A4%9D%E2%80%8D%F0%9F%A7%91-%EC%97%AD%ED%95%A0-%EB%B6%84%EB%8B%B4'>🔗 해당 위키</a>에서 확인해주세요.
-![역할](https://github.com/hyeri-woo/final-12-spport/assets/107099724/a463d745-fa08-4c73-ac1a-70cf9baccf44)
-  
+![역할](https://github.com/hyeri-woo/final-12-spport/assets/107099724/a463d745-fa08-4c73-ac1a-70cf9baccf44)  
 ## 6. Flowchart
 ![Spport-main](https://github.com/FRONTENDSCHOOL5/final-12-spport/assets/107099724/cd8277a9-a788-4db5-9cad-7750fda5e176)
 

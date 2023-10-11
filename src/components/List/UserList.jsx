@@ -9,12 +9,12 @@ const UserListStyle = styled.ul`
   gap: 20px;
 
   @media screen and (min-width: 768px) {
-    margin-left: 60px;
+    margin-left: 0px;
     padding-top: 20px;
   }
 
   @media screen and (min-width: 1247px) {
-    margin-left: 200px;
+    padding-top: 60px;
   }
 `;
 
